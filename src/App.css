@@ -33,6 +33,11 @@
   }
 }
 
+.crystal-ball-container {
+  text-align: center;
+  /* Add any other styles specific to the CrystalBall component */
+}
+
 .card {
   padding: 2em;
 }
