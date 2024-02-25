@@ -190,17 +190,20 @@ function FutureBoxes() {
             </Col>
             <Col>
               <div className="box">
-                <img
-                  src={crystalBall}
-                  alt="Crystal Ball"
-                  className="img-fluid"
-                />
-                <h3
-                  className="mt-3"
-                  style={{ fontFamily: "Inter", fontWeight: "Bold" }}
-                >
-                  Crystal Ball
-                </h3>
+                
+                  <img
+                    src={crystalBall}
+                    alt="Crystal Ball"
+                    className="img-fluid"
+                  />
+                  <Link to="/CrystalBall">
+                  <h3
+                    className="mt-3"
+                    style={{ fontFamily: "Inter", fontWeight: "Bold" }}
+                  >
+                    Crystal Ball
+                  </h3>
+                </Link>
               </div>
             </Col>
             <Col>
