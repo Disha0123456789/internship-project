@@ -1,69 +1,74 @@
-import React from 'react'
+import React from "react"
 
 const Hero = () => {
   return (
-    <div>
-        
-<div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
-  <div class="grid sm:grid-cols-2 lg:grid-cols-4 items-center gap-6 md:gap-10">
-    
-    <div class="size-full bg-gradient-to-r from-purple-300 to-violet-200 shadow-lg rounded-lg p-5 dark:bg-slate-900">
-      <div class="flex items-center gap-x-4 mb-3">
-        {/* <div class="inline-flex justify-center items-center size-[62px] rounded-full border-4 border-blue-50 bg-blue-100 dark:border-blue-900 dark:bg-blue-800">
+      <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto mb-6">
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 items-center gap-12">
+          <div class="text-center bg-gradient-to-r from-purple-400 to-violet-400 p-8 rounded-xl">
+            <div class="flex justify-center items-center size-12 bg-gray-50 border border-gray-200 rounded-full mx-auto dark:bg-gray-800 dark:border-gray-700">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/867/867780.png"
+                alt="2"
+                className="flex-shrink-0 size-7 text-gray-600 dark:text-gray-400"
+              />
+            </div>
+            <div class="mt-3">
+              <h3 class="text-lg font-semibold text-gray-800 dark:text-white">Horrorscope</h3>
+              <p class="mt-2 text-gray-600 dark:text-gray-400 tracking-tight leading-4">
+                Find out what the stars say for you
+              </p>
+            </div>
+          </div>
 
-        </div> */}
-        <div class="flex-shrink-0">
-          <h3 class="block text-lg font-semibold text-gray-800 dark:text-white">Daily Horrorscopes</h3>
+          <div class="text-center bg-gradient-to-r from-purple-400 to-violet-400 p-8 rounded-xl">
+            <div class="flex justify-center items-center size-12 bg-gray-50 border border-gray-200 rounded-full mx-auto dark:bg-gray-800 dark:border-gray-700">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/815/815839.png"
+                alt="1"
+                className="flex-shrink-0 size-7 text-gray-600 dark:text-gray-400"
+              />
+            </div>
+            <div class="mt-3">
+              <h3 class="text-lg font-semibold text-gray-800 dark:text-white">Kundali</h3>
+              <p class="mt-2 text-gray-600 dark:text-gray-400 tracking-tight leading-4">
+                an astrological chart that shows the position of planets
+              </p>
+            </div>
+          </div>
+
+          <div class="text-center bg-gradient-to-r from-purple-400 to-violet-400 p-8 rounded-xl">
+            <div class="flex justify-center items-center size-12 bg-gray-50 border border-gray-200 rounded-full mx-auto dark:bg-gray-800 dark:border-gray-700">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/14345/14345573.png"
+                alt="8"
+                className="flex-shrink-0 size-7 text-gray-600 dark:text-gray-400"
+              />
+            </div>
+            <div class="mt-3">
+              <h3 class="text-lg font-semibold text-gray-800 dark:text-white">Love Check</h3>
+              <p class="mt-2 text-gray-600 dark:text-gray-400 tracking-tighter leading-4">
+                tool that calculates the love % in your life
+              </p>
+            </div>
+          </div>
+
+          <div class="text-center bg-gradient-to-r from-purple-400 to-violet-400 p-8 rounded-xl">
+            <div class="flex justify-center items-center size-12 bg-gray-50 border border-gray-200 rounded-full mx-auto dark:bg-gray-800 dark:border-gray-700">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/5005/5005657.png"
+                alt="3"
+                className="flex-shrink-0 size-7 text-gray-600 dark:text-gray-400"
+              />
+            </div>
+            <div class="mt-3">
+              <h3 class="text-lg font-semibold text-gray-800 dark:text-white">Fortune wheel</h3>
+              <p class="mt-2 text-gray-600 dark:text-gray-400 tracking-tighter leading-4">
+                Predict your luck within few fortune wheel spins
+              </p>
+            </div>
+          </div>
         </div>
       </div>
-     
-    </div>
-  
-
-   
-    <div class="size-full bg-gradient-to-r from-purple-300 to-violet-200 shadow-lg rounded-lg p-5 dark:bg-slate-900">
-      <div class="flex items-center gap-x-4 mb-3">
-        {/* <div class="inline-flex justify-center items-center size-[62px] rounded-full border-4 border-blue-50 bg-blue-100 dark:border-blue-900 dark:bg-blue-800">
-
-        </div> */}
-        <div class="flex-shrink-0">
-          <h3 class="block text-lg font-semibold text-gray-800 dark:text-white">Kundali</h3>
-        </div>
-      </div>
-     
-    </div>
-
-
-
-    <div class="size-full shadow-lg rounded-lg p-5 bg-gradient-to-r from-purple-300 to-violet-200 dark:bg-slate-900">
-      <div class="flex items-center gap-x-4 mb-3">
-        {/* <div class="inline-flex justify-center items-center size-[62px] rounded-full border-4 border-blue-50 bg-blue-100 dark:border-blue-900 dark:bg-blue-800">
-          
-        </div> */}
-        <div class="flex-shrink-0">
-          <h3 class="block text-lg font-semibold text-gray-800 dark:text-white">Love check</h3>
-        </div>
-      </div>
-      
-    </div>
-
-
-    <div class="size-full shadow-lg rounded-lg p-5 bg-gradient-to-r from-purple-300 to-violet-200 dark:bg-slate-900">
-      <div class="flex items-center gap-x-4 mb-3">
-        {/* <div class="inline-flex justify-center items-center size-[62px] rounded-full border-4 border-blue-50 bg-blue-100 dark:border-blue-900 dark:bg-blue-800">
-          
-        </div> */}
-        <div class="flex-shrink-0">
-          <h3 class="block text-lg font-semibold text-gray-800 dark:text-white">Fortune Wheel</h3>
-        </div>
-      </div>
-      
-    </div>
-  
-  </div>
-</div>
-
-    </div>
   )
 }
 
