@@ -20,9 +20,10 @@ function FutureBoxes() {
           rel="stylesheet"
         />
       </Helmet>
-      <Container className="container d-flex flex-column justify-content-center align-items-center">
+      <Container className="container mt-8 d-flex flex-column justify-content-center align-items-center">
         <div className="section mb-4 w-100">
           <h2
+          className="mb-8"
             style={{
               fontFamily: "Baloo Bhai 2",
               fontWeight: 700,
@@ -119,7 +120,7 @@ function FutureBoxes() {
           </Row>
         </div>
         <div className="section mb-4 w-100">
-          <h2>Embark on your Journey</h2>
+          <h2 className="mb-8">Embark on your Journey</h2>
           <Row className="row-cols-1 row-cols-md-3 g-4">
             <Col>
               <div className="box">
@@ -157,7 +158,7 @@ function FutureBoxes() {
           </Row>
         </div>
         <div className="section mb-4 w-100">
-          <h2>Lets take you to the another Dimension</h2>
+          <h2 className="mb-8 mt-2">Lets take you to the another Dimension</h2>
           <Row className="row-cols-1 row-cols-md-3 g-4">
             <Col>
               <div className="box">
@@ -203,7 +204,7 @@ function FutureBoxes() {
           </Row>
         </div>
         <div className="section mb-4 w-100">
-          <h2>Nourish Your soul</h2>
+          <h2 className="mb-8 mt-2">Nourish Your soul</h2>
           <Row className="row-cols-1 row-cols-md-3 g-4">
             <Col>
               <div onClick={() => navigate("/Meditation")} className="box">
@@ -247,7 +248,7 @@ function FutureBoxes() {
               </div>
             </Col>
           </Row>
-          <Row className="row-cols-1 row-cols-3 g-4 justify-content-center">
+          <Row className="row-cols-1 row-cols-3 mt-8 g-4 justify-content-center">
             <img src="/ICONS/divinelogohorizontal.png" alt="Divine Logo" />
           </Row>
         </div>
