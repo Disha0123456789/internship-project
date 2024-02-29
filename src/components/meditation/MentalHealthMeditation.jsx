@@ -1,37 +1,39 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
-import "./meditation.css";
-const DailyMeditation = () => {
+
+const MentalHealthMeditation = () => {
   const name = [
-    "Powerful 6-phase Morning Meditation",
-    "Feel Amazing For The Day Ahead",
-    "Morning Meditation for Positive Energy",
+    "Clearing Negativity",
+    "Banishing Depression",
+    "MEDITATION for Stress Relief",
 
-    "Increase your Vibrational Frequency",
+    "Meditation for Anxiety Relief",
 
-    "The Perfect Mindfulness Meditation",
+    " MEDITATION for Self-Esteem",
 
-    "Morning Meditation for Health Wealth & Happiness",
+    "Pain Relief & Healing GUIDED MEDITATION",
 
-    "A Powerful Morning Meditation to Start Your Day",
+    "MEDITATION for Total Body Relaxation",
 
-    "Productive Morning Guided Meditation",
+    "MEDITATION for Heal Your Inner Child",
+    "MEDITATION for  Releasing Anger",
+    "MEDITATION for Overcoming Shyness",
   ];
   const links = [
-    "https://www.youtube.com/embed/DdUm9U9w9W0?si=8Ipu6Z7OsDT4_q-G",
-    "https://www.youtube.com/embed/IvLViZeC60c?si=j4uc97BbEQ7CFWWB",
-    "https://www.youtube.com/embed/mMw9Q8CIPuY?si=bpYp0yXFr_r8UtfE",
-    "https://www.youtube.com/embed/1gs6qOZxzy4?si=DTinOp2PX0mV0Pti",
-    "https://www.youtube.com/embed/LJQOoAw0BjY?si=U7njnh9Jz-CJUXj9",
-    "https://www.youtube.com/embed/42uKBAHQMMo?si=0Klp2OcbK2cEfsX4",
-    "https://www.youtube.com/embed/pZ410ATHqG4?si=Mgm1_QLL3JF1gtBH",
-    "https://www.youtube.com/embed/442wt8KJeNs?si=ww-Rlr5iH5k4TVwm",
+    "https://www.youtube.com/embed/EPWpV064K24?si=GMw9If-S_FyIWfzY",
+    "https://www.youtube.com/embed/2nV-v8zXpH0?si=gQVo_MkQgSoyoCp3",
+    "https://www.youtube.com/embed/o94tvFUttco?si=TJAaI4M19c9LMXtf",
+    "https://www.youtube.com/embed/8_jcEpwKQXc?si=AEfYTO4bUOsLBPX_",
+    "https://www.youtube.com/embed/5I_gj-eMefU?si=pcZbKuHbKUOnrJWL",
+    "https://www.youtube.com/embed/NIjKfenNStA?si=0Cz782lpYkzVXxKJ",
+    "https://www.youtube.com/embed/QMv64migYjY?si=7WMbS7IMxCxj0QLX",
+    "https://www.youtube.com/embed/-_dTtHriNlk?si=z_YMmq57Rt0xvAk8",
+    "https://www.youtube.com/embed/pk0Jeqcv5Q8?si=67cx7UD85urhqfGA",
+    "https://www.youtube.com/embed/3IUaHeedb98?si=huzwkYUWQ-7vd5Fr",
   ];
-
   return (
     <div className="Main-page">
       <div className="Meditation-text">
-        <h1>Daily Meditation</h1>
+        <h1>Meditation for Mental Health</h1>
       </div>
       <div className="Hero-section">
         <p>
@@ -66,4 +68,4 @@ const DailyMeditation = () => {
   );
 };
 
-export default DailyMeditation;
+export default MentalHealthMeditation;

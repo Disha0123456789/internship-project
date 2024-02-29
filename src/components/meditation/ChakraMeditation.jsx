@@ -1,37 +1,40 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
 import "./meditation.css";
-const DailyMeditation = () => {
+
+const ChakraMeditation = () => {
   const name = [
-    "Powerful 6-phase Morning Meditation",
-    "Feel Amazing For The Day Ahead",
-    "Morning Meditation for Positive Energy",
+    "10 Minute Root Chakra Guided Meditation",
+    "Boost Creativity, Desire & Confidence",
+    "Unconditional Love 10 Minute Meditation",
 
-    "Increase your Vibrational Frequency",
+    "Throat Chakra Meditation",
 
-    "The Perfect Mindfulness Meditation",
+    "Third Eye Chakra Guided Meditation",
 
-    "Morning Meditation for Health Wealth & Happiness",
+    "Crown Chakra Guided Meditation",
 
-    "A Powerful Morning Meditation to Start Your Day",
+    "Chakra Balancing and Cleansing ",
 
-    "Productive Morning Guided Meditation",
+    "Positive Energy Chakra Meditation",
+    "Full Body 7 Chakra Healing Guided Meditation",
+    "Sacral Chakra Guided Meditation",
   ];
   const links = [
-    "https://www.youtube.com/embed/DdUm9U9w9W0?si=8Ipu6Z7OsDT4_q-G",
-    "https://www.youtube.com/embed/IvLViZeC60c?si=j4uc97BbEQ7CFWWB",
-    "https://www.youtube.com/embed/mMw9Q8CIPuY?si=bpYp0yXFr_r8UtfE",
-    "https://www.youtube.com/embed/1gs6qOZxzy4?si=DTinOp2PX0mV0Pti",
-    "https://www.youtube.com/embed/LJQOoAw0BjY?si=U7njnh9Jz-CJUXj9",
-    "https://www.youtube.com/embed/42uKBAHQMMo?si=0Klp2OcbK2cEfsX4",
-    "https://www.youtube.com/embed/pZ410ATHqG4?si=Mgm1_QLL3JF1gtBH",
-    "https://www.youtube.com/embed/442wt8KJeNs?si=ww-Rlr5iH5k4TVwm",
+    "https://www.youtube.com/embed/ersZEW9ucA4?si=CLE8uU4OjqKzu8fb",
+    "https://www.youtube.com/embed/6juYDQvORDw?si=3p3zlN_kElR_SCK3",
+    "https://www.youtube.com/embed/jQZdZ9kzKBc?si=0xi7lhGSf2ShUqd1",
+    "https://www.youtube.com/embed/RPCr5uZWRd0?si=zdJxJoFdxFw8LM3y",
+    "https://www.youtube.com/embed/EVsuqUKrx-I?si=3DNaCkQpqxPdxBqw",
+    "https://www.youtube.com/embed/dgTx58ejJ_w?si=JTwz5E7BNqWRxI_C",
+    "https://www.youtube.com/embed/thjrAfpeJ7A?si=9LXDn_Z-GausV4sB",
+    "https://www.youtube.com/embed/RbVbo9BkuiA?si=FORsJWvkuhFDDfQB",
+    "https://www.youtube.com/embed/wXkSXbntKwU?si=3MhILcNFeR3cAHcx",
+    "https://www.youtube.com/embed/vlLwR2x9ekY?si=zPqPCZbMMiNXJSHL",
   ];
-
   return (
     <div className="Main-page">
       <div className="Meditation-text">
-        <h1>Daily Meditation</h1>
+        <h1>Chakra Meditation</h1>
       </div>
       <div className="Hero-section">
         <p>
@@ -66,4 +69,4 @@ const DailyMeditation = () => {
   );
 };
 
-export default DailyMeditation;
+export default ChakraMeditation;

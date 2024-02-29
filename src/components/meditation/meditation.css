@@ -1,8 +1,8 @@
 .Main-Page{
     min-height: 100vh;
     width: 100%;
-    
-    min-width: 100%;
+    background-color: #cd217f;
+   
     
 }
 
@@ -25,7 +25,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 100px;
+   gap: clamp(20px, 7vw, 90px);
  
     
     
@@ -34,7 +34,7 @@
 .list{
     cursor: pointer;
     margin: 0 20px;
-    
+ 
     position: relative;
     overflow: hidden;
     display: flex;
@@ -48,18 +48,23 @@
 .circle{
     
     overflow: hidden;
-    height: 7vw;
-    width: 7vw;
+    
+    border: 2px solid black;
+    height:clamp(100px, 180px, 200px);
+    width: clamp(100px, 180px, 200px);
+    
     border-radius: 50%;
     background-color: blueviolet;
 }
 .list-item{
-    font-size: 1.1vw;
+    list-style: none;
+    font-size: clamp(1.2rem, 1.5vw, 2rem);
 }
 
 .circle img{
+    
     transition: all 0.5s ease-in-out;
-    box-shadow: 0px 0px 10px 0px rgb(10, 10, 10);
+    
     height: 100%;
     border-radius: 50%;
     width: 100%;
@@ -96,13 +101,13 @@
 .Card{
     position: relative;
     min-height: 20vh;
-    min-width: 200px;
+    min-width: 230px;
     box-shadow: 0px 0px 10px 0px rgb(10, 10, 10);
     display: flex;
     flex-direction: column;
     align-items: center;
-   
-    height: 45vh;
+    border-radius: 10px;
+    height: 40vh;
     padding: 10px;
     width: 25vw;
     cursor: pointer;
@@ -119,7 +124,9 @@
 }
 
 .Card iframe{
-    min-width: 160px;
+    
+    border-radius: 5px;
+    min-width: 200px;
     width: 20vw;
     position: absolute;
     top: 60%;
@@ -128,4 +135,31 @@
     
     /* height: clamp(5vh, 20vw, 30vh); */
     
+}
+@media screen and (max-width: 468px){
+    .Meditation-text{
+        height: 20vh;
+    }
+    .Options{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .list{
+        margin: 20px 0;
+
+    }
+    .list-item{
+        font-size: 5.1vw;
+    }
+    .circle{
+        height: 50vw;
+        width: 50vw;
+    }
+    
+    .Card{
+        width: 80vw;
+    }
+    .Card iframe{
+        width: 70vw;
+    }
 }
