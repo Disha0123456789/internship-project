@@ -1,37 +1,37 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
 import "./meditation.css";
-const DailyMeditation = () => {
+const SleepMeditation = () => {
   const name = [
-    "Powerful 6-phase Morning Meditation",
-    "Feel Amazing For The Day Ahead",
-    "Morning Meditation for Positive Energy",
+    "5 Minute Meditation Before Sleep",
+    "Receive Messages In Your Sleep Guided Meditation",
+    "Floating With The Stars Guided Meditation",
 
-    "Increase your Vibrational Frequency",
+    "Sleep Story for Grown Ups",
 
-    "The Perfect Mindfulness Meditation",
+    "Positive Energy Before You Sleep Meditation",
 
-    "Morning Meditation for Health Wealth & Happiness",
+    "Sleep in Ten Minutes",
 
-    "A Powerful Morning Meditation to Start Your Day",
+    "Feeling Grateful Before You Sleep  Meditation",
 
-    "Productive Morning Guided Meditation",
+    "A Healing Sleep Guided Meditation",
+    "Yoga Nidra Sleep Meditation Guided with Female Voice",
   ];
   const links = [
-    "https://www.youtube.com/embed/DdUm9U9w9W0?si=8Ipu6Z7OsDT4_q-G",
-    "https://www.youtube.com/embed/IvLViZeC60c?si=j4uc97BbEQ7CFWWB",
-    "https://www.youtube.com/embed/mMw9Q8CIPuY?si=bpYp0yXFr_r8UtfE",
-    "https://www.youtube.com/embed/1gs6qOZxzy4?si=DTinOp2PX0mV0Pti",
-    "https://www.youtube.com/embed/LJQOoAw0BjY?si=U7njnh9Jz-CJUXj9",
-    "https://www.youtube.com/embed/42uKBAHQMMo?si=0Klp2OcbK2cEfsX4",
-    "https://www.youtube.com/embed/pZ410ATHqG4?si=Mgm1_QLL3JF1gtBH",
-    "https://www.youtube.com/embed/442wt8KJeNs?si=ww-Rlr5iH5k4TVwm",
+    "https://www.youtube.com/embed/2K4T9HmEhWE?si=JEzQa4sgrtNywAzA",
+    "https://www.youtube.com/embed/BuOYJ2s_XJw?si=-I-9-zSBTYY5wt7O",
+    "https://www.youtube.com/embed/a5XSe_pORQ0?si=pYg73tDi6Y4gDhks",
+    "https://www.youtube.com/embed/_wenjJ6jUYE?si=SY7WOR1zenkvAIUb",
+    "https://www.youtube.com/embed/xeS6vHrPwNI?si=H79dZ2Z2lqmvlbGv",
+    "https://www.youtube.com/embed/YdDv_0kwsb8?si=ej4HHQP-kaQzyKoW",
+    "https://www.youtube.com/embed/hANbTU_YsQg?si=7m0G7IJiCItzzI4G",
+    "https://www.youtube.com/embed/W4ujD0NI0m8?si=7pFAJiuY8hdQbHr5",
+    "https://www.youtube.com/embed/wXkSXbntKwU?si=3MhILcNFeR3cAHcx",
   ];
-
   return (
     <div className="Main-page">
       <div className="Meditation-text">
-        <h1>Daily Meditation</h1>
+        <h1>Chakra Meditation</h1>
       </div>
       <div className="Hero-section">
         <p>
@@ -66,4 +66,4 @@ const DailyMeditation = () => {
   );
 };
 
-export default DailyMeditation;
+export default SleepMeditation;

@@ -9,19 +9,19 @@ const Meditation = () => {
     "Chakra Meditation",
     "Meditation for sleep",
     "5 minute Meditation",
-    "Sleep Meditation",
+
     "Mindfullness Meditation",
     "Meditation for Positive Energy",
     "Meditation for beginners",
-    "Meditation for Male",
-    "Meditation for female",
+    "Meditation for Mental Health",
+    "Epic Power Meditation",
   ];
   const imgurl = [
     "https://images.unsplash.com/photo-1536623975707-c4b3b2af565d?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "https://images.unsplash.com/photo-1474418397713-7ede21d49118?q=80&w=1753&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "https://images.unsplash.com/photo-1512438248247-f0f2a5a8b7f0?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "https://images.unsplash.com/photo-1602192509154-0b900ee1f851?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "https://images.unsplash.com/photo-1577344718665-3e7c0c1ecf6b?q=80&w=1769&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+
     "https://images.unsplash.com/photo-1506126613408-eca07ce68773?q=80&w=1999&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "https://images.unsplash.com/photo-1592895792095-85fa785192a9?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "https://images.unsplash.com/photo-1489659639091-8b687bc4386e?q=80&w=1773&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -31,6 +31,22 @@ const Meditation = () => {
   const onButtonClick = (option) => {
     if (option === "Daily Meditation") {
       navigate("/DailyMeditation");
+    } else if (option === "Chakra Meditation") {
+      navigate("/ChakraMeditation");
+    } else if (option === "Meditation for sleep") {
+      navigate("/SleepMeditation");
+    } else if (option === "5 minute Meditation") {
+      navigate("/5MinsMeditation");
+    } else if (option === "Mindfullness Meditation") {
+      navigate("/MindfullnessMeditation");
+    } else if (option === "Meditation for Positive Energy") {
+      navigate("/PositiveMindMeditation");
+    } else if (option === "Meditation for beginners") {
+      navigate("/BeginnerMeditation");
+    } else if (option === "Meditation for Mental Health") {
+      navigate("/MentalHealthMeditation");
+    } else if (option === "Epic Power Meditation") {
+      navigate("/EpicPowerMeditation");
     }
   };
   return (

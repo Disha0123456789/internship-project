@@ -1,37 +1,37 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
 import "./meditation.css";
-const DailyMeditation = () => {
+const EpicPowerMeditation = () => {
   const name = [
-    "Powerful 6-phase Morning Meditation",
-    "Feel Amazing For The Day Ahead",
-    "Morning Meditation for Positive Energy",
+    "Universal Light Energy Healing",
+    "White Light Protection: Warrior of Light (Epic Power-Meditation)",
+    "Earth Grounding (self-empowering visualisation)",
 
-    "Increase your Vibrational Frequency",
+    " A Gift From Your Guardian Spirit. An Uplifting Visualisation",
 
-    "The Perfect Mindfulness Meditation",
+    " GUIDED MEDITATION - Releasing Anger",
 
-    "Morning Meditation for Health Wealth & Happiness",
+    " MEDITATION STORY: Running With Wolves - Epic Meditation",
 
-    "A Powerful Morning Meditation to Start Your Day",
+    "PRAYER FOR WORLD PEACE",
 
-    "Productive Morning Guided Meditation",
+    " Meditation: Journey into the West. Story Visualization",
+    "A Fire Cleansing Epic Power Guided Meditation for Healing",
   ];
   const links = [
-    "https://www.youtube.com/embed/DdUm9U9w9W0?si=8Ipu6Z7OsDT4_q-G",
-    "https://www.youtube.com/embed/IvLViZeC60c?si=j4uc97BbEQ7CFWWB",
-    "https://www.youtube.com/embed/mMw9Q8CIPuY?si=bpYp0yXFr_r8UtfE",
-    "https://www.youtube.com/embed/1gs6qOZxzy4?si=DTinOp2PX0mV0Pti",
-    "https://www.youtube.com/embed/LJQOoAw0BjY?si=U7njnh9Jz-CJUXj9",
-    "https://www.youtube.com/embed/42uKBAHQMMo?si=0Klp2OcbK2cEfsX4",
-    "https://www.youtube.com/embed/pZ410ATHqG4?si=Mgm1_QLL3JF1gtBH",
-    "https://www.youtube.com/embed/442wt8KJeNs?si=ww-Rlr5iH5k4TVwm",
+    "https://www.youtube.com/embed/tV6swIkrFBk?si=BaxABIRevXy4jUtg",
+    "https://www.youtube.com/embed/qXXeN49sQZA?si=puej8L0u6CLhAn7r",
+    "https://www.youtube.com/embed/dpqX3Fthw_E?si=Gwe9thu9Y_lH9mUs",
+    "https://www.youtube.com/embed/5Bo942_Gdtw?si=OpNqIaGMcJv9_-LY",
+    "https://www.youtube.com/embed/pk0Jeqcv5Q8?si=t4W8FbOSpTmva1qg",
+    "https://www.youtube.com/embed/JhNwHC-wbCo?si=eQGmSpnaiXGiajWz",
+    "https://www.youtube.com/embed/HOfBYvh8MfA?si=T6P22mQk5YXorECq",
+    "https://www.youtube.com/embed/hGmEQjNp7Ck?si=BJuJbg4rLbIpFF4A",
+    "https://www.youtube.com/embed/9LrGIZKpoJ0?si=nBhzCtjwisE52mxf",
   ];
-
   return (
     <div className="Main-page">
       <div className="Meditation-text">
-        <h1>Daily Meditation</h1>
+        <h1>Meditation for Beginners</h1>
       </div>
       <div className="Hero-section">
         <p>
@@ -66,4 +66,4 @@ const DailyMeditation = () => {
   );
 };
 
-export default DailyMeditation;
+export default EpicPowerMeditation;

@@ -1,37 +1,38 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
 import "./meditation.css";
-const DailyMeditation = () => {
+
+const PositiveMeditation = () => {
   const name = [
-    "Powerful 6-phase Morning Meditation",
-    "Feel Amazing For The Day Ahead",
     "Morning Meditation for Positive Energy",
+    "Positive Energy Chakra Meditation",
+    "Increase your Vibrational Frequency With Positive Energy",
 
-    "Increase your Vibrational Frequency",
+    "Morning Mindfulness Meditation",
 
-    "The Perfect Mindfulness Meditation",
+    "Feel the powerful Self Healing Energy Within",
 
-    "Morning Meditation for Health Wealth & Happiness",
+    "Entering Into Higher Consciousness",
 
-    "A Powerful Morning Meditation to Start Your Day",
+    "Feeling Full of Energy",
 
-    "Productive Morning Guided Meditation",
+    "Full of Positive Feelings with this Gratitude Guided Meditation ",
+    "You Are Radiant, Awake & Alive ~ Morning Positive Energy ",
   ];
   const links = [
-    "https://www.youtube.com/embed/DdUm9U9w9W0?si=8Ipu6Z7OsDT4_q-G",
-    "https://www.youtube.com/embed/IvLViZeC60c?si=j4uc97BbEQ7CFWWB",
-    "https://www.youtube.com/embed/mMw9Q8CIPuY?si=bpYp0yXFr_r8UtfE",
-    "https://www.youtube.com/embed/1gs6qOZxzy4?si=DTinOp2PX0mV0Pti",
-    "https://www.youtube.com/embed/LJQOoAw0BjY?si=U7njnh9Jz-CJUXj9",
-    "https://www.youtube.com/embed/42uKBAHQMMo?si=0Klp2OcbK2cEfsX4",
-    "https://www.youtube.com/embed/pZ410ATHqG4?si=Mgm1_QLL3JF1gtBH",
-    "https://www.youtube.com/embed/442wt8KJeNs?si=ww-Rlr5iH5k4TVwm",
+    "https://www.youtube.com/embed/mMw9Q8CIPuY?si=t6Rfo4tTKjNdK-gS",
+    "https://www.youtube.com/embed/RbVbo9BkuiA?si=SF8CSMO-olU-gRRP",
+    "https://www.youtube.com/embed/1gs6qOZxzy4?si=Ryholg3uFibp2n-z",
+    "https://www.youtube.com/embed/a-cNQDhP87w?si=PLgHJAXuyyUUx_1L",
+    "https://www.youtube.com/embed/P0gwE0eGRKk?si=0pcrpPc-6vtNpPDM",
+    "https://www.youtube.com/embed/cECMemgO0fw?si=-oClclgICDMWc5Cz",
+    "https://www.youtube.com/embed/f4VI7tIhEJM?si=meYyQFNidIt_PEbX",
+    "https://www.youtube.com/embed/Td96vE38oI8?si=UWh_-pA5aksRQRdO",
+    "https://www.youtube.com/embed/3mRGG8_Gf38?si=yjtBZ1uukcFSuyTJ",
   ];
-
   return (
     <div className="Main-page">
       <div className="Meditation-text">
-        <h1>Daily Meditation</h1>
+        <h1>Positive Mind Meditation</h1>
       </div>
       <div className="Hero-section">
         <p>
@@ -66,4 +67,4 @@ const DailyMeditation = () => {
   );
 };
 
-export default DailyMeditation;
+export default PositiveMeditation;

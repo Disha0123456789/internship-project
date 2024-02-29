@@ -1,37 +1,39 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
 import "./meditation.css";
-const DailyMeditation = () => {
+const BeginnerMeditation = () => {
   const name = [
-    "Powerful 6-phase Morning Meditation",
-    "Feel Amazing For The Day Ahead",
-    "Morning Meditation for Positive Energy",
+    "Day 1 - First Meditation ",
+    "Day 2 - Mindfulness Meditation",
+    "Day 3 - Vipassana ",
 
-    "Increase your Vibrational Frequency",
+    " Day 4 - Non-judgement",
 
-    "The Perfect Mindfulness Meditation",
+    " Day 5 - Mindful living",
 
-    "Morning Meditation for Health Wealth & Happiness",
+    "Day 6 - Science of meditation",
 
-    "A Powerful Morning Meditation to Start Your Day",
+    "Day 7 - The present moment",
 
-    "Productive Morning Guided Meditation",
+    "Day 8 - Negative emotions",
+    "Day 9 - Sounds",
+    "Day 10 - Conclusion",
   ];
   const links = [
-    "https://www.youtube.com/embed/DdUm9U9w9W0?si=8Ipu6Z7OsDT4_q-G",
-    "https://www.youtube.com/embed/IvLViZeC60c?si=j4uc97BbEQ7CFWWB",
-    "https://www.youtube.com/embed/mMw9Q8CIPuY?si=bpYp0yXFr_r8UtfE",
-    "https://www.youtube.com/embed/1gs6qOZxzy4?si=DTinOp2PX0mV0Pti",
-    "https://www.youtube.com/embed/LJQOoAw0BjY?si=U7njnh9Jz-CJUXj9",
-    "https://www.youtube.com/embed/42uKBAHQMMo?si=0Klp2OcbK2cEfsX4",
-    "https://www.youtube.com/embed/pZ410ATHqG4?si=Mgm1_QLL3JF1gtBH",
-    "https://www.youtube.com/embed/442wt8KJeNs?si=ww-Rlr5iH5k4TVwm",
+    "https://www.youtube.com/embed/moag-iZ8XRA?si=yi-cqnv9WBGQXIvw",
+    "https://www.youtube.com/embed/_0xVd2KfRak?si=hguvnQPfB5C-9pDe",
+    "https://www.youtube.com/embed/6m-_esNwnnk?si=0IpQMwwBmU6JW_yN",
+    "https://www.youtube.com/embed/0DwV711ULvo?si=Z4UT6Z6KQoTb7XkB",
+    "https://www.youtube.com/embed/s8QhA0wAnIk?si=GRwXatkGJhkr9A7G",
+    "https://www.youtube.com/embed/mjG6Jytto6o?si=xeaUyv_-k4mX6lnF",
+    "https://www.youtube.com/embed/OBysZAgthoI?si=bLi7UusVWEP-CsP2",
+    "https://www.youtube.com/embed/zHBnEWJAAOc?si=OzB6qD8zRaF8ANzF",
+    "https://www.youtube.com/embed/nqGe4wq5y6s?si=Orfg_6PsXYhW4tBi",
+    "https://www.youtube.com/embed/6L3UcW1rtSQ?si=WFICbOtd5KoQhl0P",
   ];
-
   return (
     <div className="Main-page">
       <div className="Meditation-text">
-        <h1>Daily Meditation</h1>
+        <h1>Meditation for Beginners</h1>
       </div>
       <div className="Hero-section">
         <p>
@@ -66,4 +68,4 @@ const DailyMeditation = () => {
   );
 };
 
-export default DailyMeditation;
+export default BeginnerMeditation;
