@@ -5,22 +5,8 @@ import "./style.css";
 
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
-import tarot from "../../../public/ICONS/tarot.png";
-import angel from "../../../public/ICONS/angel.png";
-import ketinaLove from "../../../public/ICONS/ketinalove.png";
-import face from "../../../public/ICONS/face.png";
-import palm from "../../../public/ICONS/palm.png";
-import finger from "../../../public/ICONS/finger.png";
-import timeTravel from "../../../public/ICONS/timetravel.png";
-import astrology from "../../../public/ICONS/astrology.png";
-import biorythm from "../../../public/ICONS/biorythm.png";
-import dreamInterpretation from "../../../public/ICONS/dreaminterpretation.png";
-import crystalBall from "../../../public/ICONS/crystalball.png";
-import numerology from "../../../public/ICONS/numerology.png";
-import meditation from "../../../public/ICONS/meditation.png";
-import emotionalSupport from "../../../public/ICONS/emotionalsupport.png";
-import getyoursolution from "../../../public/ICONS/getyoursolution.png";
-import divineLogo from "../../../public/ICONS/divinelogohorizontal.png";
+
+
 
 function FutureBoxes() {
   const navigate = useNavigate();
@@ -34,9 +20,10 @@ function FutureBoxes() {
           rel="stylesheet"
         />
       </Helmet>
-      <Container className="container d-flex flex-column justify-content-center align-items-center">
+      <Container className="container mt-8 d-flex flex-column justify-content-center align-items-center">
         <div className="section mb-4 w-100">
           <h2
+          className="mb-8"
             style={{
               fontFamily: "Baloo Bhai 2",
               fontWeight: 700,
@@ -48,7 +35,7 @@ function FutureBoxes() {
           <Row className="row-cols-1 row-cols-md-3 g-4">
             <Col>
               <div className="box">
-                <img src={tarot} alt="Tarot Reading" className="img-fluid" />
+                <img src="/ICONS/tarot.png" alt="Tarot Reading" className="img-fluid" />
                 <h3
                   className="mt-3"
                   style={{ fontFamily: "Inter", fontWeight: "Bold" }}
@@ -64,7 +51,7 @@ function FutureBoxes() {
             </Col>
             <Col>
               <div className="box">
-                <img src={angel} alt="Angel Reader" className="img-fluid" />
+                <img src="ICONS/angel.png" alt="Angel Reader" className="img-fluid" />
                 <h3
                   className="mt-3"
                   style={{ fontFamily: "Inter", fontWeight: "Bold" }}
@@ -76,7 +63,7 @@ function FutureBoxes() {
             <Col>
               <div className="box">
                 <img
-                  src={ketinaLove}
+                  src="/ICONS/ketinalove.png"
                   alt="Katina Love Reading"
                   className="img-fluid"
                 />
@@ -90,15 +77,26 @@ function FutureBoxes() {
             </Col>
             <Col>
               <div className="box">
+
                 <>
                   <Link to={"/Facecard "}>
                     {" "}
                     <img src={face} className="Icon-img-top" alt="..." />
+
+                <li>
+                  <Link to="/Facecard">
+                    {" "}
+                    <img src="/ICONS/face.png" className="Icon-img-top" alt="..." />
+
                     <div className="card-body">
                       <h5 className="Icon-title"></h5>
                     </div>
                   </Link>
+
                 </>
+
+                </li>
+
 
                 <h3
                   className="mt-3"
@@ -110,12 +108,16 @@ function FutureBoxes() {
             </Col>
             <Col>
               <div className="box">
+
                 <>
                   <Link to={"/Palmreader"}>
                     {""}
                     <img src={palm} alt="Palm Reader" className="img-fluid" />
                   </Link>
                 </>
+
+
+                <img src="/ICONS/palm.png" alt="Palm Reader" className="img-fluid" />
 
                 <h3
                   className="mt-3"
@@ -127,7 +129,7 @@ function FutureBoxes() {
             </Col>
             <Col>
               <div className="box">
-                <img src={finger} alt="Finger Reader" className="img-fluid" />
+                <img src="/ICONS/finger.png" alt="Finger Reader" className="img-fluid" />
                 <h3
                   className="mt-3"
                   style={{ fontFamily: "Inter", fontWeight: "Bold" }}
@@ -139,11 +141,11 @@ function FutureBoxes() {
           </Row>
         </div>
         <div className="section mb-4 w-100">
-          <h2>Embark on your Journey</h2>
+          <h2 className="mb-8">Embark on your Journey</h2>
           <Row className="row-cols-1 row-cols-md-3 g-4">
             <Col>
               <div className="box">
-                <img src={timeTravel} alt="Time Travel" className="img-fluid" />
+                <img src="/ICONS/timetravel.png" alt="Time Travel" className="img-fluid" />
                 <h3
                   className="mt-3"
                   style={{ fontFamily: "Inter", fontWeight: "Bold" }}
@@ -154,7 +156,7 @@ function FutureBoxes() {
             </Col>
             <Col>
               <div className="box">
-                <img src={astrology} alt="Astrology" className="img-fluid" />
+                <img src="/ICONS/astrology.png" alt="Astrology" className="img-fluid" />
                 <h3
                   className="mt-3"
                   style={{ fontFamily: "Inter", fontWeight: "Bold" }}
@@ -165,7 +167,7 @@ function FutureBoxes() {
             </Col>
             <Col>
               <div className="box">
-                <img src={biorythm} alt="Biorythm" className="img-fluid" />
+                <img src="/ICONS/biorythm.png" alt="Biorythm" className="img-fluid" />
                 <h3
                   className="mt-3"
                   style={{ fontFamily: "Inter", fontWeight: "Bold" }}
@@ -177,12 +179,12 @@ function FutureBoxes() {
           </Row>
         </div>
         <div className="section mb-4 w-100">
-          <h2>Lets take you to the another Dimension</h2>
+          <h2 className="mb-8 mt-2">Lets take you to the another Dimension</h2>
           <Row className="row-cols-1 row-cols-md-3 g-4">
             <Col>
               <div className="box">
                 <img
-                  src={dreamInterpretation}
+                  src="/ICONS/dreaminterpretation.png"
                   alt="Dream Interpretation"
                   className="img-fluid"
                 />
@@ -197,7 +199,7 @@ function FutureBoxes() {
             <Col>
               <div className="box">
                 <img
-                  src={crystalBall}
+                  src="/ICONS/crystalball.png"
                   alt="Crystal Ball"
                   className="img-fluid"
                 />
@@ -211,7 +213,7 @@ function FutureBoxes() {
             </Col>
             <Col>
               <div className="box">
-                <img src={numerology} alt="Numerology" className="img-fluid" />
+                <img src="/ICONS/numerology.png" alt="Numerology" className="img-fluid" />
                 <h3
                   className="mt-3"
                   style={{ fontFamily: "Inter", fontWeight: "Bold" }}
@@ -223,11 +225,11 @@ function FutureBoxes() {
           </Row>
         </div>
         <div className="section mb-4 w-100">
-          <h2>Nourish Your soul</h2>
+          <h2 className="mb-8 mt-2">Nourish Your soul</h2>
           <Row className="row-cols-1 row-cols-md-3 g-4">
             <Col>
               <div onClick={() => navigate("/Meditation")} className="box">
-                <img src={meditation} alt="Meditation" className="img-fluid" />
+                <img src="/ICONS/meditation.png" alt="Meditation" className="img-fluid" />
                 <h3
                   className="mt-3"
                   style={{ fontFamily: "Inter", fontWeight: "Bold" }}
@@ -239,7 +241,7 @@ function FutureBoxes() {
             <Col>
               <div className="box">
                 <img
-                  src={emotionalSupport}
+                  src="/ICONS/emotionalsupport.png"
                   alt="Emotional Support"
                   className="img-fluid"
                 />
@@ -254,7 +256,7 @@ function FutureBoxes() {
             <Col>
               <div className="box">
                 <img
-                  src={getyoursolution}
+                  src="/ICONS/getyoursolution.png"
                   alt="Get Your Solutions"
                   className="img-fluid"
                 />
@@ -267,8 +269,8 @@ function FutureBoxes() {
               </div>
             </Col>
           </Row>
-          <Row className="row-cols-1 row-cols-3 g-4 justify-content-center">
-            <img src={divineLogo} alt="Divine Logo" />
+          <Row className="row-cols-1 row-cols-3 mt-8 g-4 justify-content-center">
+            <img src="/ICONS/divinelogohorizontal.png" alt="Divine Logo" />
           </Row>
         </div>
       </Container>
