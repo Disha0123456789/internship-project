@@ -65,20 +65,248 @@ h3 {
     width: calc(100% - 20px);
   }
 }
+
+button:hover{
+  background-color: rgb(255, 0, 93);
+}
+input:hover{
+  background-color: rgb(255, 0, 93);
+}
+
+.img-icon{
+  width: 250px;
+  height: 230px;
+  margin-left: 140px;
+}
+.img-icon-1{
+  height: 230px;
+}
+.choose-file{
+  height: 200px;
+  margin-top: -200px;
+  margin-left: 880px;
+}
+.two-face{
+  width: 930px;
+  border: solid #D9D9D9;
+  background-color: #D9D9D9;
+  margin-left: 180PX;
+  margin-right: 80px;
+  border-radius: 1rem;
+}
+.face-reader{
+  background-color: #FDF2F8;
+  width: 1400px;
+  height: 720px;
+}
+.img-display-after{
+ background-color:  #FDF2F8;
+ width: 300px;
+ height: 250px;
+ margin-left: 140px;
+ border-radius: 1rem;
+object-fit: contain;
+}
+.card-mt-3 {
+  
+background-color: #D9D9D9;
+display: flex;
+border-radius: 1rem;
+margin-left: 80px;
+margin-top: 55px;
+
+}
+.scan-btn{
+  background-color: pink;
+  width: 140px;
+  justify-content: center;
+  margin-left: 900px;
+ margin-top: -300px;
+}  
+.time{
+  width: 440px;
+  height: 200px;
+  border: solid#dbcf9e;
+  margin-top: 80px;
+  border-radius: 1rem;
+  margin-left: 75px;
+  object-fit: contain;
+}
+div.time:hover{
+  background-color: aquamarine;
+}
+.time-past{
+  display: flex;
+  margin-left: 80px;
+}
+.time-magic{
+
 .btn{
   margin-left: 5px;
   display: contents;
 
 
 
+  font-weight: bold;
+  padding: 15px;
+  margin: 10px;
 }
-.card-title{
-  margin-top: 0px;
-  margin-left: -155px;
+.ancestors-from{
+  height: 190px;
+  padding: 125px;
+  padding-top: 8px;
+  padding-bottom: 20px;
+  background-color: grey;
+  object-fit: contain;
+
 }
-.card-img-top{
-  margin-top: 25px;
-  margin-left: 25px;
-  width: 150px;
-  height: 150px;
+.magic-icon{
+  height: 190px;
+  padding: 125px;
+  padding-top: 8px;
+  padding-bottom: 20px;
+  background-color: grey;
+  object-fit: contain; 
 }
+.face-text{
+  margin-left: 520px;
+  font-size: 30px;
+  padding: 10px;
+  color: #672F98;
+}
+.magic-text{
+  background-color: white;
+  font-size: 25px;
+}
+.ancestors-text{
+  background-color: white;
+  font-size: 25px;
+  margin-top: 5px;
+}
+.face-text-result{
+  padding: 30px;
+  font-size: 25px;
+  margin-left: 575px;
+  color: #672F98;
+}
+.face-result-whole{
+  width: 1400px;
+  height: 2000px;
+  background-color: #FDF2F8;
+}
+.Personal-Traits{
+  width: 700px;
+  height: 400px;
+  margin-top: 40px;
+  margin-left: 350px;
+  background-color: white;
+  border-radius: 1rem;
+}
+.Life-Path{
+  width: 700px;
+  height: 400px;
+  margin-top: 40px;
+  margin-left: 350px;
+  background-color: white;
+  border-radius: 1rem;
+}
+.Relationship{
+  width: 700px;
+  height: 400px;
+  margin-top: 40px;
+  margin-left: 350px;
+  background-color: white;
+  border-radius: 1rem;
+}
+.Growth{
+  width: 700px;
+  height: 400px;
+  margin-top: 40px;
+  margin-left: 350px;
+  background-color: white;
+  border-radius: 1rem;;
+}
+.personal-trait-text{
+  font-size: 30px;
+  margin-left: 250px;
+}
+.personal-trait-icon{
+  width: 60px;
+  height: 50px;
+  margin-left: 310px;
+  margin-top: 10px;
+  object-fit: contain;
+}
+.hr-tag{
+  margin-top: 20px;
+}
+.Life-path-text{
+  font-size: 30px;
+  margin-left: 200px;
+}
+.Life-path-icon{
+  width: 70px;
+  height: 60px;
+  margin-left: 310px;
+  margin-top: 10px;
+  object-fit: contain;
+}
+.hr-tag{
+  margin-top: 20px;
+}
+.Relationship-text{
+  font-size: 30px;
+  margin-left: 200px;
+}
+.Relationship-icon{
+  width: 70px;
+  height: 60px;
+  margin-left: 310px;
+  margin-top: 10px;
+  object-fit: contain;
+}
+.hr-tag{
+  margin-top: 20px;
+}
+.Growth-text{
+  font-size: 30px;
+  margin-left: 200px;
+}
+.Growth-icon{
+  width: 70px;
+  height: 60px;
+  margin-left: 310px;
+  margin-top: 10px;
+  object-fit: contain;
+}
+.Time-magic-pic{
+  width: 500px;
+  height: 300px;
+  margin-top: 40px;
+  margin-left: 370px;
+  background-color: white;
+  border-radius: 1rem;
+
+}
+.Know-past{
+  width: 900px;
+  height: 1000px;
+  margin-top: 40px;
+  margin-left: 280px;
+  background-color: white;
+  border-radius: 1rem; 
+}
+.choose-file-palm{
+  margin-left: 500px;
+  margin-top: 50px; 
+}
+.scan-btn-palm{
+  background-color: pink;
+  width: 140px;
+  margin-left: 900px;
+
+
+}
+
+
+

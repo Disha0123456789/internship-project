@@ -8,6 +8,12 @@ import DailyMeditation from "./components/meditation/DailyMeditation";
 
 import Home from "./Page/Home/Home";
 import Facecard from "./assets/Boxes/Facecard";
+
+import Faceresult from "./assets/Boxes/Facecard/Faceresult";
+import Timemagicresult from "./assets/Boxes/Facecard/Timemagicresult";
+import Ancestors from "./assets/Boxes/Facecard/Ancestors";
+import Palmreader from "./assets/Boxes/Facecard/Palmreader";
+
 import ChakraMeditation from "./components/meditation/ChakraMeditation";
 import SleepMeditation from "./components/meditation/SleepMeditation";
 import FiveMinMeditation from "./components/meditation/FiveMinMeditation";
@@ -16,13 +22,22 @@ import PositiveMeditation from "./components/meditation/PositiveMeditation";
 import BeginnerMeditation from "./components/meditation/BeginnerMeditation";
 import MentalHealthMeditation from "./components/meditation/MentalHealthMeditation";
 import EpicPowerMeditation from "./components/meditation/EpicPowerMeditation";
+
 function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/tarot_reading" element={<TarotReading />} />
+        <Route path="/Faceresult" element={<Faceresult />} />
         <Route path="/Meditation" element={<Meditation />} />
+
+        <Route path="/Facecard" element={<Facecard />} />
+        <Route path="/Timemagicresult" element={<Timemagicresult />} />
+        <Route path="/Ancestors" element={<Ancestors />} />
+
+        <Route path="/Palmreader" element={<Palmreader />} />
+
         <Route path="/DailyMeditation" element={<DailyMeditation />} />
         <Route path="/ChakraMeditation" element={<ChakraMeditation />} />
         <Route path="/SleepMeditation" element={<SleepMeditation />} />
@@ -40,6 +55,7 @@ function App() {
         <Route path="/EpicPowerMeditation" element={<EpicPowerMeditation />} />
 
         <Route path="/Facecard" element={<Facecard />} />
+
       </Routes>
     </BrowserRouter>
   );
