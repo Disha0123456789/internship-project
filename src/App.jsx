@@ -22,6 +22,7 @@ import PositiveMeditation from "./components/meditation/PositiveMeditation";
 import BeginnerMeditation from "./components/meditation/BeginnerMeditation";
 import MentalHealthMeditation from "./components/meditation/MentalHealthMeditation";
 import EpicPowerMeditation from "./components/meditation/EpicPowerMeditation";
+import EmotionalSupport from "./Page/Support/EmotionalSupport";
 
 function App() {
   return (
@@ -53,9 +54,9 @@ function App() {
           element={<MentalHealthMeditation />}
         />
         <Route path="/EpicPowerMeditation" element={<EpicPowerMeditation />} />
+        <Route path="/EmotionalSupport" element={<EmotionalSupport />} />
 
         <Route path="/Facecard" element={<Facecard />} />
-
       </Routes>
     </BrowserRouter>
   );

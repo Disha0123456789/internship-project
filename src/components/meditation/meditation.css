@@ -120,7 +120,8 @@
     transition: all 0.5s ease-in-out;
 }
 .Card h1{
-    font-size: clamp(1.5rem, 1.8vw, 2rem);
+    font-size: clamp(1.8rem, 1.6vw, 2.2rem);
+    text-align: center;
 }
 
 .Card iframe{
@@ -155,6 +156,7 @@
     }
     
     .Card{
+        height: 75vw;
         width: 80vw;
     }
     .Card iframe{
