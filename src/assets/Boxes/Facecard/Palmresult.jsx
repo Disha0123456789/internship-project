@@ -32,7 +32,7 @@ function Palmresult() {
         <p className="Growth-text">Growth and Development</p>
         <img
           className="Growth-icon"
-          src="public\2nd-row-reading\growth and development.png"
+          src="public\2nd-row-reading\growth-and-development.png"
         ></img>
         <hr className="hr-tag"></hr>
       </div>
