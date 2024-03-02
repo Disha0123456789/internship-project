@@ -23,7 +23,7 @@ function Faceread() {
             style={{ width: "18rem", maxHeight: "360px" }}
           >
             <img
-              src=".\2nd row reading\facial-recognition.png"
+              src=".\2nd-row-reading\facial-recognition.png"
               alt=""
               className="img-icon-1"
             />{" "}
@@ -35,7 +35,7 @@ function Faceread() {
               />
             ) : (
               <img
-                src=".\2nd row reading\face profile.png"
+                src=".\2nd-row-reading\face-profile.png"
                 alt=""
                 className="img-icon"
               />
@@ -54,7 +54,7 @@ function Faceread() {
         <div className="time">
           <img
             className="magic-icon"
-            src=".\2nd row reading\time magic.png"
+            src=".\2nd-row-reading\time magic.png"
             onClick={() => navigate("/Timemagicresult")}
           ></img>
           <span
@@ -67,7 +67,7 @@ function Faceread() {
         <div className="time">
           <img
             className="ancestors-from"
-            src="public\2nd row reading\know your past.png"
+            src="public\2nd-row-reading\know your past.png"
             onClick={() => navigate("/Ancestors")}
           ></img>
           <span className="time-magic" onClick={() => navigate("/Ancestors")}>

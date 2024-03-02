@@ -25,7 +25,7 @@ function Palmreader() {
             >
               <img src="" alt="" className="img-icon-1" />
               <img
-                src="public\2nd row reading\palm-scanner.png"
+                src="public\2nd-row-reading\palm-scanner.png"
                 alt=""
                 className="img-icon"
               />{" "}
@@ -37,7 +37,7 @@ function Palmreader() {
                 />
               ) : (
                 <img
-                  src="public\2nd row reading\plain hand.png"
+                  src="public\2nd-row-reading\plain hand.png"
                   alt=""
                   className="img-icon"
                 />
@@ -48,7 +48,7 @@ function Palmreader() {
           <div className="choose-file-palm">
             <input
               type="file"
-              src="public\2nd row reading\upload.png"
+              src="public\2nd-row-reading\upload.png"
               ref={inputRef}
               onChange={handleImagechange}
             />

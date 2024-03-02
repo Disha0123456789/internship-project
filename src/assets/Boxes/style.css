@@ -270,3 +270,107 @@ div.time:hover {
   width: 140px;
   margin-left: 900px;
 }
+
+.choose-file-finger {
+  margin-left: 500px;
+  margin-top: 50px;
+}
+
+.scan-btn-finger {
+  background-color: pink;
+  width: 140px;
+  margin-left: 900px;
+}
+
+.finger-reader {
+  margin-top: 5rem;
+  text-align: center;
+  padding: 0 2rem;
+}
+
+.finger-text {
+  color: #fff;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+.palm-container {
+  position: relative;
+  width: 28rem;
+  height: 36rem;
+  margin: auto;
+}
+
+.palm-card {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.palm-card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.img-icon-1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 12rem;
+  height: 12rem;
+  opacity: 0;
+}
+
+.img-icon {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 1rem;
+  z-index: -1;
+}
+
+.img-display-after {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 1rem;
+  z-index:-1;
+}
+
+.choose-file-finger {
+  display: none;
+}
+
+.scan-btn-finger {
+  margin-top: 3rem;
+  padding: 1rem 2rem;
+  background-color: #fff;
+  position: relative;
+  border: none;
+  border-radius: 1rem;
+  color: #000;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.scan-btn-finger:hover {
+  background-color: #000;
+  color: #fff;
+}

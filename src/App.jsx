@@ -13,6 +13,7 @@ import Faceresult from "./assets/Boxes/Facecard/Faceresult";
 import Timemagicresult from "./assets/Boxes/Facecard/Timemagicresult";
 import Ancestors from "./assets/Boxes/Facecard/Ancestors";
 import Palmreader from "./assets/Boxes/Facecard/Palmreader";
+import FingerReading from "./assets/Boxes/Facecard/FingerReading";
 
 import ChakraMeditation from "./components/meditation/ChakraMeditation";
 import SleepMeditation from "./components/meditation/SleepMeditation";
@@ -37,6 +38,7 @@ function App() {
         <Route path="/Ancestors" element={<Ancestors />} />
 
         <Route path="/Palmreader" element={<Palmreader />} />
+        <Route path="/FingerReading" elemnt={<FingerReading />} />
 
         <Route path="/DailyMeditation" element={<DailyMeditation />} />
         <Route path="/ChakraMeditation" element={<ChakraMeditation />} />

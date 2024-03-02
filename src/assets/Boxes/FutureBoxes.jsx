@@ -102,7 +102,9 @@ function FutureBoxes() {
             </Col>
             <Col>
               <div className="box">
-                <img src="/ICONS/finger.png" alt="Finger Reader" className="img-fluid" />
+                <Link to={"/FingerReading"}>
+                  <img src="/ICONS/finger.png" alt="Finger Reader" className="img-fluid" />
+                </Link>
                 <h3
                   className="mt-3"
                   style={{ fontFamily: "Inter", fontWeight: "bold" }}
