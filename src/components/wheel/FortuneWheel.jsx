@@ -1,4 +1,4 @@
-import WheelComponent from "react-wheel-of-prizes";
+// import WheelComponent from "react-wheel-of-prizes";
 // import "react-wheel-of-prizes/dist/index.css"
 // import "react-wheel-of-prizes/dist/index.css"
 
