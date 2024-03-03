@@ -8,7 +8,7 @@ function Faceresult() {
         <p className="personal-trait-text">Personal Traits</p>
         <img
           className="personal-trait-icon"
-          src="public\2nd row reading\personal traits.png"
+          src="public\2nd-row-reading\personal-traits.png"
         ></img>
         <hr className="hr-tag"></hr>
       </div>
@@ -16,7 +16,7 @@ function Faceresult() {
         <p className="Life-path-text">Life Path And Purpose</p>
         <img
           className="Life-path-icon"
-          src="public\2nd row reading\life path and purpose.png"
+          src="public\2nd-row-reading\life-path-and-purpose.png"
         ></img>
         <hr className="hr-tag"></hr>
       </div>
@@ -24,7 +24,7 @@ function Faceresult() {
         <p className="Relationship-text">Relationship Compatibility</p>
         <img
           className="Relationship-icon"
-          src="public\2nd row reading\relationship compatibility.png"
+          src="public\2nd-row-reading\relationship compatibility.png"
         ></img>
         <hr className="hr-tag"></hr>
       </div>
@@ -32,7 +32,7 @@ function Faceresult() {
         <p className="Growth-text">Growth and Development</p>
         <img
           className="Growth-icon"
-          src="public\2nd row reading\growth and development.png"
+          src="public\2nd-row-reading\growth-and-development.png"
         ></img>
         <hr className="hr-tag"></hr>
       </div>
