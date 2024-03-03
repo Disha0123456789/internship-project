@@ -1,20 +1,25 @@
 .Main-Page{
     min-height: 100vh;
     width: 100%;
-    background-color: #cd217f;
+    font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0;
    
     
 }
 
 .Meditation-text{
-    height: 10vh;
+    height: clamp(5vh, 10vh,12vh);
     border-bottom: 1px solid black;
     width: 100%;
 }
 .Meditation-text h1{
-    font-size: 3rem;
+    font-size: clamp(2.5rem, 5vw, 3rem);
     color: purple;
-    font-weight: 300;
+    font-weight:600;
    
     text-align: center;
     margin-top: 2rem;
@@ -45,16 +50,21 @@
     gap: 10px;
     text-align: center;
 }
+.Emotional-options{
+    margin: 20px 10px;
+    gap: 25px;
+
+}
 .circle{
     
     overflow: hidden;
     
     border: 2px solid black;
-    height:clamp(100px, 180px, 200px);
-    width: clamp(100px, 180px, 200px);
+    height:clamp(100px, 150px, 200px);
+    width: clamp(100px, 150px, 200px);
     
     border-radius: 50%;
-    background-color: blueviolet;
+    
 }
 .list-item{
     list-style: none;
@@ -68,7 +78,7 @@
     height: 100%;
     border-radius: 50%;
     width: 100%;
-    object-position: right;
+    object-position: center;
     object-fit: cover;
 }
 .Hero-section{
@@ -120,11 +130,12 @@
     transition: all 0.5s ease-in-out;
 }
 .Card h1{
-    font-size: clamp(1.2rem, 1.5vw, 2rem);
+    font-size: clamp(1.8rem, 1.6vw, 2.2rem);
+    text-align: center;
 }
 
 .Card iframe{
-    
+    height: clamp(10rem, 10vw, 12rem);
     border-radius: 5px;
     min-width: 200px;
     width: 20vw;
@@ -137,9 +148,7 @@
     
 }
 @media screen and (max-width: 468px){
-    .Meditation-text{
-        height: 20vh;
-    }
+    
     .Options{
         flex-direction: column;
         gap: 20px;
@@ -152,11 +161,12 @@
         font-size: 5.1vw;
     }
     .circle{
-        height: 50vw;
-        width: 50vw;
+        height: 30vw;
+        width: 30vw;
     }
     
     .Card{
+        height: 75vw;
         width: 80vw;
     }
     .Card iframe{

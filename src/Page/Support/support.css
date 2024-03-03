@@ -1,0 +1,151 @@
+.Emotional-options{
+    margin-top: 50px;
+}
+.Container{
+    background-color: rgba(229, 180, 221, 0.752);
+    width: clamp(30vw, 70vw, 80vw);
+    
+   
+    min-width: 20vw;
+    
+    
+    margin: auto;
+    border: 1px solid black;
+}
+
+.Container-heading{
+    
+    position: relative;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    
+}
+.Container-final{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.Container-heading h1{
+    font-size: clamp(2.2rem, 3vw, 3rem);
+    font-weight: 700;
+}
+.backicon{
+    cursor: pointer;
+    position: absolute;
+    left: 0;
+    font-size: clamp(1.8rem, 3vw, 3rem);
+}
+.content{
+  
+    display: flex;
+}
+.content-left{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 40%;
+    padding: 10px;
+
+}
+.content-left button{
+    color: white;
+}
+.content-left img{
+    width: 100%;
+    height: 60%;
+    border-radius: 20px;
+    object-fit: cover;
+}
+.content-right{
+    width: 60%;
+   text-align: center;
+}
+.content-right p{
+    width: 100%;
+    margin-top: clamp(10px, 1.5vw, 20px);
+    font-size: clamp(0.8rem, 1.2vw, 1.4rem);
+}
+.content-right h1{
+    font-size: clamp(2rem, 3vw, 3rem);
+    font-weight: 700;
+}
+.top{
+    gap: 20px;
+    width: 100%;
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.top h3{
+    font-size: clamp(1.2rem, 2vw, 2rem);
+}
+.top img{
+    height: 30%;
+    width: 20%;
+    object-fit: cover;
+
+}
+.mid{
+    width: 100%;
+    
+   padding:20px ;
+    
+    gap: 20px;
+    padding-bottom:20px ;
+    border-bottom: 1px solid black;
+    
+    
+   
+  
+}
+.mid li{
+    
+    margin: 20px ;
+    width: 100% ;
+    
+    
+  display: flex;
+  gap: 20px;
+    list-style: none;
+}
+.mid li p{
+    width: 100%;
+}
+.bottom{
+    padding: 20px;
+}
+.bottom button{
+    color: white;
+}
+
+@media screen and (max-width: 468px){
+    
+    .content{
+        flex-direction: column;
+        
+    }
+    .content-left{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .content-right{
+        width: 100%;
+    }
+    .Container-heading{
+        height: 8%;
+    }
+    .Container{
+        width: 70%;
+        height: 70%;
+    }
+    .top img{
+        height: 50%;
+        width: 50%;
+    }
+}

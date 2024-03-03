@@ -1,5 +1,5 @@
 body {
-  margin: 10px; 
+  margin: 10;
   width: 100%;
   height: 100%;
   display: flex;
@@ -30,10 +30,11 @@ body {
   display: inline-block;
   width: calc(50% - 25px);
   min-height: auto;
+  background: rgb(154,82,155);
   background: linear-gradient(93deg, rgba(154,82,155,1) 0%, rgba(88,121,227,1) 100%);
   border: 2px solid rgb(154,82,155);
   border-radius: 20%;
-  opacity: 1;
+  opacity: 100%;
   padding: 15px;
   margin: 10px;
   cursor: pointer;
@@ -50,7 +51,7 @@ body {
 }
 
 h3 {
-  font-weight: bold;
+  font-style: bold;
 }
 
 @media (max-width: 768px) {
@@ -65,135 +66,135 @@ h3 {
   }
 }
 
-button:hover,
-input:hover {
+button:hover{
+  background-color: rgb(255, 0, 93);
+}
+input:hover{
   background-color: rgb(255, 0, 93);
 }
 
-.img-icon {
+.img-icon{
   width: 250px;
   height: 230px;
   margin-left: 140px;
 }
-
-.img-icon-1 {
+.img-icon-1{
   height: 230px;
 }
-
-.choose-file {
+.choose-file{
   height: 200px;
   margin-top: -200px;
   margin-left: 880px;
 }
-
-.two-face {
+.two-face{
   width: 930px;
   border: solid #D9D9D9;
   background-color: #D9D9D9;
-  margin-left: 180px;
+  margin-left: 180PX;
   margin-right: 80px;
   border-radius: 1rem;
 }
-
-.face-reader {
+.face-reader{
   background-color: #FDF2F8;
   width: 1400px;
   height: 720px;
 }
-
-.img-display-after {
-  background-color: #FDF2F8;
-  width: 300px;
-  height: 250px;
-  margin-left: 140px;
-  border-radius: 1rem;
-  object-fit: contain;
+.img-display-after{
+ background-color:  #FDF2F8;
+ width: 300px;
+ height: 250px;
+ margin-left: 140px;
+ border-radius: 1rem;
+object-fit: contain;
 }
-
 .card-mt-3 {
-  background-color: #D9D9D9;
-  display: flex;
-  border-radius: 1rem;
-  margin-left: 80px;
-  margin-top: 55px;
-}
+  
+background-color: #D9D9D9;
+display: flex;
+border-radius: 1rem;
+margin-left: 80px;
+margin-top: 55px;
 
-.scan-btn {
+}
+.scan-btn{
   background-color: pink;
   width: 140px;
   justify-content: center;
   margin-left: 900px;
-  margin-top: -300px;
-}
-
-.time {
+ margin-top: -300px;
+}  
+.time{
   width: 440px;
   height: 200px;
-  border: solid #dbcf9e;
+  border: solid#dbcf9e;
   margin-top: 80px;
   border-radius: 1rem;
   margin-left: 75px;
   object-fit: contain;
 }
-
-div.time:hover {
+div.time:hover{
   background-color: aquamarine;
 }
-
-.time-past {
+.time-past{
   display: flex;
   margin-left: 80px;
 }
 
-.time-magic .btn {
+
+.btn{
   margin-left: 5px;
   display: contents;
+
+
+
   font-weight: bold;
   padding: 15px;
   margin: 10px;
 }
-
-.ancestors-from,
-.magic-icon {
+.ancestors-from{
   height: 190px;
   padding: 125px;
   padding-top: 8px;
   padding-bottom: 20px;
   background-color: grey;
   object-fit: contain;
-}
 
-.face-text {
+}
+.magic-icon{
+  height: 190px;
+  padding: 125px;
+  padding-top: 8px;
+  padding-bottom: 20px;
+  background-color: grey;
+  object-fit: contain; 
+}
+.face-text{
   margin-left: 520px;
   font-size: 30px;
   padding: 10px;
   color: #672F98;
 }
-
-.magic-text,
-.ancestors-text {
+.magic-text{
+  background-color: white;
+  font-size: 25px;
+}
+.ancestors-text{
   background-color: white;
   font-size: 25px;
   margin-top: 5px;
 }
-
-.face-text-result {
+.face-text-result{
   padding: 30px;
   font-size: 25px;
   margin-left: 575px;
   color: #672F98;
 }
-
-.face-result-whole {
+.face-result-whole{
   width: 1400px;
   height: 2000px;
   background-color: #FDF2F8;
 }
-
-.Personal-Traits,
-.Life-Path,
-.Relationship,
-.Growth {
+.Personal-Traits{
   width: 700px;
   height: 400px;
   margin-top: 40px;
@@ -201,72 +202,125 @@ div.time:hover {
   background-color: white;
   border-radius: 1rem;
 }
-
-.personal-trait-text,
-.Life-path-text,
-.Relationship-text,
-.Growth-text {
-  font-size: 30px;
-  margin-left: 200px;
+.Life-Path{
+  width: 700px;
+  height: 400px;
+  margin-top: 40px;
+  margin-left: 350px;
+  background-color: white;
+  border-radius: 1rem;
 }
-
-.personal-trait-icon,
-.Life-path-icon,
-.Relationship-icon,
-.Growth-icon {
+.Relationship{
+  width: 700px;
+  height: 400px;
+  margin-top: 40px;
+  margin-left: 350px;
+  background-color: white;
+  border-radius: 1rem;
+}
+.Growth{
+  width: 700px;
+  height: 400px;
+  margin-top: 40px;
+  margin-left: 350px;
+  background-color: white;
+  border-radius: 1rem;;
+}
+.personal-trait-text{
+  font-size: 30px;
+  margin-left: 250px;
+}
+.personal-trait-icon{
   width: 60px;
   height: 50px;
   margin-left: 310px;
   margin-top: 10px;
   object-fit: contain;
 }
-
-.hr-tag {
+.hr-tag{
   margin-top: 20px;
 }
-
-.Life-path-text,
-.Relationship-text,
-.Growth-text {
+.Life-path-text{
   font-size: 30px;
   margin-left: 200px;
 }
-
-.Life-path-icon,
-.Relationship-icon,
-.Growth-icon {
+.Life-path-icon{
   width: 70px;
   height: 60px;
   margin-left: 310px;
   margin-top: 10px;
   object-fit: contain;
 }
-
-.Time-magic-pic {
+.hr-tag{
+  margin-top: 20px;
+}
+.Relationship-text{
+  font-size: 30px;
+  margin-left: 200px;
+}
+.Relationship-icon{
+  width: 70px;
+  height: 60px;
+  margin-left: 310px;
+  margin-top: 10px;
+  object-fit: contain;
+}
+.hr-tag{
+  margin-top: 20px;
+}
+.Growth-text{
+  font-size: 30px;
+  margin-left: 200px;
+}
+.Growth-icon{
+  width: 70px;
+  height: 60px;
+  margin-left: 310px;
+  margin-top: 10px;
+  object-fit: contain;
+}
+.Time-magic-pic{
   width: 500px;
   height: 300px;
   margin-top: 40px;
   margin-left: 370px;
   background-color: white;
   border-radius: 1rem;
-}
 
-.Know-past {
+}
+.Know-past{
   width: 900px;
   height: 1000px;
   margin-top: 40px;
   margin-left: 280px;
   background-color: white;
-  border-radius: 1rem;
+  border-radius: 1rem; 
+}
+.choose-file-palm{
+  margin-left: 500px;
+  margin-top: 50px; 
+}
+.scan-btn-palm{
+  background-color: pink;
+  width: 140px;
+  margin-left: 900px;
+
+
 }
 
-.choose-file-palm {
+
+
+
+
+
+.choose-file-finger {
   margin-left: 500px;
   margin-top: 50px;
 }
 
-.scan-btn-palm {
+.scan-btn-finger {
   background-color: pink;
   width: 140px;
   margin-left: 900px;
 }
+
