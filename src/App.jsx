@@ -5,7 +5,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import TarotReading from "./Page/TarotReading/TarotReading";
 import Meditation from "./components/meditation/Meditation";
 import DailyMeditation from "./components/meditation/DailyMeditation";
-
+import Anxiety from "./Page/Support/Anxiety";
 import Home from "./Page/Home/Home";
 import Facecard from "./assets/Boxes/Facecard";
 
@@ -23,6 +23,18 @@ import BeginnerMeditation from "./components/meditation/BeginnerMeditation";
 import MentalHealthMeditation from "./components/meditation/MentalHealthMeditation";
 import EpicPowerMeditation from "./components/meditation/EpicPowerMeditation";
 import EmotionalSupport from "./Page/Support/EmotionalSupport";
+import Overthinking from "./Page/Support/Overthinking";
+import Loneliness from "./Page/Support/Loneliness";
+import SexualWellness from "./Page/Support/SexualWellness";
+import Family from "./Page/Support/Family";
+import Depression from "./Page/Support/Depression";
+import Sleep from "./Page/Support/Sleep";
+import StressManagement from "./Page/Support/StressManagement";
+import CareerCounseling from "./Page/Support/CareerCounseling";
+import WomenHealth from "./Page/Support/WomenHealth";
+import WorkLifeBalance from "./Page/Support/WorkLifeBalance";
+import Grief from "./Page/Support/Grief";
+import FinalPage from "./Page/Support/FinalPage";
 
 function App() {
   return (
@@ -43,7 +55,9 @@ function App() {
         <Route path="/ChakraMeditation" element={<ChakraMeditation />} />
         <Route path="/SleepMeditation" element={<SleepMeditation />} />
         <Route path="/5MinsMeditation" element={<FiveMinMeditation />} />
-        <Route path="/MindfullnessMeditation" element={<Mindfulness />} />
+
+        <Route path="/Anxiety" element={<Anxiety />} />
+
         <Route
           path="/PositiveMindMeditation"
           element={<PositiveMeditation />}
@@ -55,6 +69,18 @@ function App() {
         />
         <Route path="/EpicPowerMeditation" element={<EpicPowerMeditation />} />
         <Route path="/EmotionalSupport" element={<EmotionalSupport />} />
+        <Route path="/Overthinking" element={<Overthinking />} />
+        <Route path="/Loneliness" element={<Loneliness />} />
+        <Route path="/SexualWellness" element={<SexualWellness />} />
+        <Route path="/Family" element={<Family />} />
+        <Route path="/Depression" element={<Depression />} />
+        <Route path="/Sleep" element={<Sleep />} />
+        <Route path="/StressManagement" element={<StressManagement />} />
+        <Route path="/CareerCounseling" element={<CareerCounseling />} />
+        <Route path="/Grief" element={<Grief />} />
+        <Route path="/Done" element={<FinalPage />} />
+        <Route path="/WorkLifeBalance" element={<WorkLifeBalance />} />
+        <Route path="/WomenHealth" element={<WomenHealth />} />
 
         <Route path="/Facecard" element={<Facecard />} />
       </Routes>

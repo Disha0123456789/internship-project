@@ -254,7 +254,10 @@ function FutureBoxes() {
               </div>
             </Col>
             <Col>
-              <div className="box">
+              <div
+                onClick={() => navigate("/EmotionalSupport")}
+                className="box"
+              >
                 <img
                   src="/ICONS/emotionalsupport.png"
                   alt="Emotional Support"
