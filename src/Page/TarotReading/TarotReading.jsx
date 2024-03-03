@@ -1,9 +1,8 @@
-import { useState } from "react";
-import img from "../../../public/ICONS/biorythm.png";
+import { useState } from "react"
 
 // eslint-disable-next-line react/prop-types
 const TarotBox = ({ title, content }) => {
-  const [isHovered, setIsHovered] = useState(false);
+  const [isHovered, setIsHovered] = useState(false)
 
   return (
     <div
@@ -15,7 +14,7 @@ const TarotBox = ({ title, content }) => {
     >
       {isHovered && (
         <img
-          src={img}
+          src="/ICONS/biorythm.png"
           alt="Hovered Image"
           className="absolute transform transition-transform duration-500 ease-in-out inset-0 w-full h-full object-cover rounded-3xl"
         />
@@ -27,33 +26,29 @@ const TarotBox = ({ title, content }) => {
       <div></div>
       <div className=" w-full h-full">
         <img
-          src="../../../public/images/vector.svg"
+          src="/images/vector.svg"
           className=" absolute left-[30.519px] bottom-[14.369px]"
           alt="...."
         />
         <img
-          src="../../../public/images/vector2.svg"
+          src="/images/vector2.svg"
           className=" absolute left-[23.438px] bottom-[12.672px]"
           alt="...."
         />
 
-        <h1 className=" text-xl absolute left-[55px] bottom-[8px] font-[30px] text-white ">
-          10
-        </h1>
+        <h1 className=" text-xl absolute left-[55px] bottom-[8px] font-[30px] text-white ">10</h1>
 
         <img
-          src="../../../public/images/vector3.svg"
+          src="/images/vector3.svg"
           alt="....."
           className=" absolute left-[86px] bottom-[14.699px]"
         />
 
-        <h1 className=" text-xl absolute left-[120px] bottom-[8px] font-[30px] text-white ">
-          10
-        </h1>
+        <h1 className=" text-xl absolute left-[120px] bottom-[8px] font-[30px] text-white ">10</h1>
       </div>
     </div>
-  );
-};
+  )
+}
 
 const TarotReading = () => {
   return (
@@ -89,7 +84,7 @@ const TarotReading = () => {
       </div>
       <div className="flex-grow w-screen h-screen flex items-center justify-center bg-green-200"></div>
     </div>
-  );
-};
+  )
+}
 
-export default TarotReading;
+export default TarotReading

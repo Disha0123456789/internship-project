@@ -8,7 +8,7 @@ function Ancestors() {
         <p className="personal-trait-text">Ancestral Roots</p>
         <img
           className="personal-trait-icon"
-          src="public\2nd-row-reading\where your ancestors come from.png"
+          src="public\2nd row reading\where your ancestors come from.png"
         ></img>
         <hr className="hr-tag"></hr>
       </div>

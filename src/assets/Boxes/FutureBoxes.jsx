@@ -21,6 +21,7 @@ function FutureBoxes() {
       </Helmet>
       <Container className="container mt-8 d-flex flex-column justify-content-center align-items-center">
         <div className="section mb-4 w-100">
+
           <h2
             className="mb-8"
             style={{
@@ -143,6 +144,7 @@ function FutureBoxes() {
           </Row>
         </div>
         <div className="section mb-4 w-100">
+
           <h2 className="mb-8">Embark on your Journey</h2>
           <Row className="row-cols-1 row-cols-md-3 g-4">
             <Col>
