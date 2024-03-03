@@ -51,7 +51,7 @@ function App() {
         <Route path="/Ancestors" element={<Ancestors />} />
 
         <Route path="/Palmreader" element={<Palmreader />} />
-        <Route path="/MindfullNess" element={<Mindfulness />} />
+        <Route path="/MindfullnessMeditation" element={<Mindfulness />} />
         <Route path="/DailyMeditation" element={<DailyMeditation />} />
         <Route path="/ChakraMeditation" element={<ChakraMeditation />} />
         <Route path="/SleepMeditation" element={<SleepMeditation />} />
