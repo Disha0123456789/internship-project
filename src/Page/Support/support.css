@@ -2,15 +2,15 @@
     margin-top: 50px;
 }
 .Container{
-    background-color: rgba(229, 180, 221, 0.752);
+    background-color: #FDF2F8;
     width: clamp(30vw, 70vw, 80vw);
     
    
     min-width: 20vw;
     
-    
+    box-shadow: 0px 5px 10px 0px rgb(125, 115, 115);
     margin: auto;
-    border: 1px solid black;
+    border-radius: 20px;
 }
 
 .Container-heading{
@@ -53,6 +53,14 @@
 .content-left button{
     color: white;
 }
+.content-left button:hover{
+    transition: all 0.2s ease-in-out;
+    overflow: hidden;
+    box-shadow: 0px 5px 10px 0px rgb(125, 115, 115);
+    border: 0;
+    color: black;
+    background-color: white;
+}
 .content-left img{
     width: 100%;
     height: 60%;
@@ -60,6 +68,8 @@
     object-fit: cover;
 }
 .content-right{
+    overflow-y: scroll;
+    height: 300px;
     width: 60%;
    text-align: center;
 }
@@ -121,9 +131,17 @@
     padding: 20px;
 }
 .bottom button{
+    
     color: white;
 }
-
+.bottom button:hover{
+    transition: all 0.2s ease-in-out;
+    overflow: hidden;
+    box-shadow: 0px 5px 10px 0px rgb(125, 115, 115);
+    border: 0;
+    color: black;
+    background-color: white;
+}
 @media screen and (max-width: 468px){
     
     .content{

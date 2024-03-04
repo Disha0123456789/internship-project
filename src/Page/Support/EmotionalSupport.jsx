@@ -3,17 +3,17 @@ import { useNavigate } from "react-router-dom";
 const EmotionalSupport = () => {
   const navigate = useNavigate();
   const options = [
-    "Overthinking",
-    "Anxiety",
+    "Anger Management",
+    "Obsession / OCD",
     "Loneliness",
     "Sexual Wellness",
 
-    "Family & Relationship",
+    "Relationship",
     "Depression",
     "Sleep",
     "Stress Management",
-    "Career Counselling",
-    "Women Health",
+    "Past Trauma",
+    "Self-Esteem issues",
     "Work Life Balance",
     "Grief/Loss",
   ];

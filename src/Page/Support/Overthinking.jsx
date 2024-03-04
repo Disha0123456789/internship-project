@@ -10,7 +10,7 @@ const Overthinking = () => {
     console.log("clicked");
     setOption(true);
   };
-  const head = "Overthinking";
+  const head = "Anger Management";
   const img =
     "https://images.pexels.com/photos/313690/pexels-photo-313690.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1";
   return (
@@ -21,7 +21,7 @@ const Overthinking = () => {
             onClick={() => navigate("/EmotionalSupport")}
             className="backicon"
           />
-          <h1>Overthinking</h1>
+          <h1>Anger Management</h1>
         </div>
         <div className="content">
           <div className="content-left">

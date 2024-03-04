@@ -3,7 +3,7 @@ import "./support.css";
 import { useNavigate } from "react-router-dom";
 import { IoIosArrowBack } from "react-icons/io";
 const Anxiety = () => {
-  const head = "Anxiety";
+  const head = "Obsession";
   const img =
     "https://images.pexels.com/photos/897817/pexels-photo-897817.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1";
   const navigate = useNavigate();
@@ -15,7 +15,7 @@ const Anxiety = () => {
             onClick={() => navigate("/EmotionalSupport")}
             className="backicon"
           />
-          <h1>Anxiety</h1>
+          <h1>Osession</h1>
         </div>
         <div className="content">
           <div className="content-left">
