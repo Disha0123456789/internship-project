@@ -2,7 +2,7 @@ import React from "react"
 
 const Hero = () => {
   return (
-    <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto mb-6">
+    <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-12 mx-auto mb-2">
       <div class="grid sm:grid-cols-2 lg:grid-cols-4 items-center gap-12">
         <div class="text-center bg-gradient-to-tr from-purple-300 to-blue-300 p-8 rounded-xl">
           <div class="flex justify-center items-center mx-auto dark:bg-gray-800 dark:border-gray-700">
