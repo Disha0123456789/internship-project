@@ -222,6 +222,19 @@ const NewFutureBox = () => {
             </div>
           </div>
 
+          <div class="h-36 sm:h-56 flex flex-col justify-center">
+              <img
+                src="/ICONS/divinelogohorizontal.png"
+                alt="14"
+              />
+
+            {/* <div class="mt-3">
+              <h3 class="text-md sm:text-lg font-semibold text-gray-800 dark:text-gray-200">
+                Meditation
+              </h3>
+            </div> */}
+          </div>
+
           <div class="h-36 sm:h-56 flex flex-col justify-center border bg-gradient-to-tr from-purple-300 to-blue-300 rounded-xl text-center p-4 md:p-5 dark:border-gray-700">
             <div class="flex justify-center items-center size-16 md:size-40 rounded-lg mx-auto">
               <img
@@ -236,27 +249,11 @@ const NewFutureBox = () => {
               </h3>
             </div>
           </div>
-
-          <div class="h-36 sm:h-56 flex flex-col justify-center border bg-gradient-to-tr from-purple-300 to-blue-300 rounded-xl text-center p-4 md:p-5 dark:border-gray-700">
-            <div class="flex justify-center items-center size-16 md:size-40 rounded-lg mx-auto">
-              <img
-                src="/ICONS/getyoursolution.png"
-                alt="16"
-              />
-            </div>
-
-            <div class="mt-3">
-              <h3 class="text-md sm:text-lg font-semibold text-gray-800 dark:text-gray-200">
-                Get Your Solution
-              </h3>
-            </div>
-          </div>
-
         </div>
 
-        <div className="w-full flex items-center justify-center mt-16">
+        {/* <div className="w-full flex items-center justify-center mt-16">
             <img src="/ICONS/divinelogohorizontal.png" alt="Divine Logo" className="w-[40%]" />
-          </div>
+          </div> */}
       </div>
     </>
   )
