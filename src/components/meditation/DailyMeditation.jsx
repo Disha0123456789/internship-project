@@ -35,10 +35,11 @@ const DailyMeditation = () => {
       </div>
       <div className="Hero-section">
         <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint placeat
-          a alias repellendus. Illo blanditiis dignissimos porro? Labore, fuga
-          nostrum. Sed itaque autem quis aspernatur eius aperiam architecto
-          animi saepe?
+          Daily meditation offers a sanctuary of stillness where the mind finds
+          solace and the soul discovers its whispers of wisdom, guiding us
+          through the labyrinth of existence with tranquility and clarity. In
+          the quietude of each breath, we awaken to the profound harmony within,
+          nurturing a journey of self-awareness and inner peace.
         </p>
         <div className="cards">
           {name.map((name, index) => {

@@ -68,7 +68,7 @@
     object-fit: cover;
 }
 .content-right{
-    overflow-y: scroll;
+  
     height: 300px;
     width: 60%;
    text-align: center;
@@ -143,7 +143,13 @@
     background-color: white;
 }
 @media screen and (max-width: 468px){
-    
+    .Container-heading h1{
+       text-align: center;
+       
+    }
+    .Container-heading{
+        margin: 10px;
+    }
     .content{
         flex-direction: column;
         

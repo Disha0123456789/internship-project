@@ -29,16 +29,17 @@ const Depression = () => {
           </div>
           <div className="content-right">
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt
-              facere atque temporibus? Ad, atque sapiente. Facilis assumenda,
-              veritatis, vel tempora inventore porro eius cumque libero, beatae
-              laboriosam quaerat. Quo officiis mollitia fugiat nemo amet,
-              reiciendis nobis quidem eveniet ut numquam consectetur ea?
-              Excepturi, mollitia aliquam. Neque obcaecati corrupti hic odit.
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam,
-              commodi. Mollitia quidem esse sit a commodi, inventore fugit,
-              accusamus quis tenetur, deleniti incidunt optio assumenda?
-              Incidunt enim nobis suscipit! Quibusdam!
+              At Divine Connection, we understand the weight of depression, and
+              we're here to walk with you through it. Our team of certified
+              online psychologists and counselors offers confidential therapy
+              sessions tailored specifically to address the multifaceted nature
+              of depression. Through compassionate guidance and evidence-based
+              techniques, we help you navigate the complexities of depression,
+              fostering resilience and empowering growth. Rest assured, our
+              secure online platform provides a safe haven for exploration and
+              healing, offering you the support and tools you need to rediscover
+              your sense of hope and vitality. With Divine Connection, brighter
+              days are within reach.
             </p>
           </div>
         </div>

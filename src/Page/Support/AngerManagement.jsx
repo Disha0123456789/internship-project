@@ -2,14 +2,10 @@ import React, { useState } from "react";
 import "./support.css";
 import { useNavigate } from "react-router-dom";
 import { IoIosArrowBack } from "react-icons/io";
-import Anxiety from "./Anxiety";
-const Overthinking = () => {
+
+const AngerManagement = () => {
   const navigate = useNavigate();
-  const [options, setOption] = useState(false);
-  const onButtonClicked = () => {
-    console.log("clicked");
-    setOption(true);
-  };
+
   const head = "Anger Management";
   const img =
     "https://images.pexels.com/photos/313690/pexels-photo-313690.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1";
@@ -35,16 +31,13 @@ const Overthinking = () => {
           </div>
           <div className="content-right">
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt
-              facere atque temporibus? Ad, atque sapiente. Facilis assumenda,
-              veritatis, vel tempora inventore porro eius cumque libero, beatae
-              laboriosam quaerat. Quo officiis mollitia fugiat nemo amet,
-              reiciendis nobis quidem eveniet ut numquam consectetur ea?
-              Excepturi, mollitia aliquam. Neque obcaecati corrupti hic odit.
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam,
-              commodi. Mollitia quidem esse sit a commodi, inventore fugit,
-              accusamus quis tenetur, deleniti incidunt optio assumenda?
-              Incidunt enim nobis suscipit! Quibusdam!
+              Explore transformative anger management techniques with expert
+              guidance from certified online psychologists and counselors at
+              Divine Connection. Our affordable and confidential therapy
+              sessions are designed to equip you with the tools needed to
+              effectively manage anger and restore emotional balance. Trust in
+              our secure online platform to safeguard your privacy as you embark
+              on a journey towards greater inner peace and well-being.
             </p>
           </div>
         </div>
@@ -54,4 +47,4 @@ const Overthinking = () => {
   );
 };
 
-export default Overthinking;
+export default AngerManagement;

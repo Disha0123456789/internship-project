@@ -35,10 +35,12 @@ const SleepMeditation = () => {
       </div>
       <div className="Hero-section">
         <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint placeat
-          a alias repellendus. Illo blanditiis dignissimos porro? Labore, fuga
-          nostrum. Sed itaque autem quis aspernatur eius aperiam architecto
-          animi saepe?
+          Embark on a tranquil journey as you surrender to the gentle whispers
+          of sleep meditation, guiding you to a realm of serenity where dreams
+          weave their enchanting tapestry amidst the symphony of peaceful
+          breaths. Let each inhale embrace tranquility and each exhale release
+          tension, as you effortlessly drift into the embrace of restorative
+          slumber
         </p>
         <div className="cards">
           {name.map((name, index) => {

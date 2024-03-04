@@ -29,16 +29,17 @@ const Sleep = () => {
           </div>
           <div className="content-right">
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt
-              facere atque temporibus? Ad, atque sapiente. Facilis assumenda,
-              veritatis, vel tempora inventore porro eius cumque libero, beatae
-              laboriosam quaerat. Quo officiis mollitia fugiat nemo amet,
-              reiciendis nobis quidem eveniet ut numquam consectetur ea?
-              Excepturi, mollitia aliquam. Neque obcaecati corrupti hic odit.
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam,
-              commodi. Mollitia quidem esse sit a commodi, inventore fugit,
-              accusamus quis tenetur, deleniti incidunt optio assumenda?
-              Incidunt enim nobis suscipit! Quibusdam!
+              Unlock the secrets of restorative sleep with Divine Connection's
+              expert guidance. Our certified online psychologists and counselors
+              offer confidential therapy sessions tailored to address
+              sleep-related issues such as insomnia, nightmares, or restless
+              nights. Whether you're struggling to fall asleep or experiencing
+              disruptions in your sleep patterns, we're here to help you reclaim
+              peaceful nights and rejuvenating rest. Trust in our secure online
+              platform to provide a safe space for exploration and healing,
+              allowing you to discover effective strategies for better sleep
+              hygiene and overall well-being. With Divine Connection, you can
+              embark on a journey towards restful sleep and waking up refreshed.
             </p>
           </div>
         </div>

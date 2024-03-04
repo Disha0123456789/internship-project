@@ -29,16 +29,16 @@ const SexualWellness = () => {
           </div>
           <div className="content-right">
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt
-              facere atque temporibus? Ad, atque sapiente. Facilis assumenda,
-              veritatis, vel tempora inventore porro eius cumque libero, beatae
-              laboriosam quaerat. Quo officiis mollitia fugiat nemo amet,
-              reiciendis nobis quidem eveniet ut numquam consectetur ea?
-              Excepturi, mollitia aliquam. Neque obcaecati corrupti hic odit.
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam,
-              commodi. Mollitia quidem esse sit a commodi, inventore fugit,
-              accusamus quis tenetur, deleniti incidunt optio assumenda?
-              Incidunt enim nobis suscipit! Quibusdam!
+              Embrace sexual wellness with Divine Connection's supportive
+              guidance and expertise. Our certified online psychologists and
+              counselors offer confidential therapy sessions tailored to address
+              various aspects of sexual health and relationships. Whether you're
+              navigating intimacy issues, exploring your sexual identity, or
+              seeking to enhance your overall well-being in this area, we're
+              here to help. Trust in our secure online platform to provide a
+              safe and non-judgmental space for exploration and healing. With
+              Divine Connection, you can embark on a journey towards greater
+              sexual fulfillment, confidence, and empowerment.
             </p>
           </div>
         </div>

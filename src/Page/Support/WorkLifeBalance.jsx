@@ -29,16 +29,18 @@ const WorkLifeBalance = () => {
           </div>
           <div className="content-right">
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt
-              facere atque temporibus? Ad, atque sapiente. Facilis assumenda,
-              veritatis, vel tempora inventore porro eius cumque libero, beatae
-              laboriosam quaerat. Quo officiis mollitia fugiat nemo amet,
-              reiciendis nobis quidem eveniet ut numquam consectetur ea?
-              Excepturi, mollitia aliquam. Neque obcaecati corrupti hic odit.
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam,
-              commodi. Mollitia quidem esse sit a commodi, inventore fugit,
-              accusamus quis tenetur, deleniti incidunt optio assumenda?
-              Incidunt enim nobis suscipit! Quibusdam!
+              Find harmony between work and life with Divine Connection's
+              supportive guidance. Our certified online psychologists and
+              counselors offer confidential therapy sessions tailored to help
+              you navigate the challenges of balancing professional
+              responsibilities with personal well-being. Whether you're feeling
+              overwhelmed by work demands, struggling to prioritize self-care,
+              or seeking to establish healthier boundaries, we're here to help
+              you find equilibrium. Trust in our secure online platform to
+              provide a safe space for exploration and healing, allowing you to
+              cultivate a fulfilling and sustainable lifestyle. With Divine
+              Connection, you can achieve greater harmony, fulfillment, and
+              resilience in both your professional and personal spheres.
             </p>
           </div>
         </div>

@@ -35,10 +35,10 @@ const FiveMinMeditation = () => {
       </div>
       <div className="Hero-section">
         <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint placeat
-          a alias repellendus. Illo blanditiis dignissimos porro? Labore, fuga
-          nostrum. Sed itaque autem quis aspernatur eius aperiam architecto
-          animi saepe?
+          In five minutes of meditation, silence becomes a sanctuary, offering
+          solace to the mind and rejuvenating the spirit amidst life's bustling
+          rhythm. With each breath, serenity unfolds, guiding the soul to a
+          place of calm and clarity in the present moment.
         </p>
         <div className="cards">
           {name.map((name, index) => {

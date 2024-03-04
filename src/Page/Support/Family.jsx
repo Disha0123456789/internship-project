@@ -29,16 +29,18 @@ const Family = () => {
           </div>
           <div className="content-right">
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt
-              facere atque temporibus? Ad, atque sapiente. Facilis assumenda,
-              veritatis, vel tempora inventore porro eius cumque libero, beatae
-              laboriosam quaerat. Quo officiis mollitia fugiat nemo amet,
-              reiciendis nobis quidem eveniet ut numquam consectetur ea?
-              Excepturi, mollitia aliquam. Neque obcaecati corrupti hic odit.
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam,
-              commodi. Mollitia quidem esse sit a commodi, inventore fugit,
-              accusamus quis tenetur, deleniti incidunt optio assumenda?
-              Incidunt enim nobis suscipit! Quibusdam!
+              In the intricate tapestry of relationships and family dynamics,
+              Divine Connection offers compassionate guidance and support. Our
+              team of certified online psychologists and counselors provides
+              confidential therapy sessions tailored to address the complexities
+              of interpersonal connections. Whether you're navigating conflicts,
+              seeking to strengthen bonds, or grappling with communication
+              barriers, we're here to help. Trust in our secure online platform
+              to provide a safe space for exploration and healing, allowing you
+              to cultivate healthier, more fulfilling relationships with your
+              loved ones. With Divine Connection, you can embark on a journey
+              towards greater harmony, understanding, and connection within your
+              family and beyond.
             </p>
           </div>
         </div>

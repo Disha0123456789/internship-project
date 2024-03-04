@@ -29,28 +29,17 @@ const Loneliness = () => {
           </div>
           <div className="content-right">
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt
-              facere atque temporibus? Ad, atque sapiente. Facilis assumenda,
-              veritatis, vel tempora inventore porro eius cumque libero, beatae
-              laboriosam quaerat. Quo officiis mollitia fugiat nemo amet,
-              reiciendis nobis quidem eveniet ut numquam consectetur ea?
-              Excepturi, mollitia aliquam. Neque obcaecati corrupti hic odit.
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam,
-              commodi. Mollitia quidem esse sit a commodi, inventore fugit,
-              accusamus quis tenetur, deleniti incidunt optio assumenda?
-              Incidunt enim nobis suscipit! Quibusdam!
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Cupiditate praesentium voluptates assumenda ex rem voluptatem cum
-              architecto, nobis ab sed eligendi nam nesciunt molestias
-              veritatis! Quibusdam dignissimos ipsum accusantium velit. Dolorem
-              deserunt placeat cum atque labore modi ipsum. Unde tempore libero
-              iste minus facilis sequi, accusantium atque. Atque ad consequatur
-              velit mollitia, hic quidem molestiae maxime illo veniam iusto id
-              animi labore optio voluptas iure! Vel harum magnam expedita, sequi
-              eveniet, quasi tempore ipsa nam magni nisi incidunt? Magni,
-              aliquam.
+              Navigating loneliness can feel overwhelming, but Divine Connection
+              is here to offer you support and understanding. Our certified
+              online psychologists and counselors provide confidential therapy
+              sessions designed to address the root causes of loneliness and
+              help you reconnect with yourself and others. Through empathetic
+              guidance and personalized strategies, we empower you to build
+              meaningful connections and find fulfillment in your relationships.
+              Trust in our secure online platform to provide a safe space for
+              exploration and growth as you embark on a journey towards greater
+              connection and well-being. With Divine Connection, you don't have
+              to face loneliness alone.
             </p>
           </div>
         </div>

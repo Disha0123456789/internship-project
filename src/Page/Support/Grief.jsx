@@ -29,16 +29,16 @@ const Grief = () => {
           </div>
           <div className="content-right">
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt
-              facere atque temporibus? Ad, atque sapiente. Facilis assumenda,
-              veritatis, vel tempora inventore porro eius cumque libero, beatae
-              laboriosam quaerat. Quo officiis mollitia fugiat nemo amet,
-              reiciendis nobis quidem eveniet ut numquam consectetur ea?
-              Excepturi, mollitia aliquam. Neque obcaecati corrupti hic odit.
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam,
-              commodi. Mollitia quidem esse sit a commodi, inventore fugit,
-              accusamus quis tenetur, deleniti incidunt optio assumenda?
-              Incidunt enim nobis suscipit! Quibusdam!
+              Amidst the profound pain of grief and loss, Divine Connection
+              offers a compassionate refuge. Our certified online psychologists
+              and counselors provide confidential therapy sessions tailored to
+              support you through the grieving process. Whether you're grappling
+              with the loss of a loved one, a job, or a significant life
+              transition, we're here to help you navigate the waves of sorrow
+              and find solace. Trust in our secure online platform to provide a
+              safe space for expression and healing, allowing you to honor your
+              emotions and journey towards acceptance and resilience. With
+              Divine Connection, you don't have to face grief alone.
             </p>
           </div>
         </div>

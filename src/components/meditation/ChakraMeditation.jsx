@@ -38,10 +38,10 @@ const ChakraMeditation = () => {
       </div>
       <div className="Hero-section">
         <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint placeat
-          a alias repellendus. Illo blanditiis dignissimos porro? Labore, fuga
-          nostrum. Sed itaque autem quis aspernatur eius aperiam architecto
-          animi saepe?
+          Engage in chakra meditation to harmonize the body's energy centers,
+          fostering balance and vitality within. Through focused attention and
+          breathwork, delve into the subtle realms of consciousness, nurturing
+          inner peace and spiritual alignment.
         </p>
         <div className="cards">
           {name.map((name, index) => {

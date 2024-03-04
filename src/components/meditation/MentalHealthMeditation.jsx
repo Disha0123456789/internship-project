@@ -37,10 +37,10 @@ const MentalHealthMeditation = () => {
       </div>
       <div className="Hero-section">
         <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint placeat
-          a alias repellendus. Illo blanditiis dignissimos porro? Labore, fuga
-          nostrum. Sed itaque autem quis aspernatur eius aperiam architecto
-          animi saepe?
+          Mental health meditation offers solace in the tranquil depths of the
+          mind, fostering resilience and clarity amidst life's turbulent
+          currents. Through gentle introspection and mindful breathing, it
+          unveils pathways to inner peace and emotional equilibrium.
         </p>
         <div className="cards">
           {name.map((name, index) => {

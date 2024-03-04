@@ -35,10 +35,12 @@ const Mindfulness = () => {
       </div>
       <div className="Hero-section">
         <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint placeat
-          a alias repellendus. Illo blanditiis dignissimos porro? Labore, fuga
-          nostrum. Sed itaque autem quis aspernatur eius aperiam architecto
-          animi saepe?
+          Mindfulness meditation is a tranquil journey inward, where breath
+          becomes the guide and awareness the destination, cultivating harmony
+          between mind, body, and spirit in the present moment. Through gentle
+          observation and non-judgmental awareness, it invites a profound sense
+          of calm and clarity, fostering resilience amidst life's ebbs and
+          flows.
         </p>
         <div className="cards">
           {name.map((name, index) => {

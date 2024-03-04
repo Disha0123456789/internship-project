@@ -1,6 +1,7 @@
-import React from "react"
-
+import React from "react";
+import { useNavigate } from "react-router-dom";
 const NewFutureBox = () => {
+  const navigate = useNavigate();
   return (
     <>
       <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
@@ -9,10 +10,7 @@ const NewFutureBox = () => {
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-10 md:gap-14">
           <div class="h-36 sm:h-56 flex flex-col justify-center border bg-gradient-to-tr from-purple-300 to-blue-300 rounded-xl text-center p-4 md:p-5 dark:border-gray-700">
             <div class="flex justify-center items-center size-16 md:size-40 rounded-lg mx-auto">
-              <img
-                src="/ICONS/tarot.png"
-                alt="12"
-              />
+              <img src="/ICONS/tarot.png" alt="12" />
             </div>
 
             <div class="mt-3">
@@ -24,10 +22,7 @@ const NewFutureBox = () => {
 
           <div class="h-36 sm:h-56 flex flex-col justify-center border bg-gradient-to-tr from-purple-300 to-blue-300 rounded-xl text-center p-4 md:p-5 dark:border-gray-700">
             <div class="flex justify-center items-center size-16 md:size-40 rounded-lg mx-auto">
-              <img
-                src="./ICONS/angel.png"
-                alt="13"
-              />
+              <img src="./ICONS/angel.png" alt="13" />
             </div>
 
             <div class="mt-3">
@@ -39,10 +34,7 @@ const NewFutureBox = () => {
 
           <div class="h-36 sm:h-56 flex flex-col justify-center border bg-gradient-to-tr from-purple-300 to-blue-300 rounded-xl text-center p-4 md:p-5 dark:border-gray-700">
             <div class="flex justify-center items-center size-16 md:size-40 rounded-lg mx-auto">
-              <img
-                src="./ICONS/ketinalove.png"
-                alt="13"
-              />
+              <img src="./ICONS/ketinalove.png" alt="13" />
             </div>
 
             <div class="mt-3">
@@ -54,10 +46,7 @@ const NewFutureBox = () => {
 
           <div class="h-36 sm:h-56 flex flex-col justify-center border bg-gradient-to-tr from-purple-300 to-blue-300 rounded-xl text-center p-4 md:p-5 dark:border-gray-700">
             <div class="flex justify-center items-center size-16 md:size-40 rounded-lg mx-auto">
-              <img
-                src="./ICONS/face.png"
-                alt="13"
-              />
+              <img src="./ICONS/face.png" alt="13" />
             </div>
 
             <div class="mt-3">
@@ -69,10 +58,7 @@ const NewFutureBox = () => {
 
           <div class="h-36 sm:h-56 flex flex-col justify-center border bg-gradient-to-tr from-purple-300 to-blue-300 rounded-xl text-center p-4 md:p-5 dark:border-gray-700">
             <div class="flex justify-center items-center size-16 md:size-40 rounded-lg mx-auto">
-              <img
-                src="./ICONS/palm.png"
-                alt="13"
-              />
+              <img src="./ICONS/palm.png" alt="13" />
             </div>
 
             <div class="mt-3">
@@ -84,10 +70,7 @@ const NewFutureBox = () => {
 
           <div class="h-36 sm:h-56 flex flex-col justify-center border bg-gradient-to-tr from-purple-300 to-blue-300 rounded-xl text-center p-4 md:p-5 dark:border-gray-700">
             <div class="flex justify-center items-center size-16 md:size-40 rounded-lg mx-auto">
-              <img
-                src="./ICONS/finger.png"
-                alt="13"
-              />
+              <img src="./ICONS/finger.png" alt="13" />
             </div>
 
             <div class="mt-3">
@@ -105,10 +88,7 @@ const NewFutureBox = () => {
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-10 md:gap-14">
           <div class="h-36 sm:h-56 flex flex-col justify-center border bg-gradient-to-tr from-purple-300 to-blue-300 rounded-xl text-center p-4 md:p-5 dark:border-gray-700">
             <div class="flex justify-center items-center size-16 md:size-40 rounded-lg mx-auto">
-              <img
-                src="/ICONS/timetravel.png"
-                alt="14"
-              />
+              <img src="/ICONS/timetravel.png" alt="14" />
             </div>
 
             <div class="mt-3">
@@ -120,10 +100,7 @@ const NewFutureBox = () => {
 
           <div class="h-36 sm:h-56 flex flex-col justify-center border bg-gradient-to-tr from-purple-300 to-blue-300 rounded-xl text-center p-4 md:p-5 dark:border-gray-700">
             <div class="flex justify-center items-center size-16 md:size-40 rounded-lg mx-auto">
-              <img
-                src="/ICONS/astrology.png"
-                alt="15"
-              />
+              <img src="/ICONS/astrology.png" alt="15" />
             </div>
 
             <div class="mt-3">
@@ -135,10 +112,7 @@ const NewFutureBox = () => {
 
           <div class="h-36 sm:h-56 flex flex-col justify-center border bg-gradient-to-tr from-purple-300 to-blue-300 rounded-xl text-center p-4 md:p-5 dark:border-gray-700">
             <div class="flex justify-center items-center size-16 md:size-40 rounded-lg mx-auto">
-              <img
-                src="/ICONS/biorythm.png"
-                alt="16"
-              />
+              <img src="/ICONS/biorythm.png" alt="16" />
             </div>
 
             <div class="mt-3">
@@ -147,20 +121,18 @@ const NewFutureBox = () => {
               </h3>
             </div>
           </div>
-
         </div>
       </div>
 
       <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
-        <h1 className="text-3xl pb-6 font-semibold">Lets go To Another Dimension</h1>
+        <h1 className="text-3xl pb-6 font-semibold">
+          Lets go To Another Dimension
+        </h1>
 
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-10 md:gap-14">
           <div class="h-36 sm:h-56 flex flex-col justify-center border bg-gradient-to-tr from-purple-300 to-blue-300 rounded-xl text-center p-4 md:p-5 dark:border-gray-700">
             <div class="flex justify-center items-center size-16 md:size-40 rounded-lg mx-auto">
-              <img
-                src="/ICONS/dreaminterpretation.png"
-                alt="17"
-              />
+              <img src="/ICONS/dreaminterpretation.png" alt="17" />
             </div>
 
             <div class="mt-3">
@@ -172,10 +144,7 @@ const NewFutureBox = () => {
 
           <div class="h-36 sm:h-56 flex flex-col justify-center border bg-gradient-to-tr from-purple-300 to-blue-300 rounded-xl text-center p-4 md:p-5 dark:border-gray-700">
             <div class="flex justify-center items-center size-16 md:size-40 rounded-lg mx-auto">
-              <img
-                src="/ICONS/crystalball.png"
-                alt="19"
-              />
+              <img src="/ICONS/crystalball.png" alt="19" />
             </div>
 
             <div class="mt-3">
@@ -187,10 +156,7 @@ const NewFutureBox = () => {
 
           <div class="h-36 sm:h-56 flex flex-col justify-center border bg-gradient-to-tr from-purple-300 to-blue-300 rounded-xl text-center p-4 md:p-5 dark:border-gray-700">
             <div class="flex justify-center items-center size-16 md:size-40 rounded-lg mx-auto">
-              <img
-                src="/ICONS/numerology.png"
-                alt="16"
-              />
+              <img src="/ICONS/numerology.png" alt="16" />
             </div>
 
             <div class="mt-3">
@@ -199,7 +165,6 @@ const NewFutureBox = () => {
               </h3>
             </div>
           </div>
-
         </div>
       </div>
 
@@ -207,12 +172,12 @@ const NewFutureBox = () => {
         <h1 className="text-3xl pb-6 font-semibold">Nourish Your Soul</h1>
 
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-10 md:gap-14">
-          <div class="h-36 sm:h-56 flex flex-col justify-center border bg-gradient-to-tr from-purple-300 to-blue-300 rounded-xl text-center p-4 md:p-5 dark:border-gray-700">
+          <div
+            onClick={() => navigate("/Meditation")}
+            class="h-36 sm:h-56 flex flex-col justify-center border bg-gradient-to-tr from-purple-300 to-blue-300 rounded-xl text-center p-4 md:p-5 dark:border-gray-700"
+          >
             <div class="flex justify-center items-center size-16 md:size-40 rounded-lg mx-auto">
-              <img
-                src="/ICONS/meditation.png"
-                alt="14"
-              />
+              <img src="/ICONS/meditation.png" alt="14" />
             </div>
 
             <div class="mt-3">
@@ -223,10 +188,7 @@ const NewFutureBox = () => {
           </div>
 
           <div class="h-36 sm:h-56 flex flex-col justify-center">
-              <img
-                src="/ICONS/divinelogohorizontal.png"
-                alt="14"
-              />
+            <img src="/ICONS/divinelogohorizontal.png" alt="14" />
 
             {/* <div class="mt-3">
               <h3 class="text-md sm:text-lg font-semibold text-gray-800 dark:text-gray-200">
@@ -235,12 +197,12 @@ const NewFutureBox = () => {
             </div> */}
           </div>
 
-          <div class="h-36 sm:h-56 flex flex-col justify-center border bg-gradient-to-tr from-purple-300 to-blue-300 rounded-xl text-center p-4 md:p-5 dark:border-gray-700">
+          <div
+            onClick={() => navigate("/EmotionalSupport")}
+            class="h-36 sm:h-56 flex flex-col justify-center border bg-gradient-to-tr from-purple-300 to-blue-300 rounded-xl text-center p-4 md:p-5 dark:border-gray-700"
+          >
             <div class="flex justify-center items-center size-16 md:size-40 rounded-lg mx-auto">
-              <img
-                src="/ICONS/emotionalsupport.png"
-                alt="15"
-              />
+              <img src="/ICONS/emotionalsupport.png" alt="15" />
             </div>
 
             <div class="mt-3">
@@ -256,7 +218,7 @@ const NewFutureBox = () => {
           </div> */}
       </div>
     </>
-  )
-}
+  );
+};
 
-export default NewFutureBox
+export default NewFutureBox;

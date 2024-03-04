@@ -35,10 +35,11 @@ const EpicPowerMeditation = () => {
       </div>
       <div className="Hero-section">
         <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint placeat
-          a alias repellendus. Illo blanditiis dignissimos porro? Labore, fuga
-          nostrum. Sed itaque autem quis aspernatur eius aperiam architecto
-          animi saepe?
+          Embark on a journey of self-discovery with Epic Power meditation,
+          harnessing the depths of your inner strength and wisdom to conquer
+          challenges and embrace serenity. Through focused contemplation and
+          profound mindfulness, unlock the boundless potential within, forging a
+          path of resilience and enlightenment.
         </p>
         <div className="cards">
           {name.map((name, index) => {

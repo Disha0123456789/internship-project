@@ -37,10 +37,12 @@ const BeginnerMeditation = () => {
       </div>
       <div className="Hero-section">
         <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint placeat
-          a alias repellendus. Illo blanditiis dignissimos porro? Labore, fuga
-          nostrum. Sed itaque autem quis aspernatur eius aperiam architecto
-          animi saepe?
+          Embark on your journey to inner peace with beginner meditation, where
+          each breath becomes a gentle guide through the tranquility of your own
+          mind, laying the foundation for a profound sense of calm and clarity.
+          In the simplicity of stillness, discover the profound power of
+          presence, as beginner meditation unveils the boundless potential for
+          harmony within.
         </p>
         <div className="cards">
           {name.map((name, index) => {

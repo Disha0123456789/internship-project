@@ -36,10 +36,12 @@ const PositiveMeditation = () => {
       </div>
       <div className="Hero-section">
         <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint placeat
-          a alias repellendus. Illo blanditiis dignissimos porro? Labore, fuga
-          nostrum. Sed itaque autem quis aspernatur eius aperiam architecto
-          animi saepe?
+          Positive meditation is a transformative practice that cultivates inner
+          peace and fosters a mindset of abundance and gratitude, paving the way
+          for boundless joy and fulfillment in life. Through intentional focus
+          and deep breathing, it empowers individuals to harness the innate
+          power of their thoughts, fostering resilience and a profound sense of
+          well-being.
         </p>
         <div className="cards">
           {name.map((name, index) => {

@@ -2,8 +2,8 @@ import React from "react";
 import "./support.css";
 import { useNavigate } from "react-router-dom";
 import { IoIosArrowBack } from "react-icons/io";
-const Anxiety = () => {
-  const head = "Obsession";
+const Obsession = () => {
+  const head = "Obsession / OCD";
   const img =
     "https://images.pexels.com/photos/897817/pexels-photo-897817.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1";
   const navigate = useNavigate();
@@ -15,7 +15,7 @@ const Anxiety = () => {
             onClick={() => navigate("/EmotionalSupport")}
             className="backicon"
           />
-          <h1>Osession</h1>
+          <h1>Obsession / OCD</h1>
         </div>
         <div className="content">
           <div className="content-left">
@@ -29,16 +29,18 @@ const Anxiety = () => {
           </div>
           <div className="content-right">
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt
-              facere atque temporibus? Ad, atque sapiente. Facilis assumenda,
-              veritatis, vel tempora inventore porro eius cumque libero, beatae
-              laboriosam quaerat. Quo officiis mollitia fugiat nemo amet,
-              reiciendis nobis quidem eveniet ut numquam consectetur ea?
-              Excepturi, mollitia aliquam. Neque obcaecati corrupti hic odit.
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam,
-              commodi. Mollitia quidem esse sit a commodi, inventore fugit,
-              accusamus quis tenetur, deleniti incidunt optio assumenda?
-              Incidunt enim nobis suscipit! Quibusdam!
+              Break free from the grip of obsession and OCD with Divine
+              Connection's compassionate support. Our certified online
+              psychologists and counselors provide confidential therapy sessions
+              tailored to address the challenges of obsessive thoughts and
+              compulsive behaviors. Whether you're struggling with intrusive
+              thoughts, repetitive rituals, or overwhelming urges, we're here to
+              help you regain control and find relief. Trust in our secure
+              online platform to provide a safe space for exploration and
+              healing, allowing you to cultivate healthier coping mechanisms and
+              develop strategies to manage your symptoms. With Divine
+              Connection, you can embark on a journey towards greater peace of
+              mind and reclaim control over your life.
             </p>
           </div>
         </div>
@@ -47,4 +49,4 @@ const Anxiety = () => {
   );
 };
 
-export default Anxiety;
+export default Obsession;
