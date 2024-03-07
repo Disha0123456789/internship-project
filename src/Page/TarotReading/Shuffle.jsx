@@ -6,17 +6,14 @@ import CARDS from "./IMGS/wizard-tarot-card-rider-site-scry.png";
 const Shuffle = () => {
   const variants = [];
   for (let i = 0; i < 20; i++) {
-    if (i > 9) {
-      variants[i] = {
-        open: { x: -(100 + 60 * i), y: -100, opacity: 0 },
-        closed: { x: 0, y: 0, opacity: 1 },
-      };
-    } else {
-      variants[i] = {
-        open: { x: 100 + 60 * i, y: -100, opacity: 0 },
-        closed: { x: 0, y: 0, opacity: 1 },
-      };
-    }
+    variants[i] = {
+      open: { x: -(100 + 60 * i), y: -100, opacity: 0 },
+      closed: {
+        x: 0,
+        y: -60 + 60 * Math.sin((i * Math.PI) / 19), //Math.sin(i / ((3 * Math.PI) / 2))
+        opacity: 1,
+      },
+    };
   }
 
   const [isOpen, setIsOpen] = useState(true);
