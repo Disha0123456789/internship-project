@@ -37,6 +37,7 @@ import { FortuneWheel } from "./components/wheel/FortuneWheel";
 
 import AngerManagagement from "./Page/Support/AngerManagement";
 import Obsession from "./Page/Support/Obsession";
+import Shuffle from "./Page/TarotReading/Shuffle";
 
 function App() {
   return (
@@ -44,6 +45,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/tarot_reading" element={<TarotReading />} />
+        <Route path="/CardSelection" element={<Shuffle />} />
         <Route path="/Faceresult" element={<Faceresult />} />
         <Route path="/Meditation" element={<Meditation />} />
 

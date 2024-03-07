@@ -32,13 +32,13 @@ const SexualWellness = () => {
               Embrace sexual wellness with Divine Connection's supportive
               guidance and expertise. Our certified online psychologists and
               counselors offer confidential therapy sessions tailored to address
-              various aspects of sexual health and relationships. Whether you're
-              navigating intimacy issues, exploring your sexual identity, or
-              seeking to enhance your overall well-being in this area, we're
-              here to help. Trust in our secure online platform to provide a
-              safe and non-judgmental space for exploration and healing. With
-              Divine Connection, you can embark on a journey towards greater
-              sexual fulfillment, confidence, and empowerment.
+              various aspects of sexual health and relationships. <br /> <br />{" "}
+              Whether you're navigating intimacy issues, exploring your sexual
+              identity, or seeking to enhance your overall well-being in this
+              area, we're here to help. Trust in our secure online platform to
+              provide a safe and non-judgmental space for exploration and
+              healing. With Divine Connection, you can embark on a journey
+              towards greater sexual fulfillment, confidence, and empowerment.
             </p>
           </div>
         </div>

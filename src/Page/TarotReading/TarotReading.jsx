@@ -1,90 +1,146 @@
-import { useState } from "react"
-
-// eslint-disable-next-line react/prop-types
-const TarotBox = ({ title, content }) => {
-  const [isHovered, setIsHovered] = useState(false)
-
-  return (
-    <div
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
-      className={`bg-red-100 ${
-        isHovered ? "bg-black/90" : ""
-      } hover:bg-black/90 transition-all duration-700 ease-in-out w-[500px] h-[250px] relative rounded-3xl shadow outline outline-2 cursor-pointer`}
-    >
-      {isHovered && (
-        <img
-          src="/ICONS/biorythm.png"
-          alt="Hovered Image"
-          className="absolute transform transition-transform duration-500 ease-in-out inset-0 w-full h-full object-cover rounded-3xl"
-        />
-      )}
-      <div className="flex flex-col gap-1 bg-black/80 px-4 py-2 w-[500px] h-[130px] rounded-b-3xl absolute bottom-0">
-        <span className="text-2xl text-white">{title}</span>
-        <span className="text-xs text-white">{content}</span>
-      </div>
-      <div></div>
-      <div className=" w-full h-full">
-        <img
-          src="/images/vector.svg"
-          className=" absolute left-[30.519px] bottom-[14.369px]"
-          alt="...."
-        />
-        <img
-          src="/images/vector2.svg"
-          className=" absolute left-[23.438px] bottom-[12.672px]"
-          alt="...."
-        />
-
-        <h1 className=" text-xl absolute left-[55px] bottom-[8px] font-[30px] text-white ">10</h1>
-
-        <img
-          src="/images/vector3.svg"
-          alt="....."
-          className=" absolute left-[86px] bottom-[14.699px]"
-        />
-
-        <h1 className=" text-xl absolute left-[120px] bottom-[8px] font-[30px] text-white ">10</h1>
-      </div>
-    </div>
-  )
-}
-
+import React, { useState } from "react";
+import { animate, motion } from "framer-motion";
+import "./Cards.css";
+import WeekendBackdrop from "./IMGS/weekend tarot background.jpg";
+import WeekendIcon from "./IMGS/weekend tarot card.png";
+import WeeklyBackdrop from "./IMGS/weekly tarot background.jpg";
+import WeeklyIcon from "./IMGS/weekly tarot card.png";
+import PartnerBackdrop from "./IMGS/where is my destined partner background.jpg";
+import PartnerIcon from "./IMGS/where is my destined partner card.png";
+import CareerBackdrop from "./IMGS/the first half of 2024 background.jpg";
+import CareerIcon from "./IMGS/first half of 2024 card.png";
+import LuckBackdrop from "./IMGS/how to change my luck background.jpg";
+import LuckIcon from "./IMGS/how to change my luck card.png";
+import HiddenCharmBackdrop from "./IMGS/my hidden charm background.jpg";
+import HiddenCharmIcon from "./IMGS/my hidden charm card.png";
+import TarotCards from "./TarotCards";
 const TarotReading = () => {
-  return (
-    <div className="flex flex-col h-full">
-      <div className="flex-grow w-screen h-screen flex flex-col bg-red-200">
-        <div className="text-center h-max w-full p-10">
-          <span className="text-4xl font-mono">Tarot Reading</span>
-        </div>
-        <div className="p-10 gap-20 items-center justify-center flex w-screen h-max">
-          <div className="flex gap-20">
-            <TarotBox
-              title="Weekend Tarot Fortune"
-              content="February 16th to 18th Shake off the week's stress with a soul-stirring Tarot reading this weekend! 🌟 🔮 Unveil hidden possibilities and find clarity for the days ahead. ✨"
-            />
-            <TarotBox
-              title="Weekly Tarot Fortune"
-              content="February 12th to 16th Navigate foggy weeks with Tarot's illuminating wisdom. 🌫️ 🔮 Dive into clarity and discover your best course of action! 💡"
-            />
-          </div>
-        </div>
-        <div className="items-center justify-center p-10 gap-20 flex w-screen h-max">
-          <div className="flex gap-20">
-            <TarotBox
-              title="What Is the Age of My Destined Partner?"
-              content="Hold on tight! 💜 You’re about to uncover some juicy intel about your destined partner! 👀 Want a hint? Let the wisdom of Tarot guide you, my friend. 🧭 🗺"
-            />
-            <TarotBox
-              title="The First Half of 2024 Tarot Career Advice"
-              content="February 12th to 16th Navigate foggy weeks with Tarot's illuminating wisdom. 🌫️ 🔮 Dive into clarity and discover your best course of action! 💡"
-            />
-          </div>
-        </div>
-      </div>
-      <div className="flex-grow w-screen h-screen flex items-center justify-center bg-green-200"></div>
-    </div>
-  )
-}
+  // const variants1 = {
+  //   open: { x: 300, y: -100 },
 
-export default TarotReading
+  //   closed: { x: 0, y: -50 },
+  // };
+  // const variants2 = {
+  //   open: { x: 150, y: -100 },
+  //   closed: { x: 0, y: -20 },
+  // };
+  // const variants3 = {
+  //   open: { x: 0, y: -100 },
+  //   closed: { x: 0, y: 0 },
+  // };
+  // const variants4 = {
+  //   open: { x: -150, y: -100 },
+  //   closed: { x: 0, y: -20 },
+  // };
+  // const variants5 = {
+  //   open: { x: -300, y: -100 },
+  //   closed: { x: 0, y: -50 },
+  // };
+  // const [isOpen, setIsOpen] = useState(true);
+  // const OnShuffleClick = () => {
+  //   console.log("Shuffle Clicked");
+  // };
+
+  const Weekend = {
+    backdrop: WeekendBackdrop,
+    icon: WeekendIcon,
+    head: "Weekend Tarot Fortune",
+    p1: "Shake of the week's stress with a soul-stirring Tarot reading this weekend.",
+    p2: "Unveil hidden possibilities and find clarity for the days ahead. ",
+  };
+  const Weekly = {
+    backdrop: WeeklyBackdrop,
+    icon: WeeklyIcon,
+    head: "Weekly Tarot Fortune",
+    p1: "Navigate foggy weeks with Tarot's illuminating wisdom.",
+    p2: "Dive into clarity and discover your best curse of action.",
+  };
+  const Partner = {
+    backdrop: PartnerBackdrop,
+    icon: PartnerIcon,
+    head: "Where is my destined partner?",
+    p1: "Hold on tight. You're about to uncover some juicy intel about your destined partner!",
+    p2: "Want a hint?Let the wisdom of Tarot guide you, my friend.",
+  };
+  const Career = {
+    backdrop: CareerBackdrop,
+    icon: CareerIcon,
+    head: "The first half of 2024",
+    p1: "Navigate foggy weeks with Tarot's illuminating wisdom.",
+    p2: "Dive into clarity and discover your best curse of action.",
+  };
+  const luck = {
+    backdrop: LuckBackdrop,
+    icon: LuckIcon,
+    head: "How to change my luck?",
+    p1: "Hold on tight. You're about to uncover some juicy intel about your destined partner!",
+    p2: "Want a hint?Let the wisdom of Tarot guide you, my friend.",
+  };
+  const hiddenCharm = {
+    backdrop: HiddenCharmBackdrop,
+    icon: HiddenCharmIcon,
+    head: "My hidden charm",
+    p1: "Navigate foggy weeks with Tarot's illuminating wisdom.",
+    p2: "Dive into clarity and discover your best curse of action.",
+  };
+
+  return (
+    // <div className="Tarot-Card">
+    //   <div className="cards-collection">
+    //     <motion.img
+    //       animate={isOpen ? "open" : "closed"}
+    //       variants={variants1}
+    //       transition={{ duration: 0.4 }}
+    //       src="https://cdn.pixabay.com/photo/2014/04/03/10/54/playing-card-311679_1280.png"
+    //       alt=""
+    //     />
+    //     <motion.img
+    //       animate={isOpen ? "open" : "closed"}
+    //       variants={variants2}
+    //       transition={{ duration: 0.4 }}
+    //       src="https://cdn.pixabay.com/photo/2014/04/03/10/54/playing-card-311679_1280.png"
+    //       alt=""
+    //     />
+    //     <motion.img
+    //       animate={isOpen ? "open" : "closed"}
+    //       variants={variants3}
+    //       transition={{ duration: 0.4 }}
+    //       src="https://cdn.pixabay.com/photo/2014/04/03/10/54/playing-card-311679_1280.png"
+    //       alt=""
+    //     />
+    //     <motion.img
+    //       animate={isOpen ? "open" : "closed"}
+    //       variants={variants4}
+    //       transition={{ duration: 0.4 }}
+    //       src="https://cdn.pixabay.com/photo/2014/04/03/10/54/playing-card-311679_1280.png"
+    //       alt=""
+    //     />
+    //     <motion.img
+    //       animate={isOpen ? "open" : "closed"}
+    //       variants={variants5}
+    //       transition={{ duration: 0.4 }}
+    //       src="https://cdn.pixabay.com/photo/2014/04/03/10/54/playing-card-311679_1280.png"
+    //       alt=""
+    //     />
+    //   </div>
+    //   <div className="buttons">
+    //     <button onClick={() => setIsOpen((isOpen) => !isOpen)}>Shuffle</button>
+    //   </div>
+    // </div>
+    <div className="Main-Tarot">
+      <div className="Tarot-Heading">
+        <h1>Tarot Reading</h1>
+      </div>
+      <div className="Tarot-Cards">
+        <TarotCards props={Weekend} />
+        <TarotCards props={Weekly} />
+        <TarotCards props={Partner} />
+        <TarotCards props={Career} />
+        <TarotCards props={luck} />
+        <TarotCards props={hiddenCharm} />
+      </div>
+    </div>
+  );
+};
+
+export default TarotReading;

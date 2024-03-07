@@ -35,11 +35,11 @@ const SelfEsteemIssues = () => {
               address the complexities of self-esteem issues. Whether you're
               grappling with feelings of inadequacy, self-doubt, or low
               confidence, we're here to help you rediscover your worth and inner
-              strength. Trust in our secure online platform to provide a safe
-              space for exploration and healing, allowing you to cultivate a
-              positive self-image and embrace your unique qualities. With Divine
-              Connection, you can embark on a journey towards greater
-              self-acceptance, empowerment, and fulfillment.
+              strength. <br /> <br /> Trust in our secure online platform to
+              provide a safe space for exploration and healing, allowing you to
+              cultivate a positive self-image and embrace your unique qualities.
+              With Divine Connection, you can embark on a journey towards
+              greater self-acceptance, empowerment, and fulfillment.
             </p>
           </div>
         </div>

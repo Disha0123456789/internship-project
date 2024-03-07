@@ -40,7 +40,7 @@ const SleepMeditation = () => {
           weave their enchanting tapestry amidst the symphony of peaceful
           breaths. Let each inhale embrace tranquility and each exhale release
           tension, as you effortlessly drift into the embrace of restorative
-          slumber
+          slumber.
         </p>
         <div className="cards">
           {name.map((name, index) => {

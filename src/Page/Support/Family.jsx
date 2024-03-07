@@ -33,14 +33,14 @@ const Family = () => {
               Divine Connection offers compassionate guidance and support. Our
               team of certified online psychologists and counselors provides
               confidential therapy sessions tailored to address the complexities
-              of interpersonal connections. Whether you're navigating conflicts,
-              seeking to strengthen bonds, or grappling with communication
-              barriers, we're here to help. Trust in our secure online platform
-              to provide a safe space for exploration and healing, allowing you
-              to cultivate healthier, more fulfilling relationships with your
-              loved ones. With Divine Connection, you can embark on a journey
-              towards greater harmony, understanding, and connection within your
-              family and beyond.
+              of interpersonal connections. <br /> <br /> Whether you're
+              navigating conflicts, seeking to strengthen bonds, or grappling
+              with communication barriers, we're here to help. Trust in our
+              secure online platform to provide a safe space for exploration and
+              healing, allowing you to cultivate healthier, more fulfilling
+              relationships with your loved ones. With Divine Connection, you
+              can embark on a journey towards greater harmony, understanding,
+              and connection within your family and beyond.
             </p>
           </div>
         </div>

@@ -31,7 +31,7 @@ const EpicPowerMeditation = () => {
   return (
     <div className="Main-page">
       <div className="Meditation-text">
-        <h1>Meditation for Beginners</h1>
+        <h1>Epic Power Meditation</h1>
       </div>
       <div className="Hero-section">
         <p>

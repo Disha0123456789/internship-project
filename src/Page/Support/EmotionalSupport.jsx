@@ -15,7 +15,7 @@ const EmotionalSupport = () => {
     "Past Trauma",
     "Self-Esteem issues",
     "Work Life Balance",
-    "Grief/Loss",
+    "Grief / Loss",
   ];
   const imgurl = [
     "https://images.unsplash.com/photo-1609852234838-147db6815968?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -56,7 +56,7 @@ const EmotionalSupport = () => {
       navigate("/SelfEsteemIssues");
     } else if (option === "Work Life Balance") {
       navigate("/WorkLifeBalance");
-    } else if (option === "Grief/Loss") {
+    } else if (option === "Grief / Loss") {
       navigate("/Grief");
     }
   };

@@ -33,13 +33,13 @@ const Depression = () => {
               we're here to walk with you through it. Our team of certified
               online psychologists and counselors offers confidential therapy
               sessions tailored specifically to address the multifaceted nature
-              of depression. Through compassionate guidance and evidence-based
-              techniques, we help you navigate the complexities of depression,
-              fostering resilience and empowering growth. Rest assured, our
-              secure online platform provides a safe haven for exploration and
-              healing, offering you the support and tools you need to rediscover
-              your sense of hope and vitality. With Divine Connection, brighter
-              days are within reach.
+              of depression. <br /> <br /> Through compassionate guidance and
+              evidence-based techniques, we help you navigate the complexities
+              of depression, fostering resilience and empowering growth. Rest
+              assured, our secure online platform provides a safe haven for
+              exploration and healing, offering you the support and tools you
+              need to rediscover your sense of hope and vitality. With Divine
+              Connection, brighter days are within reach.
             </p>
           </div>
         </div>

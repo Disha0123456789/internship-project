@@ -68,14 +68,16 @@
     object-fit: cover;
 }
 .content-right{
-  
+  margin: 10px;
     height: 300px;
     width: 60%;
    text-align: center;
 }
 .content-right p{
+    text-align: left;
+    font-weight: 600;
     width: 100%;
-    margin-top: clamp(10px, 1.5vw, 20px);
+    /* margin-top: clamp(10px, 1.5vw, 20px); */
     font-size: clamp(0.8rem, 1.2vw, 1.4rem);
 }
 .content-right h1{

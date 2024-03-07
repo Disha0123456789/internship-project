@@ -33,13 +33,13 @@ const Loneliness = () => {
               is here to offer you support and understanding. Our certified
               online psychologists and counselors provide confidential therapy
               sessions designed to address the root causes of loneliness and
-              help you reconnect with yourself and others. Through empathetic
-              guidance and personalized strategies, we empower you to build
-              meaningful connections and find fulfillment in your relationships.
-              Trust in our secure online platform to provide a safe space for
-              exploration and growth as you embark on a journey towards greater
-              connection and well-being. With Divine Connection, you don't have
-              to face loneliness alone.
+              help you reconnect with yourself and others.
+              <br /> <br /> Through empathetic guidance and personalized
+              strategies, we empower you to build meaningful connections and
+              find fulfillment in your relationships. Trust in our secure online
+              platform to provide a safe space for exploration and growth as you
+              embark on a journey towards greater connection and well-being.
+              With Divine Connection, you don't have to face loneliness alone.
             </p>
           </div>
         </div>

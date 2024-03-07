@@ -15,7 +15,7 @@ const Grief = () => {
             onClick={() => navigate("/EmotionalSupport")}
             className="backicon"
           />
-          <h1>Grief/Loss</h1>
+          <h1>Grief / Loss</h1>
         </div>
         <div className="content">
           <div className="content-left">
@@ -32,13 +32,14 @@ const Grief = () => {
               Amidst the profound pain of grief and loss, Divine Connection
               offers a compassionate refuge. Our certified online psychologists
               and counselors provide confidential therapy sessions tailored to
-              support you through the grieving process. Whether you're grappling
-              with the loss of a loved one, a job, or a significant life
-              transition, we're here to help you navigate the waves of sorrow
-              and find solace. Trust in our secure online platform to provide a
-              safe space for expression and healing, allowing you to honor your
-              emotions and journey towards acceptance and resilience. With
-              Divine Connection, you don't have to face grief alone.
+              support you through the grieving process. <br /> <br /> Whether
+              you're grappling with the loss of a loved one, a job, or a
+              significant life transition, we're here to help you navigate the
+              waves of sorrow and find solace. Trust in our secure online
+              platform to provide a safe space for expression and healing,
+              allowing you to honor your emotions and journey towards acceptance
+              and resilience. With Divine Connection, you don't have to face
+              grief alone.
             </p>
           </div>
         </div>

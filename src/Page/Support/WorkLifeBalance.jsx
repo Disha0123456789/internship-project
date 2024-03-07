@@ -33,14 +33,15 @@ const WorkLifeBalance = () => {
               supportive guidance. Our certified online psychologists and
               counselors offer confidential therapy sessions tailored to help
               you navigate the challenges of balancing professional
-              responsibilities with personal well-being. Whether you're feeling
-              overwhelmed by work demands, struggling to prioritize self-care,
-              or seeking to establish healthier boundaries, we're here to help
-              you find equilibrium. Trust in our secure online platform to
-              provide a safe space for exploration and healing, allowing you to
-              cultivate a fulfilling and sustainable lifestyle. With Divine
-              Connection, you can achieve greater harmony, fulfillment, and
-              resilience in both your professional and personal spheres.
+              responsibilities with personal well-being. <br /> <br />
+              Whether you're feeling overwhelmed by work demands, struggling to
+              prioritize self-care, or seeking to establish healthier
+              boundaries, we're here to help you find equilibrium. Trust in our
+              secure online platform to provide a safe space for exploration and
+              healing, allowing you to cultivate a fulfilling and sustainable
+              lifestyle. With Divine Connection, you can achieve greater
+              harmony, fulfillment, and resilience in both your professional and
+              personal spheres.
             </p>
           </div>
         </div>

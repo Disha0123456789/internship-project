@@ -70,7 +70,8 @@
 }
 .list-item{
     list-style: none;
-    font-weight: 400;
+    letter-spacing: 0.01vw;
+    font-weight: 500;
     font-size: clamp(1.0rem, 1.4vw, 2rem);
 }
 
@@ -90,7 +91,9 @@
     
 }
 .Hero-section p{
-    margin: 20px;;
+    
+    margin: 20px;
+    font-size: clamp(1.0rem, 1.2vw, 2rem);
 }
 .meditationVideos{
     height: 100%;
