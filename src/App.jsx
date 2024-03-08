@@ -38,6 +38,7 @@ import { FortuneWheel } from "./components/wheel/FortuneWheel";
 import AngerManagagement from "./Page/Support/AngerManagement";
 import Obsession from "./Page/Support/Obsession";
 import Shuffle from "./Page/TarotReading/Shuffle";
+import AngerManagement from "./Page/Support/AngerManagement";
 
 function App() {
   return (
@@ -76,7 +77,7 @@ function App() {
         <Route path="/EpicPowerMeditation" element={<EpicPowerMeditation />} />
         <Route path="/Obsession" element={<Obsession />} />
         <Route path="/EmotionalSupport" element={<EmotionalSupport />} />
-        <Route path="/AngerManagement" element={<AngerManagagement />} />
+        <Route path="/AngerManagement" element={<AngerManagement />} />
         <Route path="/Loneliness" element={<Loneliness />} />
         <Route path="/SexualWellness" element={<SexualWellness />} />
         <Route path="/Family" element={<Family />} />
