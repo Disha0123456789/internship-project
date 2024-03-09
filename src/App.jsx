@@ -39,6 +39,7 @@ import Obsession from "./Page/Support/Obsession";
 import Shuffle from "./Page/TarotReading/Shuffle";
 import AngerManagement from "./Page/Support/AngerManagement";
 import TarotResult from "./Page/TarotReading/TarotResult";
+import FuturePrediction from "./Page/FuturePrediction/FuturePrediction";
 
 function App() {
   return (
@@ -50,6 +51,7 @@ function App() {
         <Route path="/TarotResult" element={<TarotResult />} />
         <Route path="/Faceresult" element={<Faceresult />} />
         <Route path="/Meditation" element={<Meditation />} />
+        <Route path="/FuturePrediction" element={<FuturePrediction />} />
 
         <Route path="/Fortune_Wheel" element={<FortuneWheel />} />
 
