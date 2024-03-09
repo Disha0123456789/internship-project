@@ -5,6 +5,8 @@ import DailyMeditation from "./components/meditation/DailyMeditation";
 import Anxiety from "./Page/Support/Obsession";
 import Home from "./Page/Home/Home";
 import Facecard from "./assets/Boxes/Facecard";
+import FinalPage from "./Page/Support/FinalPage";
+import FuturePrediction from "./Page/TimeTravel/FuturePrediction";
 
 import Faceresult from "./assets/Boxes/Facecard/Faceresult";
 import Timemagicresult from "./assets/Boxes/Facecard/Timemagicresult";
@@ -87,6 +89,7 @@ function App() {
         <Route path="/PastTrauma" element={<PastTrauma />} />
         <Route path="/Grief" element={<Grief />} />
         <Route path="/Done" element={<FinalPage />} />
+        <Route path="/FuturePrediction" element={<FuturePrediction />} />
         <Route path="/WorkLifeBalance" element={<WorkLifeBalance />} />
         <Route path="/SelfEsteemIssues" element={<SelfEsteemIssues />} />
 
