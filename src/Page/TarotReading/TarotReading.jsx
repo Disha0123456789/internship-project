@@ -15,32 +15,7 @@ import HiddenCharmBackdrop from "./IMGS/my hidden charm background.jpg";
 import HiddenCharmIcon from "./IMGS/my hidden charm card.png";
 import TarotCards from "./TarotCards";
 const TarotReading = () => {
-  // const variants1 = {
-  //   open: { x: 300, y: -100 },
-
-  //   closed: { x: 0, y: -50 },
-  // };
-  // const variants2 = {
-  //   open: { x: 150, y: -100 },
-  //   closed: { x: 0, y: -20 },
-  // };
-  // const variants3 = {
-  //   open: { x: 0, y: -100 },
-  //   closed: { x: 0, y: 0 },
-  // };
-  // const variants4 = {
-  //   open: { x: -150, y: -100 },
-  //   closed: { x: 0, y: -20 },
-  // };
-  // const variants5 = {
-  //   open: { x: -300, y: -100 },
-  //   closed: { x: 0, y: -50 },
-  // };
-  // const [isOpen, setIsOpen] = useState(true);
-  // const OnShuffleClick = () => {
-  //   console.log("Shuffle Clicked");
-  // };
-
+  const [active, setActive] = useState(false);
   const Weekend = {
     backdrop: WeekendBackdrop,
     icon: WeekendIcon,
@@ -85,48 +60,6 @@ const TarotReading = () => {
   };
 
   return (
-    // <div className="Tarot-Card">
-    //   <div className="cards-collection">
-    //     <motion.img
-    //       animate={isOpen ? "open" : "closed"}
-    //       variants={variants1}
-    //       transition={{ duration: 0.4 }}
-    //       src="https://cdn.pixabay.com/photo/2014/04/03/10/54/playing-card-311679_1280.png"
-    //       alt=""
-    //     />
-    //     <motion.img
-    //       animate={isOpen ? "open" : "closed"}
-    //       variants={variants2}
-    //       transition={{ duration: 0.4 }}
-    //       src="https://cdn.pixabay.com/photo/2014/04/03/10/54/playing-card-311679_1280.png"
-    //       alt=""
-    //     />
-    //     <motion.img
-    //       animate={isOpen ? "open" : "closed"}
-    //       variants={variants3}
-    //       transition={{ duration: 0.4 }}
-    //       src="https://cdn.pixabay.com/photo/2014/04/03/10/54/playing-card-311679_1280.png"
-    //       alt=""
-    //     />
-    //     <motion.img
-    //       animate={isOpen ? "open" : "closed"}
-    //       variants={variants4}
-    //       transition={{ duration: 0.4 }}
-    //       src="https://cdn.pixabay.com/photo/2014/04/03/10/54/playing-card-311679_1280.png"
-    //       alt=""
-    //     />
-    //     <motion.img
-    //       animate={isOpen ? "open" : "closed"}
-    //       variants={variants5}
-    //       transition={{ duration: 0.4 }}
-    //       src="https://cdn.pixabay.com/photo/2014/04/03/10/54/playing-card-311679_1280.png"
-    //       alt=""
-    //     />
-    //   </div>
-    //   <div className="buttons">
-    //     <button onClick={() => setIsOpen((isOpen) => !isOpen)}>Shuffle</button>
-    //   </div>
-    // </div>
     <div className="Main-Tarot">
       <div className="Tarot-Heading">
         <h1>Tarot Reading</h1>

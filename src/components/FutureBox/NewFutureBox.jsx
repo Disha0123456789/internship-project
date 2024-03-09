@@ -5,10 +5,13 @@ const NewFutureBox = () => {
   return (
     <>
       <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
-        <h1 className="text-3xl pb-6 font-semibold">Read Your Future Now</h1>
+        <h1 className="text-3xl pb-6 font-semibold">Read Your Future Now ! </h1>
 
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-10 md:gap-14">
-          <div class="h-36 sm:h-56 flex flex-col justify-center border bg-gradient-to-tr from-purple-300 to-blue-300 rounded-xl text-center p-4 md:p-5 dark:border-gray-700">
+          <div
+            onClick={() => navigate("/tarot_reading")}
+            class="h-36 sm:h-56 flex flex-col justify-center border bg-gradient-to-tr from-purple-300 to-blue-300 rounded-xl text-center p-4 md:p-5 dark:border-gray-700"
+          >
             <div class="flex justify-center items-center size-16 md:size-40 rounded-lg mx-auto">
               <img src="/ICONS/tarot.png" alt="12" />
             </div>
@@ -83,7 +86,9 @@ const NewFutureBox = () => {
       </div>
 
       <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
-        <h1 className="text-3xl pb-6 font-semibold">Embark On Your Journey</h1>
+        <h1 className="text-3xl pb-6 font-semibold">
+          Embark On Your Journey !
+        </h1>
 
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-10 md:gap-14">
           <div class="h-36 sm:h-56 flex flex-col justify-center border bg-gradient-to-tr from-purple-300 to-blue-300 rounded-xl text-center p-4 md:p-5 dark:border-gray-700">
@@ -126,7 +131,7 @@ const NewFutureBox = () => {
 
       <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
         <h1 className="text-3xl pb-6 font-semibold">
-          Lets go To Another Dimension
+          Lets Go To Another Dimension !
         </h1>
 
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-10 md:gap-14">
@@ -169,7 +174,7 @@ const NewFutureBox = () => {
       </div>
 
       <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
-        <h1 className="text-3xl pb-6 font-semibold">Nourish Your Soul</h1>
+        <h1 className="text-3xl pb-6 font-semibold">Nourish Your Soul !</h1>
 
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-10 md:gap-14">
           <div

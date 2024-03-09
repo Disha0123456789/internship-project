@@ -1,16 +1,50 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./Cards.css";
+
 import { animate, motion } from "framer-motion";
 import IMG from "./IMGS/shuffle card girl.png";
 import CARDS from "./IMGS/wizard-tarot-card-rider-site-scry.png";
+import { useNavigate } from "react-router-dom";
+
 const Shuffle = () => {
+  const navigate = useNavigate(); // Corrected useNavigate call
+  const cards = [
+    "THE FOOL",
+    "THE MAGICIAN",
+    "THE HIGH PRIESTESS",
+    "THE EMPRESS",
+    "THE EMPRESS",
+    "THE HIEROPHANT",
+    "THE LOVERS",
+    "THE CHARIOT",
+    "THE STRENGTH",
+    "THE HERMIT",
+    "THE WHEEL OF FORTUNE",
+    "JUSTICE",
+    "THE HANGED MAN",
+    "DEATH",
+    "TEMPERANCE",
+    "THE DEVIL",
+    "THE TOWER",
+    "THE STAR",
+    "THE MOON",
+    "THE SUN",
+    "JUDGEMENT",
+    "THE WORLD",
+  ];
+
+  const CardSelected = () => {
+    const card = cards[Math.floor(Math.random() * cards.length)];
+
+    navigate("/TarotResult", { state: { card } });
+  };
   const variants = [];
-  for (let i = 0; i < 20; i++) {
+  for (let i = 0; i < 21; i++) {
     variants[i] = {
       open: { x: -(100 + 60 * i), y: -100, opacity: 0 },
       closed: {
         x: 0,
-        y: -60 + 60 * Math.sin((i * Math.PI) / 19), //Math.sin(i / ((3 * Math.PI) / 2))
+        y: -60 + 60 * Math.sin((i * Math.PI) / 19),
         opacity: 1,
       },
     };
@@ -32,6 +66,7 @@ const Shuffle = () => {
         {variants.map((variant, index) => {
           return (
             <motion.img
+              onClick={() => CardSelected()}
               key={index}
               animate={isOpen ? "open" : "closed"}
               variants={variant}

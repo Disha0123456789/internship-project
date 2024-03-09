@@ -33,12 +33,12 @@ import WorkLifeBalance from "./Page/Support/WorkLifeBalance";
 import Grief from "./Page/Support/Grief";
 import FinalPage from "./Page/Support/FinalPage";
 
-import { FortuneWheel } from "./components/wheel/FortuneWheel";
+import FortuneWheel from "./components/wheel/FortuneWheel";
 
-import AngerManagagement from "./Page/Support/AngerManagement";
 import Obsession from "./Page/Support/Obsession";
 import Shuffle from "./Page/TarotReading/Shuffle";
 import AngerManagement from "./Page/Support/AngerManagement";
+import TarotResult from "./Page/TarotReading/TarotResult";
 
 function App() {
   return (
@@ -47,6 +47,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/tarot_reading" element={<TarotReading />} />
         <Route path="/CardSelection" element={<Shuffle />} />
+        <Route path="/TarotResult" element={<TarotResult />} />
         <Route path="/Faceresult" element={<Faceresult />} />
         <Route path="/Meditation" element={<Meditation />} />
 
