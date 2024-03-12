@@ -8,7 +8,7 @@ import NotificationsRoundedIcon from "@mui/icons-material/NotificationsRounded";
 
 function Header() {
   return (
-    <Navbar expand="lg" className="bg-body-tertiary">
+    <Navbar className="bg-body-tertiary w-screen">
       <Container fluid>
         <Navbar.Brand href="#home">
           <img
@@ -38,16 +38,6 @@ function Header() {
                 <SearchRoundedIcon />
               </InputGroup.Text>
             </InputGroup>
-
-            <Form.Select
-              className="me-3"
-              style={{ height: "40px", width: "100px" }}
-            >
-              <option value="en">English</option>
-              <option value="fr">French</option>
-              <option value="es">Spanish</option>
-              <option value="de">German</option>
-            </Form.Select>
 
             <Nav.Link href="#home" className="me-3">
               Login/Registration

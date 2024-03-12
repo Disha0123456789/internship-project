@@ -4,39 +4,24 @@ import "./Cards.css";
 import { animate, motion } from "framer-motion";
 import IMG from "./IMGS/shuffle card girl.png";
 import CARDS from "./IMGS/wizard-tarot-card-rider-site-scry.png";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 const Shuffle = () => {
   const navigate = useNavigate(); // Corrected useNavigate call
-  const cards = [
-    "THE FOOL",
-    "THE MAGICIAN",
-    "THE HIGH PRIESTESS",
-    "THE EMPRESS",
-    "THE EMPRESS",
-    "THE HIEROPHANT",
-    "THE LOVERS",
-    "THE CHARIOT",
-    "THE STRENGTH",
-    "THE HERMIT",
-    "THE WHEEL OF FORTUNE",
-    "JUSTICE",
-    "THE HANGED MAN",
-    "DEATH",
-    "TEMPERANCE",
-    "THE DEVIL",
-    "THE TOWER",
-    "THE STAR",
-    "THE MOON",
-    "THE SUN",
-    "JUDGEMENT",
-    "THE WORLD",
-  ];
+  const loc = useLocation();
+  const cardhead = [];
+  const cardtext = [];
+  const heads = loc.state.head;
+  console.log(heads);
+  loc.state.cards.map((card) => {
+    cardhead.push(card.CardHead);
+    cardtext.push(card.CardInfo);
+  });
 
   const CardSelected = () => {
-    const card = cards[Math.floor(Math.random() * cards.length)];
+    const card = Math.floor(Math.random() * cardhead.length);
 
-    navigate("/TarotResult", { state: { card } });
+    navigate("/TarotResult", { state: { card, cardhead, cardtext, heads } });
   };
   const variants = [];
   for (let i = 0; i < 21; i++) {
@@ -55,7 +40,7 @@ const Shuffle = () => {
   return (
     <div className="Main-tarot">
       <div className="Tarot-Heading">
-        <h1>Weekend Tarot Fortune</h1>
+        <h1>{loc.state.head}</h1>
         <h3>Choose a Card</h3>
       </div>
       <div className="girl-pic">
