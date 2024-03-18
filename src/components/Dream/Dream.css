@@ -1,0 +1,84 @@
+.dream {
+    display: flex;
+    flex-direction: column;
+    /* background-color: #FDF2F8; */
+    /* align-items: center;  */
+    min-height: 100vh;
+    /* width: 100%; */
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    /* font-weight: 400; */
+    font-style: normal;
+    font-variation-settings:
+        "slnt" 0;
+}
+
+.Meditation-text {
+    height: clamp(5vh, 10vh, 12vh);
+    width: 100%;
+}
+
+.Meditation-text p {
+    font-size: clamp(2.5rem, 5vw, 3rem);
+    color: purple;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 2rem;
+    font-family: "Inter", sans-serif;
+}
+
+.dream-container {
+    display: flex;
+    margin-top: 50px;
+    cursor: pointer;
+    /* border: 1px solid black; */
+    align-items: center;
+    justify-content: center;
+    /* flex-direction: column; */
+    /* Horizontally center the cards */
+    padding: 10px;
+    /* width: 100%; */
+    flex-wrap: wrap;
+}
+
+.dreamComponent {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 1px solid black; */
+    margin-right: 30px;
+    margin-top: 20px;
+    /* margin-right: 20px; */
+    /* Adjusted margin for spacing */
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* flex: 1; */
+    /* Allow the cards to grow and shrink */
+    width:15vw;
+    /* max-width: 20vw; */
+    /* Set maximum width for the cards */
+}
+
+.dream-img {
+    height: auto;
+    /* Make the image responsive */
+    /* object-fit: contain; */
+    width:100px;
+    /* Set a fixed width for the images */
+}
+
+.dream-title {
+    margin-top: 10px;
+    font-weight: 600;
+    font-size: 1.2rem;
+    text-align: center;
+    /* Center the text */
+}
+
+@media (max-width: 768px) {
+    .dreamComponent {
+        width: 40vw;
+    }  
+} 

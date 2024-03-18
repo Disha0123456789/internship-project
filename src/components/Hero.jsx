@@ -1,7 +1,10 @@
 import React from "react";
 import "./hero.css";
 import "/top-row/kundli.png";
+import { useNavigate } from "react-router-dom";
+
 const Hero = () => {
+  const navigate = useNavigate();
   return (
     <div class=" max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-12 mx-auto mb-2">
       <div class="up">
@@ -43,7 +46,7 @@ const Hero = () => {
             />
           </div>
         </div>
-        <div class="text-center gap-3 h-50 flex items-center  bg-gradient-to-tr from-purple-300 to-blue-300 p-8 rounded-xl">
+        <div onClick={() => navigate("/love_check")} class="text-center gap-3 h-50 flex items-center  bg-gradient-to-tr from-purple-300 to-blue-300 p-8 rounded-xl">
           <div class="mt-3 cursor-pointer">
             <h3 class="text-2xl font-semibold text-gray-800 ">Love Check</h3>
           </div>

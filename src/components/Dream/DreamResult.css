@@ -1,0 +1,66 @@
+.dream-result {
+  background-color: #fdf2f8;
+  min-height: 100vh;
+  /* Ensure background color spreads till the end of the screen */
+  /* padding: 20px; */
+  display: flex;
+  flex-direction: column;
+}
+
+.dreamcard-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* width: fit-content; */
+  margin-top: 30px;
+  /* border: 1px solid black; */
+}
+
+.dream-result-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 70%;
+  max-width: 100%;
+  margin-top: 20px;
+  /* border: 1px solid black; */
+
+}
+
+.title {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+}
+
+.divider {
+  border: 1px solid gray;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.margin-div {
+  margin-top: 20px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+
+  .title {
+    font-size: 20px;
+    padding: 10px;
+    border-bottom: 1px solid black;
+  }
+
+  .description {
+    font-size: 14px;
+  }
+}

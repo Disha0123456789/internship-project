@@ -41,6 +41,17 @@ import AngerManagement from "./Page/Support/AngerManagement";
 import TarotResult from "./Page/TarotReading/TarotResult";
 import FuturePrediction from "./Page/FuturePrediction/FuturePrediction";
 
+import Numerology from './components/Numerology/Numerology';
+import LifePathNumber from "./components/Numerology/LifePathNumber";
+import Dream from "./components/Dream/Dream"; 
+import DreamInterpretation from "./components/Dream/DreamInterpretation";
+import DreamResult from "./components/Dream/DreamResult";
+import DreamBook from "./components/Dream/DreamBook";
+import DreamHistoryList from "./components/Dream/DreamHistoryList";
+import DreamHistory from "./components/Dream/DreamHistory";
+import SleepMusic from "./components/SleepMusic/SleepMusic";
+import LoveCheck from "./components/LoveCheck/LoveCheck";
+
 function App() {
   return (
     <BrowserRouter>
@@ -92,8 +103,20 @@ function App() {
         <Route path="/Done" element={<FinalPage />} />
         <Route path="/WorkLifeBalance" element={<WorkLifeBalance />} />
         <Route path="/SelfEsteemIssues" element={<SelfEsteemIssues />} />
-
         <Route path="/Facecard" element={<Facecard />} />
+        
+        <Route path="/numerology" element={<Numerology />} />
+        <Route path="lifepathnumber" element={<LifePathNumber />} />
+
+        <Route path="dream" element={<Dream />} />
+        <Route path="dream_meaning" element={<DreamInterpretation/>} />
+        <Route path="dream_result" element={<DreamResult />} />
+        <Route path="dream_book" element={<DreamBook />} />
+        <Route path="dream_history_list" element={<DreamHistoryList />} />
+        <Route path="dream_history" element={<DreamHistory />} />
+        <Route path="sleep_music" element={<SleepMusic />} />
+        <Route path="love_check" element={<LoveCheck />} />
+        
       </Routes>
     </BrowserRouter>
   );
