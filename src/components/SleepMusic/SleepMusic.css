@@ -93,10 +93,19 @@
         height: 75vw;
         width: 100%;
     }
-
+    .youtube{
+        /* border: 1px solid black; */
+        width: 100%;
+        height: 100vh;
+        position: relative;
+    }
     .Card iframe {
+        /* width: 50%;
+        height: 20vh; */
         width: auto;
-        height: auto;
+        height: 23vh;
+        top: 43%;
+        position: absolute;
     }
 }
 

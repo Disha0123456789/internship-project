@@ -28,7 +28,7 @@
 
 }
 
-.title {
+.dream-result-title {
   font-size: 1.6rem;
   margin-bottom: 10px;
   text-align: center;
@@ -37,7 +37,7 @@
 }
 
 .divider {
-  border: 1px solid gray;
+  /* border: 1px solid gray; */
   margin-bottom: 10px;
 }
 
@@ -54,13 +54,14 @@
 /* Responsive styles */
 @media (max-width: 768px) {
 
-  .title {
-    font-size: 20px;
-    padding: 10px;
-    border-bottom: 1px solid black;
-  }
+  /* .dream-title { */
+    /* font-size: 20px; */
+    /* padding: 10px; */
+    /* border-bottom: 1px solid black; */
+  /* } */
 
   .description {
     font-size: 14px;
   }
+
 }
