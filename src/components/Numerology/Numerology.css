@@ -152,9 +152,14 @@
 }
 
 @media (max-width: 768px) {
+    .numerology-container {
+        /* border: 1px solid black; */
+        width: 70%;
+    }
+
     .numerology-card {
         /* border: 1px solid black; */
-        width: 300px;
+        width: 100%;
     }
 
     .lucky-container {

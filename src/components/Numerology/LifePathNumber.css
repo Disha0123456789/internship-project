@@ -71,7 +71,12 @@
 }
 
 @media (max-width: 768px) {
+    .life-path-container {
+        /* border: 1px solid black; */
+        width: 100%;
+    }
     .lifepathcard {
-        width: 320px;
+        
+        width: 90%;
     }
 }

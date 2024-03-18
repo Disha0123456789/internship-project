@@ -85,13 +85,18 @@
 }
 
 @media screen and (max-width: 468px) {
+    .cards {
+        /* border: 1px solid black; */
+        width: 100%;
+    }
     .Card {
         height: 75vw;
-        width: 80vw;
+        width: 100%;
     }
 
     .Card iframe {
-        width: 70vw;
+        width: auto;
+        height: auto;
     }
 }
 
