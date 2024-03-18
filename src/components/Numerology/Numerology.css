@@ -1,7 +1,7 @@
 /* Base styles */
 .numerology {
     /* background-color: #FDF2F8; */
-    /* min-height: 100vh; */
+    min-height: 100vh;
     /* width: 100%; */
     display: flex;
     flex-direction: column;
@@ -23,12 +23,12 @@
 }
 
 .numerology-container {
-    /* border: 1px solid black; */
+    /* border: 2px solid black; */
     display: flex;
     flex-direction: column;
     align-items: center;
     /* justify-content: center; */
-    width: fit-content;
+    width: 60%;
 }
 
 .Meditation-text {
@@ -51,10 +51,10 @@
     margin-left: 5px;
 }
 
-.card {
+.numerology-card {
     width: 100%;
     /* Adjust width to fit well on smaller screens */
-    max-width: 500px;
+    /* max-width: auto; */
     /* margin: 20px auto; */
     /* Center the card horizontally */
     border-radius: 8px;
@@ -103,7 +103,7 @@
     flex-wrap: wrap;
     width: 100%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-
+    border: 1px solid black;
     /* margin-bottom: 20px; */
 }
 
@@ -145,30 +145,29 @@
 .divider {
     border: 1px solid #ccc;
     width: 100%;
-    margin-bottom:0px;
 }
 
 .lucky-card-content {
-    margin-top: 10px;
+    margin-top: 5px;
 }
 
 @media (max-width: 768px) {
-    .card {
+    .numerology-card {
         /* border: 1px solid black; */
-        max-width: 345px;
+        width: 300px;
     }
 
     .lucky-container {
-        width: 80%;
+        width: 500px;
+    }
+
+    .lucky-container-wrapper {
+        margin-top: 0%;
     }
 
     .lucky-cards {
         border: 1px solid black;
         margin-bottom: 2px;
-    }
-
-    .divider {
-        width: 0%;
     }
     
     .lucky-container-wrapper::after {

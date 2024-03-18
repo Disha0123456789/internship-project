@@ -58,7 +58,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/tarot_reading" element={<TarotReading />} />
-        <Route path="/CardSelection" element={<Shuffle />} />
+        <Route path="/CardS election" element={<Shuffle />} />
         <Route path="/TarotResult" element={<TarotResult />} />
         <Route path="/Faceresult" element={<Faceresult />} />
         <Route path="/Meditation" element={<Meditation />} />
@@ -105,17 +105,17 @@ function App() {
         <Route path="/SelfEsteemIssues" element={<SelfEsteemIssues />} />
         <Route path="/Facecard" element={<Facecard />} />
         
-        <Route path="/numerology" element={<Numerology />} />
-        <Route path="lifepathnumber" element={<LifePathNumber />} />
+        <Route path="/Numerology" element={<Numerology />} />
+        <Route path="/lifepathnumber" element={<LifePathNumber />} />
 
-        <Route path="dream" element={<Dream />} />
-        <Route path="dream_meaning" element={<DreamInterpretation/>} />
-        <Route path="dream_result" element={<DreamResult />} />
-        <Route path="dream_book" element={<DreamBook />} />
-        <Route path="dream_history_list" element={<DreamHistoryList />} />
-        <Route path="dream_history" element={<DreamHistory />} />
-        <Route path="sleep_music" element={<SleepMusic />} />
-        <Route path="love_check" element={<LoveCheck />} />
+        <Route path="/dream" element={<Dream />} />
+        <Route path="/dream_meaning" element={<DreamInterpretation/>} />
+        <Route path="/dream_result" element={<DreamResult />} />
+        <Route path="/dream_book" element={<DreamBook />} />
+        <Route path="/dream_history_list" element={<DreamHistoryList />} />
+        <Route path="/dream_history" element={<DreamHistory />} />
+        <Route path="/sleep_music" element={<SleepMusic />} />
+        <Route path="/love_check" element={<LoveCheck />} />
         
       </Routes>
     </BrowserRouter>

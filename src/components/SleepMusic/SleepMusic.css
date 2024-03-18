@@ -9,24 +9,28 @@
         "slnt" 0;
 }
 
-/* .Meditation-text {
+.Meditation-text {
     height: clamp(5vh, 10vh, 12vh);
     width: 100%;
-} */
+    /* border: 1px solid black; */
+}
 
 .Meditation-text h1 {
     font-size: clamp(2.5rem, 5vw, 3rem);
     color: purple;
     font-weight: 600;
     text-align: center;
+    /* border: 1px solid black; */
 }
 
 .cards {
     /* margin-top: 50px; */
     /* padding: 30px; */
     /* width: 100%; */
-    min-height: 30vh; /* Adjust the minimum height */
-    max-height: 80vh; /* Limit the maximum height */
+    min-height: max-content;
+    /* Adjust the minimum height */
+    /* max-height: 80vh; */
+    /* Limit the maximum height */
     /* overflow: auto; */
     /* border-top: 1px solid black; */
     display: flex;
@@ -35,8 +39,8 @@
     justify-content: center;
     gap: 50px;
     flex-wrap: wrap;
-    
     /* border: 1px solid black; */
+    position: relative;
 }
 
 .Card {
@@ -54,6 +58,8 @@
     cursor: pointer;
     gap: 20px;
     overflow: hidden;
+    background-color: white;
+    /* border: 1px solid black; */
 }
 
 
@@ -64,7 +70,7 @@
 }
 
 .Card iframe {
-    height: clamp(10rem, 10vw, 12rem);
+    height: clamp(1rem, 10vw, 12rem);
     border-radius: 5px;
     min-width: 200px;
     width: 20vw;
@@ -72,13 +78,13 @@
     top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
-    margin-top: 20px;
+    /* margin-top: 20px; */
 
     /* height: clamp(5vh, 20vw, 30vh); */
 
 }
 
-@media screen and (max-width: 468px) {  
+@media screen and (max-width: 468px) {
     .Card {
         height: 75vw;
         width: 80vw;
@@ -87,7 +93,9 @@
     .Card iframe {
         width: 70vw;
     }
-}.Card:hover {
+}
+
+.Card:hover {
     box-shadow: 0px 0px 20px 0px rgb(10, 10, 10);
     transform: scale(1.05);
     transition: all 0.5s ease-in-out;

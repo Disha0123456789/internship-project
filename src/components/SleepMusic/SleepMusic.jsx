@@ -30,7 +30,7 @@ const DailyMeditation = () => {
             <div className="Meditation-text">
                 <h1>Sleep Music</h1>
             </div>
-            <div className="Hero-section">
+            <div>
                 <div className="cards">
                     {name.map((name, index) => {
                         return (
@@ -52,7 +52,7 @@ const DailyMeditation = () => {
                     })}
                 </div>
             </div>
-            <div style={{marginTop: "33%"}}>
+            <div style={{marginTop: "1%"}}>
             </div>
         </div>
     );
