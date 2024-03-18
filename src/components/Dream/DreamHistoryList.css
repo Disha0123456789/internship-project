@@ -1,0 +1,68 @@
+.dreamhistory-list {
+    /* background-color: #FDF2F8; */
+    min-height: 100vh;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 70px;
+    width: 75%;
+    /* border: 1px solid black; */
+    /* margin-left: 150px;
+    margin-right: 150px; */
+}
+
+.card {
+    width: calc(50% - 20px);
+    /* Two cards per row with a little space in between */
+    /* margin-bottom: 20px; */
+    /* padding: 20px; */
+    /* border: 1px solid black  ; */
+    border-radius: 8px;
+    /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); */
+    box-sizing: border-box;
+}
+
+.card-top-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-top-container p {
+    margin-right: 10px;
+}
+
+.card-title {
+    /* margin-bottom: 10px; */
+}
+
+.divider {
+    width: 100%;
+    border: 1px solid gray;
+}
+
+.card-description {
+    margin-bottom: 0;
+    text-align: justify;
+}
+
+.card:hover {
+    box-shadow: 0px 0px 20px 0px rgb(10, 10, 10);
+    transform: scale(1.05);
+    transition: all 0.5s ease-in-out;
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: 100%;
+        /* Full width on smaller screens */
+    }
+}

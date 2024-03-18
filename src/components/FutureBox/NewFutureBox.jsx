@@ -109,7 +109,7 @@ const NewFutureBox = () => {
           Lets Go To Another Dimension !
         </h1>
 
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-10 md:gap-14">
+        <div onClick={() => navigate("/dream")} class="grid grid-cols-1 lg:grid-cols-3 gap-10 md:gap-14">
           <div class="h-36 mx-10 sm:h-50 w-60 flex flex-col justify-center border bg-gradient-to-tr from-purple-300 to-blue-300 rounded-xl text-center p-2 md:p-1 dark:border-gray-700">
             <div class="flex justify-center items-center size-20 rounded-lg mx-auto">
               <img src="/ICONS/dreaminterpretation.png" alt="17" />
@@ -134,16 +134,17 @@ const NewFutureBox = () => {
             </div>
           </div>
 
-          <div class="h-36 sm:h-50 w-60 flex flex-col justify-center border bg-gradient-to-tr from-purple-300 to-blue-300 rounded-xl text-center mx-20 p-4 md:p-5 dark:border-gray-700">
-            <div class="flex justify-center items-center size-20 rounded-lg mx-auto">
-              <img src="/ICONS/numerology.png" alt="16" />
-            </div>
+          <div onClick={() => navigate("/numerology")}
+            class="h-36 sm:h-50 w-60 flex flex-col justify-center border bg-gradient-to-tr from-purple-300 to-blue-300 rounded-xl text-center mx-20 p-4 md:p-5 dark:border-gray-700">
+              <div class="flex justify-center items-center size-20 rounded-lg mx-auto">
+                <img src="/ICONS/numerology.png" alt="16" />
+              </div>
 
-            <div class="mt-3">
-              <h3 class="text-md sm:text-2xl font-semibold text-gray-800 ">
-                Numerology
-              </h3>
-            </div>
+              <div class="mt-3">
+                <h3 class="text-md sm:text-2xl font-semibold text-gray-800 ">
+                  Numerology
+                </h3>
+              </div>
           </div>
         </div>
       </div>
