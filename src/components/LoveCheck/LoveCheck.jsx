@@ -86,7 +86,7 @@ const LoveCheck = () => {
             <div className='Meditation-text'>
                 <p>Love Check</p>
                 <div className='caution'>
-                    <h2>Tap on Petels to remove</h2>
+                    <h2>Tap on Petels to remove it</h2>
                 </div>
             </div>
             <div className="container">
