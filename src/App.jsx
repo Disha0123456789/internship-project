@@ -58,7 +58,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/tarot_reading" element={<TarotReading />} />
-        <Route path="/CardS election" element={<Shuffle />} />
+        <Route path="/CardSelection" element={<Shuffle />} />
         <Route path="/TarotResult" element={<TarotResult />} />
         <Route path="/Faceresult" element={<Faceresult />} />
         <Route path="/Meditation" element={<Meditation />} />
