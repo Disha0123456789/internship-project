@@ -11,9 +11,9 @@ export default function Numerology() {
             </div>
             <div className="numerology-main">
                 <div className="numerology-container">
-                    <div className="numerology-card">
+                    <div onClick={() => navigate("/lifepathnumber")} className="numerology-card">
                         <img src="/4throw/num-icon.png" alt="Card Image" className="card-img" />
-                        <div className="card-content" onClick={() => navigate("/lifepathnumber")}>
+                        <div className="card-content">
                             <h3 className="card-title">Life Path Number <span className="clickhere">(click here)</span></h3>
                         </div>
                     </div>

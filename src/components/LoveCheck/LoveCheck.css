@@ -6,6 +6,17 @@
     /* background-color: #FDF2F8; */
 }
 
+.caution {
+    /* border: 1px solid black; */
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.caution h2 {
+    font-size: 1.4rem;
+}
+
 .container {
     display: flex;
     flex-direction: column;
@@ -28,7 +39,7 @@
     position: relative;
     width: 300px;
     height: 300px;
-    margin-top: 12vh;
+    margin-top: 15vh;
 }
 
 .center {
