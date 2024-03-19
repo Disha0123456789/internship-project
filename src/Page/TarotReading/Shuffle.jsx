@@ -41,6 +41,8 @@ const Shuffle = () => {
     <div className="Main-tarot">
       <div className="Tarot-Heading">
         <h1>{loc.state.head}</h1>
+      </div>
+      <div className="choose-card-heading">
         <h3>Choose a Card</h3>
       </div>
       <div className="girl-pic">
