@@ -22,7 +22,7 @@
 .card {
     width: calc(50% - 20px);
     /* Two cards per row with a little space in between */
-    /* margin-bottom: 20px; */
+    margin-bottom: 30px;
     /* padding: 20px; */
     /* border: 1px solid black  ; */
     border-radius: 8px;

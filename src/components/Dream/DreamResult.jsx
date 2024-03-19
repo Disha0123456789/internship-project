@@ -9,7 +9,7 @@ export default function DreamResult() {
             </div>
             <div className='dreamcard-container'>
                 <div className="dream-result-card">
-                    <h2 className="title">Dream Analysis</h2>
+                    <h2 className="dream-result-title">Dream Analysis</h2>
                     <div className="divider"></div>
                     <p className="description">Through face reading, we discern ancestral origins, tracing lineage to ancient roots. The
                         contours of your face whisper tales of ancestry, revealing a rich tapestry of heritage. From the
