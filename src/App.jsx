@@ -7,7 +7,6 @@ import Home from "./Page/Home/Home";
 import Facecard from "./assets/Boxes/Facecard";
 import FinalPage from "./Page/Support/FinalPage";
 import FuturePrediction from "./Page/TimeTravel/FuturePrediction";
-import AstroMain from "./Page/Astrology/AstroMain";
 
 import Faceresult from "./assets/Boxes/Facecard/Faceresult";
 import Timemagicresult from "./assets/Boxes/Facecard/Timemagicresult";
@@ -105,7 +104,6 @@ function App() {
         <Route path="/Grief" element={<Grief />} />
         <Route path="/Done" element={<FinalPage />} />
         <Route path="/FuturePrediction" element={<FuturePrediction />} />
-        <Route path="/AstroMain" element={<AstroMain />} />
         <Route path="/WorkLifeBalance" element={<WorkLifeBalance />} />
         <Route path="/SelfEsteemIssues" element={<SelfEsteemIssues />} />
         <Route path="/Facecard" element={<Facecard />} />
