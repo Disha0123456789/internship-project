@@ -1,0 +1,438 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+}
+
+body {
+  background: #eee;
+}
+.container {
+  background-color: #fdf2f8;
+  height: auto;
+  display: flex;
+  align-items: center;
+  border-radius: 2vh;
+  margin-top: 2.5vh;
+  flex-direction: column;
+}
+.header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.header > h1 {
+  margin: 4vh 0 0 0;
+  font-size: clamp(2.5rem, 5vw, 3rem);
+  color: purple;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 2rem;
+}
+.Container {
+  background-color: #fdf2f8;
+  width: clamp(30vw, 70vw, 80vw);
+
+  min-width: 20vw;
+
+  box-shadow: 0px 5px 10px 0px rgb(125, 115, 115);
+  margin: auto;
+  border-radius: 20px;
+}
+
+.Container-heading {
+  position: relative;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.Container-final {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.Container-heading h1 {
+  font-size: clamp(2.2rem, 3vw, 3rem);
+  font-weight: 700;
+}
+.content {
+  display: flex;
+}
+.content-left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 40%;
+  padding: 10px;
+}
+.content-left button {
+  color: white;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: rgb(26, 26, 26);
+  cursor: pointer;
+  border-radius: 8px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparent;
+  border-image: initial;
+  padding: 0.6em 1.2em;
+  transition: border-color 0.25s ease 0s;
+}
+.content-left button:hover {
+  transition: all 0.2s ease-in-out;
+  overflow: hidden;
+  box-shadow: 0px 5px 10px 0px rgb(125, 115, 115);
+  border: 0;
+  color: black;
+  background-color: white;
+}
+.content-left img {
+  width: 100%;
+  height: 60%;
+  border-radius: 20px;
+  object-fit: cover;
+}
+.content-right {
+  margin: 10px;
+  height: 300px;
+  width: 60%;
+  text-align: center;
+}
+.content-right p {
+  text-align: left;
+  font-weight: 600;
+  width: 100%;
+  /* margin-top: clamp(10px, 1.5vw, 20px); */
+  font-size: clamp(0.8rem, 1.2vw, 1.4rem);
+}
+.content-right h1 {
+  font-size: clamp(2rem, 3vw, 3rem);
+  font-weight: 700;
+}
+.top {
+  gap: 20px;
+  width: 100%;
+  padding-bottom: 10px;
+  border-bottom: 1px solid black;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.top h3 {
+  font-size: clamp(1.2rem, 2vw, 2rem);
+}
+.top img {
+  height: 30%;
+  width: 20%;
+  object-fit: cover;
+}
+.mid {
+  width: 100%;
+
+  padding: 20px;
+
+  gap: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid black;
+}
+.mid li {
+  margin: 20px;
+  width: 100%;
+
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+.mid li p {
+  width: 100%;
+}
+.bottom {
+  padding: 20px;
+}
+.bottom button {
+  color: white;
+}
+.bottom button:hover {
+  transition: all 0.2s ease-in-out;
+  overflow: hidden;
+  box-shadow: 0px 5px 10px 0px rgb(125, 115, 115);
+  border: 0;
+  color: black;
+  background-color: white;
+}
+@media screen and (max-width: 468px) {
+  .Container-heading h1 {
+    text-align: center;
+  }
+  .Container-heading {
+    margin: 10px;
+  }
+  .content {
+    flex-direction: column;
+  }
+  .content-left {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .content-right {
+    width: 100%;
+  }
+  .Container-heading {
+    height: 8%;
+  }
+  .Container {
+    width: 70%;
+    height: 70%;
+  }
+  .top img {
+    height: 50%;
+    width: 50%;
+  }
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  padding: 10px;
+}
+.grid-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  height: 150px;
+  width: 230px;
+  background-color: rgba(255, 255, 255, 0.8);
+  margin: 18px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  place-items: center;
+  position: relative;
+  transition: all 1s;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.grid-items:hover {
+  cursor: pointer;
+}
+
+.info h2,
+.info p {
+  color: #fff;
+  opacity: 0;
+  transition: all 0.6s;
+}
+
+.info h2 {
+  font-size: 15px;
+  margin: 40px 0 0 0;
+}
+
+.info p {
+  font-size: 2.5vh;
+  /* padding: 10px; */
+  margin: 10px 0 0 0;
+}
+
+.book-now {
+  height: 35px;
+  width: 90px;
+  font-size: 12px;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  transition: all 0.6s;
+  opacity: 0;
+  margin-bottom: 40px;
+}
+
+.link {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.bg-mc {
+  background: url("./images/Marriage Consultation.png") no-repeat center
+    center/cover;
+}
+
+.bg-hh {
+  background: url("./images/Health Healing.png") no-repeat center center/cover;
+}
+
+.bg-wh {
+  background: url("./images/Wealth Management.png") no-repeat center
+    center/cover;
+}
+
+.bg-li {
+  background: url("./images/Love Insights.png") no-repeat center center/cover;
+}
+
+.bg-eg {
+  background: url("./images/Educational Guidance.png") no-repeat center
+    center/cover;
+}
+
+.bg-cp {
+  background: url("./images/Career Path.png") no-repeat center center/cover;
+}
+
+.bg-bs {
+  background: url("./images/Business Strategies.png") no-repeat center
+    center/cover;
+}
+
+.bg-fp {
+  background: url("./images/Finance Planning.png") no-repeat center center/cover;
+}
+
+.bg-la {
+  background: url("./images/Legal Advice.png") no-repeat center center/cover;
+}
+
+.bg-rs {
+  background: url("./images/Remedies & Solutions.png") no-repeat center center/cover;
+}
+
+.bg-kfp {
+  background: url("./images/Kids Fortune Prediction.png") no-repeat center
+    center/cover;
+}
+
+.bg-pt {
+  background: url("./images/Parenting Tips.png") no-repeat center center/cover;
+}
+
+.bg-pa {
+  background: url("./images/Panchang Analysis.png") no-repeat center
+    center/cover;
+}
+
+.bg-bci {
+  background: url("./images/Birth Chart Interpretation.png") no-repeat center
+    center/cover;
+}
+
+.bg-sm {
+  background: url("./images/Shubh Muhurat.png") no-repeat center center/cover;
+}
+
+.bg-pp {
+  background: url("./images/Personalized Pooja.png") no-repeat center
+    center/cover;
+}
+
+.bg-th {
+  background: url("./images/Theta Healing.png") no-repeat center center/cover;
+}
+
+.bg-rh {
+  background: url("./images/Reiki Healing.png") no-repeat center center/cover;
+}
+
+.bg-ch {
+  background: url("./images/Chakra Healing.png") no-repeat center center/cover;
+}
+
+.bg-crh {
+  background: url("./images/Crystal Healing.png") no-repeat center center/cover;
+}
+
+.grid-items:hover .info h2,
+.grid-items:hover .info p {
+  opacity: 1;
+}
+
+.grid-items:hover .book-now {
+  opacity: 100%;
+}
+
+.info::before,
+.book-now::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #4d4d4d;
+  transform: skew(30deg) translateX(100%);
+  opacity: 0.3;
+  z-index: -1;
+  transition: all 0.6s ease;
+}
+.info::after,
+.book-now::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #4d4d4d;
+  transform: skew(-30deg) translateX(100%);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+  opacity: 0.3;
+  z-index: -1;
+  transition: all 0.6s ease;
+}
+
+.grid-items:hover .info::before,
+.book-now::before {
+  transform: skew(30deg) translateX(50%);
+}
+
+.grid-items:hover .info::after,
+.book-now::after {
+  transform: skew(-30deg) translateX(40%);
+  opacity: 0.7;
+}
+.grid-items::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #4d4d4d;
+  opacity: 0.3;
+  transform: skew(30deg) translateX(85%);
+  transition: all 0.6s ease;
+  z-index: -1;
+}
+
+.grid-items::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #4d4d4d;
+  opacity: 0.3;
+  transform: skew(-30deg) translateX(85%);
+  transition: all 0.6s ease;
+  z-index: -1;
+}
+.grid-items:hover:before {
+  transform: skew(30deg) translateX(30%);
+}
+.grid-items:hover:after {
+  transform: skew(-30deg) translateX(20%);
+}
