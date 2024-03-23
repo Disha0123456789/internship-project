@@ -1,0 +1,181 @@
+/* Base styles */
+.numerology {
+    /* background-color: #FDF2F8; */
+    min-height: 100vh;
+    /* width: 100%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+    /* border: 1px solid black; */
+}
+
+.numerology-main {
+    /* margin-top: 30px; */
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+
+.numerology-container {
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    width: 60%;
+}
+
+.Meditation-text {
+    height: clamp(5vh, 10vh, 12vh);
+    /* margin-bottom: 40px; */
+    /* border: 1px solid black; */
+    border: none;
+}
+
+
+.Meditation-text p {
+    font-size: clamp(2.5rem, 5vw, 3rem);
+    color: purple;
+    font-weight: 500;
+    text-align: center;
+    /* margin-top: 2rem; */
+} 
+
+.clickhere {
+    margin-left: 5px;
+}
+
+.numerology-card {
+    width: 100%;
+    /* Adjust width to fit well on smaller screens */
+    /* max-width: auto; */
+    /* margin: 20px auto; */
+    /* Center the card horizontally */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background-color: #fff;
+    cursor: pointer;
+    border: transparent;
+    margin-bottom: 30px;
+}
+
+.card-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card-content {
+    /* padding: 10px; */
+}
+
+.card-title {
+    /* margin-top: 20px; */
+    padding: 20px;
+    color: #333;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.lucky-container {
+    width: 50%; /* Calculate width to ensure equal width for two containers with margin */
+    /* max-width: 300px; */
+    /* padding: 5px; */
+    background-color: #fff;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    /* margin-bottom: 20px; Add margin between the containers */
+}
+
+.lucky-container-wrapper {
+    display: flex;
+    justify-content:center;
+    position: relative;
+    flex-wrap: wrap;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid black;
+    /* margin-bottom: 20px; */
+}
+
+.lucky-container-wrapper::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: #ccc;
+}
+
+.lucky-icons {
+    width: 50px;
+    margin-right: 5px;
+}
+
+.lucky-img-content-container {
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    width: 100%;
+    margin-left: 10px;
+}
+
+.lucky-card-content {
+    font-weight: bold;
+}
+
+.lucky-cards {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    width: 100%;
+    /* border: 1px solid black; */
+}
+
+.divider {
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+.lucky-card-content {
+    margin-top: 5px;
+}
+
+@media (max-width: 768px) {
+    .numerology-container {
+        /* border: 1px solid black; */
+        width: 70%;
+    }
+
+    .numerology-card {
+        /* border: 1px solid black; */
+        width: 100%;
+    }
+
+    .lucky-container {
+        width: 500px;
+    }
+
+    .lucky-container-wrapper {
+        margin-top: 0%;
+    }
+
+    .lucky-cards {
+        border: 1px solid black;
+        margin-bottom: 2px;
+    }
+    
+    .lucky-container-wrapper::after {
+        width: 0%;
+    }
+}

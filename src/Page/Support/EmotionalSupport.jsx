@@ -35,7 +35,7 @@ const EmotionalSupport = () => {
 
   const onButtonClick = (option) => {
     if (option === "Anger Management") {
-      navigation.navigate("/AngerManagement");
+      navigate("/AngerManagement");
     } else if (option === "Obsession / OCD") {
       navigate("/Obsession");
     } else if (option === "Loneliness") {

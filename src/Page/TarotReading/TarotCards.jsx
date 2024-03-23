@@ -3,17 +3,24 @@ import "./Cards.css";
 import { PiHandsClappingBold } from "react-icons/pi";
 import { IoEyeSharp } from "react-icons/io5";
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 const TarotCards = ({ props }) => {
+  const navigate = useNavigate();
   const IMG = props.backdrop;
   const IMG2 = props.icon;
   const head = props.head;
   const p1 = props.p1;
   const p2 = props.p2;
+  const cards = props.cards;
+  const onCardClick = () => {
+    navigate("/CardSelection", { state: { cards, head } });
+  };
   return (
     <motion.div
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.9 }}
       className="Tarot-card"
+      onClick={() => onCardClick()}
     >
       <div className="back-img">
         <img className="Back-drop" src={IMG} alt="BACKDROP" />
@@ -31,38 +38,6 @@ const TarotCards = ({ props }) => {
       </div>
     </motion.div>
   );
-
-  //   return (
-  //     <div className="Tarot-card">
-  //       <div className="back-img">
-  //         <img
-  //           className="Back-drop"
-  //           src="./IMGS/weekend tarot background.jpg"
-  //           alt="BACKDROP"
-  //         />
-  //         <img
-  //           className="Card-Icon"
-  //           src="./IMGS/weekend tarot card.png"
-  //           alt="ICON"
-  //         />
-  //       </div>
-  //       <div className="Tarot-info">
-  //         <h3>Weekend Tarot Fortune</h3>
-  //         <p>Date</p>
-  //         <p>
-  //           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non,
-  //           officiis.
-  //         </p>
-  //         <p>
-  //           Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, ut?
-  //         </p>
-  //         <div className="icons">
-  //           <PiHandsClappingBold className="icon" />
-  //           <IoEyeSharp className="icon" />
-  //         </div>
-  //       </div>
-  //     </div>
-  //   );
 };
 
 export default TarotCards;

@@ -48,3 +48,4 @@ export const FortuneWheel = () => {
     // </div>
   );
 };
+export default FortuneWheel;

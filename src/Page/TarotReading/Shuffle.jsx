@@ -1,16 +1,35 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./Cards.css";
+
 import { animate, motion } from "framer-motion";
 import IMG from "./IMGS/shuffle card girl.png";
 import CARDS from "./IMGS/wizard-tarot-card-rider-site-scry.png";
+import { useLocation, useNavigate } from "react-router-dom";
+
 const Shuffle = () => {
+  const navigate = useNavigate(); // Corrected useNavigate call
+  const loc = useLocation();
+  const cardhead = [];
+  const cardtext = [];
+  const heads = loc.state.head;
+  console.log(heads);
+  loc.state.cards.map((card) => {
+    cardhead.push(card.CardHead);
+    cardtext.push(card.CardInfo);
+  });
+
+  const CardSelected = () => {
+    const card = Math.floor(Math.random() * cardhead.length);
+
+    navigate("/TarotResult", { state: { card, cardhead, cardtext, heads } });
+  };
   const variants = [];
-  for (let i = 0; i < 20; i++) {
+  for (let i = 0; i < 21; i++) {
     variants[i] = {
       open: { x: -(100 + 60 * i), y: -100, opacity: 0 },
       closed: {
         x: 0,
-        y: -60 + 60 * Math.sin((i * Math.PI) / 19), //Math.sin(i / ((3 * Math.PI) / 2))
+        y: -60 + 60 * Math.sin((i * Math.PI) / 19),
         opacity: 1,
       },
     };
@@ -21,7 +40,9 @@ const Shuffle = () => {
   return (
     <div className="Main-tarot">
       <div className="Tarot-Heading">
-        <h1>Weekend Tarot Fortune</h1>
+        <h1>{loc.state.head}</h1>
+      </div>
+      <div className="choose-card-heading">
         <h3>Choose a Card</h3>
       </div>
       <div className="girl-pic">
@@ -32,6 +53,7 @@ const Shuffle = () => {
         {variants.map((variant, index) => {
           return (
             <motion.img
+              onClick={() => CardSelected()}
               key={index}
               animate={isOpen ? "open" : "closed"}
               variants={variant}

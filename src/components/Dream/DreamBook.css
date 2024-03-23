@@ -1,0 +1,181 @@
+
+.dream-input-containers {
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dreambook {
+    /* border: 1px solid black; */
+    min-height: 100vh;
+    /* width: 60vw; */
+    /* height: 110vh; */
+    /* background-color: #FDF2F8; */
+
+}
+
+.dream-heading {
+    /* border: 1px solid black; */
+    padding: 5px;
+    /* padding-top: 10px;    */
+    /* margin-top: 10px; */
+}
+
+.dream-heading p{
+    color: purple;
+    font-family: "Inter", sans-serif;
+    font-size: clamp(2.5rem, 5vw, 3rem); 
+    text-align: center;
+    font-weight: 600;
+    /* margin-top: 20px; */
+    /* padding-top: 10px;    */
+    margin-bottom: 20px;
+}
+
+.dreamhistory-button-container {
+    display: flex;
+    /* border: 1px solid black; */
+    width: 60vw;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.dream-history-btn {
+    background-color: black;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: white;
+}
+
+.detail-wrapper {
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    width: 60vw;
+}
+
+/* Add CSS to position the DatePicker */
+.react-datepicker {
+    top: calc(100% + 10px);
+    /* Position it below the date input container */
+    left: 0;
+    /* Center the date picker horizontally */
+    z-index: 999;
+}
+
+/* Adjust the width if needed */
+.react-datepicker-wrapper {
+    width: 200px;
+    position: absolute;
+
+    /* Adjust width as needed */
+}
+
+
+.date-input-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+    position: relative;
+}
+
+.detail-container {
+    margin-bottom: 20px;
+}
+
+.detail-title {
+    font-weight: 600;
+}
+
+.textarea {
+    width: 100%;
+    height: 20vh;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    border: none;
+    /* border-radius: 10px; */
+    /* margin-top: 10px; */
+    /* border: 1px solid black; */
+    font-size: 1rem;
+    background-color: white;
+    color: black;
+}
+
+.textarea:focus {
+    outline: none;
+}
+
+.dreamtitle-input {
+    border: none;
+    width: 100%;
+    font-size: 1rem;
+    padding: 5px;
+    background-color: white;
+    color: black;
+}
+
+.dreamtitle-input:focus {
+    border: none;
+    outline: none;   
+}
+
+.dreamtitle-input:hover {
+    background-color: white;
+}
+
+.save-btn-container {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.save-btn-container button {
+    background-color: black;
+    border: none;
+    padding: 10px;
+    font-weight: 600;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: large;
+    cursor: pointer;
+    width: fit-content;
+    color: white;
+}
+
+.savedream-btn:hover {
+    background-color: white;
+    color: black;
+}
+
+.dream-history-btn:hover {
+    background-color: white;
+    color: black;
+}
+
+@media(max-width: 768px) {
+    .dreambook {
+        padding-top: 10px;
+    }
+
+    .detail-wrapper {
+        /* border: 1px solid black; */
+        width: 90%;
+    }
+
+    .dreamhistory-button-container {
+        /* border: 1px solid black; */
+        width: 90%;
+    }
+}

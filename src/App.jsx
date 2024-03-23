@@ -36,12 +36,24 @@ import WorkLifeBalance from "./Page/Support/WorkLifeBalance";
 import Grief from "./Page/Support/Grief";
 import FinalPage from "./Page/Support/FinalPage";
 
-import { FortuneWheel } from "./components/wheel/FortuneWheel";
+import FortuneWheel from "./components/wheel/FortuneWheel";
 
-import AngerManagagement from "./Page/Support/AngerManagement";
 import Obsession from "./Page/Support/Obsession";
 import Shuffle from "./Page/TarotReading/Shuffle";
 import AngerManagement from "./Page/Support/AngerManagement";
+import TarotResult from "./Page/TarotReading/TarotResult";
+import FuturePrediction from "./Page/FuturePrediction/FuturePrediction";
+
+import Numerology from './components/Numerology/Numerology';
+import LifePathNumber from "./components/Numerology/LifePathNumber";
+import Dream from "./components/Dream/Dream"; 
+import DreamInterpretation from "./components/Dream/DreamInterpretation";
+import DreamResult from "./components/Dream/DreamResult";
+import DreamBook from "./components/Dream/DreamBook";
+import DreamHistoryList from "./components/Dream/DreamHistoryList";
+import DreamHistory from "./components/Dream/DreamHistory";
+import SleepMusic from "./components/SleepMusic/SleepMusic";
+import LoveCheck from "./components/LoveCheck/LoveCheck";
 
 function App() {
   return (
@@ -50,8 +62,10 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/tarot_reading" element={<TarotReading />} />
         <Route path="/CardSelection" element={<Shuffle />} />
+        <Route path="/TarotResult" element={<TarotResult />} />
         <Route path="/Faceresult" element={<Faceresult />} />
         <Route path="/Meditation" element={<Meditation />} />
+        <Route path="/FuturePrediction" element={<FuturePrediction />} />
 
         <Route path="/Fortune_Wheel" element={<FortuneWheel />} />
 
@@ -94,8 +108,20 @@ function App() {
         <Route path="/AstroMain" element={<AstroMain />} />
         <Route path="/WorkLifeBalance" element={<WorkLifeBalance />} />
         <Route path="/SelfEsteemIssues" element={<SelfEsteemIssues />} />
-
         <Route path="/Facecard" element={<Facecard />} />
+        
+        <Route path="/Numerology" element={<Numerology />} />
+        <Route path="/lifepathnumber" element={<LifePathNumber />} />
+
+        <Route path="/dream" element={<Dream />} />
+        <Route path="/dream_meaning" element={<DreamInterpretation/>} />
+        <Route path="/dream_result" element={<DreamResult />} />
+        <Route path="/dream_book" element={<DreamBook />} />
+        <Route path="/dream_history_list" element={<DreamHistoryList />} />
+        <Route path="/dream_history" element={<DreamHistory />} />
+        <Route path="/sleep_music" element={<SleepMusic />} />
+        <Route path="/love_check" element={<LoveCheck />} />
+        
       </Routes>
     </BrowserRouter>
   );
