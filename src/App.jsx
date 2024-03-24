@@ -22,6 +22,7 @@ import BeginnerMeditation from "./components/meditation/BeginnerMeditation";
 import MentalHealthMeditation from "./components/meditation/MentalHealthMeditation";
 import EpicPowerMeditation from "./components/meditation/EpicPowerMeditation";
 import AstroMain from "./components/Astrology/AstroMain";
+import LineChart from "./components/Bioryhthm/LineChart";
 import EmotionalSupport from "./Page/Support/EmotionalSupport";
 
 import Loneliness from "./Page/Support/Loneliness";
@@ -67,6 +68,7 @@ function App() {
         <Route path="/Meditation" element={<Meditation />} />
         <Route path="/FuturePrediction" element={<FuturePrediction />} />
         <Route path="/AstroMain" element={<AstroMain />} />
+        <Route path="/LineChart" element={<LineChart />} />
 
         <Route path="/Fortune_Wheel" element={<FortuneWheel />} />
 
