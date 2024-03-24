@@ -5,7 +5,7 @@ import DailyMeditation from "./components/meditation/DailyMeditation";
 import Anxiety from "./Page/Support/Obsession";
 import Home from "./Page/Home/Home";
 import Facecard from "./assets/Boxes/Facecard";
-import FinalPage from "./Page/Support/FinalPage";
+
 import FuturePrediction from "./Page/TimeTravel/FuturePrediction";
 
 import Faceresult from "./assets/Boxes/Facecard/Faceresult";
