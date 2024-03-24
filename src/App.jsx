@@ -21,6 +21,7 @@ import PositiveMeditation from "./components/meditation/PositiveMeditation";
 import BeginnerMeditation from "./components/meditation/BeginnerMeditation";
 import MentalHealthMeditation from "./components/meditation/MentalHealthMeditation";
 import EpicPowerMeditation from "./components/meditation/EpicPowerMeditation";
+import AstroMain from "./components/Astrology/AstroMain";
 import EmotionalSupport from "./Page/Support/EmotionalSupport";
 
 import Loneliness from "./Page/Support/Loneliness";
@@ -65,6 +66,7 @@ function App() {
         <Route path="/Faceresult" element={<Faceresult />} />
         <Route path="/Meditation" element={<Meditation />} />
         <Route path="/FuturePrediction" element={<FuturePrediction />} />
+        <Route path="/AstroMain" element={<AstroMain />} />
 
         <Route path="/Fortune_Wheel" element={<FortuneWheel />} />
 
