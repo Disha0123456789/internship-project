@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+}
+
+body {
+  background: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: #fdf2f8;
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2vh;
+  margin-top: 2.5vh;
+  flex-direction: column;
+}
+.header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.header > h1 {
+  font-size: clamp(2.5rem, 5vw, 3rem);
+  color: purple;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 2rem;
+}
+.eclipse {
+  margin: 50px;
+  height: 200px;
+  width: 80%;
+  background-color: white;
+}
+.eclipse-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  margin: 20px;
+}
+.eclipse-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+.eclipse-content {
+  display: flex;
+  justify-content: space-evenly;
+}
+.border1 {
+  background-image: linear-gradient(to left, #50C626, #FFB017);
+}
+.border2 {
+  background-image: linear-gradient(to left, #E44141, #722B8C);
+}
+.border3 {
+  background-image: linear-gradient(to left, #F0C119, #FCA82A, #D92323);
+}
+.border4 {
+  background-image: linear-gradient(to left, #2D93DC, #250505);
+}
+.sub {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 105px;
+  width: 105px;
+  background-color: white;
+  z-index: 1;
+  border-radius: 50%;
+  font-size: 35px;
+  font-weight: 600;
+  color: black;
+}
+.cards-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 4vh 0;
+}
+.card {
+  margin: 2vh 1vh;
+  height: 350px;
+  width: 650px;
+  background-color: #fff;
+  color: black;
+}
+.card-header {
+  background-color: transparent;
+}
+.card-header > h4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.card-header > h4 > .Physical, .Emotional, .Intellectual, .Spiritual {
+  display: block;
+  height: 80px;
+  width: 80px;
+}
+.Physical {
+  background: url("./images/Physical.png") no-repeat center
+    center/cover;
+}
+.Emotional {
+  background: url("./images/Emotional.png") no-repeat center
+    center/cover;
+}
+.Intellectual {
+  background: url("./images/Intellectual.png") no-repeat center
+    center/cover;
+}
+.Spiritual {
+  background: url("./images/Spiritual.png") no-repeat center
+    center/cover;
+}
+.cards-container > .card > p {
+  margin: 3vh;
+  font-weight: 500;
+}
+.content {
+    color: black;
+}

@@ -5,6 +5,8 @@ import DailyMeditation from "./components/meditation/DailyMeditation";
 import Anxiety from "./Page/Support/Obsession";
 import Home from "./Page/Home/Home";
 import Facecard from "./assets/Boxes/Facecard";
+import FinalPage from "./Page/Support/FinalPage";
+import FuturePrediction from "./Page/TimeTravel/FuturePrediction";
 
 import Faceresult from "./assets/Boxes/Facecard/Faceresult";
 import Timemagicresult from "./assets/Boxes/Facecard/Timemagicresult";
@@ -19,6 +21,8 @@ import PositiveMeditation from "./components/meditation/PositiveMeditation";
 import BeginnerMeditation from "./components/meditation/BeginnerMeditation";
 import MentalHealthMeditation from "./components/meditation/MentalHealthMeditation";
 import EpicPowerMeditation from "./components/meditation/EpicPowerMeditation";
+import AstroMain from "./components/Astrology/AstroMain";
+import LineChart from "./components/Bioryhthm/LineChart";
 import EmotionalSupport from "./Page/Support/EmotionalSupport";
 
 import Loneliness from "./Page/Support/Loneliness";
@@ -63,6 +67,8 @@ function App() {
         <Route path="/Faceresult" element={<Faceresult />} />
         <Route path="/Meditation" element={<Meditation />} />
         <Route path="/FuturePrediction" element={<FuturePrediction />} />
+        <Route path="/AstroMain" element={<AstroMain />} />
+        <Route path="/LineChart" element={<LineChart />} />
 
         <Route path="/Fortune_Wheel" element={<FortuneWheel />} />
 
@@ -101,6 +107,7 @@ function App() {
         <Route path="/PastTrauma" element={<PastTrauma />} />
         <Route path="/Grief" element={<Grief />} />
         <Route path="/Done" element={<FinalPage />} />
+        <Route path="/FuturePrediction" element={<FuturePrediction />} />
         <Route path="/WorkLifeBalance" element={<WorkLifeBalance />} />
         <Route path="/SelfEsteemIssues" element={<SelfEsteemIssues />} />
         <Route path="/Facecard" element={<Facecard />} />
