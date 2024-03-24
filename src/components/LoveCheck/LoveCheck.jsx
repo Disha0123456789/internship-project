@@ -14,7 +14,7 @@ const LoveCheck = () => {
     const generateRandomColor = () => {
         const color = '#' + Math.floor(Math.random() * 16777215).toString(16);
         // Check if the color is white, if so, generate a new color
-        if (color === '#ffffff') {
+        if (color === '#ffffff' && color === '#f5d7e7') {
             return generateRandomColor(); // Recursive call to generate a new color
         }
         return color;
