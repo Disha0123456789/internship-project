@@ -43,7 +43,6 @@ import Obsession from "./Page/Support/Obsession";
 import Shuffle from "./Page/TarotReading/Shuffle";
 import AngerManagement from "./Page/Support/AngerManagement";
 import TarotResult from "./Page/TarotReading/TarotResult";
-import FuturePrediction from "./Page/FuturePrediction/FuturePrediction";
 
 import Numerology from './components/Numerology/Numerology';
 import LifePathNumber from "./components/Numerology/LifePathNumber";
