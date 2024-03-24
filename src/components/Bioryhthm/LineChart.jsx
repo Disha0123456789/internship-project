@@ -1,6 +1,6 @@
 import React from "react";
 import "./LineChart.css";
-import { Chart } from "chart.js/auto";
+import { Chart } from "chart.js";
 
 import { Line } from "react-chartjs-2";
 
