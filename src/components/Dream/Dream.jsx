@@ -5,8 +5,8 @@ import { useNavigate } from "react-router-dom";
 export default function Dream() {
     return (
         <div className='dream'>
-            <div className="Meditation-text">
-                <p>Dream Interpretation</p>
+            <div className="Head-Text">
+                <h1>Dream Interpretation</h1>
             </div>
             <div className='dream-container'>
                 <DreamComponent imageSrc={'4throw/dream1-icon.png'} title="Dream Meaning" onClick="dream_meaning" />

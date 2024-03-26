@@ -1,18 +1,21 @@
 import React from "react";
 import "./style.css";
-
+import { useNavigate } from "react-router-dom";
 function ReikiHealing() {
+  const navigate = useNavigate(); 
+  const head = "Reiki Healing";
+  const img = "./images/Marriage Consultation.png";
   return (
     <div>
       <div className="Container">
         <div className="Container-heading">
-          <h1>Marriage Consultation</h1>
+          <h1>Reiki Healing</h1>
         </div>
         <div className="content">
           <div className="content-left">
             <img src="../images/Marriage Consultation.png" alt="" />
-            <button>
-              <a href="./finalpage.html">Book Now</a>
+            <button onClick={() => navigate("/Done", { state: { head, img } })}>
+              Book Now
             </button>
           </div>
           <div className="content-right">

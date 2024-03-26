@@ -1,18 +1,77 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import TarotReading from "./Page/TarotReading/TarotReading";
-import Meditation from "./components/meditation/Meditation";
-import DailyMeditation from "./components/meditation/DailyMeditation";
-import Anxiety from "./Page/Support/Obsession";
+
 import Home from "./Page/Home/Home";
-import Facecard from "./assets/Boxes/Facecard";
 
-import FuturePrediction from "./Page/TimeTravel/FuturePrediction";
+//Horoscope
 
+//Kundli
+
+//Fortune Wheel
+import FortuneWheel from "./components/wheel/FortuneWheel";
+
+//Love Check
+import LoveCheck from "./components/LoveCheck/LoveCheck";
+
+//Tarot Reading
+import TarotReading from "./Page/TarotReading/TarotReading";
+import Shuffle from "./Page/TarotReading/Shuffle";
+import TarotResult from "./Page/TarotReading/TarotResult";
+
+//Face Reading
+import FaceRead from "./assets/Boxes/Facecard/Faceread";
 import Faceresult from "./assets/Boxes/Facecard/Faceresult";
 import Timemagicresult from "./assets/Boxes/Facecard/Timemagicresult";
 import Ancestors from "./assets/Boxes/Facecard/Ancestors";
-import Palmreader from "./assets/Boxes/Facecard/Palmreader";
 
+//Palm Reading
+import Palmreader from "./assets/Boxes/Facecard/Palmreader";
+import Palmresult from "./assets/Boxes/Facecard/Palmresult";
+
+//Time Travel
+import FuturePrediction from "./Page/TimeTravel/FuturePrediction";
+
+//Astrology 
+import AstroMain from "./components/Astrology/AstroMain";
+import MarriageConsultation from "./components/Astrology/MarriageConsultation";
+import HealthHealing from "./components/Astrology/HealthHealing";
+import WealthManagement from "./components/Astrology/WealthManagement";
+import LoveInsights from "./components/Astrology/LoveInsights";
+import EducationalGuidance from "./components/Astrology/EducationalGuidance";
+import CareerPath from "./components/Astrology/CareerPath";
+import BusinessStrategies from "./components/Astrology/BusinessStrategies";
+import FinancePlanning from "./components/Astrology/FinancePlanning";
+import LegalAdvice from "./components/Astrology/LegalAdvice";
+import RemediesSolution from "./components/Astrology/RemediesSolution";
+import KidsFortunePrediction from "./components/Astrology/KidsFortunePrediction";
+import ParentingTips from "./components/Astrology/ParentingTips";
+import PanchangAnalysis from "./components/Astrology/PanchangAnalysis";
+import BirthChartInterpretation from "./components/Astrology/BirthChartInterpretation";
+import ShubhMuhurat from "./components/Astrology/ShubhMuhurat";
+import PersonalizedPooja from "./components/Astrology/PersonalizedPooja";
+import ThetaHealing from "./components/Astrology/ThetaHealing";
+import ReikiHealing from "./components/Astrology/ReikiHealing";
+import ChakraHealing from "./components/Astrology/ChakraHealing";
+import CrystalHealing from "./components/Astrology/CrystalHealing";
+
+//Biorhythm
+import LineChart from "./components/Bioryhthm/LineChart";
+
+//Dream Interpretation
+import Dream from "./components/Dream/Dream"; 
+import DreamInterpretation from "./components/Dream/DreamInterpretation";
+import DreamResult from "./components/Dream/DreamResult";
+import DreamBook from "./components/Dream/DreamBook";
+import DreamHistoryList from "./components/Dream/DreamHistoryList";
+import DreamHistory from "./components/Dream/DreamHistory";
+import SleepMusic from "./components/SleepMusic/SleepMusic";
+
+//Numerology
+import Numerology from './components/Numerology/Numerology';
+import LifePathNumber from "./components/Numerology/LifePathNumber";
+
+//Meditation
+import Meditation from "./components/meditation/Meditation";
+import DailyMeditation from "./components/meditation/DailyMeditation";
 import ChakraMeditation from "./components/meditation/ChakraMeditation";
 import SleepMeditation from "./components/meditation/SleepMeditation";
 import FiveMinMeditation from "./components/meditation/FiveMinMeditation";
@@ -21,10 +80,11 @@ import PositiveMeditation from "./components/meditation/PositiveMeditation";
 import BeginnerMeditation from "./components/meditation/BeginnerMeditation";
 import MentalHealthMeditation from "./components/meditation/MentalHealthMeditation";
 import EpicPowerMeditation from "./components/meditation/EpicPowerMeditation";
-import AstroMain from "./components/Astrology/AstroMain";
-import LineChart from "./components/Bioryhthm/LineChart";
-import EmotionalSupport from "./Page/Support/EmotionalSupport";
 
+//Emotional Support
+import EmotionalSupport from "./Page/Support/EmotionalSupport";
+import AngerManagement from "./Page/Support/AngerManagement";
+import Obsession from "./Page/Support/Obsession";
 import Loneliness from "./Page/Support/Loneliness";
 import SexualWellness from "./Page/Support/SexualWellness";
 import Family from "./Page/Support/Family";
@@ -37,65 +97,94 @@ import WorkLifeBalance from "./Page/Support/WorkLifeBalance";
 import Grief from "./Page/Support/Grief";
 import FinalPage from "./Page/Support/FinalPage";
 
-import FortuneWheel from "./components/wheel/FortuneWheel";
-
-import Obsession from "./Page/Support/Obsession";
-import Shuffle from "./Page/TarotReading/Shuffle";
-import AngerManagement from "./Page/Support/AngerManagement";
-import TarotResult from "./Page/TarotReading/TarotResult";
-
-import Numerology from './components/Numerology/Numerology';
-import LifePathNumber from "./components/Numerology/LifePathNumber";
-import Dream from "./components/Dream/Dream"; 
-import DreamInterpretation from "./components/Dream/DreamInterpretation";
-import DreamResult from "./components/Dream/DreamResult";
-import DreamBook from "./components/Dream/DreamBook";
-import DreamHistoryList from "./components/Dream/DreamHistoryList";
-import DreamHistory from "./components/Dream/DreamHistory";
-import SleepMusic from "./components/SleepMusic/SleepMusic";
-import LoveCheck from "./components/LoveCheck/LoveCheck";
-
 function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
+
+        {/* HoroScope Kundli FortuneWheel LoveCheck*/}
+        <Route path="/Fortune_Wheel" element={<FortuneWheel />} />
+        <Route path="/love_check" element={<LoveCheck />} />
+
+        {/* Tarot Reading*/}
         <Route path="/tarot_reading" element={<TarotReading />} />
         <Route path="/CardSelection" element={<Shuffle />} />
         <Route path="/TarotResult" element={<TarotResult />} />
+        
+        {/* Face Reading*/}
+        <Route path="/faceRead" element={<FaceRead />} />
         <Route path="/Faceresult" element={<Faceresult />} />
-        <Route path="/Meditation" element={<Meditation />} />
-        <Route path="/FuturePrediction" element={<FuturePrediction />} />
-        <Route path="/AstroMain" element={<AstroMain />} />
-        <Route path="/LineChart" element={<LineChart />} />
-
-        <Route path="/Fortune_Wheel" element={<FortuneWheel />} />
-
-        <Route path="/Facecard" element={<Facecard />} />
         <Route path="/Timemagicresult" element={<Timemagicresult />} />
         <Route path="/Ancestors" element={<Ancestors />} />
+        
+        {/* Palm Reading*/}
+        <Route path="/palmReader" element={<Palmreader />} />
+        <Route path="/palmResult" element={<Palmresult />} />
+        
+        {/* Time Travel*/}
+        <Route path="/FuturePrediction" element={<FuturePrediction />} />
 
-        <Route path="/Palmreader" element={<Palmreader />} />
+        {/* Astrology*/}
+        <Route path="/AstroMain" element={<AstroMain />} />
+        <Route path="/marriageConsultation" element={<MarriageConsultation />} />
+        <Route path="/healthHealing" element={<HealthHealing />} />
+        <Route path="/wealthManagement" element={<WealthManagement />} />
+        <Route path="/loveInsights" element={<LoveInsights />} />
+        <Route path="/educationalGuidance" element={<EducationalGuidance />} />
+        <Route path="/careerPath" element={<CareerPath />} />
+        <Route path="/businessStrategies" element={<BusinessStrategies />} />
+        <Route path="/financePlanning" element={<FinancePlanning />} />
+        <Route path="/legalAdvice" element={<LegalAdvice />} />
+        <Route path="/remediesSolutions" element={<RemediesSolution />} />
+        <Route path="/kidsFortune" element={<KidsFortunePrediction />} />
+        <Route path="/parentingTips" element={<ParentingTips />} />
+        <Route path="/panchangAnalysis" element={<PanchangAnalysis />} />
+        <Route path="/birthChart" element={<BirthChartInterpretation />} />
+        <Route path="/shubhMuhurat" element={<ShubhMuhurat />} />
+        <Route path="/personalizedPooja" element={<PersonalizedPooja />} />
+        <Route path="/thetaHealing" element={<ThetaHealing />} />
+        <Route path="/reikiHealing" element={<ReikiHealing />} />
+        <Route path="/chakraHealing" element={<ChakraHealing />} />
+        <Route path="/crystalHealing" element={<CrystalHealing />} />
+
+        {/* Biorhythm*/}
+        <Route path="/LineChart" element={<LineChart />} />
+
+        {/* Dream Meaning*/}
+        <Route path="/dream" element={<Dream />} />
+        <Route path="/dream_meaning" element={<DreamInterpretation/>} />
+        <Route path="/dream_result" element={<DreamResult />} />
+        <Route path="/dream_book" element={<DreamBook />} />
+        <Route path="/dream_history_list" element={<DreamHistoryList />} />
+        <Route path="/dream_history" element={<DreamHistory />} />
+        <Route path="/sleep_music" element={<SleepMusic />} />
+
+        {/* Numerology*/}
+        <Route path="/Numerology" element={<Numerology />} />
+        <Route path="/lifepathnumber" element={<LifePathNumber />} />
+        
+        {/* Meditation*/}
+        <Route path="/Meditation" element={<Meditation />} />
         <Route path="/MindfullnessMeditation" element={<Mindfulness />} />
         <Route path="/DailyMeditation" element={<DailyMeditation />} />
         <Route path="/ChakraMeditation" element={<ChakraMeditation />} />
         <Route path="/SleepMeditation" element={<SleepMeditation />} />
         <Route path="/5MinsMeditation" element={<FiveMinMeditation />} />
-
-        <Route path="/Anxiety" element={<Anxiety />} />
-
-        <Route
-          path="/PositiveMindMeditation"
-          element={<PositiveMeditation />}
-        />
+        <Route path="/EpicPowerMeditation" element={<EpicPowerMeditation />} />
         <Route path="/BeginnerMeditation" element={<BeginnerMeditation />} />
         <Route
           path="/MentalHealthMeditation"
           element={<MentalHealthMeditation />}
         />
-        <Route path="/EpicPowerMeditation" element={<EpicPowerMeditation />} />
-        <Route path="/Obsession" element={<Obsession />} />
+        <Route
+          path="/PositiveMindMeditation"
+          element={<PositiveMeditation />}
+        />
+
+        {/* Emotional Support*/}
         <Route path="/EmotionalSupport" element={<EmotionalSupport />} />
+        <Route path="/Obsession" element={<Obsession />} />
         <Route path="/AngerManagement" element={<AngerManagement />} />
         <Route path="/Loneliness" element={<Loneliness />} />
         <Route path="/SexualWellness" element={<SexualWellness />} />
@@ -104,25 +193,11 @@ function App() {
         <Route path="/Sleep" element={<Sleep />} />
         <Route path="/StressManagement" element={<StressManagement />} />
         <Route path="/PastTrauma" element={<PastTrauma />} />
+        <Route path="/SelfEsteemIssues" element={<SelfEsteemIssues />} />
+        <Route path="/WorkLifeBalance" element={<WorkLifeBalance />} />
         <Route path="/Grief" element={<Grief />} />
         <Route path="/Done" element={<FinalPage />} />
-        <Route path="/FuturePrediction" element={<FuturePrediction />} />
-        <Route path="/WorkLifeBalance" element={<WorkLifeBalance />} />
-        <Route path="/SelfEsteemIssues" element={<SelfEsteemIssues />} />
-        <Route path="/Facecard" element={<Facecard />} />
-        
-        <Route path="/Numerology" element={<Numerology />} />
-        <Route path="/lifepathnumber" element={<LifePathNumber />} />
 
-        <Route path="/dream" element={<Dream />} />
-        <Route path="/dream_meaning" element={<DreamInterpretation/>} />
-        <Route path="/dream_result" element={<DreamResult />} />
-        <Route path="/dream_book" element={<DreamBook />} />
-        <Route path="/dream_history_list" element={<DreamHistoryList />} />
-        <Route path="/dream_history" element={<DreamHistory />} />
-        <Route path="/sleep_music" element={<SleepMusic />} />
-        <Route path="/love_check" element={<LoveCheck />} />
-        
       </Routes>
     </BrowserRouter>
   );

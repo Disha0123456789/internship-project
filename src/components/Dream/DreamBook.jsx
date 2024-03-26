@@ -27,8 +27,8 @@ export default function DreamBook() {
     };
     return (
         <div className='dreambook'>
-            <div className="dream-heading">
-                <p>Dream Book</p>
+            <div className="Head-Text">
+                <h1>Dream Book</h1>
             </div>
             <p style={{ textAlign: "center", fontSize: "1.3rem" }}>“Track , Analyze, and Explore your Dreams Anytime by Adding them to your Dream Book”</p>
             <div className='dream-input-containers'>

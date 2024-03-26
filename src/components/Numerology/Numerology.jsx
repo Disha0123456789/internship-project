@@ -6,8 +6,8 @@ export default function Numerology() {
     const navigate = useNavigate(); 
     return (
         <div className="numerology">
-            <div className='Meditation-text'>
-                <p>Numerology</p>
+            <div className='Head-Text'>
+                <h1>Numerology</h1>
             </div>
             <div className="numerology-main">
                 <div className="numerology-container">

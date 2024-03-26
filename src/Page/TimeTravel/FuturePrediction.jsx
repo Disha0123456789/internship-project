@@ -6,9 +6,9 @@ import "react-calendar/dist/Calendar.css";
 const FuturePrediction = () => {
   const [value, onChange] = useState(new Date());
   return (
-    <>
-      <div className="container">
-        <div className="header">
+
+      <div className="timetravel">
+        <div className="Head-Text">
           <h1>Future Prediction</h1>
         </div>
         <div className="content">
@@ -34,7 +34,6 @@ const FuturePrediction = () => {
           </div>
         </div>
       </div>
-    </>
   );
 };
 

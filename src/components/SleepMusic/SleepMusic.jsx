@@ -27,7 +27,7 @@ const DailyMeditation = () => {
 
     return (
         <div className="Main-page">
-            <div className="Meditation-text">
+            <div className="Head-Text">
                 <h1>Sleep Music</h1>
             </div>
             <div>

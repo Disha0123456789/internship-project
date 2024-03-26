@@ -19,8 +19,8 @@ export default function DreamHistoryList() {
 
   return (
     <div className='dreamhistory-list'>
-      <div className='Meditation-text'>
-        <p>Dream History</p>
+      <div className='Head-Text'>
+        <h1>Dream History</h1>
       </div>
       <div onClick={() => navigate("/dream_history")} className="card-container">
         {cards.map((card, index) => (

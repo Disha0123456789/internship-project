@@ -6,7 +6,7 @@ import IMG from "./IMGS/result card.png";
 const TarotResult = () => {
   const loc = useLocation();
   console.log(loc.state.cardtext[loc.state.card][1]);
-
+  console.log("no");
   return (
     <div className="Result-Tarot">
       <div className="result-card">

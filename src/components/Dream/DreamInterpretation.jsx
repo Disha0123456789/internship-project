@@ -5,10 +5,9 @@ import { useNavigate } from "react-router-dom";
 function DreamInterpretation() {
     const navigate = useNavigate();
     return (
-        <>
             <div className="dream-interpretation">
-                <div className="Meditation-text">
-                    <p>Dream Meaning</p>
+                <div className="Head-Text">
+                    <h1>Dream Meaning</h1>
                 </div>
                 <div className="container">
                     <textarea className="textInput" placeholder="Describe your dream in detail and know what the dream is trying to tell you...." size="40"></textarea>
@@ -17,7 +16,6 @@ function DreamInterpretation() {
                     </div>
                 </div>
             </div>
-        </>
     )
 }
 
