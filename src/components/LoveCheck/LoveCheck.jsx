@@ -82,12 +82,12 @@ const LoveCheck = () => {
     };
 
     return (
-        <div className='lovecheck'>
-            <div className='Meditation-text'>
-                <p>Love Check</p>
-                <div className='caution'>
+        <div className="lovecheck">
+            <div className="Head-Text">
+                <h1>Love Check</h1>
+            </div>
+            <div className='caution'>
                     <h2>Tap on Petels to remove it</h2>
-                </div>
             </div>
             <div className="container">
                 <div className="flower">

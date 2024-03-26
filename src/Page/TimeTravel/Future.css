@@ -1,41 +1,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
-* {
-  margin: 0;
-  padding: 0;
+
+.timetravel {
+  display: flex;
+  flex-direction: column;
+  /* background-color: #FDF2F8; */
+  /* align-items: center;  */
+  min-height: 100vh;
+  /* width: 100%; */
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
+  /* font-weight: 400; */
   font-style: normal;
-  font-variation-settings:
-    "slnt" 0;
+  font-variation-settings:"slnt" 0;
 }
-body {
-  overflow: hidden;
-  background: #eee;
+
+.Head-Text h1{
+  font-size: clamp(2.5rem, 4vw, 3rem);
+  margin-bottom: 20px;
 }
-.container {
-  background-color: #fdf2f8;
-  height: 1000px;
-  display: flex;
-  align-items: center;
-  border-radius: 2vh;
-  margin-top: 2.5vh;
-  flex-direction: column;
-}
-.header {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-.header > h1 {
-  margin: 4vh 0 0 0;
-  font-size: clamp(2.5rem, 5vw, 3rem);
-  color: purple;
-  font-weight: 600;
+
+.Head-Text{
   text-align: center;
-  margin-top: 2rem;
+  height: 20%;
+  width: 100%;
+  margin-top: 2vw;
+  color:purple;
 }
+
 .form-group {
-  margin: 15vh 0vh 0vh 0vh;
+  margin: 5vh 0vh 0vh 0vh;
 }
 .submit-button {
   margin: 2vh 0vh 0vh 0vh;

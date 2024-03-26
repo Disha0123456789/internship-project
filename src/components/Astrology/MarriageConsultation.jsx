@@ -1,7 +1,11 @@
 import React from "react";
 import "./style.css";
+import { useNavigate } from "react-router-dom";
 
 const MarriageConsultation = () => {
+  const navigate = useNavigate(); 
+  const head = "Marriage Consultation";
+  const img = "./images/Marriage Consultation.png";
   return (
     <>
       <div className="Container">
@@ -10,9 +14,9 @@ const MarriageConsultation = () => {
       </div>
       <div className="content">
         <div className="content-left">
-          <img src="../images/Marriage Consultation.png" alt="" />
-          <button>
-            <a href="./finalpage.html">Book Now</a>
+        <img src="./images/marriageconsultation.png" alt="" />
+          <button onClick={() => navigate("/Done", { state: { head, img } })}>
+            Book Now
           </button>
         </div>
         <div className="content-right">

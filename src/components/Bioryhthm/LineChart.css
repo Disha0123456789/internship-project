@@ -1,35 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
-* {
-  margin: 0;
-  padding: 0;
+
+.biorhythm {
+  display: flex;
+  flex-direction: column;
+  /* background-color: #FDF2F8; */
+  /* align-items: center;  */
+  min-height: 100vh;
+  /* width: 100%; */
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
+  /* font-weight: 400; */
   font-style: normal;
-  font-variation-settings: "slnt" 0;
-}
-
-body {
-  background: #eee;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.container {
-  background-color: #fdf2f8;
-  height: auto;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 2vh;
-  margin-top: 2.5vh;
-  flex-direction: column;
-}
-.header {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+  font-variation-settings:"slnt" 0;
 }
 .header > h1 {
   font-size: clamp(2.5rem, 5vw, 3rem);
@@ -43,6 +25,7 @@ body {
   height: 200px;
   width: 80%;
   background-color: white;
+  border-radius: 20px;
 }
 .eclipse-main {
   display: flex;

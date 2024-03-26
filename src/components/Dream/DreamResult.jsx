@@ -4,8 +4,8 @@ import './DreamResult.css';
 export default function DreamResult() {
     return (
         <div className="dream-result">
-            <div className="Meditation-text">
-                <p>Dream Meaning</p>
+            <div className="Head-Text">
+                <h1>Dream Meaning</h1>
             </div>
             <div className='dreamcard-container'>
                 <div className="dream-result-card">

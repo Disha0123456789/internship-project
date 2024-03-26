@@ -1,15 +1,16 @@
 import React from "react";
 import "./style.css";
+import { useNavigate } from "react-router-dom";
 
 function AstroMain() {
-
+  const navigate = useNavigate(); 
   return (
-    <div className="container">
-      <div className="header">
+    <div className="astrology">
+      <div className="Head-Text">
         <h1>Astrology</h1>
       </div>
       <div className="grid-container">
-        <div className="grid-items bg-mc">
+        <div onClick={() => navigate("/marriageConsultation")} className="grid-items bg-mc">
           <div className="info">
             <h2>
               Marriage <br />
@@ -17,14 +18,11 @@ function AstroMain() {
             </h2>
             <p>1rs/min</p>
             <button className="book-now">
-              <a href="./components/AstroMain.jsx">
-                <span className="link" />
-              </a>
               Book Now
             </button>
           </div>
         </div>
-        <div className="grid-items bg-hh">
+        <div onClick={() => navigate("/healthHealing")} className="grid-items bg-hh">
           <div className="info">
             <h2>
               Health <br />
@@ -32,14 +30,11 @@ function AstroMain() {
             </h2>
             <p>1rs/min</p>
             <button className="book-now">
-              <a href="#">
-                <span className="link" />
-              </a>
               Book Now
             </button>
           </div>
         </div>
-        <div className="grid-items bg-wh">
+        <div onClick={() => navigate("/wealthManagement")} className="grid-items bg-wh">
           <div className="info">
             <h2>
               Wealth <br />
@@ -47,14 +42,11 @@ function AstroMain() {
             </h2>
             <p>1rs/min</p>
             <button className="book-now">
-              <a href="#">
-                <span className="link" />
-              </a>
               Book Now
             </button>
           </div>
         </div>
-        <div className="grid-items bg-li">
+        <div onClick={() => navigate("/loveInsights")} className="grid-items bg-li">
           <div className="info">
             <h2>
               Love <br />
@@ -62,14 +54,11 @@ function AstroMain() {
             </h2>
             <p>1rs/min</p>
             <button className="book-now">
-              <a href="#">
-                <span className="link" />
-              </a>
               Book Now
             </button>
           </div>
         </div>
-        <div className="grid-items bg-eg">
+        <div onClick={() => navigate("/educationalGuidance")} className="grid-items bg-eg">
           <div className="info">
             <h2>
               Educational <br />
@@ -77,14 +66,11 @@ function AstroMain() {
             </h2>
             <p>1rs/min</p>
             <button className="book-now">
-              <a href="#">
-                <span className="link" />
-              </a>
               Book Now
             </button>
           </div>
         </div>
-        <div className="grid-items bg-cp">
+        <div onClick={() => navigate("/careerPath")} className="grid-items bg-cp">
           <div className="info">
             <h2>
               Career <br />
@@ -92,14 +78,11 @@ function AstroMain() {
             </h2>
             <p>1rs/min</p>
             <button className="book-now">
-              <a href="#">
-                <span className="link" />
-              </a>
               Book Now
             </button>
           </div>
         </div>
-        <div className="grid-items bg-bs">
+        <div onClick={() => navigate("/businessStrategies")} className="grid-items bg-bs">
           <div className="info">
             <h2>
               Business <br />
@@ -107,14 +90,11 @@ function AstroMain() {
             </h2>
             <p>1rs/min</p>
             <button className="book-now">
-              <a href="#">
-                <span className="link" />
-              </a>
               Book Now
             </button>
           </div>
         </div>
-        <div className="grid-items bg-fp">
+        <div onClick={() => navigate("/financePlanning")} className="grid-items bg-fp">
           <div className="info">
             <h2>
               Finance <br />
@@ -122,14 +102,11 @@ function AstroMain() {
             </h2>
             <p>1rs/min</p>
             <button className="book-now">
-              <a href="#">
-                <span className="link" />
-              </a>
               Book Now
             </button>
           </div>
         </div>
-        <div className="grid-items bg-la">
+        <div onClick={() => navigate("/legalAdvice")} className="grid-items bg-la">
           <div className="info">
             <h2>
               Legal <br />
@@ -137,14 +114,11 @@ function AstroMain() {
             </h2>
             <p>1rs/min</p>
             <button className="book-now">
-              <a href="#">
-                <span className="link" />
-              </a>
               Book Now
             </button>
           </div>
         </div>
-        <div className="grid-items bg-rs">
+        <div onClick={() => navigate("/remediesSolutions")} className="grid-items bg-rs">
           <div className="info">
             <h2>
               Remedies &amp; <br />
@@ -152,14 +126,11 @@ function AstroMain() {
             </h2>
             <p>1rs/min</p>
             <button className="book-now">
-              <a href="#">
-                <span className="link" />
-              </a>
               Book Now
             </button>
           </div>
         </div>
-        <div className="grid-items bg-kfp">
+        <div onClick={() => navigate("/kidsFortune")} className="grid-items bg-kfp">
           <div className="info">
             <h2>
               Kids Fortune <br />
@@ -167,14 +138,11 @@ function AstroMain() {
             </h2>
             <p>1rs/min</p>
             <button className="book-now">
-              <a href="#">
-                <span className="link" />
-              </a>
               Book Now
             </button>
           </div>
         </div>
-        <div className="grid-items bg-pt">
+        <div onClick={() => navigate("/parentingTips")} className="grid-items bg-pt">
           <div className="info">
             <h2>
               Parenting <br />
@@ -182,14 +150,11 @@ function AstroMain() {
             </h2>
             <p>1rs/min</p>
             <button className="book-now">
-              <a href="#">
-                <span className="link" />
-              </a>
               Book Now
             </button>
           </div>
         </div>
-        <div className="grid-items bg-pa">
+        <div onClick={() => navigate("/panchangAnalysis")} className="grid-items bg-pa">
           <div className="info">
             <h2>
               Panchang <br />
@@ -197,14 +162,11 @@ function AstroMain() {
             </h2>
             <p>1rs/min</p>
             <button className="book-now">
-              <a href="#">
-                <span className="link" />
-              </a>
               Book Now
             </button>
           </div>
         </div>
-        <div className="grid-items bg-bci">
+        <div onClick={() => navigate("/birthChart")} className="grid-items bg-bci">
           <div className="info">
             <h2>
               Birth Chart <br />
@@ -212,14 +174,11 @@ function AstroMain() {
             </h2>
             <p>1rs/min</p>
             <button className="book-now">
-              <a href="#">
-                <span className="link" />
-              </a>
               Book Now
             </button>
           </div>
         </div>
-        <div className="grid-items bg-sm">
+        <div onClick={() => navigate("/shubhMuhurat")} className="grid-items bg-sm">
           <div className="info">
             <h2>
               Shubh <br />
@@ -227,14 +186,11 @@ function AstroMain() {
             </h2>
             <p>1rs/min</p>
             <button className="book-now">
-              <a href="#">
-                <span className="link" />
-              </a>
               Book Now
             </button>
           </div>
         </div>
-        <div className="grid-items bg-pp">
+        <div onClick={() => navigate("/personalizedPooja")} className="grid-items bg-pp">
           <div className="info">
             <h2>
               Personalized <br />
@@ -242,14 +198,11 @@ function AstroMain() {
             </h2>
             <p>1rs/min</p>
             <button className="book-now">
-              <a href="#">
-                <span className="link" />
-              </a>
               Book Now
             </button>
           </div>
         </div>
-        <div className="grid-items bg-th">
+        <div onClick={() => navigate("/thetaHealing")} className="grid-items bg-th">
           <div className="info">
             <h2>
               Theta <br />
@@ -257,14 +210,11 @@ function AstroMain() {
             </h2>
             <p>1rs/min</p>
             <button className="book-now">
-              <a href="#">
-                <span className="link" />
-              </a>
               Book Now
             </button>
           </div>
         </div>
-        <div className="grid-items bg-rh">
+        <div onClick={() => navigate("/reikiHealing")} className="grid-items bg-rh">
           <div className="info">
             <h2>
               Reiki <br />
@@ -272,14 +222,11 @@ function AstroMain() {
             </h2>
             <p>1rs/min</p>
             <button className="book-now">
-              <a href="#">
-                <span className="link" />
-              </a>
               Book Now
             </button>
           </div>
         </div>
-        <div className="grid-items bg-ch">
+        <div onClick={() => navigate("/chakraHealing")} className="grid-items bg-ch">
           <div className="info">
             <h2>
               Chakra <br />
@@ -287,14 +234,11 @@ function AstroMain() {
             </h2>
             <p>1rs/min</p>
             <button className="book-now">
-              <a href="#">
-                <span className="link" />
-              </a>
               Book Now
             </button>
           </div>
         </div>
-        <div className="grid-items bg-crh">
+        <div onClick={() => navigate("/crystalHealing")} className="grid-items bg-crh">
           <div className="info">
             <h2>
               Crystal <br />
@@ -302,9 +246,6 @@ function AstroMain() {
             </h2>
             <p>1rs/min</p>
             <button className="book-now">
-              <a href="#">
-                <span className="link" />
-              </a>
               Book Now
             </button>
           </div>

@@ -3,7 +3,7 @@ import React from "react";
 function Faceresult() {
   return (
     <div className="face-result-whole">
-      <h1 className="face-text-result">Face Reading</h1>
+      <h1 className="face-text-result">Face Results!</h1>
       <div className="Personal-Traits">
         <p className="personal-trait-text">Personal Traits</p>
         <img
