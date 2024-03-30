@@ -1,8 +1,8 @@
 import React from "react";
-import "./style.css";
+import "./AstroMain.css";
 import { useNavigate } from "react-router-dom";
 function PanchangAnalysis() {
-  const navigate = useNavigate(); 
+  const navigate = useNavigate();
   const head = "Panchang Analysis";
   const img = "./images/Marriage Consultation.png";
   return (
@@ -13,19 +13,19 @@ function PanchangAnalysis() {
         </div>
         <div className="content">
           <div className="content-left">
-            <img src="../images/Marriage Consultation.png" alt="" />
+            <div className="img-pa"></div>
             <button onClick={() => navigate("/Done", { state: { head, img } })}>
               Book Now
             </button>
           </div>
           <div className="content-right">
             <p>
-              A marriage consultation offers couples a platform to address
-              concerns, enhance communication, and strengthen their
-              relationship. Through facilitated discussions, couples can explore
-              challenges, identify goals, and develop strategies for resolving
-              conflicts. These sessions provide valuable insights, tools, and
-              support to foster a healthier and more fulfilling marital bond.
+              Panchang Analysis involves interpreting traditional Hindu
+              astrological calendars known as "Panchangs." It examines celestial
+              positions, lunar phases, planetary transits, and auspicious
+              timings to guide decisions in areas such as rituals, ceremonies,
+              and daily activities. This analysis provides insights into cosmic
+              influences on personal and societal events.
             </p>
           </div>
         </div>

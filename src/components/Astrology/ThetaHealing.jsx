@@ -1,8 +1,8 @@
 import React from "react";
-import "./style.css";
+import "./AstroMain.css";
 import { useNavigate } from "react-router-dom";
 function ThetaHealing() {
-  const navigate = useNavigate(); 
+  const navigate = useNavigate();
   const head = "Theta Healing";
   const img = "./images/Marriage Consultation.png";
   return (
@@ -13,19 +13,19 @@ function ThetaHealing() {
         </div>
         <div className="content">
           <div className="content-left">
-            <img src="../images/Marriage Consultation.png" alt="" />
+            <div className="img-th"></div>
             <button onClick={() => navigate("/Done", { state: { head, img } })}>
               Book Now
             </button>
           </div>
           <div className="content-right">
             <p>
-              A marriage consultation offers couples a platform to address
-              concerns, enhance communication, and strengthen their
-              relationship. Through facilitated discussions, couples can explore
-              challenges, identify goals, and develop strategies for resolving
-              conflicts. These sessions provide valuable insights, tools, and
-              support to foster a healthier and more fulfilling marital bond.
+              Theta Healing is a holistic healing technique that aims to
+              identify and shift limiting beliefs stored in the subconscious
+              mind. Practitioners access the theta brainwave state to facilitate
+              healing on physical, emotional, and spiritual levels. Through
+              focused intention and energy work, individuals can release
+              blockages and promote positive change.
             </p>
           </div>
         </div>

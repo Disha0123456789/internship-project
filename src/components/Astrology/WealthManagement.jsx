@@ -1,8 +1,8 @@
 import React from "react";
-import "./style.css";
+import "./AstroMain.css";
 import { useNavigate } from "react-router-dom";
 function WealthManagement() {
-  const navigate = useNavigate(); 
+  const navigate = useNavigate();
   const head = "Wealth Management";
   const img = "./images/Marriage Consultation.png";
   return (
@@ -13,19 +13,19 @@ function WealthManagement() {
         </div>
         <div className="content">
           <div className="content-left">
-            <img src="../images/Marriage Consultation.png" alt="" />
+            <div className="img-wm"></div>
             <button onClick={() => navigate("/Done", { state: { head, img } })}>
               Book Now
             </button>
           </div>
           <div className="content-right">
             <p>
-              A marriage consultation offers couples a platform to address
-              concerns, enhance communication, and strengthen their
-              relationship. Through facilitated discussions, couples can explore
-              challenges, identify goals, and develop strategies for resolving
-              conflicts. These sessions provide valuable insights, tools, and
-              support to foster a healthier and more fulfilling marital bond.
+              Wealth Management involves the strategic management of an
+              individual's financial resources and investments to achieve
+              long-term financial goals. It encompasses various services such as
+              investment advisory, financial planning, estate planning, tax
+              optimization, and risk management, tailored to the client's needs
+              and objectives for wealth preservation and growth.
             </p>
           </div>
         </div>

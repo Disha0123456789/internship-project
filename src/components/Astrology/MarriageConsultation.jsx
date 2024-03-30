@@ -1,5 +1,5 @@
 import React from "react";
-import "./style.css";
+import "./AstroMain.css";
 import { useNavigate } from "react-router-dom";
 
 const MarriageConsultation = () => {
@@ -14,7 +14,7 @@ const MarriageConsultation = () => {
       </div>
       <div className="content">
         <div className="content-left">
-        <img src="./images/marriageconsultation.png" alt="" />
+          <div className="img-mc"></div>
           <button onClick={() => navigate("/Done", { state: { head, img } })}>
             Book Now
           </button>

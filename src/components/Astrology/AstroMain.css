@@ -1,31 +1,49 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
-
-.astrology {
-  display: flex;
-  flex-direction: column;
-  /* background-color: #FDF2F8; */
-  /* align-items: center;  */
-  min-height: 100vh;
-  /* width: 100%; */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css");
+* {
+  margin: 0;
+  padding: 0;
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
-  /* font-weight: 400; */
   font-style: normal;
-  font-variation-settings:"slnt" 0;
-}
-.Head-Text h1{
-  font-size: clamp(2.5rem, 4vw, 3rem);
-  margin-bottom: 20px;
+  font-variation-settings: "slnt" 0;
 }
 
-.Head-Text{
+body {
+  background: #eee;
+}
+.container {
+  background-color: #fdf2f8;
+  height: auto;
+  display: flex;
+  align-items: center;
+  border-radius: 2vh;
+  margin-top: 2.5vh;
+  flex-direction: column;
+}
+.header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.header > h1 {
+  margin: 4vh 0 0 0;
+  font-size: clamp(2.5rem, 5vw, 3rem);
+  color: purple;
+  font-weight: 600;
   text-align: center;
-  height: 20%;
-  width: 100%;
-  margin-top: 2vw;
-  color:purple;
+  margin-top: 2rem;
 }
+.Container {
+  background-color: #fdf2f8;
+  width: clamp(30vw, 70vw, 80vw);
 
+  min-width: 20vw;
+
+  box-shadow: 0px 5px 10px 0px rgb(125, 115, 115);
+  margin: auto;
+  border-radius: 20px;
+}
 
 .Container-heading {
   position: relative;
@@ -77,12 +95,119 @@
   color: black;
   background-color: white;
 }
-.content-left img {
+.content-left .img-mc,
+.img-hh,
+.img-wm,
+.img-li,
+.img-eg,
+.img-cp,
+.img-bs,
+.img-fp,
+.img-la,
+.img-rs,
+.img-kfp,
+.img-pt,
+.img-pa,
+.img-bci,
+.img-sm,
+.img-pp,
+.img-th,
+.img-rh,
+.img-ch,
+.img-crh {
   width: 100%;
   height: 60%;
   border-radius: 20px;
   object-fit: cover;
 }
+.img-mc {
+  background: url("./images/Marriage Consultation.png") no-repeat center
+    center/cover;
+}
+.img-hh {
+  background: url("./images/Health Healing.png") no-repeat center center/cover;
+}
+
+.img-wh {
+  background: url("./images/Wealth Management.png") no-repeat center
+    center/cover;
+}
+
+.img-li {
+  background: url("./images/Love Insights.png") no-repeat center center/cover;
+}
+
+.img-eg {
+  background: url("./images/Educational Guidance.png") no-repeat center
+    center/cover;
+}
+
+.img-cp {
+  background: url("./images/Career Path.png") no-repeat center center/cover;
+}
+
+.img-bs {
+  background: url("./images/Business Strategies.png") no-repeat center
+    center/cover;
+}
+
+.img-fp {
+  background: url("./images/Finance Planning.png") no-repeat center center/cover;
+}
+
+.img-la {
+  background: url("./images/Legal Advice.png") no-repeat center center/cover;
+}
+
+.img-rs {
+  background: url("./images/Remedies & Solutions.png") no-repeat center
+    center/cover;
+}
+
+.img-kfp {
+  background: url("./images/Kids Fortune Prediction.png") no-repeat center
+    center/cover;
+}
+
+.img-pt {
+  background: url("./images/Parenting Tips.png") no-repeat center center/cover;
+}
+
+.img-pa {
+  background: url("./images/Panchang Analysis.png") no-repeat center
+    center/cover;
+}
+
+.img-bci {
+  background: url("./images/Birth Chart Interpretation.png") no-repeat center
+    center/cover;
+}
+
+.img-sm {
+  background: url("./images/Shubh Muhurat.png") no-repeat center center/cover;
+}
+
+.img-pp {
+  background: url("./images/Personalized Pooja.png") no-repeat center
+    center/cover;
+}
+
+.img-th {
+  background: url("./images/Theta Healing.png") no-repeat center center/cover;
+}
+
+.img-rh {
+  background: url("./images/Reiki Healing.png") no-repeat center center/cover;
+}
+
+.img-ch {
+  background: url("./images/Chakra Healing.png") no-repeat center center/cover;
+}
+
+.img-crh {
+  background: url("./images/Crystal Healing.png") no-repeat center center/cover;
+}
+
 .content-right {
   margin: 10px;
   height: 300px;
@@ -193,8 +318,9 @@
   align-items: center;
   flex-direction: column;
   text-align: center;
-  height: 150px;
-  width: 230px;
+  font-weight: 600;
+  height: 160px;
+  width: 270px;
   background-color: rgba(255, 255, 255, 0.8);
   margin: 18px;
   border-radius: 20px;
@@ -210,34 +336,89 @@
   cursor: pointer;
 }
 
-.info h2,
-.info p {
+.info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 80px;
+}
+
+.heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 270px;
+  background-color: rgba(0, 0, 0, 0.493);
+  /* margin-bottom: 80px; */
+}
+
+.heading h2 {
   color: #fff;
-  opacity: 0;
-  transition: all 0.6s;
-}
-
-.info h2 {
+  opacity: 100;
   font-size: 15px;
-  margin: 40px 0 0 0;
+  font-weight: 500;
 }
 
-.info p {
-  font-size: 2.5vh;
-  /* padding: 10px; */
-  margin: 10px 0 0 0;
-}
-
-.book-now {
-  height: 35px;
-  width: 90px;
-  color: white;
+.button-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 10px;
+  height: 50px;
+  width: 270px;
   font-size: 12px;
   font-weight: 600;
+  border: none;
+  background-color: #fff;
+}
+
+.book-call {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 4px;
+  height: 30px;
+  width: 115px;
+  border: 1px solid black;
   border-radius: 10px;
-  transition: all 0.6s;
-  opacity: 0;
-  margin-bottom: 40px;
+  border: 1px;
+  color: white;
+  background-color: black;
+  transition: all 0.4s;
+}
+
+.book-call > i,
+.book-chat > i {
+  font-size: medium;
+}
+
+.book-call:hover {
+  color: black;
+  background-color: white;
+  box-shadow: 0px 5px 10px 0px rgb(125, 115, 115);
+}
+
+.book-chat {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 4px;
+  height: 30px;
+  width: 115px;
+  border: 1px solid black;
+  border-radius: 10px;
+  border: 1px;
+  color: white;
+  background-color: black;
+  transition: all 0.4s;
+}
+
+.book-chat:hover {
+  color: black;
+  background-color: white;
+  box-shadow: 0px 5px 10px 0px rgb(125, 115, 115);
 }
 
 .link {
@@ -250,7 +431,7 @@
 }
 
 .bg-mc {
-  background: url("./images/marriageconsultation.png") no-repeat center
+  background: url("./images/Marriage Consultation.png") no-repeat center
     center/cover;
 }
 
@@ -290,7 +471,8 @@
 }
 
 .bg-rs {
-  background: url("./images/Remedies & Solutions.png") no-repeat center center/cover;
+  background: url("./images/Remedies & Solutions.png") no-repeat center
+    center/cover;
 }
 
 .bg-kfp {
@@ -337,85 +519,23 @@
   background: url("./images/Crystal Healing.png") no-repeat center center/cover;
 }
 
-.grid-items:hover .info h2,
-.grid-items:hover .info p {
-  opacity: 1;
+.astrology {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
-
-.grid-items:hover .book-now {
-  opacity: 100%;
-}
-
-.info::before,
-.book-now::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #4d4d4d;
-  transform: skew(30deg) translateX(100%);
-  opacity: 0.3;
-  z-index: -1;
-  transition: all 0.6s ease;
-}
-.info::after,
-.book-now::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #4d4d4d;
-  transform: skew(-30deg) translateX(100%);
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
-  opacity: 0.3;
-  z-index: -1;
-  transition: all 0.6s ease;
-}
-
-.grid-items:hover .info::before,
-.book-now::before {
-  transform: skew(30deg) translateX(50%);
-}
-
-.grid-items:hover .info::after,
-.book-now::after {
-  transform: skew(-30deg) translateX(40%);
-  opacity: 0.7;
-}
-.grid-items::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #4d4d4d;
-  opacity: 0.3;
-  transform: skew(30deg) translateX(85%);
-  transition: all 0.6s ease;
-  z-index: -1;
-}
-
-.grid-items::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #4d4d4d;
-  opacity: 0.3;
-  transform: skew(-30deg) translateX(85%);
-  transition: all 0.6s ease;
-  z-index: -1;
-}
-.grid-items:hover:before {
-  transform: skew(30deg) translateX(30%);
-}
-.grid-items:hover:after {
-  transform: skew(-30deg) translateX(20%);
+@media (max-width: 768px) {
+  .grid-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-shrink: 1;
+    flex-grow: 2;
+    width: 500px;
+  }
+  .grid-items::after {
+    width: 0%;
+  }
 }

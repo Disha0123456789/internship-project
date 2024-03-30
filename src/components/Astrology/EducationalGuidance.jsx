@@ -1,8 +1,8 @@
-import React from 'react';
-import "./style.css";
+import React from "react";
+import "./AstroMain.css";
 import { useNavigate } from "react-router-dom";
 function EducationalGuidance() {
-  const navigate = useNavigate(); 
+  const navigate = useNavigate();
   const head = "Educational Guidance";
   const img = "./images/Marriage Consultation.png";
   return (
@@ -13,25 +13,25 @@ function EducationalGuidance() {
         </div>
         <div className="content">
           <div className="content-left">
-            <img src="../images/Marriage Consultation.png" alt="" />
+            <div className="img-eg"></div>
             <button onClick={() => navigate("/Done", { state: { head, img } })}>
               Book Now
             </button>
           </div>
           <div className="content-right">
             <p>
-              A marriage consultation offers couples a platform to address
-              concerns, enhance communication, and strengthen their
-              relationship. Through facilitated discussions, couples can explore
-              challenges, identify goals, and develop strategies for resolving
-              conflicts. These sessions provide valuable insights, tools, and
-              support to foster a healthier and more fulfilling marital bond.
+              Educational guidance involves providing support and advice to
+              individuals in navigating their educational journey. This includes
+              assistance in choosing appropriate courses, colleges, or career
+              paths, as well as helping students develop academic skills and
+              strategies for success. The aim is to empower learners to make
+              informed decisions about their education and future endeavors.
             </p>
           </div>
         </div>
       </div>
     </div>
-  )
+  );
 }
 
 export default EducationalGuidance;

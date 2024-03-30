@@ -1,8 +1,8 @@
 import React from "react";
-import "./style.css";
+import "./AstroMain.css";
 import { useNavigate } from "react-router-dom";
 function PersonalizedPooja() {
-  const navigate = useNavigate(); 
+  const navigate = useNavigate();
   const head = "Personalized Pooja";
   const img = "./images/Marriage Consultation.png";
   return (
@@ -13,19 +13,20 @@ function PersonalizedPooja() {
         </div>
         <div className="content">
           <div className="content-left">
-            <img src="../images/Marriage Consultation.png" alt="" />
+            <div className="img-pp"></div>
             <button onClick={() => navigate("/Done", { state: { head, img } })}>
               Book Now
             </button>
           </div>
           <div className="content-right">
             <p>
-              A marriage consultation offers couples a platform to address
-              concerns, enhance communication, and strengthen their
-              relationship. Through facilitated discussions, couples can explore
-              challenges, identify goals, and develop strategies for resolving
-              conflicts. These sessions provide valuable insights, tools, and
-              support to foster a healthier and more fulfilling marital bond.
+              Personalized Pooja refers to a customized worship ritual tailored
+              to an individual's specific spiritual needs, preferences, and
+              intentions. It involves selecting specific deities, mantras,
+              offerings, and rituals based on factors such as one's beliefs,
+              astrological considerations, or personal aspirations. This
+              personalized approach enhances spiritual connection and
+              fulfillment.
             </p>
           </div>
         </div>

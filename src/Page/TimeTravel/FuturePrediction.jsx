@@ -2,9 +2,11 @@ import React, { useState } from "react";
 import "./Future.css";
 import Calendar from "react-calendar";
 import "react-calendar/dist/Calendar.css";
+import { useNavigate } from "react-router-dom";
 
 const FuturePrediction = () => {
   const [value, onChange] = useState(new Date());
+  const navigate = useNavigate();
   return (
 
       <div className="timetravel">
@@ -20,10 +22,10 @@ const FuturePrediction = () => {
                     <div>
                       <Calendar onChange={onChange} value={value} />
                     </div>
-                    <a target="_blank" href="SeeYourFuture.html">
+                    <a onClick={() => navigate("/see_your_future")}>
                       <input
                         type="button"
-                        className="submit-button form-control"
+                        className="form-control back"
                         defaultValue="See the Future"
                       />
                     </a>

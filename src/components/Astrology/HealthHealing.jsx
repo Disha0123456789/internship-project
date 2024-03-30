@@ -1,8 +1,8 @@
 import React from "react";
-import "./style.css";
+import "./AstroMain.css";
 import { useNavigate } from "react-router-dom";
 function HealthHealing() {
-  const navigate = useNavigate(); 
+  const navigate = useNavigate();
   const head = "Health Healing";
   const img = "./images/Marriage Consultation.png";
   return (
@@ -13,19 +13,20 @@ function HealthHealing() {
         </div>
         <div className="content">
           <div className="content-left">
-            <img src="../images/Marriage Consultation.png" alt="" />
+            <div className="img-hh"></div>
             <button onClick={() => navigate("/Done", { state: { head, img } })}>
               Book Now
             </button>
           </div>
           <div className="content-right">
             <p>
-              A marriage consultation offers couples a platform to address
-              concerns, enhance communication, and strengthen their
-              relationship. Through facilitated discussions, couples can explore
-              challenges, identify goals, and develop strategies for resolving
-              conflicts. These sessions provide valuable insights, tools, and
-              support to foster a healthier and more fulfilling marital bond.
+              Health healing encompasses the process of restoring and enhancing
+              an individual's well-being, addressing physical, mental,
+              emotional, and spiritual aspects. It involves medical treatments,
+              holistic approaches, lifestyle changes, emotional support, and
+              sometimes alternative therapies. The goal is to facilitate the
+              body's natural healing mechanisms and promote overall health and
+              vitality.
             </p>
           </div>
         </div>

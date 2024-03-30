@@ -30,6 +30,14 @@
 .form-group {
   margin: 5vh 0vh 0vh 0vh;
 }
-.submit-button {
+.back {
   margin: 2vh 0vh 0vh 0vh;
+}
+.back:hover {
+  background-color: black !important;
+  color: white;
+  transition: all .3s;
+}
+.back {
+  background-color: gray !important;
 }

@@ -1,8 +1,8 @@
 import React from "react";
-import "./style.css";
+import "./AstroMain.css";
 import { useNavigate } from "react-router-dom";
 function KidsFortunePrediction() {
-  const navigate = useNavigate(); 
+  const navigate = useNavigate();
   const head = "Kids Fortune Prediction";
   const img = "./images/Marriage Consultation.png";
   return (
@@ -13,19 +13,18 @@ function KidsFortunePrediction() {
         </div>
         <div className="content">
           <div className="content-left">
-            <img src="../images/Marriage Consultation.png" alt="" />
+            <div className="img-kfp"></div>
             <button onClick={() => navigate("/Done", { state: { head, img } })}>
               Book Now
             </button>
           </div>
           <div className="content-right">
             <p>
-              A marriage consultation offers couples a platform to address
-              concerns, enhance communication, and strengthen their
-              relationship. Through facilitated discussions, couples can explore
-              challenges, identify goals, and develop strategies for resolving
-              conflicts. These sessions provide valuable insights, tools, and
-              support to foster a healthier and more fulfilling marital bond.
+              Kids Fortune Prediction is a fun activity where children predict
+              their future based on playful interpretations of their interests,
+              talents, and aspirations. Using imagination and creativity, kids
+              envision what they may become when they grow up, sparking
+              excitement and curiosity about their potential paths in life.
             </p>
           </div>
         </div>

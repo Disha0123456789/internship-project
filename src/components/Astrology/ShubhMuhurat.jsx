@@ -1,8 +1,8 @@
 import React from "react";
-import "./style.css";
+import "./AstroMain.css";
 import { useNavigate } from "react-router-dom";
 function ShubhMuhurat() {
-  const navigate = useNavigate(); 
+  const navigate = useNavigate();
   const head = "Shubh Muhurat";
   const img = "./images/Marriage Consultation.png";
   return (
@@ -13,19 +13,19 @@ function ShubhMuhurat() {
         </div>
         <div className="content">
           <div className="content-left">
-            <img src="../images/Marriage Consultation.png" alt="" />
+            <div className="img-sm"></div>
             <button onClick={() => navigate("/Done", { state: { head, img } })}>
               Book Now
             </button>
           </div>
           <div className="content-right">
             <p>
-              A marriage consultation offers couples a platform to address
-              concerns, enhance communication, and strengthen their
-              relationship. Through facilitated discussions, couples can explore
-              challenges, identify goals, and develop strategies for resolving
-              conflicts. These sessions provide valuable insights, tools, and
-              support to foster a healthier and more fulfilling marital bond.
+              "Shubh Muhurat" refers to auspicious timings in Hindu astrology,
+              considered favorable for initiating important activities or
+              ceremonies like weddings, housewarming, or business ventures.
+              Determined by planetary positions, these timings ensure harmony
+              and success. Following Shubh Muhurat enhances the likelihood of
+              positive outcomes and blessings in various life events.
             </p>
           </div>
         </div>

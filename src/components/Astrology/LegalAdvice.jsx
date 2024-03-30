@@ -1,8 +1,8 @@
 import React from "react";
-import "./style.css";
+import "./AstroMain.css";
 import { useNavigate } from "react-router-dom";
 function LegalAdvice() {
-  const navigate = useNavigate(); 
+  const navigate = useNavigate();
   const head = "Legal Advice";
   const img = "./images/Marriage Consultation.png";
   return (
@@ -13,19 +13,19 @@ function LegalAdvice() {
         </div>
         <div className="content">
           <div className="content-left">
-            <img src="../images/Marriage Consultation.png" alt="" />
+            <div className="img-la"></div>
             <button onClick={() => navigate("/Done", { state: { head, img } })}>
               Book Now
             </button>
           </div>
           <div className="content-right">
             <p>
-              A marriage consultation offers couples a platform to address
-              concerns, enhance communication, and strengthen their
-              relationship. Through facilitated discussions, couples can explore
-              challenges, identify goals, and develop strategies for resolving
-              conflicts. These sessions provide valuable insights, tools, and
-              support to foster a healthier and more fulfilling marital bond.
+              Legal advice is guidance provided by a qualified legal
+              professional regarding legal rights, obligations, and options in a
+              particular situation. It encompasses interpretation of laws,
+              strategies for legal proceedings, and recommendations for actions
+              to protect one's interests within the framework of applicable laws
+              and regulations.
             </p>
           </div>
         </div>
