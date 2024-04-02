@@ -1,6 +1,6 @@
 import React from "react";
 import "./LineChart.css";
-// import  Chart  from "chart.js/auto";
+import  Chart  from "chart.js/auto";
 
 import { Line } from "react-chartjs-2";
 
@@ -95,11 +95,11 @@ const LineChart = () => {
           </div>
         </div>
       </div>
-      <div className="cards-container">
-        <div className="card">
-          <div className="card-header">
+      <div className="cards-container-lc">
+        <div className="card-lc">
+          <div className="card-header-lc">
             <h4>
-              <div className="Physical"></div>
+              <div className="Physical-lc"></div>
               Physical
             </h4>
           </div>
@@ -112,10 +112,10 @@ const LineChart = () => {
             and understanding.
           </p>
         </div>
-        <div className="card">
-          <div className="card-header">
+        <div className="card-lc">
+          <div className="card-header-lc">
             <h4>
-            <div className="Emotional"></div>
+            <div className="Emotional-lc"></div>
               Emotional
             </h4>
           </div>
@@ -128,10 +128,10 @@ const LineChart = () => {
             passions with confidence.
           </p>
         </div>
-        <div className="card">
-          <div className="card-header">
+        <div className="card-lc">
+          <div className="card-header-lc">
             <h4>
-            <div className="Intellectual"></div>
+            <div className="Intellectual-lc"></div>
               Intellectual
             </h4>
           </div>
@@ -144,10 +144,10 @@ const LineChart = () => {
             purpose, leaving a lasting legacy of accomplishment and inspiration.
           </p>
         </div>
-        <div className="card">
-          <div className="card-header">
+        <div className="card-lc">
+          <div className="card-header-lc">
             <h4>
-            <div className="Spiritual"></div>
+            <div className="Spiritual-lc"></div>
               Spiritual
             </h4>
           </div>
