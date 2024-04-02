@@ -20,11 +20,18 @@ function ReikiHealing() {
           </div>
           <div className="content-right">
             <p>
-              Reiki Healing is a holistic practice originating from Japan that
-              utilizes the channeling of universal life force energy to promote
-              relaxation and facilitate the body's natural healing processes.
-              Practitioners gently place their hands on or above the recipient's
-              body to help restore physical, emotional, and spiritual balance.
+              Reiki Healing is a holistic practice that channels universal life
+              force energy to promote physical, emotional, and spiritual
+              well-being. Practitioners use gentle touch or hands hovering over
+              the body to transfer this energy, stimulating the body's natural
+              healing processes. Reiki aims to balance the energy centers
+              (chakras) within the body, releasing blockages and restoring
+              harmony. It can alleviate stress, reduce pain, accelerate recovery
+              from illness or injury, and enhance overall vitality. Reiki is
+              often used in conjunction with conventional medicine as a
+              complementary therapy, offering relaxation, rejuvenation, and a
+              sense of inner peace to individuals seeking holistic healing and
+              wellness.
             </p>
           </div>
         </div>

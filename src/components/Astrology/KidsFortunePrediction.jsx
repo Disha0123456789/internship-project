@@ -20,11 +20,18 @@ function KidsFortunePrediction() {
           </div>
           <div className="content-right">
             <p>
-              Kids Fortune Prediction is a fun activity where children predict
-              their future based on playful interpretations of their interests,
-              talents, and aspirations. Using imagination and creativity, kids
-              envision what they may become when they grow up, sparking
-              excitement and curiosity about their potential paths in life.
+              Kids' fortune prediction involves forecasting a child's potential
+              future based on astrological principles, examining celestial
+              configurations at birth. It aims to provide insights into their
+              personality traits, talents, challenges, and life paths. While not
+              deterministic, it offers guidance for parents in nurturing their
+              child's development and understanding their unique inclinations.
+              This practice often considers factors like the child's sun sign,
+              rising sign, and planetary placements to offer personalized
+              guidance. However, its efficacy is subjective, and upbringing and
+              environmental factors play significant roles in shaping a child's
+              future. Ultimately, it serves as a tool for understanding and
+              supporting a child's journey to adulthood.
             </p>
           </div>
         </div>

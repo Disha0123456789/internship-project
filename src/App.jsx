@@ -28,11 +28,15 @@ import Palmreader from "./assets/Boxes/Facecard/Palmreader";
 import Palmresult from "./assets/Boxes/Facecard/Palmresult";
 
 //Time Travel
+import TimeTravel from "./Page/TimeTravel/TimeTravel";
 import FuturePrediction from "./Page/TimeTravel/FuturePrediction";
 import SeeYourFuture from "./Page/TimeTravel/SeeYourFuture";
+import PastLifePrediction from "./Page/TimeTravel/PastLifePrediction"
 
 //Astrology 
+import CallChat from "./components/Astrology/CallChat";
 import AstroMain from "./components/Astrology/AstroMain";
+import AstroMainChat from "./components/Astrology/AstroMainChat";
 import MarriageConsultation from "./components/Astrology/MarriageConsultation";
 import HealthHealing from "./components/Astrology/HealthHealing";
 import WealthManagement from "./components/Astrology/WealthManagement";
@@ -124,11 +128,15 @@ function App() {
         <Route path="/palmResult" element={<Palmresult />} />
         
         {/* Time Travel*/}
+        <Route path="/TimeTravel" element={<TimeTravel />} />
         <Route path="/FuturePrediction" element={<FuturePrediction />} />
         <Route path="/see_your_future" element={<SeeYourFuture />} />
+        <Route path="/PastLifePrediction" element={<PastLifePrediction />} />
 
         {/* Astrology*/}
+        <Route path="/CallChat" element={<CallChat />} />
         <Route path="/AstroMain" element={<AstroMain />} />
+        <Route path="/AstroMainChat" element={<AstroMainChat />} />
         <Route path="/marriageConsultation" element={<MarriageConsultation />} />
         <Route path="/healthHealing" element={<HealthHealing />} />
         <Route path="/wealthManagement" element={<WealthManagement />} />

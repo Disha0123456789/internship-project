@@ -20,12 +20,19 @@ function CareerPath() {
           </div>
           <div className="content-right">
             <p>
-              A career path refers to the trajectory of professional advancement
-              and development within a particular field or industry. It
-              encompasses the various roles, skills, and experiences an
-              individual accumulates over time, guiding their progress toward
-              achieving personal and professional goals within their chosen
-              vocation.
+              A career path is the journey an individual undertakes throughout
+              their professional life, comprising their employment experiences,
+              skill development, and advancement opportunities. It involves a
+              series of steps and decisions, such as education, training, job
+              changes, and promotions, aimed at achieving personal and
+              professional goals. A well-defined career path aligns with one's
+              interests, strengths, and aspirations, guiding progression towards
+              fulfilling and rewarding roles. It may include lateral moves,
+              upward mobility, or transitions between industries, all
+              contributing to skill enhancement and expertise accumulation.
+              Navigating a career path requires strategic planning,
+              adaptability, and continuous learning to seize opportunities and
+              achieve long-term success and satisfaction.
             </p>
           </div>
         </div>

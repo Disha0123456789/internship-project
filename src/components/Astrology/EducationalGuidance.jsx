@@ -20,12 +20,19 @@ function EducationalGuidance() {
           </div>
           <div className="content-right">
             <p>
-              Educational guidance involves providing support and advice to
-              individuals in navigating their educational journey. This includes
-              assistance in choosing appropriate courses, colleges, or career
-              paths, as well as helping students develop academic skills and
-              strategies for success. The aim is to empower learners to make
-              informed decisions about their education and future endeavors.
+              Educational guidance involves providing support and direction to
+              individuals in their academic pursuits and personal development.
+              It encompasses helping students make informed decisions about
+              their educational pathways, career goals, and skill development.
+              Guidance may include academic advising, career counseling, goal
+              setting, and identifying learning opportunities tailored to
+              individual needs and interests. Effective educational guidance
+              fosters self-awareness, confidence, and motivation, empowering
+              individuals to maximize their potential and achieve academic
+              success. It also addresses challenges such as study skills, time
+              management, and overcoming obstacles, facilitating holistic growth
+              and preparing students for future endeavors in academia and
+              beyond.
             </p>
           </div>
         </div>

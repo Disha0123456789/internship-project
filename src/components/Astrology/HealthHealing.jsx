@@ -20,13 +20,19 @@ function HealthHealing() {
           </div>
           <div className="content-right">
             <p>
-              Health healing encompasses the process of restoring and enhancing
-              an individual's well-being, addressing physical, mental,
-              emotional, and spiritual aspects. It involves medical treatments,
-              holistic approaches, lifestyle changes, emotional support, and
-              sometimes alternative therapies. The goal is to facilitate the
-              body's natural healing mechanisms and promote overall health and
-              vitality.
+              Health healing involves restoring balance and vitality to the
+              body, mind, and spirit. It encompasses holistic approaches to
+              address physical ailments, mental health issues, and emotional
+              well-being. Healing practices may include conventional medicine,
+              alternative therapies, lifestyle changes, and spiritual practices.
+              By addressing root causes rather than just symptoms, health
+              healing promotes overall wellness and resilience. It emphasizes
+              the body's innate ability to heal itself when supported with
+              proper nutrition, exercise, rest, and stress management. Through
+              personalized treatment plans and mindful interventions, health
+              healing aims to optimize health outcomes, improve quality of life,
+              and empower individuals to thrive in all aspects of their
+              well-being.
             </p>
           </div>
         </div>

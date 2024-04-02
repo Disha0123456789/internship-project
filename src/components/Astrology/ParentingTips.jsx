@@ -20,12 +20,19 @@ function ParentingTips() {
           </div>
           <div className="content-right">
             <p>
-              Parenting is a rewarding yet challenging journey. Here are some
-              tips to help navigate it effectively: Listen to your child
-              actively, set clear and consistent boundaries, lead by example,
-              prioritize quality time together, encourage open communication,
-              and remember to take care of yourself too. Consistency and
-              patience are key.s
+              Parenting involves nurturing and guiding children towards healthy
+              development. Encourage open communication, fostering trust and
+              understanding. Set clear boundaries while allowing independence
+              and autonomy within age-appropriate limits. Practice positive
+              reinforcement to reinforce desired behaviors and provide
+              constructive feedback. Prioritize quality time together, engaging
+              in activities that promote bonding and mutual respect. Lead by
+              example, demonstrating kindness, empathy, and resilience. Stay
+              attuned to your child's emotions and needs, offering support and
+              validation. Flexibility and patience are key; adapt parenting
+              approaches to suit individual personalities and stages of
+              development. Above all, shower them with love and encouragement,
+              nurturing their self-esteem and confidence.
             </p>
           </div>
         </div>

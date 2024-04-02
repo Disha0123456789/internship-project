@@ -20,13 +20,19 @@ function FinancePlanning() {
           </div>
           <div className="content-right">
             <p>
-              Financial planning involves creating strategies to manage your
-              finances effectively. It includes setting financial goals,
-              budgeting, saving, investing, and managing debt. By assessing your
-              current financial situation and developing a plan tailored to your
-              objectives, financial planning helps you achieve financial
-              security, build wealth, and work towards long-term financial
-              success.
+              Financial planning involves the systematic process of assessing an
+              individual's or organization's financial situation, goals, and
+              resources to develop strategies for achieving desired outcomes. It
+              encompasses budgeting, saving, investing, retirement planning,
+              risk management, and estate planning. By analyzing income,
+              expenses, assets, and liabilities, financial planners tailor
+              strategies to optimize wealth accumulation, minimize financial
+              risks, and ensure long-term financial security. Effective
+              financial planning considers short-term needs while also
+              addressing long-term objectives, such as funding education, buying
+              a home, or retiring comfortably. It serves as a roadmap for making
+              informed financial decisions, adapting to changing circumstances,
+              and ultimately achieving financial independence and peace of mind.
             </p>
           </div>
         </div>

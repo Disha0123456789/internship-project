@@ -2,7 +2,7 @@ import React from "react";
 import "./AstroMain.css";
 import { useNavigate } from "react-router-dom";
 
-function AstroMain() {
+function AstroMainChat() {
   const navigate = useNavigate();
   return (
     <div className="astrology">
@@ -30,10 +30,10 @@ function AstroMain() {
             </div>
             <div className="button-container">
               <button className="book-call" disabled>
-                ₹3.5/min
+                ₹1/msg
               </button>
               <button className="book-chat">
-                <i class="fa-solid fa-phone"></i>Book a Call
+                <i className="fa-solid fa-comment-dots"></i>Book a Chat
               </button>
             </div>
           </div>
@@ -48,10 +48,10 @@ function AstroMain() {
             </div>
             <div className="button-container">
               <button className="book-call" disabled>
-                ₹3.5/min
+                ₹1/msg
               </button>
               <button className="book-chat">
-                <i class="fa-solid fa-phone"></i>Book a Call
+                <i className="fa-solid fa-comment-dots"></i>Book a Chat
               </button>
             </div>
           </div>
@@ -66,10 +66,10 @@ function AstroMain() {
             </div>
             <div className="button-container">
               <button className="book-call" disabled>
-                ₹3.5/min
+                ₹1/msg
               </button>
               <button className="book-chat">
-                <i class="fa-solid fa-phone"></i>Book a Call
+                <i className="fa-solid fa-comment-dots"></i>Book a Chat
               </button>
             </div>
           </div>
@@ -84,10 +84,10 @@ function AstroMain() {
             </div>
             <div className="button-container">
               <button className="book-call" disabled>
-                ₹3.5/min
+                ₹1/msg
               </button>
               <button className="book-chat">
-                <i class="fa-solid fa-phone"></i>Book a Call
+                <i className="fa-solid fa-comment-dots"></i>Book a Chat
               </button>
             </div>
           </div>
@@ -102,10 +102,10 @@ function AstroMain() {
             </div>
             <div className="button-container">
               <button className="book-call" disabled>
-                ₹3.5/min
+                ₹1/msg
               </button>
               <button className="book-chat">
-                <i class="fa-solid fa-phone"></i>Book a Call
+                <i className="fa-solid fa-comment-dots"></i>Book a Chat
               </button>
             </div>
           </div>
@@ -120,10 +120,10 @@ function AstroMain() {
             </div>
             <div className="button-container">
               <button className="book-call" disabled>
-                ₹3.5/min
+                ₹1/msg
               </button>
               <button className="book-chat">
-                <i class="fa-solid fa-phone"></i>Book a Call
+                <i className="fa-solid fa-comment-dots"></i>Book a Chat
               </button>
             </div>
           </div>
@@ -138,10 +138,10 @@ function AstroMain() {
             </div>
             <div className="button-container">
               <button className="book-call" disabled>
-                ₹3.5/min
+                ₹1/msg
               </button>
               <button className="book-chat">
-                <i class="fa-solid fa-phone"></i>Book a Call
+                <i className="fa-solid fa-comment-dots"></i>Book a Chat
               </button>
             </div>
           </div>
@@ -156,10 +156,10 @@ function AstroMain() {
             </div>
             <div className="button-container">
               <button className="book-call" disabled>
-                ₹3.5/min
+                ₹1/msg
               </button>
               <button className="book-chat">
-                <i class="fa-solid fa-phone"></i>Book a Call
+                <i className="fa-solid fa-comment-dots"></i>Book a Chat
               </button>
             </div>
           </div>
@@ -174,10 +174,10 @@ function AstroMain() {
             </div>
             <div className="button-container">
               <button className="book-call" disabled>
-                ₹3.5/min
+                ₹1/msg
               </button>
               <button className="book-chat">
-                <i class="fa-solid fa-phone"></i>Book a Call
+                <i className="fa-solid fa-comment-dots"></i>Book a Chat
               </button>
             </div>
           </div>
@@ -192,10 +192,10 @@ function AstroMain() {
             </div>
             <div className="button-container">
               <button className="book-call" disabled>
-                ₹3.5/min
+                ₹1/msg
               </button>
               <button className="book-chat">
-                <i class="fa-solid fa-phone"></i>Book a Call
+                <i className="fa-solid fa-comment-dots"></i>Book a Chat
               </button>
             </div>
           </div>
@@ -210,10 +210,10 @@ function AstroMain() {
             </div>
             <div className="button-container">
               <button className="book-call" disabled>
-                ₹3.5/min
+                ₹1/msg
               </button>
               <button className="book-chat">
-                <i class="fa-solid fa-phone"></i>Book a Call
+                <i className="fa-solid fa-comment-dots"></i>Book a Chat
               </button>
             </div>
           </div>
@@ -228,10 +228,10 @@ function AstroMain() {
             </div>
             <div className="button-container">
               <button className="book-call" disabled>
-                ₹3.5/min
+                ₹1/msg
               </button>
               <button className="book-chat">
-                <i class="fa-solid fa-phone"></i>Book a Call
+                <i className="fa-solid fa-comment-dots"></i>Book a Chat
               </button>
             </div>
           </div>
@@ -246,10 +246,10 @@ function AstroMain() {
             </div>
             <div className="button-container">
               <button className="book-call" disabled>
-                ₹3.5/min
+                ₹1/msg
               </button>
               <button className="book-chat">
-                <i class="fa-solid fa-phone"></i>Book a Call
+                <i className="fa-solid fa-comment-dots"></i>Book a Chat
               </button>
             </div>
           </div>
@@ -264,10 +264,10 @@ function AstroMain() {
             </div>
             <div className="button-container">
               <button className="book-call" disabled>
-                ₹3.5/min
+                ₹1/msg
               </button>
               <button className="book-chat">
-                <i class="fa-solid fa-phone"></i>Book a Call
+                <i className="fa-solid fa-comment-dots"></i>Book a Chat
               </button>
             </div>
           </div>
@@ -282,10 +282,10 @@ function AstroMain() {
             </div>
             <div className="button-container">
               <button className="book-call" disabled>
-                ₹3.5/min
+                ₹1/msg
               </button>
               <button className="book-chat">
-                <i class="fa-solid fa-phone"></i>Book a Call
+                <i className="fa-solid fa-comment-dots"></i>Book a Chat
               </button>
             </div>
           </div>
@@ -300,10 +300,10 @@ function AstroMain() {
             </div>
             <div className="button-container">
               <button className="book-call" disabled>
-                ₹3.5/min
+                ₹1/msg
               </button>
               <button className="book-chat">
-                <i class="fa-solid fa-phone"></i>Book a Call
+                <i className="fa-solid fa-comment-dots"></i>Book a Chat
               </button>
             </div>
           </div>
@@ -318,10 +318,10 @@ function AstroMain() {
             </div>
             <div className="button-container">
               <button className="book-call" disabled>
-                ₹3.5/min
+                ₹1/msg
               </button>
               <button className="book-chat">
-                <i class="fa-solid fa-phone"></i>Book a Call
+                <i className="fa-solid fa-comment-dots"></i>Book a Chat
               </button>
             </div>
           </div>
@@ -336,10 +336,10 @@ function AstroMain() {
             </div>
             <div className="button-container">
               <button className="book-call" disabled>
-                ₹3.5/min
+                ₹1/msg
               </button>
               <button className="book-chat">
-                <i class="fa-solid fa-phone"></i>Book a Call
+                <i className="fa-solid fa-comment-dots"></i>Book a Chat
               </button>
             </div>
           </div>
@@ -354,10 +354,10 @@ function AstroMain() {
             </div>
             <div className="button-container">
               <button className="book-call" disabled>
-                ₹3.5/min
+                ₹1/msg
               </button>
               <button className="book-chat">
-                <i class="fa-solid fa-phone"></i>Book a Call
+                <i className="fa-solid fa-comment-dots"></i>Book a Chat
               </button>
             </div>
           </div>
@@ -372,10 +372,10 @@ function AstroMain() {
             </div>
             <div className="button-container">
               <button className="book-call" disabled>
-                ₹3.5/min
+                ₹1/msg
               </button>
               <button className="book-chat">
-                <i class="fa-solid fa-phone"></i>Book a Call
+                <i className="fa-solid fa-comment-dots"></i>Book a Chat
               </button>
             </div>
           </div>
@@ -385,4 +385,4 @@ function AstroMain() {
   );
 }
 
-export default AstroMain;
+export default AstroMainChat;

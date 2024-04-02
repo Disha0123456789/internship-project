@@ -20,12 +20,19 @@ function PanchangAnalysis() {
           </div>
           <div className="content-right">
             <p>
-              Panchang Analysis involves interpreting traditional Hindu
-              astrological calendars known as "Panchangs." It examines celestial
-              positions, lunar phases, planetary transits, and auspicious
-              timings to guide decisions in areas such as rituals, ceremonies,
-              and daily activities. This analysis provides insights into cosmic
-              influences on personal and societal events.
+              Panchang analysis is a traditional Hindu practice involving the
+              study of the Panchang, a comprehensive astrological calendar. It
+              includes detailed information on planetary positions, lunar
+              phases, auspicious and inauspicious timings, and religious events.
+              Through this analysis, individuals and communities assess
+              favorable moments for important activities like weddings,
+              housewarming ceremonies, and business ventures. It also guides in
+              observing religious festivals and conducting rituals at auspicious
+              times. Panchang analysis aids in aligning actions with cosmic
+              energies, promoting harmony, success, and spiritual well-being. It
+              serves as a practical tool for optimizing decision-making and
+              planning in various aspects of life according to astrological
+              principles.
             </p>
           </div>
         </div>

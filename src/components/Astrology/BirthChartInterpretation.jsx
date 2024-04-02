@@ -21,12 +21,18 @@ function BirthChartInterpretation() {
           </div>
           <div className="content-right">
             <p>
-              Birth chart interpretation involves analyzing the positions of
-              celestial bodies at the time of an individual's birth. This
-              includes the Sun, Moon, planets, and astrological points,
-              providing insights into personality traits, strengths, weaknesses,
-              and potential life experiences. It helps understand one's unique
-              cosmic blueprint and navigate life's challenges and opportunities.
+              Birth chart interpretation is a deep analysis of celestial bodies'
+              positions at an individual's birth, including the Sun, Moon,
+              planets, and astrological points. It unveils personality traits,
+              strengths, weaknesses, and potential life experiences. This
+              profound understanding of one's cosmic blueprint enables effective
+              navigation through life's challenges and opportunities. By
+              decoding the unique alignment of the stars and planets,
+              individuals gain insight into their purpose, relationships, career
+              paths, and personal development. It serves as a guiding tool for
+              self-discovery, growth, and making informed decisions aligned with
+              one's inherent nature and destiny, fostering a fulfilling and
+              harmonious life journey.
             </p>
           </div>
         </div>
