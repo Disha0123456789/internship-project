@@ -43,7 +43,7 @@ const LineChart = () => {
   return (
     <div className="biorhythm">
       <div className="header">
-        <h1>Past Life Prediction</h1>
+        <h1>Biorhythm</h1>
       </div>
       <div className="linechart">
         <Line data={data} />
