@@ -337,7 +337,9 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin: 18px; /* Adjust margin as needed */
 }
+
 .grid-items {
   display: flex;
   justify-content: center;
@@ -345,20 +347,39 @@ body {
   flex-direction: column;
   text-align: center;
   font-weight: 600;
-  height: 160px;
-  width: 300px;
+  height: 200px; /* Increase height as needed */
+  width: 350px; /* Increase width as needed */
   background-color: rgba(255, 255, 255, 0.8);
-  margin: 18px;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  border-bottom-left-radius: none;
-  border-bottom-right-radius: none;
-  place-items: center;
+  border-radius: 20px;
   position: relative;
   transition: all 1s;
-  z-index: 1;
   overflow: hidden;
 }
+
+/* Adjust background size to cover */
+.bg-mc,
+.bg-hh,
+.bg-wh,
+.bg-li,
+.bg-eg,
+.bg-cp,
+.bg-bs,
+.bg-fp,
+.bg-la,
+.bg-rs,
+.bg-kfp,
+.bg-pt,
+.bg-pa,
+.bg-bci,
+.bg-sm,
+.bg-pp,
+.bg-th,
+.bg-rh,
+.bg-ch,
+.bg-crh {
+  background-size: cover;
+}
+
 
 .grid-items:hover {
   cursor: pointer;
