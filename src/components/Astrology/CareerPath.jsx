@@ -11,14 +11,14 @@ function CareerPath() {
         <div className="Container-heading">
           <h1>Career Path</h1>
         </div>
-        <div className="content">
-          <div className="content-left">
+        <div className="conten">
+          <div className="conten-left">
             <div className="img-cp"></div>
             <button onClick={() => navigate("/Done", { state: { head, img } })}>
               Book Now
             </button>
           </div>
-          <div className="content-right">
+          <div className="conten-right">
             <p>
               A career path is the journey an individual undertakes throughout
               their professional life, comprising their employment experiences,
