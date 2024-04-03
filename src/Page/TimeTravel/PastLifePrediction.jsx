@@ -28,7 +28,11 @@ function PastLifePrediction() {
               asfasdfadsfasdfasdfadsfasdf
               adsfasdfadsfasdfadfadsfadsfasdf
               asdfasdfdasfadsfadsfadsfadsfasdfadsfasdfasdfadsf
-              asdfadsfdasfadsfasffffffffffffasssssssss
+              asdfadsfdasfadsfasffffffffffffassssssssssdfjkjdkfjasdkkkkkkkkkkkkkkkkkkkkkk
+              llllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllll
+              asdlfjjjjjjjjjjjjjklllllllllllllllllllllllllllllllllllllljasdjfklajjjjjjjjjjjjj
+              sdakjflllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllll
+              jasdlkfjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj
             </p>
           </div>
         </div>
