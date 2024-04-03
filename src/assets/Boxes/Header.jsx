@@ -28,7 +28,7 @@ function Header() {
               Shopping <ShoppingCartRoundedIcon />
             </Nav.Link>
 
-            <InputGroup className="mb-1 me-3" style={{ width: "300px" }}>
+            <InputGroup className="mb-1 me-3" style={{ width: "310px" }}>
               <Form.Control
                 placeholder="Search Your Divine Connection"
                 aria-label="Search here"

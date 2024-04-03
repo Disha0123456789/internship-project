@@ -23,9 +23,10 @@ const NewFutureBox = () => {
             </div>
           </div>
 
-          <div 
+          <div
             onClick={() => navigate("/faceRead")}
-            class="h-36 sm:h-50 w-60 flex flex-col justify-center border bg-gradient-to-tr from-purple-300 to-blue-300 rounded-xl text-center p-4 md:p-5 dark:border-gray-700">
+            class="h-36 sm:h-50 w-60 flex flex-col justify-center border bg-gradient-to-tr from-purple-300 to-blue-300 rounded-xl text-center p-4 md:p-5 dark:border-gray-700"
+          >
             <div class="flex justify-center items-center size-20  rounded-lg mx-auto">
               <img src="./ICONS/face.png" alt="13" />
             </div>
@@ -37,9 +38,10 @@ const NewFutureBox = () => {
             </div>
           </div>
 
-          <div 
+          <div
             onClick={() => navigate("/palmReader")}
-            class="h-36 sm:h-50 w-60 flex flex-col justify-center border bg-gradient-to-tr from-purple-300 to-blue-300 rounded-xl text-center p-4 md:p-5 dark:border-gray-700">
+            class="h-36 sm:h-50 w-60 flex flex-col justify-center border bg-gradient-to-tr from-purple-300 to-blue-300 rounded-xl text-center p-4 md:p-5 dark:border-gray-700"
+          >
             <div class="flex justify-center items-center size-20 rounded-lg mx-auto">
               <img src="./ICONS/palm.png" alt="13" />
             </div>
@@ -70,9 +72,10 @@ const NewFutureBox = () => {
         </h1>
 
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-10 md:gap-49">
-          <div 
-            onClick={() => navigate("/FuturePrediction")}
-            class="h-36 sm:h-50 w-60 flex flex-col justify-center border bg-gradient-to-tr from-purple-300 to-blue-300 rounded-xl text-center p-4 mx-10 md:p-5 dark:border-gray-700">
+          <div
+            onClick={() => navigate("/TimeTravel")}
+            class="h-36 sm:h-50 w-60 flex flex-col justify-center border bg-gradient-to-tr from-purple-300 to-blue-300 rounded-xl text-center p-4 mx-10 md:p-5 dark:border-gray-700"
+          >
             <div class="flex justify-center items-center size-20 rounded-lg mx-auto">
               <img src="/ICONS/timetravel.png" alt="14" />
             </div>
@@ -84,9 +87,10 @@ const NewFutureBox = () => {
             </div>
           </div>
 
-          <div 
+          <div
             onClick={() => navigate("/AstroMain")}
-            class="h-36 sm:h-50 w-60 flex flex-col justify-center border bg-gradient-to-tr from-purple-300 to-blue-300 rounded-xl text-center p-4 mx-20 md:p-5 dark:border-gray-700">
+            class="h-36 sm:h-50 w-60 flex flex-col justify-center border bg-gradient-to-tr from-purple-300 to-blue-300 rounded-xl text-center p-4 mx-20 md:p-5 dark:border-gray-700"
+          >
             <div class="flex justify-center items-center size-20 rounded-lg mx-auto">
               <img src="/ICONS/astrology.png" alt="15" />
             </div>
@@ -98,9 +102,10 @@ const NewFutureBox = () => {
             </div>
           </div>
 
-          <div 
-             onClick={() => navigate("/LineChart")}
-             class="h-36 sm:h-50 w-60 flex flex-col justify-center border bg-gradient-to-tr from-purple-300 to-blue-300 rounded-xl text-center p-4 mx-20 md:p-5 dark:border-gray-700">
+          <div
+            onClick={() => navigate("/LineChart")}
+            class="h-36 sm:h-50 w-60 flex flex-col justify-center border bg-gradient-to-tr from-purple-300 to-blue-300 rounded-xl text-center p-4 mx-20 md:p-5 dark:border-gray-700"
+          >
             <div class="flex justify-center items-center size-20 rounded-lg mx-auto">
               <img src="/ICONS/biorythm.png" alt="16" />
             </div>
@@ -120,7 +125,10 @@ const NewFutureBox = () => {
         </h1>
 
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-10 md:gap-14">
-          <div onClick={() => navigate("/dream")} class="h-36 mx-10 sm:h-50 w-60 flex flex-col justify-center border bg-gradient-to-tr from-purple-300 to-blue-300 rounded-xl text-center p-2 md:p-1 dark:border-gray-700">
+          <div
+            onClick={() => navigate("/dream")}
+            class="h-36 mx-10 sm:h-50 w-60 flex flex-col justify-center border bg-gradient-to-tr from-purple-300 to-blue-300 rounded-xl text-center p-2 md:p-1 dark:border-gray-700"
+          >
             <div class="flex justify-center items-center size-20 rounded-lg mx-auto">
               <img src="/ICONS/dreaminterpretation.png" alt="17" />
             </div>
@@ -144,16 +152,19 @@ const NewFutureBox = () => {
             </div>
           </div>
 
-          <div onClick={() => navigate("/Numerology")} class="h-36 sm:h-50 w-60 flex flex-col justify-center border bg-gradient-to-tr from-purple-300 to-blue-300 rounded-xl text-center mx-20 p-4 md:p-5 dark:border-gray-700">
-              <div class="flex justify-center items-center size-20 rounded-lg mx-auto">
-                <img src="/ICONS/numerology.png" alt="16" />
-              </div>
+          <div
+            onClick={() => navigate("/Numerology")}
+            class="h-36 sm:h-50 w-60 flex flex-col justify-center border bg-gradient-to-tr from-purple-300 to-blue-300 rounded-xl text-center mx-20 p-4 md:p-5 dark:border-gray-700"
+          >
+            <div class="flex justify-center items-center size-20 rounded-lg mx-auto">
+              <img src="/ICONS/numerology.png" alt="16" />
+            </div>
 
-              <div class="mt-3">
-                <h3 class="text-md sm:text-2xl font-semibold text-gray-800 ">
-                  Numerology
-                </h3>
-              </div>
+            <div class="mt-3">
+              <h3 class="text-md sm:text-2xl font-semibold text-gray-800 ">
+                Numerology
+              </h3>
+            </div>
           </div>
         </div>
       </div>

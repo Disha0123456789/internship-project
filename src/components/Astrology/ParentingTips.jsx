@@ -1,8 +1,8 @@
 import React from "react";
-import "./style.css";
+import "./AstroMain.css";
 import { useNavigate } from "react-router-dom";
 function ParentingTips() {
-  const navigate = useNavigate(); 
+  const navigate = useNavigate();
   const head = "Parenting Tips";
   const img = "./images/Marriage Consultation.png";
   return (
@@ -13,19 +13,26 @@ function ParentingTips() {
         </div>
         <div className="content">
           <div className="content-left">
-            <img src="../images/Marriage Consultation.png" alt="" />
+            <div className="img-pt"></div>
             <button onClick={() => navigate("/Done", { state: { head, img } })}>
               Book Now
             </button>
           </div>
           <div className="content-right">
             <p>
-              A marriage consultation offers couples a platform to address
-              concerns, enhance communication, and strengthen their
-              relationship. Through facilitated discussions, couples can explore
-              challenges, identify goals, and develop strategies for resolving
-              conflicts. These sessions provide valuable insights, tools, and
-              support to foster a healthier and more fulfilling marital bond.
+              Parenting involves nurturing and guiding children towards healthy
+              development. Encourage open communication, fostering trust and
+              understanding. Set clear boundaries while allowing independence
+              and autonomy within age-appropriate limits. Practice positive
+              reinforcement to reinforce desired behaviors and provide
+              constructive feedback. Prioritize quality time together, engaging
+              in activities that promote bonding and mutual respect. Lead by
+              example, demonstrating kindness, empathy, and resilience. Stay
+              attuned to your child's emotions and needs, offering support and
+              validation. Flexibility and patience are key; adapt parenting
+              approaches to suit individual personalities and stages of
+              development. Above all, shower them with love and encouragement,
+              nurturing their self-esteem and confidence.
             </p>
           </div>
         </div>

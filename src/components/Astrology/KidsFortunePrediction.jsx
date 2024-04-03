@@ -1,8 +1,8 @@
 import React from "react";
-import "./style.css";
+import "./AstroMain.css";
 import { useNavigate } from "react-router-dom";
 function KidsFortunePrediction() {
-  const navigate = useNavigate(); 
+  const navigate = useNavigate();
   const head = "Kids Fortune Prediction";
   const img = "./images/Marriage Consultation.png";
   return (
@@ -13,19 +13,25 @@ function KidsFortunePrediction() {
         </div>
         <div className="content">
           <div className="content-left">
-            <img src="../images/Marriage Consultation.png" alt="" />
+            <div className="img-kfp"></div>
             <button onClick={() => navigate("/Done", { state: { head, img } })}>
               Book Now
             </button>
           </div>
           <div className="content-right">
             <p>
-              A marriage consultation offers couples a platform to address
-              concerns, enhance communication, and strengthen their
-              relationship. Through facilitated discussions, couples can explore
-              challenges, identify goals, and develop strategies for resolving
-              conflicts. These sessions provide valuable insights, tools, and
-              support to foster a healthier and more fulfilling marital bond.
+              Kids' fortune prediction involves forecasting a child's potential
+              future based on astrological principles, examining celestial
+              configurations at birth. It aims to provide insights into their
+              personality traits, talents, challenges, and life paths. While not
+              deterministic, it offers guidance for parents in nurturing their
+              child's development and understanding their unique inclinations.
+              This practice often considers factors like the child's sun sign,
+              rising sign, and planetary placements to offer personalized
+              guidance. However, its efficacy is subjective, and upbringing and
+              environmental factors play significant roles in shaping a child's
+              future. Ultimately, it serves as a tool for understanding and
+              supporting a child's journey to adulthood.
             </p>
           </div>
         </div>

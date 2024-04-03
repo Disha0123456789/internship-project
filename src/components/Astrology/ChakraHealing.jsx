@@ -1,8 +1,8 @@
 import React from "react";
-import "./style.css";
+import "./AstroMain.css";
 import { useNavigate } from "react-router-dom";
 function ChakraHealing() {
-  const navigate = useNavigate(); 
+  const navigate = useNavigate();
   const head = "Chakra Healing";
   const img = "./images/Marriage Consultation.png";
   return (
@@ -13,19 +13,25 @@ function ChakraHealing() {
         </div>
         <div className="content">
           <div className="content-left">
-            <img src="../images/Marriage Consultation.png" alt="" />
+            <div className="img-ch"></div>
             <button onClick={() => navigate("/Done", { state: { head, img } })}>
               Book Now
             </button>
           </div>
           <div className="content-right">
             <p>
-              A marriage consultation offers couples a platform to address
-              concerns, enhance communication, and strengthen their
-              relationship. Through facilitated discussions, couples can explore
-              challenges, identify goals, and develop strategies for resolving
-              conflicts. These sessions provide valuable insights, tools, and
-              support to foster a healthier and more fulfilling marital bond.
+              Chakra healing is a holistic practice rooted in Eastern
+              philosophy, aiming to balance the body's energy centers or
+              chakras. These seven energy points, aligned along the spine, are
+              believed to correspond to physical, emotional, and spiritual
+              aspects of life. Through various techniques like meditation, yoga,
+              Reiki, and crystal therapy, practitioners seek to remove blockages
+              and restore harmony within the chakras. Balanced chakras are
+              thought to promote overall well-being, emotional stability, and
+              spiritual growth, fostering a sense of inner peace and vitality.
+              Chakra healing acknowledges the interconnectedness of mind, body,
+              and spirit, offering a pathway to holistic health and
+              self-awareness.
             </p>
           </div>
         </div>

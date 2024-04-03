@@ -1,8 +1,8 @@
-import React from 'react';
-import "./style.css";
+import React from "react";
+import "./AstroMain.css";
 import { useNavigate } from "react-router-dom";
 function CareerPath() {
-  const navigate = useNavigate(); 
+  const navigate = useNavigate();
   const head = "Career Path";
   const img = "./images/Marriage Consultation.png";
   return (
@@ -13,25 +13,32 @@ function CareerPath() {
         </div>
         <div className="content">
           <div className="content-left">
-            <img src="../images/Marriage Consultation.png" alt="" />
+            <div className="img-cp"></div>
             <button onClick={() => navigate("/Done", { state: { head, img } })}>
               Book Now
             </button>
           </div>
           <div className="content-right">
             <p>
-              A marriage consultation offers couples a platform to address
-              concerns, enhance communication, and strengthen their
-              relationship. Through facilitated discussions, couples can explore
-              challenges, identify goals, and develop strategies for resolving
-              conflicts. These sessions provide valuable insights, tools, and
-              support to foster a healthier and more fulfilling marital bond.
+              A career path is the journey an individual undertakes throughout
+              their professional life, comprising their employment experiences,
+              skill development, and advancement opportunities. It involves a
+              series of steps and decisions, such as education, training, job
+              changes, and promotions, aimed at achieving personal and
+              professional goals. A well-defined career path aligns with one's
+              interests, strengths, and aspirations, guiding progression towards
+              fulfilling and rewarding roles. It may include lateral moves,
+              upward mobility, or transitions between industries, all
+              contributing to skill enhancement and expertise accumulation.
+              Navigating a career path requires strategic planning,
+              adaptability, and continuous learning to seize opportunities and
+              achieve long-term success and satisfaction.
             </p>
           </div>
         </div>
       </div>
     </div>
-  )
+  );
 }
 
 export default CareerPath;

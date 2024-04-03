@@ -2,7 +2,7 @@ import React from "react";
 import "./AstroMain.css";
 import { useNavigate } from "react-router-dom";
 
-function AstroMain() {
+function AstroMainChat() {
   const navigate = useNavigate();
   return (
     <div className="astrology">
@@ -29,15 +29,15 @@ function AstroMain() {
               </div>
             </div>
           </div>
-          <div className="button-container">
+          <div className="button-container panchang">
             <button className="book-call" disabled>
-              ₹3.5/min
+              ₹1/msg
             </button>
             <button
               onClick={() => navigate("/marriageConsultation")}
               className="book-chat"
             >
-              <i className="fa-solid fa-phone"></i>Book a Call
+              <i class="fa-solid fa-comment-dots"></i>Book a Call
             </button>
           </div>
         </div>
@@ -49,15 +49,15 @@ function AstroMain() {
               </div>
             </div>
           </div>
-          <div className="button-container">
+          <div className="button-container panchang">
             <button className="book-call" disabled>
-              ₹3.5/min
+              ₹1/msg
             </button>
             <button
               onClick={() => navigate("/healthHealing")}
               className="book-chat"
             >
-              <i className="fa-solid fa-phone"></i>Book a Call
+              <i class="fa-solid fa-comment-dots"></i>Book a Call
             </button>
           </div>
         </div>
@@ -69,15 +69,15 @@ function AstroMain() {
               </div>
             </div>
           </div>
-          <div className="button-container">
+          <div className="button-container panchang">
             <button className="book-call" disabled>
-              ₹3.5/min
+              ₹1/msg
             </button>
             <button
               onClick={() => navigate("/wealthManagement")}
               className="book-chat"
             >
-              <i className="fa-solid fa-phone"></i>Book a Call
+              <i class="fa-solid fa-comment-dots"></i>Book a Call
             </button>
           </div>
         </div>
@@ -89,15 +89,15 @@ function AstroMain() {
               </div>
             </div>
           </div>
-          <div className="button-container">
+          <div className="button-container panchang">
             <button className="book-call" disabled>
-              ₹3.5/min
+              ₹1/msg
             </button>
             <button
               onClick={() => navigate("/loveInsights")}
               className="book-chat"
             >
-              <i className="fa-solid fa-phone"></i>Book a Call
+              <i class="fa-solid fa-comment-dots"></i>Book a Call
             </button>
           </div>
         </div>
@@ -109,15 +109,15 @@ function AstroMain() {
               </div>
             </div>
           </div>
-          <div className="button-container">
+          <div className="button-container panchang">
             <button className="book-call" disabled>
-              ₹3.5/min
+              ₹1/msg
             </button>
             <button
               onClick={() => navigate("/educationalGuidance")}
               className="book-chat"
             >
-              <i className="fa-solid fa-phone"></i>Book a Call
+              <i class="fa-solid fa-comment-dots"></i>Book a Call
             </button>
           </div>
         </div>
@@ -129,15 +129,15 @@ function AstroMain() {
               </div>
             </div>
           </div>
-          <div className="button-container">
+          <div className="button-container panchang">
             <button className="book-call" disabled>
-              ₹3.5/min
+              ₹1/msg
             </button>
             <button
               onClick={() => navigate("/careerPath")}
               className="book-chat"
             >
-              <i className="fa-solid fa-phone"></i>Book a Call
+              <i class="fa-solid fa-comment-dots"></i>Book a Call
             </button>
           </div>
         </div>
@@ -149,15 +149,15 @@ function AstroMain() {
               </div>
             </div>
           </div>
-          <div className="button-container">
+          <div className="button-container panchang">
             <button className="book-call" disabled>
-              ₹3.5/min
+              ₹1/msg
             </button>
             <button
               onClick={() => navigate("/businessStrategies")}
               className="book-chat"
             >
-              <i className="fa-solid fa-phone"></i>Book a Call
+              <i class="fa-solid fa-comment-dots"></i>Book a Call
             </button>
           </div>
         </div>
@@ -169,15 +169,15 @@ function AstroMain() {
               </div>
             </div>
           </div>
-          <div className="button-container">
+          <div className="button-container panchang">
             <button className="book-call" disabled>
-              ₹3.5/min
+              ₹1/msg
             </button>
             <button
               onClick={() => navigate("/financePlanning")}
               className="book-chat"
             >
-              <i className="fa-solid fa-phone"></i>Book a Call
+              <i class="fa-solid fa-comment-dots"></i>Book a Call
             </button>
           </div>
         </div>
@@ -189,15 +189,15 @@ function AstroMain() {
               </div>
             </div>
           </div>
-          <div className="button-container">
+          <div className="button-container panchang">
             <button className="book-call" disabled>
-              ₹3.5/min
+              ₹1/msg
             </button>
             <button
               onClick={() => navigate("/legalAdvice")}
               className="book-chat"
             >
-              <i className="fa-solid fa-phone"></i>Book a Call
+              <i class="fa-solid fa-comment-dots"></i>Book a Call
             </button>
           </div>
         </div>
@@ -209,15 +209,15 @@ function AstroMain() {
               </div>
             </div>
           </div>
-          <div className="button-container">
+          <div className="button-container panchang">
             <button className="book-call" disabled>
-              ₹3.5/min
+              ₹1/msg
             </button>
             <button
               onClick={() => navigate("/remediesSolutions")}
               className="book-chat"
             >
-              <i className="fa-solid fa-phone"></i>Book a Call
+              <i class="fa-solid fa-comment-dots"></i>Book a Call
             </button>
           </div>
         </div>
@@ -229,15 +229,15 @@ function AstroMain() {
               </div>
             </div>
           </div>
-          <div className="button-container">
+          <div className="button-container panchang">
             <button className="book-call" disabled>
-              ₹3.5/min
+              ₹1/msg
             </button>
             <button
               onClick={() => navigate("/kidsFortune")}
               className="book-chat"
             >
-              <i className="fa-solid fa-phone"></i>Book a Call
+              <i class="fa-solid fa-comment-dots"></i>Book a Call
             </button>
           </div>
         </div>
@@ -249,15 +249,15 @@ function AstroMain() {
               </div>
             </div>
           </div>
-          <div className="button-container">
+          <div className="button-container panchang">
             <button className="book-call" disabled>
-              ₹3.5/min
+              ₹1/msg
             </button>
             <button
               onClick={() => navigate("/parentingTips")}
               className="book-chat"
             >
-              <i className="fa-solid fa-phone"></i>Book a Call
+              <i class="fa-solid fa-comment-dots"></i>Book a Call
             </button>
           </div>
         </div>
@@ -269,15 +269,15 @@ function AstroMain() {
               </div>
             </div>
           </div>
-          <div className="button-container">
+          <div className="button-container panchang">
             <button className="book-call" disabled>
-              ₹3.5/min
+              ₹1/msg
             </button>
             <button
               onClick={() => navigate("/panchangAnalysis")}
               className="book-chat"
             >
-              <i className="fa-solid fa-phone"></i>Book a Call
+              <i class="fa-solid fa-comment-dots"></i>Book a Call
             </button>
           </div>
         </div>
@@ -289,15 +289,15 @@ function AstroMain() {
               </div>
             </div>
           </div>
-          <div className="button-container">
+          <div className="button-container panchang">
             <button className="book-call" disabled>
-              ₹3.5/min
+              ₹1/msg
             </button>
             <button
               onClick={() => navigate("/birthChart")}
               className="book-chat"
             >
-              <i className="fa-solid fa-phone"></i>Book a Call
+              <i class="fa-solid fa-comment-dots"></i>Book a Call
             </button>
           </div>
         </div>
@@ -309,15 +309,15 @@ function AstroMain() {
               </div>
             </div>
           </div>
-          <div className="button-container">
+          <div className="button-container panchang">
             <button className="book-call" disabled>
-              ₹3.5/min
+              ₹1/msg
             </button>
             <button
               onClick={() => navigate("/shubhMuhurat")}
               className="book-chat"
             >
-              <i className="fa-solid fa-phone"></i>Book a Call
+              <i class="fa-solid fa-comment-dots"></i>Book a Call
             </button>
           </div>
         </div>
@@ -329,15 +329,15 @@ function AstroMain() {
               </div>
             </div>
           </div>
-          <div className="button-container">
+          <div className="button-container panchang">
             <button className="book-call" disabled>
-              ₹3.5/min
+              ₹1/msg
             </button>
             <button
               onClick={() => navigate("/personalizedPooja")}
               className="book-chat"
             >
-              <i className="fa-solid fa-phone"></i>Book a Call
+              <i class="fa-solid fa-comment-dots"></i>Book a Call
             </button>
           </div>
         </div>
@@ -349,15 +349,15 @@ function AstroMain() {
               </div>
             </div>
           </div>
-          <div className="button-container">
+          <div className="button-container panchang">
             <button className="book-call" disabled>
-              ₹3.5/min
+              ₹1/msg
             </button>
             <button
               onClick={() => navigate("/thetaHealing")}
               className="book-chat"
             >
-              <i className="fa-solid fa-phone"></i>Book a Call
+              <i class="fa-solid fa-comment-dots"></i>Book a Call
             </button>
           </div>
         </div>
@@ -369,15 +369,15 @@ function AstroMain() {
               </div>
             </div>
           </div>
-          <div className="button-container">
+          <div className="button-container panchang">
             <button className="book-call" disabled>
-              ₹3.5/min
+              ₹1/msg
             </button>
             <button
               onClick={() => navigate("/reikiHealing")}
               className="book-chat"
             >
-              <i className="fa-solid fa-phone"></i>Book a Call
+              <i class="fa-solid fa-comment-dots"></i>Book a Call
             </button>
           </div>
         </div>
@@ -389,15 +389,15 @@ function AstroMain() {
               </div>
             </div>
           </div>
-          <div className="button-container">
+          <div className="button-container panchang">
             <button className="book-call" disabled>
-              ₹3.5/min
+              ₹1/msg
             </button>
             <button
               onClick={() => navigate("/chakraHealing")}
               className="book-chat"
             >
-              <i className="fa-solid fa-phone"></i>Book a Call
+              <i class="fa-solid fa-comment-dots"></i>Book a Call
             </button>
           </div>
         </div>
@@ -409,15 +409,15 @@ function AstroMain() {
               </div>
             </div>
           </div>
-          <div className="button-container">
+          <div className="button-container panchang">
             <button className="book-call" disabled>
-              ₹3.5/min
+              ₹1/msg
             </button>
             <button
               onClick={() => navigate("/crystalHealing")}
               className="book-chat"
             >
-              <i className="fa-solid fa-phone"></i>Book a Call
+              <i class="fa-solid fa-comment-dots"></i>Book a Call
             </button>
           </div>
         </div>
@@ -426,4 +426,4 @@ function AstroMain() {
   );
 }
 
-export default AstroMain;
+export default AstroMainChat;

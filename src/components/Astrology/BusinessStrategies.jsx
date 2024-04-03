@@ -1,8 +1,8 @@
 import React from "react";
-import "./style.css";
+import "./AstroMain.css";
 import { useNavigate } from "react-router-dom";
 function BusinessStrategies() {
-  const navigate = useNavigate(); 
+  const navigate = useNavigate();
   const head = "Business Strategies";
   const img = "./images/Marriage Consultation.png";
   return (
@@ -13,19 +13,26 @@ function BusinessStrategies() {
         </div>
         <div className="content">
           <div className="content-left">
-            <img src="../images/Marriage Consultation.png" alt="" />
+            <div className="img-bs"></div>
             <button onClick={() => navigate("/Done", { state: { head, img } })}>
               Book Now
             </button>
           </div>
           <div className="content-right">
             <p>
-              A marriage consultation offers couples a platform to address
-              concerns, enhance communication, and strengthen their
-              relationship. Through facilitated discussions, couples can explore
-              challenges, identify goals, and develop strategies for resolving
-              conflicts. These sessions provide valuable insights, tools, and
-              support to foster a healthier and more fulfilling marital bond.
+              Using Divine Connection's Business strategies are purposeful
+              maneuvers and plans adopted by a company to attain its goals and
+              outperform competitors in the market. They encompass decisions on
+              product development, pricing, marketing, distribution, and
+              resource allocation, all geared toward enhancing profitability and
+              ensuring sustained growth over the long term.
+              <br />
+              <br />
+              Effective strategies align with the company's mission and market
+              dynamics, leveraging strengths while addressing weaknesses. By
+              strategically positioning products or services, optimizing pricing
+              strategies, and allocating resources efficiently, businesses aim
+              to gain a competitive edge, capture market share.
             </p>
           </div>
         </div>

@@ -1,8 +1,8 @@
 import React from "react";
-import "./style.css";
+import "./AstroMain.css";
 import { useNavigate } from "react-router-dom";
 function RemediesSolution() {
-  const navigate = useNavigate(); 
+  const navigate = useNavigate();
   const head = "Remedies Solution";
   const img = "./images/Marriage Consultation.png";
   return (
@@ -13,19 +13,25 @@ function RemediesSolution() {
         </div>
         <div className="content">
           <div className="content-left">
-            <img src="../images/Marriage Consultation.png" alt="" />
+            <div className="img-rs"></div>
             <button onClick={() => navigate("/Done", { state: { head, img } })}>
               Book Now
             </button>
           </div>
           <div className="content-right">
             <p>
-              A marriage consultation offers couples a platform to address
-              concerns, enhance communication, and strengthen their
-              relationship. Through facilitated discussions, couples can explore
-              challenges, identify goals, and develop strategies for resolving
-              conflicts. These sessions provide valuable insights, tools, and
-              support to foster a healthier and more fulfilling marital bond.
+              Remedies are solutions or actions taken to address problems,
+              resolve conflicts, or alleviate difficulties encountered in
+              various situations. They can range from simple fixes to complex
+              interventions tailored to specific issues. In legal contexts,
+              remedies refer to measures taken to rectify breaches of contract
+              or infringements of rights, such as compensation or injunctive
+              relief. In healthcare, remedies may include medications,
+              therapies, or lifestyle changes to treat illnesses or promote
+              well-being. Overall, remedies aim to mitigate negative impacts,
+              restore balance, and facilitate positive outcomes, whether in
+              legal, medical, or everyday contexts, ultimately fostering
+              resolution, healing, and progress.
             </p>
           </div>
         </div>

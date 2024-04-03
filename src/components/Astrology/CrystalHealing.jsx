@@ -1,8 +1,8 @@
 import React from "react";
-import "./style.css";
+import "./AstroMain.css";
 import { useNavigate } from "react-router-dom";
 function CrystalHealing() {
-  const navigate = useNavigate(); 
+  const navigate = useNavigate();
   const head = "Crystal Healing";
   const img = "./images/Marriage Consultation.png";
   return (
@@ -13,19 +13,25 @@ function CrystalHealing() {
         </div>
         <div className="content">
           <div className="content-left">
-            <img src="../images/Marriage Consultation.png" alt="" />
+            <div className="img-crh"></div>
             <button onClick={() => navigate("/Done", { state: { head, img } })}>
               Book Now
             </button>
           </div>
           <div className="content-right">
             <p>
-              A marriage consultation offers couples a platform to address
-              concerns, enhance communication, and strengthen their
-              relationship. Through facilitated discussions, couples can explore
-              challenges, identify goals, and develop strategies for resolving
-              conflicts. These sessions provide valuable insights, tools, and
-              support to foster a healthier and more fulfilling marital bond.
+              Crystal healing is a holistic practice that utilizes the energetic
+              properties of crystals to promote healing and balance in the mind,
+              body, and spirit. Believers assert that each crystal emits a
+              unique vibration that can interact with the body's energy fields,
+              facilitating physical, emotional, and spiritual well-being.
+              Practitioners may place crystals on or around the body,
+              incorporate them into meditation or rituals, or wear them as
+              jewelry. While scientific evidence supporting crystal healing's
+              efficacy is limited, many find it beneficial for relaxation,
+              stress relief, and enhancing mindfulness. It's often used as a
+              complementary therapy alongside conventional medical treatments
+              for holistic wellness.
             </p>
           </div>
         </div>

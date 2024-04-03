@@ -1,8 +1,8 @@
-import React from 'react';
-import "./style.css";
+import React from "react";
+import "./AstroMain.css";
 import { useNavigate } from "react-router-dom";
 function LoveInsights() {
-  const navigate = useNavigate(); 
+  const navigate = useNavigate();
   const head = "Love Insights";
   const img = "./images/Marriage Consultation.png";
   return (
@@ -13,25 +13,31 @@ function LoveInsights() {
         </div>
         <div className="content">
           <div className="content-left">
-            <img src="../images/Marriage Consultation.png" alt="" />
+            <div className="img-li"></div>
             <button onClick={() => navigate("/Done", { state: { head, img } })}>
               Book Now
             </button>
           </div>
           <div className="content-right">
             <p>
-              A marriage consultation offers couples a platform to address
-              concerns, enhance communication, and strengthen their
-              relationship. Through facilitated discussions, couples can explore
-              challenges, identify goals, and develop strategies for resolving
-              conflicts. These sessions provide valuable insights, tools, and
-              support to foster a healthier and more fulfilling marital bond.
+              Love insights delve into understanding romantic relationships,
+              emotions, and connections. They explore the dynamics of affection,
+              compatibility, and intimacy between individuals. Through
+              introspection and communication, love insights illuminate aspects
+              such as communication styles, emotional needs, and relationship
+              patterns. They help navigate challenges, foster deeper
+              connections, and cultivate mutual understanding and respect. By
+              recognizing personal values, desires, and boundaries, individuals
+              can forge meaningful and fulfilling partnerships. Love insights
+              promote empathy, vulnerability, and growth within relationships,
+              nurturing love's evolution and creating spaces for genuine
+              emotional expression, trust, and harmony in romantic connections.
             </p>
           </div>
         </div>
       </div>
     </div>
-  )
+  );
 }
 
 export default LoveInsights;

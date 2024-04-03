@@ -1,8 +1,8 @@
 import React from "react";
-import "./style.css";
+import "./AstroMain.css";
 import { useNavigate } from "react-router-dom";
 function ThetaHealing() {
-  const navigate = useNavigate(); 
+  const navigate = useNavigate();
   const head = "Theta Healing";
   const img = "./images/Marriage Consultation.png";
   return (
@@ -13,19 +13,26 @@ function ThetaHealing() {
         </div>
         <div className="content">
           <div className="content-left">
-            <img src="../images/Marriage Consultation.png" alt="" />
+            <div className="img-th"></div>
             <button onClick={() => navigate("/Done", { state: { head, img } })}>
               Book Now
             </button>
           </div>
           <div className="content-right">
             <p>
-              A marriage consultation offers couples a platform to address
-              concerns, enhance communication, and strengthen their
-              relationship. Through facilitated discussions, couples can explore
-              challenges, identify goals, and develop strategies for resolving
-              conflicts. These sessions provide valuable insights, tools, and
-              support to foster a healthier and more fulfilling marital bond.
+              Theta Healing is a holistic healing technique rooted in accessing
+              the theta brainwave state to facilitate profound emotional,
+              physical, and spiritual transformations. Practitioners use focused
+              intention and visualization to identify and release limiting
+              beliefs stored in the subconscious mind, replacing them with
+              empowering beliefs. By harnessing the theta brainwave frequency,
+              individuals can address deeply rooted issues, heal past traumas,
+              and manifest desired outcomes. This modality emphasizes the
+              connection between thoughts, emotions, and physical well-being,
+              promoting holistic healing and personal growth. Through Theta
+              Healing, individuals can cultivate self-awareness, inner harmony,
+              and a greater sense of empowerment to create positive changes in
+              their lives.
             </p>
           </div>
         </div>
