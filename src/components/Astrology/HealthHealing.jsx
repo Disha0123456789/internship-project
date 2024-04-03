@@ -11,14 +11,14 @@ function HealthHealing() {
         <div className="Container-heading">
           <h1>Health Healing</h1>
         </div>
-        <div className="content">
-          <div className="content-left">
+        <div className="conten">
+          <div className="conten-left">
             <div className="img-hh"></div>
             <button onClick={() => navigate("/Done", { state: { head, img } })}>
               Book Now
             </button>
           </div>
-          <div className="content-right">
+          <div className="conten-right">
             <p>
               Health healing involves restoring balance and vitality to the
               body, mind, and spirit. It encompasses holistic approaches to
