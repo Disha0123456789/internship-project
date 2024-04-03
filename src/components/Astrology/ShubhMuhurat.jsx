@@ -11,14 +11,14 @@ function ShubhMuhurat() {
         <div className="Container-heading">
           <h1>Shubh Muhurat</h1>
         </div>
-        <div className="content">
-          <div className="content-left">
+        <div className="conten">
+          <div className="conten-left">
             <div className="img-sm"></div>
             <button onClick={() => navigate("/Done", { state: { head, img } })}>
               Book Now
             </button>
           </div>
-          <div className="content-right">
+          <div className="conten-right">
             <p>
               Shubh Muhurat, in Hindu tradition, signifies auspicious timings or
               moments aligned with planetary positions deemed favorable for
