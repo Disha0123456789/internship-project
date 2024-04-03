@@ -11,14 +11,14 @@ function BusinessStrategies() {
         <div className="Container-heading">
           <h1>Business Strategies</h1>
         </div>
-        <div className="content">
-          <div className="content-left">
+        <div className="conten">
+          <div className="conten-left">
             <div className="img-bs"></div>
             <button onClick={() => navigate("/Done", { state: { head, img } })}>
               Book Now
             </button>
           </div>
-          <div className="content-right">
+          <div className="conten-right">
             <p>
               Using Divine Connection's Business strategies are purposeful
               maneuvers and plans adopted by a company to attain its goals and
