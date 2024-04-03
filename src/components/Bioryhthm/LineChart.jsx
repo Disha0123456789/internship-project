@@ -92,7 +92,7 @@ const LineChart = () => {
                 <div className="Physical"></div>
               </h4>
             </div>
-            <h2 className="dream-result-title">Kids</h2>
+            <h2 className="dream-result-title">Physical</h2>
             <div className="divider"></div>
             <p className="description">
               In a previous incarnation, you were blessed with children who
@@ -100,7 +100,12 @@ const LineChart = () => {
               were known for their intelligence, creativity, and independent
               spirits. As a parent, you provided guidance and support, fostering
               an environment where your children could flourish and pursue their
-              passions with confidence.
+              passions with confidence.sfdjfsdkfjkjafjslksdjfkjsdfkljsdfjsdfksldfjksdf
+              sjdakfsdkjfkasjdfsdjflkasjfklajfkjkdsjfkasdjfksdajfklsajdfkjasdfkjsdafd
+              jaksdfkjasdklfjaklsdjfklsdajfkdjsfkljasdkfjsakdlfjklsajfkljsdklfjaskldjfkladsj
+              adsjfkljaskfjklasdjfklajfkljasdklfjasdkfjkldasjfklasdjfkjdaskfjaskdjfkladsjf
+              askdfkjkasdfjklds aksjfklsdajfklsdjf dakslf sdaklfjkslad flksdajfksd jfksadj
+              daskjfklsdaj fkasdjfkjasdklfjkads fjlkadsjf askdfj kladsjf ;lkadsf kladsjfkladsjklfj
             </p>
           </div>
         </div>
@@ -112,7 +117,7 @@ const LineChart = () => {
                 <div className="Emotional-lc"></div>
               </h4>
             </div>
-            <h2 className="dream-result-title">Kids</h2>
+            <h2 className="dream-result-title">Emotional</h2>
             <div className="divider"></div>
             <p className="description">
               In a previous incarnation, you were blessed with children who
@@ -132,7 +137,7 @@ const LineChart = () => {
                 <div className="Intellectual-lc"></div>
               </h4>
             </div>
-            <h2 className="dream-result-title">Occuupation</h2>
+            <h2 className="dream-result-title">Spiritual</h2>
             <div className="divider"></div>
             <p className="description">
               In your past life, you pursued a career path that allowed you to
@@ -153,7 +158,7 @@ const LineChart = () => {
                 <div className="Spiritual-lc"></div>
               </h4>
             </div>
-            <h2 className="dream-result-title">Wealth</h2>
+            <h2 className="dream-result-title">Intellectual</h2>
             <div className="divider"></div>
             <p className="description">
               In your past life, you pursued a career path that allowed you to
