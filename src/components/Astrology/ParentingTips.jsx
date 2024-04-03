@@ -11,14 +11,14 @@ function ParentingTips() {
         <div className="Container-heading">
           <h1>Parenting Tips</h1>
         </div>
-        <div className="content">
-          <div className="content-left">
+        <div className="conten">
+          <div className="conten-left">
             <div className="img-pt"></div>
             <button onClick={() => navigate("/Done", { state: { head, img } })}>
               Book Now
             </button>
           </div>
-          <div className="content-right">
+          <div className="conten-right">
             <p>
               Parenting involves nurturing and guiding children towards healthy
               development. Encourage open communication, fostering trust and
