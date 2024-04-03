@@ -29,6 +29,7 @@
 .content {
   background-color: white;
   padding: 20px; /* Adjust padding as needed */
+  width : 100%;
   display: flex;
   justify-content: center;
   align-items: center;
