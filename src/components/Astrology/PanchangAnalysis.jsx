@@ -11,14 +11,14 @@ function PanchangAnalysis() {
         <div className="Container-heading">
           <h1>Panchang Analysis</h1>
         </div>
-        <div className="content">
-          <div className="content-left">
+        <div className="conten">
+          <div className="conten-left">
             <div className="img-pa"></div>
             <button onClick={() => navigate("/Done", { state: { head, img } })}>
               Book Now
             </button>
           </div>
-          <div className="content-right">
+          <div className="conten-right">
             <p>
               Panchang analysis is a traditional Hindu practice involving the
               study of the Panchang, a comprehensive astrological calendar. It
