@@ -11,14 +11,14 @@ function PersonalizedPooja() {
         <div className="Container-heading">
           <h1>Personalized Pooja</h1>
         </div>
-        <div className="content">
-          <div className="content-left">
+        <div className="conten">
+          <div className="conten-left">
             <div className="img-pp"></div>
             <button onClick={() => navigate("/Done", { state: { head, img } })}>
               Book Now
             </button>
           </div>
-          <div className="content-right">
+          <div className="conten-right">
             <p>
               Personalized pooja involves tailoring traditional Hindu rituals
               and prayers to an individual's specific needs, desires, or
