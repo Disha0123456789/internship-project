@@ -12,14 +12,14 @@ function BirthChartInterpretation() {
         <div className="Container-heading">
           <h1>Birth Chart Interpretation</h1>
         </div>
-        <div className="content">
-          <div className="content-left">
+        <div className="conten">
+          <div className="conten-left">
             <div className="img-bci"></div>
             <button onClick={() => navigate("/Done", { state: { head, img } })}>
               Book Now
             </button>
           </div>
-          <div className="content-right">
+          <div className="conten-right">
             <p>
               Using Divine Connection's Birth chart interpretation is a deep analysis of celestial bodies'
               positions at an individual's birth, including the Sun, Moon,
