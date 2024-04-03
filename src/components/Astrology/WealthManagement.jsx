@@ -11,14 +11,14 @@ function WealthManagement() {
         <div className="Container-heading">
           <h1>Wealth Management</h1>
         </div>
-        <div className="content">
-          <div className="content-left">
+        <div className="conten">
+          <div className="conten-left">
             <div className="img-wm"></div>
             <button onClick={() => navigate("/Done", { state: { head, img } })}>
               Book Now
             </button>
           </div>
-          <div className="content-right">
+          <div className="conten-right">
             <p>
               Wealth management involves the professional management of an
               individual's or family's financial assets and investments. It
