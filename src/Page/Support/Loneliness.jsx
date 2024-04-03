@@ -17,8 +17,8 @@ const Loneliness = () => {
           />
           <h1>Loneliness</h1>
         </div>
-        <div className="content">
-          <div className="content-left">
+        <div className="conten">
+          <div className="conten-left">
             <img
               src="https://images.pexels.com/photos/670720/pexels-photo-670720.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
               alt=""
@@ -27,7 +27,7 @@ const Loneliness = () => {
               Book Now
             </button>
           </div>
-          <div className="content-right">
+          <div className="conten-right">
             <p>
               Navigating loneliness can feel overwhelming, but Divine Connection
               is here to offer you support and understanding. Our certified
