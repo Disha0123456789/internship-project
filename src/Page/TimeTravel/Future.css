@@ -26,9 +26,14 @@
   margin-top: 2vw;
   color:purple;
 }
-.container text-left{
+.content {
   background-color: white;
+  padding: 20px; /* Adjust padding as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 .form-group {
   margin: 5vh 0vh 0vh 0vh;
 }
