@@ -9,7 +9,8 @@
         "ignore": [
           "font-synthesis",
           "min-height: auto",
-          "-ms-filter"
+          "-ms-filter",
+          "width: fit-content"
         ]
       }
     ]

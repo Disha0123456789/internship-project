@@ -26,7 +26,7 @@ body {
   align-items: center;
   flex-direction: column;
 }
-.header > h1 {
+.Head-Text > h1 {
   margin: 4vh 0 0 0;
   font-size: clamp(2.5rem, 5vw, 3rem);
   color: purple;
@@ -123,89 +123,109 @@ body {
 .img-mc {
   background: url("./images/Marriage Consultation.png") no-repeat center
     center/cover;
+  height: 220px;
 }
 .img-hh {
   background: url("./images/Health Healing.png") no-repeat center center/cover;
+  height: 220px;
 }
 
-.img-wh {
+.img-wm {
   background: url("./images/Wealth Management.png") no-repeat center
     center/cover;
+  height: 220px;
 }
 
 .img-li {
   background: url("./images/Love Insights.png") no-repeat center center/cover;
+  height: 220px;
 }
 
 .img-eg {
   background: url("./images/Educational Guidance.png") no-repeat center
     center/cover;
+  height: 220px;
 }
 
 .img-cp {
   background: url("./images/Career Path.png") no-repeat center center/cover;
+  height: 220px;
 }
 
 .img-bs {
   background: url("./images/Business Strategies.png") no-repeat center
     center/cover;
+  height: 220px;
 }
 
 .img-fp {
   background: url("./images/Finance Planning.png") no-repeat center center/cover;
+  height: 220px;
 }
 
 .img-la {
   background: url("./images/Legal Advice.png") no-repeat center center/cover;
+  height: 220px;
 }
 
 .img-rs {
   background: url("./images/Remedies & Solutions.png") no-repeat center
     center/cover;
+  height: 220px;
 }
 
 .img-kfp {
   background: url("./images/Kids Fortune Prediction.png") no-repeat center
     center/cover;
+  height: 220px;
 }
 
 .img-pt {
   background: url("./images/Parenting Tips.png") no-repeat center center/cover;
+  height: 220px;
 }
 
 .img-pa {
   background: url("./images/Panchang Analysis.png") no-repeat center
     center/cover;
+  height: 220px;
 }
 
 .img-bci {
   background: url("./images/Birth Chart Interpretation.png") no-repeat center
     center/cover;
+  height: 220px;
 }
 
 .img-sm {
   background: url("./images/Shubh Muhurat.png") no-repeat center center/cover;
+  height: 220px;
 }
 
 .img-pp {
   background: url("./images/Personalized Pooja.png") no-repeat center
     center/cover;
+  height: 220px;
 }
 
 .img-th {
   background: url("./images/Theta Healing.png") no-repeat center center/cover;
+  height: 220px;
 }
 
 .img-rh {
   background: url("./images/Reiki Healing.png") no-repeat center center/cover;
+  height: 220px;
 }
 
 .img-ch {
   background: url("./images/Chakra Healing.png") no-repeat center center/cover;
+  height: 220px;
 }
 
 .img-crh {
   background: url("./images/Crystal Healing.png") no-repeat center center/cover;
+  height: 220px;
 }
 
 .content-right {
@@ -312,6 +332,12 @@ body {
   grid-template-columns: auto auto auto auto;
   padding: 10px;
 }
+.grid-container-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 .grid-items {
   display: flex;
   justify-content: center;
@@ -320,11 +346,13 @@ body {
   text-align: center;
   font-weight: 600;
   height: 160px;
-  width: 270px;
+  width: 300px;
   background-color: rgba(255, 255, 255, 0.8);
   margin: 18px;
-  border-radius: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: none;
+  border-bottom-right-radius: none;
   place-items: center;
   position: relative;
   transition: all 1s;
@@ -341,16 +369,17 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 80px;
+  margin-top: 125px;
 }
 
 .heading {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 30px;
-  width: 270px;
-  background-color: rgba(0, 0, 0, 0.493);
+  height: 35px;
+  width: 300px;
+  background-color: rgba(0, 0, 0, 0.753);
+  letter-spacing: 2px;
   /* margin-bottom: 80px; */
 }
 
@@ -367,11 +396,15 @@ body {
   align-items: center;
   gap: 10px;
   height: 50px;
-  width: 270px;
+  width: 300px;
   font-size: 12px;
   font-weight: 600;
   border: none;
   background-color: #fff;
+  margin-top: -20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .book-call {
@@ -385,12 +418,12 @@ body {
   border: 1px;
   color: black;
   font-size: 20px;
+  letter-spacing: 3px;
 }
 
 .book-chat > i {
   font-size: medium;
 }
-
 
 .book-chat {
   display: flex;
@@ -434,6 +467,7 @@ body {
 .bg-wh {
   background: url("./images/Wealth Management.png") no-repeat center
     center/cover;
+  object-fit: contain;
 }
 
 .bg-li {
@@ -477,8 +511,7 @@ body {
 }
 
 .bg-pa {
-  background: url("./images/Panchang Analysis.png") no-repeat center
-    center/cover;
+  background: url("./images/Panchang Analysis.png") no-repeat center center/cover;
 }
 
 .bg-bci {
@@ -530,17 +563,27 @@ body {
   .grid-items::after {
     width: 0%;
   }
+
+  .callchat-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: none;
+  }
 }
 
-.callchat-container {
+.callchat-button {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  margin-right: 100px;
+  float: right;
 }
 
 .buttons {
-  width: 300px;
-  margin: 15px;
+  border-radius: 0px;
+  border-left: 1px white solid;
+  border-right: 1px white solid;
+  width: 100px;
   color: #fff;
 }

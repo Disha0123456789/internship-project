@@ -20,18 +20,19 @@ function BusinessStrategies() {
           </div>
           <div className="content-right">
             <p>
-              Business strategies are purposeful maneuvers and plans adopted by
-              a company to attain its goals and outperform competitors in the
-              market. They encompass decisions on product development, pricing,
-              marketing, distribution, and resource allocation, all geared
-              toward enhancing profitability and ensuring sustained growth over
-              the long term. Effective strategies align with the company's
-              mission and market dynamics, leveraging strengths while addressing
-              weaknesses. By strategically positioning products or services,
-              optimizing pricing strategies, and allocating resources
-              efficiently, businesses aim to gain a competitive edge, capture
-              market share, and build enduring success in a dynamic and evolving
-              business landscape.
+              Using Divine Connection's Business strategies are purposeful
+              maneuvers and plans adopted by a company to attain its goals and
+              outperform competitors in the market. They encompass decisions on
+              product development, pricing, marketing, distribution, and
+              resource allocation, all geared toward enhancing profitability and
+              ensuring sustained growth over the long term.
+              <br />
+              <br />
+              Effective strategies align with the company's mission and market
+              dynamics, leveraging strengths while addressing weaknesses. By
+              strategically positioning products or services, optimizing pricing
+              strategies, and allocating resources efficiently, businesses aim
+              to gain a competitive edge, capture market share.
             </p>
           </div>
         </div>

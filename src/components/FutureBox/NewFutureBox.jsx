@@ -88,7 +88,7 @@ const NewFutureBox = () => {
           </div>
 
           <div
-            onClick={() => navigate("/CallChat")}
+            onClick={() => navigate("/AstroMain")}
             class="h-36 sm:h-50 w-60 flex flex-col justify-center border bg-gradient-to-tr from-purple-300 to-blue-300 rounded-xl text-center p-4 mx-20 md:p-5 dark:border-gray-700"
           >
             <div class="flex justify-center items-center size-20 rounded-lg mx-auto">

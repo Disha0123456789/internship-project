@@ -34,7 +34,6 @@ import SeeYourFuture from "./Page/TimeTravel/SeeYourFuture";
 import PastLifePrediction from "./Page/TimeTravel/PastLifePrediction"
 
 //Astrology 
-import CallChat from "./components/Astrology/CallChat";
 import AstroMain from "./components/Astrology/AstroMain";
 import AstroMainChat from "./components/Astrology/AstroMainChat";
 import MarriageConsultation from "./components/Astrology/MarriageConsultation";
@@ -134,7 +133,6 @@ function App() {
         <Route path="/PastLifePrediction" element={<PastLifePrediction />} />
 
         {/* Astrology*/}
-        <Route path="/CallChat" element={<CallChat />} />
         <Route path="/AstroMain" element={<AstroMain />} />
         <Route path="/AstroMainChat" element={<AstroMainChat />} />
         <Route path="/marriageConsultation" element={<MarriageConsultation />} />

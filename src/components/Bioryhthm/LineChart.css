@@ -1,17 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
-
 .biorhythm {
+  background-color: #fdf2f8;
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
-  /* background-color: #FDF2F8; */
-  /* align-items: center;  */
-  min-height: 100vh;
-  /* width: 100%; */
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  /* font-weight: 400; */
-  font-style: normal;
-  font-variation-settings:"slnt" 0;
 }
 .header > h1 {
   font-size: clamp(2.5rem, 5vw, 3rem);
@@ -23,7 +16,7 @@
 .eclipse {
   margin: 50px;
   height: 200px;
-  width: 80%;
+  width: 70%;
   background-color: white;
   border-radius: 20px;
 }
@@ -51,16 +44,16 @@
   justify-content: space-evenly;
 }
 .border1 {
-  background-image: linear-gradient(to left, #50C626, #FFB017);
+  background-image: linear-gradient(to left, #50c626, #ffb017);
 }
 .border2 {
-  background-image: linear-gradient(to left, #E44141, #722B8C);
+  background-image: linear-gradient(to left, #e44141, #722b8c);
 }
 .border3 {
-  background-image: linear-gradient(to left, #F0C119, #FCA82A, #D92323);
+  background-image: linear-gradient(to left, #f0c119, #fca82a, #d92323);
 }
 .border4 {
-  background-image: linear-gradient(to left, #2D93DC, #250505);
+  background-image: linear-gradient(to left, #2d93dc, #250505);
 }
 .sub {
   display: flex;
@@ -80,14 +73,16 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  flex-wrap: wrap;
   margin: 4vh 0;
 }
 .card-lc {
   margin: 2vh 1vh;
-  height: 450px;
+  height: fit-content;
   width: 650px;
   background-color: #fff;
   color: black;
+  text-align: justify;
 }
 .card-header-lc {
   background-color: transparent;
@@ -100,31 +95,112 @@
   flex-direction: column;
   text-align: center;
 }
-.card-header-lc > h4 > .Physical-lc, .Emotional-lc, .Intellectual-lc, .Spiritual-lc {
+.card-header-lc > p {
+  padding: 10px;
+  text-align: justify;
+}
+.card-header-lc > h4 > .Physical,
+.Emotional-lc,
+.Intellectual-lc,
+.Spiritual-lc {
   display: block;
   height: 80px;
   width: 80px;
 }
-.Physical-lc {
-  background: url("./images/Physical.png") no-repeat center
-    center/cover;
+.Physical {
+  background: url("./images/Emotional.png") no-repeat center center/cover;
 }
 .Emotional-lc {
-  background: url("./images/Emotional.png") no-repeat center
-    center/cover;
+  background: url("./images/Emotional.png") no-repeat center center/cover;
 }
 .Intellectual-lc {
-  background: url("./images/Intellectual.png") no-repeat center
-    center/cover;
+  background: url("./images/Intellectual.png") no-repeat center center/cover;
 }
 .Spiritual-lc {
-  background: url("./images/Spiritual.png") no-repeat center
-    center/cover;
+  background: url("./images/Spiritual.png") no-repeat center center/cover;
 }
 .cards-container-lc > .card-lc > p {
   margin: 3vh;
   font-weight: 500;
 }
 .content {
-    color: black;
+  color: black;
+}
+.dream-result {
+  background-color: #fdf2f8;
+  min-height: 100vh;
+  /* Ensure background color spreads till the end of the screen */
+  /* padding: 20px; */
+  display: flex;
+  flex-direction: column;
+}
+
+.dreamcard-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  height: auto;
+  margin-top: 30px;
+  /* border: 1px solid black; */
+}
+
+.dream-result-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 70%;
+  max-width: 100%;
+  margin-top: 20px;
+  /* border: 1px solid black; */
+}
+
+.dream-result-title {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+}
+
+.divider {
+  /* border: 1px solid gray; */
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.margin-div {
+  margin-top: 20px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  /* .dream-title { */
+  /* font-size: 20px; */
+  /* padding: 10px; */
+  /* border-bottom: 1px solid black; */
+  /* } */
+  .dreamcard-container {
+    margin: 0px 100px;
+  }
+  .description {
+    font-size: 14px;
+  }
+}
+
+.linechart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; */
+  background-color: white;
+  width: 55%;
+  /* margin-left: 200px; */
+  margin-top: 50px;
 }
