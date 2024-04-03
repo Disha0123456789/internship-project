@@ -17,8 +17,8 @@ const WorkLifeBalance = () => {
           />
           <h1>Work Life Balance</h1>
         </div>
-        <div className="content">
-          <div className="content-left">
+        <div className="conten">
+          <div className="conten-left">
             <img
               src="https://images.pexels.com/photos/269129/pexels-photo-269129.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
               alt=""
@@ -27,7 +27,7 @@ const WorkLifeBalance = () => {
               Book Now
             </button>
           </div>
-          <div className="content-right">
+          <div className="conten-right">
             <p>
               Find harmony between work and life with Divine Connection's
               supportive guidance. Our certified online psychologists and
