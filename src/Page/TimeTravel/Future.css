@@ -39,9 +39,22 @@
 .form-group {
   margin: 5vh 0vh 0vh 0vh;
 }
-.submit-button-wrapper {
+.submit-button-wrapper input {
+  background-color: black;
+  color: white;
   margin-top: 2rem;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
 }
+
+.submit-button-wrapper input:hover {
+  background-color: white;
+  color: black;
+}
+
 
 .react-calendar {
   font-family: Arial, sans-serif;
