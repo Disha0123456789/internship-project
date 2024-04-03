@@ -17,8 +17,8 @@ const Family = () => {
           />
           <h1>Family & Relationship</h1>
         </div>
-        <div className="content">
-          <div className="content-left">
+        <div className="conten">
+          <div className="conten-left">
             <img
               src="https://imgs.search.brave.com/EtFoBc0d50hehJ8u6aqKdreIdMveXa9rr8aprITFfDQ/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTM1/MjIyNzg5L3Bob3Rv/L2ZhbWlseS13YXRj/aGluZy10LXYuanBn/P3M9NjEyeDYxMiZ3/PTAmaz0yMCZjPXJE/MnlLck41aENyQlho/NE9oY182ZC1kV0VS/Wk9WTEU2MGVuendt/aXMweHc9"
               alt=""
@@ -27,7 +27,7 @@ const Family = () => {
               Book Now
             </button>
           </div>
-          <div className="content-right">
+          <div className="conten-right">
             <p>
               In the intricate tapestry of relationships and family dynamics,
               Divine Connection offers compassionate guidance and support. Our
