@@ -11,14 +11,14 @@ function LoveInsights() {
         <div className="Container-heading">
           <h1>Love Insights</h1>
         </div>
-        <div className="content">
-          <div className="content-left">
+        <div className="conten">
+          <div className="conten-left">
             <div className="img-li"></div>
             <button onClick={() => navigate("/Done", { state: { head, img } })}>
               Book Now
             </button>
           </div>
-          <div className="content-right">
+          <div className="conten-right">
             <p>
               Love insights delve into understanding romantic relationships,
               emotions, and connections. They explore the dynamics of affection,
