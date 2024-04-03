@@ -19,8 +19,8 @@ const AngerManagement = () => {
           />
           <h1>Anger Management</h1>
         </div>
-        <div className="content">
-          <div className="content-left">
+        <div className="conten">
+          <div className="conten-left">
             <img
               src="https://images.pexels.com/photos/313690/pexels-photo-313690.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
               alt=""
@@ -29,7 +29,7 @@ const AngerManagement = () => {
               Book Now
             </button>
           </div>
-          <div className="content-right">
+          <div className="conten-right">
             <p>
               Explore transformative anger management techniques with expert
               guidance from certified online psychologists and counselors at
