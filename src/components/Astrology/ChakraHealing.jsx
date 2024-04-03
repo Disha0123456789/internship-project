@@ -11,14 +11,14 @@ function ChakraHealing() {
         <div className="Container-heading">
           <h1>Chakra Healing</h1>
         </div>
-        <div className="content">
-          <div className="content-left">
+        <div className="conten">
+          <div className="conten-left">
             <div className="img-ch"></div>
             <button onClick={() => navigate("/Done", { state: { head, img } })}>
               Book Now
             </button>
           </div>
-          <div className="content-right">
+          <div className="conten-right">
             <p>
               Chakra healing is a holistic practice rooted in Eastern
               philosophy, aiming to balance the body's energy centers or
