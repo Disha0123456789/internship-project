@@ -39,12 +39,8 @@
 .form-group {
   margin: 5vh 0vh 0vh 0vh;
 }
-.submit-button {
-  margin: 2vh 0vh 0vh 0vh;
-}
-
-a {
-  margin-top: 1rem; /* Add margin between the calendar and the button */
+.submit-button-wrapper {
+  margin-top: 2rem;
 }
 
 .react-calendar {
