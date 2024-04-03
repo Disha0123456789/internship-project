@@ -11,14 +11,14 @@ function KidsFortunePrediction() {
         <div className="Container-heading">
           <h1>Kids Fortune Prediction</h1>
         </div>
-        <div className="content">
-          <div className="content-left">
+        <div className="conten">
+          <div className="conten-left">
             <div className="img-kfp"></div>
             <button onClick={() => navigate("/Done", { state: { head, img } })}>
               Book Now
             </button>
           </div>
-          <div className="content-right">
+          <div className="conten-right">
             <p>
               Kids' fortune prediction involves forecasting a child's potential
               future based on astrological principles, examining celestial
