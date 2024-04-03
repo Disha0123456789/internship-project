@@ -23,16 +23,7 @@ function PastLifePrediction() {
               characterized by mutual respect and a shared sense of purpose.
               Together, you may have experienced the joy of raising a family,
               nurturing strong bonds with your children, and creating a
-              harmonious household filled with love and understanding.ufisdhfsdhfhsdjfhjdhf
-              dfasdfadsfdsafsdafasdfsadfasdfasdfa
-              asfasdfadsfasdfasdfadsfasdf
-              adsfasdfadsfasdfadfadsfadsfasdf
-              asdfasdfdasfadsfadsfadsfadsfasdfadsfasdfasdfadsf
-              asdfadsfdasfadsfasffffffffffffassssssssssdfjkjdkfjasdkkkkkkkkkkkkkkkkkkkkkk
-              llllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllll
-              asdlfjjjjjjjjjjjjjklllllllllllllllllllllllllllllllllllllljasdjfklajjjjjjjjjjjjj
-              sdakjflllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllll
-              jasdlkfjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj
+              harmonious household filled with love and understanding.
             </p>
           </div>
         </div>
