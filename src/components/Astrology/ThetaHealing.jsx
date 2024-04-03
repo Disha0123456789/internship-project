@@ -11,14 +11,14 @@ function ThetaHealing() {
         <div className="Container-heading">
           <h1>Theta Healing</h1>
         </div>
-        <div className="content">
-          <div className="content-left">
+        <div className="conten">
+          <div className="conten-left">
             <div className="img-th"></div>
             <button onClick={() => navigate("/Done", { state: { head, img } })}>
               Book Now
             </button>
           </div>
-          <div className="content-right">
+          <div className="conten-right">
             <p>
               Theta Healing is a holistic healing technique rooted in accessing
               the theta brainwave state to facilitate profound emotional,
