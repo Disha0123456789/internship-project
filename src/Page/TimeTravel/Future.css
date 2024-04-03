@@ -42,6 +42,11 @@
 .submit-button {
   margin: 2vh 0vh 0vh 0vh;
 }
+
+a {
+  margin-top: 1rem; /* Add margin between the calendar and the button */
+}
+
 .react-calendar {
   font-family: Arial, sans-serif;
   font-size: 18px; /* Increase font size for better readability */
