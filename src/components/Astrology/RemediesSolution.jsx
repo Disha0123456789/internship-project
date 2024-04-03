@@ -11,14 +11,14 @@ function RemediesSolution() {
         <div className="Container-heading">
           <h1>Remedies Solution</h1>
         </div>
-        <div className="content">
-          <div className="content-left">
+        <div className="conten">
+          <div className="conten-left">
             <div className="img-rs"></div>
             <button onClick={() => navigate("/Done", { state: { head, img } })}>
               Book Now
             </button>
           </div>
-          <div className="content-right">
+          <div className="conten-right">
             <p>
               Remedies are solutions or actions taken to address problems,
               resolve conflicts, or alleviate difficulties encountered in
