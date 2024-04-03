@@ -100,12 +100,7 @@ const LineChart = () => {
               were known for their intelligence, creativity, and independent
               spirits. As a parent, you provided guidance and support, fostering
               an environment where your children could flourish and pursue their
-              passions with confidence.sfdjfsdkfjkjafjslksdjfkjsdfkljsdfjsdfksldfjksdf
-              sjdakfsdkjfkasjdfsdjflkasjfklajfkjkdsjfkasdjfksdajfklsajdfkjasdfkjsdafd
-              jaksdfkjasdklfjaklsdjfklsdajfkdjsfkljasdkfjsakdlfjklsajfkljsdklfjaskldjfkladsj
-              adsjfkljaskfjklasdjfklajfkljasdklfjasdkfjkldasjfklasdjfkjdaskfjaskdjfkladsjf
-              askdfkjkasdfjklds aksjfklsdajfklsdjf dakslf sdaklfjkslad flksdajfksd jfksadj
-              daskjfklsdaj fkasdjfkjasdklfjkads fjlkadsjf askdfj kladsjf ;lkadsf kladsjfkladsjklfj
+              passions with confidence.
             </p>
           </div>
         </div>
