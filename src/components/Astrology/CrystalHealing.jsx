@@ -11,14 +11,14 @@ function CrystalHealing() {
         <div className="Container-heading">
           <h1>Crystal Healing</h1>
         </div>
-        <div className="content">
-          <div className="content-left">
+        <div className="conten">
+          <div className="conten-left">
             <div className="img-crh"></div>
             <button onClick={() => navigate("/Done", { state: { head, img } })}>
               Book Now
             </button>
           </div>
-          <div className="content-right">
+          <div className="conten-right">
             <p>
               Crystal healing is a holistic practice that utilizes the energetic
               properties of crystals to promote healing and balance in the mind,
