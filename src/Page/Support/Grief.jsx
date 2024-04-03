@@ -17,8 +17,8 @@ const Grief = () => {
           />
           <h1>Grief / Loss</h1>
         </div>
-        <div className="content">
-          <div className="content-left">
+        <div className="conten">
+          <div className="conten-left">
             <img
               src="https://images.pexels.com/photos/247314/pexels-photo-247314.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
               alt=""
@@ -27,7 +27,7 @@ const Grief = () => {
               Book Now
             </button>
           </div>
-          <div className="content-right">
+          <div className="conten-right">
             <p>
               Amidst the profound pain of grief and loss, Divine Connection
               offers a compassionate refuge. Our certified online psychologists
