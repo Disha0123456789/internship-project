@@ -11,14 +11,14 @@ function FinancePlanning() {
         <div className="Container-heading">
           <h1>Finance Planning</h1>
         </div>
-        <div className="content">
-          <div className="content-left">
+        <div className="conten">
+          <div className="conten-left">
             <div className="img-fp"></div>
             <button onClick={() => navigate("/Done", { state: { head, img } })}>
               Book Now
             </button>
           </div>
-          <div className="content-right">
+          <div className="conten-right">
             <p>
               Financial planning involves the systematic process of assessing an
               individual's or organization's financial situation, goals, and
