@@ -21,13 +21,15 @@ const FuturePrediction = () => {
                   <div>
                     <Calendar onChange={onChange} value={value} />
                   </div>
-                  <a onClick={() => navigate("/see_your_future")}>
-                    <input
-                      type="button"
-                      className="form-control back"
-                      defaultValue="See the Future"
-                    />
-                  </a>
+                  <div className="submit-button-wrapper">
+                    <a onClick={() => navigate("/see_your_future")}>
+                      <input
+                        type="button"
+                        className="form-control back"
+                        defaultValue="See the Future"
+                      />
+                    </a>
+                  </div>
                 </div>
               </form>
             </div>
