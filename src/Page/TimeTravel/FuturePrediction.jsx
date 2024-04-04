@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Future.css";
 import Calendar from "react-calendar";
+import { IoIosArrowBack } from "react-icons/io";
 import "react-calendar/dist/Calendar.css";
 import { useNavigate } from "react-router-dom";
 
@@ -10,6 +11,7 @@ const FuturePrediction = () => {
   return (
     <div className="timetravel">
       <div className="header">
+        <IoIosArrowBack onClick={() => navigate("/TimeTravel")} className="backicon" />
         <h1>Future Prediction</h1>
       </div>
       <div className="content">
