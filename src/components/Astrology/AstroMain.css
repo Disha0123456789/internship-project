@@ -366,9 +366,11 @@ body {
 .grid-container-main {
   display: flex;
   justify-content: center;
+  background-color : white;
   align-items: center;
   flex-direction: column;
   margin: 18px; /* Adjust margin as needed */
+  border-radius: 20px;
 }
 
 .grid-items {
