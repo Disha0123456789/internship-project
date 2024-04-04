@@ -21,18 +21,17 @@ function RemediesSolution() {
           </div>
           <div className="conten-right">
             <p>
-              Remedies are solutions or actions taken to address problems,
+            Divine Connection's Remedies are solutions or actions taken to address problems,
               resolve conflicts, or alleviate difficulties encountered in
               various situations. They can range from simple fixes to complex
-              interventions tailored to specific issues. In legal contexts,
+              interventions tailored to specific issues.
+              <br /><br />
+              In legal contexts,
               remedies refer to measures taken to rectify breaches of contract
               or infringements of rights, such as compensation or injunctive
               relief. In healthcare, remedies may include medications,
               therapies, or lifestyle changes to treat illnesses or promote
-              well-being. Overall, remedies aim to mitigate negative impacts,
-              restore balance, and facilitate positive outcomes, whether in
-              legal, medical, or everyday contexts, ultimately fostering
-              resolution, healing, and progress.
+              well-being.
             </p>
           </div>
         </div>

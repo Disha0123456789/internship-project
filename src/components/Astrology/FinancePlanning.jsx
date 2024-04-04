@@ -21,19 +21,19 @@ function FinancePlanning() {
           </div>
           <div className="conten-right">
             <p>
-              Financial planning involves the systematic process of assessing an
+            Divine Connection's Financial planning involves the systematic process of assessing an
               individual's or organization's financial situation, goals, and
               resources to develop strategies for achieving desired outcomes. It
               encompasses budgeting, saving, investing, retirement planning,
-              risk management, and estate planning. By analyzing income,
+              risk management, and estate planning.
+              <br /><br />
+              By analyzing income,
               expenses, assets, and liabilities, financial planners tailor
               strategies to optimize wealth accumulation, minimize financial
               risks, and ensure long-term financial security. Effective
               financial planning considers short-term needs while also
               addressing long-term objectives, such as funding education, buying
-              a home, or retiring comfortably. It serves as a roadmap for making
-              informed financial decisions, adapting to changing circumstances,
-              and ultimately achieving financial independence and peace of mind.
+              a home, or retiring comfortably.
             </p>
           </div>
         </div>

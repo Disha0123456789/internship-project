@@ -21,18 +21,17 @@ function LoveInsights() {
           </div>
           <div className="conten-right">
             <p>
-              Love insights delve into understanding romantic relationships,
+            Divine Connection's Love insights delve into understanding romantic relationships,
               emotions, and connections. They explore the dynamics of affection,
               compatibility, and intimacy between individuals. Through
               introspection and communication, love insights illuminate aspects
               such as communication styles, emotional needs, and relationship
-              patterns. They help navigate challenges, foster deeper
+              patterns.
+              <br /><br />
+              They help navigate challenges, foster deeper
               connections, and cultivate mutual understanding and respect. By
               recognizing personal values, desires, and boundaries, individuals
-              can forge meaningful and fulfilling partnerships. Love insights
-              promote empathy, vulnerability, and growth within relationships,
-              nurturing love's evolution and creating spaces for genuine
-              emotional expression, trust, and harmony in romantic connections.
+              can forge meaningful and fulfilling partnerships.
             </p>
           </div>
         </div>

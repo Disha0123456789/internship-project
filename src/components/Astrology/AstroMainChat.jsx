@@ -1,22 +1,24 @@
 import React from "react";
 import "./AstroMain.css";
 import { useNavigate } from "react-router-dom";
+import { IoIosArrowBack } from "react-icons/io";
 
 function AstroMainChat() {
   const navigate = useNavigate();
   return (
     <div className="astrology">
       <div className="Head-Text">
+        <IoIosArrowBack onClick={() => navigate("../")} className="backicon" />
         <h1>Astrology</h1>
         <div className="callchat-button">
           <button onClick={() => navigate("/AstroMain")} className="buttons">
-            Call
+            <i className="fa-solid fa-phone"></i> Call
           </button>
           <button
             onClick={() => navigate("/AstroMainChat")}
-            className="buttons"
+            className="buttons btn-call2"
           >
-            Chat
+            <i class="fa-solid fa-comment-dots"></i> Chat
           </button>
         </div>
       </div>
@@ -37,7 +39,7 @@ function AstroMainChat() {
               onClick={() => navigate("/marriageConsultation")}
               className="book-chat"
             >
-              <i class="fa-solid fa-comment-dots"></i>Book a Call
+              <i class="fa-solid fa-comment-dots"></i>Book a Chat
             </button>
           </div>
         </div>
@@ -57,7 +59,7 @@ function AstroMainChat() {
               onClick={() => navigate("/healthHealing")}
               className="book-chat"
             >
-              <i class="fa-solid fa-comment-dots"></i>Book a Call
+              <i class="fa-solid fa-comment-dots"></i>Book a Chat
             </button>
           </div>
         </div>
@@ -77,7 +79,7 @@ function AstroMainChat() {
               onClick={() => navigate("/wealthManagement")}
               className="book-chat"
             >
-              <i class="fa-solid fa-comment-dots"></i>Book a Call
+              <i class="fa-solid fa-comment-dots"></i>Book a Chat
             </button>
           </div>
         </div>
@@ -97,7 +99,7 @@ function AstroMainChat() {
               onClick={() => navigate("/loveInsights")}
               className="book-chat"
             >
-              <i class="fa-solid fa-comment-dots"></i>Book a Call
+              <i class="fa-solid fa-comment-dots"></i>Book a Chat
             </button>
           </div>
         </div>
@@ -117,7 +119,7 @@ function AstroMainChat() {
               onClick={() => navigate("/educationalGuidance")}
               className="book-chat"
             >
-              <i class="fa-solid fa-comment-dots"></i>Book a Call
+              <i class="fa-solid fa-comment-dots"></i>Book a Chat
             </button>
           </div>
         </div>
@@ -137,7 +139,7 @@ function AstroMainChat() {
               onClick={() => navigate("/careerPath")}
               className="book-chat"
             >
-              <i class="fa-solid fa-comment-dots"></i>Book a Call
+              <i class="fa-solid fa-comment-dots"></i>Book a Chat
             </button>
           </div>
         </div>
@@ -157,7 +159,7 @@ function AstroMainChat() {
               onClick={() => navigate("/businessStrategies")}
               className="book-chat"
             >
-              <i class="fa-solid fa-comment-dots"></i>Book a Call
+              <i class="fa-solid fa-comment-dots"></i>Book a Chat
             </button>
           </div>
         </div>
@@ -177,7 +179,7 @@ function AstroMainChat() {
               onClick={() => navigate("/financePlanning")}
               className="book-chat"
             >
-              <i class="fa-solid fa-comment-dots"></i>Book a Call
+              <i class="fa-solid fa-comment-dots"></i>Book a Chat
             </button>
           </div>
         </div>
@@ -197,7 +199,7 @@ function AstroMainChat() {
               onClick={() => navigate("/legalAdvice")}
               className="book-chat"
             >
-              <i class="fa-solid fa-comment-dots"></i>Book a Call
+              <i class="fa-solid fa-comment-dots"></i>Book a Chat
             </button>
           </div>
         </div>
@@ -217,7 +219,7 @@ function AstroMainChat() {
               onClick={() => navigate("/remediesSolutions")}
               className="book-chat"
             >
-              <i class="fa-solid fa-comment-dots"></i>Book a Call
+              <i class="fa-solid fa-comment-dots"></i>Book a Chat
             </button>
           </div>
         </div>
@@ -237,7 +239,7 @@ function AstroMainChat() {
               onClick={() => navigate("/kidsFortune")}
               className="book-chat"
             >
-              <i class="fa-solid fa-comment-dots"></i>Book a Call
+              <i class="fa-solid fa-comment-dots"></i>Book a Chat
             </button>
           </div>
         </div>
@@ -257,7 +259,7 @@ function AstroMainChat() {
               onClick={() => navigate("/parentingTips")}
               className="book-chat"
             >
-              <i class="fa-solid fa-comment-dots"></i>Book a Call
+              <i class="fa-solid fa-comment-dots"></i>Book a Chat
             </button>
           </div>
         </div>
@@ -277,7 +279,7 @@ function AstroMainChat() {
               onClick={() => navigate("/panchangAnalysis")}
               className="book-chat"
             >
-              <i class="fa-solid fa-comment-dots"></i>Book a Call
+              <i class="fa-solid fa-comment-dots"></i>Book a Chat
             </button>
           </div>
         </div>
@@ -297,7 +299,7 @@ function AstroMainChat() {
               onClick={() => navigate("/birthChart")}
               className="book-chat"
             >
-              <i class="fa-solid fa-comment-dots"></i>Book a Call
+              <i class="fa-solid fa-comment-dots"></i>Book a Chat
             </button>
           </div>
         </div>
@@ -317,7 +319,7 @@ function AstroMainChat() {
               onClick={() => navigate("/shubhMuhurat")}
               className="book-chat"
             >
-              <i class="fa-solid fa-comment-dots"></i>Book a Call
+              <i class="fa-solid fa-comment-dots"></i>Book a Chat
             </button>
           </div>
         </div>
@@ -337,7 +339,7 @@ function AstroMainChat() {
               onClick={() => navigate("/personalizedPooja")}
               className="book-chat"
             >
-              <i class="fa-solid fa-comment-dots"></i>Book a Call
+              <i class="fa-solid fa-comment-dots"></i>Book a Chat
             </button>
           </div>
         </div>
@@ -357,7 +359,7 @@ function AstroMainChat() {
               onClick={() => navigate("/thetaHealing")}
               className="book-chat"
             >
-              <i class="fa-solid fa-comment-dots"></i>Book a Call
+              <i class="fa-solid fa-comment-dots"></i>Book a Chat
             </button>
           </div>
         </div>
@@ -377,7 +379,7 @@ function AstroMainChat() {
               onClick={() => navigate("/reikiHealing")}
               className="book-chat"
             >
-              <i class="fa-solid fa-comment-dots"></i>Book a Call
+              <i class="fa-solid fa-comment-dots"></i>Book a Chat
             </button>
           </div>
         </div>
@@ -397,7 +399,7 @@ function AstroMainChat() {
               onClick={() => navigate("/chakraHealing")}
               className="book-chat"
             >
-              <i class="fa-solid fa-comment-dots"></i>Book a Call
+              <i class="fa-solid fa-comment-dots"></i>Book a Chat
             </button>
           </div>
         </div>
@@ -417,7 +419,7 @@ function AstroMainChat() {
               onClick={() => navigate("/crystalHealing")}
               className="book-chat"
             >
-              <i class="fa-solid fa-comment-dots"></i>Book a Call
+              <i class="fa-solid fa-comment-dots"></i>Book a Chat
             </button>
           </div>
         </div>

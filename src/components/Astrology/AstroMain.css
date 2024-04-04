@@ -50,7 +50,7 @@ body {
   height: 20%;
   display: flex;
   justify-content: center;
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
 }
 .Container-final {
   display: flex;
@@ -61,6 +61,7 @@ body {
 .Container-heading h1 {
   font-size: clamp(2.2rem, 3vw, 3rem);
   font-weight: 700;
+  margin-top: 40px;
 }
 .conten {
   display: flex;
@@ -118,145 +119,114 @@ body {
   width: 100%;
   height: 60%;
   border-radius: 20px;
-  object-fit: fill;
+  object-fit: cover;
 }
 .img-mc {
-  background: url("./images/Marriage Consultation.png")  no-repeat center center;
-  background-size: 100% 100%;
+  background: url("./images/Marriage Consultation.png") no-repeat center
+    center/cover;
   height: 220px;
-  border-radius: 20px;
 }
-
 .img-hh {
   background: url("./images/Health Healing.png") no-repeat center center/cover;
   height: 220px;
 }
 
 .img-wm {
-  background: url("./images/Wealth Management.png")  no-repeat center center;
-  background-size: 100% 100%;
+  background: url("./images/Wealth Management.png") no-repeat center
+    center/cover;
   height: 220px;
-  border-radius: 20px;
 }
 
 .img-li {
-  background: url("./images/Love Insights.png")  no-repeat center center;
-  background-size: 100% 100%;
+  background: url("./images/Love Insights.png") no-repeat center center/cover;
   height: 220px;
-  border-radius: 20px;
 }
 
 .img-eg {
-  background: url("./images/Educational Guidance.png")  no-repeat center center;
-  background-size: 100% 100%;
+  background: url("./images/Educational Guidance.png") no-repeat center
+    center/cover;
   height: 220px;
-  border-radius: 20px;
 }
 
 .img-cp {
-  background: url("./images/Career Path.png")  no-repeat center center;
-  background-size: 100% 100%;
+  background: url("./images/Career Path.png") no-repeat center center/cover;
   height: 220px;
-  border-radius: 20px;
 }
 
 .img-bs {
-  background: url("./images/Business Strategies.png")  no-repeat center center;
-  background-size: 100% 100%;
+  background: url("./images/Business Strategies.png") no-repeat center
+    center/cover;
   height: 220px;
-  border-radius: 20px;
 }
 
 .img-fp {
-  background: url("./images/Finance Planning.png")  no-repeat center center;
-  background-size: 100% 100%;
+  background: url("./images/Finance Planning.png") no-repeat center center/cover;
   height: 220px;
-  border-radius: 20px;
 }
 
 .img-la {
-  background: url("./images/Legal Advice.png")  no-repeat center center;
-  background-size: 100% 100%;
+  background: url("./images/Legal Advice.png") no-repeat center center/cover;
   height: 220px;
-  border-radius: 20px;
 }
 
 .img-rs {
-  background: url("./images/Remedies & Solutions.png") no-repeat center center;
-  background-size: 100% 100%;
-  background-color: white;
+  background: url("./images/Remedies & Solutions.png") no-repeat center
+    center/cover;
   height: 220px;
-  border-radius: 20px;
 }
 
 .img-kfp {
-  background: url("./images/Kids Fortune Prediction.png")  no-repeat center center;
-  background-size: 100% 100%;
+  background: url("./images/Kids Fortune Prediction.png") no-repeat center
+    center/cover;
   height: 220px;
-  border-radius: 20px;
 }
 
 .img-pt {
-  background: url("./images/Parenting Tips.png") no-repeat center center;
-  background-size: 100% 100%;
+  background: url("./images/Parenting Tips.png") no-repeat center center/cover;
   height: 220px;
-  border-radius: 20px;
 }
 
 .img-pa {
-  background: url("./images/Panchang Analysis.png")  no-repeat center center;
-  background-size: 100% 100%;
+  background: url("./images/Panchang Analysis.png") no-repeat center
+    center/cover;
   height: 220px;
-  border-radius: 20px;
 }
 
 .img-bci {
-  background: url("./images/Birth Chart Interpretation.png")  no-repeat center center;
-  background-size: 100% 100%;
+  background: url("./images/Birth Chart Interpretation.png") no-repeat center
+    center/cover;
   height: 220px;
-  border-radius: 20px;
 }
 
 .img-sm {
-  background: url("./images/Shubh Muhurat.png")  no-repeat center center;
-  background-size: 100% 100%;
+  background: url("./images/Shubh Muhurat.png") no-repeat center center/cover;
   height: 220px;
-  border-radius: 20px;
 }
 
 .img-pp {
-  background: url("./images/Personalized Pooja.png")  no-repeat center center;
-  background-size: 100% 100%;
+  background: url("./images/Personalized Pooja.png") no-repeat center
+    center/cover;
   height: 220px;
-  border-radius: 20px;
 }
 
 .img-th {
-  background: url("./images/Theta Healing.png")  no-repeat center center;
-  background-size: 100% 100%;
+  background: url("./images/Theta Healing.png") no-repeat center center/cover;
   height: 220px;
-  border-radius: 20px;
 }
 
 .img-rh {
-  background: url("./images/Reiki Healing.png")  no-repeat center center;
-  background-size: 100% 100%;
+  background: url("./images/Reiki Healing.png") no-repeat center center/cover;
   height: 220px;
-  border-radius: 20px;
 }
 
 .img-ch {
-  background: url("./images/Chakra Healing.png")  no-repeat center center;
-  background-size: 100% 100%;
+  background: url("./images/Chakra Healing.png") no-repeat center center/cover;
   height: 220px;
-  border-radius: 20px;
 }
 
 .img-crh {
-  background: url("./images/Crystal Healing.png") no-repeat center center;
-  background-size: 100% 100%;
+  background: url("./images/Crystal Healing.png") no-repeat center center/cover;
   height: 220px;
-  border-radius: 20px;
 }
 
 .conten-right {
@@ -366,11 +336,9 @@ body {
 .grid-container-main {
   display: flex;
   justify-content: center;
-  background-color : white;
   align-items: center;
   flex-direction: column;
   margin: 18px; /* Adjust margin as needed */
-  border-radius: 20px;
 }
 
 .grid-items {
@@ -383,6 +351,7 @@ body {
   height: 200px; /* Increase height as needed */
   width: 300px; /* Increase width as needed */
   background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 20px 20px 0 0;
   position: relative;
   transition: all 1s;
   overflow: hidden;
@@ -637,6 +606,14 @@ body {
   border-radius: 0px;
   border-left: 1px white solid;
   border-right: 1px white solid;
-  width: 100px;
+  width: 150px;
   color: #fff;
+}
+.btn-call2 {
+  background-color: white;
+  color: black;
+}
+.btn-call1{
+  background-color: white;
+  color: black;
 }

@@ -21,18 +21,17 @@ function CrystalHealing() {
           </div>
           <div className="conten-right">
             <p>
-              Crystal healing is a holistic practice that utilizes the energetic
+            Our Divine Connection's Crystal healing is a holistic practice that utilizes the energetic
               properties of crystals to promote healing and balance in the mind,
               body, and spirit. Believers assert that each crystal emits a
               unique vibration that can interact with the body's energy fields,
               facilitating physical, emotional, and spiritual well-being.
+              <br /><br />
               Practitioners may place crystals on or around the body,
               incorporate them into meditation or rituals, or wear them as
               jewelry. While scientific evidence supporting crystal healing's
               efficacy is limited, many find it beneficial for relaxation,
-              stress relief, and enhancing mindfulness. It's often used as a
-              complementary therapy alongside conventional medical treatments
-              for holistic wellness.
+              stress relief, and enhancing mindfulness.
             </p>
           </div>
         </div>
