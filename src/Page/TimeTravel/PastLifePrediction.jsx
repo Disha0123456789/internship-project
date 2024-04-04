@@ -1,18 +1,11 @@
 import React from "react";
-import { IoIosArrowBack } from "react-icons/io";
-import { useNavigate } from "react-router-dom";
 import "./PastLifePrediction.css";
 
 function PastLifePrediction() {
-  const navigate = useNavigate();
   return (
     <>
       <div className="dream-result">
         <div className="Head-Text">
-          <IoIosArrowBack
-            onClick={() => navigate("/TimeTravel")}
-            className="backicon"
-          />
           <h1>Past Life Prediction</h1>
         </div>
         <div className="dreamcard-container">

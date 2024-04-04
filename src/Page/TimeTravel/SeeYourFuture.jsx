@@ -1,5 +1,4 @@
 import React from "react";
-import { IoIosArrowBack } from "react-icons/io";
 import "./SeeYourFuture.css";
 import { useNavigate } from "react-router-dom";
 
@@ -8,7 +7,6 @@ export default function SeeYourFuture() {
   return (
     <div className="dream-result">
       <div className="Head-Text">
-        <IoIosArrowBack onClick={() => navigate("/FuturePrediction")} className="backicon" />
         <h1>See Your Future</h1>
       </div>
       <div className="dreamcard-container">
