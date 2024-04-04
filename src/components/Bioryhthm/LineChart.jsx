@@ -54,7 +54,7 @@ const LineChart = () => {
             <div className="main border1">
               <div className="sub">29</div>
             </div>
-            <div className="content">
+            <div className="conten">
               <h5>Physical</h5>
             </div>
           </div>
@@ -62,7 +62,7 @@ const LineChart = () => {
             <div className="main border2">
               <div className="sub">78</div>
             </div>
-            <div className="content">
+            <div className="conten">
               <h5>Emotional</h5>
             </div>
           </div>
@@ -70,7 +70,7 @@ const LineChart = () => {
             <div className="main border3">
               <div className="sub">43</div>
             </div>
-            <div className="content">
+            <div className="conten">
               <h5>Spiritual</h5>
             </div>
           </div>
