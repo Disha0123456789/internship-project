@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 const MarriageConsultation = () => {
   const navigate = useNavigate();
   const head = "Marriage Consultation";
-  const img = "Marriage Consultation.png";
+  const img = "src/components/Astrology/images/Marriage Consultation.png";
   return (
     <>
       <div className="Container">
