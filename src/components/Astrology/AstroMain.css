@@ -118,11 +118,10 @@ body {
   width: 100%;
   height: 60%;
   border-radius: 20px;
-  object-fit: cover;
+  object-fit: fill;
 }
 .img-mc {
   background: url("./images/Marriage Consultation.png") no-repeat center center;
-  background-size: contain; /* Add this line */
   height: 220px;
   border-radius: 20px;
 }
