@@ -102,6 +102,7 @@
     width: 20%;
     object-fit: cover;
     background-color: white;
+    border-radius:20px;
 
 }
 .mid{
