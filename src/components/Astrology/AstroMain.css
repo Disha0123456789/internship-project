@@ -133,25 +133,31 @@ body {
 }
 
 .img-wm {
-  background: url("./images/Wealth Management.png") no-repeat center
-    center/cover;
+  background: url("./images/Wealth Management.png")  no-repeat center center;
+  background-size: 100% 100%;
   height: 220px;
+  border-radius: 20px;
 }
 
 .img-li {
-  background: url("./images/Love Insights.png") no-repeat center center/cover;
+  background: url("./images/Love Insights.png")  no-repeat center center;
+  background-size: 100% 100%;
   height: 220px;
+  border-radius: 20px;
 }
 
 .img-eg {
-  background: url("./images/Educational Guidance.png") no-repeat center
-    center/cover;
+  background: url("./images/Educational Guidance.png")  no-repeat center center;
+  background-size: 100% 100%;
   height: 220px;
+  border-radius: 20px;
 }
 
 .img-cp {
-  background: url("./images/Career Path.png") no-repeat center center/cover;
+  background: url("./images/Career Path.png")  no-repeat center center;
+  background-size: 100% 100%;
   height: 220px;
+  border-radius: 20px;
 }
 
 .img-bs {
@@ -162,73 +168,94 @@ body {
 }
 
 .img-fp {
-  background: url("./images/Finance Planning.png") no-repeat center center/cover;
+  background: url("./images/Finance Planning.png")  no-repeat center center;
+  background-size: 100% 100%;
   height: 220px;
+  border-radius: 20px;
 }
 
 .img-la {
-  background: url("./images/Legal Advice.png") no-repeat center center/cover;
+  background: url("./images/Legal Advice.png")  no-repeat center center;
+  background-size: 100% 100%;
   height: 220px;
+  border-radius: 20px;
 }
 
 .img-rs {
-  background: url("./images/Remedies & Solutions.png") no-repeat center
-    center/cover;
+  background: url("./images/Remedies & Solutions.png") no-repeat center center;
+  background-size: 100% 100%;
   height: 220px;
+  border-radius: 20px;
 }
 
 .img-kfp {
-  background: url("./images/Kids Fortune Prediction.png") no-repeat center
-    center/cover;
+  background: url("./images/Kids Fortune Prediction.png")  no-repeat center center;
+  background-size: 100% 100%;
   height: 220px;
+  border-radius: 20px;
 }
 
 .img-pt {
-  background: url("./images/Parenting Tips.png") no-repeat center center/cover;
+  background: url("./images/Parenting Tips.png") no-repeat center center;
+  background-size: 100% 100%;
   height: 220px;
+  border-radius: 20px;
 }
 
 .img-pa {
-  background: url("./images/Panchang Analysis.png") no-repeat center
-    center/cover;
+  background: url("./images/Panchang Analysis.png")  no-repeat center center;
+  background-size: 100% 100%;
   height: 220px;
+  border-radius: 20px;
 }
 
 .img-bci {
-  background: url("./images/Birth Chart Interpretation.png") no-repeat center
-    center/cover;
+  background: url("./images/Birth Chart Interpretation.png")  no-repeat center center;
+  background-size: 100% 100%;
   height: 220px;
+  border-radius: 20px;
 }
 
 .img-sm {
-  background: url("./images/Shubh Muhurat.png") no-repeat center center/cover;
+  background: url("./images/Shubh Muhurat.png")  no-repeat center center;
+  background-size: 100% 100%;
   height: 220px;
+  border-radius: 20px;
 }
 
 .img-pp {
-  background: url("./images/Personalized Pooja.png") no-repeat center
-    center/cover;
+  background: url("./images/Personalized Pooja.png")  no-repeat center center;
+  background-size: 100% 100%;
   height: 220px;
+  border-radius: 20px;
 }
 
 .img-th {
-  background: url("./images/Theta Healing.png") no-repeat center center/cover;
+  background: url("./images/Theta Healing.png")  no-repeat center center;
+  background-size: 100% 100%;
   height: 220px;
+  border-radius: 20px;
 }
 
 .img-rh {
-  background: url("./images/Reiki Healing.png") no-repeat center center/cover;
+  background: url("./images/Reiki Healing.png")  no-repeat center center;
+  background-size: 100% 100%;
   height: 220px;
+  border-radius: 20px;
 }
 
 .img-ch {
-  background: url("./images/Chakra Healing.png") no-repeat center center/cover;
+  background: url("./images/Chakra Healing.png")  no-repeat center center;
+  background-size: 100% 100%;
   height: 220px;
+  border-radius: 20px;
 }
 
 .img-crh {
-  background: url("./images/Crystal Healing.png") no-repeat center center/cover;
+  background: url("./images/Crystal Healing.png") no-repeat center center;
+  background-size: 100% 100%;
   height: 220px;
+  border-radius: 20px;
 }
 
 .conten-right {
