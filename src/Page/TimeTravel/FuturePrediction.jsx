@@ -14,7 +14,7 @@ const FuturePrediction = () => {
         <IoIosArrowBack onClick={() => navigate("/TimeTravel")} className="backicon" />
         <h1>Future Prediction</h1>
       </div>
-      <div className="content">
+      <div className="conten">
         <div className="container text-left">
           <div className="row justify-content-center">
             <div className="col-lg-10">
