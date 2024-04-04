@@ -14,19 +14,19 @@ const data = {
   labels: labels,
   datasets: [
     {
-      label: "Physical    ", // Setting up the label for the dataset
+      label: "Physical     ", // Setting up the label for the dataset
       backgroundColor: "#5EB412", // Setting up the background color for the dataset
       borderColor: "#5EB412", // Setting up the border color for the dataset
       data: [0, 10, 5, 2, 20, 30, 45, 19, 59, 23, 67, 30, 25], // Setting up the data for the dataset
     },
     {
-      label: "Emotional    ", // Setting up the label for the dataset
+      label: "Emotional     ", // Setting up the label for the dataset
       backgroundColor: "#FF3737", // Setting up the background color for the dataset
       borderColor: "#FF3737", // Setting up the border color for the dataset
       data: [60, 40, 53, 23, 20, 30, 75, 20, 20, 65, 40, 53, 23], // Setting up the data for the dataset
     },
     {
-      label: "Spiritual    ", // Setting up the label for the dataset
+      label: "Spiritual     ", // Setting up the label for the dataset
       backgroundColor: "#F0C119", // Setting up the background color for the dataset
       borderColor: "#F0C119", // Setting up the border color for the dataset
       data: [40, 60, 5, 22, 20, 20, 65, 40, 53, 23, 20, 30, 75], // Setting up the data for the dataset
