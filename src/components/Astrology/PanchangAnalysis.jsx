@@ -21,19 +21,18 @@ function PanchangAnalysis() {
           </div>
           <div className="conten-right">
             <p>
-              Panchang analysis is a traditional Hindu practice involving the
+            Divine Connection's Panchang analysis is a traditional Hindu practice involving the
               study of the Panchang, a comprehensive astrological calendar. It
               includes detailed information on planetary positions, lunar
               phases, auspicious and inauspicious timings, and religious events.
               Through this analysis, individuals and communities assess
               favorable moments for important activities like weddings,
-              housewarming ceremonies, and business ventures. It also guides in
+              housewarming ceremonies, and business ventures.
+              <br /><br />
+              It also guides in
               observing religious festivals and conducting rituals at auspicious
               times. Panchang analysis aids in aligning actions with cosmic
-              energies, promoting harmony, success, and spiritual well-being. It
-              serves as a practical tool for optimizing decision-making and
-              planning in various aspects of life according to astrological
-              principles.
+              energies, promoting harmony, success, and spiritual well-being.
             </p>
           </div>
         </div>

@@ -21,19 +21,16 @@ function HealthHealing() {
           </div>
           <div className="conten-right">
             <p>
-              Health healing involves restoring balance and vitality to the
+            Divine Connection's Health healing involves restoring balance and vitality to the
               body, mind, and spirit. It encompasses holistic approaches to
               address physical ailments, mental health issues, and emotional
               well-being. Healing practices may include conventional medicine,
               alternative therapies, lifestyle changes, and spiritual practices.
+              <br /><br />
               By addressing root causes rather than just symptoms, health
               healing promotes overall wellness and resilience. It emphasizes
               the body's innate ability to heal itself when supported with
-              proper nutrition, exercise, rest, and stress management. Through
-              personalized treatment plans and mindful interventions, health
-              healing aims to optimize health outcomes, improve quality of life,
-              and empower individuals to thrive in all aspects of their
-              well-being.
+              proper nutrition, exercise, rest, and stress management.
             </p>
           </div>
         </div>

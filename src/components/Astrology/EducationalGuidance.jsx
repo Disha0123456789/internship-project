@@ -21,19 +21,17 @@ function EducationalGuidance() {
           </div>
           <div className="conten-right">
             <p>
-              Educational guidance involves providing support and direction to
+            Divine Connection's Educational guidance involves providing support and direction to
               individuals in their academic pursuits and personal development.
               It encompasses helping students make informed decisions about
               their educational pathways, career goals, and skill development.
+              <br /><br />
               Guidance may include academic advising, career counseling, goal
               setting, and identifying learning opportunities tailored to
               individual needs and interests. Effective educational guidance
               fosters self-awareness, confidence, and motivation, empowering
               individuals to maximize their potential and achieve academic
-              success. It also addresses challenges such as study skills, time
-              management, and overcoming obstacles, facilitating holistic growth
-              and preparing students for future endeavors in academia and
-              beyond.
+              success.
             </p>
           </div>
         </div>

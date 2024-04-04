@@ -21,18 +21,17 @@ function KidsFortunePrediction() {
           </div>
           <div className="conten-right">
             <p>
-              Kids' fortune prediction involves forecasting a child's potential
+            Divine Connection's Kids' fortune prediction involves forecasting a child's potential
               future based on astrological principles, examining celestial
               configurations at birth. It aims to provide insights into their
-              personality traits, talents, challenges, and life paths. While not
+              personality traits, talents, challenges, and life paths.
+              <br /><br />
+              While not
               deterministic, it offers guidance for parents in nurturing their
               child's development and understanding their unique inclinations.
               This practice often considers factors like the child's sun sign,
               rising sign, and planetary placements to offer personalized
-              guidance. However, its efficacy is subjective, and upbringing and
-              environmental factors play significant roles in shaping a child's
-              future. Ultimately, it serves as a tool for understanding and
-              supporting a child's journey to adulthood.
+              guidance.
             </p>
           </div>
         </div>
