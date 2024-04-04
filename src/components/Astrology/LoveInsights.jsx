@@ -1,7 +1,7 @@
 import React from "react";
 import "./AstroMain.css";
 import { useNavigate } from "react-router-dom";
-import image from './images/Marriage Consultation.png';
+import image from './images/Love Insights.png';
 function LoveInsights() {
   const navigate = useNavigate();
   const head = "Love Insights";
