@@ -3,11 +3,8 @@
 }
 .Container{
     background-color: #FDF2F8;
-    width: clamp(30vw, 70vw, 80vw);
-    
-   
+    width: clamp(30vw, 70vw, 80vw);   
     min-width: 20vw;
-    
     box-shadow: 0px 5px 10px 0px rgb(125, 115, 115);
     margin: auto;
     border-radius: 20px;
@@ -102,7 +99,7 @@
     width: 20%;
     object-fit: cover;
     background-color: white;
-    border-radius:20px;
+    border-radius: 20px;
 }
 .mid{
     width: 100%;
