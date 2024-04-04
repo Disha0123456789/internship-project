@@ -1,10 +1,11 @@
 import React from "react";
 import "./AstroMain.css";
 import { useNavigate } from "react-router-dom";
+import image from './images/Crystal Healing.png';
 function CrystalHealing() {
   const navigate = useNavigate();
   const head = "Crystal Healing";
-  const img = "./images/Marriage Consultation.png";
+  const img = image;
   return (
     <div>
       <div className="Container">
