@@ -24,7 +24,7 @@ function AstroMainChat() {
       </div>
       <div className="grid-container">
         <div className="grid-container-main">
-          <div className="grid-items bg-mc">
+          <div onClick={() => navigate("/marriageConsultation")} className="grid-items bg-mc">
             <div className="info">
               <div className="heading">
                 <h2>Marriage Consultation</h2>
@@ -44,7 +44,7 @@ function AstroMainChat() {
           </div>
         </div>
         <div className="grid-container-main">
-          <div className="grid-items bg-hh">
+          <div onClick={() => navigate("/healthHealing")} className="grid-items bg-hh">
             <div className="info">
               <div className="heading">
                 <h2>Health Healing</h2>
@@ -64,7 +64,7 @@ function AstroMainChat() {
           </div>
         </div>
         <div className="grid-container-main">
-          <div className="grid-items bg-wh">
+          <div onClick={() => navigate("/wealthManagement")} className="grid-items bg-wh">
             <div className="info">
               <div className="heading">
                 <h2>Wealth Management</h2>
@@ -84,7 +84,7 @@ function AstroMainChat() {
           </div>
         </div>
         <div className="grid-container-main">
-          <div className="grid-items bg-li">
+          <div onClick={() => navigate("/loveInsights")} className="grid-items bg-li">
             <div className="info">
               <div className="heading">
                 <h2>Love Insights</h2>
@@ -104,7 +104,7 @@ function AstroMainChat() {
           </div>
         </div>
         <div className="grid-container-main">
-          <div className="grid-items bg-eg">
+          <div onClick={() => navigate("/educationalGuidance")} className="grid-items bg-eg">
             <div className="info">
               <div className="heading">
                 <h2>Educational Guidance</h2>
@@ -124,7 +124,7 @@ function AstroMainChat() {
           </div>
         </div>
         <div className="grid-container-main">
-          <div className="grid-items bg-cp">
+          <div onClick={() => navigate("/careerPath")} className="grid-items bg-cp">
             <div className="info">
               <div className="heading">
                 <h2>Career Path</h2>
@@ -144,7 +144,7 @@ function AstroMainChat() {
           </div>
         </div>
         <div className="grid-container-main">
-          <div className="grid-items bg-bs">
+          <div onClick={() => navigate("/businessStrategies")} className="grid-items bg-bs">
             <div className="info">
               <div className="heading">
                 <h2>Business Strategies</h2>
@@ -164,7 +164,7 @@ function AstroMainChat() {
           </div>
         </div>
         <div className="grid-container-main">
-          <div className="grid-items bg-fp">
+          <div onClick={() => navigate("/financePlanning")} className="grid-items bg-fp">
             <div className="info">
               <div className="heading">
                 <h2>Finance Planning</h2>
@@ -184,7 +184,7 @@ function AstroMainChat() {
           </div>
         </div>
         <div className="grid-container-main">
-          <div className="grid-items bg-la">
+          <div onClick={() => navigate("/legalAdvice")} className="grid-items bg-la">
             <div className="info">
               <div className="heading">
                 <h2>Legal Advice</h2>
@@ -204,7 +204,7 @@ function AstroMainChat() {
           </div>
         </div>
         <div className="grid-container-main">
-          <div className="grid-items bg-rs">
+          <div onClick={() => navigate("/remediesSolutions")} className="grid-items bg-rs">
             <div className="info">
               <div className="heading">
                 <h2>Remedies &amp; Solutions</h2>
@@ -224,7 +224,7 @@ function AstroMainChat() {
           </div>
         </div>
         <div className="grid-container-main">
-          <div className="grid-items bg-kfp">
+          <div onClick={() => navigate("/kidsFortune")} className="grid-items bg-kfp">
             <div className="info">
               <div className="heading">
                 <h2>Kids Fortune Prediction</h2>
@@ -244,7 +244,7 @@ function AstroMainChat() {
           </div>
         </div>
         <div className="grid-container-main">
-          <div className="grid-items bg-pt">
+          <div onClick={() => navigate("/parentingTips")} className="grid-items bg-pt">
             <div className="info">
               <div className="heading">
                 <h2>Parenting Tips</h2>
@@ -264,7 +264,7 @@ function AstroMainChat() {
           </div>
         </div>
         <div className="grid-container-main">
-          <div className="grid-items bg-pa">
+          <div onClick={() => navigate("/panchangAnalysis")} className="grid-items bg-pa">
             <div className="info">
               <div className="heading">
                 <h2>Panchang Analysis</h2>
@@ -284,7 +284,7 @@ function AstroMainChat() {
           </div>
         </div>
         <div className="grid-container-main">
-          <div className="grid-items bg-bci">
+          <div onClick={() => navigate("/birthChart")} className="grid-items bg-bci">
             <div className="info">
               <div className="heading">
                 <h2>Birth Chart Interpretation</h2>
@@ -304,7 +304,7 @@ function AstroMainChat() {
           </div>
         </div>
         <div className="grid-container-main">
-          <div className="grid-items bg-sm">
+          <div onClick={() => navigate("/shubhMuhurat")} className="grid-items bg-sm">
             <div className="info">
               <div className="heading">
                 <h2>Shubh Muhurat</h2>
@@ -324,7 +324,7 @@ function AstroMainChat() {
           </div>
         </div>
         <div className="grid-container-main">
-          <div className="grid-items bg-pp">
+          <div onClick={() => navigate("/personalizedPooja")} className="grid-items bg-pp">
             <div className="info">
               <div className="heading">
                 <h2>Personalized Pooja</h2>
@@ -344,7 +344,7 @@ function AstroMainChat() {
           </div>
         </div>
         <div className="grid-container-main">
-          <div className="grid-items bg-th">
+          <div onClick={() => navigate("/thetaHealing")} className="grid-items bg-th">
             <div className="info">
               <div className="heading">
                 <h2>Theta Healing</h2>
@@ -364,7 +364,7 @@ function AstroMainChat() {
           </div>
         </div>
         <div className="grid-container-main">
-          <div className="grid-items bg-rh">
+          <div onClick={() => navigate("/reikiHealing")} className="grid-items bg-rh">
             <div className="info">
               <div className="heading">
                 <h2>Reiki Healing</h2>
@@ -384,7 +384,7 @@ function AstroMainChat() {
           </div>
         </div>
         <div className="grid-container-main">
-          <div className="grid-items bg-ch">
+          <div onClick={() => navigate("/chakraHealing")} className="grid-items bg-ch">
             <div className="info">
               <div className="heading">
                 <h2>Chakra Healing</h2>
@@ -404,7 +404,7 @@ function AstroMainChat() {
           </div>
         </div>
         <div className="grid-container-main">
-          <div className="grid-items bg-crh">
+          <div onClick={() => navigate("/crystalHealing")} className="grid-items bg-crh">
             <div className="info">
               <div className="heading">
                 <h2>Crystal Healing</h2>
