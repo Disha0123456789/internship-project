@@ -635,13 +635,14 @@ body {
 }
 
 .buttons {
-  border-radius: 15px;
+  border-radius: 0px;
   border-left: 1px white solid;
   border-right: 1px white solid;
   width: 150px;
   color: #fff;
   font-size: 25px;
   height: 58px;
+  padding : 0px;
 }
 .btn-call2 {
   background-color: white;
