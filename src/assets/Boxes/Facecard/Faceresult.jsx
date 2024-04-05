@@ -1,5 +1,8 @@
 import React from "react";
-
+import personalTraitsImage from '../../../../public/2nd-row-reading/personal-traits.png';
+import lifePurposeImage from '../../../../public/2nd-row-reading/life-path-and-purpose.png';
+import relationCompatibilityImage from '../../../../public/2nd-row-reading/relationship compatibility.png';
+import GrowthImage from '../../../../public/2nd-row-reading/growth and development.png';
 function Faceresult() {
   return (
     <div className="face-result-whole">
@@ -8,7 +11,7 @@ function Faceresult() {
         <p className="personal-trait-text">Personal Traits</p>
         <img
           className="personal-trait-icon"
-          src="public\2nd row reading\personal traits.png"
+          src= {personalTraitsImage}
         ></img>
         <hr className="hr-tag"></hr>
       </div>
@@ -16,7 +19,7 @@ function Faceresult() {
         <p className="Life-path-text">Life Path And Purpose</p>
         <img
           className="Life-path-icon"
-          src="public\2nd row reading\life path and purpose.png"
+          src= {lifePurposeImage}
         ></img>
         <hr className="hr-tag"></hr>
       </div>
@@ -24,7 +27,7 @@ function Faceresult() {
         <p className="Relationship-text">Relationship Compatibility</p>
         <img
           className="Relationship-icon"
-          src="public\2nd row reading\relationship compatibility.png"
+          src= {relationCompatibilityImage}
         ></img>
         <hr className="hr-tag"></hr>
       </div>
@@ -32,7 +35,7 @@ function Faceresult() {
         <p className="Growth-text">Growth and Development</p>
         <img
           className="Growth-icon"
-          src="public\2nd row reading\growth and development.png"
+          src= {GrowthImage}
         ></img>
         <hr className="hr-tag"></hr>
       </div>
