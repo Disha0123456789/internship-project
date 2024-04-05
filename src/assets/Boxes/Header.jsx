@@ -5,10 +5,10 @@ import ShoppingCartRoundedIcon from "@mui/icons-material/ShoppingCartRounded";
 import SearchRoundedIcon from "@mui/icons-material/SearchRounded";
 import AccountCircleRoundedIcon from "@mui/icons-material/AccountCircleRounded";
 import NotificationsRoundedIcon from "@mui/icons-material/NotificationsRounded";
-
+import "./Header.css"; 
 function Header() {
   return (
-    <Navbar className="bg-body-tertiary w-screen">
+    <Navbar className="custom-navbar">
       <Container fluid>
         <Navbar.Brand href="#home">
           <img
@@ -28,7 +28,7 @@ function Header() {
               Shopping <ShoppingCartRoundedIcon />
             </Nav.Link>
 
-            <InputGroup className="mb-1 me-3" style={{ width: "310px" }}>
+            <InputGroup className="mb-1 me-3" style={{ width: "300px" }}>
               <Form.Control
                 placeholder="Search Your Divine Connection"
                 aria-label="Search here"
