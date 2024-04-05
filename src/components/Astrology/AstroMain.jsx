@@ -11,18 +11,18 @@ function AstroMain() {
         <IoIosArrowBack onClick={() => navigate("../")} className="backicon" />
         <h1>Astrology</h1>
         <div className="callchat-button">
-          <div
+          <button
             onClick={() => navigate("/AstroMain")}
             className="buttons btn-call1"
           >
             <i className="fa-solid fa-phone"></i> Call
-          </div>
-          <div
+          </button>
+          <button
             onClick={() => navigate("/AstroMainChat")}
             className="buttons"
           >
             <i class="fa-solid fa-comment-dots"></i> Chat
-          </div>
+          </button>
         </div>
       </div>
       <div className="grid-container">
