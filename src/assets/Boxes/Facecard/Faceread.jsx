@@ -22,9 +22,7 @@ function Faceread() {
         <span className="two-face">
           <div
             onClick={handleImageClick}
-            className="card-mt-3 "
-            style={{ width: "18rem", maxHeight: "360px" }}
-          >
+            className="card-mt-3 ">
           <img
             src= {ImageRecognitionLogo}
             alt=""
