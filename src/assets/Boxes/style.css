@@ -83,12 +83,13 @@ input:hover{
 }
 .choose-file{
   margin-top: 20px;
-  margin-right: 0px;
+  margin-bottom:20px;
 }
 .face-input-section {
   display: flex;
   width: 78%;
-  margin-left: 150px;
+  margin-left:auto;
+  margin-right: auto;
   border-radius: 1rem;
   border: solid #D9D9D9;
   background-color: #D9D9D9;
@@ -96,6 +97,7 @@ input:hover{
 .two-face{
   align-items: center;
   justify-content: center;
+  padding: 20px;
 }
 .face-reader{
   background-color: #FDF2F8;
@@ -113,23 +115,27 @@ input:hover{
 }
 .card-mt-3 {
   display: inline-block;
-  vertical-align: middle; /* Aligns with the middle of the adjacent elements */
-  margin: 20px; /* Adjust as needed */
+  vertical-align: middle;
   padding-left: 50px;
+  padding-right: 20px;
+  border-right: 2px solid #000; /* Add a right border */
 }
 
 .face-image-upload {
   display: inline-block;
-  vertical-align: middle; /* Aligns with the middle of the adjacent elements */
-  margin-right: 10px; /* Adjust as needed */
+  vertical-align: middle;
+  margin-right: 10px;
+  padding-left: 20px; /* Add some padding to align properly */
 }
 
 .file-scan-container {
+  width: calc(100% - 60%); /* Adjust the value accordingly */
   display: flex;
-  flex-direction: column; /* Stack the items vertically */
-  padding:50px;
-  justify-content: space-around; /* Align items with space between them */
+  flex-direction: column;
+  padding: 5%;
+  justify-content: space-around;
 }
+
 
 .choose-file {
   /* Styles for choose-file */
@@ -153,7 +159,7 @@ input:hover{
   object-fit: contain;
 }
 div.time:hover{
-  background-color: aquamarine;
+ 
 }
 .time-past{
   display: flex;
@@ -173,7 +179,8 @@ div.time:hover{
   width: 100%;
   background-color: grey;
   object-fit:cover;
-  border-radius: 1rem;
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem ;
 
 }
 .magic-icon{
@@ -181,10 +188,11 @@ div.time:hover{
   width: 100%;
   background-color: grey;
   object-fit:cover;
-  border-radius: 1rem;
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem ;
 }
 .face-text{
-  margin-left: 520px;
+  text-align: center;
   font-size: 30px;
   padding: 10px;
   color: #672F98;
@@ -209,54 +217,41 @@ div.time:hover{
 .face-text-result{
   padding: 30px;
   font-size: 25px;
-  margin-left: 575px;
+  text-align: center;
   color: #672F98;
 }
-.face-result-whole{
-  width: 1400px;
-  height: 2000px;
+.face-result{
+  width: 100vw;
+  height: 100vh;
   background-color: #FDF2F8;
 }
-.Personal-Traits{
-  width: 700px;
-  height: 400px;
-  margin-top: 40px;
-  margin-left: 350px;
-  background-color: white;
-  border-radius: 1rem;
+.face-result-whole{
+  width: 100vw;
+  height: 100%;
+  background-color: #FDF2F8;
 }
-.Life-Path{
-  width: 700px;
-  height: 400px;
-  margin-top: 40px;
-  margin-left: 350px;
-  background-color: white;
-  border-radius: 1rem;
-}
-.Relationship{
-  width: 700px;
-  height: 400px;
-  margin-top: 40px;
-  margin-left: 350px;
-  background-color: white;
-  border-radius: 1rem;
-}
+.Personal-Traits,
+.Life-Path,
+.Relationship,
 .Growth{
-  width: 700px;
-  height: 400px;
+  width: 70%;
+  min-height: 300px;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 40px;
-  margin-left: 350px;
   background-color: white;
-  border-radius: 1rem;;
+  border-radius: 1rem;
 }
 .personal-trait-text{
   font-size: 30px;
-  margin-left: 250px;
+  padding-top: 10px;
+  text-align: center;
 }
 .personal-trait-icon{
   width: 60px;
   height: 50px;
-  margin-left: 310px;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 10px;
   object-fit: contain;
 }
@@ -265,12 +260,14 @@ div.time:hover{
 }
 .Life-path-text{
   font-size: 30px;
-  margin-left: 200px;
+  padding-top: 10px;
+  text-align: center;
 }
 .Life-path-icon{
-  width: 70px;
-  height: 60px;
-  margin-left: 310px;
+  width: 60px;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 10px;
   object-fit: contain;
 }
@@ -279,12 +276,14 @@ div.time:hover{
 }
 .Relationship-text{
   font-size: 30px;
-  margin-left: 200px;
+  padding-top: 10px;
+  text-align: center;
 }
 .Relationship-icon{
-  width: 70px;
-  height: 60px;
-  margin-left: 310px;
+  width: 60px;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 10px;
   object-fit: contain;
 }
@@ -293,29 +292,31 @@ div.time:hover{
 }
 .Growth-text{
   font-size: 30px;
-  margin-left: 200px;
+  padding-top: 10px;
+  text-align: center;
 }
 .Growth-icon{
-  width: 70px;
-  height: 60px;
-  margin-left: 310px;
+  width: 60px;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 10px;
   object-fit: contain;
 }
 .Time-magic-pic{
-  width: 500px;
-  height: 300px;
-  margin-top: 40px;
-  margin-left: 370px;
-  background-color: white;
+  margin-top: 5%;
+  display: flex;
+  width: 100%;
+  height: 50%;
   border-radius: 1rem;
-
+  justify-content: center;
 }
 .Know-past{
-  width: 900px;
-  height: 1000px;
+  width: 60%;
+  height: 80%;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 40px;
-  margin-left: 280px;
   background-color: white;
   border-radius: 1rem; 
 }
@@ -341,3 +342,15 @@ div.time:hover{
   margin-left: 900px;
 }
 
+.palm-input-section {
+  display: flex;
+  width: 78%;
+  height: 60%;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 40px;             
+  border-radius: 1rem;
+  border: solid #D9D9D9;
+  background-color: #D9D9D9;
+}
