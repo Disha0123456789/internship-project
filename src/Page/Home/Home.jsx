@@ -4,10 +4,10 @@ import Header from "../../assets/Boxes/Header"
 import Hero from "../../components/Hero"
 import Carousel from "../../components/carousel/Carousel"
 import NewFutureBox from "../../components/FutureBox/NewFutureBox"
+import './Home.css';
 
 const Home = () => {
   return (
-    <Container>
       <div className="App">
         <Header />
         <Hero />
@@ -15,8 +15,8 @@ const Home = () => {
         <NewFutureBox />
         <FutureBoxes />
       </div>
-    </Container>
   )
 }
 
 export default Home
+
