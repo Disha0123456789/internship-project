@@ -40,39 +40,38 @@ const Carousel = () => {
     setCurrentIndex(slideIndex)
   }
   return (
-    <>
-      <div className="max-w-[1400px] h-[300px] md:h-[600px] w-full m-auto mb-8 py-14 px-4 relative group">
+    <div className="max-w-[1350px] h-[540px] w-full m-auto mb-8 px-4 relative group">
+    <div
+      style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
+      className="w-full h-[500px] rounded-2xl bg-center bg-cover duration-500"
+    ></div>
+    {/* Left Arrow */}
+    <div className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
+      <BsChevronCompactLeft
+        onClick={prevSlide}
+        size={30}
+      />
+    </div>
+    {/* Right Arrow */}
+    <div className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
+      <BsChevronCompactRight
+        onClick={nextSlide}
+        size={30}
+      />
+    </div>
+    <div className="flex justify-center absolute bottom-0 left-0 right-0 py-2">
+      {slides.map((slide, slideIndex) => (
         <div
-          style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
-          className="w-full h-full rounded-2xl bg-center bg-cover duration-500"
-        ></div>
-        {/* Left Arrow */}
-        <div className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
-          <BsChevronCompactLeft
-            onClick={prevSlide}
-            size={30}
-          />
+          key={slideIndex}
+          onClick={() => goToSlide(slideIndex)}
+          className="text-2xl cursor-pointer"
+        >
+          <RxDotFilled />
         </div>
-        {/* Right Arrow */}
-        <div className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
-          <BsChevronCompactRight
-            onClick={nextSlide}
-            size={30}
-          />
-        </div>
-        <div className="flex top-4 justify-center py-2">
-          {slides.map((slide, slideIndex) => (
-            <div
-              key={slideIndex}
-              onClick={() => goToSlide(slideIndex)}
-              className="text-2xl cursor-pointer"
-            >
-              <RxDotFilled />
-            </div>
-          ))}
-        </div>
-      </div>
-    </>
+      ))}
+    </div>
+  </div>
+  
   )
 }
 
