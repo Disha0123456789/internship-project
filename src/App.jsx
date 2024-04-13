@@ -2,6 +2,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Home from "./Page/Home/Home";
 
+//Todays Luck
+import TodaysLuck from "./components/TodaysLuck/TodaysLuck.js
+
 //Horoscope
 
 //Kundli
@@ -106,6 +109,9 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
+
+        {/* Todays Luck*/}
+        <Route path="/todays_luck" element={<TodaysLuck />} />
 
         {/* HoroScope Kundli FortuneWheel LoveCheck*/}
         <Route path="/Fortune_Wheel" element={<FortuneWheel />} />
