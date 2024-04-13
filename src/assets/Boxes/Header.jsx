@@ -21,7 +21,7 @@ function Header() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
-            <Nav.Link href="#home" className="me-3">
+            <Nav.Link onClick={() => navigate("/tarot_reading")} className="me-3">
               Todays Luck <CasinoRoundedIcon />
             </Nav.Link>
             <Nav.Link href="#link" className="me-3">
