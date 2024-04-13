@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./Page/Home/Home";
 
 //Todays Luck
-import TodaysLuck from "./components/TodaysLuck/TodaysLuck.js
+import TodaysLuck from "./components/TodaysLuck/TodaysLuck.js";
 
 //Horoscope
 
