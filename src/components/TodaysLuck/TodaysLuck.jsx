@@ -90,11 +90,11 @@ class App extends Component{
     const {val,text}=this.state
 
     return(
-      <div className='card'>
+      <div className='container-card'>
         
-        {val? <h1 className='text'>{text}</h1>:<h1 className='text'>Tap the box</h1>}
-        {val? <Lottie  className='img' animationData={obox}/>:<Lottie onClick={this.changeImg1} className='img' animationData={cbox}/>}
-        {val && <button onClick={this.changeImg} className='btn'>Retry</button>}
+        {val? <h1 className='quote-text'>{text}</h1>:<h1 className='quote-text'>Tap the box</h1>}
+        {val? <Lottie  className='lottie-img' animationData={obox}/>:<Lottie onClick={this.changeImg1} className='lottie-img' animationData={cbox}/>}
+        {val &&(<button onClick={this.changeImg} className='retry-btn'>Retry</button>)}
       </div>
     )
   }
