@@ -1,6 +1,6 @@
 import React from 'react'
 
-import './App.css'
+import './TodaysLuck.css'
 
 import { Component } from 'react'
 
