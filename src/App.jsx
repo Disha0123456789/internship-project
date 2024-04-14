@@ -7,7 +7,7 @@ import TodaysLuck from "./components/TodaysLuck/TodaysLuck";
 
 //Horoscope
 import Horoscope from "./components/Horoscope/Horoscope";
-import Home from "./components/Horoscope/Pages/Home";
+import HoroscopeHome from "./components/Horoscope/Pages/Home";
 import CardImage from "./components/Horoscope/Pages/CardImage";
 import Gemini from "./components/Horoscope/Pages/Gemini";
 import Content from "./components/Horoscope/Pages/Content";
