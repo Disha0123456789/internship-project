@@ -1,0 +1,164 @@
+
+.card {
+  width:70%;
+  margin: auto;
+  margin-top: 40px;
+  background-color: rgb(190, 195, 196);
+  border-radius: 31px;
+  background: #FDF2F8;
+  box-shadow:  6px 6px 12px #b3b3b3,-6px -6px 12px #ffffff;
+  box-sizing: border-box;
+}
+
+.img-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr); /* 6 columns */
+  grid-template-rows: repeat(2, auto); /* 2 rows */
+  grid-row-gap: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 40px;
+  padding-top: 40px;
+}
+.img-ring {
+  border-radius: 50%;
+  border: 2px solid;
+  padding-left: 3%;
+  position: relative;
+  padding-right: 3%;
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+
+.card-image {
+  top: 0;
+  left: 0;
+  width: 70%;
+  height: auto; /* or specify a fixed height that maintains the aspect ratio */
+  object-fit: contain; /* or 'cover' depending on your preference */
+}
+
+
+.card-image:nth-child(2) {
+  position: absolute;
+  left: 275px
+
+}
+
+.Heading{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 10%;
+  color: purple;
+  
+}  
+.Heading h3{
+  font-size: clamp(2rem, 2vw, 1rem);
+  
+}
+.horigental-line{
+  width: 95%;
+  border: 1px solid;
+  
+}
+
+
+.mycard{
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.img-name{
+  position:relative;
+  text-align: center;
+  font-weight:500;
+  margin-top: 10px;
+}
+.Gemini-container{
+  padding: auto;
+}
+.Gemini-card {
+  width:1018px;
+  height: 550px;
+  margin: auto;
+  margin-top: 90px;
+  background-color: #FDF2F8;
+  border-radius: 31px;
+  
+  box-shadow:  6px 6px 12px #b3b3b3,-6px -6px 12px #ffffff;
+  padding: 20px;
+  box-sizing: border-box;
+}
+span{
+  font-size: large;
+  font-weight:600;
+  
+}
+
+.Gemini-Hori_line{
+  width: 93%;
+  border: 1px solid;
+  
+}
+.Gemini-Box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  
+}
+
+
+.Gemini-1{
+  width: 300px;
+  height: 50px;
+  border: 2px solid;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding: 0px;
+  align-items: center;
+  
+  
+  
+}
+.Gemini-2{
+  width: 300px;
+  height: 50px;
+  border: 2px solid;
+  align-items: center;
+
+ 
+  
+  
+}
+.Gemini-3{
+  width: 300px;
+  height: 50px;
+  border: 2px solid;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 0px;
+  align-items: center;
+
+  
+  
+}
+
+.Content{
+  width: 900px;
+  border: 2px solid;
+  padding: 1px;
+  
+}
+.Content-Box{
+  width: 90%;
+  margin: auto;
+  
+  
+} 
+
+/* ----------------- */
