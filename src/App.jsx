@@ -6,7 +6,11 @@ import Home from "./Page/Home/Home";
 import TodaysLuck from "./components/TodaysLuck/TodaysLuck";
 
 //Horoscope
-
+import Horoscope from "./components/Horoscope/Horoscope";
+import Home from "./components/Horoscope/Pages/Home";
+import CardImage from "./components/Horoscope/Pages/CardImage";
+import Gemini from "./components/Horoscope/Pages/Gemini";
+import Content from "./components/Horoscope/Pages/Content";
 //Kundli
 
 //Fortune Wheel
@@ -114,6 +118,7 @@ function App() {
         <Route path="/todays_luck" element={<TodaysLuck />} />
 
         {/* HoroScope Kundli FortuneWheel LoveCheck*/}
+        <Route path="/horoscope" element={<Horoscope />} />
         <Route path="/Fortune_Wheel" element={<FortuneWheel />} />
         <Route path="/love_check" element={<LoveCheck />} />
 
