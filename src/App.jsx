@@ -5,6 +5,11 @@ import Home from "./Page/Home/Home";
 //Todays Luck
 import TodaysLuck from "./components/TodaysLuck/TodaysLuck";
 
+//Shopping
+
+//Login And Registration
+import Register from "./Page/Registration-Login/Register";
+
 //Horoscope
 import Horoscope from "./components/Horoscope/Horoscope";
 import HoroscopeHome from "./components/Horoscope/Pages/Home";
@@ -116,7 +121,8 @@ function App() {
 
         {/* Todays Luck*/}
         <Route path="/todays_luck" element={<TodaysLuck />} />
-
+        <Route path="/registration_page" element={<Register />} />
+      
         {/* HoroScope Kundli FortuneWheel LoveCheck*/}
         <Route path="/horoscope" element={<HoroscopeHome />} />
         {/* <Route path="/horoscopehome" element={<HoroscopeHome />} />  */}
