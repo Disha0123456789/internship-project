@@ -1,4 +1,7 @@
-
+.horoscope-container{
+  width : 100%;
+  height : 100%;
+}
 .horoscope-card {
   width:70%;
   margin: auto;
