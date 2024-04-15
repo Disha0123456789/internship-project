@@ -12,6 +12,7 @@ import IMAGES9 from '../images/sagittarius.png';
 import IMAGES8 from '../images/scorpion.png';
 import IMAGES2 from '../images/taurus.png';
 import IMAGES6 from '../images/virgo.png';
+import '../Horoscope.css';
 function Home() {
   const urls = [
     'http://localhost:3000/gemini?rasi=Aries',
