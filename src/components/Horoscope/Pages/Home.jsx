@@ -62,7 +62,7 @@ function Home() {
   return (
     <div className  = 'horoscope-container'>
       <div className='horoscope-card'>
-        <div className='Head-Text'>
+        <div className='Head-horo'>
           <h1 >
           Horoscope
           </h1>
