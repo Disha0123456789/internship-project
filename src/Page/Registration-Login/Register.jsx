@@ -8,7 +8,7 @@ import { Link } from "react-router-dom"
 
 export default function Register() {
     return (
-        <div>
+        <div className="Register-Page">
             <div className='Register'>
                 <img src={logo} alt='logo' className='logo' />
                 <div> <h1>Register here</h1><br></br>
