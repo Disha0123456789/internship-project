@@ -1,5 +1,5 @@
 
-.card {
+.horoscope-card {
   width:70%;
   margin: auto;
   margin-top: 40px;
@@ -10,7 +10,7 @@
   box-sizing: border-box;
 }
 
-.img-container {
+.horo-img-container {
   display: grid;
   grid-template-columns: repeat(6, 1fr); /* 6 columns */
   grid-template-rows: repeat(2, auto); /* 2 rows */
@@ -45,7 +45,7 @@
 
 }
 
-.Heading{
+.horoscope-Heading{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -54,7 +54,7 @@
   color: purple;
   
 }  
-.Heading h3{
+.horoscope-Heading h3{
   font-size: clamp(2rem, 2vw, 1rem);
   
 }
