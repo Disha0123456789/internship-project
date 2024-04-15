@@ -5,7 +5,7 @@
 .horoscope-card {
   width:70%;
   margin: auto;
-  margin-top: 40px;
+  margin-top: 6%;
   background-color: rgb(190, 195, 196);
   border-radius: 31px;
   background: #FDF2F8;
@@ -87,7 +87,7 @@
   width:1018px;
   height: 550px;
   margin: auto;
-  margin-top: 90px;
+  margin-top: 6%;
   background-color: #FDF2F8;
   border-radius: 31px;
   
