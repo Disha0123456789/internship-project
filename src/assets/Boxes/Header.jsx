@@ -41,7 +41,7 @@ function Header() {
               </InputGroup.Text>
             </InputGroup>
 
-            <Nav.Link href="#home" className="me-3">
+            <Nav.Link onClick={() => navigate("/registration_page")} className="me-3">
               Login/Registration
             </Nav.Link>
             <Nav.Link href="#link" className="me-3">
