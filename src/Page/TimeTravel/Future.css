@@ -17,7 +17,7 @@
 
 .Head-Text h1{
   font-size: clamp(2.5rem, 4vw, 3rem);
-  margin-bottom: 20px;
+  padding: 3%;
 }
 
 .Head-Text{
