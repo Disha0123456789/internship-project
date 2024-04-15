@@ -118,8 +118,8 @@ function App() {
         <Route path="/todays_luck" element={<TodaysLuck />} />
 
         {/* HoroScope Kundli FortuneWheel LoveCheck*/}
-        <Route path="/horoscope" element={<Horoscope />} />
-        <Route path="/horoscopehome" element={<HoroscopeHome />} />
+        <Route path="/horoscope" element={<HoroscopeHome />} />
+        {/* <Route path="/horoscopehome" element={<HoroscopeHome />} />  */}
         <Route path="/cardImage" element={<CardImage />} />
         <Route path="/gemini" element={<Gemini />} />
         <Route path="/content" element={<Content />} />
