@@ -60,6 +60,7 @@ function Home() {
 
 
   return (
+    <div className  = 'horoscope-container'>
       <div className='horoscope-card'>
         <div className='horoscope-Heading'><h3 >
           Horoscope
@@ -73,7 +74,7 @@ function Home() {
         }
         </div>
       </div>
-
+    </div>
   );
 }
 
