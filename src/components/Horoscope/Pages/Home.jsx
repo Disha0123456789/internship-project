@@ -60,26 +60,20 @@ function Home() {
 
 
   return (
-
-    <div className='container'>
-      <div className='card'>
-        <div className='Heading'><h3 >
+      <div className='horoscope-card'>
+        <div className='horoscope-Heading'><h3 >
           Horoscope
         </h3>
         </div>
 
         <hr className='horigental-line'></hr>
-        <div className='img-container'>
+        <div className='horo-img-container'>
         {
           urls.map((i,index)=><CardImage myLink={urls[index]} imagUrl={imgs[index]} name={names[index]} />)
         }
         </div>
       </div>
-      
 
-    </div>
-    
-   
   );
 }
 
