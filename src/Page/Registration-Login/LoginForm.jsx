@@ -1,5 +1,5 @@
 import React from 'react'
-import '../loginForm/LoginForm.css'
+import './LoginForm.css'
 import google from './images/google-icon.png'
 import facebook from './images/facebook-icon.png'
 import logo from './images/logo.png'
