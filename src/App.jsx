@@ -8,6 +8,7 @@ import TodaysLuck from "./components/TodaysLuck/TodaysLuck";
 //Shopping
 
 //Login And Registration
+import LoginPage from "./Page/Registration-Login/LoginForm";
 import Register from "./Page/Registration-Login/Register";
 
 //Horoscope
@@ -121,6 +122,7 @@ function App() {
 
         {/* Todays Luck*/}
         <Route path="/todays_luck" element={<TodaysLuck />} />
+        <Route path="/login_page" element={<LoginPage />} />
         <Route path="/registration_page" element={<Register />} />
       
         {/* HoroScope Kundli FortuneWheel LoveCheck*/}
