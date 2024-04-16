@@ -64,7 +64,7 @@ export default function Register() {
                     <div class="form-row-last">
                         <input type="submit" id='submit' value="Register" />
                         </div>
-                            <p className='login-text'><pre>Already have an account ?   </pre><a onClick={() => navigate("/login_page")} >Login</a></p>
+                            <p className='login-text'><pre>Already have an account ?  </pre><Link to="/login_page">Login</Link></p>
                             <div className='login-text-two'>
                                 <hr />
                                 <p>or Signup With</p>
