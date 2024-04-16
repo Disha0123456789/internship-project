@@ -61,7 +61,7 @@ export default function Register() {
                     </div>
 
                     <div class="form-row-last">
-                        <input type="submit" value="Register" />
+                        <input type="submit" id='submit' value="Register" />
                         </div>
                             <p className='login-text'><pre>Already have an account ?   </pre><a href='/'>Login</a></p>
                             <div className='login-text-two'>
