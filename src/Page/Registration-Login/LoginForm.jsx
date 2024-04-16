@@ -1,9 +1,11 @@
 import React from 'react'
 import '../loginForm/LoginForm.css'
-import google from '../../images/google-icon.png'
-import facebook from '../../images/facebook-icon.png'
-import logo from '../../images/logo.png'
+import google from './images/google-icon.png'
+import facebook from './images/facebook-icon.png'
+import logo from './images/logo.png'
+import { useNavigate } from "react-router-dom";  
 function LoginForm() {
+  const navigate = useNavigate();
   return (
     <div id='login-main'>
       <div id='login-container'>
