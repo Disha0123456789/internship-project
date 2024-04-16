@@ -4,9 +4,10 @@ import gIcon from "./images/google-color-icon.png";
 import fIcon from "./images/facebook-app-round-icon.png";
 import "./Register.css";
 import { Link } from "react-router-dom"
-
+import { useNavigate } from "react-router-dom";  
 
 export default function Register() {
+      const navigate = useNavigate();
     return (
         <div className="Register-Page">
             <div className='Register'>
