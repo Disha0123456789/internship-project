@@ -3,6 +3,7 @@ import './LoginForm.css'
 import google from './images/google-icon.png'
 import facebook from './images/facebook-icon.png'
 import logo from './images/logo.png'
+import { Link } from 'react-router-dom';
 import { useNavigate } from "react-router-dom";  
 function LoginForm() {
   const navigate = useNavigate();
@@ -32,7 +33,7 @@ function LoginForm() {
             </div>
             <div className='flex-div'>
               <button type='submit' id='submit'>Login</button>
-              <p className='Register-link'>Don't have an account? <a onClick={() => navigate("/registration_page")}>Register</a></p>
+              <p className='Register-link'>Don't have an account? <Link to="/registration_page">Register</Link></p>
             </div>
           </form>
           <div className='login-with'>
