@@ -107,6 +107,21 @@ h3{
     text-align: start;
     font-family:Arial, Helvetica, sans-serif;
 }
+.login-with{
+    width:100%;
+}
+.login-with-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+hr{
+    width: 15%;
+    border: 1px solid;
+    margin: 5px;
+}
+
 #icons{
     display: flex;
     justify-content: center;
