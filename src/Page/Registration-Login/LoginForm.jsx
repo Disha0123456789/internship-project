@@ -32,7 +32,7 @@ function LoginForm() {
             </div>
             <div className='flex-div'>
               <button type='submit' id='submit'>Login</button>
-              <p className='Register-link'>Don't have an account? <a href="">Register</a></p>
+              <p className='Register-link'>Don't have an account? <a onClick={() => navigate("/registration_page")}>Register</a></p>
             </div>
           </form>
           <div className='login-with'>
