@@ -12,7 +12,7 @@ import LoginPage from "./Page/Registration-Login/LoginForm";
 import Register from "./Page/Registration-Login/Register";
 
 //Account Page
-import AccountPage from "./page/AccountPage/AccountPage";
+import AccountPage from "./Page/AccountPage/AccountPage";
 //Horoscope
 import Horoscope from "./components/Horoscope/Horoscope";
 import HoroscopeHome from "./components/Horoscope/Pages/Home";
