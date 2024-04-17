@@ -49,7 +49,7 @@ const Form = () => {
           <label htmlFor="name" className="label">
             NAME:-
           </label>
-          <input type="text" disabled={state} />
+          <input type="text" className="Account-input" disabled={state} />
         </div>
         <div className="change">
           <label htmlFor="contact" className="label">
@@ -65,15 +65,15 @@ const Form = () => {
         </div>
         <div className="change">
         <label htmlFor="otp" className='label'>OTP :-</label>
-         <input type="number"disabled={state}  />
+         <input type="number" className="Account-input" disabled={state}  />
         </div>
         <div className="change">
         <label htmlFor="E-mail" className='label'>E-Mail :-</label>
-        <input type="email" name="" id="" disabled={state}/>
+        <input type="email" className="Account-input" name="" id="" disabled={state}/>
         </div>
         <div className="change">
         <label htmlFor="date" className='label'>Date Of Birth :-</label>
-        <input type="date" name="" id=""disabled={state} />
+        <input type="date" className="Account-input" name="" id=""disabled={state} />
         </div>
         
         <div className="change">
@@ -88,8 +88,8 @@ const Form = () => {
         </div>
         <div className="change">
         <label htmlFor="gender" className='label'>Gender</label>&nbsp;
-        <input type="radio" name="gender" id="" disabled={state}/>  Male
-            <input type="radio" name="gender" id="" disabled={state} /> female
+        <input type="radio" className="Account-input" name="gender" id="" disabled={state}/>  Male
+            <input type="radio" className="Account-input" name="gender" id="" disabled={state} /> female
         </div>
         <div className="change">
           <button type="button" className='saveNedit' onClick={saveDetails}>Save</button>
