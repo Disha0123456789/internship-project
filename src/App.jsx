@@ -22,7 +22,7 @@ import Content from "./components/Horoscope/Pages/Content";
 //Kundli
 
 //Fortune Wheel
-import FortuneWheel from "./components/wheel/FortuneWheel";
+import FortuneWheel from "./components/FortuneWheel/FortuneWheel";
 
 //Love Check
 import LoveCheck from "./components/LoveCheck/LoveCheck";
@@ -133,6 +133,7 @@ function App() {
         <Route path="/cardImage" element={<CardImage />} />
         <Route path="/gemini" element={<Gemini />} />
         <Route path="/content" element={<Content />} />
+        
         <Route path="/Fortune_Wheel" element={<FortuneWheel />} />
         <Route path="/love_check" element={<LoveCheck />} />
 
