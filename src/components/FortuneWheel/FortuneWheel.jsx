@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import WheelComponent from "./WheelComponent";
-import "./App.css";
+import "./Wheel.css";
 
 function FortuneWheel() {
   const segments = ["Red", "Green", "White", "Orange", "Blue", "Violet", "Black", "Yellow"];
@@ -49,7 +49,7 @@ function FortuneWheel() {
   };
 
   return (
-    <div>
+    <div className="wheel-container">
       <div id="wheelCircle">
         <WheelComponent
           segments={segments}
