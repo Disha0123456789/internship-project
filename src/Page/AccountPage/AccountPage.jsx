@@ -92,8 +92,8 @@ const Form = () => {
             <input type="radio" name="gender" id="" disabled={state} /> feMale
         </div>
         <div className="change">
-          <button onClick={saveDetails}>Save</button>
-          <button onClick={editDetails}>Edit</button>
+          <button type="submit" className='saveNedit' onClick={saveDetails}>Save</button>
+          <button type="submit" className='saveNedit' onClick={editDetails}>Edit</button>
         </div>
       </form>
     </div>
