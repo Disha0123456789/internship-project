@@ -23,7 +23,7 @@ margin-right: 200px;
     border:none;
     border-bottom: 1px solid black;
     outline: none;
-    margin-left: 2%;
+    margin-left: 2% !important;
 }
 .change{
     padding: 20px;
@@ -31,10 +31,8 @@ margin-right: 200px;
     display: flex;
 }
 .saveNedit{
-    margin-right: 20%;
     margin-top: 50px;
     width: 150px;
-    padding: 7px;
     background-color: purple !important;
     color: white;
     height: 40px;
