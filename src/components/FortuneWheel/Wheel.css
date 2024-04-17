@@ -8,18 +8,19 @@
   justify-content: center;
 }
 .popup {
-  position:absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: rgba(255, 255, 255, 0.9);
-  border: 2px solid goldenrod;
-  border-radius: 10px;
-  padding: 20px;
-  max-width: 80%;
-  max-height: 50%;
-  overflow-y: auto;
-  z-index: 999;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #ffffffe6;
+    border: 2px solid goldenrod;
+    border-radius: 10px;
+    padding: 10px;
+    max-width: 100%;
+    max-height: 50%;
+    overflow-y: auto;
+    z-index: 999;
+    width: 100%;
 }
 
 .popup-content {
