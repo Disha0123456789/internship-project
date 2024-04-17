@@ -27,6 +27,7 @@ margin-right: 200px;
     padding: 20px;
     margin-left: 70px;
     display: flex;
+    align-items: center;
 }
 .saveNedit{
     margin-top: 20px;
