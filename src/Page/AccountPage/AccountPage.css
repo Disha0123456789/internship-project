@@ -46,6 +46,8 @@ margin-right: 200px;
     margin: 20px;
     color: purple;
     margin-left: 70px;
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 .react-select-container {
     width: 100px; /* Set the width of the select option */
