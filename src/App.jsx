@@ -11,6 +11,8 @@ import TodaysLuck from "./components/TodaysLuck/TodaysLuck";
 import LoginPage from "./Page/Registration-Login/LoginForm";
 import Register from "./Page/Registration-Login/Register";
 
+//Account Page
+import AccountPage from "./page/AccountPage/AccountPage";
 //Horoscope
 import Horoscope from "./components/Horoscope/Horoscope";
 import HoroscopeHome from "./components/Horoscope/Pages/Home";
@@ -124,7 +126,7 @@ function App() {
         <Route path="/todays_luck" element={<TodaysLuck />} />
         <Route path="/login_page" element={<LoginPage />} />
         <Route path="/registration_page" element={<Register />} />
-      
+        <Route path="/account_page" element={<AccountPage />} />
         {/* HoroScope Kundli FortuneWheel LoveCheck*/}
         <Route path="/horoscope" element={<HoroscopeHome />} />
         {/* <Route path="/horoscopehome" element={<HoroscopeHome />} />  */}
