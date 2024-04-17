@@ -34,7 +34,7 @@ const Hero = () => {
           </div>
         </div>
 
-        <div class="text-center gap-2 h-50 flex items-center  bg-gradient-to-tr from-purple-300 to-blue-300 p-8 rounded-xl">
+        <div onClick={() => navigate("/Fortune_Wheel")} class="text-center gap-2 h-50 flex items-center  bg-gradient-to-tr from-purple-300 to-blue-300 p-8 rounded-xl">
           <div class="mt-3 cursor-pointer">
             <h3 class="text-2xl font-semibold text-gray-800 ">Fortune wheel</h3>
           </div>
