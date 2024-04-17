@@ -3,8 +3,8 @@ import Select from 'react-select';
 import './AccountPage.css';
 import code from './code.json';
 import dummy from './dummy.json';
-import divineLogo from '../images/divine logo vertical.png';
-import logoBackground from '../images/pink_design_cutout.png';
+import divineLogo from './images/divine logo vertical.png';
+import logoBackground from './images/pink_design_cutout.png';
 const Form = () => {
   const [state, setState] = useState(false);
   const [city, setCity] = useState('');
