@@ -1,0 +1,65 @@
+.Account-page{
+    display: flex;
+}
+.Account-page-image{
+    height: 100vh;
+    width: 40%;
+    display: flex;
+    align-items: center;
+}
+.Account-page-details{
+    width: 60%;
+}
+form{
+
+
+width: 600px;
+margin-right: 200px;
+
+}
+ input{
+    border:none;
+    border-bottom: 1px solid black;
+    outline: none;
+    margin-left: 2%;
+}
+.change{
+    padding: 20px;
+    margin-left: 70px;
+    display: flex;
+}
+button{
+    margin-right: 20%;
+    margin-top: 50px;
+    width: 150px;
+    padding: 7px;
+    background-color: purple;
+    color: white;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+h3{
+    padding: 20px;
+    margin: 20px;
+    color: purple;
+    margin-left: 70px;
+}
+.react-select-container {
+    width: 100px; /* Set the width of the select option */
+    display: inline-block;
+    margin-left: 2%; /* Display it inline with the number input */
+}
+  
+  /* Style for the number input */
+.number-input {
+    width: calc(100% - 60%); /* Adjust the width of the number input */
+    margin-left: 10px; /* Add some margin between the select and the input */
+}
+.react-select-city{
+    width: 200px; /* Set the width of the select option */
+    display: inline-block;
+    margin-left: 2%;
+}
