@@ -44,7 +44,7 @@ function Header() {
             <Nav.Link onClick={() => navigate("/login_page")} className="me-3">
               Login/Registration
             </Nav.Link>
-            <Nav.Link href="#link" className="me-3">
+            <Nav.Link onClick={() => navigate("/account_page")} className="me-3">
               <AccountCircleRoundedIcon />
             </Nav.Link>
             <Nav.Link href="#link" className="me-3">
