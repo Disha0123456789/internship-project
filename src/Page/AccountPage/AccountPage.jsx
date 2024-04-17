@@ -89,7 +89,7 @@ const Form = () => {
         <div className="change">
         <label htmlFor="gender" className='label'>Gender</label>&nbsp;
         <input type="radio" name="gender" id="" disabled={state}/>  Male
-            <input type="radio" name="gender" id="" disabled={state} /> feMale
+            <input type="radio" name="gender" id="" disabled={state} /> female
         </div>
         <div className="change">
           <button type="button" className='saveNedit' onClick={saveDetails}>Save</button>
