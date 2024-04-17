@@ -43,7 +43,7 @@ const Form = () => {
         />
     </div>
     <div className='Account-page-details'>
-      <h3>Create Your Account With Divin Connection</h3>
+      <div className="account-title">Create Your Account With Divin Connection</div>
       <form className="form">
         <div className="change">
           <label htmlFor="name" className="label">
