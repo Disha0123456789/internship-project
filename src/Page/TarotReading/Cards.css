@@ -194,7 +194,7 @@ button{
     border-radius: 20px;
     height: 35%;
 
-    background: url("./IMGS/red result background.jpg");
+    background: url("/IMGS/red result background.jpg");
     background-position: center;
     background-size: cover;
     display: flex;
