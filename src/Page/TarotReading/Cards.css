@@ -217,20 +217,20 @@ button{
     object-fit: cover;
     object-position: center;
 }
-.result-info{
+.tarot-result-info{
     padding: 0 20px;
    
 }
-.result-info p:first-child{
+.tarot-result-info p:first-child{
     font-weight: 700;
     font-size: clamp(1rem, 2.5vw, 1.5rem);
 }
-.result-info p{
+.tarot-result-info p{
     font-size: clamp(0.8rem, 2.5vw, 1.2rem);
     text-align: left;
     
 }
-.result-info h3{
+.tarot-result-info h3{
     font-weight: 500;
     font-size: clamp(1rem, 2.5vw, 1.5rem);
 }
