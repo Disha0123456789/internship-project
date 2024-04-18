@@ -1,4 +1,4 @@
-//Task-2
+//task-2
 import React from 'react'
 import logo from "./images/divine logo vertical.png";
 import gIcon from "./images/google-color-icon.png";
