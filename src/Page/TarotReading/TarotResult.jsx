@@ -9,16 +9,16 @@ const TarotResult = () => {
   console.log("no");
   return (
     <div className="Result-Tarot">
-      <div className="result-card">
+      <div className="result-tarot-card">
         <div className="tarot-head">
           <h1>{loc.state.heads}</h1>
         </div>
-        <div className="card-image">
+        <div className="tarot-card-image">
           <img src={IMG} alt="" />
           <h3>{loc.state.cardhead[loc.state.card]}</h3>
         </div>
-        <div className="result-info">
-          <div className="info">
+        <div className="tarot-result-info">
+          <div className="tarot-info">
             <p>{loc.state.cardtext[loc.state.card][0]}</p>
             <br />
             <p>{loc.state.cardtext[loc.state.card][1]}</p>
