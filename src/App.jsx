@@ -125,6 +125,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
 
+        <Route path="/UserBirthInput" element={<UserBirthInput />} />
         {/* Todays Luck*/}
         <Route path="/todays_luck" element={<TodaysLuck />} />
         <Route path="/login_page" element={<LoginPage />} />
