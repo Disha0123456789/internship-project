@@ -2,6 +2,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Home from "./Page/Home/Home";
 
+//User Birth Input
+import UserBirthInput from "./Page/UserBirthInput/UserBirthInput";
+
 //Todays Luck
 import TodaysLuck from "./components/TodaysLuck/TodaysLuck";
 
