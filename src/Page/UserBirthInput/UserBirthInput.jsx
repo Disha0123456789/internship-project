@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Select from 'react-select';
 //import code from './code.json';
 import dummy from './form/dummy.json';
+import './UserBirthInput.css';
 const UserBirthInput = () =>{
     const [state, setState] = useState(false);
     const [city, setCity] = useState('');
