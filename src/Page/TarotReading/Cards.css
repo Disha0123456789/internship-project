@@ -177,7 +177,7 @@ button{
     justify-content: center;
 
 }
-.result-card{
+.tarot-result-card{
 
     margin: 2vw;
     width: 60%;
@@ -189,12 +189,12 @@ button{
     font-size: clamp(2.5rem, 5vw, 3rem);
     color:purple;
 }
-.card-image{
+.tarot-card-image{
     margin: auto;
     border-radius: 20px;
     height: 35%;
 
-    background: url("./IMGS/red result background.jpg");
+    background: url("/IMGS/red result background.jpg");
     background-position: center;
     background-size: cover;
     display: flex;
@@ -205,32 +205,32 @@ button{
     margin-bottom: 20px;
 
 }
-.card-image h3{
+.tarot-card-image h3{
     font-size: clamp(1.5rem, 4vw, 2rem);
     font-weight: 500;
     
 }
-.card-image img{
+.tarot-card-image img{
     
     width: 10vw;
     height: 12.5vw;
     object-fit: cover;
     object-position: center;
 }
-.result-info{
+.tarot-result-info{
     padding: 0 20px;
    
 }
-.result-info p:first-child{
+.tarot-result-info p:first-child{
     font-weight: 700;
     font-size: clamp(1rem, 2.5vw, 1.5rem);
 }
-.result-info p{
+.tarot-para{
     font-size: clamp(0.8rem, 2.5vw, 1.2rem);
     text-align: left;
     
 }
-.result-info h3{
+.tarot-result-info h3{
     font-weight: 500;
     font-size: clamp(1rem, 2.5vw, 1.5rem);
 }

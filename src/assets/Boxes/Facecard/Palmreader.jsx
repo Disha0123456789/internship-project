@@ -1,6 +1,7 @@
 import { useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
-
+import PalmIcon from '../../../../public/2nd-row-reading/palm-scanner.png';
+import PalmUpload from '../../../../public/2nd-row-reading/plain hand.png';
 function Palmreader() {
   const navigate = useNavigate();
   const inputRef = useRef(null);
@@ -15,7 +16,7 @@ function Palmreader() {
   return (
       <div className="face-reader">
         <h1 className="face-text">Palm Reading</h1>
-        <div className="face-input-section">
+        <div className="palm-input-section">
         <span className="two-face">
           <div
             onClick={handleImageClick}
@@ -23,7 +24,7 @@ function Palmreader() {
             style={{ width: "18rem", maxHeight: "360px" }}
           >
           <img
-            src="../../../../public/2nd-row-reading/palm-scanner.png"
+            src={PalmIcon}
             alt=""
             className="img-icon-1"
           />{" "}
@@ -37,7 +38,7 @@ function Palmreader() {
             />
             ) : (
             <img
-              src="../../../../public/2nd-row-reading/plain hand.png"
+              src={PalmUpload}
               alt=""
               className="img-icon"
             />
@@ -49,7 +50,7 @@ function Palmreader() {
           <div className="choose-file">
             <input type="file" ref={inputRef} onChange={handleImagechange} />
           </div>
-          <button className="scan-btn" onClick={() => navigate("/Faceresult")}>
+          <button className="scan-btn" onClick={() => navigate("/Palmresult")}>
             Scan
           </button>
         </div>

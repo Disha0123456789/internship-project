@@ -1,31 +1,36 @@
 import React from "react";
-import "./style.css";
+import "./AstroMain.css";
 import { useNavigate } from "react-router-dom";
+import image from './images/Theta Healing.png';
 function ThetaHealing() {
-  const navigate = useNavigate(); 
+  const navigate = useNavigate();
   const head = "Theta Healing";
-  const img = "./images/Marriage Consultation.png";
+  const img = image;
   return (
     <div>
       <div className="Container">
         <div className="Container-heading">
           <h1>Theta Healing</h1>
         </div>
-        <div className="content">
-          <div className="content-left">
-            <img src="../images/Marriage Consultation.png" alt="" />
+        <div className="conten">
+          <div className="conten-left">
+            <div className="img-th"></div>
             <button onClick={() => navigate("/Done", { state: { head, img } })}>
               Book Now
             </button>
           </div>
-          <div className="content-right">
+          <div className="conten-right">
             <p>
-              A marriage consultation offers couples a platform to address
-              concerns, enhance communication, and strengthen their
-              relationship. Through facilitated discussions, couples can explore
-              challenges, identify goals, and develop strategies for resolving
-              conflicts. These sessions provide valuable insights, tools, and
-              support to foster a healthier and more fulfilling marital bond.
+            Divine Connection's Theta Healing is a holistic healing technique rooted in accessing
+              the theta brainwave state to facilitate profound emotional,
+              physical, and spiritual transformations. Practitioners use focused
+              intention and visualization to identify and release limiting
+              beliefs stored in the subconscious mind, replacing them with
+              empowering beliefs.
+              <br /><br />
+              By harnessing the theta brainwave frequency,
+              individuals can address deeply rooted issues, heal past traumas,
+              and manifest desired outcomes.
             </p>
           </div>
         </div>

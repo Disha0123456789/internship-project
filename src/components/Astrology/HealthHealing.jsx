@@ -1,31 +1,36 @@
 import React from "react";
-import "./style.css";
+import "./AstroMain.css";
 import { useNavigate } from "react-router-dom";
+import image from './images/Health Healing.png';
 function HealthHealing() {
-  const navigate = useNavigate(); 
+  const navigate = useNavigate();
   const head = "Health Healing";
-  const img = "./images/Marriage Consultation.png";
+  const img = image;
   return (
     <div>
       <div className="Container">
         <div className="Container-heading">
           <h1>Health Healing</h1>
         </div>
-        <div className="content">
-          <div className="content-left">
-            <img src="../images/Marriage Consultation.png" alt="" />
+        <div className="conten">
+          <div className="conten-left">
+            <div className="img-hh"></div>
             <button onClick={() => navigate("/Done", { state: { head, img } })}>
               Book Now
             </button>
           </div>
-          <div className="content-right">
+          <div className="conten-right">
             <p>
-              A marriage consultation offers couples a platform to address
-              concerns, enhance communication, and strengthen their
-              relationship. Through facilitated discussions, couples can explore
-              challenges, identify goals, and develop strategies for resolving
-              conflicts. These sessions provide valuable insights, tools, and
-              support to foster a healthier and more fulfilling marital bond.
+            Divine Connection's Health healing involves restoring balance and vitality to the
+              body, mind, and spirit. It encompasses holistic approaches to
+              address physical ailments, mental health issues, and emotional
+              well-being. Healing practices may include conventional medicine,
+              alternative therapies, lifestyle changes, and spiritual practices.
+              <br /><br />
+              By addressing root causes rather than just symptoms, health
+              healing promotes overall wellness and resilience. It emphasizes
+              the body's innate ability to heal itself when supported with
+              proper nutrition, exercise, rest, and stress management.
             </p>
           </div>
         </div>

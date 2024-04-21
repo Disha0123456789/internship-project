@@ -1,31 +1,38 @@
 import React from "react";
-import "./style.css";
+import "./AstroMain.css";
 import { useNavigate } from "react-router-dom";
+import image from './images/Parenting Tips.png';
 function ParentingTips() {
-  const navigate = useNavigate(); 
+  const navigate = useNavigate();
   const head = "Parenting Tips";
-  const img = "./images/Marriage Consultation.png";
+  const img = image;
   return (
     <div>
       <div className="Container">
         <div className="Container-heading">
           <h1>Parenting Tips</h1>
         </div>
-        <div className="content">
-          <div className="content-left">
-            <img src="../images/Marriage Consultation.png" alt="" />
+        <div className="conten">
+          <div className="conten-left">
+            <div className="img-pt"></div>
             <button onClick={() => navigate("/Done", { state: { head, img } })}>
               Book Now
             </button>
           </div>
-          <div className="content-right">
+          <div className="conten-right">
             <p>
-              A marriage consultation offers couples a platform to address
-              concerns, enhance communication, and strengthen their
-              relationship. Through facilitated discussions, couples can explore
-              challenges, identify goals, and develop strategies for resolving
-              conflicts. These sessions provide valuable insights, tools, and
-              support to foster a healthier and more fulfilling marital bond.
+            Divine Connection's Parenting involves nurturing and guiding children towards healthy
+              development. Encourage open communication, fostering trust and
+              understanding. Set clear boundaries while allowing independence
+              and autonomy within age-appropriate limits. Practice positive
+              reinforcement to reinforce desired behaviors and provide
+              constructive feedback.
+              <br /><br />
+              Prioritize quality time together, engaging
+              in activities that promote bonding and mutual respect. Lead by
+              example, demonstrating kindness, empathy, and resilience. Stay
+              attuned to your child's emotions and needs, offering support and
+              validation.
             </p>
           </div>
         </div>

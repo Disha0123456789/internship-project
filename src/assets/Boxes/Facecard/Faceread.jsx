@@ -1,6 +1,9 @@
 import { useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
-
+import ImageRecognitionLogo from '../../../../public/2nd-row-reading/facial-recognition.png';
+import ImageProfile from '../../../../public/2nd-row-reading/face-profile.png';
+import TimeMagicImage from '../../../../public/2nd-row-reading/time magic.png';
+import KnowPast from '../../../../public/2nd-row-reading/know your past.png';
 function Faceread() {
   const navigate = useNavigate();
   const inputRef = useRef(null);
@@ -16,51 +19,49 @@ function Faceread() {
     <div className="face-reader">
       <h1 className="face-text">Face Reading</h1>
       <div className="face-input-section">
-  <span className="two-face">
-    <div
-      onClick={handleImageClick}
-      className="card-mt-3 "
-      style={{ width: "18rem", maxHeight: "360px" }}
-    >
-      <img
-        src="../../../../public/2nd-row-reading/facial-recognition.png"
-        alt=""
-        className="img-icon-1"
-      />{" "}
-    </div>
-    <div className="face-image-upload">
-      {image ? (
-        <img
-          src={URL.createObjectURL(image)}
-          alt=""
-          className="img-display-after"
-        />
-      ) : (
-        <img
-          src="../../../../public/2nd-row-reading/face-profile.png"
-          alt=""
-          className="img-icon"
-        />
-      )}
-    </div>
-  </span>
+        <span className="two-face">
+          <div
+            onClick={handleImageClick}
+            className="card-mt-3 ">
+          <img
+            src= {ImageRecognitionLogo}
+            alt=""
+            className="img-icon-1"
+          />{" "}
+          </div>
+          <div className="face-image-upload">
+            {image ? (
+            <img
+              src={URL.createObjectURL(image)}
+              alt=""
+              className="img-display-after"
+            />
+            ) : (
+            <img
+              src= {ImageProfile}
+              alt=""
+              className="img-icon"
+            />
+            )}
+          </div>
+        </span>
 
-  <div className="file-scan-container">
-    <div className="choose-file">
-      <input type="file" ref={inputRef} onChange={handleImagechange} />
-    </div>
-    <button className="scan-btn" onClick={() => navigate("/Faceresult")}>
-      Scan
-    </button>
-  </div>
-</div>
+        <div className="file-scan-container">
+          <div className="choose-file">
+            <input type="file" ref={inputRef} onChange={handleImagechange} />
+          </div>
+          <button className="scan-btn" onClick={() => navigate("/Faceresult")}>
+            Scan
+          </button>
+        </div>
+      </div>
 
 
       <div className="time-past">
         <div className="time">
           <img
             className="magic-icon"
-            src="../../../../public/2nd-row-reading/time magic.png"
+            src= {TimeMagicImage}
             onClick={() => navigate("/Timemagicresult")}
           ></img>
           <div
@@ -73,7 +74,7 @@ function Faceread() {
         <div className="time">
           <img
             className="ancestors-from"
-            src="../../../../public/2nd-row-reading/know your past.png"
+            src= {KnowPast}
             onClick={() => navigate("/Ancestors")}
           ></img>
           <span className="time-magic" onClick={() => navigate("/Ancestors")}>

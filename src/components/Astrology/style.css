@@ -44,17 +44,17 @@
   font-size: clamp(2.2rem, 3vw, 3rem);
   font-weight: 700;
 }
-.content {
+.conten {
   display: flex;
 }
-.content-left {
+.conten-left {
   display: flex;
   flex-direction: column;
   gap: 20px;
   width: 40%;
   padding: 10px;
 }
-.content-left button {
+.conten-left button {
   color: white;
   font-size: 1em;
   font-weight: 500;
@@ -69,7 +69,7 @@
   padding: 0.6em 1.2em;
   transition: border-color 0.25s ease 0s;
 }
-.content-left button:hover {
+.conten-left button:hover {
   transition: all 0.2s ease-in-out;
   overflow: hidden;
   box-shadow: 0px 5px 10px 0px rgb(125, 115, 115);
@@ -77,26 +77,26 @@
   color: black;
   background-color: white;
 }
-.content-left img {
+.conten-left img {
   width: 100%;
   height: 60%;
   border-radius: 20px;
   object-fit: cover;
 }
-.content-right {
+.conten-right {
   margin: 10px;
   height: 300px;
   width: 60%;
   text-align: center;
 }
-.content-right p {
+.conten-right p {
   text-align: left;
   font-weight: 600;
   width: 100%;
   /* margin-top: clamp(10px, 1.5vw, 20px); */
   font-size: clamp(0.8rem, 1.2vw, 1.4rem);
 }
-.content-right h1 {
+.conten-right h1 {
   font-size: clamp(2rem, 3vw, 3rem);
   font-weight: 700;
 }

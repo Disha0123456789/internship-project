@@ -5,10 +5,10 @@ import ShoppingCartRoundedIcon from "@mui/icons-material/ShoppingCartRounded";
 import SearchRoundedIcon from "@mui/icons-material/SearchRounded";
 import AccountCircleRoundedIcon from "@mui/icons-material/AccountCircleRounded";
 import NotificationsRoundedIcon from "@mui/icons-material/NotificationsRounded";
-
+import "./Header.css"; 
 function Header() {
   return (
-    <Navbar className="bg-body-tertiary w-screen">
+    <Navbar className="custom-navbar">
       <Container fluid>
         <Navbar.Brand href="#home">
           <img

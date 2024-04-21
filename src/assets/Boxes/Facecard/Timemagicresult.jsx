@@ -1,11 +1,11 @@
 import React from "react";
-
+import TimeMagicImage from '../../../../public/2nd-row-reading/time magic.png';
 function Timemagicresult() {
   return (
-    <div className="face-result-whole">
+    <div className="face-result">
       <h1 className="face-text-result">Time Magic</h1>
       <div className="Time-magic-pic">
-        <img src="public\2nd row reading\time magic.png"></img>
+      <img src={TimeMagicImage} style={{ borderRadius: '15px' }} />
       </div>
     </div>
   );

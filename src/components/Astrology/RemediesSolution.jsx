@@ -1,31 +1,37 @@
 import React from "react";
-import "./style.css";
+import "./AstroMain.css";
 import { useNavigate } from "react-router-dom";
+import image from './images/Remedies & Solutions.png';
 function RemediesSolution() {
-  const navigate = useNavigate(); 
+  const navigate = useNavigate();
   const head = "Remedies Solution";
-  const img = "./images/Marriage Consultation.png";
+  const img = image;
   return (
     <div>
       <div className="Container">
         <div className="Container-heading">
           <h1>Remedies Solution</h1>
         </div>
-        <div className="content">
-          <div className="content-left">
-            <img src="../images/Marriage Consultation.png" alt="" />
+        <div className="conten">
+          <div className="conten-left">
+            <div className="img-rs"></div>
             <button onClick={() => navigate("/Done", { state: { head, img } })}>
               Book Now
             </button>
           </div>
-          <div className="content-right">
+          <div className="conten-right">
             <p>
-              A marriage consultation offers couples a platform to address
-              concerns, enhance communication, and strengthen their
-              relationship. Through facilitated discussions, couples can explore
-              challenges, identify goals, and develop strategies for resolving
-              conflicts. These sessions provide valuable insights, tools, and
-              support to foster a healthier and more fulfilling marital bond.
+            Divine Connection's Remedies are solutions or actions taken to address problems,
+              resolve conflicts, or alleviate difficulties encountered in
+              various situations. They can range from simple fixes to complex
+              interventions tailored to specific issues.
+              <br /><br />
+              In legal contexts,
+              remedies refer to measures taken to rectify breaches of contract
+              or infringements of rights, such as compensation or injunctive
+              relief. In healthcare, remedies may include medications,
+              therapies, or lifestyle changes to treat illnesses or promote
+              well-being.
             </p>
           </div>
         </div>
