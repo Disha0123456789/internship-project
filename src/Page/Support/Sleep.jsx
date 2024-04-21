@@ -17,8 +17,8 @@ const Sleep = () => {
           />
           <h1>Sleeping Problem</h1>
         </div>
-        <div className="content">
-          <div className="content-left">
+        <div className="conten">
+          <div className="conten-left">
             <img
               src="https://images.pexels.com/photos/1497855/pexels-photo-1497855.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
               alt=""
@@ -27,7 +27,7 @@ const Sleep = () => {
               Book Now
             </button>
           </div>
-          <div className="content-right">
+          <div className="conten-right">
             <p>
               Unlock the secrets of restorative sleep with Divine Connection's
               expert guidance. Our certified online psychologists and counselors

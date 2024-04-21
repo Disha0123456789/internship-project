@@ -17,7 +17,7 @@
 
 .Head-Text h1{
   font-size: clamp(2.5rem, 4vw, 3rem);
-  margin-bottom: 20px;
+  padding: 3%;
 }
 
 .Head-Text{
@@ -39,38 +39,8 @@
 .form-group {
   margin: 5vh 0vh 0vh 0vh;
 }
-.submit-button-wrapper input {
-  background-color: black;
-  color: white;
-  margin-top: 2rem;
-  border: none;
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s, color 0.3s;
-}
-
-.submit-button-wrapper input:hover {
-  background-color: white;
-  color: black;
-  box-shadow: 0px 5px 10px 0px rgb(125, 115, 115);
-}
-
-
-.react-calendar {
-  font-family: Arial, sans-serif;
-  font-size: 18px; /* Increase font size for better readability */
-  width: 90%; /* Adjust width as needed */
-  max-width: 600px; /* Increase max-width to make the calendar bigger */
-  border: 1px solid #ccc;
-  border-radius: 8px;
-}
-.react-calendar__tile {
-  padding: 0.5em; /* Optional: Adjust padding */
-}
-
-.react-calendar__navigation {
-  margin-bottom: 1em; /* Optional: Adjust margin */
+.submit-button {
+  margin: 2vh 0vh 0vh 0vh;
 }
 
 .react-calendar__month-view__weekdays {

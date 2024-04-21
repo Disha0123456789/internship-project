@@ -6,12 +6,28 @@ import Home from "./Page/Home/Home";
 import UserBirthInput from "./Page/UserBirthInput/UserBirthInput";
 import MainPage from "./Page/UserBirthInput/MainPage";
 
-//Horoscope
 
+//Todays Luck
+import TodaysLuck from "./components/TodaysLuck/TodaysLuck";
+
+//Shopping
+
+//Login And Registration
+import LoginPage from "./Page/Registration-Login/LoginForm";
+import Register from "./Page/Registration-Login/Register";
+
+//Account Page
+import AccountPage from "./Page/AccountPage/AccountPage";
+//Horoscope
+import Horoscope from "./components/Horoscope/Horoscope";
+import HoroscopeHome from "./components/Horoscope/Pages/Home";
+import CardImage from "./components/Horoscope/Pages/CardImage";
+import Gemini from "./components/Horoscope/Pages/Gemini";
+import Content from "./components/Horoscope/Pages/Content";
 //Kundli
 
 //Fortune Wheel
-import FortuneWheel from "./components/wheel/FortuneWheel";
+import FortuneWheel from "./components/FortuneWheel/FortuneWheel";
 
 //Love Check
 import LoveCheck from "./components/LoveCheck/LoveCheck";
@@ -32,10 +48,14 @@ import Palmreader from "./assets/Boxes/Facecard/Palmreader";
 import Palmresult from "./assets/Boxes/Facecard/Palmresult";
 
 //Time Travel
+import TimeTravel from "./Page/TimeTravel/TimeTravel";
 import FuturePrediction from "./Page/TimeTravel/FuturePrediction";
+import SeeYourFuture from "./Page/TimeTravel/SeeYourFuture";
+import PastLifePrediction from "./Page/TimeTravel/PastLifePrediction"
 
 //Astrology 
 import AstroMain from "./components/Astrology/AstroMain";
+import AstroMainChat from "./components/Astrology/AstroMainChat";
 import MarriageConsultation from "./components/Astrology/MarriageConsultation";
 import HealthHealing from "./components/Astrology/HealthHealing";
 import WealthManagement from "./components/Astrology/WealthManagement";
@@ -113,7 +133,19 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
 
+        <Route path="/UserBirthInput" element={<UserBirthInput />} />
+        {/* Todays Luck*/}
+        <Route path="/todays_luck" element={<TodaysLuck />} />
+        <Route path="/login_page" element={<LoginPage />} />
+        <Route path="/registration_page" element={<Register />} />
+        <Route path="/account_page" element={<AccountPage />} />
         {/* HoroScope Kundli FortuneWheel LoveCheck*/}
+        <Route path="/horoscope" element={<HoroscopeHome />} />
+        {/* <Route path="/horoscopehome" element={<HoroscopeHome />} />  */}
+        <Route path="/cardImage" element={<CardImage />} />
+        <Route path="/gemini" element={<Gemini />} />
+        <Route path="/content" element={<Content />} />
+        
         <Route path="/Fortune_Wheel" element={<FortuneWheel />} />
         <Route path="/love_check" element={<LoveCheck />} />
 
@@ -133,10 +165,14 @@ function App() {
         <Route path="/palmResult" element={<Palmresult />} />
         
         {/* Time Travel*/}
+        <Route path="/TimeTravel" element={<TimeTravel />} />
         <Route path="/FuturePrediction" element={<FuturePrediction />} />
+        <Route path="/see_your_future" element={<SeeYourFuture />} />
+        <Route path="/PastLifePrediction" element={<PastLifePrediction />} />
 
         {/* Astrology*/}
         <Route path="/AstroMain" element={<AstroMain />} />
+        <Route path="/AstroMainChat" element={<AstroMainChat />} />
         <Route path="/marriageConsultation" element={<MarriageConsultation />} />
         <Route path="/healthHealing" element={<HealthHealing />} />
         <Route path="/wealthManagement" element={<WealthManagement />} />

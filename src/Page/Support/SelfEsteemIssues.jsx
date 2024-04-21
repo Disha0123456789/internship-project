@@ -17,8 +17,8 @@ const SelfEsteemIssues = () => {
           />
           <h1>Self-Esteem issues</h1>
         </div>
-        <div className="content">
-          <div className="content-left">
+        <div className="conten">
+          <div className="conten-left">
             <img
               src="https://images.unsplash.com/photo-1598897484058-7bfc231369ef?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt=""
@@ -27,7 +27,7 @@ const SelfEsteemIssues = () => {
               Book Now
             </button>
           </div>
-          <div className="content-right">
+          <div className="conten-right">
             <p>
               Elevate your self-esteem with Divine Connection's compassionate
               guidance and expertise. Our certified online psychologists and

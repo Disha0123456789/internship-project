@@ -17,8 +17,8 @@ const FinalPage = () => {
           <div className="text">
             {" "}
             <p>
-              Your {loc.state.head} consultation is conducted by one of our
-              expert counselor.
+              Your {loc.state.head} is conducted by one of our
+              expert astrologer.
             </p>
           </div>
         </li>
@@ -36,7 +36,7 @@ const FinalPage = () => {
           <input type="checkbox" name="" id="" />
           <div className="text">
             {" "}
-            <p>Waiting in queue for Counselor to get free.</p>
+            <p>Waiting in queue for astrologer to get free.</p>
           </div>
         </li>
 

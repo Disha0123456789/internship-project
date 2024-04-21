@@ -17,8 +17,8 @@ const StressManagement = () => {
           />
           <h1>Stress Management</h1>
         </div>
-        <div className="content">
-          <div className="content-left">
+        <div className="conten">
+          <div className="conten-left">
             <img
               src="https://images.pexels.com/photos/626165/pexels-photo-626165.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
               alt=""
@@ -27,7 +27,7 @@ const StressManagement = () => {
               Book Now
             </button>
           </div>
-          <div className="content-right">
+          <div className="conten-right">
             <p>
               Unlock the secrets of restorative sleep with Divine Connection's
               expert guidance. Our certified online psychologists and counselors

@@ -17,8 +17,8 @@ const Depression = () => {
           />
           <h1>Depression</h1>
         </div>
-        <div className="content">
-          <div className="content-left">
+        <div className="conten">
+          <div className="conten-left">
             <img
               src="https://images.unsplash.com/photo-1525190809240-c06c7cbf17d7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt=""
@@ -27,7 +27,7 @@ const Depression = () => {
               Book Now
             </button>
           </div>
-          <div className="content-right">
+          <div className="conten-right">
             <p>
               At Divine Connection, we understand the weight of depression, and
               we're here to walk with you through it. Our team of certified

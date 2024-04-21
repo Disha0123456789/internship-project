@@ -6,7 +6,12 @@ import SearchRoundedIcon from "@mui/icons-material/SearchRounded";
 import AccountCircleRoundedIcon from "@mui/icons-material/AccountCircleRounded";
 import NotificationsRoundedIcon from "@mui/icons-material/NotificationsRounded";
 import "./Header.css"; 
+<<<<<<< HEAD
+=======
+import { useNavigate } from "react-router-dom";  
+>>>>>>> 28cb4ce22203843d0bc9d5b5656bc1516053624a
 function Header() {
+  const navigate = useNavigate();
   return (
     <Navbar className="custom-navbar">
       <Container fluid>
@@ -21,7 +26,7 @@ function Header() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
-            <Nav.Link href="#home" className="me-3">
+            <Nav.Link onClick={() => navigate("/todays_luck")} className="me-3">
               Todays Luck <CasinoRoundedIcon />
             </Nav.Link>
             <Nav.Link href="#link" className="me-3">
@@ -39,10 +44,10 @@ function Header() {
               </InputGroup.Text>
             </InputGroup>
 
-            <Nav.Link href="#home" className="me-3">
+            <Nav.Link onClick={() => navigate("/login_page")} className="me-3">
               Login/Registration
             </Nav.Link>
-            <Nav.Link href="#link" className="me-3">
+            <Nav.Link onClick={() => navigate("/account_page")} className="me-3">
               <AccountCircleRoundedIcon />
             </Nav.Link>
             <Nav.Link href="#link" className="me-3">

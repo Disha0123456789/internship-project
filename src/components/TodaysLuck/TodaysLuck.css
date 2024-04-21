@@ -1,0 +1,45 @@
+.lottie-img{
+  height: 50vh;
+}
+.retry-btn{
+  padding: 15px;
+  border-radius: 10px;
+  border-width: 0px;
+  width: 15vw;
+  background-color: #c2bebd;
+  margin: 20px;
+}
+
+.retry-btn:hover{
+  background-color: pink;
+  font-weight: bold;
+}
+
+.container-card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.quote-text{
+  font-family: cursive;
+  font-weight: bold;
+  margin: 20px;
+  margin-top: 40px;
+  font-size: 15px;
+  background-color: pink;
+  padding: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+@media screen and (min-width: 640px){
+   
+  .lottie-img{
+    height: 70vh;
+  }
+  .retry-btn{
+    width: 10vw;
+  }
+  .quote-text{
+    font-size: 30px;
+  }
+}

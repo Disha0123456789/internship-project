@@ -17,8 +17,8 @@ const SexualWellness = () => {
           />
           <h1>Sexual Wellness</h1>
         </div>
-        <div className="content">
-          <div className="content-left">
+        <div className="conten">
+          <div className="conten-left">
             <img
               src="https://images.pexels.com/photos/1386336/pexels-photo-1386336.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
               alt=""
@@ -27,7 +27,7 @@ const SexualWellness = () => {
               Book Now
             </button>
           </div>
-          <div className="content-right">
+          <div className="conten-right">
             <p>
               Embrace sexual wellness with Divine Connection's supportive
               guidance and expertise. Our certified online psychologists and
