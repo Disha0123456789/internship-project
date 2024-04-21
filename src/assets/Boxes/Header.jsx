@@ -6,6 +6,7 @@ import SearchRoundedIcon from "@mui/icons-material/SearchRounded";
 import AccountCircleRoundedIcon from "@mui/icons-material/AccountCircleRounded";
 import NotificationsRoundedIcon from "@mui/icons-material/NotificationsRounded";
 import "./Header.css"; 
+
 import { useNavigate } from "react-router-dom";  
 function Header() {
   const navigate = useNavigate();

@@ -19,7 +19,7 @@ const TarotResult = () => {
         <div className="tarot-result-info">
           <div className="tarot-info">
           <p>{loc.state.heading}</p>
-            <p>{loc.state.para}</p>
+          <div className="tarot-para" dangerouslySetInnerHTML={{ __html: loc.state.para.replace(/\n/g, '<br>').replace(/<b>/g, '<strong>').replace(/<\/b>/g, '</strong>') }} />
           </div>
         </div>
       </div>

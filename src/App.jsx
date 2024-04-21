@@ -4,6 +4,8 @@ import Home from "./Page/Home/Home";
 
 //User Birth Input
 import UserBirthInput from "./Page/UserBirthInput/UserBirthInput";
+import MainPage from "./Page/UserBirthInput/MainPage";
+
 
 //Todays Luck
 import TodaysLuck from "./components/TodaysLuck/TodaysLuck";
@@ -123,6 +125,12 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
+          <Route path="/MainPage/Numerology" element={<Numerology />} />
+          <Route path="/UserBirthInput" element={<UserBirthInput />} />
+          <Route path="/MainPage" element={<MainPage />} />
+          {/* Other routes */}
+      </Routes>
+      <Routes>
         <Route path="/" element={<Home />} />
 
         <Route path="/UserBirthInput" element={<UserBirthInput />} />
@@ -198,8 +206,7 @@ function App() {
         <Route path="/dream_history" element={<DreamHistory />} />
         <Route path="/sleep_music" element={<SleepMusic />} />
 
-        {/* Numerology*/}
-        <Route path="/Numerology" element={<Numerology />} />
+        {/* Numerology  <Route path="/Numerology" element={<Numerology />} />*/}
         <Route path="/lifepathnumber" element={<LifePathNumber />} />
         
         {/* Meditation*/}

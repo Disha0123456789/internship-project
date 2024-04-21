@@ -1,3 +1,7 @@
+.MainPage-container{
+    width: 100vw;
+    height: 90vh;
+}
 .UserBirthInput-container{
     display: flex;
     justify-content: center;

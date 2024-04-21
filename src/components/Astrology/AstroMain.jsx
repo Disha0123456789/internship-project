@@ -434,5 +434,5 @@ function AstroMain() {
   );
 }
 
-export default AstroMain;
 
+export default AstroMain;
