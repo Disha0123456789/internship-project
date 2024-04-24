@@ -1,16 +1,16 @@
 import React, { useEffect, useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import './Numerology.css';
+import data from './data.json';
 
 export default function Numerology() {
     const location = useLocation();
     const [lifePathNumber, setLifePathNumber] = useState(null);
     const navigate = useNavigate();
+    const [lifePathData, setLifePathData] = useState(null);
 
     useEffect(() => {
-        // Check if data is passed through location state
         if (location.state) {
-            console.log("Received data from UserBirthInput:", location.state);
             const { dateOfBirth } = location.state;
             if (dateOfBirth) {
                 const [year, month, day] = dateOfBirth.split('-');
@@ -19,6 +19,13 @@ export default function Numerology() {
             }
         }
     }, [location.state]);
+
+    useEffect(() => {
+        if (lifePathNumber !== null) {
+            const matchedData = data.dob.find(item => item.id === lifePathNumber);
+            setLifePathData(matchedData);
+        }
+    }, [lifePathNumber]);
 
     const calculateLifePathNumber = (day, month, year) => {
         let total = parseInt(day) + parseInt(month) + parseInt(year);
@@ -29,7 +36,6 @@ export default function Numerology() {
     };
 
     const handleNumerologyCardClick = () => {
-        console.log(lifePathNumber);
         if (lifePathNumber !== null) {
             navigate("/lifepathnumber", { state: { lifePathNumber } });
         }
@@ -50,17 +56,17 @@ export default function Numerology() {
                     </div>
 
                     <div className="lucky-container-wrapper">
-                        <LuckyContainer imageSrc={"/4throw/lucky-no-icon.png"} title="Lucky Numbers" description="3, 4, 5, 6" />
-                        <LuckyContainer imageSrc={"/4throw/lucky-color-icon.png"} title="Lucky Colors" description="Blue, Gray" />
+                        <LuckyContainer imageSrc={"/4throw/lucky-no-icon.png"} title="Lucky Numbers" description={lifePathData ? lifePathData.LuckyNumber : "N/A"} />
+                        <LuckyContainer imageSrc={"/4throw/lucky-color-icon.png"} title="Lucky Colors" description={lifePathData ? lifePathData.LuckyColor : "N/A"} />
                     </div>
                     <div className="lucky-container-wrapper">
-                        <LuckyContainer imageSrc={"/4throw/lucky-days-icon.png"} title="Lucky Days" description="Sunday, Saturday" />
-                        <LuckyContainer imageSrc={"/4throw/lucky-gem-icon.png"} title="Lucky Gemstones" description="Diamond, Coral, Pearl" />
+                        <LuckyContainer imageSrc={"/4throw/lucky-days-icon.png"} title="Lucky Days" description={lifePathData ? lifePathData.LuckyDays : "N/A"} />
+                        <LuckyContainer imageSrc={"/4throw/lucky-gem-icon.png"} title="Lucky Gemstones" description={lifePathData ? lifePathData.LuckyGems : "N/A"} />
                     </div>
                 </div>
             </div>
         </div>
-    )
+    );
 }
 
 const LuckyContainer = ({ imageSrc, title, description }) => {
