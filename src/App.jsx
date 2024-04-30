@@ -11,6 +11,8 @@ import MainPage from "./Page/UserBirthInput/MainPage";
 import TodaysLuck from "./components/TodaysLuck/TodaysLuck";
 
 //Shopping
+import Pooja from "./components/Shopping/Pooja";
+import Poojadetail from "./components/Shopping/PoojaDetail";
 
 //Login And Registration
 import LoginPage from "./Page/Registration-Login/LoginForm";
@@ -136,6 +138,9 @@ function App() {
         <Route path="/UserBirthInput" element={<UserBirthInput />} />
         {/* Todays Luck*/}
         <Route path="/todays_luck" element={<TodaysLuck />} />
+        <Route path="/pooja_page" element={<Pooja />} />
+        <Route path="/pooja/:poojaName" element={<Poojadetail />} />
+
         <Route path="/login_page" element={<LoginPage />} />
         <Route path="/registration_page" element={<Register />} />
         <Route path="/account_page" element={<AccountPage />} />

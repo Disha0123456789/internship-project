@@ -27,7 +27,7 @@ function Header() {
             <Nav.Link onClick={() => navigate("/todays_luck")} className="me-3">
               Todays Luck <CasinoRoundedIcon />
             </Nav.Link>
-            <Nav.Link href="#link" className="me-3">
+            <Nav.Link onClick={() => navigate("/pooja_page")} className="me-3">
               Shopping <ShoppingCartRoundedIcon />
             </Nav.Link>
 

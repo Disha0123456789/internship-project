@@ -1,0 +1,177 @@
+
+ .App-pooja{
+    margin: 0;
+    padding: 20px;
+    width: 100vw;
+  
+   }
+  
+  .Container-pooja{
+    width: 90%;
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+    background-color: rgb(255, 240, 242);
+    border-radius: 15px;
+    box-shadow: rgba(98, 100, 104, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  
+  
+  }
+
+  .hr-pooja{
+    width: 100%;
+  }
+  
+  button{
+    cursor: pointer;
+  }
+  
+  .Container-pooja h1{
+     color: purple;
+     margin: 0;
+     padding: 25px 0;
+  }
+  
+  
+  .switch-bookbtn-pooja{
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 20px;
+  }
+  
+  .switch-bookbtn-pooja button{
+    width: 250px;
+    text-align: center;
+    padding: 10px;
+    font-weight: 550;
+    border-radius: 9px;
+    border: 1px solid gray;
+  }
+  
+  .btntrue{
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    color: purple;
+  
+  
+  }
+  
+  .btnfalse{
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    color: rgb(181, 128, 181);
+  
+  
+  }
+  
+  .Cards-pooja{
+    padding: 12px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, auto);
+    justify-items: center;
+    gap: 15px;
+    /* border: 2px solid red; */
+  }
+  
+  
+  .Subcard-pooja{
+    margin-bottom: 28px;
+    display: block;
+    gap: 2px;
+    justify-items: center;
+    align-items: center;
+    width: 180px;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  }
+  .Subcard-pooja .imagebox-pooja img{
+      width: 120px;
+      height: 120px;
+  
+  }
+  
+  .book-now-pooja{
+    background-color: purple;
+    color: white;
+    border-radius: 8px;
+    padding:  6px 8px;
+    border: none;
+    width: 100%;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+  }
+  
+  .Subcard-pooja .imagebox-pooja{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 160px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-color: rgb(231, 231, 245);
+  }
+  
+  .Subcard-pooja .texfield-pooja{
+    display: inline;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .Subcard-pooja h4{
+     overflow-y: hidden;
+     margin: 8px;
+  }
+  
+  
+  
+  
+  @media only screen and (min-width: 300px) and (max-width: 638px) {
+    .Cards-pooja{
+      padding: 12px;
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(1, auto);
+      justify-items: center;
+      gap: 15px;
+    }
+  
+    
+  
+    .Subcard-pooja{
+        width: 240px;
+    }
+  
+    .Subcard-pooja .imagebox-pooja img{
+      width: 140px;
+    }
+  }
+  
+  
+  @media only screen and (min-width: 638px) and (max-width: 911px) {
+  
+    .Cards-pooja{
+      padding: 12px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(1, auto);
+      justify-items: center;
+      gap: 15px;
+    }
+  
+    
+  
+    .Subcard-pooja{
+        width: 240px;
+    }
+  
+    .Subcard-pooja .imagebox-pooja img{
+      width: 140px;
+    }
+  
+  }
