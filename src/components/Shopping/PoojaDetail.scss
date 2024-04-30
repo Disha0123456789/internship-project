@@ -1,0 +1,102 @@
+.root-pooja{
+    padding: 20px;
+  }
+  .FormPuja {
+    margin-right: auto;
+    margin-left: auto;
+    width: 90%;
+    margin-top: 2em;
+    border: 1px solid #e0e0e0;
+    border-radius: 1em;
+    padding: 1em;
+    background-color: #fcf2f8;
+    color: black;
+    &__Heading {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &__Description {
+        padding-right: 2em;
+        padding-left: 2em;
+      }
+      &__TicketInfo {
+        min-width: 11em;
+        padding: 1em;
+        text-align: center;
+        button {
+          background: black;
+          color: white;
+          margin-left: auto;
+          margin-right: auto;
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+  .pooja-name{
+    display: block;
+          font-size: 2.2em;
+          margin-block-start: 0.67em;
+          margin-block-end: 0.67em;
+          margin-inline-start: 0px;
+          margin-inline-end: 0px;
+          font-weight: bold;
+          unicode-bidi: isolate;
+  }
+
+  .pooja-desc{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+  }
+
+  .pooja-line-hr{
+    width: 100%;
+  }  
+  .final-book-now-pooja {
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: #1a1a1a;
+    cursor: pointer;
+    transition: border-color 0.25s;
+  }
+  
+  .Ques {
+    &__Desc {
+      align-items: center;
+      justify-content: center;
+      margin-top: 20px;
+      padding-left: 2em;
+      &__Heading {
+        display: block;
+        font-size: 1.5em;
+        margin-block-start: 0.83em;
+        margin-block-end: 0.83em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-weight: bold;
+        unicode-bidi: isolate;
+      }
+    }
+  }
+  
+  @media (max-width: 768px) {
+    // styles for screens with a width of up to 768px
+    .FormPuja {
+      &__Heading {
+        flex-direction: column;
+        &__Description,
+        &__TicketInfo {
+          padding: 0.5em;
+        }
+      }
+    }
+  }
+  
