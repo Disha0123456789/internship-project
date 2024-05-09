@@ -36,6 +36,7 @@
 
 .label-button:hover {
   background-color: white;
+  color:black;
 }
 
 /* Biorhythm data container styles */
