@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
-import Chart from 'chart.js/auto';
+import Chart from "chart.js/auto";
+import { Line } from "react-chartjs-2";
 import DailyInterpreTation from './DailyInterpreTation';
 import { useLocation } from 'react-router-dom';
 import './LineChart.css';
