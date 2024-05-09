@@ -10,7 +10,7 @@ const FuturePrediction = () => {
   const navigate = useNavigate();
   return (
     <div className="timetravel">
-      <div className="header">
+      <div className="Head-Text">
         <IoIosArrowBack onClick={() => navigate("/TimeTravel")} className="backicon" />
         <h1>Future Prediction</h1>
       </div>

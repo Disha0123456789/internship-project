@@ -59,7 +59,7 @@ const Shuffle = () => {
 
   return (
     <div className="Main-tarot">
-      <div className="Tarot-Heading">
+      <div className="Head-Text">
         <h1>{loc.state.head}</h1>
       </div>
       <div className="choose-card-heading">
@@ -81,8 +81,8 @@ const Shuffle = () => {
           />
         ))}
       </div>
-      <div className="buttons">
-        <button onClick={() => setIsOpen(!isOpen)}>Shuffle</button>
+      <div className="tarot-buttons">
+        <button className="tarot-btn" onClick={() => setIsOpen(!isOpen)}>Shuffle</button>
       </div>
     </div>
   );

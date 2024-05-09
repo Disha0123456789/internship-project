@@ -6,7 +6,7 @@ import tarotReadingCardsData from "./tarot-cards-data"; // Importing tarot-readi
 const TarotReading = () => {
   return (
     <div className="Main-Tarot">
-      <div className="Tarot-Heading">
+      <div className="Head-Text">
         <h1>Tarot Reading</h1>
       </div>
       <div className="Tarot-Cards">

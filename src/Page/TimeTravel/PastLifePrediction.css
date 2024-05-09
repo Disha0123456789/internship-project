@@ -8,9 +8,6 @@
   font-variation-settings: "slnt" 0;
 }
 
-body {
-  background: #eee;
-}
 .cards-container-pl {
   display: flex;
   justify-content: center;

@@ -51,7 +51,7 @@ const Meditation = () => {
   };
   return (
     <div className="Main-page">
-      <div className="Meditation-text">
+      <div className="Head-Text">
         <h1>Meditation</h1>
       </div>
 

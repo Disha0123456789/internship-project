@@ -1,3 +1,4 @@
+//Form-main for poojadetail and ques
 import React, { useEffect } from "react";
 import Ques from "./Ques";
 import "./PoojaDetail.scss";

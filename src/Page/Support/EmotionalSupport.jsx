@@ -62,7 +62,7 @@ const EmotionalSupport = () => {
   };
   return (
     <div className="Main-Page">
-      <div className="Meditation-text">
+      <div className="Head-Text">
         <h1>Emotional Support</h1>
       </div>
 

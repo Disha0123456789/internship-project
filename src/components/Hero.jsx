@@ -21,7 +21,7 @@ const Hero = () => {
           </div>
         </div>
 
-        <div class="text-center gap-6 h-50 flex items-center bg-gradient-to-tr from-purple-300 to-blue-300 p-8 rounded-xl">
+        <div onClick={() => navigate("/kundli")} class="text-center gap-6 h-50 flex items-center bg-gradient-to-tr from-purple-300 to-blue-300 p-8 rounded-xl">
           <div class="mt-3">
             <h3 class="text-2xl font-semibold text-gray-800 ">Kundli</h3>
           </div>

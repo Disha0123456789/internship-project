@@ -30,7 +30,7 @@ const FiveMinMeditation = () => {
   ];
   return (
     <div className="Main-page">
-      <div className="Meditation-text">
+      <div className="Head-Text">
         <h1>5 Minutes Meditation</h1>
       </div>
       <div className="Hero-section">

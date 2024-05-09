@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  .match-container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+  .kundliForm {
+    width: 80%;
+    margin-top: 2em;
+    padding: 1em;
+    background-color: #fdf2f8;
+    border-radius: 30px;
+    box-shadow: 0px 0px 5px 0px black;
+  }
+  
+  .kundliForm h1 {
+    color: #682f98;
+    text-align: center;
+    padding: 15px 0px 20px 0px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+  }
+  .match-hr{
+    width: 100%;
+  }
+  .match-form {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .boysForm,
+  .girlsForm {
+    width: 40%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0px 2px 5px -2px black;
+  }
+  
+  .match-input-label {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+  }
+  
+  .match-formInputField {
+    margin-left: 20px;
+    padding-bottom: 8px;
+  }
+  
+  .match-label {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+  }
+  .match-input {
+    width: 80%;
+    padding: 6px 6px 6px 6px;
+    margin: 5px 0px 15px 0px;
+  }
+  
+  .match-checkbox,
+  .match-checkboxContent {
+    margin-left: 4px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+  }
+  
+  .matchKundliBtn-div {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .matchKundliBtn {
+    font-size: 20px;
+    width: 30%;
+    padding: 10px 0px;
+    color: white;
+    border: none;
+    background-color: #682f98;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    letter-spacing: 1px;
+  }
+  
+  @media screen and (max-width: 380px) {
+    .kundliForm {
+      width: 90%;
+      margin-top: 2rem; /* Add margin-top to create space */
+    }
+  
+    .match-form {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .boysForm,
+    .girlsForm {
+      width: 100%; /* Set the width to 100% to utilize available space */
+    }
+  
+    .match-checkbox {
+      font-size: 12px;
+    }
+  
+    .matchKundliBtn {
+      font-size: 30px;
+      width: 70%;
+    }
+  }
+  
+  @media (min-width: 381px) and (max-width: 767px) {
+    .kundliForm {
+      width: 90%;
+      margin-top: 2rem; /* Add margin-top to create space */
+    }
+  
+    .match-form {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .boysForm,
+    .girlsForm {
+      width: 80%; /* Set the width to 100% to utilize available space */
+    }
+  
+    .match-checkbox {
+      font-size: 15px;
+    }
+  
+    .matchKundliBtn {
+      font-size: 30px;
+      width: 70%;
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 1300px) {
+    .match-input {
+      margin: 2px 0px 10px 2px;
+    }
+    .match-checkbox {
+      font-size: 15px;
+    }
+  }
+  
+  

@@ -29,11 +29,9 @@ body,head {
   margin: 0px;
   overflow-x: hidden;
   padding: 0px;
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
   background-color: white;
-  /* box-sizing: border-box; */
-  /* display: flex;
-  place-items: center; */
+  box-sizing: border-box;
   width: 100%;
   min-height: 100vh;
    
@@ -60,6 +58,13 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+.Head-Text h1 {
+  margin: 4vh 0 4vh 0;
+  font-size: clamp(2.5rem, 4vw, 3rem);
+  color: #672F98;
+  font-weight: 600;
+  text-align: center;
 }
 
 @media (prefers-color-scheme: light) {
