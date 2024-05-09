@@ -23,8 +23,8 @@
 
 .label-button {
   font-size: 12px;
-  background-color: orange;
-  color: black;
+  background-color: black;
+  color: white;
   padding: 1px;
   transition: background-color 0.3s;
   border-radius: 4px;
