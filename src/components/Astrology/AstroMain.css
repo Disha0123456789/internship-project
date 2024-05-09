@@ -26,14 +26,7 @@ body {
   align-items: center;
   flex-direction: column;
 }
-.Head-Text > h1 {
-  margin: 4vh 0 0 0;
-  font-size: clamp(2.5rem, 5vw, 3rem);
-  color: purple;
-  font-weight: 600;
-  text-align: center;
-  margin-top: 2rem;
-}
+
 .Container {
   background-color: #fdf2f8;
   width: clamp(30vw, 70vw, 80vw);

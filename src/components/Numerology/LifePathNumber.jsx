@@ -19,8 +19,8 @@ export default function LifePathNumber() {
         <div className='lifepathnumber'>
             {lifePathData && (
                 <>
-                    <div>
-                        <p className='life-path-title'>Life Path Number</p>
+                    <div className="Head-Text">
+                        <h1>Life Path Number</h1>
                     </div>
                     <div className='life-number-container'>
                         <h1 className='life-number'>{lifePathNumber}</h1>

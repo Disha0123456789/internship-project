@@ -32,7 +32,7 @@ const MentalHealthMeditation = () => {
   ];
   return (
     <div className="Main-page">
-      <div className="Meditation-text">
+      <div className="Head-Text">
         <h1>Meditation for Mental Health</h1>
       </div>
       <div className="Hero-section">

@@ -33,7 +33,7 @@ const ChakraMeditation = () => {
   ];
   return (
     <div className="Main-page">
-      <div className="Meditation-text">
+      <div className="Head-Text">
         <h1>Chakra Meditation</h1>
       </div>
       <div className="Hero-section">

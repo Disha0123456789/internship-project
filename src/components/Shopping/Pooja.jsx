@@ -13,7 +13,7 @@ function App() {
   return (
     <div className="App-pooja">
       <section>
-        <div className="Container-pooja">
+        <div className="Head-Text">
           <h1>Pooja</h1>
           <hr className="hr-pooja"/>
           <div className="switch-bookbtn-pooja">

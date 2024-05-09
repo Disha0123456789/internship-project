@@ -2,9 +2,13 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 const NewFutureBox = () => {
   const navigate = useNavigate();
-  const handleNumeroClick = () => {
-    navigate('/MainPage', { state: { nextPage: 'Numerology' } });
+  
+  const handleBirthPageClick = (nextpagePara) => {
+    navigate('/MainPage', { state: { nextPage: nextpagePara } });
   };
+  //const handleNumeroClick = () => {
+  //  navigate('/MainPage', { state: { nextPage: 'Numerology' } });
+  //};
   return (
     <>
       <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-12 mx-auto">
@@ -104,7 +108,7 @@ const NewFutureBox = () => {
             </div>
 
             <div 
-              onClick={() => navigate("/LineChart")}
+              onClick={() => handleBirthPageClick('LineChart')}
               class="h-36 sm:h-50 w-60 flex flex-col justify-center border bg-gradient-to-tr from-purple-300 to-blue-300 rounded-xl text-center p-4 mx-auto md:p-5 dark:border-gray-700">
               <div class="flex justify-center items-center size-20 rounded-lg mx-auto">
                 <img src="/ICONS/biorythm.png" alt="16" />
@@ -156,7 +160,7 @@ const NewFutureBox = () => {
           */}
           <div class="hidden lg:block lg:col-span-1"></div>
           <div 
-          onClick={handleNumeroClick}
+          onClick={() => handleBirthPageClick('Numerology')}
           class="h-36 sm:h-50 w-60 flex flex-col justify-center border bg-gradient-to-tr from-purple-300 to-blue-300 rounded-xl text-center p-4 mx-auto md:p-5 dark:border-gray-700">
               <div class="flex justify-center items-center size-20 rounded-lg mx-auto">
                 <img src="/ICONS/numerology.png" alt="16" />

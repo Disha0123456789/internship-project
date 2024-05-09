@@ -26,8 +26,13 @@ import HoroscopeHome from "./components/Horoscope/Pages/Home";
 import CardImage from "./components/Horoscope/Pages/CardImage";
 import Gemini from "./components/Horoscope/Pages/Gemini";
 import Content from "./components/Horoscope/Pages/Content";
-//Kundli
 
+//Kundli
+import Kundli from "./components/Kundli/Kundli";
+import MatchMaking from  "./components/Kundli/MatchMaking";
+import MatchIndicator from "./components/Kundli/MatchIndicator";
+import LifeReport from "./components/Kundli/LifeReport"
+import SadeSati from "./components/Kundli/SadeSati";
 //Fortune Wheel
 import FortuneWheel from "./components/FortuneWheel/FortuneWheel";
 
@@ -127,7 +132,10 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
+          <Route path="/MainPage/sadesati" element={<SadeSati />} />
+          <Route path="/MainPage/lifeReport" element={<LifeReport />} />
           <Route path="/MainPage/Numerology" element={<Numerology />} />
+          <Route path="/MainPage/LineChart" element={<LineChart />} />
           <Route path="/UserBirthInput" element={<UserBirthInput />} />
           <Route path="/MainPage" element={<MainPage />} />
           {/* Other routes */}
@@ -151,6 +159,10 @@ function App() {
         <Route path="/gemini" element={<Gemini />} />
         <Route path="/content" element={<Content />} />
         
+        <Route path="/kundli" element={<Kundli />} />
+        <Route path="/matchmaking" element={<MatchMaking />} />
+        <Route path="/matchIndicator" element={<MatchIndicator />} />
+
         <Route path="/Fortune_Wheel" element={<FortuneWheel />} />
         <Route path="/love_check" element={<LoveCheck />} />
 
@@ -200,7 +212,7 @@ function App() {
         <Route path="/crystalHealing" element={<CrystalHealing />} />
 
         {/* Biorhythm*/}
-        <Route path="/LineChart" element={<LineChart />} />
+        
 
         {/* Dream Meaning*/}
         <Route path="/dream" element={<Dream />} />

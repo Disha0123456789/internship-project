@@ -32,7 +32,7 @@ const BeginnerMeditation = () => {
   ];
   return (
     <div className="Main-page">
-      <div className="Meditation-text">
+      <div className="Head-Text">
         <h1>Meditation for Beginners</h1>
       </div>
       <div className="Hero-section">

@@ -9,7 +9,7 @@ const TarotResult = () => {
   return (
     <div className="Result-Tarot">
       <div className="tarot-result-card">
-        <div className="tarot-head">
+        <div className="Head-Text">
           <h1>{loc.state.head}</h1>
         </div>
         <div className="tarot-card-image">
