@@ -2,28 +2,19 @@
 
 .timetravel {
   display: flex;
-  flex-direction: column;
-  /* background-color: #FDF2F8; */
-  /* align-items: center;  */
-  min-height: 100vh;
-  width: 100vw; 
-  align-items: center;
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  /* font-weight: 400; */
-  font-style: normal;
-  font-variation-settings:"slnt" 0;
+    flex-direction: column;
+    /* background-color: #FDF2F8; */
+    /* align-items: center; */
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    /* font-weight: 400; */
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
 }
 
-.content {
-  background-color: white;
-  padding: 20px; /* Adjust padding as needed */
-  width : 40%;
-  justify-content: center;
-  align-items: center;
-  margin-top: 40px; /* Adjust margin-top as needed */
-  border-radius: 20px; /* Adjust border radius as needed */
-}
 .form-group {
   margin: 5vh 0vh 0vh 0vh;
 }
@@ -33,4 +24,37 @@
 
 .react-calendar__month-view__weekdays {
   font-weight: bold; /* Optional: Adjust font weight */
+}
+
+.Future-container{
+  display: flex;
+  background-color: #FDF2F8;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 10px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-control {
+  width: 30vw;
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.button-wrapper {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.button-wrapper .form-control {
+  width: calc(100% / 2 - 5px); /* 5px is half of the gap */
+  padding: 10px;
+  font-size: 16px;
+  color:white;
+  background-color: black;
 }

@@ -1,29 +1,62 @@
-import React from "react";
-import { IoIosArrowBack } from "react-icons/io";
+import React, { useState, useEffect } from 'react';
+import { useSearchParams } from 'react-router-dom';
+import { fetchHoroscope } from '../../apiService'; // Update the import path as needed
 import "./SeeYourFuture.css";
 import { useNavigate } from "react-router-dom";
 
 export default function SeeYourFuture() {
+  const [searchParams] = useSearchParams();
+  const zodiacSign = searchParams.get('sign');
+  const timePeriod = searchParams.get('type');
+  const [content, setContent] = useState({});
   const navigate = useNavigate();
+
+  const fetchData = async () => {
+    try {
+      const data = await fetchHoroscope(zodiacSign, timePeriod);
+      setContent(data.response);
+    } catch (error) {
+      setContent({ error: 'Error fetching horoscope data.' });
+    }
+  };
+
+  useEffect(() => {
+    if (zodiacSign && timePeriod) {
+      fetchData();
+    }
+  }, [zodiacSign, timePeriod]);
+
+  const renderContent = () => {
+    if (typeof content === 'string') {
+      return <p>{content}</p>;
+    }
+
+    if (content.error) {
+      return <p>{content.error}</p>;
+    }
+
+    return (
+      Object.entries(content).map(([key, value]) => (
+        <div key={key} style={{ marginBottom: '10px' }}>
+          <span style={{ fontWeight: 'bold', fontSize: '16px', color: '#333' }}>{key}</span>
+          <p style={{ color: '#555' }}>{Array.isArray(value) ? value.join('\n') : value}</p>
+        </div>
+      ))
+    );
+  };
+
   return (
     <div className="dream-result">
       <div className="Head-Text">
-        <IoIosArrowBack onClick={() => navigate("/FuturePrediction")} className="backicon" />
         <h1>See Your Future</h1>
       </div>
       <div className="dreamcard-container">
         <div className="dream-result-card">
           <h2 className="dream-result-title">Results</h2>
           <div className="divider"></div>
-          <p className="description">
-            You are usually a very practical and down-to-Earth person, but today
-            you may be more inclined than usual toward mysticism. Spiritual
-            matters seem extremely appealing, and you could find yourself
-            gravitating toward metaphysical bookstores or seeking discussions
-            with people who are well versed in such matters. You also find your
-            imagination working overtime. Indulge in a few flights of fancy,
-            Gemini. We all need to escape from time to time!
-          </p>
+          <div className="description">
+            {renderContent()}
+          </div>
         </div>
       </div>
       <div className="margin-div"></div>

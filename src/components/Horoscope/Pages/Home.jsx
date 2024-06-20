@@ -13,21 +13,23 @@ import IMAGES8 from '../images/scorpion.png';
 import IMAGES2 from '../images/taurus.png';
 import IMAGES6 from '../images/virgo.png';
 import '../Horoscope.css';
+
 function Home() {
   const urls = [
-    'http://localhost:3000/gemini?rasi=Aries',
-    'http://localhost:3000/gemini?rasi=Taurus',
-    'http://localhost:3000/gemini?rasi=Gemini',
-    'http://localhost:3000/gemini?rasi=Cancer',
-    'http://localhost:3000/gemini?rasi=Leo',
-    'http://localhost:3000/gemini?rasi=Virgo',
-    'http://localhost:3000/gemini?rasi=Libra',
-    'http://localhost:3000/gemini?rasi=Scorpion',
-    'http://localhost:3000/gemini?rasi=Sagittarius',
-    'http://localhost:3000/gemini?rasi=Capricorn',
-    'http://localhost:3000/gemini?rasi=Aquarius',
-    'http://localhost:3000/gemini?rasi=Pisces',
+    '/gemini?rasi=Aries',
+    '/gemini?rasi=Taurus',
+    '/gemini?rasi=Gemini',
+    '/gemini?rasi=Cancer',
+    '/gemini?rasi=Leo',
+    '/gemini?rasi=Virgo',
+    '/gemini?rasi=Libra',
+    '/gemini?rasi=Scorpio',
+    '/gemini?rasi=Sagittarius',
+    '/gemini?rasi=Capricorn',
+    '/gemini?rasi=Aquarius',
+    '/gemini?rasi=Pisces',
   ];
+  
   const names = [
     'Aries',
     'Taurus',
@@ -35,15 +37,15 @@ function Home() {
     'Cancer',
     'Leo',
     'Virgo',
-    'Lidra',
+    'Libra',
     'Scorpio',
     'Sagittarius',
     'Capricorn',
     'Aquarius',
     'Pisces'
   ];
+  
   const imgs = [
-    
     IMAGES1,
     IMAGES2,
     IMAGES3,
@@ -58,21 +60,17 @@ function Home() {
     IMAGES12
   ];
 
-
   return (
-    <div className  = 'horoscope-container'>
+    <div className='horoscope-container'>
       <div className='horoscope-card'>
         <div className='Head-horo'>
-          <h3 >
-          Horoscope
-          </h3>
+          <h3>Horoscope</h3>
         </div>
-
         <hr className='horigental-line'></hr>
         <div className='horo-img-container'>
-        {
-          urls.map((i,index)=><CardImage myLink={urls[index]} imagUrl={imgs[index]} name={names[index]} />)
-        }
+          {urls.map((url, index) => (
+            <CardImage key={index} myLink={url} imagUrl={imgs[index]} name={names[index]} />
+          ))}
         </div>
       </div>
     </div>
