@@ -1,17 +1,22 @@
-import React from 'react'
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 export default function CardImage(props) {
-  const { myLink, imagUrl, name } = props
+  const { myLink, imagUrl, name } = props;
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate(myLink);
+  };
 
   return (
-      <div className='mycard'>
-        <div className='img-ring'>
-        <a href={myLink} style={{ display: 'flex', justifyContent: 'center' }}>
-            <img className='horo-card-image' src={imagUrl} />
-          </a>
+    <div className='mycard' onClick={handleClick}>
+      <div className='img-ring'>
+        <div style={{ display: 'flex', justifyContent: 'center' }}>
+          <img className='horo-card-image' src={imagUrl} alt={name} />
         </div>
-        <span className='img-name'>{name} </span>
       </div>
-
-  )
+      <span className='img-name'>{name} </span>
+    </div>
+  );
 }

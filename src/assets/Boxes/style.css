@@ -218,6 +218,17 @@ div.time:hover{
   background-color: #FDF2F8;
   overflow: auto;
 }
+
+
+.face_result_data-content ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.face_result_data-content li {
+  margin: 5px 0;
+}
+
 .face-result-whole{
   width: 100vw;
   height: 100%;
@@ -227,8 +238,9 @@ div.time:hover{
 .Life-Path,
 .Relationship,
 .Growth{
-  width: 70%;
+  width: 60%;
   min-height: 300px;
+  padding: 15px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 40px;

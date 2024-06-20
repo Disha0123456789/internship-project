@@ -7,7 +7,7 @@ function TimeTravel() {
   const navigate = useNavigate();
   return (
     <>
-      <IoIosArrowBack onClick={() => navigate("../")} className="backicon" />
+      {/*<IoIosArrowBack onClick={() => navigate("../")} className="backicon" /> */}
       <div className="Head-Text">
         <h1>Time Travel</h1>
       </div>
