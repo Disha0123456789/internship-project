@@ -196,7 +196,7 @@ const DescriptionForAverage=(value)=>{
  
   return (
     <>
-      <div>
+      <div className='biorythm-first'>
         <div className="Head-Text">
           <h1>Biorhythm</h1>
         </div>

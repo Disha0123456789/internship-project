@@ -21,18 +21,43 @@
     margin-left: 30%;
     padding-bottom: 20px;
 }
+.required {
+    color: red;
+    margin-left: 5px;
+}
+
+@media screen and (max-width: 800px){
+    .changes{
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;
+        padding-bottom: 20px;
+    }
+    .user-Input{
+        width: 100% !important;
+    }
+    .select-city{
+        width: 100% !important;
+    }
+    .user-profile-btn {
+        font-size: x-small;
+    }
+}
 .UserBirthHead{
     padding-top: 30px;
     /* margin: 20px; */
     color: purple;
-    margin-left: 42%;
+    /* margin-left: auto; */
     /* margin-right: auto; */
-    padding-bottom: 30px
+    padding-bottom: 30px;
+    text-align: center;
+    font-size: 1.7rem;
+    font-weight: 600;
 }
 .user-Input{
     margin-top: 10px;
     width: 60%;
-    height: 30px;
+    height: 40px;
     border-radius: 7px;
     border-width: 1px;
     padding: 10px;
@@ -43,33 +68,37 @@
 }
 .changes-button{
     display: flex;
+    margin-bottom: 2rem;
     justify-content: center;
     align-items: center;
 }
-.user-profile-btn{
-    /* margin-right: 20%; */
+.user-profile-btn {
     margin-top: 50px;
-    width: 120px;
-    /* padding: 7px; */
-    background-color: #6f6f6f;
+    width: 17%;
+    background-color: #6f6f6f !important;
     color: white;
-    height: 40px;
+    height: auto; /* Flexible height */
     border-radius: 5px;
     border: none;
     outline: none;
     cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
+
 .user-profile-submit{
     margin-left: 7%;
     width: 42%;
     margin-top: 50px;
     margin-right: 5%;
-    height: 40px;
-    background-color: black;
+    height: auto;
+    background-color: black !important;
     color: white;
     border-radius: 5px;
     border: none;
     outline: none;
     cursor: pointer;
-    font-size: 18px;
 }

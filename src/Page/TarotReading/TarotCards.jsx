@@ -26,15 +26,18 @@ const TarotCards = ({ props }) => {
         <img className="Back-drop" src={IMG} alt="BACKDROP" />
         <img className="Card-Icon" src={IMG2} alt="ICON" />
       </div>
+      <hr className="Tarot-hr"/>
       <div className="Tarot-info">
         <h3>{head}</h3>
-        <p>Date</p>
+      {/*  <p>Date</p> */} 
         <p>{p1}</p>
         <p>{p2}</p>
+        {/*
         <div className="icons">
           <PiHandsClappingBold className="icon" />
           <IoEyeSharp className="icon" />
         </div>
+        */} 
       </div>
     </motion.div>
   );

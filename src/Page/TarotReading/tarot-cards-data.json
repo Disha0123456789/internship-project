@@ -4,16 +4,16 @@
     "backdrop": "/IMGS/how to change my luck background.jpg",
     "icon": "/IMGS/how to change my luck card.png",
     "head": "Daily tarot",
-    "p1": "Hold on tight. You're about to uncover some juicy intel about your destined partner!",
-    "p2": "Want a hint? Let the wisdom of Tarot guide you, my friend."
+    "p1": "Your Daily Tarot: Insight and Direction",
+    "p2": "Find out what energies will shape your day. Let the tarot guide you to a successful and fulfilling day."
   },
   {
     "id": 2,
     "backdrop": "/IMGS/weekend tarot background.jpg",
     "icon": "/IMGS/weekend tarot card.png",
     "head": "Weekend tarot fortune",
-    "p1": "Shake off the week's stress with a soul-stirring Tarot reading this weekend.",
-    "p2": "Unveil hidden possibilities and find clarity for the days ahead."
+    "p1": "Unveil the Energies Shaping Your Weekend",
+    "p2": "Gain clarity and guidance to make the most of your weekend. Discover what the cards have in store for you."
   },
   {
     "id": 3,
@@ -28,71 +28,71 @@
     "backdrop": "/IMGS/where is my destined partner background.jpg",
     "icon": "/IMGS/where is my destined partner card.png",
     "head": "Where is my destined partner",
-    "p1": "Explore the energies that will influence your week ahead.",
-    "p2": "Gain insights and guidance to navigate through the upcoming week."
+    "p1": "Hold on tight. You're about to uncover some juicy intel about your destined partner!",
+    "p2": "Want a hint? Let the wisdom of Tarot guide you, my friend."
   },
   {
     "id": 5,
-    "backdrop": "/IMGS/the first half of 2024 background.jpg",
+    "backdrop": "/IMGS/yes no background.jpg",
     "icon": "/IMGS/first half of 2024 card.png",
     "head": "Career",
-    "p1": "Explore the energies that will influence your week ahead.",
-    "p2": "Gain insights and guidance to navigate through the upcoming week."
+    "p1": "Discover the Path to Career Success",
+    "p2": "Explore the influences impacting your career. Let the tarot provide insights for your professional growth and success."
   },
   {
     "id": 6,
-    "backdrop": "/IMGS/my hidden charm background.jpg",
-    "icon": "/IMGS/my hidden charm card.png",
+    "backdrop": "/IMGS/the first half of 2024 background.jpg",
+    "icon": "/IMGS/finances.png",
     "head": "Finances",
-    "p1": "Explore the energies that will influence your week ahead.",
-    "p2": "Gain insights and guidance to navigate through the upcoming week."
+    "p1": "Chart Your Financial Future with Tarot",
+    "p2": "See what the cards say about your monetary journey. Prepare for financial success with tarot guidance."
   },
   {
     "id": 7,
     "backdrop": "/IMGS/how to change my luck background.jpg",
-    "icon": "/IMGS/how to change my luck card.png",
+    "icon": "/IMGS/change_luck.png",
     "head": "How to change my luck?",
-    "p1": "Explore the energies that will influence your week ahead.",
-    "p2": "Gain insights and guidance to navigate through the upcoming week."
+    "p1": "Harness Tarot Wisdom to Change Your Luck",
+    "p2": "Explore the tarot's guidance to attract better luck. Empower yourself with the knowledge to alter your destiny."
   },
   {
     "id": 8,
     "backdrop": "/IMGS/my hidden charm background.jpg",
-    "icon": "/IMGS/my hidden charm card.png",
+    "icon": "/IMGS/magic_hat.png",
     "head": "My hidden charm",
-    "p1": "Explore the energies that will influence your week ahead.",
-    "p2": "Gain insights and guidance to navigate through the upcoming week."
+    "p1": "Discover the Magic of Your Hidden Charms",
+    "p2": "Find out what makes you uniquely captivating. Allow tarot to illuminate the charm you hold beneath the surface."
   },
   {
     "id": 9,
-    "backdrop": "/IMGS/my hidden charm background.jpg",
-    "icon": "/IMGS/my hidden charm card.png",
+    "backdrop": "/IMGS/weekend tarot background.jpg",
+    "icon": "/IMGS/life_clarity.png",
     "head": "Life clarity",
-    "p1": "Explore the energies that will influence your week ahead.",
-    "p2": "Gain insights and guidance to navigate through the upcoming week."
+    "p1": "See Through the Fog with Life Clarity Tarot",
+    "p2": "Let tarot dispel confusion and reveal the way forward. Embrace a clearer vision for your life's journey."
   },
   {
     "id": 10,
-    "backdrop": "/IMGS/my hidden charm background.jpg",
-    "icon": "/IMGS/my hidden charm card.png",
+    "backdrop": "/IMGS/weekly tarot background.jpg",
+    "icon": "/IMGS/life_lessons.png",
     "head": "Life lessons",
-    "p1": "Explore the energies that will influence your week ahead.",
-    "p2": "Gain insights and guidance to navigate through the upcoming week."
+    "p1": "Embrace the Teachings of Life with Tarot",
+    "p2": "Understand the deeper meaning behind your experiences. Use tarot to uncover the wisdom in your life's challenges."
   },
   {
     "id": 11,
-    "backdrop": "/IMGS/my hidden charm background.jpg",
-    "icon": "/IMGS/my hidden charm card.png",
+    "backdrop": "/IMGS/the first half of 2024 background.jpg",
+    "icon": "/IMGS/feeling.png",
     "head": "How do you feel about yourself",
-    "p1": "Explore the energies that will influence your week ahead.",
-    "p2": "Gain insights and guidance to navigate through the upcoming week."
+    "p1": "Reflect on Your Self-Image with Tarot Wisdom",
+    "p2": "Use tarot to uncover your true feelings and thoughts about yourself. Gain clarity and embrace self-discovery."
   },
   {
     "id": 12,
-    "backdrop": "/IMGS/my hidden charm background.jpg",
-    "icon": "/IMGS/my hidden charm card.png",
+    "backdrop": "/IMGS/yes no background.jpg",
+    "icon": "/IMGS/reverse_card.png",
     "head": "Reversed tarot card",
-    "p1": "Explore the energies that will influence your week ahead.",
-    "p2": "Gain insights and guidance to navigate through the upcoming week."
+    "p1": "Reversed Tarot: Flipping Perspectives",
+    "p2": "Explore unexpected twists and revelations in tarot readings. Embrace the lessons and opportunities of reversed cards."
   }
 ]

@@ -8,8 +8,8 @@ function PanchangAnalysis() {
   const img = image;
   return (
     <div>
-      <div className="Container">
-        <div className="Container-heading">
+      <div className="astro-Container">
+        <div className="astro-Container-heading">
           <h1>Panchang Analysis</h1>
         </div>
         <div className="conten">

@@ -40,11 +40,11 @@ const Shuffle = () => {
         head: loc.state.head,
         title: selectedCard.title,
         heading,
-        para
+        para,
+        image: selectedCard.image // Pass the image path here
       }
     });
   };
-
   const variants = [];
   for (let i = 0; i < 21; i++) {
     variants[i] = {

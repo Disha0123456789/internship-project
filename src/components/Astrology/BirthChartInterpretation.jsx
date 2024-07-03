@@ -8,8 +8,8 @@ function BirthChartInterpretation() {
   const img = image;
   return (
     <div>
-      <div className="Container">
-        <div className="Container-heading">
+      <div className="astro-Container">
+        <div className="astro-Container-heading">
           <h1>Birth Chart Interpretation</h1>
         </div>
         <div className="conten">

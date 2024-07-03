@@ -3,7 +3,32 @@
     height: 100vh;
     width: 100vw;
 }
+.logo-background{
+    height: 100%;
+}
+@media screen and (max-width: 800px){
+    .Account-page{
+        flex-direction: column;
+    }
+    .Account-page-image{
+        margin-top: 40px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .logo-background{
+        background-color:papayawhip;
+    }
+    .Account-page-details{
+        width: 100% !important;
+    }
+}
+@media screen and (max-width: 400px){
+    .account-title {
+        font-size: larger !important;
+    }
+}
 .Account-page-image{
+    position: relative;
     height: 100vh;
     width: 40%;
     display: flex;

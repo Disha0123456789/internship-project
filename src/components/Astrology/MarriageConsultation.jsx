@@ -8,8 +8,8 @@ const MarriageConsultation = () => {
   const img = image;
   return (
     <>
-      <div className="Container">
-        <div className="Container-heading">
+      <div className="astro-Container">
+        <div className="astro-Container-heading">
           <h1>Marriage Consultation</h1>
         </div>
         <div className="conten">

@@ -1,27 +1,30 @@
-import React from "react";
+import React,{useEffect} from "react";
 import "./AstroMain.css";
 import { useNavigate } from "react-router-dom";
-import { IoIosArrowBack } from "react-icons/io";
 
 function AstroMain() {
   const navigate = useNavigate();
+  
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="astrology">
       <div className="Head-Text">
-        <IoIosArrowBack onClick={() => navigate("../")} className="backicon" />
         <h1>Astrology</h1>
         <div className="callchat-button">
           <button
             onClick={() => navigate("/AstroMain")}
             className="buttons btn-call1"
           >
-            <i className="fa-solid fa-phone"></i> Call
+          <i className="fa-solid fa-phone"></i> Call
           </button>
           <button
             onClick={() => navigate("/AstroMainChat")}
             className="buttons"
           >
-            <i class="fa-solid fa-comment-dots"></i> Chat
+          <i className="fa-solid fa-comment-dots"></i> Chat
           </button>
         </div>
       </div>

@@ -1,14 +1,12 @@
 import React from "react";
 import "./AstroMain.css";
 import { useNavigate } from "react-router-dom";
-import { IoIosArrowBack } from "react-icons/io";
 
 function AstroMainChat() {
   const navigate = useNavigate();
   return (
     <div className="astrology">
       <div className="Head-Text">
-        <IoIosArrowBack onClick={() => navigate("../")} className="backicon" />
         <h1>Astrology</h1>
         <div className="callchat-button">
           <button onClick={() => navigate("/AstroMain")} className="buttons">

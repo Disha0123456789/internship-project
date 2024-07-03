@@ -56,7 +56,6 @@ function Palmreader() {
           <div
             onClick={handleImageClick}
             className="card-mt-3"
-            style={{ width: "18rem", maxHeight: "360px" }}
           >
             <img
               src={PalmIcon}
@@ -83,7 +82,7 @@ function Palmreader() {
 
         <div className="file-scan-container">
           <div className="choose-file">
-            <input type="file" ref={inputRef} onChange={handleImageChange} />
+            <input type="file" ref={inputRef} onChange={handleImageChange}  className="file-input" />
           </div>
           <button className="scan-btn" onClick={handleScanClick}>
             Scan

@@ -1,14 +1,13 @@
 import BiorythmCalculator from "./Biorhythm"
-import TheoryOfBiorhythm from "./TheoryOfBiorhythm"
+import './LineChart.css';
 
 
 function LineChart() {
 
   return (
-    <>
+    <div className="biorythm-container">
       <BiorythmCalculator/>
-      <TheoryOfBiorhythm/>
-    </>
+    </div>
   )
 }
 

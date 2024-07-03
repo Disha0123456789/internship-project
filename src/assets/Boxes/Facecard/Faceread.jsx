@@ -88,7 +88,7 @@ function Faceread() {
 
         <div className="file-scan-container">
           <div className="choose-file">
-            <input type="file" ref={inputRef} onChange={handleImageChange} />
+            <input type="file" ref={inputRef} onChange={handleImageChange} className="file-input"/>
           </div>
           <button className="scan-btn" onClick={handleScanClick}>
             Scan
@@ -107,6 +107,7 @@ function Faceread() {
             <h3 className="magic-text">Time Magic</h3>
           </div>
         </div>
+        {/** 
         <div className="time">
           <img
             className="ancestors-from"
@@ -117,6 +118,7 @@ function Faceread() {
             <h3 className="ancestors-text">Where Are My Ancestors From?</h3>
           </span>
         </div>
+        */}
       </div>
     </div>
   );

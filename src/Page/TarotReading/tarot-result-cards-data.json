@@ -2,6 +2,7 @@
       {
         "id": 1,
         "title": "The Fool",
+        "image": "../../../public/2nd-row-reading/Tarot/Tarot_Result_Cards/fool.png",
         "heading1":"New Beginnings and Embracing the Unknown",
         "heading2": "The Potential for Limitless Possibilitie",
         "heading3": "The Importance of Innocence and Trust",
@@ -16,6 +17,7 @@
       {
         "id": 2,
         "title": "The Magician",
+        "image": "../../../public/2nd-row-reading/Tarot/Tarot_Result_Cards/magician.jpg",
         "heading1":"Manifestation and Taking Action",
         "heading2": "Mastery and Skilled Executione",
         "heading3": "Connecting the Physical and Spiritual",
@@ -30,6 +32,7 @@
       {
         "id": 3,
         "title": "The High Priestess",
+        "image": "../../../public/2nd-row-reading/Tarot/Tarot_Result_Cards/highpriestess.jpg",
         "heading1":"Intuition, Secrets, and the Subconscious",
         "heading2": "Veiled Knowledge and Unveiling Secrets",
         "heading3": "The Divine Feminine and Sacred Silence",
@@ -44,6 +47,7 @@
       {
         "id": 4,
         "title": "The Empress",
+        "image": "../../../public/2nd-row-reading/Tarot/Tarot_Result_Cards/empress.png",
         "heading1":"Abundance, Creativity, and Nurturing",
         "heading2": "Femininity, Fertility, and Motherhood",
         "heading3": "Personal Growth and Inner Balance",
@@ -58,6 +62,7 @@
       {
         "id": 5,
         "title": "The Emperor",
+        "image": "../../../public/2nd-row-reading/Tarot/Tarot_Result_Cards/emperor.png",
         "heading1":"Structure, Authority, and Leadership",
         "heading2": "Logic, Reason, and Practicality",
         "heading3": "Protection, Security, and Stability",
@@ -72,6 +77,7 @@
       {
         "id": 6,
         "title": "The Hierophant",
+        "image": "../../../public/2nd-row-reading/Tarot/Tarot_Result_Cards/hierophant.jpg",
         "heading1":"Tradition, Teaching, and Conformity",
         "heading2": "Bridging the Gap Between Spiritual and Secular",
         "heading3": "Making Choices Based on Values and Beliefs",
@@ -86,6 +92,7 @@
       {
         "id": 7,
         "title": "The Lovers",
+        "image": "../../../public/2nd-row-reading/Tarot/Tarot_Result_Cards/lovers.png",
         "heading1":"Significant Choices and Relationship Crossroads",
         "heading2": "Uniting Opposites and Finding Balance",
         "heading3": "Spiritual Connection and Soul Mates",
@@ -100,6 +107,7 @@
       {
         "id": 8,
         "title": "The Chariot",
+        "image": "/public/2nd-row-reading/Tarot/Tarot_Result_Cards/chariot.png",
         "heading1":"Control, Direction, and Overcoming Challenges",
         "heading2": "Victory, Triumph, and Achieving Goals",
         "heading3": "Balance and Integration of Duality",
@@ -114,6 +122,7 @@
       {
         "id": 9,
         "title": "The Strength",
+        "image": "../../../public/2nd-row-reading/Tarot/Tarot_Result_Cards/strength.png",
         "heading1":"Inner Strength, Gentleness, and Overcoming Obstacles",
         "heading2": "Taming the Ego and Using Power Wisely",
         "heading3": "Facing Fears with Confidence and Facing Your Shadow Selves",
@@ -128,6 +137,7 @@
       {
         "id": 10,
         "title": "The Hermit",
+        "image": "../../../public/2nd-row-reading/Tarot/Tarot_Result_Cards/hermit.png",
         "heading1":"Introspection, Solitude, and Seeking Knowledge",
         "heading2": "Inner Wisdom, Independence, and Self-Reliance",
         "heading3": "Spiritual Guidance and Illumination",
@@ -142,6 +152,7 @@
       {
         "id": 11,
         "title": "The Wheel of Fortune",
+        "image": "../../../public/2nd-row-reading/Tarot/Tarot_Result_Cards/wheel.png",
         "heading1":"Change, Cycles, and Unexpected Events",
         "heading2": "Karma and the Law of Attraction",
         "heading3": "Taking Risks and Embracing New Opportunities",
@@ -156,6 +167,7 @@
       {
         "id": 12,
         "title": "The Justice",
+        "image": "../../../public/2nd-row-reading/Tarot/Tarot_Result_Cards/justice.png",
         "heading1":"Fairness, Balance, and Accountability",
         "heading2": "Truth, Objectivity, and Seeking Harmony",
         "heading3": "Karma and the Law of Cause and Effect",
@@ -170,6 +182,7 @@
       {
         "id": 13,
         "title": "The Hanged Man",
+        "image": "../../../public/2nd-row-reading/Tarot/Tarot_Result_Cards/hanged_man.png",
         "heading1":"Surrender, Acceptance, and New Perspectives",
         "heading2": "Sacrifice, Selflessness, and Reevaluation",
         "heading3": "Inner Peace, Intuition, and Connection to the Divine",
@@ -184,6 +197,7 @@
       {
         "id": 14,
         "title": "The Death",
+        "image": "../../../public/2nd-row-reading/Tarot/Tarot_Result_Cards/death.png",
         "heading1":"Transformation, Endings, and New Beginnings",
         "heading2": "Personal Transformation and Rebirth",
         "heading3": "Renewal, Rebirth, and Spiritual Awakening",
@@ -198,6 +212,7 @@
       {
         "id": 15,
         "title": "The Temperance",
+        "image": "../../../public/2nd-row-reading/Tarot/Tarot_Result_Cards/temperance.png",
         "heading1":"Balance, Moderation, and Integration",
         "heading2": "Healing, Patience, and Finding Harmony",
         "heading3": "Blending Ideas, Collaboration, and New Beginnings",
@@ -212,6 +227,7 @@
       {
         "id": 16,
         "title": "The Devil",
+        "image": "../../../public/2nd-row-reading/Tarot/Tarot_Result_Cards/devil.png",
         "heading1":"Temptation, Addiction, and Illusion",
         "heading2": "Shadow Self, Ego, and Facing Your Fears",
         "heading3": "Illusion of Control, Obsession, and Letting Go",
@@ -226,6 +242,7 @@
       {
         "id": 17,
         "title": "The Tower",
+        "image": "../../../public/2nd-row-reading/Tarot/Tarot_Result_Cards/tower.png",
         "heading1":"Sudden Change, Disruption, and Transformation",
         "heading2": "Revelation, Awakening, and Seeing the Truth",
         "heading3": "Loss, Destruction, and Rebuilding",
@@ -240,6 +257,7 @@
       {
         "id": 18,
         "title": "The Star",
+        "image": "../../../public/2nd-row-reading/Tarot/Tarot_Result_Cards/star.png",
         "heading1":"Hope, Renewal, and Inspiration",
         "heading2": "Healing, Inner Peace, and Connection to the Divine",
         "heading3": "New Beginnings, Fresh Starts, and Embracing Possibilities",
@@ -254,6 +272,7 @@
       {
         "id": 19,
         "title": "The Moon",
+        "image": "../../../public/2nd-row-reading/Tarot/Tarot_Result_Cards/moon.png",
         "heading1":"Illusion, Deception, and Hidden Emotions",
         "heading2": "Fear, Anxiety, and Facing Your Shadow Self",
         "heading3": "Intuition, Creativity, and Following Your Inner Guidance",
@@ -268,6 +287,7 @@
       {
         "id": 20,
         "title": "The Sun",
+        "image": "../../../public/2nd-row-reading/Tarot/Tarot_Result_Cards/sun.png",
         "heading1":"Happiness, Success, and Positive Energy",
         "heading2": "Clarity, Truth, and Innocence",
         "heading3": "Playfulness, Creativity, and Self-Expression",
@@ -282,6 +302,7 @@
       {
         "id": 21,
         "title": "The Judgement",
+        "image": "../../../public/2nd-row-reading/Tarot/Tarot_Result_Cards/judgement.png",
         "heading1":"Inner Calling, Self-Reflection, and Awakening",
         "heading2": "Accountability, Karma, and Receiving What You Deserve",
         "heading3": "Renewal, Rebirth, and New Beginnings",
@@ -296,6 +317,7 @@
       {
         "id": 22,
         "title": "The World",
+        "image": "../../../public/2nd-row-reading/Tarot/Tarot_Result_Cards/world.jpg",
         "heading1":"Completion, Success, and Fulfilment",
         "heading2": "Unity, Wholeness, and Integration",
         "heading3": "Travel, Expansion, and Embracing New Horizons",
