@@ -1,17 +1,17 @@
 import React from 'react';
 import CardImage from './CardImage';
-import IMAGES11 from '../images/aquarius.png';
-import IMAGES1 from '../images/aries.png';
-import IMAGES4 from '../images/cancer.png';
-import IMAGES10 from '../images/capricorn.png';
-import IMAGES3 from '../images/gemini.png';
-import IMAGES5 from '../images/leo.png';
-import IMAGES7 from '../images/libra.png';
-import IMAGES12 from '../images/pisces.png';
-import IMAGES9 from '../images/sagittarius.png';
-import IMAGES8 from '../images/scorpion.png';
-import IMAGES2 from '../images/taurus.png';
-import IMAGES6 from '../images/virgo.png';
+import IMAGES11 from '../../../../public/1st-row/Horoscope/aquarius.png';
+import IMAGES1 from '../../../../public/1st-row/Horoscope/aries.png';
+import IMAGES4 from '../../../../public/1st-row/Horoscope/cancer.png';
+import IMAGES10 from '../../../../public/1st-row/Horoscope/capricorn.png';
+import IMAGES3 from '../../../../public/1st-row/Horoscope/gemini.png';
+import IMAGES5 from '../../../../public/1st-row/Horoscope/leo.png';
+import IMAGES7 from '../../../../public/1st-row/Horoscope/libra.png';
+import IMAGES12 from '../../../../public/1st-row/Horoscope/pisces.png';
+import IMAGES9 from '../../../../public/1st-row/Horoscope/sagittarius.png';
+import IMAGES8 from '../../../../public/1st-row/Horoscope/scorpion.png';
+import IMAGES2 from '../../../../public/1st-row/Horoscope/taurus.png';
+import IMAGES6 from '../../../../public/1st-row/Horoscope/virgo.png';
 import '../Horoscope.css';
 
 function Home() {

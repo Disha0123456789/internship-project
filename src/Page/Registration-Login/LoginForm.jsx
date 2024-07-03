@@ -14,7 +14,7 @@ function LoginForm() {
           <img id='logo' src={logo} alt="" />
         </div>
         <div id='login-container'>
-          <div>
+          <div className="login-textfield">
             <h1 className='h1'>Welcome Back!!</h1>
             <h3 className='h3'>Please Login On Divine Connection</h3>
           </div>

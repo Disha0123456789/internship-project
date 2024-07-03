@@ -58,7 +58,8 @@ import Palmresult from "./assets/Boxes/Facecard/Palmresult";
 import TimeTravel from "./Page/TimeTravel/TimeTravel";
 import FuturePrediction from "./Page/TimeTravel/FuturePrediction";
 import SeeYourFuture from "./Page/TimeTravel/SeeYourFuture";
-import PastLifePrediction from "./Page/TimeTravel/PastLifePrediction"
+import PastLifePrediction from "./Page/TimeTravel/PastLifePrediction";
+import SeeYourPast from "./Page/TimeTravel/SeeYourPast";
 
 //Astrology 
 import AstroMain from "./components/Astrology/AstroMain";
@@ -186,6 +187,7 @@ function App() {
         <Route path="/FuturePrediction" element={<FuturePrediction />} />
         <Route path="/see_your_future" element={<SeeYourFuture />} />
         <Route path="/PastLifePrediction" element={<PastLifePrediction />} />
+        <Route path="/see_your_past" element={<SeeYourPast />} />
 
         {/* Astrology*/}
         <Route path="/AstroMain" element={<AstroMain />} />

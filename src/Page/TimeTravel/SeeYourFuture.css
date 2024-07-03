@@ -65,3 +65,11 @@
     }
   
   }
+
+  .prediction-text {
+    /* Styles for the prediction text */
+    font-size: 1.1rem; /* Example font size */
+    line-height: 1.5; /* Example line height */
+    color: #333; /* Example text color */
+    /* Add more styles as needed */
+  }

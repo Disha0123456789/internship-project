@@ -66,12 +66,11 @@ input:hover{
 } */
 
 .img-icon{
-  width: 180px;
-  height: 180px;
+  width: 100%;
 
 } 
 .img-icon-1{
-  height: 180px;
+  width: 100%;
 }
 .choose-file{
   margin-top: 20px;
@@ -87,14 +86,16 @@ input:hover{
   background-color: #D9D9D9;
 }
 .two-face{
+  display: flex;
   align-items: center;
   justify-content: center;
   padding: 20px;
 }
+
 .face-reader{
   background-color: #FDF2F8;
   width: 80vw;
-  height: 90vh;
+  padding-bottom: 20px;
   border-radius: 20px;
 }
 .img-display-after{
@@ -106,18 +107,17 @@ input:hover{
   object-fit: contain;
 }
 .card-mt-3 {
+  /* height: 100%; */
   display: inline-block;
   vertical-align: middle;
-  padding-left: 50px;
-  padding-right: 20px;
+  /* padding-left: 20px; */
+  /* padding-right: 20px; */
   border-right: 2px solid #000; /* Add a right border */
 }
 
 .face-image-upload {
   display: inline-block;
   vertical-align: middle;
-  margin-right: 10px;
-  padding-left: 20px; /* Add some padding to align properly */
 }
 
 .file-scan-container {
@@ -128,9 +128,57 @@ input:hover{
   justify-content: space-around;
 }
 
+@media screen and (min-width:700px) and (max-width:1000px){
+  .file-input{
+    font-size:small !important;
+  }
+  .file-scan-container {
+    padding: 20px 10px 20px 0px !important;
+  }
+}
+@media screen and (min-width:200px) and (max-width:700px){
+  .face-input-section {
+    width:80% !important;
+  }
+  .palm-input-section {
+    width: 85% !important;
+  }
+  .two-face {
+    display: flex;
+    flex-direction: column;
+  }
+  .card-mt-3{
+    border-right: 0px solid #000;
+    border-bottom: 2px solid #000;
+  }
+  .img-icon-1 {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 10px;
+  }
+  .img-icon {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+  }
+  .file-scan-container {
+    width: calc(100% - 50%);
+    justify-content: center;
+    gap: 20px;
+  }
+  .file-input {
+    font-size: small !important;
+  }
+}
+
 
 .choose-file {
   /* Styles for choose-file */
+}
+.file-input{
+  font-size:medium;
 }
 
 .scan-btn {
@@ -147,7 +195,6 @@ input:hover{
   border: solid#dbcf9e;
   margin-top: 50px;
   border-radius: 1rem;
-  margin-left: 75px;
   object-fit: contain;
 }
 div.time:hover{
@@ -155,7 +202,9 @@ div.time:hover{
 }
 .time-past{
   display: flex;
-  margin-left: 80px;
+  width: 78%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
@@ -351,7 +400,6 @@ div.time:hover{
 .palm-input-section {
   display: flex;
   width: 78%;
-  height: 60%;
   justify-content: center;
   align-items: center;
   margin: auto;

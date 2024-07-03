@@ -1,9 +1,18 @@
 /* Chart styles */
+.biorythm-container{
+  width: 100vw;
+}
+.biorythm-first{
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .canvas {
   height: 200px;
   box-sizing: border-box;
   display: block;
-  width: 60%;
+  width: 80%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -62,6 +71,21 @@
   font-family: serif;
 }
 
+.bio-daily-interpretaion{
+  margin-top: 1.5rem;
+  /* padding: 2.5rem; */
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (max-width:700px){
+  .labelbtn-container {
+    width: 84% !important;
+  }
+  .label-button {
+    width: 5em !important;
+  }
+}
 
 /* Biorhythm cycle headings styles */
 .physical-info ,.emotional-info, .intellectual-info, .average-info {
@@ -89,14 +113,17 @@
 }
 
 .biorhythm-info {
+  width: 90%;
   padding: 2rem;
-  margin: 0.5rem;
+  margin-top: 1.5rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
   background-image: linear-gradient(to bottom, #000000, #808080);
   color: white;
   font-weight: 600;
   font-family: serif;
   border-radius: 0.5rem;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .biorhythm-title {

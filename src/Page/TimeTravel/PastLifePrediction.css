@@ -7,7 +7,15 @@
   font-style: normal;
   font-variation-settings: "slnt" 0;
 }
-
+.past-life-button-wrapper {
+  display: flex;
+  margin-top: 20px;
+}
+.past-life-btn{
+  width: 100%;
+  background-color: black;
+  color: white;
+}
 .cards-container-pl {
   display: flex;
   justify-content: center;

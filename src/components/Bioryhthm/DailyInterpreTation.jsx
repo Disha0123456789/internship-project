@@ -45,7 +45,7 @@ function DailyInterpreTation({physical,emotional, intellectual,average,date}) {
  
 
   return (
-    <div className="p-10 ">
+    <div className="bio-daily-interpretaion ">
       <div className="p-3 shadow-3xl shadow-black bg-gray-100 text-black font-semibold font-serif rounded-md">
          <h1 className="text-blue-500 text-3xl font-semibold text-center">Daily Interpretation</h1>
          <h1 className="text-xl text-blue-500 font-medium text-center">{date}</h1>

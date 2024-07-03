@@ -5,7 +5,6 @@
   
   
   .match-container {
-    height: 100vh;
     width: 100vw;
     display: flex;
     justify-content: center;
@@ -15,7 +14,10 @@
   .kundliForm {
     width: 80%;
     margin-top: 2em;
-    padding: 1em;
+    padding-top: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 0.5em;
     background-color: #fdf2f8;
     border-radius: 30px;
     box-shadow: 0px 0px 5px 0px black;
@@ -27,6 +29,12 @@
     padding: 15px 0px 20px 0px;
     font-family: "Roboto", sans-serif;
     font-weight: 500;
+  }
+  @media screen and (max-width: 500px){
+    .kundliForm h1 {
+      font-size: xx-large;
+    }
+
   }
   .match-hr{
     width: 100%;
@@ -42,9 +50,15 @@
     width: 40%;
     background-color: #ffffff;
     border-radius: 10px;
-    margin-top: 25px;
-    margin-bottom: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     box-shadow: 0px 2px 5px -2px black;
+  }
+  
+  .required {
+    color: red;
+    font-size: small;
+    margin-left: 5px;
   }
   
   .match-input-label {
@@ -67,12 +81,19 @@
   }
   .match-input {
     width: 80%;
+    border-width: thin;
     padding: 6px 6px 6px 6px;
-    margin: 5px 0px 15px 0px;
+    margin: 5px 0px 10px 0px;
+  }
+  .kundli-react-select-city{
+    width: 80%;
+    padding: 6px 0px 6px 0px;
+    margin: 5px 0px 10px 0px;
   }
   
   .match-checkbox,
   .match-checkboxContent {
+    font-size: 0.9rem;
     margin-left: 4px;
     margin-bottom: 15px;
     cursor: pointer;
@@ -91,7 +112,7 @@
     padding: 10px 0px;
     color: white;
     border: none;
-    background-color: #682f98;
+    background-color: #682f98 !important; 
     border-radius: 10px;
     margin-bottom: 10px;
     font-family: "Roboto", sans-serif;

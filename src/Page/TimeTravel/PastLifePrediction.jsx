@@ -1,104 +1,66 @@
-import React from "react";
+import React, { useState } from "react";
+import "./PastLifePrediction.css";
 import { IoIosArrowBack } from "react-icons/io";
 import { useNavigate } from "react-router-dom";
-import "./PastLifePrediction.css";
 
 function PastLifePrediction() {
+  const [birthDate, setBirthDate] = useState("");
+  const [zodiacSign, setZodiacSign] = useState("");
   const navigate = useNavigate();
+
+  const handleBirthDateChange = (e) => {
+    const date = e.target.value;
+    setBirthDate(date);
+    calculateZodiacSign(date);
+  };
+
+  const navigateToFuture = (date) => {
+    navigate(`/see_your_past?birthDate=${date}`);
+  };
+
   return (
-    <>
-      <div className="dream-result">
-        <div className="Head-Text">
-          <IoIosArrowBack
-            onClick={() => navigate("/TimeTravel")}
-            className="backicon"
-          />
-          <h1>Past Life Prediction</h1>
-        </div>
-        <div className="dreamcard-container">
-          <div className="dream-result-card">
-            <div className="card-header-pl">
-              <h4>
-                <div className="Physical-pl"></div>
-              </h4>
-            </div>
-            <h2 className="dream-result-title">Marriage</h2>
-            <div className="divider"></div>
-            <p className="description">
-              In a past life, you were deeply committed to a partner who
-              embodied qualities of wisdom and compassion. Your union was
-              characterized by mutual respect and a shared sense of purpose.
-              Together, you may have experienced the joy of raising a family,
-              nurturing strong bonds with your children, and creating a
-              harmonious household filled with love and understanding.
-            </p>
-          </div>
-        </div>
-        <div className="margin-div"></div>
-        <div className="dreamcard-container">
-          <div className="dream-result-card">
-            <div className="card-header-pl">
-              <h4>
-                <div className="Emotional-pl"></div>
-              </h4>
-            </div>
-            <h2 className="dream-result-title">Kids</h2>
-            <div className="divider"></div>
-            <p className="description">
-              In a previous incarnation, you were blessed with children who
-              brought immense joy and fulfillment into your life. Your offspring
-              were known for their intelligence, creativity, and independent
-              spirits. As a parent, you provided guidance and support, fostering
-              an environment where your children could flourish and pursue their
-              passions with confidence.
-            </p>
-          </div>
-        </div>
-        <div className="margin-div"></div>
-        <div className="dreamcard-container">
-          <div className="dream-result-card">
-            <div className="card-header-pl">
-              <h4>
-                <div className="Intellectual-pl"></div>
-              </h4>
-            </div>
-            <h2 className="dream-result-title">Occuupation</h2>
-            <div className="divider"></div>
-            <p className="description">
-              In your past life, you pursued a career path that allowed you to
-              express your natural talents and make a meaningful contribution to
-              society. Whether as a skilled artisan, respected healer, or
-              visionary leader, you embraced your role with passion and
-              dedication. Your occupation brought you a sense of fulfillment and
-              purpose, leaving a lasting legacy of accomplishment and
-              inspiration.
-            </p>
-          </div>
-        </div>
-        <div className="margin-div"></div>
-        <div className="dreamcard-container">
-          <div className="dream-result-card">
-            <div className="card-header-pl">
-              <h4>
-                <div className="Spiritual-pl"></div>
-              </h4>
-            </div>
-            <h2 className="dream-result-title">Wealth</h2>
-            <div className="divider"></div>
-            <p className="description">
-              In your past life, you pursued a career path that allowed you to
-              express your natural talents and make a meaningful contribution to
-              society. Whether as a skilled artisan, respected healer, or
-              visionary leader, you embraced your role with passion and
-              dedication. Your occupation brought you a sense of fulfillment and
-              purpose, leaving a lasting legacy of accomplishment and
-              inspiration.
-            </p>
-          </div>
-        </div>
-        <div className="margin-div"></div>
+    <div className="timetravel">
+      <div className="Head-Text">
+        {/* <IoIosArrowBack onClick={() => navigate("/TimeTravel")} className="backicon" /> */}
+        <h1>Past Life Prediction</h1>
       </div>
-    </>
+      <div className="Future-container text-left">
+        <div className="row justify-content-center">
+          <div className="">
+            <form action="#">
+              <div className="form-group">
+                <div>
+                  <label htmlFor="birthDate">Date of Birth:</label>
+                  <input
+                    type="date"
+                    id="birthDate"
+                    className="form-control"
+                    value={birthDate}
+                    onChange={handleBirthDateChange}
+                  />
+                </div>
+                {/*zodiacSign && (
+                  <div className="zodiac-sign">
+                    <p>Your Zodiac Sign: {zodiacSign}</p>
+                  </div>
+                )*/}
+                {birthDate && (
+                  <div className="past-life-button-wrapper">
+                    <button
+                      type="button"
+                      className="past-life-btn"
+                      onClick={() => navigateToFuture(birthDate)}
+                    >
+                      See Your Past Life
+                    </button>
+                  </div>
+                )}
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 }
 

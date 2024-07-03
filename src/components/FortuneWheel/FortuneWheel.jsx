@@ -51,6 +51,12 @@ function FortuneWheel() {
 
   return (
     <div className="wheel-container">
+       <div className="Head-Text">
+          <h1>Fortune Wheel</h1>
+        </div>
+        <div className='caution'>
+          <h2>Tap to check your color of the day!</h2>
+        </div>
       <div id="wheelCircle">
         <WheelComponent
           segments={segments}

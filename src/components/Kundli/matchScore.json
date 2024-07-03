@@ -1,5 +1,4 @@
-{
-    "score":[
+[
         {
             "id":0,
             "para1": "Uncharted Territory: The mismatches indicated by the score can be stepping stones to a groundbreaking form of compatibility. By embracing these differences with curiosity and a willingness to learn from each other, you can create a relationship unlike any other.",
@@ -189,15 +188,10 @@
             "para1":"High Compatibility: A score of 35 indicates a strong foundation for a compatible relationship, much like a perfect score of 36. Most of the essential guna categories for marital success are likely well-matched."
         },
         {
+            "id":36,
             "para1": "In Vedic astrology, a score of 36 out of 36 in Kundli matching is considered highly auspicious and indicative of a very compatible relationship. Kundli matching, also known as Guna Milan, involves comparing the birth charts of a potential couple to assess their compatibility across various aspects of life.",
-            "para2": {
-                "interpretation": "Here's a breakdown of what a 36 out of 36 score signifies:",
-                "significance": {
-                    "Maximum Compatibility": "The 36 points represent eight different categories or 'gunas' considered essential for a successful marriage. A perfect score suggests a high degree of compatibility in these areas.",
-                    "Harmony and Prosperity": "According to tradition, this score indicates a strong likelihood of a harmonious and prosperous life together for the couple.",
-                    "Deep Connection": "The perfect alignment is believed to suggest a deep and natural connection between the partners."
-                }
-            }
+            "para2": "Maximum Compatibility: The 36 points represent eight different categories or 'gunas' considered essential for a successful marriage. A perfect score suggests a high degree of compatibility in these areas.",
+            "para3": "Harmony and Prosperity: According to tradition, this score indicates a strong likelihood of a harmonious and prosperous life together for the couple.",
+            "para4": "Deep Connection: The perfect alignment is believed to suggest a deep and natural connection between the partners."
         }
-    ]
-}
+]

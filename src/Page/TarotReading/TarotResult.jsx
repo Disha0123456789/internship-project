@@ -1,7 +1,5 @@
-// TarotResult.js
 import React from "react";
 import { useLocation } from "react-router-dom";
-import IMG from "/IMGS/result card.png";
 
 const TarotResult = () => {
   const loc = useLocation();
@@ -13,7 +11,7 @@ const TarotResult = () => {
           <h1>{loc.state.head}</h1>
         </div>
         <div className="tarot-card-image">
-          <img src={IMG} alt="" />
+          <img src={loc.state.image} alt={loc.state.title} /> {/* Use the passed image path here */}
           <h3>{loc.state.title}</h3>
         </div>
         <div className="tarot-result-info">

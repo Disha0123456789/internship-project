@@ -8,7 +8,9 @@
     height:200px;
     margin-right: 3%;
 }
-.Register{
+
+@media screen and (min-width:1200px){
+  .Register{
     margin-top: 40px;
     justify-content: left;
     align-items: center;
@@ -25,7 +27,60 @@
   text-align: left;
   font-weight: 600;
 
+  }
 }
+
+@media screen and (min-width:800px)  and (max-width: 1200px){
+  .form-container{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 90vw;
+    text-align: left;
+    font-weight: 600;
+  }
+  .Register{
+    width:90vw;
+    margin-top: 40px;
+    margin-left: 0px;
+    justify-content: left;
+    align-items: center;
+    text-align: left;
+    display: flex;
+  }
+}
+@media screen and (max-width:800px){
+  .form-container{
+    display: flex;
+    flex-direction: column;
+  }
+  .Register{
+    width:90vw;
+    margin-top: 40px;
+    margin-left: 0px;
+    justify-content: left;
+    align-items: center;
+    text-align: left;
+    display: flex;
+  }
+  .register-title h1{
+    font-size: xx-large;
+  }
+  .form-row{
+    flex-direction: column;
+    margin: 0px 15px !important;
+  }
+  .input-data{
+    margin: 15px 20px !important;
+  }
+  .form-row-last{
+    margin-top: 20px;
+  }
+  .sign-up-icons{
+    margin-top: 2% !important;
+    gap: 20px !important;
+  } 
+}
+
 .form-container .text{
  
   text-align: left;
@@ -129,10 +184,9 @@ hr{
 
 .sign-up-icons{
   display: flex;
-  justify-content:space-evenly;
+  justify-content:center;
   align-items: center;
   width: 91%;
   margin-top: 1%;
-  padding-left: 39%;
-  padding-right: 39%;
+  gap:30px;
 }

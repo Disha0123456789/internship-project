@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useEffect }from "react";
 import { motion } from "framer-motion";
 import TarotCards from "./TarotCards";
 import tarotReadingCardsData from "./tarot-cards-data"; // Importing tarot-reading-cards-data
 
 const TarotReading = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="Main-Tarot">
       <div className="Head-Text">

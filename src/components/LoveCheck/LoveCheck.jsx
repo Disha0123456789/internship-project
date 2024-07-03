@@ -12,11 +12,12 @@ const LoveCheck = () => {
     const maxPetals = 12; // Maximum number of petals
 
     const generateRandomColor = () => {
-        const color = '#' + Math.floor(Math.random() * 16777215).toString(16);
-        // Check if the color is white, if so, generate a new color
-        if (color === '#ffffff' && color === '#f5d7e7') {
+        const color = '#' + Math.floor(Math.random() * 16777215).toString(16).padStart(6, '0');
+        // Check if the color starts with #f, if so, generate a new color
+        if (color[1] === 'f') {
             return generateRandomColor(); // Recursive call to generate a new color
         }
+        //console.log(color);
         return color;
     };
 

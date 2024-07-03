@@ -6,13 +6,14 @@ import { useNavigate } from "react-router-dom";
 function TimeTravel() {
   const navigate = useNavigate();
   return (
-    <>
+    <div className="Travel-container">
       {/*<IoIosArrowBack onClick={() => navigate("../")} className="backicon" /> */}
       <div className="Head-Text">
         <h1>Time Travel</h1>
       </div>
       <div className="timetravel-container">
         <div onClick={() => navigate("/FuturePrediction")} className="tt-grid">
+          <div className="tt-container">
           <div className="grid-items-tt bg-fup"></div>
           <div className="info-tt">
             <div className="button-container-tt">
@@ -20,6 +21,7 @@ function TimeTravel() {
                 Future Prediction
               </button>
             </div>
+          </div>
           </div>
         </div>
         <div className="tt-grid">
@@ -36,7 +38,7 @@ function TimeTravel() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

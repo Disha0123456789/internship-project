@@ -13,7 +13,7 @@ export default function Register() {
         <div className="Register-Page">
             <div className='Register'>
                 <img src={logo} alt='logo' className='logo' />
-                <div> <h1>Register here</h1><br></br>
+                <div className='register-title'> <h1>Register here</h1><br></br>
                     <p>Create Your Account on Divine Connection</p>
                 </div>
             </div>

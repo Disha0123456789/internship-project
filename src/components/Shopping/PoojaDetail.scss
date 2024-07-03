@@ -92,6 +92,7 @@
     .FormPuja {
       &__Heading {
         flex-direction: column;
+        align-items: flex-start;
         &__Description,
         &__TicketInfo {
           padding: 0.5em;

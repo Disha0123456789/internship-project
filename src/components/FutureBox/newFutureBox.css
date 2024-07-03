@@ -1,0 +1,117 @@
+.future-box-container {
+    width: 100vw;
+    max-width: 85rem;
+    padding: 3rem 4rem;
+    margin: auto;
+  }
+  
+  .future-box-heading {
+    text-align: center;
+    padding-bottom: 2.5rem;
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  
+  .future-grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    justify-content: space-evenly;
+  }
+  
+  .future-grid-container-lg {
+    grid-template-columns: repeat(3, 0fr);
+  }
+  
+  .future-grid-item {
+    height: 9rem;
+    width: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid transparent;
+    background: linear-gradient(to top right, #d4b1f5, #a6d1f5);
+    border-radius: 1rem;
+    text-align: center;
+    padding: 1rem;
+    margin: auto;
+    cursor: pointer;
+  }
+  
+  .future-grid-item img {
+    width: 4.5rem;
+    height: 4.5rem;
+    margin: auto;
+    border-radius: 0.5rem;
+  }
+  
+  .future-grid-item h3 {
+    margin-top: 0.625rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #1b1b1b;
+  }
+  
+  @media (max-width: 640px) {
+    .future-grid-item {
+      width: 9rem !important;
+    }
+    .future-grid-item img {
+      width: 3.2rem !important;
+      height: 3.2rem !important;
+    }
+    .future-grid-item h3 {
+      font-size: 0.9rem !important;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .carousel-container {
+      height: 225px;
+    }
+    .carousel-slide {
+      height: 200px;
+    }
+    .future-grid-item {
+      width: 7rem !important;
+    }
+    .future-grid-item img {
+      width: 3rem !important;
+      height: 3rem !important;
+    }
+    .future-grid-item h3 {
+      font-size: 0.78rem !important;
+    }
+  }
+  
+
+  @media (max-width: 800px) {
+    .future-grid-item {
+      width: 12rem;
+    }
+    .future-grid-item img {
+      width: 3.5rem;
+      height: 3.5rem;
+    }
+  }
+  @media (max-width: 964px) {
+    .future-box-container {
+      padding: 3rem 0rem;
+    }
+  }
+  
+  @media (max-width: 1024px) {
+    .future-grid-container {
+      grid-template-columns: repeat(3, 0fr);
+    }
+    .future-grid-container-lg {
+      grid-template-columns: repeat(3, 0fr);
+    }
+    .future-grid-item {
+      padding: 1.25rem;
+    }
+    .future-grid-item h3 {
+      font-size: 1.25rem;
+    }
+  }
+  
