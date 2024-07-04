@@ -19,6 +19,11 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
   
+  @media screen and (max-width:640px){
+    .container-dreamInterpretation {
+      width: 90%;
+    }
+  }
   #chat-box {
     height: 75%;
     overflow-y: scroll;

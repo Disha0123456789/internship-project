@@ -32,6 +32,16 @@
     /* padding-top: 10px;    */
     margin-bottom: 20px;
 }
+.dreambook-messg{
+    text-align: center;
+    font-size: 1.3rem;
+}
+@media screen and (max-width:600px) {
+    .dreambook-messg{
+        font-size: 0.9rem;
+    }
+}
+
 
 .dreamhistory-button-container {
     display: flex;

@@ -7,127 +7,127 @@ function PoojaList() {
       name: "Durga Pooja",
       price: "5,100",
       image:
-        "../../../public/shopping/durga.png",
+        "/shopping/durga.png",
     },
     {
       name: "Gopal Pooja",
       price: "5,100",
       image:
-      "../../../public/shopping/gopal.jpg",
+      "/shopping/gopal.jpg",
     },
     {
       name: "Vastu Pooja",
       price: "5,100",
       image:
-      "../../../public/shopping/vastu.jpeg",
+      "/shopping/vastu.jpeg",
     },
     {
       name: "Chandra Pooja",
       price: "5,100",
       image:
-      "../../../public/shopping/chandra.png",
+      "/shopping/chandra.png",
     },
     {
       name: "Mahalakshmi Pooja",
       price: "5,100",
       image:
-        "../../../public/shopping/mahalakshmi.png",
+        "/shopping/mahalakshmi.png",
     },
     {
       name: "Mrityunjay Pooja",
       price: "5,100",
       image:
-      "../../../public/shopping/mritynjaya.png",
+      "/shopping/mritynjaya.png",
     },
     {
       name: "Surya Pooja",
       price: "5,100",
       image:
-      "../../../public/shopping/surya.png",
+      "/shopping/surya.png",
     },
     {
       name: "Saraswati Pooja",
       price: "5,100",
       image:
-      "../../../public/shopping/saraswati.png",
+      "/shopping/saraswati.png",
     },
     {
       name: "Kaali Pooja",
       price: "5,100",
       image:
-      "../../../public/shopping/kaali.png",
+      "/shopping/kaali.png",
     },
     {
       name: "Bhagwat Geeta Pooja",
       price: "5,100",
       image:
-      "../../../public/shopping/bhaghwat_geeta.png",
+      "/shopping/bhaghwat_geeta.png",
     },
     {
       name: "Navgrah Pooja",
       price: "5,100",
       image:
-      "../../../public/shopping/navgrah.png",
+      "/shopping/navgrah.png",
     },
     {
       name: "Rahu Pooja",
       price: "5,100",
       image:
-      "../../../public/shopping/rahu.png",
+      "/shopping/rahu.png",
     },
     {
       name: "Ketu Pooja",
       price: "5,100",
       image:
-      "../../../public/shopping/ketu.png",
+      "/shopping/ketu.png",
     },
     {
       name: "Mangal Pooja",
       price: "5,100",
       image:
-      "../../../public/shopping/mangal.png",
+      "/shopping/mangal.png",
     },
     {
       name: "Rudrabhishek Pooja",
       price: "5,100",
       image:
-      "../../../public/shopping/rudra_abhishek.png",
+      "/shopping/rudra_abhishek.png",
     },
     {
       name: "Gath Bandhan Pooja",
       price: "5,100",
       image:
-      "../../../public/shopping/gath_bandhan.png",
+      "/shopping/gath_bandhan.png",
     },
     {
       name: "Satya Narayan Pooja",
       price: "5,100",
       image:
-      "../../../public/shopping/satya_narayan.png",
+      "/shopping/satya_narayan.png",
     },
     {
       name: "Brihaspati Pooja",
       price: "5,100",
       image:
-      "../../../public/shopping/brihaspati.png",
+      "/shopping/brihaspati.png",
     },
     {
       name: "Nakshatra Pooja",
       price: "5,100",
       image:
-      "../../../public/shopping/nakshatra.png",
+      "/shopping/nakshatra.png",
     },
     {
       name: "Pitra Dosh Pooja",
       price: "5,100",
       image:
-      "../../../public/shopping/pitra_dosh.png",
+      "/shopping/pitra_dosh.png",
     },
     {
       name: "Manglik Pooja",
       price: "5,100",
       image:
-      "../../../public/shopping/mangal_dosh.png",
+      "/shopping/mangal_dosh.png",
     },
   ];
 

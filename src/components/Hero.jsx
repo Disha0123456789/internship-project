@@ -20,7 +20,7 @@ const Hero = () => {
           </div>
         </div>
 
-        <div onClick={() => navigate("/kundli")} className="hero-card gap-6">
+        <div onClick={() => navigate("/kundli")} className="hero-card">
           <div className="hero-card-title">
             <h3>Kundli</h3>
           </div>
@@ -46,7 +46,7 @@ const Hero = () => {
           </div>
         </div>
         
-        <div onClick={() => navigate("/love_check")} className="hero-card gap-3">
+        <div onClick={() => navigate("/love_check")} className="hero-card">
           <div className="hero-card-title">
             <h3>Love Check</h3>
           </div>

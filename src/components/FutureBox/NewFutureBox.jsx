@@ -22,7 +22,7 @@ const NewFutureBox = () => {
             <div className="flex justify-center items-center size-20 rounded-lg mx-auto">
               <img src="/ICONS/tarot.png" alt="12" />
             </div>
-            <div className="mt-2.5">
+            <div className="future-title">
               <h3 className="text-md sm:text-xl font-semibold text-gray-800">
                 Tarot Reading
               </h3>
@@ -35,7 +35,7 @@ const NewFutureBox = () => {
             <div className="flex justify-center items-center size-20 rounded-lg mx-auto">
               <img src="./ICONS/face.png" alt="13" />
             </div>
-            <div className="mt-2.5">
+            <div className="future-title">
               <h3 className="text-md sm:text-xl font-semibold text-gray-800">
                 Face Reading
               </h3>
@@ -48,7 +48,7 @@ const NewFutureBox = () => {
             <div className="flex justify-center items-center size-20 rounded-lg mx-auto">
               <img src="./ICONS/palm.png" alt="13" />
             </div>
-            <div className="mt-2.5">
+            <div className="future-title">
               <h3 className="text-md sm:text-xl font-semibold text-gray-800">
                 Palm Reading
               </h3>
@@ -68,7 +68,7 @@ const NewFutureBox = () => {
             <div className="flex justify-center items-center size-20 rounded-lg mx-auto">
               <img src="/ICONS/timetravel.png" alt="14" />
             </div>
-            <div className="mt-2.5">
+            <div className="future-title">
               <h3 className="text-md sm:text-xl font-semibold text-gray-800">
                 Time Travel
               </h3>
@@ -81,7 +81,7 @@ const NewFutureBox = () => {
             <div className="flex justify-center items-center size-20 rounded-lg mx-auto">
               <img src="/ICONS/astrology.png" alt="15" />
             </div>
-            <div className="mt-2.5">
+            <div className="future-title">
               <h3 className="text-md sm:text-xl font-semibold text-gray-800">
                 Astrology
               </h3>
@@ -94,7 +94,7 @@ const NewFutureBox = () => {
             <div className="flex justify-center items-center size-20 rounded-lg mx-auto">
               <img src="/ICONS/biorythm.png" alt="16" />
             </div>
-            <div className="mt-2.5">
+            <div className="future-title">
               <h3 className="text-md sm:text-xl font-semibold text-gray-800">
                 Biorhythm
               </h3>
@@ -116,7 +116,7 @@ const NewFutureBox = () => {
             <div className="flex justify-center items-center size-20 rounded-lg mx-auto">
               <img src="/ICONS/dreaminterpretation.png" alt="17" />
             </div>
-            <div className="mt-2.5">
+            <div className="future-title">
               <h3 className="text-md sm:text-xl font-semibold text-gray-800">
                 Dream Meaning
               </h3>
@@ -131,7 +131,7 @@ const NewFutureBox = () => {
             <div className="flex justify-center items-center size-20 rounded-lg mx-auto">
               <img src="/ICONS/numerology.png" alt="16" />
             </div>
-            <div className="mt-2.5">
+            <div className="future-title">
               <h3 className="text-md sm:text-xl font-semibold text-gray-800">
                 Numerology
               </h3>
@@ -153,7 +153,7 @@ const NewFutureBox = () => {
             <div className="flex justify-center items-center size-20 rounded-lg mx-auto">
               <img src="/ICONS/meditation.png" alt="14" />
             </div>
-            <div className="mt-2.5">
+            <div className="future-title">
               <h3 className="text-md sm:text-xl font-semibold text-gray-800">
                 Meditation
               </h3>
@@ -168,7 +168,7 @@ const NewFutureBox = () => {
             <div className="flex justify-center items-center size-20 rounded-lg mx-auto">
               <img src="/ICONS/emotionalsupport.png" alt="15" />
             </div>
-            <div className="mt-2.5">
+            <div className="future-title">
               <h3 className="text-md sm:text-xl font-semibold text-gray-800">
                 Emotional Support
               </h3>

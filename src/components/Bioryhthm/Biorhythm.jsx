@@ -224,6 +224,7 @@ const DescriptionForAverage=(value)=>{
         </div>
       </div>
 
+      {/*
       <div className='biorhythm-info'>
          <h1 className='biorhythm-title'>The Biorhythms Cycles:</h1>
          <h1 className='physical-cycle-title'>The Physical Cycle</h1>
@@ -241,7 +242,7 @@ const DescriptionForAverage=(value)=>{
          <h1 className='critical-days-title'>The Critical Days</h1>
          <p className='critical-days-description'>Critical days, or transition days, occur when a biorhythm cycle shifts polarity, moving across the boundary from positive to negative phases. These shifts lead to life's natural fluctuations, contributing to periods of instability that can affect an individual's behavior and actions unusually. While not inherently negative, these days call for increased caution, as one might be more prone to accidents compared to other times in the cycle. Noteworthy are the double and triple transition days, though they are rare, happening once every 7 or 8 years, signaling even more significant shifts.</p>
       </div>
-
+      */}
       <DailyInterpreTation 
         physical={Math.floor(physical[selectedDate])}
         emotional={Math.floor(emotional[selectedDate])}

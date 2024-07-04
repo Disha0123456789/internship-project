@@ -100,7 +100,6 @@ body {
     margin-left: auto;
   }
   .conten-right {
-    width: 90%;
     margin-right: auto;
     margin-left: auto;
   }
@@ -134,7 +133,7 @@ body {
 .img-mc {
   background: url("./images/Marriage Consultation.png")  no-repeat center center;
   background-size: 100% 100%;
-  height: 220px;
+  height: 220px !important;
   border-radius: 20px;
 }
 .img-hh {
@@ -272,13 +271,11 @@ body {
 .conten-right {
   margin: 10px;
   height: 300px;
-  width: 60%;
   text-align: center;
 }
 .conten-right p {
   text-align: left;
   font-weight: 500;
-  width: 100%;
   /* margin-top: clamp(10px, 1.5vw, 20px); */
   font-size: clamp(0.8rem, 1.2vw, 1.4rem);
 }
@@ -353,15 +350,11 @@ body {
     width: 100%;
     margin-bottom: 20px;
   }
-  .conten-right {
-    width: 100%;
-  }
   .astro-Container-heading {
     height: 8%;
   }
   .astro-Container {
-    width: 70%;
-    height: 70%;
+    width: 90%;
   }
   .top img {
     height: 50%;

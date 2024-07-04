@@ -92,6 +92,19 @@
     width: 0%;
   }
 }
+@media (max-width: 640px) {
+  .grid-items-tt {
+    height: 200px;
+    width: 260px;
+  }
+  .button-container-tt {
+    height: 80px;
+    width: 260px;
+  }
+  .book-call-tt {
+    font-size: 20px;
+  }
+}
 .bg-fup {
   background: url("./images/future prediction.png") no-repeat center
   center/cover;

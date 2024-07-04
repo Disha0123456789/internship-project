@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 import { RxDotFilled } from "react-icons/rx";
 import anger from './images/anger.png';
@@ -12,8 +12,8 @@ import "./carousel.css";
 
 const Carousel = () => {
   const slides = [
-    { url: anger },
     { url: baby },
+    { url: anger },
     { url: relationship },
     { url: palm },
     { url: future },
@@ -38,6 +38,14 @@ const Carousel = () => {
   const goToSlide = (slideIndex) => {
     setCurrentIndex(slideIndex);
   };
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      nextSlide();
+    }, 4000); // Move to the next slide every 5 seconds
+
+    return () => clearInterval(interval); // Cleanup interval on component unmount
+  }, [currentIndex]);
 
   return (
     <div className="carousel-container group">

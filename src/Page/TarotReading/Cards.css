@@ -182,6 +182,15 @@ button{
         width: 80%;
     }
 }
+@media (max-width:640px){
+    .tarot-result-card{
+        width: 90%;
+    }
+    .tarot-para{
+        font-size: small;
+    }
+}
+
 .tarot-head h1{
     text-align: center;
     margin-bottom: 20px;
@@ -257,7 +266,12 @@ button{
     }
      */
 }
-@media (min-width:464px) and ( max-width: 768px){
+@media (min-width:464px) and ( max-width: 640px){
+    .Tarot-card{
+        height: 49vh;
+    }
+}
+@media (min-width:640px) and ( max-width: 768px){
     .Tarot-card{
         height: 59vh;
         width:43vw;
