@@ -10,18 +10,18 @@
   {
     "id": 2,
     "backdrop": "/IMGS/weekend tarot background.jpg",
-    "icon": "/IMGS/weekend tarot card.png",
-    "head": "Weekend tarot fortune",
-    "p1": "Unveil the Energies Shaping Your Weekend",
-    "p2": "Gain clarity and guidance to make the most of your weekend. Discover what the cards have in store for you."
+    "icon": "/IMGS/love reading card.png",
+    "head": "Love Reading",
+    "p1": "Reveal Your Romantic Future with Tarot",
+    "p2": "Discover the steps to a fulfilling romantic journey. Let tarot reveal the way to lasting love and happiness."
   },
   {
     "id": 3,
     "backdrop": "/IMGS/weekly tarot background.jpg",
-    "icon": "/IMGS/weekly tarot card.png",
-    "head": "Weekly tarot fortune",
-    "p1": "Explore the energies that will influence your week ahead.",
-    "p2": "Gain insights and guidance to navigate through the upcoming week."
+    "icon": "/IMGS/yoga.png",
+    "head": "Wellness fortune",
+    "p1": "Nurture Your Well-Being with Tarot Insights",
+    "p2": "Unveil the influences shaping your health and well-being. Use tarot to achieve a healthier, more fulfilling life."
   },
   {
     "id": 4,
@@ -74,18 +74,18 @@
   {
     "id": 10,
     "backdrop": "/IMGS/weekly tarot background.jpg",
-    "icon": "/IMGS/life_lessons.png",
-    "head": "Life lessons",
-    "p1": "Embrace the Teachings of Life with Tarot",
-    "p2": "Understand the deeper meaning behind your experiences. Use tarot to uncover the wisdom in your life's challenges."
+    "icon": "/IMGS/wellness.png",
+    "head": "Spiritual Learning",
+    "p1": "Tarot Wisdom for Spiritual Enlightenment",
+    "p2": "Dive into the depths of your spiritual journey. Let tarot guide you towards enlightenment and growth."
   },
   {
     "id": 11,
     "backdrop": "/IMGS/the first half of 2024 background.jpg",
     "icon": "/IMGS/feeling.png",
-    "head": "How do you feel about yourself",
-    "p1": "Reflect on Your Self-Image with Tarot Wisdom",
-    "p2": "Use tarot to uncover your true feelings and thoughts about yourself. Gain clarity and embrace self-discovery."
+    "head": "Break-up Advice",
+    "p1": "Healing Heartbreak with Tarot Wisdom",
+    "p2": "Seek guidance and healing through tarot after a relationship ends. Find the wisdom to mend your heart."
   },
   {
     "id": 12,

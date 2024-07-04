@@ -30,7 +30,7 @@ export default function DreamBook() {
             <div className="Head-Text">
                 <h1>Dream Book</h1>
             </div>
-            <p style={{ textAlign: "center", fontSize: "1.3rem" }}>“Track , Analyze, and Explore your Dreams Anytime by Adding them to your Dream Book”</p>
+            <p className='dreambook-messg'>“Track , Analyze, and Explore your Dreams Anytime by Adding them to your Dream Book”</p>
             <div className='dream-input-containers'>
                 <div className='dreamhistory-button-container'>
                     <button onClick={() => navigate("/dream_history_list")} className="dream-history-btn">Dream History</button>

@@ -3,6 +3,34 @@ import { useLocation, useSearchParams } from 'react-router-dom';
 import { fetchHoroscope } from '../../../apiService';
 import Content from './Content';
 
+import IMAGES11 from '../../../../public/1st-row/Horoscope/aquarius.png';
+import IMAGES1 from '../../../../public/1st-row/Horoscope/aries.png';
+import IMAGES4 from '../../../../public/1st-row/Horoscope/cancer.png';
+import IMAGES10 from '../../../../public/1st-row/Horoscope/capricorn.png';
+import IMAGES3 from '../../../../public/1st-row/Horoscope/gemini.png';
+import IMAGES5 from '../../../../public/1st-row/Horoscope/leo.png';
+import IMAGES7 from '../../../../public/1st-row/Horoscope/libra.png';
+import IMAGES12 from '../../../../public/1st-row/Horoscope/pisces.png';
+import IMAGES9 from '../../../../public/1st-row/Horoscope/sagittarius.png';
+import IMAGES8 from '../../../../public/1st-row/Horoscope/scorpion.png';
+import IMAGES2 from '../../../../public/1st-row/Horoscope/taurus.png';
+import IMAGES6 from '../../../../public/1st-row/Horoscope/virgo.png';
+
+const rasiImages = {
+  Aries: IMAGES1,
+  Taurus: IMAGES2,
+  Gemini: IMAGES3,
+  Cancer: IMAGES4,
+  Leo: IMAGES5,
+  Virgo: IMAGES6,
+  Libra: IMAGES7,
+  Scorpio: IMAGES8,
+  Sagittarius: IMAGES9,
+  Capricorn: IMAGES10,
+  Aquarius: IMAGES11,
+  Pisces: IMAGES12
+};
+
 export default function Gemini() {
   const location = useLocation();
   const [searchParams] = useSearchParams();
@@ -60,10 +88,15 @@ export default function Gemini() {
   return (
     <div className='Gemini-container'>
       <div className='Gemini-card'>
-        <div style={{ height: '30px', display: 'flex', justifyContent: 'center' }}>
-          <span className='horo-span' style={{ fontSize: '20px' }}>{user}</span>
+        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}>
+          <div className="rasi-image-container">
+            <img src={rasiImages[user]} alt={user} className="rasi-image" />
+          </div>
+          <div style={{ height: '30px', display: 'flex', justifyContent: 'center', marginTop:'20px' }}>
+            <span className='horo-span' style={{ fontSize: '20px' }}>{user}</span>
+          </div>
         </div>
-        <hr className='Gemini-Hori_line' style={{ margin: '42px 0px 22px 0px', width: "100%" }} />
+        <hr className='Gemini-Hori_line' style={{ margin: '15px 0px 22px 0px', width: "100%" }} />
         <div className='Gemini-Box' style={{ display: 'flex' }}>
           <div className='Gemini-1' onClick={() => handleClick('left')} style={getButtonStyle(left)}>
             <span className='horo-span'>Yesterday</span>

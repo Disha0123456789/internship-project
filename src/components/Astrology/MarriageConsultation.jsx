@@ -7,7 +7,7 @@ const MarriageConsultation = () => {
   const head = "Marriage Consultation";
   const img = image;
   return (
-    <>
+    <div>
       <div className="astro-Container">
         <div className="astro-Container-heading">
           <h1>Marriage Consultation</h1>
@@ -37,7 +37,7 @@ const MarriageConsultation = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

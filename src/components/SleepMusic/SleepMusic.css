@@ -80,6 +80,11 @@
     .Card {
         height: 75vw;
         width: 100%;
+        gap:0px !important;
+    }
+    .Card p {
+        font-size: clamp(2rem, 1.4vw, 2.2rem);
+        font-weight: 400;
     }
     .youtube{
         /* border: 1px solid black; */

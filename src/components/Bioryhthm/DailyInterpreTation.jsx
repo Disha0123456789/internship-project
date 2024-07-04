@@ -55,6 +55,7 @@ function DailyInterpreTation({physical,emotional, intellectual,average,date}) {
       </div>
       </div>
       
+      {/*
       <div className='mt-10 shadow-2xl shadow-black bg-gradient-to-b from-black to-gray-500 text-white font-semibold font-serif p-4 rounded-md'>
          <h1 className="text-red-500 text-4xl font-semibold">Physical</h1>
          <p className='text-xl mt-4 mb-5'>During the low phase of your Physical cycle, energy and vitality may feel depleted, leading
@@ -81,7 +82,7 @@ function DailyInterpreTation({physical,emotional, intellectual,average,date}) {
             offer a change to recover, reflect, and prepare for the nextcycle of growth and activity.
           </p>
       </div>
-
+      */}
     </div>
   )
 }

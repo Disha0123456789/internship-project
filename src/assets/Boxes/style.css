@@ -73,6 +73,7 @@ input:hover{
   width: 100%;
 }
 .choose-file{
+  overflow: hidden;
   margin-top: 20px;
   margin-bottom:20px;
 }
@@ -97,6 +98,14 @@ input:hover{
   width: 80vw;
   padding-bottom: 20px;
   border-radius: 20px;
+}
+@media screen and (max-width:640px) {
+  .face-reader{
+    width: 90vw;
+  }
+  .scan-btn {
+    font-size: small;
+  }
 }
 .img-display-after{
  background-color:  #FDF2F8;
@@ -236,6 +245,8 @@ div.time:hover{
   text-align: center;
   font-size: 30px;
   padding: 10px;
+  padding-bottom: 20px;
+  padding-top: 20px;
   color: #672F98;
 }
 .time-magic {
