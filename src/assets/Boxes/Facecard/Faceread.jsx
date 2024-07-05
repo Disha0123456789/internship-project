@@ -104,7 +104,7 @@ function Faceread() {
             onClick={handleTimeMagicClick}
           />
           <div className="time-magic" onClick={handleTimeMagicClick}>
-            <h3 className="magic-text">Time Magic</h3>
+            <h3 className="magic-text">Want to See Your Future Self?</h3>
           </div>
         </div>
         {/** 

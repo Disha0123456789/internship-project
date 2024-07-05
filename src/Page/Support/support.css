@@ -10,6 +10,7 @@ body {
     margin-top: 50px;
 }
 .Container{
+    padding: 10px;
     background-color: #FDF2F8;
     width: clamp(30vw, 70vw, 80vw);   
     min-width: 20vw;
@@ -19,7 +20,7 @@ body {
 }
 
 .Container-heading{
-    
+    padding-top: 10px;
     position: relative;
     height: 20%;
     display: flex;
@@ -52,8 +53,6 @@ body {
     flex-direction: column;
     gap: 20px;
     width: 40%;
-    padding: 10px;
-
 }
 .conten-left button{
     color: white;
@@ -72,16 +71,17 @@ body {
     border-radius: 20px;
     object-fit: cover;
 }
-.conten-right{
-    margin-top: 10px;
+.conten-right {
+    margin-top: 10px; 
+    padding-left: 10px;
     /* margin: 10px; */
-    height: 300px;
+    /* height: 300px; */
     width: 60%;
     text-align: center;
 }
 .conten-right p{
     text-align: left;
-    font-weight: 600;
+    font-weight: 500;
     width: 100%;
     /* margin-top: clamp(10px, 1.5vw, 20px); */
     font-size: clamp(0.8rem, 1.2vw, 1.4rem);
@@ -154,12 +154,13 @@ body {
     background-color: white;
 }
 @media screen and (max-width: 468px){
-    .Container-heading h1{
-       text-align: center;
-       
+    .Container-heading {
+        margin-bottom: 20px !important;
     }
-    .Container-heading{
-        margin: 10px;
+    .Container-heading h1{
+        font-size: clamp(1.5rem, 3vw, 3rem) !important;
+        text-align: center;
+       
     }
     .conten{
         flex-direction: column;
@@ -169,8 +170,9 @@ body {
         width: 100%;
         margin-bottom: 20px;
     }
+        
     .conten-right{
-        padding: 10px;
+        padding-left: 0px !important;
         width: 100%;
     }
     .Container-heading{

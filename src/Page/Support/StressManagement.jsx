@@ -11,10 +11,6 @@ const StressManagement = () => {
     <div className="Main-page">
       <div className="Container">
         <div className="Container-heading">
-          <IoIosArrowBack
-            onClick={() => navigate("/EmotionalSupport")}
-            className="backicon"
-          />
           <h1>Stress Management</h1>
         </div>
         <div className="conten">

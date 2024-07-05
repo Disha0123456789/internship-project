@@ -121,7 +121,8 @@
     transition: all 0.5s ease-in-out;
 }
 .Card h1{
-    font-size: clamp(1.8rem, 1.6vw, 2.2rem);
+    padding-top: 10px;
+    font-size: clamp(0.5rem, 1.6vw, 2.2rem);
     text-align: center;
 }
 
@@ -131,7 +132,7 @@
     min-width: 200px;
     width: 20vw;
     position: absolute;
-    top: 60%;
+    top: 68%;
     left: 50%;
     transform: translate(-50%, -50%);
     
@@ -139,7 +140,9 @@
     
 }
 @media screen and (max-width: 468px){
-    
+    .Hero-section p {
+        font-size: clamp(0.8rem, 1.2vw, 2rem) !important;
+    }
     .Options{
         flex-direction: column;
         gap: 20px;
@@ -155,12 +158,20 @@
         height: 30vw;
         width: 30vw;
     }
+    .cards {
+        margin-top: 30px !important;
+    }
     
     .Card{
         height: 75vw;
         width: 80vw;
     }
+    .Card h1{
+        padding-top: 10px;
+        font-size: clamp(1.5rem, 1.6vw, 2.2rem);
+    }
     .Card iframe{
         width: 70vw;
     }
+
 }

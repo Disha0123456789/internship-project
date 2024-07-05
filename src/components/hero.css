@@ -52,6 +52,7 @@
         font-size: 1.2rem !important;
     }
   }
+
   @media (max-width: 664px) {
     .up {
         gap: 1rem !important;
@@ -68,6 +69,29 @@
     .hero-card-icon {
       height: 2.5rem !important;
       width: 2.5rem !important;
+    }
+  }
+
+  @media screen and (max-width: 640px) {
+    .hero-container {
+      padding-top: 2rem !important;
+      padding-bottom: 2rem !important;
+    }
+    .hero-card {
+      height: 100px;
+      display: flex;
+      align-items: center;
+      background-image: none !important; 
+      padding: 0px !important;
+    }
+    .hero-card-title {
+      display: flex;
+      height: 40px;
+      background-image: linear-gradient(to top right, #d6bcfa, #93c5fd);
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      border-radius: 5px;
     }
   }
 

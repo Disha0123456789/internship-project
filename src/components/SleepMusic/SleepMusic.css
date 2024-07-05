@@ -78,19 +78,13 @@
         width: 100%;
     }
     .Card {
-        height: 75vw;
+        height: 65vw;
         width: 100%;
         gap:0px !important;
     }
     .Card p {
-        font-size: clamp(2rem, 1.4vw, 2.2rem);
-        font-weight: 400;
-    }
-    .youtube{
-        /* border: 1px solid black; */
-        width: 100%;
-        height: 100vh;
-        position: relative;
+        padding-top: 10px;
+        font-size: clamp(1.5rem, 1.6vw, 2.2rem);
     }
     .Card iframe {
         /* width: 50%;

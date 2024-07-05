@@ -28,22 +28,22 @@ body {
 }
 
 .astro-Container {
-  background-color: #fdf2f8;
-  width: clamp(30vw, 70vw, 80vw);
-
+  padding: 10px;
+  background-color: #FDF2F8;
+  width: clamp(30vw, 70vw, 80vw);   
   min-width: 20vw;
-
   box-shadow: 0px 5px 10px 0px rgb(125, 115, 115);
   margin: auto;
   border-radius: 20px;
 }
 
 .astro-Container-heading {
+  padding-top: 10px;
   position: relative;
   height: 20%;
   display: flex;
   justify-content: center;
-  /* margin-bottom: 50px; */
+  margin-bottom: 50px;
 }
 .Container-final {
   display: flex;
@@ -54,7 +54,6 @@ body {
 .astro-Container-heading h1 {
   font-size: clamp(2.2rem, 3vw, 3rem);
   font-weight: 700;
-  margin-top: 40px;
 }
 .conten {
   display: flex;
@@ -64,7 +63,6 @@ body {
   flex-direction: column;
   gap: 20px;
   width: 40%;
-  padding: 10px;
 }
 .conten-left button {
   color: white;
@@ -269,8 +267,7 @@ body {
 }
 
 .conten-right {
-  margin: 10px;
-  height: 300px;
+  margin-top: 10px;
   text-align: center;
 }
 .conten-right p {
@@ -338,10 +335,11 @@ body {
 }
 @media screen and (max-width: 468px) {
   .astro-Container-heading h1 {
+    font-size: clamp(1.5rem, 3vw, 3rem) !important;
     text-align: center;
   }
   .astro-Container-heading {
-    margin: 10px;
+    margin-bottom: 20px !important;
   }
   .conten {
     flex-direction: column;

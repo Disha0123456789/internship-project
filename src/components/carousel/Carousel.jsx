@@ -13,12 +13,12 @@ import "./carousel.css";
 const Carousel = () => {
   const slides = [
     { url: baby },
-    { url: anger },
     { url: relationship },
     { url: palm },
     { url: future },
     { url: dream },
-    { url: numero }
+    { url: numero },
+    { url: anger }
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);

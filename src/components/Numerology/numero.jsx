@@ -1,28 +1,25 @@
 import React, { useState } from "react";
-import "./PastLifePrediction.css";
-import { IoIosArrowBack } from "react-icons/io";
+import "../../Page/TimeTravel/PastLifePrediction.css";
 import { useNavigate } from "react-router-dom";
 
 function PastLifePrediction() {
   const [birthDate, setBirthDate] = useState("");
-  const [zodiacSign, setZodiacSign] = useState("");
   const navigate = useNavigate();
 
   const handleBirthDateChange = (e) => {
     const date = e.target.value;
     setBirthDate(date);
-    calculateZodiacSign(date);
   };
 
   const navigateToFuture = (date) => {
-    navigate(`/see_your_past?birthDate=${date}`);
+    navigate(`/Numerology?birthDate=${date}`);
   };
 
   return (
     <div className="timetravel">
       <div className="Head-Text">
         {/* <IoIosArrowBack onClick={() => navigate("/TimeTravel")} className="backicon" /> */}
-        <h1>Past Life Prediction</h1>
+        <h1>Numerology</h1>
       </div>
       <div className="Future-container text-left">
         <div className="row justify-content-center" style={{ width: "100%" }}>
@@ -51,7 +48,7 @@ function PastLifePrediction() {
                       className="past-life-btn"
                       onClick={() => navigateToFuture(birthDate)}
                     >
-                      See Your Past Life
+                      Get your Numerology
                     </button>
                   </div>
                 )}

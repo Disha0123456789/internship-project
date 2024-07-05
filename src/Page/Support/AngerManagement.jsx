@@ -13,10 +13,6 @@ const AngerManagement = () => {
     <div className="Main-page">
       <div className="Container">
         <div className="Container-heading">
-          <IoIosArrowBack
-            onClick={() => navigate("/EmotionalSupport")}
-            className="backicon"
-          />
           <h1>Anger Management</h1>
         </div>
         <div className="conten">
