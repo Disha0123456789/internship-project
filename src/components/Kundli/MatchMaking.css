@@ -159,7 +159,7 @@
   
     .boysForm,
     .girlsForm {
-      width: 80%; /* Set the width to 100% to utilize available space */
+      width: 90% !important; /* Set the width to 100% to utilize available space */
     }
   
     .match-checkbox {
