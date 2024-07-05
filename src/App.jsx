@@ -98,6 +98,7 @@ import DreamHistory from "./components/Dream/DreamHistory";
 import SleepMusic from "./components/SleepMusic/SleepMusic";
 
 //Numerology
+import Numero from './components/Numerology/numero'
 import Numerology from './components/Numerology/Numerology';
 import LifePathNumber from "./components/Numerology/LifePathNumber";
 
@@ -135,7 +136,7 @@ function App() {
       <Routes>
           <Route path="/MainPage/sadesati" element={<SadeSati />} />
           <Route path="/MainPage/lifeReport" element={<LifeReport />} />
-          <Route path="/MainPage/Numerology" element={<Numerology />} />
+          
           <Route path="/MainPage/LineChart" element={<LineChart />} />
           <Route path="/UserBirthInput" element={<UserBirthInput />} />
           <Route path="/MainPage" element={<MainPage />} />
@@ -226,6 +227,8 @@ function App() {
         <Route path="/sleep_music" element={<SleepMusic />} />
 
         {/* Numerology  <Route path="/Numerology" element={<Numerology />} />*/}
+        <Route path="/numero" element={<Numero/>} />
+        <Route path="/Numerology" element={<Numerology />} />
         <Route path="/lifepathnumber" element={<LifePathNumber />} />
         
         {/* Meditation*/}

@@ -5,20 +5,20 @@ import data from './data.json';
 
 export default function Numerology() {
     const location = useLocation();
-    const [lifePathNumber, setLifePathNumber] = useState(null);
     const navigate = useNavigate();
+    const [lifePathNumber, setLifePathNumber] = useState(null);
     const [lifePathData, setLifePathData] = useState(null);
 
     useEffect(() => {
-        if (location.state) {
-            const { dateOfBirth } = location.state;
-            if (dateOfBirth) {
-                const [year, month, day] = dateOfBirth.split('-');
-                const lifePath = calculateLifePathNumber(day, month, year);
-                setLifePathNumber(lifePath);
-            }
+        const searchParams = new URLSearchParams(location.search);
+        const dateOfBirth = searchParams.get('birthDate');
+        
+        if (dateOfBirth) {
+            const [year, month, day] = dateOfBirth.split('-');
+            const lifePath = calculateLifePathNumber(day, month, year);
+            setLifePathNumber(lifePath);
         }
-    }, [location.state]);
+    }, [location.search]);
 
     useEffect(() => {
         if (lifePathNumber !== null) {

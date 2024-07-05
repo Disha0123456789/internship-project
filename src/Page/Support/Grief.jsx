@@ -11,10 +11,6 @@ const Grief = () => {
     <div className="Main-page">
       <div className="Container">
         <div className="Container-heading">
-          <IoIosArrowBack
-            onClick={() => navigate("/EmotionalSupport")}
-            className="backicon"
-          />
           <h1>Grief / Loss</h1>
         </div>
         <div className="conten">

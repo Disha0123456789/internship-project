@@ -72,3 +72,9 @@
         width: 90%;
     }
 }
+
+@media screen and (max-width:468px) {
+    .card-description {
+        font-size: small;
+    }
+}

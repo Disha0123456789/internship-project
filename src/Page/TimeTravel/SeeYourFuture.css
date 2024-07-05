@@ -1,4 +1,5 @@
 .dream-result {
+    width: 100vw;
     background-color: #fdf2f8;
     min-height: 100vh;
     /* Ensure background color spreads till the end of the screen */
@@ -64,6 +65,14 @@
       font-size: 14px;
     }
   
+  }
+  @media screen and (max-width: 468px) {
+    .dream-result-card {
+      width: 90% !important;
+    }
+    .prediction-text {
+      font-size: small !important;
+    }
   }
 
   .prediction-text {

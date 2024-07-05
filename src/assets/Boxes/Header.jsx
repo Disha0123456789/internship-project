@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Nav, Navbar, InputGroup, Form } from "react-bootstrap";
-import logo from "../../../public/ICONS/divinelogohorizontal.png";
+import logo from "/ICONS/divineLogoHorizotal.png";
 import CasinoRoundedIcon from "@mui/icons-material/CasinoRounded";
 import ShoppingCartRoundedIcon from "@mui/icons-material/ShoppingCartRounded";
 import SearchRoundedIcon from "@mui/icons-material/SearchRounded";

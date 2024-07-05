@@ -126,7 +126,7 @@ const NewFutureBox = () => {
           <div className="lg:block lg:col-span-1"></div>
           
           <div
-            onClick={() => handleBirthPageClick('Numerology')}
+            onClick={() => navigate('/numero')}
             className="future-grid-item">
             <div className="flex justify-center items-center size-20 rounded-lg mx-auto">
               <img src="/ICONS/numerology.png" alt="16" />

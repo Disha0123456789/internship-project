@@ -11,10 +11,6 @@ const SelfEsteemIssues = () => {
     <div className="Main-page">
       <div className="Container">
         <div className="Container-heading">
-          <IoIosArrowBack
-            onClick={() => navigate("/EmotionalSupport")}
-            className="backicon"
-          />
           <h1>Self-Esteem issues</h1>
         </div>
         <div className="conten">
