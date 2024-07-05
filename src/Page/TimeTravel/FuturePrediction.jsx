@@ -48,7 +48,7 @@ const FuturePrediction = () => {
         <h1>Future Prediction</h1>
       </div>
       <div className="Future-container text-left">
-        <div className="row justify-content-center">
+      <div className="row justify-content-center" style={{ width: "100%" }}>
           <div className="">
             <form action="#">
               <div className="form-group">
