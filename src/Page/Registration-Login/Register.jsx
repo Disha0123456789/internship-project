@@ -64,8 +64,8 @@ export default function Register() {
 
                     <div class="form-row-last">
                         <input type="submit" id='submit' value="Register" />
+                        <p className='Register-link'>Already have an account ? <Link to="/login_page">Login</Link></p>
                         </div>
-                            <p className='login-text'><pre>Already have an account ?  </pre><Link to="/login_page">Login</Link></p>
                             <div className='login-text-two'>
                                 <hr />
                                 <p>or Signup With</p>

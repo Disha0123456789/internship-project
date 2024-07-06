@@ -1,6 +1,6 @@
 .Account-page{
     display: flex;
-    height: 100vh;
+    height: 708px;
     width: 100vw;
 }
 .logo-background{
@@ -11,7 +11,7 @@
         flex-direction: column;
     }
     .Account-page-image{
-        margin-top: 40px;
+        margin-top: 10px;
         margin-left: auto;
         margin-right: auto;
     }
@@ -22,25 +22,27 @@
         width: 100% !important;
     }
 }
-@media screen and (max-width: 400px){
+@media screen and (max-width: 468px){
     .account-title {
         font-size: larger !important;
+    }
+    .change {
+        padding: 10px 5px !important;
     }
 }
 .Account-page-image{
     position: relative;
-    height: 100vh;
     width: 40%;
     display: flex;
     align-items: center;
 }
 .Account-page-details{
+    display: flex;
     width: 60%;
-}
-.Account-form{
-width: 600px;
-margin-right: 200px;
-
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 10px;
 }
  .Account-input{
     border:none;
@@ -50,7 +52,7 @@ margin-right: 200px;
 }
 .change{
     padding: 20px;
-    margin-left: 70px;
+    /* margin-left: 70px; */
     display: flex;
     align-items: center;
 }
@@ -66,10 +68,8 @@ margin-right: 200px;
     cursor: pointer;
 }
 .account-title{
-    padding: 20px;
-    margin: 20px;
+    margin-top: 20px;
     color: purple;
-    margin-left: 70px;
     font-size: 1.5rem;
     font-weight: bold;
 }

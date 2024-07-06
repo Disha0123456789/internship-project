@@ -90,7 +90,7 @@ const LoveCheck = () => {
             <div className='caution'>
                     <h2>Tap on Petels to remove it</h2>
             </div>
-            <div className="container">
+            <div className="love-container">
                 <div className="flower">
                     <div className="petals">
                         {colors.map((color, index) => (

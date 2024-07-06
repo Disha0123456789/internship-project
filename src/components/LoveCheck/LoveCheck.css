@@ -1,3 +1,12 @@
+.love-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+}
 .lovecheck {
     min-height: 100vh;
     min-width: 100vh;
@@ -234,11 +243,6 @@
         height: 160px; */
         width: 65px;
         height: 170px;
-    }
-
-    .petals {
-        /* top: 20px; */
-        /* left: 20px; */
     }
 
     .restart-button,

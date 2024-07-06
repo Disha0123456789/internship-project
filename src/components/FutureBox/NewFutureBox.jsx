@@ -89,7 +89,7 @@ const NewFutureBox = () => {
           </div>
 
           <div
-            onClick={() => handleBirthPageClick('LineChart')}
+            onClick={() => navigate("/lineChart")}
             className="future-grid-item">
             <div className="flex justify-center items-center size-20 rounded-lg mx-auto">
               <img src="/ICONS/biorythm.png" alt="16" />

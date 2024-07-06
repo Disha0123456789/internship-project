@@ -1,9 +1,9 @@
 import React, { useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import ImageRecognitionLogo from '../../../../public/2nd-row-reading/facial-recognition.png';
-import ImageProfile from '../../../../public/2nd-row-reading/face-profile.png';
-import TimeMagicImage from '../../../../public/2nd-row-reading/time magic.png';
-import KnowPast from '../../../../public/2nd-row-reading/know your past.png';
+import ImageRecognitionLogo from '/2nd-row-reading/facial-recognition.png';
+import ImageProfile from '/2nd-row-reading/face-profile.png';
+import TimeMagicImage from '/2nd-row-reading/time magic.png';
+import KnowPast from '/2nd-row-reading/know your past.png';
 import axios from 'axios';
 
 function Faceread() {
@@ -78,7 +78,7 @@ function Faceread() {
               <img
                 src={URL.createObjectURL(image)}
                 alt=""
-                className="img-display-after"
+                className="img-icon"
               />
             ) : (
               <img src={ImageProfile} alt="" className="img-icon" />

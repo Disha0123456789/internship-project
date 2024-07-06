@@ -1,8 +1,8 @@
 import { useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from 'axios';
-import PalmIcon from '../../../../public/2nd-row-reading/palm-scanner.png';
-import PalmUpload from '../../../../public/2nd-row-reading/plain hand.png';
+import PalmIcon from '/2nd-row-reading/palm-scanner.png';
+import PalmUpload from '/2nd-row-reading/plain hand.png';
 
 function Palmreader() {
   const navigate = useNavigate();
@@ -68,7 +68,7 @@ function Palmreader() {
               <img
                 src={URL.createObjectURL(image)}
                 alt=""
-                className="img-display-after"
+                className="img-icon"
               />
             ) : (
               <img
