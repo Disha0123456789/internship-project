@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "../../Page/TimeTravel/PastLifePrediction.css";
 import { useNavigate } from "react-router-dom";
 
-function PastLifePrediction() {
+function Numero() {
   const [birthDate, setBirthDate] = useState("");
   const navigate = useNavigate();
 
@@ -61,4 +61,4 @@ function PastLifePrediction() {
   );
 }
 
-export default PastLifePrediction;
+export default Numero;

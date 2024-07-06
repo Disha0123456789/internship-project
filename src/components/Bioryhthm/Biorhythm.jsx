@@ -6,7 +6,8 @@ import './LineChart.css';
 
 const BiorythmCalculator = () => {
   const location = useLocation();
-  const dob = location.state.dateOfBirth;
+  const searchParams = new URLSearchParams(location.search);
+  const dob = searchParams.get('birthDate');
 
   useEffect(() => {
     calculateBiorythm(dob);

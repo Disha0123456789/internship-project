@@ -1,0 +1,19 @@
+.terms-N-conditions{
+    padding: 20px;
+}
+.terms-N-conditions h1{
+    margin-bottom: 20px;
+    font-size: 3.2em;
+    line-height: 1.1;
+}
+.data-termsNconditions p {
+    padding-bottom: 10px;
+}
+@media screen and (max-width:468px){
+    .data-termsNconditions p{
+        font-size: x-small;
+    }
+    .terms-N-conditions h1 {
+        font-size: 2em !important;
+    }
+}

@@ -4,6 +4,7 @@ import Header from "../../assets/Boxes/Header"
 import Hero from "../../components/Hero"
 import Carousel from "../../components/carousel/Carousel"
 import NewFutureBox from "../../components/FutureBox/NewFutureBox"
+import Footer from "../Footer/Footer"
 import './Home.css';
 
 const Home = () => {
@@ -14,6 +15,7 @@ const Home = () => {
         <Carousel />
         <NewFutureBox />
         <FutureBoxes />
+        <Footer />
       </div>
   )
 }

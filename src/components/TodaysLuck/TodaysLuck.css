@@ -5,7 +5,7 @@
   padding: 15px;
   border-radius: 10px;
   border-width: 0px;
-  width: 15vw;
+  width: 25vw;
   background-color: #c2bebd;
   margin: 20px;
 }
@@ -37,7 +37,7 @@
     height: 70vh;
   }
   .retry-btn{
-    width: 10vw;
+    width: 15vw;
   }
   .quote-text{
     font-size: 30px;

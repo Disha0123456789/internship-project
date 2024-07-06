@@ -155,7 +155,10 @@
         justify-items: center;
         gap: 15px;
     }
-  
+    
+    .switch-bookbtn-pooja {
+      width: 80% !important;
+    }
     .Subcard-pooja {
         width: 85%;
         display: flex;

@@ -86,6 +86,7 @@ import ChakraHealing from "./components/Astrology/ChakraHealing";
 import CrystalHealing from "./components/Astrology/CrystalHealing";
 
 //Biorhythm
+import Biorhythm from "./components/Bioryhthm/Biorhythm";
 import LineChart from "./components/Bioryhthm/LineChart";
 
 //Dream Interpretation
@@ -130,6 +131,10 @@ import WorkLifeBalance from "./Page/Support/WorkLifeBalance";
 import Grief from "./Page/Support/Grief";
 import FinalPage from "./Page/Support/FinalPage";
 
+// Important Links
+import TermsAndConditions from "./Page/Important_Links/TermsAndConditions";
+import AboutUs from "./Page/Important_Links/AboutUS";
+
 function App() {
   return (
     <BrowserRouter>
@@ -137,7 +142,6 @@ function App() {
           <Route path="/MainPage/sadesati" element={<SadeSati />} />
           <Route path="/MainPage/lifeReport" element={<LifeReport />} />
           
-          <Route path="/MainPage/LineChart" element={<LineChart />} />
           <Route path="/UserBirthInput" element={<UserBirthInput />} />
           <Route path="/MainPage" element={<MainPage />} />
           {/* Other routes */}
@@ -215,7 +219,8 @@ function App() {
         <Route path="/crystalHealing" element={<CrystalHealing />} />
 
         {/* Biorhythm*/}
-        
+        <Route path="/lineChart" element={<LineChart />} />
+        <Route path="/biorhythm" element={<Biorhythm />} />
 
         {/* Dream Meaning*/}
         <Route path="/dream" element={<Dream />} />
@@ -264,6 +269,9 @@ function App() {
         <Route path="/WorkLifeBalance" element={<WorkLifeBalance />} />
         <Route path="/Grief" element={<Grief />} />
         <Route path="/Done" element={<FinalPage />} />
+
+        <Route path="/TermsAndConditions" element={<TermsAndConditions />} />
+        <Route path="/AboutUs" element={<AboutUs />} />
 
       </Routes>
     </BrowserRouter>

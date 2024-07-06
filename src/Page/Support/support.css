@@ -117,22 +117,19 @@ body {
     background-color: white;
     border-radius: 15px;
 }
-.mid{
+.mid {
     width: 100%;
-    
-   padding:20px ;   
+    padding: 10px;
     gap: 20px;
-    padding-bottom:20px ;
+    padding-bottom: 20px;
+    /* padding-bottom: 20px; */
     border-bottom: 1px solid black;
 }
-.mid li{
-    
-    margin: 20px ;
-    width: 100% ;
-    
-    
-  display: flex;
-  gap: 20px;
+.mid li {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    gap: 20px;
     list-style: none;
 }
 .mid li p{

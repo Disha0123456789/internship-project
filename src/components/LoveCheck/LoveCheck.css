@@ -1,3 +1,12 @@
+.love-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+}
 .lovecheck {
     min-height: 100vh;
     min-width: 100vh;
