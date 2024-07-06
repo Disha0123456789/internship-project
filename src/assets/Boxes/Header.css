@@ -25,6 +25,9 @@
   height: 1.2em;
 }
 
+.me-3 {
+  display: flex;
+}
 @media screen and (max-width: 992px) {
   .custom-navbar {
     display: flex;
@@ -34,12 +37,11 @@
 
   .custom-navbar .navbar-toggler {
     order: 1;
-    margin-right: auto;
   }
 
   .custom-navbar .navbar-brand {
     order: 2;
-    margin-left: 0;
+    margin-right: 0px;
   }
 
   .custom-navbar .navbar-nav {
@@ -48,6 +50,8 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    flex-direction: row;
+    margin-right: 10px;
   }
 
   .ms-auto .nav-menu {
@@ -69,6 +73,7 @@
     width: 200px !important;
   }
   .me-3 {
+    display: flex;
     margin-right: 0rem !important;
     font-size: small;
   }
