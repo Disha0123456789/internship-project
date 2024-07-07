@@ -19,6 +19,7 @@ const Family = () => {
               src="https://imgs.search.brave.com/EtFoBc0d50hehJ8u6aqKdreIdMveXa9rr8aprITFfDQ/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTM1/MjIyNzg5L3Bob3Rv/L2ZhbWlseS13YXRj/aGluZy10LXYuanBn/P3M9NjEyeDYxMiZ3/PTAmaz0yMCZjPXJE/MnlLck41aENyQlho/NE9oY182ZC1kV0VS/Wk9WTEU2MGVuendt/aXMweHc9"
               alt=""
             />
+            <div className="conten-price">Rs.99</div>
             <button onClick={() => navigate("/Done", { state: { head, img } })}>
               Book Now
             </button>

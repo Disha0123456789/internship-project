@@ -144,11 +144,17 @@ button{
 .Tarot-card .Tarot-info{
     padding:0 20px;
 }
+
+
 .Tarot-card .Tarot-info h3{
     font-size: clamp(1rem, 4vw, 2rem);
     font-weight: 500;
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+.Tarot-info-p1{
+    font-weight: bold;
 }
 .Tarot-card .Tarot-info p{
     

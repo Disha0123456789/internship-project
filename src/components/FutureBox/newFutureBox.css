@@ -83,9 +83,6 @@
       align-items: center;
       border-radius: 5px;
     }
-    .navbar-brand img {
-      width: 65% !important;
-    }
   }
   
   @media (max-width: 500px) {
@@ -94,6 +91,9 @@
     }
     .carousel-slide {
       height: 200px;
+    }
+    .future-box-container {
+      padding: 2rem 0rem !important;
     }
     .future-grid-item {
       width: 6rem !important;

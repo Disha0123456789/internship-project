@@ -65,6 +65,7 @@
 
 .Head-horo h3{
     font-size: clamp(2.5rem, 4vw, 3rem);
+    font-weight: 600;
 }
 
 .Head-horo{
@@ -72,7 +73,7 @@
     height: 20%;
     width: 100%;
     padding : 3%;
-    color:purple;
+    color:#672F98;
 }
 .horigental-line{
   width: 100%;

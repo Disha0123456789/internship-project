@@ -134,6 +134,11 @@ import FinalPage from "./Page/Support/FinalPage";
 // Important Links
 import TermsAndConditions from "./Page/Important_Links/TermsAndConditions";
 import AboutUs from "./Page/Important_Links/AboutUS";
+import PrivacyPolicy from "./Page/Important_Links/PrivacyPolicy";
+import Disclaimer from "./Page/Important_Links/Disclaimer";
+import FAQ from "./Page/Important_Links/FAQ";
+import ContactUs from "./Page/Important_Links/ContactUs";
+
 
 function App() {
   return (
@@ -272,6 +277,10 @@ function App() {
 
         <Route path="/TermsAndConditions" element={<TermsAndConditions />} />
         <Route path="/AboutUs" element={<AboutUs />} />
+        <Route path="/PrivacyPolicy" element={<PrivacyPolicy />} />
+        <Route path="/Disclaimer" element={<Disclaimer />} />
+        <Route path="/FAQ" element={<FAQ />} />
+        <Route path="/ContactUs" element={<ContactUs />} />
 
       </Routes>
     </BrowserRouter>

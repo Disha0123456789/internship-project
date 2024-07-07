@@ -10,6 +10,7 @@ const UserBirthInput = ({ nextPage }) => {
     const [name, setName] = useState('');
     const [dateOfBirth, setDateOfBirth] = useState('');
     const [birthTime, setBirthTime] = useState('');
+    const [boysCheckbox, setBoysCheckbox] = useState(false);
     const [placeOfBirth, setPlaceOfBirth] = useState('');
     const [nameError, setNameError] = useState(false);
     const [dateOfBirthError, setDateOfBirthError] = useState(false);
@@ -107,6 +108,13 @@ const UserBirthInput = ({ nextPage }) => {
                     <label htmlFor="boyBirthTime" className="user-label">Birth Time :</label>
                     <br />
                     <input type="time" className='user-Input' value={birthTime} onChange={(e) => setBirthTime(e.target.value)} placeholder="hh:mm(24 hours)" id="boyBirthTime" required />
+                </div>
+
+                <div className="changes" onClick={() => setBoysCheckbox(!boysCheckbox)}>
+                {boysCheckbox ? <span>&#9745;</span> : <span>&#9744;</span>}
+                  <span className="match-checkboxContent">
+                    Don't know my exact time of birth
+                  </span>
                 </div>
 
                 <div className="changes">

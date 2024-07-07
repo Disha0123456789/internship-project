@@ -248,7 +248,8 @@ input:hover{
 }
 .face-text{
   text-align: center;
-  font-size: 30px;
+  font-size: clamp(2.5rem, 4vw, 3rem);
+  font-weight: 600;
   padding: 10px;
   padding-bottom: 20px;
   padding-top: 20px;
@@ -313,7 +314,7 @@ input:hover{
   border-radius: 1rem;
 }
 .personal-trait-text{
-  font-size: 30px;
+  font-size: clamp(2.5rem, 4vw, 3rem);
   padding-top: 10px;
   text-align: center;
 }

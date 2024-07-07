@@ -19,6 +19,7 @@ const Sleep = () => {
               src="https://images.pexels.com/photos/1497855/pexels-photo-1497855.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
               alt=""
             />
+            <div className="conten-price">Rs.99</div>
             <button onClick={() => navigate("/Done", { state: { head, img } })}>
               Book Now
             </button>

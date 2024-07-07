@@ -64,3 +64,8 @@
       font-size: 14px;
     }
   }
+  @media  screen and (max-width: 468px) {
+    .description {
+      font-size: small;
+    }
+  }
