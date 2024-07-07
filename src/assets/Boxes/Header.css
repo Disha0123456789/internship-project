@@ -102,6 +102,11 @@
   }
 }
 
+@media screen and (min-width: 992px) {
+  .header-logo-image{
+    width: 200px;
+  }
+}
 @media screen and (max-width: 1040px) {
   .input-group-custom {
     width: 200px !important;
