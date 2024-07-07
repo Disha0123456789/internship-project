@@ -6,6 +6,10 @@ body {
     justify-content: center;
     align-items: center;
 }
+.Main-page{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
 .Emotional-options{
     margin-top: 50px;
 }
@@ -53,6 +57,12 @@ body {
     flex-direction: column;
     gap: 20px;
     width: 40%;
+}
+.conten-price{
+    font-size: medium;
+    font-weight: 600;
+    margin-left: auto;
+    margin-right: auto;
 }
 .conten-left button{
     color: white;

@@ -27,15 +27,11 @@
     color: #682f98;
     text-align: center;
     padding: 15px 0px 20px 0px;
+    font-size: clamp(2.5rem, 4vw, 3rem);
     font-family: "Roboto", sans-serif;
     font-weight: 500;
   }
-  @media screen and (max-width: 500px){
-    .kundliForm h1 {
-      font-size: xx-large;
-    }
 
-  }
   .match-hr{
     width: 100%;
   }

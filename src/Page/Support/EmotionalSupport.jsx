@@ -78,6 +78,7 @@ const EmotionalSupport = () => {
                   alt="Meditation"
                 />
               </div>
+              <div className="item-price">Rs.99</div>
               <div className="list-item" key={index}>
                 {option}
               </div>

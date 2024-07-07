@@ -23,15 +23,21 @@ function Header() {
       <Navbar className="custom-navbar" expand="lg">
         <Container fluid>
           <Navbar.Toggle onClick={toggleSidebar} />
-          <Navbar.Brand href="#home">
-            <img className="ms-3" src={logo} alt="Divine Logo" />
-          </Navbar.Brand>
+          <div className="header-logo">
+            <img className="ms-3 header-logo-image" src={logo} alt="Divine Logo" />
+          </div>
           <Nav className="ms-auto">
-            <Nav.Link onClick={() => navigate("/todays_luck")} className="me-3">
-              Todays Luck <img src={gift} alt="gift" style={{ width: "20px", height: "21px", marginLeft: "5px" }} />
+            <Nav.Link onClick={() => navigate("/todays_luck")} className="me-3 nav-toggle">
+              <div className="nav-title">
+              Todays Luck
+              </div>
+              <img src={gift} alt="gift" style={{ width: "21px", height: "21px", marginLeft: "5px", marginBottom:"2px" }} />
             </Nav.Link>
-            <Nav.Link onClick={() => navigate("/pooja_page")} className="me-3 nav-menu">
-              Shopping <ShoppingCartRoundedIcon style={{ color: "black" }} />
+            <Nav.Link onClick={() => navigate("/pooja_page")} className="me-3 nav-toggle">
+              <div className="nav-title">
+                Shopping 
+              </div>
+              <ShoppingCartRoundedIcon style={{ color: "black" }} />
             </Nav.Link>
 
             <Nav.Link onClick={() => navigate("/login_page")} className="me-3 nav-menu">
@@ -59,10 +65,10 @@ function Header() {
           <Nav.Link className="sidebar-nav">Notifications <NotificationsRoundedIcon /></Nav.Link>
           <Nav.Link className="sidebar-nav" onClick={() => navigate("/pooja_page")}>Shopping <ShoppingCartRoundedIcon /></Nav.Link>
           <hr className="menu-hr" />
-          <Nav.Link className="sidebar-nav">FAQs</Nav.Link>
-          <Nav.Link className="sidebar-nav">Privacy Policy</Nav.Link>
+          <Nav.Link className="sidebar-nav" onClick={() => navigate("/FAQ")}>FAQs</Nav.Link>
+          <Nav.Link className="sidebar-nav" onClick={() => navigate("/PrivacyPolicy")}>Privacy Policy</Nav.Link>
           <Nav.Link className="sidebar-nav" onClick={() => navigate("/TermsAndConditions")}>Terms & Conditions</Nav.Link>
-          <Nav.Link className="sidebar-nav">Contact us</Nav.Link>
+          <Nav.Link className="sidebar-nav" onClick={() => navigate("/ContactUs")}>Contact us</Nav.Link>
           <Nav.Link className="sidebar-nav" onClick={() => navigate("/AboutUs")}>About us</Nav.Link>
         </Nav>
       </div>

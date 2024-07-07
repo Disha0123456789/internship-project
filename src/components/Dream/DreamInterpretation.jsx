@@ -47,7 +47,7 @@ function DreamInterpretation() {
                         <Select
                             options={options}
                             onChange={handleDropdownChange}
-                            defaultValue={{ value: '', label: 'Choose your last night dream!..' }}
+                            defaultValue={{ value: '', label: 'Choose your last night dream here!..' }}
                         />
 
                     </div>

@@ -31,7 +31,7 @@ const Mindfulness = () => {
   return (
     <div className="Main-page">
       <div className="Head-Text">
-        <h1>Mindfullness Meditation</h1>
+        <h1>Mindfulness Meditation</h1>
       </div>
       <div className="Hero-section">
         <p>
@@ -53,9 +53,9 @@ const Mindfulness = () => {
                   <iframe
                     src={links[index]}
                     title="YouTube video player"
-                    frameborder="0"
+                    frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen
+                    allowFullScreen
                   ></iframe>
                 </div>
               </div>

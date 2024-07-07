@@ -19,6 +19,7 @@ const StressManagement = () => {
               src="https://images.pexels.com/photos/626165/pexels-photo-626165.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
               alt=""
             />
+            <div className="conten-price">Rs.99</div>
             <button onClick={() => navigate("/Done", { state: { head, img } })}>
               Book Now
             </button>

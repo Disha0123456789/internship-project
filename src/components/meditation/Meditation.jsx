@@ -10,7 +10,7 @@ const Meditation = () => {
     "Meditation for sleep",
     "5 minute Meditation",
 
-    "Mindfullness Meditation",
+    "Mindfulness Meditation",
     "Meditation for Positive Energy",
     "Meditation for beginners",
     "Meditation for Mental Health",
@@ -37,7 +37,7 @@ const Meditation = () => {
       navigate("/SleepMeditation");
     } else if (option === "5 minute Meditation") {
       navigate("/5MinsMeditation");
-    } else if (option === "Mindfullness Meditation") {
+    } else if (option === "Mindfulness Meditation") {
       navigate("/MindfullnessMeditation");
     } else if (option === "Meditation for Positive Energy") {
       navigate("/PositiveMindMeditation");

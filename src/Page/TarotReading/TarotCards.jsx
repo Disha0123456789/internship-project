@@ -30,7 +30,7 @@ const TarotCards = ({ props }) => {
       <div className="Tarot-info">
         <h3>{head}</h3>
       {/*  <p>Date</p> */} 
-        <p>{p1}</p>
+        <p className="Tarot-info-p1">{p1}</p>
         <p>{p2}</p>
         {/*
         <div className="icons">
