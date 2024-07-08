@@ -142,6 +142,18 @@
     /* height: clamp(5vh, 20vw, 30vh); */
     
 }
+
+@media screen and (min-width: 640px) and (max-width:786px){
+    .Card{
+        height: 48vw;
+    }
+}
+
+@media screen and (min-width: 468px) and (max-width:640px){
+    .Card{
+        height: 48vw;
+    }
+}
 @media screen and (max-width: 468px){
     .Hero-section p {
         font-size: clamp(0.8rem, 1.2vw, 2rem) !important;

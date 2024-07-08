@@ -10,15 +10,58 @@ import palm from './images/palmread.png';
 import relationship from './images/realtion.png';
 import "./carousel.css";
 
+
 const Carousel = () => {
   const slides = [
-    { url: baby },
-    { url: relationship },
-    { url: palm },
-    { url: future },
-    { url: dream },
-    { url: numero },
-    { url: anger }
+    { 
+      url: baby,
+      text: {
+        content: "When Will I Expect A Baby?",
+        styleClass: "baby-text"
+      }
+    },
+    { 
+      url: relationship,
+      text: {
+        content: "Does My<br>Crush Loves <br>me?",
+        styleClass: "relationship-text"
+      }
+    },
+    { 
+      url: palm,
+      text: {
+        content: "What <br>Secrets <br>Does <br>Your <br>Palm <br>Holds?",
+        styleClass: "palm-text"
+      }
+    },
+    { 
+      url: future,
+      text: {
+        content: "Glimpse Into The Future",
+        styleClass: "future-text"
+      }
+    },
+    { 
+      url: dream,
+      text: {
+        content: "Ever <br>Wondered <br>What Your <br>Dreams are <br>telling You?",
+        styleClass: "dream-text"
+      }
+    },
+    { 
+      url: numero,
+      text: {
+        content: "Uncover the Number <br>that shape your <br>Destiny?",
+        styleClass: "numero-text"
+      }
+    },
+    { 
+      url: anger,
+      text: {
+        content: "How Can I <br>Control My <br>Anger?",
+        styleClass: "anger-text"
+      }
+    }
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -42,7 +85,7 @@ const Carousel = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       nextSlide();
-    }, 4000); // Move to the next slide every 5 seconds
+    }, 400000); // Move to the next slide every 4 seconds
 
     return () => clearInterval(interval); // Cleanup interval on component unmount
   }, [currentIndex]);
@@ -52,7 +95,12 @@ const Carousel = () => {
       <div
         style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
         className="carousel-slide"
-      ></div>
+      >
+        <div className={`carousel-text ${slides[currentIndex].text.styleClass}`}>
+          {/* Using dangerouslySetInnerHTML to render HTML content */}
+          <span dangerouslySetInnerHTML={{ __html: slides[currentIndex].text.content }} />
+        </div>
+      </div>
       {/* Left Arrow */}
       <div
         className="carousel-arrow carousel-arrow-left"

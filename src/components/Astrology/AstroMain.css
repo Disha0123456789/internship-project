@@ -88,20 +88,6 @@ body {
   background-color: white;
 }
 
-@media screen and (max-width:800px){
-  .conten {
-    flex-direction: column;
-  }
-  .conten-left {
-    width: 90%;
-    margin-right: auto;
-    margin-left: auto;
-  }
-  .conten-right {
-    margin-right: auto;
-    margin-left: auto;
-  }
-}
 
 .conten-left .img-mc,
 .img-hh,
@@ -331,37 +317,13 @@ body {
   color: black;
   background-color: white;
 }
-@media screen and (max-width: 468px) {
-  .astro-Container-heading h1 {
-    font-size: clamp(1.5rem, 3vw, 3rem) !important;
-    text-align: center;
-  }
-  .astro-Container-heading {
-    margin-bottom: 20px !important;
-  }
-  .conten {
-    flex-direction: column;
-  }
-  .conten-left {
-    width: 100%;
-    margin-bottom: 20px;
-  }
-  .astro-Container-heading {
-    height: 8%;
-  }
-  .astro-Container {
-    width: 90%;
-  }
-  .top img {
-    height: 50%;
-    width: 50%;
-  }
-}
+
 
 .grid-container {
   display: grid;
   grid-template-columns: auto auto auto auto;
   padding: 10px;
+  width: 100%;
 }
 .grid-container-main {
   display: flex;
@@ -381,7 +343,7 @@ body {
   text-align: center;
   font-weight: 600;
   height: 200px; /* Increase height as needed */
-  width: 300px; /* Increase width as needed */
+  width: 100%; /* Increase width as needed */
   background-color: rgba(255, 255, 255, 0.8);
   border-radius: 20px 20px 0 0;
   position: relative;
@@ -447,7 +409,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 35px;
-  width: 300px;
+  width: 100%;
   background-color: rgba(0, 0, 0, 0.753);
   letter-spacing: 2px;
   /* margin-bottom: 80px; */
@@ -604,40 +566,15 @@ body {
   align-items: center;
   flex-wrap: wrap;
 }
-@media (max-width: 768px) {
-  .grid-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    flex-shrink: 1;
-    flex-grow: 2;
-    width: 500px;
-  }
-  .grid-items::after {
-    width: 0%;
-  }
 
-  .callchat-button {
-    margin-right: 140px !important; 
-  }
-}
-@media (max-width: 550px){
-  .astro-Container-heading h1 {
-    font-size: clamp(1.6rem, 3vw, 3rem);
-  }
-  .callchat-button {
-    justify-content:center !important;
-    margin-right: 0px !important;
-  }
-}
+
 .callchat-button {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  margin-right: 235px;
+  margin-right: 40px;
   float: right;
-  width: 100vw;
+  width: 100%;
 }
 
 .buttons {
@@ -660,4 +597,87 @@ body {
 .buttons > i {
   padding-right: 7px;
   font-size: 25px;
+}
+
+@media screen and (max-width: 1124px) {
+  .grid-container {
+    grid-template-columns: auto auto auto;
+  }
+}
+
+@media screen and (max-width:800px){
+  .conten {
+    flex-direction: column;
+  }
+  .conten-left {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .conten-right {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width:700px) and (max-width: 840px) {
+  .grid-container {
+    grid-template-columns: auto auto;
+  }
+}
+
+@media (max-width: 700px) {
+  .grid-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-shrink: 1;
+    flex-grow: 2;
+    width: 500px;
+  }
+  .grid-items::after {
+    width: 0%;
+  }
+
+}
+
+@media (max-width: 570px){
+  .astro-Container-heading h1 {
+    font-size: clamp(1.6rem, 3vw, 3rem);
+  }
+  .callchat-button {
+    justify-content: center;
+    margin-right: 0px;
+  }
+  .buttons {
+    width: 120px;
+  }
+}
+
+@media screen and (max-width: 468px) {
+  .astro-Container-heading h1 {
+    font-size: clamp(1.5rem, 3vw, 3rem) !important;
+    text-align: center;
+  }
+  .astro-Container-heading {
+    margin-bottom: 20px !important;
+  }
+  .conten {
+    flex-direction: column;
+  }
+  .conten-left {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .astro-Container-heading {
+    height: 8%;
+  }
+  .astro-Container {
+    width: 90%;
+  }
+  .top img {
+    height: 50%;
+    width: 50%;
+  }
 }

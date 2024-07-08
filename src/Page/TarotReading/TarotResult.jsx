@@ -9,7 +9,7 @@ const TarotResult = () => {
     return text
       .replace(/\n/g, '<br><br>')  // Replace \n with <br>
       .replace(/Positive Interpretations:/g, '<strong>Positive Interpretations:</strong>')  // Highlight Positive Interpretations:
-      .replace(/Shadow Meanings:/g, '<strong>Shadow Meanings:</strong>');  // Highlight Shadow Meanings:
+      .replace(/Shadow Meanings:/g, '<strong>Area of Improvement:</strong>');  // Highlight Shadow Meanings:
   };
 
   return (
