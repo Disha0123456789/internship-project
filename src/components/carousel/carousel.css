@@ -148,6 +148,9 @@
 
 @media (max-width: 480px) {
   .baby-text, .relationship-text, .palm-text, .future-text, .dream-text, .numero-text, .anger-text {
-    font-size: 14px;
+    font-size: 15px;
+  }
+  .palm-text {
+    left: 22%;
   }
 }
