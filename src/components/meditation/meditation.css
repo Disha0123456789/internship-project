@@ -125,7 +125,7 @@
 }
 .Card h1{
     padding-top: 10px;
-    font-size: clamp(0.5rem, 1.6vw, 2.2rem);
+    font-size: clamp(1rem, 1.6vw, 2.2rem);
     text-align: center;
 }
 
@@ -145,13 +145,13 @@
 
 @media screen and (min-width: 640px) and (max-width:786px){
     .Card{
-        height: 48vw;
+        height: 230px;
     }
 }
 
 @media screen and (min-width: 468px) and (max-width:640px){
     .Card{
-        height: 48vw;
+        height: 230px;
     }
 }
 @media screen and (max-width: 468px){
