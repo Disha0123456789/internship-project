@@ -17,21 +17,18 @@ function TimeTravel() {
           <div className="grid-items-tt bg-fup"></div>
           <div className="info-tt">
             <div className="button-container-tt">
-              <button className="book-call-tt" disabled>
+              <button className="book-call-tt">
                 Future Prediction
               </button>
             </div>
           </div>
           </div>
         </div>
-        <div className="tt-grid">
-          <div
-            onClick={() => navigate("/PastLifePrediction")}
-            className="grid-items-tt bg-plp"
-          ></div>
+        <div onClick={() => navigate("/PastLifePrediction")} className="tt-grid">
+          <div className="grid-items-tt bg-plp"></div>
           <div className="info-tt">
             <div className="button-container-tt">
-              <button className="book-call-tt" disabled>
+              <button className="book-call-tt">
                 Past Life Prediction
               </button>
             </div>

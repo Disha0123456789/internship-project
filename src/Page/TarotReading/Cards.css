@@ -183,19 +183,6 @@ button{
     width: 60%;
 
 }
-@media (max-width:1200px){
-    .tarot-result-card{
-        width: 80%;
-    }
-}
-@media (max-width:640px){
-    .tarot-result-card{
-        width: 90%;
-    }
-    .tarot-para{
-        font-size: small;
-    }
-}
 
 .tarot-head h1{
     text-align: center;
@@ -248,6 +235,46 @@ button{
     font-size: clamp(1rem, 2.5vw, 1.5rem);
 }
 
+
+@media (max-width:1200px){
+    .tarot-result-card{
+        width: 80%;
+    }
+}
+
+@media (min-width:769px) and ( max-width: 1024px){
+    .Tarot-card{
+        height: 52vw;
+    }
+}    
+
+@media (min-width:640px) and ( max-width: 769px){
+    .Tarot-card{
+        height: 60vw;
+        width:43vw;
+    }
+    .Tarot-card .Tarot-info p{
+        line-height: 2.7vw;
+    }
+    .cards-collection{
+        padding: 10px;
+    }
+}
+
+@media (min-width:464px) and ( max-width: 640px){
+    .Tarot-card{
+        height: 71vw;
+    }
+}
+@media (max-width:640px){
+    .tarot-result-card{
+        width: 90%;
+    }
+    .tarot-para{
+        font-size: small;
+    }
+}
+
 @media (min-width:120px) and (max-width: 464px){
     .Tarot-Cards{
         gap: 20px;
@@ -272,25 +299,3 @@ button{
     }
      */
 }
-@media (min-width:464px) and ( max-width: 640px){
-    .Tarot-card{
-        height: 49vh;
-    }
-}
-@media (min-width:640px) and ( max-width: 768px){
-    .Tarot-card{
-        height: 59vh;
-        width:43vw;
-    }
-    .Tarot-card .Tarot-info p{
-        line-height: 2.7vw;
-    }
-    .cards-collection{
-        padding: 10px;
-    }
-}
-@media (min-width:769px) and ( max-width: 1024px){
-    .Tarot-card{
-        height: 54vh;
-    }
-}    

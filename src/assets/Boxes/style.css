@@ -138,7 +138,7 @@ input:hover{
   width: calc(100% - 60%); /* Adjust the value accordingly */
   display: flex;
   flex-direction: column;
-  padding: 5%;
+  padding: 10px;
   justify-content: space-around;
 }
 
@@ -317,6 +317,8 @@ input:hover{
   font-size: clamp(2.5rem, 4vw, 3rem);
   padding-top: 10px;
   text-align: center;
+  color: #672f98;
+  font-weight: 600;
 }
 .personal-trait-icon{
   width: 60px;
@@ -424,4 +426,65 @@ input:hover{
   border-radius: 1rem;
   border: solid #D9D9D9;
   background-color: #D9D9D9;
+}
+
+.webcam-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.webcam-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.webcam {
+  width: 80%;
+  height: auto;
+  border-radius: 20px;
+}
+
+.webcam-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.capture-btn {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 10px;
+}
+
+.capture-btn:hover {
+  background-color: #0056b3;
+}
+
+.close-webcam-btn {
+  padding: 10px;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 10px;
+}
+
+.close-webcam-btn:hover {
+  background-color: #c82333;
 }

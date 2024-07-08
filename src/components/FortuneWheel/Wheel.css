@@ -41,7 +41,8 @@
 }
 
 .message {
-  font-weight: bold;
+  font-weight: 600;
+  line-height: 1.6rem;
 }
  @media screen and (max-width:468px) {
   .wheel-container {
@@ -49,5 +50,11 @@
   }
   .caution h2 {
     font-size: 1.2rem !important;
+  }
+  .popup{
+    max-width: 90%;
+  }
+  .message {
+    font-size: small;
   }
  }

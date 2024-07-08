@@ -39,6 +39,7 @@
     "react-score-indicator": "^2.2.1",
     "react-select": "^5.8.0",
     "react-switch": "^7.0.0",
+    "react-webcam": "^7.2.0",
     "react-window": "^1.8.10"
   },
   "devDependencies": {
