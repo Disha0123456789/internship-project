@@ -76,7 +76,7 @@ const Form = () => {
         />
       </div>
       <div className='Account-page-details'>
-        <div className="account-title">Create Your Account With Divine Connection</div>
+        <div className="account-title">Edit Your Account</div>
         <form className="Account-form">
           <div className="change">
             <label htmlFor="name" className="label">
@@ -116,7 +116,7 @@ const Form = () => {
             />
           </div>
           <div className="change">
-            <label htmlFor="gender" className='label'>Gender</label>&nbsp;
+            <label htmlFor="gender" className='label'>Gender :-</label>&nbsp;
             <input type="radio" className="Account-input" name="gender" id="" disabled={state}/>  Male
             <input type="radio" className="Account-input" name="gender" id="" disabled={state} /> female
           </div>
