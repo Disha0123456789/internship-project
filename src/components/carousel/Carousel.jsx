@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 import { RxDotFilled } from "react-icons/rx";
-import { useNavigate } from "react-router-dom"; // Import useNavigate hook
+import { useNavigate } from "react-router-dom";
 import anger from './images/anger.png';
 import baby from './images/baby.png';
 import dream from './images/dream.png';
@@ -10,7 +10,6 @@ import numero from './images/numeroloy_background.jpg';
 import palm from './images/palmread.png';
 import relationship from './images/realtion.png';
 import "./carousel.css";
-
 
 const Carousel = () => {
   const slides = [
@@ -73,7 +72,9 @@ const Carousel = () => {
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
-  const navigate = useNavigate(); // Initialize useNavigate
+  const navigate = useNavigate();
+  const touchStartX = useRef(0);
+  const touchEndX = useRef(0);
 
   const prevSlide = () => {
     const isFirstSlide = currentIndex === 0;
@@ -104,8 +105,30 @@ const Carousel = () => {
     navigate(targetUrl); // Use navigate instead of window.location.href
   };
 
+  const handleTouchStart = (e) => {
+    touchStartX.current = e.touches[0].clientX;
+  };
+
+  const handleTouchMove = (e) => {
+    touchEndX.current = e.touches[0].clientX;
+  };
+
+  const handleTouchEnd = () => {
+    if (touchStartX.current - touchEndX.current > 50) {
+      nextSlide();
+    }
+    if (touchStartX.current - touchEndX.current < -50) {
+      prevSlide();
+    }
+  };
+
   return (
-    <div className="carousel-container group">
+    <div
+      className="carousel-container group"
+      onTouchStart={handleTouchStart}
+      onTouchMove={handleTouchMove}
+      onTouchEnd={handleTouchEnd}
+    >
       <div
         style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
         className="carousel-slide"
