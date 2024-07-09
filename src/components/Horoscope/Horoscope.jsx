@@ -1,4 +1,4 @@
-//client
+//horoscope_backend_nodjs
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './Horoscope.css';

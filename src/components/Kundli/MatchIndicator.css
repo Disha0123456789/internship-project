@@ -72,11 +72,9 @@
   }
   
   .detailText {
-    display: flex;
-    margin-top: 0.5rem; /* Adjust margin as needed */
+    margin-top: 0.5rem;
     font-size: 1rem;
-    padding-bottom: 10px;
-    white-space: pre-wrap; /* Allow wrapping of whitespace and break lines */
+    padding-bottom: 10px; /* Allow wrapping of whitespace and break lines */
     word-wrap: break-word; /* Break long words if needed */
   }
   
@@ -131,6 +129,9 @@
 
 @media screen and (max-width: 460px) {
   
+  .indicator-container {
+    width: 90%;
+  }
   .score-indicator {
     width: 100%;
     margin-top: 1em; /* Adjust margin-top as needed */
@@ -156,8 +157,8 @@
 
   .indicator{
     position: absolute;
-    top:300;
-    left: 49%;
+    top:270px;
+    left: 47%;
   }
   .match-circle {
     width: 20px;
@@ -169,6 +170,14 @@
     height: 6px;
     bottom: 8px;
   }
+  .detailText {
+    font-size: small;
+  }
 }
 
+@media screen and (max-width:340px) {
+  .indicator{
+    top:312px;
+  }
+}
 

@@ -204,4 +204,19 @@
 
 } 
 
+.horoscope-title{
+  font-weight: bold;
+  font-size: 16px; 
+  color: #333;
+}
+
+.horoscope-data{
+  color: #555;
+}
+
+@media screen and (max-width:468px) {
+  .horoscope-data{
+    font-size: small; 
+  }
+}
 /* ----------------- */
