@@ -18,12 +18,7 @@
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
-  
-  @media screen and (max-width:640px){
-    .container-dreamInterpretation {
-      width: 90%;
-    }
-  }
+
   #chat-box {
     height: 75%;
     overflow-y: scroll;
@@ -32,16 +27,15 @@
     margin-bottom: 12px;
   }
   
-  
-  
   .interpret-btn:hover {
     background-color: white;
     color:#000000;
   }
   
   
-  .dropdown-dream{
-    font-weight: 500;
+  .dropdown-dream {
+    font-size: large;
+    font-weight: 600;
     width: 100%;
     margin-bottom: 12px;
   }
@@ -59,4 +53,16 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
+  }
+
+  @media screen and (max-width:640px){
+    .container-dreamInterpretation {
+      width: 90%;
+    }
+  }
+
+  @media screen and (max-width:468px){
+    .dropdown-dream {
+      font-size: small;
+    }
   }

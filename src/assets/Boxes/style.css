@@ -46,17 +46,6 @@ h3 {
   font-style: bold;
 }
 
-@media (max-width: 768px) {
-  .box {
-    width: calc(50% - 20px);
-  }
-}
-
-@media (max-width: 576px) {
-  .box {
-    width: calc(100% - 20px);
-  }
-}
 
 /*button:hover{
   background-color: rgb(255, 0, 93);
@@ -75,7 +64,6 @@ input:hover{
 .choose-file{
   overflow: hidden;
   margin-top: 20px;
-  margin-bottom:20px;
 }
 .face-input-section {
   display: flex;
@@ -99,17 +87,7 @@ input:hover{
   padding-bottom: 20px;
   border-radius: 20px;
 }
-@media screen and (max-width:640px) {
-  .face-reader{
-    width: 90vw;
-  }
-  .scan-btn {
-    font-size: small;
-  }
-  .magic-text {
-    font-size: medium !important;
-  }
-}
+
 .img-display-after {
   margin-top: 10px;
   /* background-color: #FDF2F8; */
@@ -139,64 +117,20 @@ input:hover{
   display: flex;
   flex-direction: column;
   padding: 10px;
+  gap: 1em;
   justify-content: space-around;
 }
 
-@media screen and (min-width:700px) and (max-width:1000px){
-  .file-input{
-    font-size:small !important;
-  }
-  .file-scan-container {
-    padding: 20px 10px 20px 0px !important;
-  }
-}
-@media screen and (min-width:200px) and (max-width:700px){
-  .face-input-section {
-    width:80% !important;
-  }
-  .palm-input-section {
-    width: 85% !important;
-  }
-  .two-face {
-    display: flex;
-    flex-direction: column;
-  }
-  .card-mt-3{
-    border-right: 0px solid #000;
-    border-bottom: 2px solid #000;
-  }
-  .img-icon-1 {
-    width: 70%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-bottom: 10px;
-  }
-  .img-icon {
-    width: 70%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 10px;
-  }
-  .file-scan-container {
-    width: calc(100% - 50%);
-    justify-content: center;
-    gap: 20px;
-  }
-  .file-input {
-    font-size: small !important;
-  }
-}
-
-@media screen and (min-width:700px) {
-  .face-image-upload {
-    padding-left: 20px;
-  }
-}
 
 .file-input{
   font-size:medium;
 }
 
+.file-or{
+  text-align: center;
+  font-size: large;
+  font-weight: 600;
+}
 .scan-btn {
   /* Styles for scan-btn */
   background-color: black;
@@ -487,4 +421,87 @@ input:hover{
 
 .close-webcam-btn:hover {
   background-color: #c82333;
+}
+
+
+@media screen and (min-width:700px) and (max-width:1000px){
+  .file-input{
+    font-size:small !important;
+  }
+  .file-scan-container {
+    padding: 20px 10px 20px 0px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .box {
+    width: calc(50% - 20px);
+  }
+
+}
+
+@media screen and (min-width:700px) {
+  .face-image-upload {
+    padding-left: 20px;
+  }
+}
+
+@media screen and (min-width:200px) and (max-width:700px){
+  .face-input-section {
+    width:80% !important;
+  }
+  .palm-input-section {
+    width: 85% !important;
+  }
+  .two-face {
+    display: flex;
+    flex-direction: column;
+  }
+  .card-mt-3{
+    border-right: 0px solid #000;
+    border-bottom: 2px solid #000;
+  }
+  .img-icon-1 {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 10px;
+  }
+  .img-icon {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+  }
+  .file-scan-container {
+    width: calc(100% - 50%);
+    justify-content: center;
+  }
+  .file-input {
+    font-size: small !important;
+  }
+}
+
+@media screen and (max-width:640px) {
+  .face-reader{
+    width: 90vw;
+  }
+  .scan-btn {
+    font-size: small;
+  }
+  .magic-text {
+    font-size: medium !important;
+  }
+  .capture-btn {
+    font-size: small;
+  }
+  .file-or {
+    font-size: small;
+  }
+}
+
+@media (max-width: 576px) {
+  .box {
+    width: calc(100% - 20px);
+  }
 }

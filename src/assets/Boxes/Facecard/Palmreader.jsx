@@ -80,6 +80,7 @@ function Palmreader() {
           <div className="choose-file">
             <input type="file" ref={inputRef} onChange={handleImageChange} className="file-input" />
           </div>
+          <div className="file-or">OR</div>
           <button className="capture-btn" onClick={handleCaptureClick}>
             Capture
           </button>

@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
-import IMG from "/IMGS/shuffle card girl.png";
+import IMG from "/Tarot/tarot_card_girl.png";
 import tarotResultCardsData from "./tarot-result-cards-data.json";
 
 const Shuffle = () => {
