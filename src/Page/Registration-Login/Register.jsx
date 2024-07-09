@@ -64,6 +64,9 @@ export default function Register() {
 
                     <div class="form-row-last">
                         <input type="submit" id='submit' value="Register" />
+                        <p className='terms-message'>
+                            By signing up, you agree to our <Link to="/TermsAndConditions">Terms and Conditions</Link>, <Link to="/PrivacyPolicy">Privacy Policy</Link>.
+                        </p>
                         <p className='Register-link'>Already have an account ? <Link to="/login_page">Login</Link></p>
                         </div>
                             <div className='login-text-two'>

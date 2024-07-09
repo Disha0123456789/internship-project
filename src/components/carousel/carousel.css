@@ -69,9 +69,10 @@
 /* Specific styles for each text */
 .baby-text {
   top: 8%;
-  left: 40%;
-  transform: translateX(-50%);
+  left: 30%;
   color: black;
+  border-radius: 5px;
+  letter-spacing: 0.05rem;
   font-size: 35px;
   font-weight: 500;
   text-shadow: 
@@ -83,6 +84,7 @@
   top: 50%;
   left: 12%;
   color: white;
+  letter-spacing: 0.05rem;
   font-size: 35px;
   font-weight: 500;
   text-shadow: 0 0 10px rgb(0 0 0 / 70%), 4px 4px 4px rgb(255 24 24 / 70%);
@@ -92,6 +94,7 @@
   top: 10%;
   left: 29%;
   color: yellow;
+  letter-spacing: 0.05rem;
   font-size: 35px;
   font-weight: 500;
   text-shadow: 
@@ -101,9 +104,9 @@
 
 .future-text {
   top: 10%;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 32%;
   color: white;
+  letter-spacing: 0.05rem;
   font-size: 35px;
   font-weight: 500;
   text-shadow: 
@@ -115,6 +118,7 @@
   top: 15%;
   left: 10%;
   color: white;
+  letter-spacing: 0.05rem;
   font-size: 35px;
   font-weight: 500;
   text-shadow: 0 0 10px rgb(29 29 29 / 70%), 2px 5px 4px rgb(7 7 7 / 70%);
@@ -123,18 +127,19 @@
 
 .numero-text {
   top: 50%;
-  left: 55%;
-  transform: translateX(-50%);
-  color: black;
-  font-size: 35px;
-  font-weight: 600;
-  text-shadow: 0 0 10px rgb(15 255 246 / 70%), 2px 3px 4px rgb(255 255 255 / 70%)
+  left: 7%;
+  color: #fff;
+  letter-spacing: 0.05rem;
+    font-size: 35px;
+    font-weight: 600;
+    text-shadow: 0 0 10px #000000, 2px 3px 4px rgb(0 0 0 / 70%);
 }
 
 .anger-text {
   top: 50%;
   right: 32%;
   color: orange;
+  letter-spacing: 0.05rem;
   font-size: 35px;
   font-weight: 500;
   text-shadow: 0 0 10px rgb(185 69 69 / 70%), 4px 5px 4px rgb(69 25 25 / 70%);
@@ -147,10 +152,16 @@
 }
 
 @media (max-width: 480px) {
-  .baby-text, .relationship-text, .palm-text, .future-text, .dream-text, .numero-text, .anger-text {
-    font-size: 15px;
+  .baby-text {
+    left: 12%;
+  }
+  .relationship-text {
+    left: 9%;
   }
   .palm-text {
-    left: 22%;
+    left: 20%;
+  }
+  .future-text {
+    left: 20%;
   }
 }

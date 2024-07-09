@@ -11,88 +11,6 @@
   padding-left: 10px;
 }
 
-@media screen and (min-width:1200px){
-  .Register{
-    margin-top: 40px;
-    justify-content: left;
-    align-items: center;
-    text-align: left;
-    margin-left: 200px;
-    display: flex;
-}
-  
-.form-container{
-  max-width: 1200px;
-  background: #fff;
-  width: 1200px;
-  margin-left: 200px;
-  text-align: left;
-  font-weight: 600;
-
-  }
-}
-
-@media screen and (min-width:800px)  and (max-width: 1200px){
-  .form-container{
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 90vw;
-    text-align: left;
-    font-weight: 600;
-  }
-  .Register{
-    width:90vw;
-    margin-top: 40px;
-    margin-left: 0px;
-    justify-content: left;
-    align-items: center;
-    text-align: left;
-    display: flex;
-  }
-}
-@media screen and (max-width:800px){
-  .form-container{
-    display: flex;
-    flex-direction: column;
-  }
-  .Register{
-    width:90vw;
-    margin-top: 40px;
-    margin-left: 0px;
-    justify-content: left;
-    align-items: center;
-    text-align: left;
-    display: flex;
-  }
-  .register-title h1{
-    font-size: xx-large;
-  }
-  .form-row{
-    flex-direction: column;
-    margin: 0px 15px !important;
-  }
-  .input-data{
-    margin: 10px 20px !important;
-  }
-  .form-row-last{
-    margin-top: 20px;
-  }
-  .sign-up-icons{
-    margin-top: 2% !important;
-    gap: 20px !important;
-  } 
-}
-
-@media screen and (max-width:468px) {
-  .Register {
-    margin-top: 10px !important;
-  }
-  .logo {
-    width: 150px !important;
-    height: 150px !important;
-}
-}
-
 .form-container .text{
  
   text-align: left;
@@ -142,8 +60,6 @@ form .form-row .textarea{
   font-size: 16px;
   transition: all 0.3s ease;
 }
-
-
 
 .form-row submit-btn{
   justify-content: center;
@@ -202,4 +118,90 @@ hr{
   width: 91%;
   margin-top: 1%;
   gap:30px;
+}
+
+@media screen and (min-width:1200px){
+  .Register{
+    margin-top: 40px;
+    justify-content: left;
+    align-items: center;
+    text-align: left;
+    margin-left: 200px;
+    display: flex;
+}
+  
+.form-container{
+  max-width: 1200px;
+  background: #fff;
+  width: 1200px;
+  margin-left: 200px;
+  text-align: left;
+  font-weight: 600;
+
+  }
+}
+
+@media screen and (min-width:800px)  and (max-width: 1200px){
+  .form-container{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 90vw;
+    text-align: left;
+    font-weight: 600;
+  }
+  .Register{
+    width:90vw;
+    margin-top: 40px;
+    margin-left: 0px;
+    justify-content: left;
+    align-items: center;
+    text-align: left;
+    display: flex;
+  }
+}
+
+@media screen and (max-width:800px){
+  .form-container{
+    display: flex;
+    flex-direction: column;
+  }
+  .Register{
+    width:90vw;
+    margin-top: 40px;
+    margin-left: 0px;
+    justify-content: left;
+    align-items: center;
+    text-align: left;
+    display: flex;
+  }
+  .register-title h1{
+    font-size: xx-large;
+  }
+  .form-row{
+    flex-direction: column;
+    margin: 0px 15px !important;
+  }
+  .input-data{
+    margin: 10px 20px !important;
+  }
+  .form-row-last{
+    margin-top: 20px;
+  }
+  .sign-up-icons{
+    margin-top: 2% !important;
+    gap: 20px !important;
+  } 
+}
+
+@media screen and (max-width:468px) {
+  .Register {
+    margin-top: 10px !important;
+  }
+  .logo {
+    width: 150px !important;
+    height: 150px !important;
+  }
+  .form-row-last {
+    gap: 5px;
+  }
 }
