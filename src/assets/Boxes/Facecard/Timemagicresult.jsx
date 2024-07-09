@@ -1,11 +1,14 @@
-//Server:Aging
+//Aging
 import React, { useEffect, useState } from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import axios from "axios";
 
 function Timemagicresult() {
   const location = useLocation();
+  const navigate = useNavigate();
   const [processedImage, setProcessedImage] = useState(null);
+  const [showWarning, setShowWarning] = useState(false);
+  const [warningMessage, setWarningMessage] = useState("");
 
   useEffect(() => {
     const { image } = location.state;
@@ -39,8 +42,18 @@ function Timemagicresult() {
         }
       })
       .catch(error => {
-        console.error("Error processing the image", error);
+        if (error.response && error.response.status === 400) {
+          setWarningMessage("No face detected in the uploaded image. Please try again.");
+        } else {
+          setWarningMessage("An error occurred while processing your request. Please try again.");
+        }
+        setShowWarning(true);
       });
+  };
+
+  const handleWarningClose = () => {
+    setShowWarning(false);
+    navigate(-1); // Navigate back to the previous screen
   };
 
   return (
@@ -53,6 +66,12 @@ function Timemagicresult() {
           <p>Processing...</p>
         )}
       </div>
+      {showWarning && (
+        <div className="warning-popup" style={{ textAlign: 'center' }}>
+          <p style={{ color: 'red' }}>{warningMessage}</p>
+          <button onClick={handleWarningClose}>Close</button>
+        </div>
+      )}
     </div>
   );
 }

@@ -1,3 +1,4 @@
+//FaceShape_backend for face shape scan
 import React, { useRef, useState, useCallback } from "react";
 import { useNavigate } from "react-router-dom";
 import ImageRecognitionLogo from '/2nd-row-reading/facial-recognition.png';
@@ -13,6 +14,7 @@ function Faceread() {
   const webcamRef = useRef(null);
   const [image, setImage] = useState(null);
   const [showWarning, setShowWarning] = useState(false);
+  const [warningMessage, setWarningMessage] = useState("");
   const [showWebcam, setShowWebcam] = useState(false);
 
   const handleImageClick = () => {
@@ -26,13 +28,14 @@ function Faceread() {
 
   const handleScanClick = () => {
     if (!image) {
+      setWarningMessage("Please choose/upload an image of face to use this feature.*");
       setShowWarning(true);
       return;
     }
-
+  
     const formData = new FormData();
     formData.append('imagefile', image);
-
+  
     axios.post('http://localhost:8000/face-detector/upload/', formData, {
       headers: {
         'Content-Type': 'multipart/form-data'
@@ -43,12 +46,27 @@ function Faceread() {
         navigate("/Faceresult", { state: { data: response.data } });
       })
       .catch(error => {
-        console.error('Error fetching data:', error);
+        if (error.response) {
+          // The request was made and the server responded with a status code
+          // that falls out of the range of 2xx
+          if (error.response.status === 400) {
+            setWarningMessage("No face detected in the uploaded image. Please try again.");
+          } else {
+            setWarningMessage("An error occurred while processing your request. Please try again.*");
+          }
+        } else {
+          // Something happened in setting up the request that triggered an Error
+          setWarningMessage("An error occurred while processing your request. Please try again.*");
+        }
+        setShowWarning(true);
       });
   };
+  
+  
 
   const handleTimeMagicClick = () => {
     if (!image) {
+      setWarningMessage("Please choose/upload an image of face to use this feature.*");
       setShowWarning(true);
     } else {
       navigate("/Timemagicresult", { state: { image } });
@@ -75,7 +93,7 @@ function Faceread() {
       <h1 className="face-text">Face Reading</h1>
       {showWarning && (
         <div className="warning-popup" style={{ textAlign: 'center' }}>
-          <p style={{ color: 'red' }}>Please choose/upload an image to use this feature.*</p>
+          <p style={{ color: 'red' }}>{warningMessage}</p>
           <button onClick={() => setShowWarning(false)}>Close</button>
         </div>
       )}

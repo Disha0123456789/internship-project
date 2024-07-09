@@ -11,8 +11,8 @@ const Content = ({ content }) => {
     <div>
       {Object.entries(content).map(([key, value]) => (
         <div key={key} style={{ marginBottom: '10px' }}>
-          <span style={{ fontWeight: 'bold', fontSize: '16px', color: '#333' }}>{key}</span>
-          <p style={{ color: '#555' }}>{value}</p>
+          <span className='horoscope-title'>{key}</span>
+          <p className='horoscope-data'>{value}</p>
         </div>
       ))}
     </div>
