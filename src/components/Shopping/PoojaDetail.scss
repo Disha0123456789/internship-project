@@ -1,10 +1,7 @@
-.root-pooja{
-    padding: 20px;
-  }
   .FormPuja {
     margin-right: auto;
     margin-left: auto;
-    width: 90%;
+    width: 80%;
     margin-top: 2em;
     border: 1px solid #e0e0e0;
     border-radius: 1em;
@@ -101,3 +98,20 @@
     }
   }
   
+  @media  screen and (max-width: 468px) {
+    .FormPuja {
+      width: 90%;
+    }
+    .pooja-name {
+      font-size: 1.2em;
+    }
+    .pooja-desc {
+      font-size: small;
+    }
+    .FormPuja__Heading__TicketInfo button {
+      font-size: small;
+    }
+    .Ques__Desc__Heading {
+      font-size: 1em;
+    }
+  }

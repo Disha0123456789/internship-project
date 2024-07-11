@@ -9,9 +9,9 @@ export default function Dream() {
                 <h1>Dream Interpretation</h1>
             </div>
             <div className='dream-container'>
-                <DreamComponent imageSrc={'4throw/dream1-icon.png'} title="Dream Meaning" onClick="dream_meaning" />
-                <DreamComponent imageSrc={'4throw/dream2-icon.png'} title="Dream Book"  onClick="dream_book" />
-                <DreamComponent imageSrc={'4throw/dream3-icon.png'} title="Sleep Music" onClick="sleep_music"/>
+                <DreamComponent imageSrc={'/assets/4throw/Dream/images/dream1-icon.png'} title="Dream Meaning" onClick="dream_meaning" />
+                <DreamComponent imageSrc={'/assets/4throw/Dream/images/dream2-icon.png'} title="Dream Book"  onClick="dream_book" />
+                <DreamComponent imageSrc={'/assets/4throw/Dream/images/dream3-icon.png'} title="Sleep Music" onClick="sleep_music"/>
             </div>
         </div>
     )

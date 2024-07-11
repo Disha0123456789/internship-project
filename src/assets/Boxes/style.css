@@ -46,6 +46,16 @@ h3 {
   font-style: bold;
 }
 
+.Personal-Traits1{
+  width: 100px;
+  height: 80px;
+  border: rgb(138, 9, 9);
+}
+.Life-Path{
+  width: 100px;
+  height: 100px;
+  border: bold black;
+}
 
 /*button:hover{
   background-color: rgb(255, 0, 93);
@@ -263,6 +273,7 @@ input:hover{
 }
 .hr-tag{
   margin-top: 20px;
+  margin-bottom: 10px;
   width: 100%;
 }
 
@@ -295,6 +306,12 @@ input:hover{
   margin-left: 900px;
 
 
+}
+
+.warning-btn{
+  background-color: black;
+  color:white;
+  padding: 10px;
 }
 
 .palm-input-section {

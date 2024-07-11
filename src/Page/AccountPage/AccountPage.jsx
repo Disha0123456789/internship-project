@@ -4,8 +4,8 @@ import Select from 'react-select';
 import { FixedSizeList as List } from 'react-window';
 import dummy from './dummy.json';
 import code from './code.json';
-import divineLogo from './images/divine logo vertical.png';
-import logoBackground from './images/pink_design_cutout.png';
+import divineLogo from '/assets/AcountPage/images/divine logo vertical.png';
+import logoBackground from '/assets/AcountPage/images/pink_design_cutout.png';
 import './AccountPage.css';
 
 // Debounce function to limit the rate of function execution

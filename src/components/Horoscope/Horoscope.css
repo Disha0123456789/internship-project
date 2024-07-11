@@ -24,13 +24,6 @@
   padding-top: 40px;
 }
 
-@media (max-width: 1200px) {
-  .horo-img-container {
-    grid-template-columns: repeat(4, 1fr); /* 4 columns */
-    grid-template-rows: repeat(3, auto); /* 3 rows */
-  }
-}
-
 .img-ring {
   border-radius: 50%;
   border: 2px solid;
@@ -47,20 +40,6 @@
   width: 70%;
   height: auto; /* or specify a fixed height that maintains the aspect ratio */
   object-fit: contain; /* or 'cover' depending on your preference */
-}
-
-@media (max-width: 600px) {
-  .horo-card-image {
-    width: 50%;
-  }
-  .img-ring {
-    margin-right: 10%;
-    margin-left: 10%;
-    padding-left: 1%;
-    padding-right: 1%;
-    padding-top: 12%;
-    padding-bottom: 12%;
-  }
 }
 
 .Head-horo h3{
@@ -95,12 +74,6 @@
   font-size: large;
   font-weight: 600;
   margin-top: 10px;
-}
-
-@media (max-width: 600px) {
-  .img-name {
-    font-size:small;
-  }
 }
 
 .Gemini-container{
@@ -141,13 +114,6 @@
   font-size: large;
   font-weight:600;
   
-}
-@media (max-width: 600px) {
-  .horo-span{
-    font-size: small;
-    font-weight:600;
-    
-  }
 }
 
 .Gemini-Hori_line{
@@ -212,6 +178,35 @@
 
 .horoscope-data{
   color: #555;
+}
+
+@media (max-width: 1200px) {
+  .horo-img-container {
+    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    grid-template-rows: repeat(3, auto); /* 3 rows */
+  }
+}
+
+@media (max-width: 600px) {
+  .horo-card-image {
+    width: 50%;
+  }
+  .img-ring {
+    margin-right: 10%;
+    margin-left: 10%;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-top: 12%;
+    padding-bottom: 12%;
+  }
+  .img-name {
+    font-size:small;
+  }
+  .horo-span{
+    font-size: small;
+    font-weight:600;
+    
+  }
 }
 
 @media screen and (max-width:468px) {

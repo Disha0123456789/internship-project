@@ -8,7 +8,7 @@ const FAQ = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('/faqs.json'); // Fetch the JSON file
+        const response = await fetch('/assets/important_files_docx/faqs.json'); // Fetch the JSON file
         const result = await response.json();
         setData(result);
       } catch (error) {

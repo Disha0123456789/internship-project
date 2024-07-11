@@ -1,7 +1,7 @@
 import React from "react";
 import "./AstroMain.css";
 import { useNavigate } from "react-router-dom";
-import image from './images/Crystal Healing.png';
+import image from '/assets/3rd-row/Astrology/images/Crystal Healing.png';
 function CrystalHealing() {
   const navigate = useNavigate();
   const head = "Crystal Healing";

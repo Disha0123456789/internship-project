@@ -3,10 +3,6 @@
   height: auto;
 }
 
-.box h2 {
-  margin-bottom: 10px;
-}
-
 .box {
   background: linear-gradient(93deg, rgba(154,82,155,1) 0%, rgba(88,121,227,1) 100%);
   border: 1px solid black;

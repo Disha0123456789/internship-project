@@ -1,7 +1,7 @@
 import React from "react";
 import "./AstroMain.css";
 import { useNavigate } from "react-router-dom";
-import image from './images/Health Healing.png';
+import image from '/assets/3rd-row/Astrology/images/Health Healing.png';
 function HealthHealing() {
   const navigate = useNavigate();
   const head = "Health Healing";

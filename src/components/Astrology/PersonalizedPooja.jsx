@@ -1,7 +1,7 @@
 import React from "react";
 import "./AstroMain.css";
 import { useNavigate } from "react-router-dom";
-import image from './images/Personalized Pooja.png';
+import image from '/assets/3rd-row/Astrology/images/Personalized Pooja.png';
 function PersonalizedPooja() {
   const navigate = useNavigate();
   const head = "Personalized Pooja";

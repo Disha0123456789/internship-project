@@ -1,7 +1,7 @@
 import React from "react";
 import "./AstroMain.css";
 import { useNavigate } from "react-router-dom";
-import image from './images/Finance Planning.png';
+import image from '/assets/3rd-row/Astrology/images/Finance Planning.png';
 function FinancePlanning() {
   const navigate = useNavigate();
   const head = "Finance Planning";

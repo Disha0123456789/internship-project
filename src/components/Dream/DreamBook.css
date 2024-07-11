@@ -36,12 +36,6 @@
     text-align: center;
     font-size: 1.3rem;
 }
-@media screen and (max-width:600px) {
-    .dreambook-messg{
-        font-size: 0.9rem;
-    }
-}
-
 
 .dreamhistory-button-container {
     display: flex;
@@ -187,5 +181,11 @@
     .dreamhistory-button-container {
         /* border: 1px solid black; */
         width: 90%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .dreambook-messg{
+        font-size: 0.9rem;
     }
 }

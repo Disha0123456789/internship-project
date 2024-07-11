@@ -1,7 +1,7 @@
 import React from "react";
 import "./AstroMain.css";
 import { useNavigate } from "react-router-dom";
-import image from './images/Chakra Healing.png';
+import image from '/assets/3rd-row/Astrology/images/Chakra Healing.png';
 function ChakraHealing() {
   const navigate = useNavigate();
   const head = "Chakra Healing";

@@ -1,8 +1,8 @@
 //Easy task
 import React from "react";
-import d from "/Kundli/matchmaking.png";
-import third from "/Kundli/lifereport.png";
-import four from "/Kundli/remedies.png";
+import d from "/assets/1st-row/Kundli/matchmaking.png";
+import third from "/assets/1st-row/Kundli/lifereport.png";
+import four from "/assets/1st-row/Kundli/remedies.png";
 import "./Kundli.css";
 import { useNavigate } from 'react-router-dom';
 function Kundli() {

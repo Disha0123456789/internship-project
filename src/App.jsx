@@ -40,26 +40,26 @@ import FortuneWheel from "./components/FortuneWheel/FortuneWheel";
 import LoveCheck from "./components/LoveCheck/LoveCheck";
 
 //Tarot Reading
-import TarotReading from "./Page/TarotReading/TarotReading";
-import Shuffle from "./Page/TarotReading/Shuffle";
-import TarotResult from "./Page/TarotReading/TarotResult";
+import TarotReading from "./components/TarotReading/TarotReading";
+import Shuffle from "./components/TarotReading/Shuffle";
+import TarotResult from "./components/TarotReading/TarotResult";
 
 //Face Reading
-import FaceRead from "./assets/Boxes/Facecard/Faceread";
-import Faceresult from "./assets/Boxes/Facecard/Faceresult";
-import Timemagicresult from "./assets/Boxes/Facecard/Timemagicresult";
-import Ancestors from "./assets/Boxes/Facecard/Ancestors";
+import FaceRead from "./components/Facecard/Faceread";
+import Faceresult from "./components/Facecard/Faceresult";
+import Timemagicresult from "./components/Facecard/Timemagicresult";
+import Ancestors from "./components/Facecard/Ancestors";
 
 //Palm Reading
-import Palmreader from "./assets/Boxes/Facecard/Palmreader";
-import Palmresult from "./assets/Boxes/Facecard/Palmresult";
+import Palmreader from "./components/Facecard/Palmreader";
+import Palmresult from "./components/Facecard/Palmresult";
 
 //Time Travel
-import TimeTravel from "./Page/TimeTravel/TimeTravel";
-import FuturePrediction from "./Page/TimeTravel/FuturePrediction";
-import SeeYourFuture from "./Page/TimeTravel/SeeYourFuture";
-import PastLifePrediction from "./Page/TimeTravel/PastLifePrediction";
-import SeeYourPast from "./Page/TimeTravel/SeeYourPast";
+import TimeTravel from "./components/TimeTravel/TimeTravel";
+import FuturePrediction from "./components/TimeTravel/FuturePrediction";
+import SeeYourFuture from "./components/TimeTravel/SeeYourFuture";
+import PastLifePrediction from "./components/TimeTravel/PastLifePrediction";
+import SeeYourPast from "./components/TimeTravel/SeeYourPast";
 
 //Astrology 
 import AstroMain from "./components/Astrology/AstroMain";
@@ -116,20 +116,20 @@ import MentalHealthMeditation from "./components/meditation/MentalHealthMeditati
 import EpicPowerMeditation from "./components/meditation/EpicPowerMeditation";
 
 //Emotional Support
-import EmotionalSupport from "./Page/Support/EmotionalSupport";
-import AngerManagement from "./Page/Support/AngerManagement";
-import Obsession from "./Page/Support/Obsession";
-import Loneliness from "./Page/Support/Loneliness";
-import SexualWellness from "./Page/Support/SexualWellness";
-import Family from "./Page/Support/Family";
-import Depression from "./Page/Support/Depression";
-import Sleep from "./Page/Support/Sleep";
-import StressManagement from "./Page/Support/StressManagement";
-import PastTrauma from "./Page/Support/PastTrauma";
-import SelfEsteemIssues from "./Page/Support/SelfEsteemIssues";
-import WorkLifeBalance from "./Page/Support/WorkLifeBalance";
-import Grief from "./Page/Support/Grief";
-import FinalPage from "./Page/Support/FinalPage";
+import EmotionalSupport from "./components/Support/EmotionalSupport";
+import AngerManagement from "./components/Support/AngerManagement";
+import Obsession from "./components/Support/Obsession";
+import Loneliness from "./components/Support/Loneliness";
+import SexualWellness from "./components/Support/SexualWellness";
+import Family from "./components/Support/Family";
+import Depression from "./components/Support/Depression";
+import Sleep from "./components/Support/Sleep";
+import StressManagement from "./components/Support/StressManagement";
+import PastTrauma from "./components/Support/PastTrauma";
+import SelfEsteemIssues from "./components/Support/SelfEsteemIssues";
+import WorkLifeBalance from "./components/Support/WorkLifeBalance";
+import Grief from "./components/Support/Grief";
+import FinalPage from "./components/Support/FinalPage";
 
 // Important Links
 import TermsAndConditions from "./Page/Important_Links/TermsAndConditions";
@@ -150,8 +150,7 @@ function App() {
           <Route path="/UserBirthInput" element={<UserBirthInput />} />
           <Route path="/MainPage" element={<MainPage />} />
           {/* Other routes */}
-      </Routes>
-      <Routes>
+
         <Route path="/" element={<Home />} />
 
         <Route path="/UserBirthInput" element={<UserBirthInput />} />

@@ -1,7 +1,7 @@
 import React from "react";
 import "./AstroMain.css";
 import { useNavigate } from "react-router-dom";
-import image from './images/Birth Chart Interpretation.png';
+import image from '/assets/3rd-row/Astrology/images/Birth Chart Interpretation.png';
 function BirthChartInterpretation() {
   const navigate = useNavigate();
   const head = "Birth Chart Interpretation";

@@ -1,7 +1,7 @@
 import React from "react";
 import "./AstroMain.css";
 import { useNavigate } from "react-router-dom";
-import image from './images/Career Path.png';
+import image from '/assets/3rd-row/Astrology/images/Career Path.png';
 function CareerPath() {
   const navigate = useNavigate();
   const head = "Career Path";

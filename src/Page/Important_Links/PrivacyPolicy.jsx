@@ -5,7 +5,7 @@ const PrivacyPolicy = () => {
   const [terms, setTerms] = useState('');
 
   useEffect(() => {
-    fetch('/privacy policy.docx')
+    fetch('/assets/important_files_docx/privacy policy.docx')
       .then(response => response.arrayBuffer())
       .then(data => mammoth.convertToHtml({ arrayBuffer: data }))
       .then(result => setTerms(result.value))
