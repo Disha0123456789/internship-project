@@ -44,7 +44,7 @@ const EpicPowerMeditation = () => {
         <div className="cards">
           {name.map((name, index) => {
             return (
-              <div className="Card">
+              <div className="Card" key={index}>
                 <div className="head">
                   <h1>{name}</h1>
                 </div>

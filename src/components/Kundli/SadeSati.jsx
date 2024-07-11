@@ -63,7 +63,9 @@ function SadeSati() {
   return (
     <div className="face-result">
         <div className="Know-past">
-            <p className="personal-trait-text">Remedies</p>
+            <div className='Head-Text'>
+                <h1>Remedies</h1>
+            </div>
             <hr className="hr-tag"></hr>
             {sadeSatiReport && (
                 <div>

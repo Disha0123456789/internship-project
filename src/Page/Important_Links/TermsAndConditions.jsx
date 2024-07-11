@@ -5,7 +5,7 @@ const TermsAndConditions = () => {
   const [terms, setTerms] = useState('');
 
   useEffect(() => {
-    fetch('/Devine Connections Policy Terms.docx')
+    fetch('/assets/important_files_docx/Devine Connections Policy Terms.docx')
       .then(response => response.arrayBuffer())
       .then(data => mammoth.convertToHtml({ arrayBuffer: data }))
       .then(result => setTerms(result.value))

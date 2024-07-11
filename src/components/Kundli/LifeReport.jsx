@@ -63,7 +63,9 @@ function LifeReport() {
     return (
       <div className="face-result">
           <div className="Know-past">
-              <p className="personal-trait-text">Life Report</p>
+                <div className='Head-Text'>
+                    <h1>Life Report</h1>
+                </div>
               <hr className="hr-tag"></hr>
               {lifeReport && (
                   <div>

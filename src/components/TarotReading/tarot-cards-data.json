@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "backdrop": "/assets/2nd-row-reading/Tarot/images/how to change my luck background.jpg",
+    "icon": "/assets/2nd-row-reading/Tarot/images/how to change my luck card.png",
+    "head": "Daily tarot",
+    "p1": "Your Daily Tarot: Insight and Direction",
+    "p2": "Find out what energies will shape your day. Let the tarot guide you to a successful and fulfilling day."
+  },
+  {
+    "id": 2,
+    "backdrop": "/assets/2nd-row-reading/Tarot/images/weekend tarot background.jpg",
+    "icon": "/assets/2nd-row-reading/Tarot/images/love reading card.png",
+    "head": "Love Reading",
+    "p1": "Reveal Your Romantic Future with Tarot",
+    "p2": "Discover the steps to a fulfilling romantic journey. Let tarot reveal the way to lasting love and happiness."
+  },
+  {
+    "id": 3,
+    "backdrop": "/assets/2nd-row-reading/Tarot/images/weekly tarot background.jpg",
+    "icon": "/assets/2nd-row-reading/Tarot/images/yoga.png",
+    "head": "Wellness fortune",
+    "p1": "Nurture Your Well-Being with Tarot Insights",
+    "p2": "Unveil the influences shaping your health and well-being. Use tarot to achieve a healthier, more fulfilling life."
+  },
+  {
+    "id": 4,
+    "backdrop": "/assets/2nd-row-reading/Tarot/images/where is my destined partner background.jpg",
+    "icon": "/assets/2nd-row-reading/Tarot/images/where is my destined partner card.png",
+    "head": "Where is my destined partner?",
+    "p1": "Hold on tight. You're about to uncover some juicy intel about your destined partner!",
+    "p2": "Want a hint? Let the wisdom of Tarot guide you, my friend."
+  },
+  {
+    "id": 5,
+    "backdrop": "/assets/2nd-row-reading/Tarot/images/yes no background.jpg",
+    "icon": "/assets/2nd-row-reading/Tarot/images/first half of 2024 card.png",
+    "head": "Career",
+    "p1": "Discover the Path to Career Success",
+    "p2": "Explore the influences impacting your career. Let the tarot provide insights for your professional growth and success."
+  },
+  {
+    "id": 6,
+    "backdrop": "/assets/2nd-row-reading/Tarot/images/the first half of 2024 background.jpg",
+    "icon": "/assets/2nd-row-reading/Tarot/images/finances.png",
+    "head": "Finances",
+    "p1": "Chart Your Financial Future with Tarot",
+    "p2": "See what the cards say about your monetary journey. Prepare for financial success with tarot guidance."
+  },
+  {
+    "id": 7,
+    "backdrop": "/assets/2nd-row-reading/Tarot/images/how to change my luck background.jpg",
+    "icon": "/assets/2nd-row-reading/Tarot/images/change_luck.png",
+    "head": "How to change my luck?",
+    "p1": "Harness Tarot Wisdom to Change Your Luck",
+    "p2": "Explore the tarot's guidance to attract better luck. Empower yourself with the knowledge to alter your destiny."
+  },
+  {
+    "id": 8,
+    "backdrop": "/assets/2nd-row-reading/Tarot/images/my hidden charm background.jpg",
+    "icon": "/assets/2nd-row-reading/Tarot/images/magic_hat.png",
+    "head": "My hidden charm",
+    "p1": "Discover the Magic of Your Hidden Charms",
+    "p2": "Find out what makes you uniquely captivating. Allow tarot to illuminate the charm you hold beneath the surface."
+  },
+  {
+    "id": 9,
+    "backdrop": "/assets/2nd-row-reading/Tarot/images/weekend tarot background.jpg",
+    "icon": "/assets/2nd-row-reading/Tarot/images/life_clarity.png",
+    "head": "Life clarity",
+    "p1": "See Through the Fog with Life Clarity Tarot",
+    "p2": "Let tarot dispel confusion and reveal the way forward. Embrace a clearer vision for your life's journey."
+  },
+  {
+    "id": 10,
+    "backdrop": "/assets/2nd-row-reading/Tarot/images/weekly tarot background.jpg",
+    "icon": "/assets/2nd-row-reading/Tarot/images/wellness.png",
+    "head": "Spiritual Learning",
+    "p1": "Tarot Wisdom for Spiritual Enlightenment",
+    "p2": "Dive into the depths of your spiritual journey. Let tarot guide you towards enlightenment and growth."
+  },
+  {
+    "id": 11,
+    "backdrop": "/assets/2nd-row-reading/Tarot/images/the first half of 2024 background.jpg",
+    "icon": "/assets/2nd-row-reading/Tarot/images/breakup advice card.png",
+    "head": "Break-up Advice",
+    "p1": "Healing Heartbreak with Tarot Wisdom",
+    "p2": "Seek guidance and healing through tarot after a relationship ends. Find the wisdom to mend your heart."
+  },
+  {
+    "id": 12,
+    "backdrop": "/assets/2nd-row-reading/Tarot/images/yes no background.jpg",
+    "icon": "/assets/2nd-row-reading/Tarot/images/reverse_card.png",
+    "head": "Reversed tarot card",
+    "p1": "Reversed Tarot: Flipping Perspectives",
+    "p2": "Explore unexpected twists and revelations in tarot readings. Embrace the lessons and opportunities of reversed cards."
+  }
+]

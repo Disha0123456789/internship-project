@@ -1,7 +1,7 @@
 import React from "react";
 import "./AstroMain.css";
 import { useNavigate } from "react-router-dom";
-import image from './images/Parenting Tips.png';
+import image from '/assets/3rd-row/Astrology/images/Parenting Tips.png';
 function ParentingTips() {
   const navigate = useNavigate();
   const head = "Parenting Tips";

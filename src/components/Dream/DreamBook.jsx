@@ -41,7 +41,7 @@ export default function DreamBook() {
                         <p className='detail-title'>Date*</p>
                         <div className='date-input-container '>
                             <p>{day} {month} {year}</p>
-                            <img src={'4throw/calender-icon.png'} style={{ cursor: "pointer", height: "26px" }} onClick={() => setShowDatePicker(!showDatePicker)} />
+                            <img src={'/assets/4throw/Dream/images/calender-icon.png'} style={{ cursor: "pointer", height: "26px" }} onClick={() => setShowDatePicker(!showDatePicker)} />
                         </div>
                         <div className='react-datepicker-wrapper'>
                             {showDatePicker && (

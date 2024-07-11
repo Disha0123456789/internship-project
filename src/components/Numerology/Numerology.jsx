@@ -49,19 +49,19 @@ export default function Numerology() {
             <div className="numerology-main">
                 <div className="numerology-container">
                     <div onClick={handleNumerologyCardClick} className="numerology-card">
-                        <img src="/4throw/num-icon.png" alt="Card Image" className="card-img" />
+                        <img src="/assets/4throw/Numerology/images/num-icon.png" alt="Card Image" className="card-img" />
                         <div className="card-content">
                             <h3 className="card-title">Life Path Number <span className="clickhere">(click here)</span></h3>
                         </div>
                     </div>
 
                     <div className="lucky-container-wrapper">
-                        <LuckyContainer imageSrc={"/4throw/lucky-no-icon.png"} title="Lucky Numbers" description={lifePathData ? lifePathData.LuckyNumber : "N/A"} />
-                        <LuckyContainer imageSrc={"/4throw/lucky-color-icon.png"} title="Lucky Colors" description={lifePathData ? lifePathData.LuckyColor : "N/A"} />
+                        <LuckyContainer imageSrc={"/assets/4throw/Numerology/images/lucky-no-icon.png"} title="Lucky Numbers" description={lifePathData ? lifePathData.LuckyNumber : "N/A"} />
+                        <LuckyContainer imageSrc={"/assets/4throw/Numerology/images/lucky-color-icon.png"} title="Lucky Colors" description={lifePathData ? lifePathData.LuckyColor : "N/A"} />
                     </div>
                     <div className="lucky-container-wrapper">
-                        <LuckyContainer imageSrc={"/4throw/lucky-days-icon.png"} title="Lucky Days" description={lifePathData ? lifePathData.LuckyDays : "N/A"} />
-                        <LuckyContainer imageSrc={"/4throw/lucky-gem-icon.png"} title="Lucky Gemstones" description={lifePathData ? lifePathData.LuckyGems : "N/A"} />
+                        <LuckyContainer imageSrc={"/assets/4throw/Numerology/images/lucky-days-icon.png"} title="Lucky Days" description={lifePathData ? lifePathData.LuckyDays : "N/A"} />
+                        <LuckyContainer imageSrc={"/assets/4throw/Numerology/images/lucky-gem-icon.png"} title="Lucky Gemstones" description={lifePathData ? lifePathData.LuckyGems : "N/A"} />
                     </div>
                 </div>
             </div>

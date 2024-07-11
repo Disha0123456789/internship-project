@@ -1,7 +1,7 @@
 import React from "react";
 import "./AstroMain.css";
 import { useNavigate } from "react-router-dom";
-import image from './images/Reiki Healing.png';
+import image from '/assets/3rd-row/Astrology/images/Reiki Healing.png';
 function ReikiHealing() {
   const navigate = useNavigate();
   const head = "Reiki Healing";

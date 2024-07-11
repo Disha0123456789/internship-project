@@ -26,13 +26,13 @@ export default function LifePathNumber() {
                         <h1 className='life-number'>{lifePathNumber}</h1>
                     </div>
                     <div className="life-path-container">
-                        <LifePathCards title={lifePathData.heading1} para={lifePathData.para1} imageSrc={"/4throw/description.png"} />
-                        <LifePathCards title={lifePathData.heading2} para={lifePathData.para2} imageSrc={'4throw/positive.png'} />
-                        <LifePathCards title={lifePathData.heading3} para={lifePathData.para3} imageSrc={'4throw/negative.png'} />
-                        <LifePathCards title={lifePathData.heading4} para={lifePathData.para4} imageSrc={'4throw/profession.png'} />
-                        <LifePathCards title={lifePathData.heading5} para={lifePathData.para5} imageSrc={'4throw/finance.png'} />
-                        <LifePathCards title={lifePathData.heading6} para={lifePathData.para6} imageSrc={'4throw/relation.png'} />
-                        <LifePathCards title={lifePathData.heading7} para={lifePathData.para7} imageSrc={'4throw/health.png'} />
+                        <LifePathCards title={lifePathData.heading1} para={lifePathData.para1} imageSrc={"/assets/4throw/Numerology/images/description.png"} />
+                        <LifePathCards title={lifePathData.heading2} para={lifePathData.para2} imageSrc={'/assets/4throw/Numerology/images/positive.png'} />
+                        <LifePathCards title={lifePathData.heading3} para={lifePathData.para3} imageSrc={'/assets/4throw/Numerology/images/negative.png'} />
+                        <LifePathCards title={lifePathData.heading4} para={lifePathData.para4} imageSrc={'/assets/4throw/Numerology/images/profession.png'} />
+                        <LifePathCards title={lifePathData.heading5} para={lifePathData.para5} imageSrc={'/assets/4throw/Numerology/images/finance.png'} />
+                        <LifePathCards title={lifePathData.heading6} para={lifePathData.para6} imageSrc={'/assets/4throw/Numerology/images/relation.png'} />
+                        <LifePathCards title={lifePathData.heading7} para={lifePathData.para7} imageSrc={'/assets/4throw/Numerology/images/health.png'} />
                     </div>
                 </>
             )}

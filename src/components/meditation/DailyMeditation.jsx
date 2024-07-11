@@ -1,22 +1,19 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./meditation.css";
+
 const DailyMeditation = () => {
   const name = [
     "Powerful 6-phase Morning Meditation",
     "Feel Amazing For The Day Ahead",
     "Morning Meditation for Positive Energy",
-
     "Increase your Vibrational Frequency",
-
     "The Perfect Mindfulness Meditation",
-
     "Morning Meditation for Health Wealth & Happiness",
-
     "A Powerful Morning Meditation to Start Your Day",
-
     "Productive Morning Guided Meditation",
   ];
+
   const links = [
     "https://www.youtube.com/embed/DdUm9U9w9W0?si=8Ipu6Z7OsDT4_q-G",
     "https://www.youtube.com/embed/IvLViZeC60c?si=j4uc97BbEQ7CFWWB",
@@ -42,24 +39,22 @@ const DailyMeditation = () => {
           nurturing a journey of self-awareness and inner peace.
         </p>
         <div className="cards">
-          {name.map((name, index) => {
-            return (
-              <div className="Card">
-                <div className="head">
-                  <h1>{name}</h1>
-                </div>
-                <div className="youtube">
-                  <iframe
-                    src={links[index]}
-                    title="YouTube video player"
-                    frameBorder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowFullScreen
-                  ></iframe>
-                </div>
+          {name.map((name, index) => (
+            <div className="Card" key={index}>
+              <div className="head">
+                <h1>{name}</h1>
               </div>
-            );
-          })}
+              <div className="youtube">
+                <iframe
+                  src={links[index]}
+                  title="YouTube video player"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                ></iframe>
+              </div>
+            </div>
+          ))}
         </div>
         <div className="meditationVideos"></div>
       </div>

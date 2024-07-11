@@ -1,10 +1,10 @@
 import { Container } from "react-bootstrap"
-import FutureBoxes from "../../assets/Boxes/FutureBoxes"
-import Header from "../../assets/Boxes/Header"
-import Hero from "../../components/Hero"
-import Carousel from "../../components/carousel/Carousel"
-import NewFutureBox from "../../components/FutureBox/NewFutureBox"
-import Footer from "../Footer/Footer"
+import FutureBoxes from "../../assets/Boxes/FutureBoxes";
+import Header from "../Header/Header";
+import Hero from "../Hero/Hero";
+import Carousel from "../Carousel/Carousel";
+import NewFutureBox from "../FutureBox/NewFutureBox";
+import Footer from "../Footer/Footer";
 import './Home.css';
 
 const Home = () => {

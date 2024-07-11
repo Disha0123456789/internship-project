@@ -1,0 +1,302 @@
+.Main-tarot{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.choose-card-heading h3{
+    font-weight: 300;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: rgb(159, 161, 161);  
+    font-size: clamp(1rem, 1.4vw, 2rem);
+}
+.girl-pic {
+    width: 100%;
+    /* height: 25vw; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.girl-pic img{
+    margin-top: 5px;
+    height: clamp(160px, 17vw, 29vw);
+    /* border-radius: 50%; */
+    /* width: clamp(150px, 25vh, 30vw); */
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: center;
+    object-position: center;
+   
+}
+
+.cards-collection{
+    padding-left: 20px;
+   justify-content: center;
+   
+    display: flex;
+   
+    align-items: center;
+    height: 60%;
+    width: 100%;
+   
+    padding: 10px 0; 
+}
+.cards-collection img {
+    border: 1px solid black;
+    max-width: inherit;
+    position: relative;
+    top: 0;
+    display: inline-block;
+    vertical-align: middle;
+    overflow-clip-margin: content-box;
+    height: 180px;
+    width: 100px;
+    min-height: 100px;
+    min-width: 60px;
+    cursor: pointer;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+    transition: transform 0.5s, border-color 0.5s; /* Include transition for transform and border color */
+    transform-origin: center center; /* Explicitly set transform origin */
+}
+
+.cards-collection img:hover {
+    top:-10%;
+    
+}
+
+.cards-collection img:not(:first-child){
+    margin-left: -3.5rem;
+}
+
+
+.tarot-buttons{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.tarot-btn{
+    
+    width: 100%;
+    color: white;
+    background-color: black;
+    font-weight: 900;
+    font-size: clamp(1rem, 1.3vw, 2rem);
+}
+.buttons button:hover{
+    background-color: white;
+    color: black;
+    border-color: black;
+}
+
+button{
+    margin:50px ;
+    color: white;
+}
+.Tarot-Cards{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0px 50px;
+    flex-wrap: wrap;
+}
+.Tarot-card{
+    cursor: pointer;
+    margin-bottom:60px ;
+    background-color: white;
+    border-radius: 20px;
+    height: clamp(20vh, 40vw, 45vh);
+    width: 40vw;
+    border: 1px solid black;
+    overflow: hidden;
+}
+.Tarot-card .back-img{
+    position: relative;
+    height: 45%;
+    width: 100%;
+    /* background: url("C:\Users\Jay\Desktop\react\DivineConnection\internship-project\src\Page\TarotReading\IMGS\weekend tarot background.jpg"); */
+}
+.Tarot-card .back-img .Back-drop{
+    height: 100%;
+    width: 100%;
+   
+}
+.Tarot-card .back-img .Card-Icon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height:60%;
+    width: 60%;
+    object-fit: contain;
+    object-position: center;
+}
+.Tarot-hr{
+    width: 95%;
+}
+.Tarot-card .Tarot-info{
+    padding:0 20px;
+}
+
+
+.Tarot-card .Tarot-info h3{
+    font-size: clamp(1rem, 4vw, 2rem);
+    font-weight: 500;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.Tarot-info-p1{
+    font-weight: bold;
+}
+.Tarot-card .Tarot-info p{
+    
+    font-size: clamp(0.7rem, 2.2vw, 0.9rem);
+}
+.Tarot-card .Tarot-info .icons{
+    display: flex;
+    
+    align-items: center;
+    margin: 20px 0;
+    gap: 20px;
+}
+.Tarot-card .Tarot-info .icons .icon{
+    font-size: clamp(1.0rem, 4vw, 1.5rem);
+}
+.Result-Tarot{
+    min-height: 120vh;
+    width: 100%;
+    display: flex;  
+    justify-content: center;
+
+}
+.tarot-result-card{
+
+    margin: 2vw;
+    width: 60%;
+
+}
+
+.tarot-head h1{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: clamp(2.5rem, 5vw, 3rem);
+    color:purple;
+}
+.tarot-card-image{
+    margin: auto;
+    border-radius: 20px;
+
+    background: url("/assets/2nd-row-reading/Tarot/images/red result background.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    color: white;
+    flex-direction: column;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 20PX;
+
+}
+.tarot-card-image h3{
+    font-size: clamp(1.5rem, 4vw, 2rem);
+    font-weight: 500;
+    padding-top: 10px;
+}
+.tarot-card-image img{
+    height: 22.5vh;
+    object-fit: cover;
+    object-position: center;
+}
+.tarot-result-info{
+    padding: 0 20px;
+   
+}
+.tarot-result-info p:first-child{
+    font-weight: 700;
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+}
+.tarot-result-info p{
+    font-size: clamp(0.8rem, 2.5vw, 1.2rem);
+    text-align: left;
+    
+}
+.tarot-result-info h3{
+    font-weight: 500;
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+}
+
+
+@media (max-width:1200px){
+    .tarot-result-card{
+        width: 80%;
+    }
+}
+
+@media (min-width:769px) and ( max-width: 1024px){
+    .Tarot-card{
+        height: 52vw;
+    }
+}    
+
+@media (min-width:640px) and ( max-width: 769px){
+    .Tarot-card{
+        height: 60vw;
+        width:43vw;
+    }
+    .Tarot-card .Tarot-info p{
+        line-height: 2.7vw;
+    }
+    .cards-collection{
+        padding: 10px;
+    }
+}
+
+@media (min-width:464px) and ( max-width: 640px){
+    .Tarot-card{
+        height: 71vw;
+    }
+}
+@media (max-width:640px){
+    .tarot-result-card{
+        width: 90%;
+    }
+    .tarot-para{
+        font-size: small;
+    }
+}
+
+@media (min-width:120px) and (max-width: 464px){
+    .Tarot-Cards{
+        gap: 20px;
+    }
+    .Tarot-card{
+        height: 35vh;
+        width:80vw;
+        margin-bottom: 0px !important;
+    }
+    .cards-collection{
+        padding: 10px;
+    }
+    /* .cards-collection img{
+        height: 5vw;
+        width: 20px;
+        cursor: pointer;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 10px;
+        
+        
+    }
+     */
+}

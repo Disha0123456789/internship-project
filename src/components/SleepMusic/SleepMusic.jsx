@@ -1,7 +1,7 @@
 import React from "react";
-// import { useNavigate } from "react-router-dom";
 import './SleepMusic.css';
-const DailyMeditation = () => {
+
+const SleepMusic = () => {
     const name = [
         "Ocean Waves Relaxing Music",
         "Stress Relief Sleeping Music",
@@ -32,24 +32,22 @@ const DailyMeditation = () => {
             </div>
             <div>
                 <div className="cards">
-                    {name.map((name, index) => {
-                        return (
-                            <div className="Card">
-                                <div className="head">
-                                    <p>{name}</p>
-                                </div>
-                                <div className="youtube">
-                                    <iframe
-                                        src={links[index]}
-                                        title="YouTube video player"
-                                        frameBorder="0"
-                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                        allowFullScreen
-                                    ></iframe>
-                                </div>
+                    {name.map((name, index) => (
+                        <div key={index} className="Card">
+                            <div className="head">
+                                <p>{name}</p>
                             </div>
-                        );
-                    })}
+                            <div className="youtube">
+                                <iframe
+                                    src={links[index]}
+                                    title="YouTube video player"
+                                    frameBorder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowFullScreen
+                                ></iframe>
+                            </div>
+                        </div>
+                    ))}
                 </div>
             </div>
             <div style={{marginTop: "1%"}}>
@@ -58,4 +56,4 @@ const DailyMeditation = () => {
     );
 };
 
-export default DailyMeditation;
+export default SleepMusic;

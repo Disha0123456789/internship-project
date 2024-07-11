@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../../Page/TimeTravel/PastLifePrediction.css";
+import "../TimeTravel/PastLifePrediction.css";
 import { useNavigate } from "react-router-dom";
 
 function Numero() {

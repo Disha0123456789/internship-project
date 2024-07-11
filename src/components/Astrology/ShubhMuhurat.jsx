@@ -1,7 +1,7 @@
 import React from "react";
 import "./AstroMain.css";
 import { useNavigate } from "react-router-dom";
-import image from './images/Shubh Muhurat.png';
+import image from '/assets/3rd-row/Astrology/images/Shubh Muhurat.png';
 function ShubhMuhurat() {
   const navigate = useNavigate();
   const head = "Shubh Muhurat";

@@ -1,12 +1,12 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import './Footer.css';
-import demoLogo from '/ICONS/divinelogovertical.png';
-import instagramLogo from '/ICONS/instagram.png';
-import facebookLogo from '/ICONS/facebook.png';
-import twitterLogo from '/ICONS/twitter.png';
-import linkedinLogo from '/ICONS/linkedin.png';
-import youtubeLogo from '/ICONS/youtube.png';
+import demoLogo from '/assets/ICONS/divinelogovertical.png';
+import instagramLogo from '/assets/ICONS/instagram.png';
+import facebookLogo from '/assets/ICONS/facebook.png';
+import twitterLogo from '/assets/ICONS/twitter.png';
+import linkedinLogo from '/assets/ICONS/linkedin.png';
+import youtubeLogo from '/assets/ICONS/youtube.png';
 
 const Footer = () => {
   return (

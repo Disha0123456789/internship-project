@@ -1,8 +1,8 @@
 import React from 'react';
 import './LoginForm.css';
-import google from './images/google-icon.png';
-import facebook from './images/facebook-icon.png';
-import logo from './images/logo.png';
+import google from '/assets/Registration-Login/images/google-icon.png';
+import facebook from '/assets/Registration-Login/images/facebook-icon.png';
+import logo from '/assets/Registration-Login/images/logo.png';
 import { Link } from 'react-router-dom';
 import { useNavigate } from "react-router-dom";
 
