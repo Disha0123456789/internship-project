@@ -29,14 +29,12 @@ function LineChart() {
                 <div>
                   <label htmlFor="birthDate">Date of Birth:</label>
                   <input
-                    placeholder="dd/mm/yyyy"
-                    className="form-control"
-                    type="text"
-                    onFocus={(e) => (e.target.type = 'date')}
-                    onBlur={(e) => (e.target.type = 'text')}
-                    value={birthDate}
-                    onChange={handleBirthDateChange}
+                    type="date"
                     id="birthDate"
+                    className="form-control"
+                    value={birthDate}
+                    placeholder="mm/dd/yyyy"
+                    onChange={handleBirthDateChange}
                   />
                 </div>
                 {/*zodiacSign && (
