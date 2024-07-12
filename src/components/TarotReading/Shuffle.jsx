@@ -76,7 +76,7 @@ const Shuffle = () => {
             animate={isOpen ? "open" : "closed"}
             variants={variant}
             transition={{ duration: 0.2, delay: 0.1 * index }}
-            src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4cac51c9-c3a8-4cda-9fe5-97ce7eb245de/d3jyror-c5f8b752-ad1b-4bba-8e72-3d404bbbb044.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzRjYWM1MWM5LWMzYTgtNGNkYS05ZmU1LTk3Y2U3ZWIyNDVkZVwvZDNqeXJvci1jNWY4Yjc1Mi1hZDFiLTRiYmEtOGU3Mi0zZDQwNGJiYmIwNDQucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.q_gOS0PY9QL7Rzj4OkL-TnSWj_P3O02UxCKTOuwoa1c"
+            src="/assets/2nd-row-reading/Tarot/images/shuffle_card.png"
             alt=""
           />
         ))}

@@ -33,6 +33,7 @@ function LineChart() {
                     id="birthDate"
                     className="form-control"
                     value={birthDate}
+                    placeholder="mm/dd/yyyy"
                     onChange={handleBirthDateChange}
                   />
                 </div>
