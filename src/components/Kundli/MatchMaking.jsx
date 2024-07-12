@@ -1,4 +1,3 @@
-//MatchMaking_backend
 import React, { useState, useMemo, useCallback } from 'react';
 import Select from 'react-select';
 import dummy from '../../Page/AccountPage/dummy.json';
@@ -22,7 +21,6 @@ const KundliRegister = () => {
   const [girlNameError, setGirlNameError] = useState(false);
   const [boyDateError, setBoyDateError] = useState(false);
   const [girlDateError, setGirlDateError] = useState(false);
-
   const [state, setState] = useState(false);
   const [city, setCity] = useState('');
 
@@ -37,7 +35,7 @@ const KundliRegister = () => {
   };
 
   const flattenedCities = useMemo(() => {
-    return dummy.flatMap(country => 
+    return dummy.flatMap(country =>
       country.cities.map(city => ({
         city,
         country: country.country
@@ -46,7 +44,7 @@ const KundliRegister = () => {
   }, []);
 
   const filteredData = useMemo(() => {
-    return flattenedCities.filter(item => 
+    return flattenedCities.filter(item =>
       item.city.toLowerCase().startsWith(city.toLowerCase())
     ).slice(0, 100);
   }, [city, flattenedCities]);
@@ -122,11 +120,14 @@ const KundliRegister = () => {
                 </label>
                 <br />
                 <input
-                  type="date"
+                  placeholder="mm/dd/yyyy"
                   className='match-input'
+                  type="text"
+                  onFocus={(e) => (e.target.type = 'date')}
+                  onBlur={(e) => (e.target.type = 'text')}
                   value={boyDate}
                   onChange={(e) => setBoyDate(e.target.value)}
-                  placeholder="DD-MM-YYYY"
+                  id="boy-date"
                 />
                 <br />
                 <label className='match-label'>Birth Time</label>
@@ -185,11 +186,14 @@ const KundliRegister = () => {
                 </label>
                 <br />
                 <input
-                  type="date"
+                  placeholder="mm/dd/yyyy"
                   className='match-input'
+                  type="text"
+                  onFocus={(e) => (e.target.type = 'date')}
+                  onBlur={(e) => (e.target.type = 'text')}
                   value={girlDate}
                   onChange={(e) => setGirlDate(e.target.value)}
-                  placeholder="DD-MM-YYYY"
+                  id="girl-date"
                 />
                 <br />
                 <label className='match-label'>Birth Time</label>
