@@ -75,6 +75,6 @@
 
 @media screen and (max-width:468px) {
     .card-description {
-        font-size: small;
+        font-size: 0.9rem;
     }
 }

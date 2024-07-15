@@ -51,6 +51,14 @@
   .margin-div {
     margin-top: 20px;
   }
+
+  .prediction-text {
+    /* Styles for the prediction text */
+    font-size: 1.1rem; /* Example font size */
+    line-height: 1.5; /* Example line height */
+    color: #333; /* Example text color */
+    /* Add more styles as needed */
+  }
   
   /* Responsive styles */
   @media (max-width: 768px) {
@@ -71,14 +79,6 @@
       width: 90% !important;
     }
     .prediction-text {
-      font-size: small !important;
+      font-size: 0.9rem;
     }
-  }
-
-  .prediction-text {
-    /* Styles for the prediction text */
-    font-size: 1.1rem; /* Example font size */
-    line-height: 1.5; /* Example line height */
-    color: #333; /* Example text color */
-    /* Add more styles as needed */
   }

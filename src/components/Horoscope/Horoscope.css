@@ -203,7 +203,7 @@
     font-size:small;
   }
   .horo-span{
-    font-size: small;
+    font-size: 0.8rem;
     font-weight:600;
     
   }
@@ -211,7 +211,7 @@
 
 @media screen and (max-width:468px) {
   .horoscope-data{
-    font-size: small; 
+    font-size: 0.8rem; 
   }
 }
 /* ----------------- */

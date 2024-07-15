@@ -149,7 +149,7 @@ button{
 
 .Tarot-card .Tarot-info h3{
     font-size: clamp(1rem, 4vw, 2rem);
-    font-weight: 500;
+    font-weight: bold;
     margin-top: 10px;
     margin-bottom: 10px;
 }
@@ -159,7 +159,7 @@ button{
 }
 .Tarot-card .Tarot-info p{
     
-    font-size: clamp(0.7rem, 2.2vw, 0.9rem);
+    font-size: clamp(0.78rem, 2.2vw, 0.9rem);
 }
 .Tarot-card .Tarot-info .icons{
     display: flex;
@@ -272,7 +272,7 @@ button{
         width: 90%;
     }
     .tarot-para{
-        font-size: small;
+        font-size: 0.8rem;
     }
 }
 
