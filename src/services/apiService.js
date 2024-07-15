@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-    baseURL: 'http://localhost:8000', // Ensure this matches the URL where FastAPI is running
+    baseURL: 'https://divineconnection.co.in:8000', // Ensure this matches the URL where FastAPI is running
 });
 
 export const fetchHoroscope = async (horoscope_data, time) => {
