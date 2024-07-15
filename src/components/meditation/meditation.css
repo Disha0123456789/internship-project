@@ -54,13 +54,14 @@
     
 }
 .item-price{
-    font-size: medium;
+    font-size: large;
+    font-weight: bold;
 }
 .list-item{
     list-style: none;
     letter-spacing: 0.01vw;
     font-weight: 500;
-    font-size: clamp(1.0rem, 1.4vw, 2rem);
+    font-size: clamp(1rem, 1.4vw, 2rem);
 }
 
 .circle img{

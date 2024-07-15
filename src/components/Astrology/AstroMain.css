@@ -260,7 +260,7 @@ body {
   text-align: left;
   font-weight: 500;
   /* margin-top: clamp(10px, 1.5vw, 20px); */
-  font-size: clamp(0.8rem, 1.2vw, 1.4rem);
+  font-size: clamp(0.9rem, 1.2vw, 1.4rem);
 }
 .conten-right h1 {
   font-size: clamp(2rem, 3vw, 3rem);
