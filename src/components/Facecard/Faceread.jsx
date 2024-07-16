@@ -36,7 +36,7 @@ function Faceread() {
     const formData = new FormData();
     formData.append('imagefile', image);
   
-    axios.post('http://localhost:8000/face-detector/upload/', formData, {
+    axios.post('https://divineconnection.co.in/face-detector/upload/', formData, {
       headers: {
         'Content-Type': 'multipart/form-data'
       }
