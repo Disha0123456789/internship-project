@@ -33,7 +33,11 @@
   .match-hr {
     width: 100%;
   }
-  
+  .styles_rangeSvg__1TDxQ{
+    width: 100%;
+    /* max-width: 800px; */
+    min-width: auto !important;
+  }
   .compatibility-score {
     display: flex;
     justify-content: center;
