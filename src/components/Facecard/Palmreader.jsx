@@ -34,7 +34,7 @@ function Palmreader() {
     const formData = new FormData();
     formData.append('image', image);
 
-    axios.post('https://divineconnection.co.i/palmistry/detect/', formData, {
+    axios.post('https://divineconnection.co.in/palmistry/detect/', formData, {
       headers: {
         'Content-Type': 'multipart/form-data'
       }
