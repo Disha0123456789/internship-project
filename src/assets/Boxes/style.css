@@ -477,7 +477,11 @@ input:hover{
     padding: 10px;
   }
   .face_result_data-content{
-    font-size: small;
+    font-size: 0.9rem;
+  }
+  .face-result-title {
+    font-size: 1.5rem;
+    font-weight: 500;
   }
   .Time-magic-pic {
     height: 45%;

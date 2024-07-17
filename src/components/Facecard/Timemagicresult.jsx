@@ -28,7 +28,7 @@ function Timemagicresult() {
 
   const processImage = (base64Image) => {
     console.log("Sending image to server for processing");
-    axios.post('http://localhost:5000/process-image', {
+    axios.post('https://divineconnection.co.in/process-image', {
       image: base64Image,
       source_age: 25, // Set as per your requirement
       target_age: 65  // Set as per your requirement
