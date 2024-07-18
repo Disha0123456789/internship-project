@@ -4,6 +4,8 @@ import axios from 'axios';
 import PalmIcon from '/assets/2nd-row-reading/PalmReading/images/palm-scanner.png';
 import PalmUpload from '/assets/2nd-row-reading/PalmReading/images/plain hand.png';
 import Webcam from "react-webcam";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSyncAlt } from '@fortawesome/free-solid-svg-icons';
 
 function Palmreader() {
   const navigate = useNavigate();
@@ -13,7 +15,8 @@ function Palmreader() {
   const webcamRef = useRef(null);
   const [image, setImage] = useState(null);
   const [showWebcam, setShowWebcam] = useState(false);
-
+  const [useFrontCamera, setUseFrontCamera] = useState(true);
+  
   const handleImageClick = () => {
     inputRef.current.click();
   };
@@ -69,6 +72,14 @@ function Palmreader() {
       });
   }, [webcamRef]);
 
+  const toggleCamera = () => {
+    setUseFrontCamera(prevState => !prevState);
+  };
+
+  const videoConstraints = {
+    facingMode: useFrontCamera ? "user" : { exact: "environment" }
+  };
+
   return (
     <div className="face-reader">
       <h1 className="face-text">Palm Reading</h1>
@@ -114,9 +125,13 @@ function Palmreader() {
               ref={webcamRef}
               screenshotFormat="image/jpeg"
               className="webcam"
+              videoConstraints={videoConstraints}
             />
             <div className="webcam-buttons">
               <button className="capture-btn" onClick={capture}>Capture Photo</button>
+              <button className="switch-camera-btn" onClick={toggleCamera}>
+                <FontAwesomeIcon icon={faSyncAlt} />
+              </button>
               <button className="close-webcam-btn" onClick={() => setShowWebcam(false)}>Close</button>
             </div>
           </div>

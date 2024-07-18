@@ -353,24 +353,29 @@ input:hover{
 }
 
 .webcam-buttons {
+  min-width: 100%;
   display: flex;
   justify-content: center;
-  gap: 10px;
   margin-top: 10px;
+  gap: 20px;
 }
 
 .capture-btn {
   padding: 10px;
-  background-color: #007bff;
-  color: white;
   border: none;
+  background:#0056b3;
+  color: white;
+  border-radius: 10px;
   cursor: pointer;
   font-size: 16px;
-  border-radius: 10px;
 }
 
 .capture-btn:hover {
   background-color: #0056b3;
+}
+
+.switch-camera-btn{
+  background-color: white;
 }
 
 .close-webcam-btn {
@@ -471,6 +476,11 @@ input:hover{
   }
 }
 
+@media screen and (min-width:468px){
+  .switch-camera-btn{
+    display: none;
+  }
+}
 @media screen and (max-width: 468px) {
   .face-result-box{
     width: 90%;
