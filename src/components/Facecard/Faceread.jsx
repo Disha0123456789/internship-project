@@ -1,4 +1,3 @@
-//FaceShape_backend for face shape scan
 import React, { useRef, useState, useCallback } from "react";
 import { useNavigate } from "react-router-dom";
 import ImageRecognitionLogo from '/assets/2nd-row-reading/FaceReading/images/facial-recognition.png';
@@ -7,6 +6,8 @@ import TimeMagicImage from '/assets/2nd-row-reading/FaceReading/images/time magi
 import KnowPast from '/assets/2nd-row-reading/FaceReading/images/know your past.png';
 import axios from 'axios';
 import Webcam from "react-webcam";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSyncAlt } from '@fortawesome/free-solid-svg-icons';
 
 function Faceread() {
   const navigate = useNavigate();
@@ -16,6 +17,7 @@ function Faceread() {
   const [showWarning, setShowWarning] = useState(false);
   const [warningMessage, setWarningMessage] = useState("");
   const [showWebcam, setShowWebcam] = useState(false);
+  const [useFrontCamera, setUseFrontCamera] = useState(true);
 
   const handleImageClick = () => {
     inputRef.current.click();
@@ -32,10 +34,10 @@ function Faceread() {
       setShowWarning(true);
       return;
     }
-  
+
     const formData = new FormData();
     formData.append('imagefile', image);
-  
+
     axios.post('https://divineconnection.co.in/face-detector/upload/', formData, {
       headers: {
         'Content-Type': 'multipart/form-data'
@@ -47,22 +49,17 @@ function Faceread() {
       })
       .catch(error => {
         if (error.response) {
-          // The request was made and the server responded with a status code
-          // that falls out of the range of 2xx
           if (error.response.status === 400) {
             setWarningMessage("No face detected in the uploaded image. Please try again.");
           } else {
             setWarningMessage("An error occurred while processing your request. Please try again.*");
           }
         } else {
-          // Something happened in setting up the request that triggered an Error
           setWarningMessage("An error occurred while processing your request. Please try again.*");
         }
         setShowWarning(true);
       });
   };
-  
-  
 
   const handleTimeMagicClick = () => {
     if (!image) {
@@ -87,6 +84,14 @@ function Faceread() {
         setShowWebcam(false);
       });
   }, [webcamRef]);
+
+  const toggleCamera = () => {
+    setUseFrontCamera(prevState => !prevState);
+  };
+
+  const videoConstraints = {
+    facingMode: useFrontCamera ? "user" : { exact: "environment" }
+  };
 
   return (
     <div className="face-reader">
@@ -137,9 +142,13 @@ function Faceread() {
               ref={webcamRef}
               screenshotFormat="image/jpeg"
               className="webcam"
+              videoConstraints={videoConstraints}
             />
             <div className="webcam-buttons">
               <button className="capture-btn" onClick={capture}>Capture Photo</button>
+              <button className="switch-camera-btn" onClick={toggleCamera}>
+                <FontAwesomeIcon icon={faSyncAlt} />
+              </button>
               <button className="close-webcam-btn" onClick={() => setShowWebcam(false)}>Close</button>
             </div>
           </div>
