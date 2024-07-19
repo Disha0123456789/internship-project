@@ -40,30 +40,6 @@
   flex-direction: column;
   text-align: center;
 }
-.card-header-pl > h4 > .Physical-pl,
-.Emotional-pl,
-.Intellectual-pl,
-.Spiritual-pl {
-  display: block;
-  height: 80px;
-  width: 80px;
-}
-.Physical-pl {
-  background: url("./images/marriage.png") no-repeat center center/cover;
-}
-.Emotional-pl {
-  background: url("./images/kids.png") no-repeat center center/cover;
-}
-.Intellectual-pl {
-  background: url("./images/occupation.png") no-repeat center center/cover;
-}
-.Spiritual-pl {
-  background: url("./images/wealth.png") no-repeat center center/cover;
-}
-.cards-container-pl > .card-pl > p {
-  margin: 3vh;
-  font-weight: 500;
-}
 .content {
   color: black;
 }
