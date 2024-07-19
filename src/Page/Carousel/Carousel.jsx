@@ -75,6 +75,7 @@ const Carousel = () => {
   const navigate = useNavigate();
   const touchStartX = useRef(0);
   const touchEndX = useRef(0);
+  const isSwiping = useRef(false);
 
   const prevSlide = () => {
     const isFirstSlide = currentIndex === 0;
@@ -101,24 +102,30 @@ const Carousel = () => {
   }, [currentIndex]);
 
   const handleSlideClick = () => {
-    const targetUrl = slides[currentIndex].targetUrl;
-    navigate(targetUrl); // Use navigate instead of window.location.href
+    if (!isSwiping.current) {
+      const targetUrl = slides[currentIndex].targetUrl;
+      navigate(targetUrl); // Use navigate instead of window.location.href
+    }
   };
 
   const handleTouchStart = (e) => {
     touchStartX.current = e.touches[0].clientX;
+    isSwiping.current = false;
   };
 
   const handleTouchMove = (e) => {
     touchEndX.current = e.touches[0].clientX;
+    isSwiping.current = true;
   };
 
   const handleTouchEnd = () => {
-    if (touchStartX.current - touchEndX.current > 50) {
-      nextSlide();
-    }
-    if (touchStartX.current - touchEndX.current < -50) {
-      prevSlide();
+    if (isSwiping.current) {
+      if (touchStartX.current - touchEndX.current > 50) {
+        nextSlide();
+      }
+      if (touchStartX.current - touchEndX.current < -50) {
+        prevSlide();
+      }
     }
   };
 
