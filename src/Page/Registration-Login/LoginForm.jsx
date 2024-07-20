@@ -1,13 +1,89 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './LoginForm.css';
 import google from '/assets/Registration-Login/images/google-icon.png';
 import facebook from '/assets/Registration-Login/images/facebook-icon.png';
 import logo from '/assets/Registration-Login/images/logo.png';
-import { Link } from 'react-router-dom';
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from 'react-router-dom';
 
 function LoginForm() {
   const navigate = useNavigate();
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [forgotPasswordEmail, setForgotPasswordEmail] = useState('');
+  const [newPassword, setNewPassword] = useState('');
+  const [confirmNewPassword, setConfirmNewPassword] = useState('');
+  const [showForgotPasswordPopup, setShowForgotPasswordPopup] = useState(false);
+  const [showNewPasswordFields, setShowNewPasswordFields] = useState(false);
+
+  const handleLoginSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      const response = await fetch('https://divineconnection.co.in/api/auth/login', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ email, password })
+      });
+      if (response.ok) {
+        navigate('/');
+      } else {
+        const result = await response.json();
+        alert(result.message);
+      }
+    } catch (error) {
+      console.error('Error:', error);
+    }
+  };
+
+  const handleForgotPasswordSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      const response = await fetch('https://divineconnection.co.in/api/auth/forgot-password', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ email: forgotPasswordEmail })
+      });
+      if (response.ok) {
+        setShowNewPasswordFields(true);
+      } else {
+        const result = await response.json();
+        alert(result.message);
+      }
+    } catch (error) {
+      console.error('Error:', error);
+    }
+  };
+
+  const handleResetPasswordSubmit = async (e) => {
+    e.preventDefault();
+    if (newPassword !== confirmNewPassword) {
+      alert('Passwords do not match');
+      return;
+    }
+    try {
+      const response = await fetch('https://divineconnection.co.in/api/auth/reset-password', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ email: forgotPasswordEmail, newPassword })
+      });
+      if (response.ok) {
+        alert('Password has been reset successfully.');
+        setShowForgotPasswordPopup(false);
+        setShowNewPasswordFields(false);
+      } else {
+        const result = await response.json();
+        alert(result.message);
+      }
+    } catch (error) {
+      console.error('Error:', error);
+    }
+  };
+
   return (
     <div id='login-main'>
       <div id='login-container'>
@@ -18,34 +94,32 @@ function LoginForm() {
           <h1 className='h1'>Welcome Back!!</h1>
           <h3 className='h3'>Please Login On Divine Connection</h3>
         </div>
-        <form className='login-form'>
+        <form className='login-form' onSubmit={handleLoginSubmit}>
           <div className='input-email-password'>
-            <input id='email' type="email" required />
+            <input id='email' type="email" required value={email} onChange={(e) => setEmail(e.target.value)} />
             <div className="underline"></div>
-            <label htmlFor="">Email</label>
+            <label>Email</label>
           </div>
           <div className='flex-div'>
             <div className='input-email-password'>
-              <input id='password' type="password" required />
+              <input id='password' type="password" required value={password} onChange={(e) => setPassword(e.target.value)} />
               <div className="underline"></div>
-              <label htmlFor="">Password</label>
+              <label>Password</label>
             </div>
-            <a href='' className='forgot-password'>Forgot Password?</a>
+            <a href='#' className='forgot-password' onClick={() => setShowForgotPasswordPopup(true)}>Forgot Password?</a>
           </div>
           <div className='flex-div'>
             <button type='submit' id='submit'>Login</button>
-            {/* Added Terms and Conditions Message */}
             <p className='terms-message'>
               By signing up, you agree to our <Link to="/TermsAndConditions">Terms and Conditions</Link>, <Link to="/PrivacyPolicy">Privacy Policy</Link>.
             </p>
             <p className='Register-link'>Don't have an account? <Link to="/registration_page">Register</Link></p>
           </div>
-          
         </form>
         <div className='login-with'>
           <div className='login-with-text'>
             <hr />
-            <h3>or login with </h3>
+            <h3>or login with</h3>
             <hr />
           </div>
           <div id='icons'>
@@ -58,6 +132,26 @@ function LoginForm() {
           </div>
         </div>
       </div>
+
+      {showForgotPasswordPopup && (
+        <div className='popup'>
+          <div className='popup-content'>
+            <h3>Forgot Password</h3>
+            <form onSubmit={handleForgotPasswordSubmit}>
+              <input type="email" placeholder="Enter your email" value={forgotPasswordEmail} onChange={(e) => setForgotPasswordEmail(e.target.value)} required />
+              <button type="submit">Submit</button>
+              <button type="button" onClick={() => setShowForgotPasswordPopup(false)}>Cancel</button>
+            </form>
+            {showNewPasswordFields && (
+              <form onSubmit={handleResetPasswordSubmit}>
+                <input type="password" placeholder="New Password" value={newPassword} onChange={(e) => setNewPassword(e.target.value)} required />
+                <input type="password" placeholder="Confirm New Password" value={confirmNewPassword} onChange={(e) => setConfirmNewPassword(e.target.value)} required />
+                <button type="submit">Reset Password</button>
+              </form>
+            )}
+          </div>
+        </div>
+      )}
     </div>
   );
 }
