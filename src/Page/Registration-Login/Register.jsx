@@ -4,6 +4,7 @@ import logo from "/assets/Registration-Login/images/divine logo vertical.png";
 import gIcon from "/assets/Registration-Login/images/google-color-icon.png";
 import fIcon from "/assets/Registration-Login/images/facebook-app-round-icon.png";
 import "./Register.css";
+import { Link } from 'react-router';
 
 export default function Register() {
   const [formData, setFormData] = useState({
