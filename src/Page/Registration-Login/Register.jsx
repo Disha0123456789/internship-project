@@ -32,7 +32,7 @@ export default function Register() {
     }
 
     try {
-      const response = await fetch('https://divineconnection.co.in:8005/api/auth/register', {
+      const response = await fetch('https://divineconnection.co.in/api/auth/register', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
