@@ -11,7 +11,7 @@ export default function Register() {
     firstName: '',
     lastName: '',
     email: '',
-    phoneNo: '',
+    phone: '',
     password: '',
     confirmPassword: ''
   });
@@ -41,7 +41,7 @@ export default function Register() {
           firstName: formData.firstName,
           lastName: formData.lastName,
           email: formData.email,
-          phoneNo: formData.phoneNo,
+          phone: formData.phone,
           password: formData.password
         })
       });
@@ -89,7 +89,7 @@ export default function Register() {
             </div>
 
             <div className="input-data">
-              <input type="text" name="phoneNo" value={formData.phoneNo} onChange={handleChange} required />
+              <input type="text" name="phone" value={formData.phone} onChange={handleChange} required />
               <div className="underline"></div>
               <label>Phone No.</label>
             </div>
