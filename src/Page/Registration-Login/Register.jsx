@@ -5,7 +5,6 @@ import gIcon from "/assets/Registration-Login/images/google-color-icon.png";
 import fIcon from "/assets/Registration-Login/images/facebook-app-round-icon.png";
 import "./Register.css";
 
-
 export default function Register() {
   const [formData, setFormData] = useState({
     firstName: '',
@@ -15,6 +14,7 @@ export default function Register() {
     password: '',
     confirmPassword: ''
   });
+  const [errors, setErrors] = useState({});
   const navigate = useNavigate();
 
   const handleChange = (e) => {
@@ -24,10 +24,20 @@ export default function Register() {
     });
   };
 
+  const validatePassword = (password) => {
+    const regex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+    return regex.test(password);
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (formData.password !== formData.confirmPassword) {
       alert("Passwords do not match");
+      return;
+    }
+
+    if (!validatePassword(formData.password)) {
+      alert("Password must be at least 8 characters long and include 1 uppercase letter, 1 lowercase letter, 1 special character, and 1 number.");
       return;
     }
 
@@ -83,13 +93,21 @@ export default function Register() {
 
           <div className="form-row">
             <div className="input-data">
-              <input type="text" name="email" value={formData.email} onChange={handleChange} required />
+              <input type="email" name="email" value={formData.email} onChange={handleChange} required />
               <div className="underline"></div>
               <label>Email</label>
             </div>
 
             <div className="input-data">
-              <input type="text" name="phone" value={formData.phone} onChange={handleChange} required />
+              <input 
+                type="tel" 
+                name="phone" 
+                value={formData.phone} 
+                onChange={handleChange} 
+                required 
+                pattern="[0-9]{10}" 
+                maxLength="10"
+              />
               <div className="underline"></div>
               <label>Phone No.</label>
             </div>
@@ -97,13 +115,25 @@ export default function Register() {
 
           <div className="form-row">
             <div className="input-data">
-              <input type="password" name="password" value={formData.password} onChange={handleChange} required />
+              <input 
+                type="password" 
+                name="password" 
+                value={formData.password} 
+                onChange={handleChange} 
+                required 
+              />
               <div className="underline"></div>
               <label>Password</label>
             </div>
 
             <div className="input-data">
-              <input type="password" name="confirmPassword" value={formData.confirmPassword} onChange={handleChange} required />
+              <input 
+                type="password" 
+                name="confirmPassword" 
+                value={formData.confirmPassword} 
+                onChange={handleChange} 
+                required 
+              />
               <div className="underline"></div>
               <label>Confirm Password</label>
             </div>
