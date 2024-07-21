@@ -47,6 +47,7 @@ function LoginForm() {
         body: JSON.stringify({ email: forgotPasswordEmail })
       });
       if (response.ok) {
+        setShowForgotPasswordPopup(false);
         setShowNewPasswordFields(true);
       } else {
         const result = await response.json();
@@ -134,26 +135,33 @@ function LoginForm() {
       </div>
 
       {showForgotPasswordPopup && (
-        <div className='popup'>
-          <div className='popup-content'>
-            <h3>Forgot Password</h3>
-            <form onSubmit={handleForgotPasswordSubmit}>
-              <input type="email" placeholder="Enter your email" value={forgotPasswordEmail} onChange={(e) => setForgotPasswordEmail(e.target.value)} required />
-              <button type="submit">Submit</button>
-              <button type="button" onClick={() => setShowForgotPasswordPopup(false)}>Cancel</button>
+        <div className='popup-login'>
+          <div className='popup-content-login'>
+            <h3 className='forget-reset-head'>Forgot Password</h3>
+            <form className='forget-email' onSubmit={handleForgotPasswordSubmit}>
+              <input className='input-forget' type="email" placeholder="Enter your email" value={forgotPasswordEmail} onChange={(e) => setForgotPasswordEmail(e.target.value)} required />
+              <div className='div-forget-btn'>
+                <button className='btn-forget' type="submit">Submit</button>
+                <button className='btn-forget' type="button" onClick={() => setShowForgotPasswordPopup(false)}>Cancel</button>
+              </div>
             </form>
-            {showNewPasswordFields && (
-              <form onSubmit={handleResetPasswordSubmit}>
-                <input type="password" placeholder="New Password" value={newPassword} onChange={(e) => setNewPassword(e.target.value)} required />
-                <input type="password" placeholder="Confirm New Password" value={confirmNewPassword} onChange={(e) => setConfirmNewPassword(e.target.value)} required />
-                <button type="submit">Reset Password</button>
-              </form>
-            )}
+          </div>
+        </div>
+      )}
+
+      {showNewPasswordFields && (
+        <div className='popup-login'>
+          <div className='popup-content-login'>
+            <h3 className='forget-reset-head'>Reset Password</h3>
+            <form className='forget-password' onSubmit={handleResetPasswordSubmit}>
+              <input className='input-forget' type="password" placeholder="New Password" value={newPassword} onChange={(e) => setNewPassword(e.target.value)} required />
+              <input className='input-forget' type="password" placeholder="Confirm New Password" value={confirmNewPassword} onChange={(e) => setConfirmNewPassword(e.target.value)} required />
+              <button className='btn-forget' type="submit">Reset Password</button>
+            </form>
           </div>
         </div>
       )}
     </div>
   );
 }
-
 export default LoginForm;

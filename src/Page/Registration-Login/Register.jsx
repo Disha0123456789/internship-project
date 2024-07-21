@@ -14,7 +14,9 @@ export default function Register() {
     password: '',
     confirmPassword: ''
   });
-  const [errors, setErrors] = useState({});
+  const [verificationCode, setVerificationCode] = useState('');
+  const [isVerificationPopupOpen, setIsVerificationPopupOpen] = useState(false);
+  const [sentVerificationCode, setSentVerificationCode] = useState('');
   const navigate = useNavigate();
 
   const handleChange = (e) => {
@@ -42,27 +44,58 @@ export default function Register() {
     }
 
     try {
-      const response = await fetch('https://divineconnection.co.in/api/auth/register', {
+      const response = await fetch('https://divineconnection.co.in/api/auth/send-verification-code', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
         },
         body: JSON.stringify({
-          firstName: formData.firstName,
-          lastName: formData.lastName,
-          email: formData.email,
-          phone: formData.phone,
-          password: formData.password
+          email: formData.email
         })
       });
+
       if (response.ok) {
-        navigate('/login_page');
+        const result = await response.json();
+        setSentVerificationCode(result.verificationCode);
+        setIsVerificationPopupOpen(true);
       } else {
         const result = await response.json();
         alert(result.message);
       }
     } catch (error) {
       console.error('Error:', error);
+    }
+  };
+
+  const handleVerifyCode = async (e) => {
+    e.preventDefault();
+    if (verificationCode === sentVerificationCode) {
+      try {
+        const response = await fetch('https://divineconnection.co.in/api/auth/register', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({
+            firstName: formData.firstName,
+            lastName: formData.lastName,
+            email: formData.email,
+            phone: formData.phone,
+            password: formData.password
+          })
+        });
+
+        if (response.ok) {
+          navigate('/login_page');
+        } else {
+          const result = await response.json();
+          alert(result.message);
+        }
+      } catch (error) {
+        console.error('Error:', error);
+      }
+    } else {
+      alert("Verification code is incorrect. Please try again.");
     }
   };
 
@@ -161,6 +194,25 @@ export default function Register() {
           </div>
         </form>
       </div>
+
+      {isVerificationPopupOpen && (
+        <div className='verification-popup'>
+          <div className='verification-content'>
+            <h3>Email Verification</h3>
+            <form onSubmit={handleVerifyCode}>
+              <input 
+                type="text" 
+                placeholder="Enter verification code" 
+                value={verificationCode} 
+                onChange={(e) => setVerificationCode(e.target.value)} 
+                required 
+              />
+              <button type="submit">Verify</button>
+              <button type="button" onClick={() => setIsVerificationPopupOpen(false)}>Cancel</button>
+            </form>
+          </div>
+        </div>
+      )}
     </div>
   )
 }
