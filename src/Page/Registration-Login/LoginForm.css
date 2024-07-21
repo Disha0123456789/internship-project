@@ -142,6 +142,53 @@ hr{
     text-decoration: underline;
   }
   
+  .popup-login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffffe6;
+    border: 2px solid #682F96;
+    border-radius: 10px;
+    padding: 10px;
+    max-width: 70%;
+    overflow-y: auto;
+    z-index: 1;
+    width: 30%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.popup-content-login{
+    width: 80%;
+    text-align: center;
+}
+.forget-email,.forget-password{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    /* width: 80%; */
+    gap: 15px;
+}
+.div-forget-btn{
+    display: flex;
+    justify-content: space-around;
+}
+.btn-forget{
+    background-color: rgb(205, 205, 205) !important;
+}
+.input-forget{
+    padding: 5px;
+    padding-left: 15px;
+    border-radius: 5px;
+}
+.forget-reset-head{
+    font-weight: 500;
+    line-height: 1.2;
+    color: var(--bs-heading-color);
+}
+
 @media screen and (max-width: 1024px){
     #login-main{
         flex-direction: column;
@@ -170,5 +217,11 @@ hr{
     }
     .login-form {
         gap: 20px;
+    }
+    .popup-login{
+        width: 80%;
+    }
+    .popup-content-login {
+        width: 100%;
     }
 }
