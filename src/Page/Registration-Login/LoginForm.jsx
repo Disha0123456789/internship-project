@@ -21,15 +21,17 @@ function LoginForm() {
       const response = await fetch('https://divineconnection.co.in/api/auth/login', {
         method: 'POST',
         headers: {
-          'Content-Type': 'application/json'
+          'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ email, password })
+        body: JSON.stringify({ email, password }),
       });
+
+      const data = await response.json();
       if (response.ok) {
+        localStorage.setItem('authToken', data.token);
         navigate('/');
       } else {
-        const result = await response.json();
-        alert(result.message);
+        alert(data.message);
       }
     } catch (error) {
       console.error('Error:', error);
@@ -42,9 +44,9 @@ function LoginForm() {
       const response = await fetch('https://divineconnection.co.in/api/auth/forgot-password', {
         method: 'POST',
         headers: {
-          'Content-Type': 'application/json'
+          'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ email: forgotPasswordEmail })
+        body: JSON.stringify({ email: forgotPasswordEmail }),
       });
       if (response.ok) {
         setShowForgotPasswordPopup(false);
@@ -68,9 +70,9 @@ function LoginForm() {
       const response = await fetch('https://divineconnection.co.in/api/auth/reset-password', {
         method: 'POST',
         headers: {
-          'Content-Type': 'application/json'
+          'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ email: forgotPasswordEmail, newPassword })
+        body: JSON.stringify({ email: forgotPasswordEmail, newPassword }),
       });
       if (response.ok) {
         alert('Password has been reset successfully.');
@@ -164,4 +166,5 @@ function LoginForm() {
     </div>
   );
 }
+
 export default LoginForm;
