@@ -36,22 +36,25 @@ const Form = () => {
 
   const fetchUserData = useCallback(async () => {
     try {
-      const token = localStorage.getItem('token'); // Assuming the JWT is stored in localStorage
+      console.log('before token');
+      const token = localStorage.getItem('authToken'); // Use 'authToken' as set in LoginForm
+      console.log('after token');
       const response = await axios.get('/user-data', {
         headers: {
-          Authorization: `Bearer ${token}`
+          Authorization: `Bearer ${token}` // Correct header format
         }
       });
       const { first_name, last_name, email, phone, dob, birth_place, gender } = response.data;
+      console.log('after getting data',response.data);
       setUserData({
         firstName: first_name,
         lastName: last_name,
         email,
         phone
       });
-      setDob(dob || ''); // Handle null values
-      setBirthPlace(birth_place || ''); // Handle null values
-      setGender(gender || ''); // Handle null values
+      setDob(dob || '');
+      setBirthPlace(birth_place || '');
+      setGender(gender || '');
     } catch (error) {
       if (error.response && error.response.status === 401) {
         navigate('/login_page');
@@ -60,6 +63,7 @@ const Form = () => {
       }
     }
   }, [navigate]);
+  
   
   useEffect(() => {
     fetchUserData();
@@ -71,6 +75,7 @@ const Form = () => {
 
   const saveDetails = async () => {
     try {
+      const token = localStorage.getItem('authToken');
       await axios.put('/update-user', {
         firstName: userData.firstName,
         lastName: userData.lastName,
@@ -79,12 +84,17 @@ const Form = () => {
         dob,
         birthPlace,
         gender
+      }, {
+        headers: {
+          Authorization: `Bearer ${token}`
+        }
       });
       setState(true);
     } catch (error) {
       console.error('Error updating user data:', error);
     }
   };
+  
 
   const handleChange = (e) => {
     const { name, value } = e.target;
