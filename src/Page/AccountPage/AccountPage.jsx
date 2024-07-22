@@ -8,6 +8,7 @@ import code from './code.json';
 import divineLogo from '/assets/AcountPage/images/divine logo vertical.png';
 import logoBackground from '/assets/AcountPage/images/pink_design_cutout.png';
 import './AccountPage.css';
+import jwt_decode from 'jwt-decode';
 
 // Debounce function to limit the rate of function execution
 const debounce = (func, delay) => {
