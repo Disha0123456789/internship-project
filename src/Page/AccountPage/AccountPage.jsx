@@ -42,6 +42,7 @@ const Form = () => {
       }
 
       // Decode the token to get the email
+      const jwtDecode = (await import('jwt-decode')).default;
       const decodedToken = jwt_decode(token);
       console.log(decodedToken);
       const email_id = decodedToken.email;
