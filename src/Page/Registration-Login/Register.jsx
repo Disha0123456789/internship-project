@@ -198,17 +198,20 @@ export default function Register() {
       {isVerificationPopupOpen && (
         <div className='verification-popup'>
           <div className='verification-content'>
-            <h3>Email Verification</h3>
-            <form onSubmit={handleVerifyCode}>
+            <h3 style={{ fontWeight: 'bold' }}>Email Verification</h3>
+            <form className='verification-form' onSubmit={handleVerifyCode}>
               <input 
+                className='verification-input'
                 type="text" 
                 placeholder="Enter verification code" 
                 value={verificationCode} 
                 onChange={(e) => setVerificationCode(e.target.value)} 
                 required 
               />
-              <button type="submit">Verify</button>
-              <button type="button" onClick={() => setIsVerificationPopupOpen(false)}>Cancel</button>
+              <div>
+                <button className='verify-btn' type="submit">Verify</button>
+                <button className='verify-btn' type="button" onClick={() => setIsVerificationPopupOpen(false)}>Cancel</button>
+              </div>
             </form>
           </div>
         </div>

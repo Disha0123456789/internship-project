@@ -146,6 +146,38 @@ hr{
   gap:30px;
 }
 
+.verification-popup{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border: 2px solid #682F96;
+  border-radius: 10px;
+  padding: 10px;
+  max-width: 70%;
+  overflow-y: auto;
+  border-radius: 10px;
+  border: 2px solid;
+}
+
+.verification-content{
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.verification-form{
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.verification-input{
+  padding: 10px;
+}
+.verify-btn{
+  background-color: #dcdcdc;
+}
 @media screen and (min-width:1200px){
   .Register{
     margin-top: 40px;
