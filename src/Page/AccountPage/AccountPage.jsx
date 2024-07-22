@@ -36,7 +36,12 @@ const Form = () => {
 
   const fetchUserData = useCallback(async () => {
     try {
-      const response = await axios.get('/user-data');
+      const token = localStorage.getItem('token'); // Assuming the JWT is stored in localStorage
+      const response = await axios.get('/user-data', {
+        headers: {
+          Authorization: `Bearer ${token}`
+        }
+      });
       const { first_name, last_name, email, phone, dob, birth_place, gender } = response.data;
       setUserData({
         firstName: first_name,
@@ -44,9 +49,9 @@ const Form = () => {
         email,
         phone
       });
-      setDob(dob);
-      setBirthPlace(birth_place);
-      setGender(gender);
+      setDob(dob || ''); // Handle null values
+      setBirthPlace(birth_place || ''); // Handle null values
+      setGender(gender || ''); // Handle null values
     } catch (error) {
       if (error.response && error.response.status === 401) {
         navigate('/login_page');
@@ -55,7 +60,7 @@ const Form = () => {
       }
     }
   }, [navigate]);
-
+  
   useEffect(() => {
     fetchUserData();
   }, [fetchUserData]);
