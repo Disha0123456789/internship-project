@@ -184,10 +184,12 @@ hr{
     border-radius: 5px;
 }
 .forget-reset-head{
-    font-weight: 500;
+    font-weight: bold;
     line-height: 1.2;
     color: var(--bs-heading-color);
 }
+
+
 
 @media screen and (max-width: 1024px){
     #login-main{
