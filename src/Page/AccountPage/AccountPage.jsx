@@ -34,18 +34,26 @@ const Form = () => {
   const [gender, setGender] = useState('');
   const navigate = useNavigate();
 
-  const fetchUserData = useCallback(async () => {
+  const fetchUserData = async () => {
     try {
-      console.log('before token');
-      const token = localStorage.getItem('authToken'); // Use 'authToken' as set in LoginForm
-      console.log('after token');
+      const token = localStorage.getItem('authToken');
+      if (!token) {
+        throw new Error('No auth token found');
+      }
+
+      // Decode the token to get the email
+      const decodedToken = jwt_decode(token);
+      console.log(decodedToken);
+      const email_id = decodedToken.email;
+
       const response = await axios.get('/user-data', {
         headers: {
-          Authorization: `Bearer ${token}` // Correct header format
+          Authorization: `Bearer ${token}`,
+          'User-Email': email_id // Pass the email in headers or request params
         }
       });
+
       const { first_name, last_name, email, phone, dob, birth_place, gender } = response.data;
-      console.log('after getting data',response.data);
       setUserData({
         firstName: first_name,
         lastName: last_name,
@@ -56,18 +64,16 @@ const Form = () => {
       setBirthPlace(birth_place || '');
       setGender(gender || '');
     } catch (error) {
+      console.error('Error fetching user data:', error);
       if (error.response && error.response.status === 401) {
         navigate('/login_page');
-      } else {
-        console.error('Error fetching user data:', error);
       }
     }
-  }, [navigate]);
-  
-  
+  };
+
   useEffect(() => {
     fetchUserData();
-  }, [fetchUserData]);
+  }, []);
 
   const editDetails = () => {
     setState(false);
