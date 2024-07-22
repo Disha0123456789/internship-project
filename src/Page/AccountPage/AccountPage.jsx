@@ -1,6 +1,7 @@
-//accoutpage
-import React, { useState, useMemo, useCallback } from 'react';
+import React, { useState, useMemo, useCallback, useEffect } from 'react';
 import Select from 'react-select';
+import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 import { FixedSizeList as List } from 'react-window';
 import dummy from './dummy.json';
 import code from './code.json';
@@ -22,6 +23,87 @@ const debounce = (func, delay) => {
 const Form = () => {
   const [state, setState] = useState(false);
   const [city, setCity] = useState('');
+  const [userData, setUserData] = useState({
+    firstName: '',
+    lastName: '',
+    email: '',
+    phone: ''
+  });
+  const [dob, setDob] = useState('');
+  const [birthPlace, setBirthPlace] = useState('');
+  const [gender, setGender] = useState('');
+  const navigate = useNavigate();
+
+  const fetchUserData = useCallback(async () => {
+    try {
+      const response = await axios.get('/api/user-data');
+      const { first_name, last_name, email, phone, dob, birth_place, gender } = response.data;
+      setUserData({
+        firstName: first_name,
+        lastName: last_name,
+        email,
+        phone
+      });
+      setDob(dob);
+      setBirthPlace(birth_place);
+      setGender(gender);
+    } catch (error) {
+      if (error.response && error.response.status === 401) {
+        navigate('/login_page');
+      } else {
+        console.error('Error fetching user data:', error);
+      }
+    }
+  }, [navigate]);
+
+  useEffect(() => {
+    fetchUserData();
+  }, [fetchUserData]);
+
+  const editDetails = () => {
+    setState(false);
+  };
+
+  const saveDetails = async () => {
+    try {
+      await axios.put('/api/update-user', {
+        firstName: userData.firstName,
+        lastName: userData.lastName,
+        email: userData.email,
+        phone: userData.phone,
+        dob,
+        birthPlace,
+        gender
+      });
+      setState(true);
+    } catch (error) {
+      console.error('Error updating user data:', error);
+    }
+  };
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setUserData((prevData) => ({ ...prevData, [name]: value }));
+  };
+
+  const handleDobChange = (e) => {
+    setDob(e.target.value);
+  };
+
+  const handleCityInput = useCallback(
+    debounce((input) => {
+      setCity(input);
+    }, 300),
+    []
+  );
+
+  const handleBirthPlaceChange = (selectedOption) => {
+    setBirthPlace(selectedOption ? selectedOption.value : '');
+  };
+
+  const handleGenderChange = (e) => {
+    setGender(e.target.value);
+  };
 
   // Flatten the city data with country names
   const flattenedCities = useMemo(() => {
@@ -40,14 +122,6 @@ const Form = () => {
     ).slice(0, 100); // Limit to 100 results
   }, [city, flattenedCities]);
 
-  const editDetails = () => {
-    setState(false);
-  };
-
-  const saveDetails = () => {
-    setState(true);
-  };
-
   const options = code.map((e) => ({
     value: e.dial_code,
     label: e.dial_code,
@@ -58,14 +132,6 @@ const Form = () => {
     value: e.city,
     label: `${e.city}, ${e.country}`,
   }));
-
-  // Debounced city input handler
-  const handleCityInput = useCallback(
-    debounce((input) => {
-      setCity(input);
-    }, 300),
-    []
-  );
 
   return (
     <div className='Account-page'>
@@ -80,13 +146,46 @@ const Form = () => {
         <div className="account-title">Edit Your Account</div>
         <form className="Account-form">
           <div className="change">
-            <label htmlFor="name" className="label">
-              NAME:-
+            <label htmlFor="firstName" className="label">
+              First Name:-
             </label>
-            <input type="text" className="Account-input" disabled={state} />
+            <input
+              type="text"
+              className="Account-input"
+              name="firstName"
+              value={userData.firstName}
+              onChange={handleChange}
+              disabled={state}
+            />
           </div>
           <div className="change">
-            <label htmlFor="contact" className="label">
+            <label htmlFor="lastName" className="label">
+              Last Name:-
+            </label>
+            <input
+              type="text"
+              className="Account-input"
+              name="lastName"
+              value={userData.lastName}
+              onChange={handleChange}
+              disabled={state}
+            />
+          </div>
+          <div className="change">
+            <label htmlFor="email" className="label">
+              Email:-
+            </label>
+            <input
+              type="email"
+              className="Account-input"
+              name="email"
+              value={userData.email}
+              onChange={handleChange}
+              disabled={state}
+            />
+          </div>
+          <div className="change">
+            <label htmlFor="phone" className="label">
               Contact No :-
             </label>
             <Select
@@ -95,18 +194,27 @@ const Form = () => {
               isDisabled={state}
               placeholder="+91"
             />
-            <input type="number" className="number-input" disabled={state} />
+            <input
+              type="number"
+              className="number-input"
+              name="phone"
+              value={userData.phone}
+              onChange={handleChange}
+              disabled={state}
+            />
           </div>
           <div className="change">
-            <label htmlFor="E-mail" className='label'>E-Mail :-</label>
-            <input type="email" className="Account-input" name="" id="" disabled={state} />
+            <label htmlFor="dob" className='label'>Date Of Birth :-</label>
+            <input
+              type="date"
+              className="Account-input"
+              value={dob}
+              onChange={handleDobChange}
+              disabled={state}
+            />
           </div>
           <div className="change">
-            <label htmlFor="date" className='label'>Date Of Birth :-</label>
-            <input type="date" className="Account-input" name="" id="" disabled={state} />
-          </div>
-          <div className="change">
-            <label htmlFor="place" className='label'>Place Of Birth :-</label>
+            <label htmlFor="birthPlace" className='label'>Place Of Birth :-</label>
             <Select
               className="react-select-city"
               options={cityOptions}
@@ -114,15 +222,35 @@ const Form = () => {
               placeholder="Search for city..."
               isSearchable
               onInputChange={handleCityInput}
+              onChange={handleBirthPlaceChange}
+              value={cityOptions.find(option => option.value === birthPlace)}
             />
           </div>
           <div className="change">
             <label htmlFor="gender" className='label'>Gender :-</label>&nbsp;
-            <input type="radio" className="Account-input" name="gender" id="" disabled={state}/>  Male
-            <input type="radio" className="Account-input" name="gender" id="" disabled={state} /> female
+            <input
+              type="radio"
+              className="Account-input"
+              name="gender"
+              value="male"
+              checked={gender === 'male'}
+              onChange={handleGenderChange}
+              disabled={state}
+            /> Male
+            <input
+              type="radio"
+              className="Account-input"
+              name="gender"
+              value="female"
+              checked={gender === 'female'}
+              onChange={handleGenderChange}
+              disabled={state}
+            /> Female
           </div>
           <div className="change">
-            <button type="button" className='saveNedit' onClick={saveDetails}>Save</button>
+            <button type="button" className='saveNedit' onClick={state ? editDetails : saveDetails}>
+              {state ? 'Edit' : 'Save'}
+            </button>
           </div>
         </form>
       </div>
