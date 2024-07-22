@@ -8,7 +8,6 @@ import code from './code.json';
 import divineLogo from '/assets/AcountPage/images/divine logo vertical.png';
 import logoBackground from '/assets/AcountPage/images/pink_design_cutout.png';
 import './AccountPage.css';
-const jwt_decode = (await import('jwt-decode')).default;
 
 // Debounce function to limit the rate of function execution
 const debounce = (func, delay) => {
@@ -43,6 +42,7 @@ const Form = () => {
       }
 
       // Decode the token to get the email
+      const jwtDecode = (await import('jwt-decode')).default;
       const decodedToken = jwt_decode(token);
       console.log(decodedToken);
       const email_id = decodedToken.email;
