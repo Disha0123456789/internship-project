@@ -175,6 +175,10 @@ hr{
 .verification-input{
   padding: 10px;
 }
+.verify-btn-container{
+  display: flex;
+  justify-content: space-evenly;
+}
 .verify-btn{
   background-color: #dcdcdc;
 }

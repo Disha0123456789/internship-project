@@ -208,7 +208,7 @@ export default function Register() {
                 onChange={(e) => setVerificationCode(e.target.value)} 
                 required 
               />
-              <div>
+              <div className='verify-btn-container'>
                 <button className='verify-btn' type="submit">Verify</button>
                 <button className='verify-btn' type="button" onClick={() => setIsVerificationPopupOpen(false)}>Cancel</button>
               </div>

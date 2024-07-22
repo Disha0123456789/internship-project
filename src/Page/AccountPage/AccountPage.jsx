@@ -36,7 +36,7 @@ const Form = () => {
 
   const fetchUserData = useCallback(async () => {
     try {
-      const response = await axios.get('/api/user-data');
+      const response = await axios.get('/user-data');
       const { first_name, last_name, email, phone, dob, birth_place, gender } = response.data;
       setUserData({
         firstName: first_name,
@@ -66,7 +66,7 @@ const Form = () => {
 
   const saveDetails = async () => {
     try {
-      await axios.put('/api/update-user', {
+      await axios.put('/update-user', {
         firstName: userData.firstName,
         lastName: userData.lastName,
         email: userData.email,
