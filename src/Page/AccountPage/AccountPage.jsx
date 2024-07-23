@@ -20,6 +20,7 @@ const debounce = (func, delay) => {
 };
 
 const Form = () => {
+  const [state, setState] = useState(false);
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [city, setCity] = useState('');
   const [userData, setUserData] = useState({
@@ -73,6 +74,7 @@ const Form = () => {
       setBirthPlace(birth_place || '');
       setGender(gender || '');
       setIsAuthenticated(true);
+      setState(true);
     } catch (error) {
       console.error('Error fetching user data:', error);
       if (error.response && error.response.status === 401) {
@@ -91,6 +93,10 @@ const Form = () => {
     }
   }, []);
 
+  const editDetails = () => {
+    setState(false);
+  };
+
   const saveDetails = async () => {
     try {
       const token = localStorage.getItem('authToken');
@@ -107,6 +113,7 @@ const Form = () => {
           Authorization: `Bearer ${token}`
         }
       });
+      setState(true);
     } catch (error) {
       console.error('Error updating user data:', error);
     }
@@ -190,6 +197,7 @@ const Form = () => {
                   name="firstName"
                   value={userData.firstName}
                   onChange={handleChange}
+                  disabled={state}
                 />
               </div>
               <div className="change">
@@ -202,6 +210,7 @@ const Form = () => {
                   name="lastName"
                   value={userData.lastName}
                   onChange={handleChange}
+                  disabled={state}
                 />
               </div>
               <div className="change">
@@ -214,6 +223,7 @@ const Form = () => {
                   name="email"
                   value={userData.email}
                   onChange={handleChange}
+                  disabled={state}
                 />
               </div>
               <div className="change">
@@ -231,6 +241,7 @@ const Form = () => {
                   name="phone"
                   value={userData.phone}
                   onChange={handleChange}
+                  disabled={state}
                 />
               </div>
               <div className="change">
@@ -240,6 +251,7 @@ const Form = () => {
                   className="Account-input"
                   value={dob}
                   onChange={handleDobChange}
+                  disabled={state}
                 />
               </div>
               <div className="change">
@@ -263,6 +275,7 @@ const Form = () => {
                   value="male"
                   checked={gender === 'male'}
                   onChange={handleGenderChange}
+                  disabled={state}
                 /> Male
                 <input
                   type="radio"
@@ -271,6 +284,7 @@ const Form = () => {
                   value="female"
                   checked={gender === 'female'}
                   onChange={handleGenderChange}
+                  disabled={state}
                 /> Female
                 <input
                   type="radio"
@@ -279,9 +293,14 @@ const Form = () => {
                   value="other"
                   checked={gender === 'other'}
                   onChange={handleGenderChange}
+                  disabled={state}
                 /> Other
               </div>
-              <button type="button" onClick={saveDetails} className="save-button">Save</button>
+              <div className="change">
+                <button type="button" className='saveNedit' onClick={state ? editDetails : saveDetails}>
+                  {state ? 'Edit' : 'Save'}
+                </button>
+              </div>
             </form>
           </div>
         </div>
