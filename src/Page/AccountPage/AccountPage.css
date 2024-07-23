@@ -117,4 +117,8 @@
     .change {
         padding: 10px 5px !important;
     }
+    .saveNedit{
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
