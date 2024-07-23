@@ -48,9 +48,9 @@ const Form = () => {
 
       const response = await axios.get('https://divineconnection.co.in/api/auth/user-data', {
         headers: {
-          Authorization: `Bearer ${token}`,
           'User-Email': email_id // Pass the email in headers or request params
-        }
+        },
+        withCredentials: true // Ensure cookies are sent with the request
       });
 
       const { first_name, last_name, email, phone, dob, birth_place, gender } = response.data;
