@@ -180,7 +180,7 @@ hr{
   justify-content: space-evenly;
 }
 .verify-btn{
-  background-color: #dcdcdc;
+  background-color: #dcdcdc !important;
 }
 @media screen and (min-width:1200px){
   .Register{
