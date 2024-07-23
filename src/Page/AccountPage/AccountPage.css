@@ -3,33 +3,34 @@
     height: 708px;
     width: 100vw;
 }
+.Account-page1{
+    display: flex;
+    height: 708px;
+    width: 100vw;
+}
 .logo-background{
     height: 100%;
 }
-@media screen and (max-width: 800px){
-    .Account-page{
-        flex-direction: column;
-    }
-    .Account-page-image{
-        margin-top: 10px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .logo-background{
-        background-color:papayawhip;
-    }
-    .Account-page-details{
-        width: 100% !important;
-    }
+.login-message{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 30px;
+    height: 100vh;
 }
-@media screen and (max-width: 468px){
-    .account-title {
-        font-size: larger !important;
-    }
-    .change {
-        padding: 10px 5px !important;
-    }
+.login-msg-h2{
+    font-weight: 600; 
 }
+.login-msg-btn{
+    width: 260px;
+    background-color: darkgray !important;
+    font-size: 1.2rem;
+}
+
+
 .Account-page-image{
     position: relative;
     width: 40%;
@@ -91,4 +92,29 @@
     width: 200px; /* Set the width of the select option */
     display: inline-block;
     margin-left: 2%;
+}
+
+@media screen and (max-width: 800px){
+    .Account-page{
+        flex-direction: column;
+    }
+    .Account-page-image{
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .logo-background{
+        background-color:papayawhip;
+    }
+    .Account-page-details{
+        width: 100% !important;
+    }
+}
+@media screen and (max-width: 468px){
+    .account-title {
+        font-size: larger !important;
+    }
+    .change {
+        padding: 10px 5px !important;
+    }
 }
