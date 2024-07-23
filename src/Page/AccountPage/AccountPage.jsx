@@ -121,8 +121,10 @@ const Form = () => {
       } catch (error) {
         console.error('Error sending verification code:', error);
       }
+      console.error('before taking token');
       if (response.data.newToken) {
         // If a new token is returned, update it in local storage
+        console.log('New token:', response.data.newToken);
         localStorage.setItem('authToken', response.data.newToken);
       }
     } else {
@@ -367,6 +369,7 @@ const Form = () => {
                 value={verificationCode}
                 onChange={(e) => setVerificationCode(e.target.value)}
                 required
+                placeholder='EX.BE7264'
               />
               <button className='verify-btn' type="submit">Verify</button>
             </form>
