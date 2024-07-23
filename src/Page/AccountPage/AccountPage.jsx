@@ -98,6 +98,45 @@ const Form = () => {
   };
 
   const saveDetails = async () => {
+    if (userData.email !== newEmail) {
+      try {
+        // Send verification code to old email
+        const response = await axios.post('https://divineconnection.co.in/api/auth/send-verification-code', {
+          email: userData.email
+        });
+  
+        if (response.status === 200) {
+          const { verificationCode } = response.data;
+          setSentVerificationCode(verificationCode);
+          setNewEmail(userData.email);
+          setIsVerificationPopupOpen(true);
+        } else {
+          alert('Failed to send verification code');
+        }
+      } catch (error) {
+        console.error('Error sending verification code:', error);
+      }
+    } else {
+      // Proceed with saving details if the email hasn't changed
+      await updateUserData();
+    }
+  };
+  
+  const handleVerifyCode = async (e) => {
+    e.preventDefault();
+    if (verificationCode === sentVerificationCode) {
+      try {
+        await updateUserData();
+        setIsVerificationPopupOpen(false);
+      } catch (error) {
+        console.error('Error updating user data:', error);
+      }
+    } else {
+      alert("Verification code is incorrect. Please try again.");
+    }
+  };
+  
+  const updateUserData = async () => {
     try {
       const token = localStorage.getItem('authToken');
       await axios.put('https://divineconnection.co.in/api/auth/update-user', {
@@ -118,6 +157,7 @@ const Form = () => {
       console.error('Error updating user data:', error);
     }
   };
+  
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -305,6 +345,23 @@ const Form = () => {
           </div>
         </div>
       )}
+      {isVerificationPopupOpen && (
+        <div className='verification-popup'>
+          <h2>Verify Your Email</h2>
+          <form onSubmit={handleVerifyCode}>
+            <label htmlFor="verificationCode">Enter Verification Code:</label>
+            <input
+              type="text"
+              id="verificationCode"
+              value={verificationCode}
+              onChange={(e) => setVerificationCode(e.target.value)}
+              required
+            />
+            <button type="submit">Verify</button>
+          </form>
+        </div>
+      )}
+
     </div>
   );
 };
