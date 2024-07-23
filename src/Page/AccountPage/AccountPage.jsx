@@ -9,6 +9,7 @@ import divineLogo from '/assets/AcountPage/images/divine logo vertical.png';
 import logoBackground from '/assets/AcountPage/images/pink_design_cutout.png';
 import './AccountPage.css';
 import { jwtDecode } from "jwt-decode";
+
 // Debounce function to limit the rate of function execution
 const debounce = (func, delay) => {
   let timeoutId;
@@ -34,6 +35,15 @@ const Form = () => {
   const [gender, setGender] = useState('');
   const navigate = useNavigate();
 
+  const formatDate = (isoDateString) => {
+    if (!isoDateString) return '';
+    const date = new Date(isoDateString);
+    const year = date.getFullYear();
+    const month = String(date.getMonth() + 1).padStart(2, '0');
+    const day = String(date.getDate()).padStart(2, '0');
+    return `${year}-${month}-${day}`;
+  };
+  
   const fetchUserData = async () => {
     try {
       const token = localStorage.getItem('authToken');
@@ -62,9 +72,11 @@ const Form = () => {
         email,
         phone
       });
-      setDob(dob || '');
+
+      setDob(formatDate(dob));
       setBirthPlace(birth_place || '');
       setGender(gender || '');
+      setState(true);
     } catch (error) {
       console.error('Error fetching user data:', error);
       if (error.response && error.response.status === 401) {
