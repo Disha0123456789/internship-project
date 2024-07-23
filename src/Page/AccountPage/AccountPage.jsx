@@ -157,6 +157,10 @@ const Form = () => {
           Authorization: `Bearer ${token}`
         }
       });
+      if (response.data.newToken) {
+        // If a new token is returned, update it in local storage
+        localStorage.setItem('authToken', response.data.newToken);
+      }
       setState(true);
     } catch (error) {
       console.error('Error updating user data:', error);
@@ -352,18 +356,21 @@ const Form = () => {
       )}
       {isVerificationPopupOpen && (
         <div className='verification-popup'>
-          <h2>Verify Your Email</h2>
-          <form onSubmit={handleVerifyCode}>
-            <label htmlFor="verificationCode">Enter Verification Code:</label>
-            <input
-              type="text"
-              id="verificationCode"
-              value={verificationCode}
-              onChange={(e) => setVerificationCode(e.target.value)}
-              required
-            />
-            <button type="submit">Verify</button>
-          </form>
+          <div className='verification-content'>
+            <h3 style={{ fontWeight: 'bold' }}>Verify Your Email</h3>
+            <form className='verification-form' onSubmit={handleVerifyCode}>
+              <label htmlFor="verificationCode">Enter Verification Code:</label>
+              <input
+                className='verification-input'
+                type="text"
+                id="verificationCode"
+                value={verificationCode}
+                onChange={(e) => setVerificationCode(e.target.value)}
+                required
+              />
+              <button className='verify-btn' type="submit">Verify</button>
+            </form>
+          </div>
         </div>
       )}
 
