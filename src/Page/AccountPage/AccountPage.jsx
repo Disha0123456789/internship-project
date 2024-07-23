@@ -121,6 +121,10 @@ const Form = () => {
       } catch (error) {
         console.error('Error sending verification code:', error);
       }
+      if (response.data.newToken) {
+        // If a new token is returned, update it in local storage
+        localStorage.setItem('authToken', response.data.newToken);
+      }
     } else {
       // Proceed with saving details if the email hasn't changed
       await updateUserData();
@@ -157,10 +161,6 @@ const Form = () => {
           Authorization: `Bearer ${token}`
         }
       });
-      if (response.data.newToken) {
-        // If a new token is returned, update it in local storage
-        localStorage.setItem('authToken', response.data.newToken);
-      }
       setState(true);
     } catch (error) {
       console.error('Error updating user data:', error);
