@@ -34,6 +34,11 @@ const Form = () => {
   const [gender, setGender] = useState('');
   const navigate = useNavigate();
 
+  const [isVerificationPopupOpen, setIsVerificationPopupOpen] = useState(false);
+  const [verificationCode, setVerificationCode] = useState('');
+  const [sentVerificationCode, setSentVerificationCode] = useState('');
+  const [newEmail, setNewEmail] = useState('');
+
   const formatDate = (isoDateString) => {
     if (!isoDateString) return '';
     const date = new Date(isoDateString);
