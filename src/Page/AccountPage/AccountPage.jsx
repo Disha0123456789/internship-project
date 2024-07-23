@@ -1,16 +1,14 @@
-import React, { useState, useMemo, useCallback, useEffect } from 'react';
+import React, { useState, useEffect, useCallback, useMemo } from 'react';
 import Select from 'react-select';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
-import { FixedSizeList as List } from 'react-window';
-import dummy from './dummy.json';
-import code from './code.json';
+import {jwtDecode} from "jwt-decode"; // Make sure to install jwt-decode if not installed
+import './AccountPage.css';
 import divineLogo from '/assets/AcountPage/images/divine logo vertical.png';
 import logoBackground from '/assets/AcountPage/images/pink_design_cutout.png';
-import './AccountPage.css';
-import { jwtDecode } from "jwt-decode";
+import dummy from './dummy.json';
+import code from './code.json';
 
-// Debounce function to limit the rate of function execution
 const debounce = (func, delay) => {
   let timeoutId;
   return (...args) => {
@@ -22,7 +20,7 @@ const debounce = (func, delay) => {
 };
 
 const Form = () => {
-  const [state, setState] = useState(false);
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [city, setCity] = useState('');
   const [userData, setUserData] = useState({
     firstName: '',
@@ -43,29 +41,27 @@ const Form = () => {
     const day = String(date.getDate()).padStart(2, '0');
     return `${year}-${month}-${day}`;
   };
-  
+
   const fetchUserData = async () => {
     try {
       const token = localStorage.getItem('authToken');
       if (!token) {
-        throw new Error('No auth token found');
+        setIsAuthenticated(false);
+        return;
       }
 
-      // Decode the token to get the email
       const decodedToken = jwtDecode(token);
-      console.log(decodedToken);
       const email_id = decodedToken.email;
 
       const response = await axios.get('https://divineconnection.co.in/api/auth/user-data', {
         headers: {
           Authorization: `Bearer ${token}`,
-          'User-Email': email_id // Pass the email in headers or request params
+          'User-Email': email_id
         },
-        withCredentials: true // Ensure cookies are sent with the request
+        withCredentials: true
       });
 
       const { first_name, last_name, email, phone, dob, birth_place, gender } = response.data;
-      console.log("received data :", response.data);
       setUserData({
         firstName: first_name,
         lastName: last_name,
@@ -76,22 +72,24 @@ const Form = () => {
       setDob(formatDate(dob));
       setBirthPlace(birth_place || '');
       setGender(gender || '');
-      setState(true);
+      setIsAuthenticated(true);
     } catch (error) {
       console.error('Error fetching user data:', error);
       if (error.response && error.response.status === 401) {
-        navigate('/login_page');
+        setIsAuthenticated(false);
       }
     }
   };
 
   useEffect(() => {
-    fetchUserData();
+    const token = localStorage.getItem("authToken");
+    if (token) {
+      setIsAuthenticated(true);
+      fetchUserData();
+    } else {
+      setIsAuthenticated(false);
+    }
   }, []);
-
-  const editDetails = () => {
-    setState(false);
-  };
 
   const saveDetails = async () => {
     try {
@@ -109,12 +107,10 @@ const Form = () => {
           Authorization: `Bearer ${token}`
         }
       });
-      setState(true);
     } catch (error) {
       console.error('Error updating user data:', error);
     }
   };
-  
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -140,7 +136,6 @@ const Form = () => {
     setGender(e.target.value);
   };
 
-  // Flatten the city data with country names
   const flattenedCities = useMemo(() => {
     return dummy.flatMap(country => 
       country.cities.map(city => ({
@@ -150,11 +145,10 @@ const Form = () => {
     );
   }, []);
 
-  // Filter data based on city input, only if it starts with the input
   const filteredData = useMemo(() => {
     return flattenedCities.filter(item => 
       item.city.toLowerCase().startsWith(city.toLowerCase())
-    ).slice(0, 100); // Limit to 100 results
+    ).slice(0, 100);
   }, [city, flattenedCities]);
 
   const options = code.map((e) => ({
@@ -162,7 +156,6 @@ const Form = () => {
     label: e.dial_code,
   }));
 
-  // Options for city
   const cityOptions = filteredData.map((e) => ({
     value: e.city,
     label: `${e.city}, ${e.country}`,
@@ -170,125 +163,129 @@ const Form = () => {
 
   return (
     <div className='Account-page'>
-      <div className='Account-page-image'>
-        <img src={logoBackground} className="logo-background" />
-        <img
-          src={divineLogo}
-          style={{ position: 'absolute', left: '7%', width: '80%' }}
-        />
-      </div>
-      <div className='Account-page-details'>
-        <div className="account-title">Edit Your Account</div>
-        <form className="Account-form">
-          <div className="change">
-            <label htmlFor="firstName" className="label">
-              First Name:-
-            </label>
-            <input
-              type="text"
-              className="Account-input"
-              name="firstName"
-              value={userData.firstName}
-              onChange={handleChange}
-              disabled={state}
+      {!isAuthenticated ? (
+        <div className='login-message'>
+          <h2>Please login before accessing the Account info</h2>
+          <button onClick={() => navigate('/login_page')}>Login</button>
+        </div>
+      ) : (
+        <div>
+          <div className='Account-page-image'>
+            <img src={logoBackground} className="logo-background" />
+            <img
+              src={divineLogo}
+              style={{ position: 'absolute', left: '7%', width: '80%' }}
             />
           </div>
-          <div className="change">
-            <label htmlFor="lastName" className="label">
-              Last Name:-
-            </label>
-            <input
-              type="text"
-              className="Account-input"
-              name="lastName"
-              value={userData.lastName}
-              onChange={handleChange}
-              disabled={state}
-            />
+          <div className='Account-page-details'>
+            <div className="account-title">Edit Your Account</div>
+            <form className="Account-form">
+              <div className="change">
+                <label htmlFor="firstName" className="label">
+                  First Name:-
+                </label>
+                <input
+                  type="text"
+                  className="Account-input"
+                  name="firstName"
+                  value={userData.firstName}
+                  onChange={handleChange}
+                />
+              </div>
+              <div className="change">
+                <label htmlFor="lastName" className="label">
+                  Last Name:-
+                </label>
+                <input
+                  type="text"
+                  className="Account-input"
+                  name="lastName"
+                  value={userData.lastName}
+                  onChange={handleChange}
+                />
+              </div>
+              <div className="change">
+                <label htmlFor="email" className="label">
+                  Email:-
+                </label>
+                <input
+                  type="email"
+                  className="Account-input"
+                  name="email"
+                  value={userData.email}
+                  onChange={handleChange}
+                />
+              </div>
+              <div className="change">
+                <label htmlFor="phone" className="label">
+                  Contact No :-
+                </label>
+                <Select
+                  className="react-select-container"
+                  options={options}
+                  placeholder="+91"
+                />
+                <input
+                  type="number"
+                  className="number-input"
+                  name="phone"
+                  value={userData.phone}
+                  onChange={handleChange}
+                />
+              </div>
+              <div className="change">
+                <label htmlFor="dob" className='label'>Date Of Birth :-</label>
+                <input
+                  type="date"
+                  className="Account-input"
+                  value={dob}
+                  onChange={handleDobChange}
+                />
+              </div>
+              <div className="change">
+                <label htmlFor="birthPlace" className='label'>Place Of Birth :-</label>
+                <Select
+                  className="react-select-city"
+                  options={cityOptions}
+                  placeholder="Search for city..."
+                  isSearchable
+                  onInputChange={handleCityInput}
+                  onChange={handleBirthPlaceChange}
+                  value={cityOptions.find(option => option.value === birthPlace)}
+                />
+              </div>
+              <div className="change">
+                <label htmlFor="gender" className='label'>Gender :-</label>&nbsp;
+                <input
+                  type="radio"
+                  className="Account-input"
+                  name="gender"
+                  value="male"
+                  checked={gender === 'male'}
+                  onChange={handleGenderChange}
+                /> Male
+                <input
+                  type="radio"
+                  className="Account-input"
+                  name="gender"
+                  value="female"
+                  checked={gender === 'female'}
+                  onChange={handleGenderChange}
+                /> Female
+                <input
+                  type="radio"
+                  className="Account-input"
+                  name="gender"
+                  value="other"
+                  checked={gender === 'other'}
+                  onChange={handleGenderChange}
+                /> Other
+              </div>
+              <button type="button" onClick={saveDetails} className="save-button">Save</button>
+            </form>
           </div>
-          <div className="change">
-            <label htmlFor="email" className="label">
-              Email:-
-            </label>
-            <input
-              type="email"
-              className="Account-input"
-              name="email"
-              value={userData.email}
-              onChange={handleChange}
-              disabled={state}
-            />
-          </div>
-          <div className="change">
-            <label htmlFor="phone" className="label">
-              Contact No :-
-            </label>
-            <Select
-              className="react-select-container"
-              options={options}
-              isDisabled={state}
-              placeholder="+91"
-            />
-            <input
-              type="number"
-              className="number-input"
-              name="phone"
-              value={userData.phone}
-              onChange={handleChange}
-              disabled={state}
-            />
-          </div>
-          <div className="change">
-            <label htmlFor="dob" className='label'>Date Of Birth :-</label>
-            <input
-              type="date"
-              className="Account-input"
-              value={dob}
-              onChange={handleDobChange}
-              disabled={state}
-            />
-          </div>
-          <div className="change">
-            <label htmlFor="birthPlace" className='label'>Place Of Birth :-</label>
-            <Select
-              className="react-select-city"
-              options={cityOptions}
-              isDisabled={state}
-              placeholder="Search for city..."
-              isSearchable
-              onInputChange={handleCityInput}
-              onChange={handleBirthPlaceChange}
-              value={cityOptions.find(option => option.value === birthPlace)}
-            />
-          </div>
-          <div className="change">
-            <label htmlFor="gender" className='label'>Gender :-</label>&nbsp;
-            <input
-              type="radio"
-              className="Account-input"
-              name="gender"
-              value="male"
-              checked={gender === 'male'}
-              onChange={handleGenderChange}
-              disabled={state}
-            /> Male
-            <input
-              type="radio"
-              className="Account-input"
-              name="gender"
-              value="female"
-              checked={gender === 'female'}
-              onChange={handleGenderChange}
-              disabled={state}
-            /> Female
-          </div>
-          <div className="change">
-            <button type="button" className='saveNedit' onClick={state ? editDetails : saveDetails}>
-              {state ? 'Edit' : 'Save'}
-            </button>
-          </div>
-        </form>
-      </div>
+        </div>
+      )}
     </div>
   );
 };
