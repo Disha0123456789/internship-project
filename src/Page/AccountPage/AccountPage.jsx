@@ -169,14 +169,14 @@ const Form = () => {
   }));
 
   return (
-    <div className='Account-page'>
+    <div className='Account-page1'>
       {!isAuthenticated ? (
         <div className='login-message'>
-          <h2>Please login before accessing the Account info</h2>
-          <button onClick={() => navigate('/login_page')}>Login</button>
+          <h2 className='login-msg-h2'>Please login before accessing the Account info!</h2>
+          <button className='login-msg-btn' onClick={() => navigate('/login_page')}>Login</button>
         </div>
       ) : (
-        <div>
+        <div className='Account-page'>
           <div className='Account-page-image'>
             <img src={logoBackground} className="logo-background" />
             <img
