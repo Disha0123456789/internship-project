@@ -46,7 +46,7 @@ const Form = () => {
       console.log(decodedToken);
       const email_id = decodedToken.email;
 
-      const response = await axios.get('/user-data', {
+      const response = await axios.get('https://divineconnection.co.in/api/auth/user-data', {
         headers: {
           Authorization: `Bearer ${token}`,
           'User-Email': email_id // Pass the email in headers or request params
@@ -54,6 +54,7 @@ const Form = () => {
       });
 
       const { first_name, last_name, email, phone, dob, birth_place, gender } = response.data;
+      console.log("received data :", response.data);
       setUserData({
         firstName: first_name,
         lastName: last_name,
@@ -82,7 +83,7 @@ const Form = () => {
   const saveDetails = async () => {
     try {
       const token = localStorage.getItem('authToken');
-      await axios.put('/update-user', {
+      await axios.put('https://divineconnection.co.in/api/auth/update-user', {
         firstName: userData.firstName,
         lastName: userData.lastName,
         email: userData.email,
