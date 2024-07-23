@@ -121,12 +121,6 @@ const Form = () => {
       } catch (error) {
         console.error('Error sending verification code:', error);
       }
-      console.error('before taking token');
-      if (response.data.newToken) {
-        // If a new token is returned, update it in local storage
-        console.log('New token:', response.data.newToken);
-        localStorage.setItem('authToken', response.data.newToken);
-      }
     } else {
       // Proceed with saving details if the email hasn't changed
       await updateUserData();
@@ -150,7 +144,7 @@ const Form = () => {
   const updateUserData = async () => {
     try {
       const token = localStorage.getItem('authToken');
-      await axios.put('https://divineconnection.co.in/api/auth/update-user', {
+      const updateResponse = await axios.put('https://divineconnection.co.in/api/auth/update-user', {
         firstName: userData.firstName,
         lastName: userData.lastName,
         email: userData.email,
@@ -163,6 +157,17 @@ const Form = () => {
           Authorization: `Bearer ${token}`
         }
       });
+
+      if (updateResponse.status === 200) {
+        // If a new token is returned, update it in local storage
+        if (updateResponse.data.newToken) {
+          localStorage.setItem('authToken', updateResponse.data.newToken);
+        }
+        alert('User details updated successfully');
+      } else {
+        alert('Failed to update user details');
+      }
+
       setState(true);
     } catch (error) {
       console.error('Error updating user data:', error);
