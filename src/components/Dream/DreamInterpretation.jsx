@@ -23,6 +23,7 @@ function DreamInterpretation() {
         // Prepend the new elements to the chat box
         chatBox.prepend(newMeaningPara);
         chatBox.prepend(newDreamPara);
+        chatBox.scrollTop = 0;
     }
 
     // Function to handle dropdown change

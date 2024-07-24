@@ -58,7 +58,9 @@
     align-items: center;
 }
 .saveNedit{
+    font-size: 0.9rem;
     margin-top: 20px;
+    margin-right: auto;
     width: 150px;
     background-color: purple !important;
     color: white;
