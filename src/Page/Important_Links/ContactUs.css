@@ -65,3 +65,7 @@
     background-color: #00a4a6 !important;
   }
   
+  /* Additional styles for the reCAPTCHA */
+.contact-us-form-group > .g-recaptcha {
+  display: inline-block;
+}
