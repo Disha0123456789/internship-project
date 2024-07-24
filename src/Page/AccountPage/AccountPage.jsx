@@ -79,6 +79,7 @@ const Form = () => {
       setBirthPlace(birth_place || '');
       setGender(gender || '');
       setIsAuthenticated(true);
+      setNewEmail(email);
       setState(true);
     } catch (error) {
       console.error('Error fetching user data:', error);
