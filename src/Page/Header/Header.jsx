@@ -157,7 +157,7 @@ function Header() {
       {sidebarOpen && <div className="sidebar-overlay" onClick={toggleSidebar}></div>}
 
       {isLogoutPopupOpen && (
-        <div className='verification-popup'>
+        <div className='verification-popup-head'>
           <div className='verification-content'>
             <h3 style={{ fontWeight: 'bold' }}>Confirm Logout</h3>
             <div className='verify-btn-container'>
@@ -169,7 +169,7 @@ function Header() {
       )}
 
       {isDeletePopupOpen && (
-        <div className='verification-popup'>
+        <div className='verification-popup-head'>
           <div className='verification-content'>
             <h3 style={{ fontWeight: 'bold' }}>Confirm Account Deletion</h3>
             <div className='verify-btn-container'>
