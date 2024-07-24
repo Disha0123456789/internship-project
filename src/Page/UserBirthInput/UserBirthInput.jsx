@@ -30,6 +30,15 @@ const UserBirthInput = ({ nextPage }) => {
         };
     };
 
+    const formatDate = (isoDateString) => {
+        if (!isoDateString) return '';
+        const date = new Date(isoDateString);
+        const year = date.getFullYear();
+        const month = String(date.getMonth() + 1).padStart(2, '0');
+        const day = String(date.getDate()).padStart(2, '0');
+        return `${year}-${month}-${day}`;
+    };
+
     const flattenedCities = useMemo(() => {
         return dummy.flatMap(country => 
             country.cities.map(city => ({
@@ -95,7 +104,7 @@ const UserBirthInput = ({ nextPage }) => {
             });
             const user = response.data;
             setName(`${user.first_name} ${user.last_name}`);
-            setDateOfBirth(user.dob);
+            setDateOfBirth(formatDate(user.dob));
             setPlaceOfBirth(user.birth_place);
         } catch (error) {
             console.error('Error fetching user data:', error);
