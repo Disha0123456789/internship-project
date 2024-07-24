@@ -12,6 +12,7 @@ const ContactUs = () => {
 
   const [recaptchaValue, setRecaptchaValue] = useState(null);
   const [formStatus, setFormStatus] = useState('');
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
 
   const handleChange = (e) => {
     setFormData({
@@ -42,10 +43,22 @@ const ContactUs = () => {
 
     const result = await response.json();
     if (response.ok) {
-      setFormStatus('Form submitted successfully.');
+      setFormStatus(`Your concern "${formData.subject}" has been sent successfully!`);
+      setFormData({
+        fullName: '',
+        email: '',
+        subject: 'Feedback/Suggestion',
+        message: ''
+      });
     } else {
-      setFormStatus('Error submitting form: ' + result.message);
+      setFormStatus(`Error submitting form: ${result.message}`);
     }
+    setIsPopupOpen(true);
+  };
+
+  const closePopup = () => {
+    setIsPopupOpen(false);
+    setFormStatus('');
   };
 
   return (
@@ -105,8 +118,16 @@ const ContactUs = () => {
           </div>
           <button type="submit" className="contact-us-submit-button">Submit</button>
         </form>
-        {formStatus && <p className="form-status">{formStatus}</p>}
       </div>
+      {isPopupOpen && (
+        <div className='verification-popup'>
+          <div className='verification-content'>
+            <h3 style={{ fontWeight: 'bold' }}>Form Submission Status</h3>
+            <p>{formStatus}</p>
+            <button className='verify-btn' onClick={closePopup}>Close</button>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
