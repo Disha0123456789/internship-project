@@ -32,7 +32,7 @@ const ContactUs = () => {
     }
 
     // Handle form submission
-    const response = await fetch('/submit-form', {
+    const response = await fetch('https://divineconnection.co.in/api/auth/submit-form', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
