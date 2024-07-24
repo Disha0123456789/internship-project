@@ -58,7 +58,7 @@
 }
 .user-profile-btn {
     margin-top: 50px;
-    width: 17%;
+    width: 20%;
     background-color: #6f6f6f !important;
     color: white;
     height: auto; /* Flexible height */
@@ -101,12 +101,15 @@
         width: 100% !important;
     }
     .user-profile-btn {
-        font-size: x-small;
+        font-size: small;
     }
 }
 
 @media screen and (max-width:640px) {
     .UserBirthInput-container{
         width: 90%
+    }
+    .user-profile-submit{
+        width: 30%;
     }
 }
