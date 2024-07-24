@@ -38,7 +38,7 @@ const Form = () => {
   const [verificationCode, setVerificationCode] = useState('');
   const [sentVerificationCode, setSentVerificationCode] = useState('');
   const [newEmail, setNewEmail] = useState('');
-
+  const [isDeletePopupOpen, setIsDeletePopupOpen] = useState(false);
   const formatDate = (isoDateString) => {
     if (!isoDateString) return '';
     const date = new Date(isoDateString);
@@ -224,6 +224,33 @@ const Form = () => {
     label: `${e.city}, ${e.country}`,
   }));
 
+  const handleDeleteAccount = () => {
+    const token = localStorage.getItem("authToken");
+
+    fetch('https://divineconnection.co.in/api/auth/delete-account', {
+      method: 'DELETE',
+      headers: {
+        'Authorization': `Bearer ${token}`,
+      },
+    })
+      .then(response => {
+        if (response.ok) {
+          localStorage.removeItem("authToken");
+          setIsDeletePopupOpen(false);
+          navigate("/registration_page");
+        } else {
+          console.error('Failed to delete account');
+        }
+      })
+      .catch(error => {
+        console.error('Error:', error);
+      });
+  };
+
+  const handleDeleteClick = () => {
+    setIsDeletePopupOpen(true);
+  };
+
   return (
     <div className='Account-page1'>
       {!isAuthenticated ? (
@@ -356,6 +383,7 @@ const Form = () => {
                 <button type="button" className='saveNedit' onClick={state ? editDetails : saveDetails}>
                   {state ? 'Edit' : 'Save'}
                 </button>
+                <button type="button" className='saveNedit' onClick={handleDeleteClick}>Delete Account</button>
               </div>
             </form>
           </div>
@@ -381,7 +409,17 @@ const Form = () => {
           </div>
         </div>
       )}
-
+      {isDeletePopupOpen && (
+        <div className='verification-popup-head'>
+          <div className='verification-content'>
+            <h3 style={{ fontWeight: 'bold' }}>Confirm Account Deletion</h3>
+            <div className='verify-btn-container'>
+              <button className='verify-btn' onClick={handleDeleteAccount}>Yes</button>
+              <button className='verify-btn' onClick={() => setIsDeletePopupOpen(false)}>No</button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
