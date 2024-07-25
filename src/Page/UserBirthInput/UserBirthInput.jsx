@@ -1,9 +1,9 @@
-import React, { useState, useMemo, useCallback } from 'react';
+import React, { useState, useMemo, useCallback, useEffect } from 'react';
 import Select from 'react-select';
 import axios from 'axios';
 import dummy from '../AccountPage/dummy.json';
 import './UserBirthInput.css';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import {jwtDecode} from 'jwt-decode';
 
 const UserBirthInput = ({ nextPage }) => {
@@ -21,6 +21,7 @@ const UserBirthInput = ({ nextPage }) => {
     const [dateOfBirthError, setDateOfBirthError] = useState(false);
     const [state, setState] = useState(false);
     const [city, setCity] = useState('');
+    const [placeOfBirthCheckbox, setPlaceOfBirthCheckbox] = useState(false);
 
     const debounce = (func, delay) => {
         let timeoutId;
@@ -73,7 +74,7 @@ const UserBirthInput = ({ nextPage }) => {
         setLastNameError(!lastName);
         setDateOfBirthError(!dateOfBirth);
 
-        if (!firstName || !lastName || !dateOfBirth) {
+        if (!firstName || !lastName || !dateOfBirth || (!isAuthenticated && !placeOfBirthCheckbox)) {
             return;
         }
 
@@ -147,29 +148,38 @@ const UserBirthInput = ({ nextPage }) => {
         }
     };
 
+    useEffect(() => {
+        const token = localStorage.getItem('authToken');
+        if (token) {
+            setIsAuthenticated(true);
+        } else {
+            setIsAuthenticated(false);
+        }
+    }, []);
+
     return (
         <div className="UserBirthInput-container">
             <form className="UserBirthInput-form">
                 <h3 className='UserBirthHead'>Enter Your details</h3>
                 <div className="changes">
                     <div className='UserBirthInput-name-container'>
-                    <div style={{ width: "50%" }}>
-                        <label htmlFor="firstName" className={`user-label ${firstNameError ? 'mandatory' : ''}`}>
-                            First Name:
-                        </label>
-                        {firstNameError && <span className="required">mandatory*</span>}
-                        <br />
-                        <input type="text" className='user-Input' value={firstName} onChange={(e) => setFirstName(e.target.value)} disabled={state} />
-                    </div>
+                        <div style={{ width: "50%" }}>
+                            <label htmlFor="firstName" className={`user-label ${firstNameError ? 'mandatory' : ''}`}>
+                                First Name:
+                            </label>
+                            {firstNameError && <span className="required">mandatory*</span>}
+                            <br />
+                            <input type="text" className='user-Input' value={firstName} onChange={(e) => setFirstName(e.target.value)} disabled={state} />
+                        </div>
 
-                    <div style={{ width: "50%" }}>
-                        <label htmlFor="lastName" className={`user-label ${lastNameError ? 'mandatory' : ''}`}>
-                            Last Name:
-                        </label>
-                        {lastNameError && <span className="required">mandatory*</span>}
-                        <br />
-                        <input type="text" className='user-Input' value={lastName} onChange={(e) => setLastName(e.target.value)} disabled={state} />
-                    </div>
+                        <div style={{ width: "50%" }}>
+                            <label htmlFor="lastName" className={`user-label ${lastNameError ? 'mandatory' : ''}`}>
+                                Last Name:
+                            </label>
+                            {lastNameError && <span className="required">mandatory*</span>}
+                            <br />
+                            <input type="text" className='user-Input' value={lastName} onChange={(e) => setLastName(e.target.value)} disabled={state} />
+                        </div>
                     </div>
                 </div>
 
@@ -206,12 +216,29 @@ const UserBirthInput = ({ nextPage }) => {
                         isSearchable
                         onInputChange={handleCityInput}
                     />
+                    {!isAuthenticated && (
+                    <div className='Iagree-checkbox' onClick={() => setPlaceOfBirthCheckbox(!placeOfBirthCheckbox)}>
+                        {placeOfBirthCheckbox ? <span>&#9745;</span> : <span>&#9744;</span>}
+                        <span style={{marginLeft:'5px'}}>
+                        Please select "I agree to the <Link to="/TermsAndConditions">Terms and Conditions</Link> and <Link to="/PrivacyPolicy">Privacy Policy</Link>" to proceed with submission.
+                        </span>
+                    </div>
+                )}
                 </div>
 
                 <div className="changes-button">
-                    <button type="button" className='user-profile-btn' onClick={useDefaultProfile}>Use default profile</button>
-                    <button type="button" className='user-profile-submit' onClick={saveDetails}>Submit</button>
-                    <button type="button" className='user-profile-btn' onClick={saveAsDefault}>Save as default</button>
+                    {isAuthenticated && (
+                        <>
+                            <button type="button" className='user-profile-btn' onClick={useDefaultProfile}>Use default profile</button>
+                            <button type="button" className='user-profile-submit' onClick={saveDetails} style={{ backgroundColor:'black' }}>Submit</button>
+                            <button type="button" className='user-profile-btn' onClick={saveAsDefault}>Save as default</button>
+                        </>
+                    )}
+                    {!isAuthenticated && (
+                        <button type="button" className='user-profile-submit' onClick={saveDetails} disabled={!placeOfBirthCheckbox} style={{ backgroundColor: placeOfBirthCheckbox ? 'black' : 'gray' }}>
+                            Submit
+                        </button>
+                    )}
                 </div>
             </form>
         </div>

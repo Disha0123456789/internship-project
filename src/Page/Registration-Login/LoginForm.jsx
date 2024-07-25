@@ -14,6 +14,9 @@ function LoginForm() {
   const [confirmNewPassword, setConfirmNewPassword] = useState('');
   const [showForgotPasswordPopup, setShowForgotPasswordPopup] = useState(false);
   const [showNewPasswordFields, setShowNewPasswordFields] = useState(false);
+  const [verificationCode, setVerificationCode] = useState('');
+  const [isVerificationPopupOpen, setIsVerificationPopupOpen] = useState(false);
+  const [sentVerificationCode, setSentVerificationCode] = useState('');
 
   const handleLoginSubmit = async (e) => {
     e.preventDefault();
@@ -49,14 +52,46 @@ function LoginForm() {
         body: JSON.stringify({ email: forgotPasswordEmail }),
       });
       if (response.ok) {
-        setShowForgotPasswordPopup(false);
-        setShowNewPasswordFields(true);
+        try {
+          const response = await fetch('https://divineconnection.co.in/api/auth/send-verification-code', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ email: forgotPasswordEmail }),
+          });
+    
+          if (response.ok) {
+            const result = await response.json();
+            setSentVerificationCode(result.verificationCode);
+            setShowForgotPasswordPopup(false);
+            setIsVerificationPopupOpen(true);
+          } else {
+            const result = await response.json();
+            alert(result.message);
+          }
+        } catch (error) {
+          console.error('Error:', error);
+        }
+        
+        //setIsVerificationPopupOpen(true);
+        //setShowNewPasswordFields(true);
       } else {
         const result = await response.json();
         alert(result.message);
       }
     } catch (error) {
       console.error('Error:', error);
+    }
+  };
+
+  const handleVerifyCode = async (e) => {
+    e.preventDefault();
+    if (verificationCode === sentVerificationCode) {
+      setIsVerificationPopupOpen(false); 
+      setShowNewPasswordFields(true);
+    } else {
+      alert("Verification code is incorrect. Please try again.");
     }
   };
 
@@ -151,6 +186,28 @@ function LoginForm() {
         </div>
       )}
 
+      {isVerificationPopupOpen && (
+        <div className='verification-popup'>
+          <div className='verification-content'>
+            <h3 style={{ fontWeight: 'bold' }}>Email Verification</h3>
+            <form className='verification-form' onSubmit={handleVerifyCode}>
+              <input 
+                className='verification-input'
+                type="text" 
+                placeholder="Enter verification code" 
+                value={verificationCode} 
+                onChange={(e) => setVerificationCode(e.target.value)} 
+                required 
+              />
+              <div className='verify-btn-container'>
+                <button className='verify-btn' type="submit">Verify</button>
+                <button className='verify-btn' type="button" onClick={() => setIsVerificationPopupOpen(false)}>Cancel</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      )}
+      \
       {showNewPasswordFields && (
         <div className='popup-login'>
           <div className='popup-content-login'>

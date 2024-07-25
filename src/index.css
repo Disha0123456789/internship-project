@@ -17,7 +17,7 @@
 
 a {
   font-weight: 500;
-  color: #646cff;
+  color: rgba(var(--bs-link-color-rgb), var(--bs-link-opacity, 1));
   text-decoration: inherit;
 }
 a:hover {
