@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useEffect }from "react";
 import { useNavigate } from "react-router-dom";
 import "./meditation.css";
 
 const Meditation = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const navigate = useNavigate();
   const options = [
     "Daily Meditation",

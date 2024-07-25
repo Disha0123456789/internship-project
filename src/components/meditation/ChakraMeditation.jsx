@@ -1,7 +1,12 @@
-import React from "react";
+import React, { useEffect }from "react";
 import "./meditation.css";
 
 const ChakraMeditation = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const name = [
     "10 Minute Root Chakra Guided Meditation",
     "Boost Creativity, Desire & Confidence",

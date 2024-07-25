@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useEffect }from "react";
 import { useNavigate } from "react-router-dom";
 import "./meditation.css";
 
 const DailyMeditation = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const name = [
     "Powerful 6-phase Morning Meditation",
     "Feel Amazing For The Day Ahead",

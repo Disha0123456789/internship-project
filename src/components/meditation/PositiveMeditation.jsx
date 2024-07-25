@@ -1,7 +1,12 @@
-import React from "react";
+import React, { useEffect }from "react";
 import "./meditation.css";
 
 const PositiveMeditation = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const name = [
     "Morning Meditation for Positive Energy",
     "Positive Energy Chakra Meditation",
