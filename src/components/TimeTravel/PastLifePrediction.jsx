@@ -39,7 +39,8 @@ function PastLifePrediction() {
         const user = response.data;
         console.log(user);
         const { dob } = user.dob;
-        if (dob) {
+        console.log(dob);
+        if (dob != null) {
           setBirthDate(formatDate(dob));
         }
         else{
