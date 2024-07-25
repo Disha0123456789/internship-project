@@ -1,11 +1,56 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./PastLifePrediction.css";
-import { IoIosArrowBack } from "react-icons/io";
 import { useNavigate } from "react-router-dom";
+import axios from "axios";
+import {jwtDecode} from "jwt-decode";
+
+const formatDate = (isoDateString) => {
+  if (!isoDateString) return '';
+  const date = new Date(isoDateString);
+  const year = date.getFullYear();
+  const month = String(date.getMonth() + 1).padStart(2, '0');
+  const day = String(date.getDate()).padStart(2, '0');
+  return `${year}-${month}-${day}`;
+};
 
 function PastLifePrediction() {
   const [birthDate, setBirthDate] = useState("");
   const navigate = useNavigate();
+  const [note, setNote] = useState(false);
+
+  useEffect(() => {
+    const fetchUserData = async () => {
+      try {
+        const token = localStorage.getItem('authToken');
+        if (!token) {
+          setIsAuthenticated(false);
+          return;
+        }
+        const decodedToken = jwtDecode(token);
+        const email_id = decodedToken.email;
+
+        const response = await axios.get('https://divineconnection.co.in/api/auth/user-data', {
+        headers: {
+          Authorization: `Bearer ${token}`,
+          'User-Email': email_id
+        },
+          withCredentials: true
+        });
+        const user = response.data;
+        const { dob } = user.dob;
+        if (dob) {
+          setBirthDate(formatDate(dob));
+        }
+        else{
+          setNote(true);
+        }
+      } catch (error) {
+        console.error('Error fetching user data:', error);
+      }
+    };
+
+    fetchUserData();
+  }, []);
 
   const handleBirthDateChange = (e) => {
     const date = e.target.value;
@@ -37,11 +82,7 @@ function PastLifePrediction() {
                     onChange={handleBirthDateChange}
                   />
                 </div>
-                {/*zodiacSign && (
-                  <div className="zodiac-sign">
-                    <p>Your Zodiac Sign: {zodiacSign}</p>
-                  </div>
-                )*/}
+                
                 {birthDate && (
                   <div className="past-life-button-wrapper">
                     <button
@@ -51,6 +92,11 @@ function PastLifePrediction() {
                     >
                       See Your Past Life
                     </button>
+                    {setNote && (
+                    <div style ={{marginTop:'10px', fontSize:'x-small'}}>
+                      Note: update your date of birth in the account to use it as default date of birth for this feature.
+                    </div>
+                    )}
                   </div>
                 )}
               </div>
