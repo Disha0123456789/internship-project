@@ -4,18 +4,20 @@ import axios from 'axios';
 import dummy from '../AccountPage/dummy.json';
 import './UserBirthInput.css';
 import { useNavigate } from 'react-router-dom';
-import {jwtDecode} from "jwt-decode";
+import {jwtDecode} from 'jwt-decode';
 
 const UserBirthInput = ({ nextPage }) => {
     const navigate = useNavigate();
 
     const [isAuthenticated, setIsAuthenticated] = useState(false);
-    const [name, setName] = useState('');
+    const [firstName, setFirstName] = useState('');
+    const [lastName, setLastName] = useState('');
     const [dateOfBirth, setDateOfBirth] = useState('');
     const [birthTime, setBirthTime] = useState('');
     const [boysCheckbox, setBoysCheckbox] = useState(false);
     const [placeOfBirth, setPlaceOfBirth] = useState('');
-    const [nameError, setNameError] = useState(false);
+    const [firstNameError, setFirstNameError] = useState(false);
+    const [lastNameError, setLastNameError] = useState(false);
     const [dateOfBirthError, setDateOfBirthError] = useState(false);
     const [state, setState] = useState(false);
     const [city, setCity] = useState('');
@@ -67,15 +69,17 @@ const UserBirthInput = ({ nextPage }) => {
     );
 
     const saveDetails = () => {
-        setNameError(!name);
+        setFirstNameError(!firstName);
+        setLastNameError(!lastName);
         setDateOfBirthError(!dateOfBirth);
 
-        if (!name || !dateOfBirth) {
+        if (!firstName || !lastName || !dateOfBirth) {
             return;
         }
 
         const userData = {
-            name: name,
+            firstName: firstName,
+            lastName: lastName,
             dateOfBirth: dateOfBirth,
             birthTime: birthTime,
             placeOfBirth: placeOfBirth
@@ -103,11 +107,43 @@ const UserBirthInput = ({ nextPage }) => {
                 withCredentials: true
             });
             const user = response.data;
-            setName(`${user.first_name} ${user.last_name}`);
+            setFirstName(user.first_name);
+            setLastName(user.last_name);
             setDateOfBirth(formatDate(user.dob));
             setPlaceOfBirth(user.birth_place);
         } catch (error) {
             console.error('Error fetching user data:', error);
+        }
+    };
+
+    const saveAsDefault = async () => {
+        try {
+            const token = localStorage.getItem('authToken');
+            if (!token) {
+                setIsAuthenticated(false);
+                return;
+            }
+
+            const userData = {
+                firstName: firstName,
+                lastName: lastName,
+                dob: dateOfBirth,
+                birthPlace: placeOfBirth,
+            };
+
+            const response = await axios.put('https://divineconnection.co.in/api/auth/update-user', userData, {
+                headers: {
+                    Authorization: `Bearer ${token}`
+                },
+                withCredentials: true
+            });
+
+            if (response.status === 200) {
+                console.log('User data saved as default:', response.data);
+                // Handle success response if needed
+            }
+        } catch (error) {
+            console.error('Error saving user data as default:', error);
         }
     };
 
@@ -116,17 +152,30 @@ const UserBirthInput = ({ nextPage }) => {
             <form className="UserBirthInput-form">
                 <h3 className='UserBirthHead'>Enter Your details</h3>
                 <div className="changes">
-                    <label htmlFor="name" className={`user-label ${nameError ? 'mandatory' : ''}`}>
-                        NAME :
-                    </label>
-                    {nameError && <span className="required">mandatory*</span>}
-                    <br />
-                    <input type="text" className='user-Input' value={name} onChange={(e) => setName(e.target.value)} disabled={state} />
+                    <div className='UserBirthInput-name-container'>
+                    <div style={{ width: "50%" }}>
+                        <label htmlFor="firstName" className={`user-label ${firstNameError ? 'mandatory' : ''}`}>
+                            First Name:
+                        </label>
+                        {firstNameError && <span className="required">mandatory*</span>}
+                        <br />
+                        <input type="text" className='user-Input' value={firstName} onChange={(e) => setFirstName(e.target.value)} disabled={state} />
+                    </div>
+
+                    <div style={{ width: "50%" }}>
+                        <label htmlFor="lastName" className={`user-label ${lastNameError ? 'mandatory' : ''}`}>
+                            Last Name:
+                        </label>
+                        {lastNameError && <span className="required">mandatory*</span>}
+                        <br />
+                        <input type="text" className='user-Input' value={lastName} onChange={(e) => setLastName(e.target.value)} disabled={state} />
+                    </div>
+                    </div>
                 </div>
 
                 <div className="changes">
                     <label htmlFor="date" className={`user-label ${dateOfBirthError ? 'mandatory' : ''}`}>
-                        Date Of Birth :
+                        Date Of Birth:
                     </label>
                     {dateOfBirthError && <span className="required">mandatory*</span>}
                     <br />
@@ -134,9 +183,9 @@ const UserBirthInput = ({ nextPage }) => {
                 </div>
 
                 <div className="changes">
-                    <label htmlFor="boyBirthTime" className="user-label">Birth Time :</label>
+                    <label htmlFor="birthTime" className="user-label">Birth Time:</label>
                     <br />
-                    <input type="time" className='user-Input' value={birthTime} onChange={(e) => setBirthTime(e.target.value)} placeholder="hh:mm(24 hours)" id="boyBirthTime" required />
+                    <input type="time" className='user-Input' value={birthTime} onChange={(e) => setBirthTime(e.target.value)} placeholder="hh:mm (24 hours)" id="birthTime" required />
                 </div>
 
                 <div className="changes" onClick={() => setBoysCheckbox(!boysCheckbox)}>
@@ -147,7 +196,7 @@ const UserBirthInput = ({ nextPage }) => {
                 </div>
 
                 <div className="changes">
-                    <label htmlFor="place" className="user-label">Place Of Birth :</label>
+                    <label htmlFor="place" className="user-label">Place Of Birth:</label>
                     <br />
                     <Select
                         className="select-city"
@@ -162,7 +211,7 @@ const UserBirthInput = ({ nextPage }) => {
                 <div className="changes-button">
                     <button type="button" className='user-profile-btn' onClick={useDefaultProfile}>Use default profile</button>
                     <button type="button" className='user-profile-submit' onClick={saveDetails}>Submit</button>
-                    <button type="button" className='user-profile-btn'>Save as default</button>
+                    <button type="button" className='user-profile-btn' onClick={saveAsDefault}>Save as default</button>
                 </div>
             </form>
         </div>
