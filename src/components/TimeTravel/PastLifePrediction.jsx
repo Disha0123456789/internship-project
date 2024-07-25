@@ -42,6 +42,7 @@ function PastLifePrediction() {
         console.log(dob);
         if (dob) {
           setBirthDate(formatDate(dob));
+          setNote(false);
         }
         else{
           setNote(true);
@@ -94,7 +95,7 @@ function PastLifePrediction() {
                     >
                       See Your Past Life
                     </button>
-                    {setNote && (
+                    {note && (
                     <div style ={{marginTop:'10px', fontSize:'x-small'}}>
                       Note: update your date of birth in the account to use it as default date of birth for this feature.
                     </div>

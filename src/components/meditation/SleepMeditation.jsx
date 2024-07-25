@@ -1,6 +1,11 @@
-import React from "react";
+import React, { useEffect }from "react";
 import "./meditation.css";
 const SleepMeditation = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const name = [
     "5 Minute Meditation Before Sleep",
     "Receive Messages In Your Sleep Guided Meditation",

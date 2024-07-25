@@ -1,6 +1,11 @@
-import React from "react";
+import React, { useEffect }from "react";
 import "./meditation.css";
 const FiveMinMeditation = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const name = [
     "5 Minute Meditation Anyone Can Do Anywhere",
     "5 Minute Meditation for Gratitude ",

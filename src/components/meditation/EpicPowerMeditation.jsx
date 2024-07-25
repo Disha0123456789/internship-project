@@ -1,6 +1,11 @@
-import React from "react";
+import React, { useEffect }from "react";
 import "./meditation.css";
 const EpicPowerMeditation = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const name = [
     "Universal Light Energy Healing",
     "White Light Protection: Warrior of Light (Epic Power-Meditation)",

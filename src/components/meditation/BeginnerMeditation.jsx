@@ -1,6 +1,11 @@
-import React from "react";
+import React, { useEffect }from "react";
 import "./meditation.css";
 const BeginnerMeditation = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const name = [
     "Day 1 - First Meditation ",
     "Day 2 - Mindfulness Meditation",
