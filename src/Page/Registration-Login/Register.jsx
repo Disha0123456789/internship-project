@@ -3,9 +3,14 @@ import { useNavigate, Link } from 'react-router-dom';
 import logo from "/assets/Registration-Login/images/divine logo vertical.png";
 import gIcon from "/assets/Registration-Login/images/google-color-icon.png";
 import fIcon from "/assets/Registration-Login/images/facebook-app-round-icon.png";
+import showPasswordImg from '/assets/Registration-Login/images/show_eye.png'; // Replace with the path to your show password image
+import hidePasswordImg from '/assets/Registration-Login/images/hide_eye.png';
 import "./Register.css";
 
 export default function Register() {
+
+  const navigate = useNavigate();
+
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
@@ -17,7 +22,16 @@ export default function Register() {
   const [verificationCode, setVerificationCode] = useState('');
   const [isVerificationPopupOpen, setIsVerificationPopupOpen] = useState(false);
   const [sentVerificationCode, setSentVerificationCode] = useState('');
-  const navigate = useNavigate();
+  const [isPasswordVisible, setIsPasswordVisible] = useState(false);
+  const [isConfirmPasswordVisible, setIsConfirmPasswordVisible] = useState(false);
+
+  const togglePasswordVisibility = () => {
+    setIsPasswordVisible(!isPasswordVisible);
+  };
+
+  const toggleConfirmPasswordVisibility = () => {
+    setIsConfirmPasswordVisible(!isConfirmPasswordVisible);
+  };
 
   const handleChange = (e) => {
     setFormData({
@@ -148,20 +162,28 @@ export default function Register() {
 
           <div className="form-row">
             <div className="input-data">
-              <input 
-                type="password" 
-                name="password" 
-                value={formData.password} 
-                onChange={handleChange} 
-                required 
+              <input
+                type={isPasswordVisible ? 'text' : 'password'}
+                name="password"
+                value={formData.password}
+                onChange={handleChange}
+                required
               />
               <div className="underline"></div>
               <label>Password</label>
+              {formData.password && (
+                <img
+                  src={isPasswordVisible ? hidePasswordImg : showPasswordImg}
+                  alt={isPasswordVisible ? 'Hide password' : 'Show password'}
+                  className="toggle-password-register"
+                  onClick={togglePasswordVisibility}
+                />
+              )}
             </div>
 
             <div className="input-data">
               <input 
-                type="password" 
+                type={isConfirmPasswordVisible ? 'text' : 'password'}
                 name="confirmPassword" 
                 value={formData.confirmPassword} 
                 onChange={handleChange} 
@@ -169,6 +191,14 @@ export default function Register() {
               />
               <div className="underline"></div>
               <label>Confirm Password</label>
+              {formData.confirmPassword && (
+                <img
+                  src={isConfirmPasswordVisible ? hidePasswordImg : showPasswordImg}
+                  alt={isConfirmPasswordVisible ? 'Hide password' : 'Show password'}
+                  className="toggle-password-register"
+                  onClick={toggleConfirmPasswordVisibility}
+                />
+              )}
             </div>
           </div>
 

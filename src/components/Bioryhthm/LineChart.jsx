@@ -16,7 +16,11 @@ const formatDate = (isoDateString) => {
 function LineChart() {
   const [birthDate, setBirthDate] = useState("");
   const navigate = useNavigate();
-  const [note, setNote] = useState(false);
+  const [note, setNote] = useState(true);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   useEffect(() => {
     const fetchUserData = async () => {
@@ -44,9 +48,7 @@ function LineChart() {
           setBirthDate(formatDate(dob));
           setNote(false);
         }
-        else{
-          setNote(true);
-        }
+
       } catch (error) {
         console.error('Error fetching user data:', error);
       }
@@ -101,7 +103,7 @@ function LineChart() {
                       Get your Biorhythm
                     </button>
                     {note && (
-                    <div style ={{marginTop:'10px', fontSize:'x-small'}}>
+                    <div style ={{marginTop:'10px', fontSize:'small'}}>
                       Note: update your date of birth in the account to use it as default date of birth for this feature.
                     </div>
                     )}

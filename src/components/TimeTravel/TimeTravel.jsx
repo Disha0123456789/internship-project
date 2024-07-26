@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useEffect }from "react";
 import "./TimeTravel.css";
-import { IoIosArrowBack } from "react-icons/io";
 import { useNavigate } from "react-router-dom";
 
 function TimeTravel() {
   const navigate = useNavigate();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="Travel-container">
       {/*<IoIosArrowBack onClick={() => navigate("../")} className="backicon" /> */}

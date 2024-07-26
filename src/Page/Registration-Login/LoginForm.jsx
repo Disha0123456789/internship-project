@@ -3,6 +3,8 @@ import './LoginForm.css';
 import google from '/assets/Registration-Login/images/google-icon.png';
 import facebook from '/assets/Registration-Login/images/facebook-icon.png';
 import logo from '/assets/Registration-Login/images/logo.png';
+import showPasswordImg from '/assets/Registration-Login/images/show_eye.png'; // Replace with the path to your show password image
+import hidePasswordImg from '/assets/Registration-Login/images/hide_eye.png';
 import { Link, useNavigate } from 'react-router-dom';
 
 function LoginForm() {
@@ -17,6 +19,11 @@ function LoginForm() {
   const [verificationCode, setVerificationCode] = useState('');
   const [isVerificationPopupOpen, setIsVerificationPopupOpen] = useState(false);
   const [sentVerificationCode, setSentVerificationCode] = useState('');
+  const [isPasswordVisible, setIsPasswordVisible] = useState(false);
+
+  const togglePasswordVisibility = () => {
+    setIsPasswordVisible(!isPasswordVisible);
+  };
 
   const handleLoginSubmit = async (e) => {
     e.preventDefault();
@@ -140,9 +147,23 @@ function LoginForm() {
           </div>
           <div className='flex-div'>
             <div className='input-email-password'>
-              <input id='password' type="password" required value={password} onChange={(e) => setPassword(e.target.value)} />
+              <input
+                id='password'
+                type={isPasswordVisible ? 'text' : 'password'}
+                required
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+              />
               <div className="underline"></div>
               <label>Password</label>
+              {password && (
+                <img
+                  src={isPasswordVisible ? hidePasswordImg : showPasswordImg}
+                  alt={isPasswordVisible ? 'Hide password' : 'Show password'}
+                  className="toggle-password"
+                  onClick={togglePasswordVisibility}
+                />
+              )}
             </div>
             <a href='#' className='forgot-password' onClick={() => setShowForgotPasswordPopup(true)}>Forgot Password?</a>
           </div>
