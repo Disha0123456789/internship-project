@@ -1,7 +1,12 @@
-import React from "react";
+import React, { useEffect }from "react";
 import './SleepMusic.css';
 
 const SleepMusic = () => {
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
+
     const name = [
         "Ocean Waves Relaxing Music",
         "Stress Relief Sleeping Music",

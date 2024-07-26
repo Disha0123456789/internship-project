@@ -1,9 +1,13 @@
-import React from 'react'
+import React, { useEffect } from 'react';
 import './DreamHistoryList.css'
 import { useNavigate } from "react-router-dom";
 
 export default function DreamHistoryList() {
   const navigate = useNavigate();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const cards = [
     { title: 'Dream Title', date: '20 Feb 2024', description: "Through face reading, we discern ancestral origins, tracing ineage to ancient roots. The contours of your face whisper tales of ancestry, revealing a rich tapes try of heritage." },

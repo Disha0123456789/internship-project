@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import './DreamBook.css'
 import DatePicker from 'react-datepicker'; // Import the date picker component
 import 'react-datepicker/dist/react-datepicker.css'; // Import the default styles for the date picker
@@ -11,6 +11,11 @@ export default function DreamBook() {
     const [day, setDay] = useState('');
     const [month, setMonth] = useState('');
     const [year, setYear] = useState('');
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
+
     // Function to handle date selection
     const handleDateChange = date => {
         // Update the selectedDate state

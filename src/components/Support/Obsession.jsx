@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect }from "react";
 import "./support.css";
 import { useNavigate } from "react-router-dom";
 import { IoIosArrowBack } from "react-icons/io";
@@ -7,6 +7,11 @@ const Obsession = () => {
   const img =
     "https://images.pexels.com/photos/897817/pexels-photo-897817.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1";
   const navigate = useNavigate();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="Main-page">
       <div className="Container">

@@ -1,7 +1,12 @@
-import React from 'react'
+import React, { useEffect } from 'react';
 import './DreamResult.css';
 
 export default function DreamResult() {
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
+      
     return (
         <div className="dream-result">
             <div className="Head-Text">

@@ -1,9 +1,14 @@
-import React from "react";
+import React, { useEffect }from "react";
 import "./support.css";
 import { useNavigate } from "react-router-dom";
 import { IoIosArrowBack } from "react-icons/io";
 const StressManagement = () => {
   const navigate = useNavigate();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const head = "Stress Management";
   const img =
     "https://images.pexels.com/photos/626165/pexels-photo-626165.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1";
