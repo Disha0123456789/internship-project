@@ -110,6 +110,7 @@ const FuturePrediction = () => {
                 </div>
 
                 {birthDate && (
+                  <>
                   <div className="button-wrapper">
                     <button
                       type="button"
@@ -126,11 +127,12 @@ const FuturePrediction = () => {
                       Yearly
                     </button>
                   </div>
-                )}
-                {note && (
-                  <div style ={{marginTop:'10px', fontSize:'small'}}>
-                    Note: update your date of birth in the account to use it as default date of birth for this feature.
-                  </div>
+                  {note && (
+                    <div style ={{marginTop:'10px', fontSize:'small'}}>
+                      Note: update your date of birth in the account to use it as default date of birth for this feature.
+                    </div>
+                  )}
+                  </>
                 )}
               </div>
             </form>
