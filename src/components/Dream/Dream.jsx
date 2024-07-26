@@ -1,8 +1,12 @@
-import React from 'react'
+import React, { useEffect }from "react";
 import './Dream.css';
 import { useNavigate } from "react-router-dom";
 
 export default function Dream() {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
+
     return (
         <div className='dream'>
             <div className="Head-Text">

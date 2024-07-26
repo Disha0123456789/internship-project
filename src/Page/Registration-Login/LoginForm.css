@@ -39,7 +39,17 @@ h1{
 .input-email-password{
     display: flex;
     position: relative;
+    align-items: center;
     height: 40px;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 5px;
+    cursor: pointer;
+    display: none; /* Hide by default */
+    width: 24px; /* Adjust width as needed */
+    height: 24px; /* Adjust height as needed */
 }
 #email, #password{
     border: none;
@@ -226,4 +236,7 @@ hr{
     .popup-content-login {
         width: 100%;
     }
+    .toggle-password {
+        display: block; /* Show on mobile */
+      }
 }

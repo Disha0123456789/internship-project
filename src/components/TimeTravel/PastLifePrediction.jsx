@@ -16,7 +16,7 @@ const formatDate = (isoDateString) => {
 function PastLifePrediction() {
   const [birthDate, setBirthDate] = useState("");
   const navigate = useNavigate();
-  const [note, setNote] = useState(false);
+  const [note, setNote] = useState(true);
 
   useEffect(() => {
     const fetchUserData = async () => {
@@ -44,9 +44,7 @@ function PastLifePrediction() {
           setBirthDate(formatDate(dob));
           setNote(false);
         }
-        else{
-          setNote(true);
-        }
+
       } catch (error) {
         console.error('Error fetching user data:', error);
       }
@@ -96,7 +94,7 @@ function PastLifePrediction() {
                       See Your Past Life
                     </button>
                     {note && (
-                    <div style ={{marginTop:'10px', fontSize:'x-small'}}>
+                    <div style ={{marginTop:'10px', fontSize:'small'}}>
                       Note: update your date of birth in the account to use it as default date of birth for this feature.
                     </div>
                     )}

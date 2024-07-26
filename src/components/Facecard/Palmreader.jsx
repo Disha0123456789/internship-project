@@ -1,4 +1,4 @@
-import React, { useRef, useState, useCallback } from "react";
+import React, { useRef, useState, useCallback, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from 'axios';
 import PalmIcon from '/assets/2nd-row-reading/PalmReading/images/palm-scanner.png';
@@ -17,6 +17,10 @@ function Palmreader() {
   const [showWebcam, setShowWebcam] = useState(false);
   const [useFrontCamera, setUseFrontCamera] = useState(true);
   
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const handleImageClick = () => {
     inputRef.current.click();
   };
@@ -81,6 +85,7 @@ function Palmreader() {
   };
 
   return (
+    <div className="face-container">
     <div className="face-reader">
       <h1 className="face-text">Palm Reading</h1>
       {showWarning && (
@@ -137,6 +142,7 @@ function Palmreader() {
           </div>
         </div>
       )}
+    </div>
     </div>
   );
 }

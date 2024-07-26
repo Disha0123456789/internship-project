@@ -1,4 +1,4 @@
-import React, { useRef, useState, useCallback } from "react";
+import React, { useRef, useState, useCallback, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import ImageRecognitionLogo from '/assets/2nd-row-reading/FaceReading/images/facial-recognition.png';
 import ImageProfile from '/assets/2nd-row-reading/FaceReading/images/face-profile.png';
@@ -18,6 +18,10 @@ function Faceread() {
   const [warningMessage, setWarningMessage] = useState("");
   const [showWebcam, setShowWebcam] = useState(false);
   const [useFrontCamera, setUseFrontCamera] = useState(true);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const handleImageClick = () => {
     inputRef.current.click();
@@ -94,6 +98,7 @@ function Faceread() {
   };
 
   return (
+    <div className="face-container">
     <div className="face-reader">
       <h1 className="face-text">Face Reading</h1>
       {showWarning && (
@@ -167,6 +172,7 @@ function Faceread() {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 }

@@ -32,6 +32,8 @@ form .form-row .input-data{
   height: 40px;
   margin: 0 20px;
   position: relative;
+  display: flex;
+  align-items: center;
 }
 form .form-row .textarea{
   height: 70px;
@@ -60,7 +62,14 @@ form .form-row .textarea{
   font-size: 16px;
   transition: all 0.3s ease;
 }
-
+.toggle-password-register {
+  position: absolute;
+  right: 70px;
+  cursor: pointer;
+  display: none; /* Hide by default */
+  width: 24px; /* Adjust width as needed */
+  height: 24px; /* Adjust height as needed */
+}
 .form-row submit-btn{
   justify-content: center;
   text-align: center;
@@ -274,5 +283,8 @@ hr{
   }
   .register-terms-message {
     width: 260px;
+  }
+  .toggle-password-register {
+    display: block; /* Show on mobile */
   }
 }

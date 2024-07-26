@@ -75,6 +75,18 @@ input:hover{
   overflow: hidden;
   margin-top: 20px;
 }
+
+.face-container{
+  height: 100vh;
+  padding-top: 2rem;
+}
+.face-reader{
+  background-color: #FDF2F8;
+  width: 80vw;
+  padding-bottom: 20px;
+  border-radius: 20px;
+}
+
 .face-input-section {
   display: flex;
   width: 78%;
@@ -89,13 +101,6 @@ input:hover{
   align-items: center;
   justify-content: center;
   padding: 20px;
-}
-
-.face-reader{
-  background-color: #FDF2F8;
-  width: 80vw;
-  padding-bottom: 20px;
-  border-radius: 20px;
 }
 
 .img-display-after {
