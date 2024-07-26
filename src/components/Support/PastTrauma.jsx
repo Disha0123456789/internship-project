@@ -1,9 +1,14 @@
-import React from "react";
+import React, { useEffect }from "react";
 import "./support.css";
 import { useNavigate } from "react-router-dom";
 import { IoIosArrowBack } from "react-icons/io";
 const PastTrauma = () => {
   const navigate = useNavigate();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const head = "Past Trauma";
   const img =
     "https://imgs.search.brave.com/Nb5-W0I6mrhLm6rdA4hqHUb-hf5yHG48JTdJGkWcSB0/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9mZW1t/YWdhemluZS5jb20v/d3AtY29udGVudC91/cGxvYWRzLzIwMTgv/MDcvaW50ZXJnZW5y/YXRpb25hbC10cmF1/bWEtMS5wbmc";

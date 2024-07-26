@@ -1,9 +1,14 @@
-import React from "react";
+import React, { useEffect }from "react";
 import "./support.css";
 import { useNavigate } from "react-router-dom";
 import { IoIosArrowBack } from "react-icons/io";
 const WorkLifeBalance = () => {
   const navigate = useNavigate();
+  
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const head = "Work Life Balance";
   const img =
     "https://images.pexels.com/photos/269129/pexels-photo-269129.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1";

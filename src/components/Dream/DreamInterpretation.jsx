@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Select from 'react-select';
 import './DreamInterpretation.css';
 import queryData from './Query.json'; // Import the JSON file
@@ -7,6 +7,10 @@ import { useNavigate } from "react-router-dom";
 function DreamInterpretation() {
     const navigate = useNavigate();
     const [selectedDream, setSelectedDream] = useState("");
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
 
     // Function to interpret the selected dream
     function interpretDream() {
