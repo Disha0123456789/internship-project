@@ -11,7 +11,7 @@ export default function DreamHistory() {
         window.scrollTo(0, 0);
         const fetchDream = async () => {
             try {
-                const response = await axios.get(`https://divineconnection.co.in/api/dreams/${id}`); // Updated the API path
+                const response = await axios.get(`https://divineconnection.co.in/dreams/${id}`); // Updated the API path
                 setDream(response.data);
             } catch (error) {
                 console.error('Error fetching dream:', error);
