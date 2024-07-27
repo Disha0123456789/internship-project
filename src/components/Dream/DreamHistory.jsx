@@ -29,6 +29,9 @@ export default function DreamHistory() {
         return <div>Loading...</div>;
     }
 
+    // Convert newline characters to <br /> tags
+    const formattedContent = dream.content.replace(/\n/g, '<br />');
+
     return (
         <div className="dream-result">
             <div className="Head-Text">
@@ -37,7 +40,8 @@ export default function DreamHistory() {
             <div className='dreamcard-container'>
                 <div className="dream-result-card">
                     <h2 className="title">{dream.title}</h2>
-                    <p className="description">{dream.content}</p>
+                    {/* Render HTML content */}
+                    <p className="description" dangerouslySetInnerHTML={{ __html: formattedContent }}></p>
                 </div>
             </div>
             <div className='margin-div'></div>
