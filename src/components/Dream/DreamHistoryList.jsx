@@ -11,7 +11,12 @@ export default function DreamHistoryList() {
         window.scrollTo(0, 0);
         const fetchDreams = async () => {
             try {
-                const response = await axios.get('https://divineconnection.co.in/dreams'); // Updated the API path
+                const token = localStorage.getItem("authToken");
+                const response = await axios.get('https://divineconnection.co.in/dreams', {
+                    headers: {
+                        'Authorization': `Bearer ${token}`
+                    }
+                });
                 setDreams(response.data);
             } catch (error) {
                 console.error('Error fetching dreams:', error);
