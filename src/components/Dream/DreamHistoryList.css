@@ -28,7 +28,11 @@
     grid-template-columns: auto auto;
     column-gap: 20px;
 }
-
+.dream-delete-btn-container{
+    width: 70%;
+    display: flex;
+    justify-content: end;
+}
 .card {
     width: calc(50% - 20px);
     /* Two cards per row with a little space in between */
@@ -115,5 +119,8 @@
         /* border: 1px solid black; */
         /* margin-left: 150px;
         margin-right: 150px; */
+    }
+    .dream-delete-btn-container{
+        width: 75%;
     }
 }

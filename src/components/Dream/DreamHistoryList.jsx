@@ -74,14 +74,17 @@ export default function DreamHistoryList() {
             <div className='Head-Text'>
                 <h1>Dream History</h1>
             </div>
-            <button className='select-button' onClick={isSelecting ? handleDeleteClick : handleSelectClick}>
-                {isSelecting ? 'Delete' : 'Select'}
-            </button>
             {dreams.length === 0 ? (
                 <div className='no-dreams-message'>
                     <p>No dreams found in history. Save the first dream to make it a memory.</p>
                 </div>
             ) : (
+                <>
+                <div className='dream-delete-btn-container'>
+                    <button className='select-button' onClick={isSelecting ? handleDeleteClick : handleSelectClick} style ={{backgroundColor:'gray'}}>
+                        {isSelecting ? 'Delete' : 'Select'}
+                    </button>
+                </div>
                 <div className="card-history-container">
                     {dreams.map((dream) => (
                         <div className="card-history" key={dream._id} onClick={() => !isSelecting && navigate(`/dream_history/${dream._id}`)}>
@@ -90,6 +93,7 @@ export default function DreamHistoryList() {
                                     type="checkbox" 
                                     checked={selectedDreams.has(dream._id)} 
                                     onChange={() => handleCheckboxChange(dream._id)} 
+                                    style ={{marginLeft:'10px'}}
                                 />
                             )}
                             <div className='card-top-container'>
@@ -101,6 +105,7 @@ export default function DreamHistoryList() {
                         </div>
                     ))}
                 </div>
+                </>
             )}
         </div>
     );
