@@ -9,6 +9,7 @@ export default function DreamHistoryList() {
 
     useEffect(() => {
         window.scrollTo(0, 0);
+        
         const fetchDreams = async () => {
             try {
                 const token = localStorage.getItem("authToken");

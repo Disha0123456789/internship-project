@@ -11,7 +11,12 @@ export default function DreamHistory() {
         window.scrollTo(0, 0);
         const fetchDream = async () => {
             try {
-                const response = await axios.get(`https://divineconnection.co.in/dreams/${id}`); // Updated the API path
+                const token = localStorage.getItem("authToken");
+                const response = await axios.get(`https://divineconnection.co.in/dreams/${id}`, {
+                    headers: {
+                        'Authorization': `Bearer ${token}`
+                    }
+                });
                 setDream(response.data);
             } catch (error) {
                 console.error('Error fetching dream:', error);
@@ -37,5 +42,5 @@ export default function DreamHistory() {
             </div>
             <div className='margin-div'></div>
         </div>
-    )
+    );
 }
