@@ -98,9 +98,12 @@ function Header() {
             <Nav.Link onClick={() => navigate("/account_page")} className="me-3 nav-menu">
               <AccountCircleRoundedIcon style={{ color: "black" }} />
             </Nav.Link>
+
+            {/** Notification
             <Nav.Link className="me-3 nav-menu">
               <NotificationsRoundedIcon style={{ color: "black" }} />
             </Nav.Link>
+            */}
           </Nav>
         </Container>
       </Navbar>
@@ -120,12 +123,17 @@ function Header() {
           <Nav.Link className="sidebar-nav" onClick={() => navigate("/account_page")}>
             Account <AccountCircleRoundedIcon />
           </Nav.Link>
+
+          {/** Notification
           <Nav.Link className="sidebar-nav">
             Notifications <NotificationsRoundedIcon />
           </Nav.Link>
+          */}
+          
           <Nav.Link className="sidebar-nav" onClick={() => navigate("/pooja_page")}>
             Shopping <ShoppingCartRoundedIcon />
           </Nav.Link>
+
           {isLoggedIn && (
             <Nav.Link className="sidebar-nav" onClick={handleLogoutClick}>
               Logout
