@@ -105,7 +105,7 @@ const NewFutureBox = () => {
 
       <div className="future-box-container">
         <h1 className="future-box-heading">
-          Lets Go To Another Dimension!
+          Let's Go To Another Dimension!
         </h1>
         <div className="future-grid-container grid-container-lg">
           {/*<div className="hidden lg:block lg:col-span-1"></div> */}

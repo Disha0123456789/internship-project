@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import './DreamHistory.css'
+import './DreamHistory.css';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
 
@@ -11,8 +11,8 @@ export default function DreamHistory() {
         window.scrollTo(0, 0);
         const fetchDream = async () => {
             try {
-                const response = await axios.get(`https://divineconnection.co.in/dreams/${id}`);
-                setDreamDream(response.data);
+                const response = await axios.get(`https://divineconnection.co.in/api/dreams/${id}`); // Updated the API path
+                setDream(response.data);
             } catch (error) {
                 console.error('Error fetching dream:', error);
             }
