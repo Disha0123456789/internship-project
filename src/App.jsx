@@ -232,7 +232,7 @@ function App() {
         <Route path="/dream_result" element={<DreamResult />} />
         <Route path="/dream_book" element={<DreamBook />} />
         <Route path="/dream_history_list" element={<DreamHistoryList />} />
-        <Route path="/dream_history" element={<DreamHistory />} />
+        <Route path="/dream_history/id:" element={<DreamHistory />} />
         <Route path="/sleep_music" element={<SleepMusic />} />
 
         {/* Numerology  <Route path="/Numerology" element={<Numerology />} />*/}
