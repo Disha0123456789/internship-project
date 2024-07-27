@@ -85,7 +85,7 @@ function LoginForm() {
         //setShowNewPasswordFields(true);
       } else {
         const result = await response.json();
-        alert(result.message);
+        alert("No user was found registered with this mail ID.");
       }
     } catch (error) {
       console.error('Error:', error);

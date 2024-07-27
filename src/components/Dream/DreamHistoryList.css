@@ -86,6 +86,21 @@
     transition: all 0.5s ease-in-out;
 }
 
+.no-dreams-message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 80px); /* Adjust based on header height */
+    text-align: center;
+    font-size: 1.2em;
+    color: #555;
+    padding: 20px;
+}
+
+.no-dreams-message p {
+    margin: 0;
+}
+
 @media (max-width: 968px) {
     .card-history-container{
         width: 80%;
