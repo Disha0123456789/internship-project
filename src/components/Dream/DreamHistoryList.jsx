@@ -1,43 +1,42 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import './DreamHistoryList.css'
 import { useNavigate } from "react-router-dom";
+import axios from 'axios';
 
 export default function DreamHistoryList() {
-  const navigate = useNavigate();
+    const navigate = useNavigate();
+    const [dreams, setDreams] = useState([]);
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
+    useEffect(() => {
+      window.scrollTo(0, 0);
+      const fetchDreams = async () => {
+          try {
+              const response = await axios.get('https://divineconnection.co.in/dreams');
+              setDreams(response.data);
+          } catch (error) {
+              console.error('Error fetching dreams:', error);
+          }
+      };
+      fetchDreams();
   }, []);
 
-  const cards = [
-    { title: 'Dream Title', date: '20 Feb 2024', description: "Through face reading, we discern ancestral origins, tracing ineage to ancient roots. The contours of your face whisper tales of ancestry, revealing a rich tapes try of heritage." },
-    { title: 'Dream Title', date: '20 Feb 2024', description: "Through face reading, we discern ancestral origins, tracing ineage to ancient roots. The contours of your face whisper tales of ancestry, revealing a rich tapes try of heritage." },
-    { title: 'Dream Title', date: '20 Feb 2024', description: "Through face reading, we discern ancestral origins, tracing ineage to ancient roots. The contours of your face whisper tales of ancestry, revealing a rich tapes try of heritage." },
-    { title: 'Dream Title', date: '20 Feb 2024', description: "Through face reading, we discern ancestral origins, tracing ineage to ancient roots. The contours of your face whisper tales of ancestry, revealing a rich tapes try of heritage." },
-    { title: 'Dream Title', date: '20 Feb 2024', description: "Through face reading, we discern ancestral origins, tracing ineage to ancient roots. The contours of your face whisper tales of ancestry, revealing a rich tapes try of heritage." },
-    { title: 'Dream Title', date: '20 Feb 2024', description: "Through face reading, we discern ancestral origins, tracing ineage to ancient roots. The contours of your face whisper tales of ancestry, revealing a rich tapes try of heritage." },
-    { title: 'Dream Title', date: '20 Feb 2024', description: "Through face reading, we discern ancestral origins, tracing ineage to ancient roots. The contours of your face whisper tales of ancestry, revealing a rich tapes try of heritage." },
-    { title: 'Dream Title', date: '20 Feb 2024', description: "Through face reading, we discern ancestral origins, tracing ineage to ancient roots. The contours of your face whisper tales of ancestry, revealing a rich tapes try of heritage." },
-    // Add more cards as needed
-  ];
-
-  return (
-    <div className='dreamhistory-list'>
-      <div className='Head-Text'>
-        <h1>Dream History</h1>
-      </div>
-      <div onClick={() => navigate("/dream_history")} className="card-container">
-        {cards.map((card, index) => (
-          <div className="card" key={index}>
-            <div className='card-top-container'>
-              <h3 className="card-title">{card.title}</h3>
-              <p>{card.date}</p>
+    return (
+        <div className='dreamhistory-list'>
+            <div className='Head-Text'>
+                <h1>Dream History</h1>
             </div>
-              <div className='divider'></div>
-            <p className="card-description">{card.description}</p>
-          </div>
-        ))}
-      </div>
-    </div>
-  );
+            <div className="card-history-container">
+                {dreams.map((dream, index) => (
+                    <div className="card-history" key={index} onClick={() => navigate(`/dream_history/${dream.id}`)}>
+                        <div className='card-top-container'>
+                            <h3 className="card-title">{dream.title}</h3>
+                            <p>{new Date(dream.date).toLocaleDateString()}</p>
+                        </div>
+                        <div className='divider-history'></div>
+                        <p className="card-description">{dream.content.substring(0, 100)}...</p>
+                    </div>
+                ))}
+            </div>
+        </div>
+    );
 }

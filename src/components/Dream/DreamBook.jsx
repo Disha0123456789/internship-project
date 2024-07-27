@@ -1,41 +1,57 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect } from 'react';
 import './DreamBook.css'
-import DatePicker from 'react-datepicker'; // Import the date picker component
-import 'react-datepicker/dist/react-datepicker.css'; // Import the default styles for the date picker
+import DatePicker from 'react-datepicker';
+import 'react-datepicker/dist/react-datepicker.css';
 import { useNavigate } from "react-router-dom";
+import axios from 'axios'; // Import axios for making API requests
 
 export default function DreamBook() {
     const navigate = useNavigate();
-    const [selectedDate, setSelectedDate] = useState(''); // State variable to store the selected date
-    const [showDatePicker, setShowDatePicker] = useState(false); // State variable to toggle the visibility of the date picker
+    const [selectedDate, setSelectedDate] = useState(''); 
+    const [showDatePicker, setShowDatePicker] = useState(false);
     const [day, setDay] = useState('');
     const [month, setMonth] = useState('');
     const [year, setYear] = useState('');
+    const [dreamTitle, setDreamTitle] = useState('');
+    const [dreamContent, setDreamContent] = useState('');
 
     useEffect(() => {
         window.scrollTo(0, 0);
-      }, []);
+    }, []);
 
-    // Function to handle date selection
     const handleDateChange = date => {
-        // Update the selectedDate state
         const day = date.getDate();
         const month = date.toLocaleString('default', { month: 'short' });
         const year = date.getFullYear();
-        // setSelectedDate(date);
         setDay(day);
         setMonth(month);
         setYear(year);
-        console.log(day);
-        console.log(year);
-        setShowDatePicker(false); // Hide the date picker after selecting a date
+        setSelectedDate(date);
+        setShowDatePicker(false);
     };
+
+    const handleSaveDream = async () => {
+        try {
+            const response = await axios.post('https://divineconnection.co.in/dreams', {
+                date: selectedDate,
+                title: dreamTitle,
+                content: dreamContent
+            });
+            if (response.status === 200) {
+                // Navigate to Dream History List
+                navigate('/dream_history_list');
+            }
+        } catch (error) {
+            console.error('Error saving dream:', error);
+        }
+    };
+
     return (
         <div className='dreambook'>
             <div className="Head-Text">
                 <h1>Dream Book</h1>
             </div>
-            <p className='dreambook-messg'>“Track , Analyze, and Explore your Dreams Anytime by Adding them to your Dream Book”</p>
+            <p className='dreambook-messg'>“Track, Analyze, and Explore your Dreams Anytime by Adding them to your Dream Book”</p>
             <div className='dream-input-containers'>
                 <div className='dreamhistory-button-container'>
                     <button onClick={() => navigate("/dream_history_list")} className="dream-history-btn">Dream History</button>
@@ -63,19 +79,19 @@ export default function DreamBook() {
                     <div className='detail-container'>
                         <p className='detail-title'>Dream Title:</p>
                         <div className='date-input-container '>
-                            <input type="text" className='dreamtitle-input' />
+                            <input type="text" className='dreamtitle-input' value={dreamTitle} onChange={e => setDreamTitle(e.target.value)} />
                         </div>
                     </div>
 
                     <div>
                         <p className='detail-title'>Write Your Dream:</p>
                         <div className='date-input-container '>
-                            <textarea className='textarea' />
+                            <textarea className='textarea' value={dreamContent} onChange={e => setDreamContent(e.target.value)} maxLength={10000} />
                         </div>
                     </div>
 
                     <div className="save-btn-container">
-                        <button className="savedream-btn">Save Dream</button>
+                        <button className="savedream-btn" onClick={handleSaveDream}>Save Dream</button>
                     </div>
                 </div>
             </div>
