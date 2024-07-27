@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect }from "react";
 import "./AstroMain.css";
 import { useNavigate } from "react-router-dom";
 import image from '/assets/3rd-row/Astrology/images/Educational Guidance.png';
@@ -6,6 +6,10 @@ function EducationalGuidance() {
   const navigate = useNavigate();
   const head = "Educational Guidance";
   const img = image;
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div>
       <div className="astro-Container">

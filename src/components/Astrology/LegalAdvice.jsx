@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect }from "react";
 import "./AstroMain.css";
 import { useNavigate } from "react-router-dom";
 import image from '/assets/3rd-row/Astrology/images/Legal Advice.png';
@@ -6,6 +6,10 @@ function LegalAdvice() {
   const navigate = useNavigate();
   const head = "Legal Advice";
   const img = image;
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div>
       <div className="astro-Container">
