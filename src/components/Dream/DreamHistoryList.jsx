@@ -81,7 +81,7 @@ export default function DreamHistoryList() {
             ) : (
                 <>
                 <div className='dream-delete-btn-container'>
-                    <button className='select-button' onClick={isSelecting ? handleDeleteClick : handleSelectClick} style ={{backgroundColor:'gray'}}>
+                    <button className='select-button' onClick={isSelecting ? handleDeleteClick : handleSelectClick} style ={{backgroundColor:'lightgray'}}>
                         {isSelecting ? 'Delete' : 'Select'}
                     </button>
                 </div>
