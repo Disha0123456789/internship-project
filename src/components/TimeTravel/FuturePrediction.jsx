@@ -66,6 +66,7 @@ const FuturePrediction = () => {
         console.log(dob);
         if (dob) {
           setBirthDate(formatDate(dob));
+          calculateZodiacSign(formatDate(dob));
           setNote(false);
         }
 

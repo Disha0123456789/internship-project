@@ -119,16 +119,17 @@
   border-radius: 1em;
 }
 
+.indicator {
+  position: absolute;
+  top: 20rem;
+  left: 49%;
+}
+
 /* Responsive styles */
 @media screen and (max-width: 1980px) {
   .score-indicator {
     width: 90%;
   }
-}
-.indicator {
-  position: absolute;
-  top: 20rem;
-  left: 49%;
 }
 
 @media screen and (max-width: 460px) {
@@ -175,7 +176,7 @@
     bottom: 8px;
   }
   .detailText {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
 }
 

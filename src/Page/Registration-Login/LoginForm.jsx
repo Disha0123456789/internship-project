@@ -228,7 +228,7 @@ function LoginForm() {
           </div>
         </div>
       )}
-      \
+  
       {showNewPasswordFields && (
         <div className='popup-login'>
           <div className='popup-content-login'>
