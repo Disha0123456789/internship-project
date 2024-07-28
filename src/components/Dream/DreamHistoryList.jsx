@@ -81,19 +81,19 @@ export default function DreamHistoryList() {
             ) : (
                 <>
                 <div className='dream-delete-btn-container'>
-                    <button className='select-button' onClick={isSelecting ? handleDeleteClick : handleSelectClick} style ={{backgroundColor:'lightgray'}}>
+                    <button className='select-button' onClick={isSelecting ? handleDeleteClick : handleSelectClick} style={{ backgroundColor: 'lightgray' }}>
                         {isSelecting ? 'Delete' : 'Select'}
                     </button>
                 </div>
                 <div className="card-history-container">
-                    {dreams.map((dream) => (
+                    {dreams.slice().reverse().map((dream) => (
                         <div className="card-history" key={dream._id} onClick={() => !isSelecting && navigate(`/dream_history/${dream._id}`)}>
                             {isSelecting && (
                                 <input 
                                     type="checkbox" 
                                     checked={selectedDreams.has(dream._id)} 
                                     onChange={() => handleCheckboxChange(dream._id)} 
-                                    style ={{marginLeft:'10px'}}
+                                    style={{ marginLeft: '10px' }}
                                 />
                             )}
                             <div className='card-top-container'>
