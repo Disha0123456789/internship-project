@@ -15,34 +15,17 @@ function MatchIndicator() {
     para3: ""
   });
 
-  const [scoreProps, setScoreProps] = useState({
-    width: 300,
-    lineWidth: 65,
-    lineGap: 0,
-    maxValue: 36,
-    maxAngle: 180
-  });
+  const getScoreProps = (windowWidth) => {
+    return windowWidth < 460
+      ? { width: 200, lineWidth: 40, lineGap: 0, maxValue: 36, maxAngle: 180 }
+      : { width: 300, lineWidth: 65, lineGap: 0, maxValue: 36, maxAngle: 180 };
+  };
+
+  const [scoreProps, setScoreProps] = useState(getScoreProps(window.innerWidth));
 
   useEffect(() => {
     const handleResize = () => {
-      const windowWidth = window.innerWidth;
-      if (windowWidth < 460) {
-        setScoreProps({
-          width: 200,
-          lineWidth: 40,
-          lineGap: 0,
-          maxValue: 36,
-          maxAngle: 180
-        });
-      } else {
-        setScoreProps({
-          width: 300,
-          lineWidth: 65,
-          lineGap: 0,
-          maxValue: 36,
-          maxAngle: 180
-        });
-      }
+      setScoreProps(getScoreProps(window.innerWidth));
     };
 
     const handleChange = () => {
@@ -66,7 +49,6 @@ function MatchIndicator() {
     };
 
     handleChange();
-    handleResize();
     window.addEventListener('resize', handleResize);
 
     return () => {
