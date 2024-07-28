@@ -1,8 +1,35 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import Select from 'react-select';
+import { FixedSizeList as List } from 'react-window';
 import './DreamInterpretation.css';
 import queryData from './Query.json'; // Import the JSON file
 import { useNavigate } from "react-router-dom";
+
+// VirtualizedMenuList component for react-window
+const VirtualizedMenuList = ({ options, children, getValue }) => {
+    const height = 300;
+    const itemHeight = 35;
+    const [value] = getValue();
+    const initialOffset = options.indexOf(value) * itemHeight;
+
+    const Row = ({ index, style }) => (
+        <div style={style}>
+            {children[index]}
+        </div>
+    );
+
+    return (
+        <List
+            height={height}
+            itemCount={children.length}
+            itemSize={itemHeight}
+            initialScrollOffset={initialOffset}
+            width="100%"
+        >
+            {Row}
+        </List>
+    );
+};
 
 function DreamInterpretation() {
     const navigate = useNavigate();
@@ -10,7 +37,7 @@ function DreamInterpretation() {
 
     useEffect(() => {
         window.scrollTo(0, 0);
-      }, []);
+    }, []);
 
     // Function to interpret the selected dream
     function interpretDream() {
@@ -42,7 +69,7 @@ function DreamInterpretation() {
     }
 
     // Options for React Select
-    const options = queryData.map(item => ({ value: item.word, label: item.word }));
+    const options = useMemo(() => queryData.map(item => ({ value: item.word, label: item.word })), []);
 
     return (
         <div className="dream-interpretation">
@@ -55,6 +82,7 @@ function DreamInterpretation() {
                         options={options}
                         onChange={handleDropdownChange}
                         defaultValue={{ value: '', label: 'Choose your last night dream here!..' }}
+                        components={{ MenuList: VirtualizedMenuList }}
                     />
                 </div>
                 <div id="chat-box"></div>
@@ -63,7 +91,7 @@ function DreamInterpretation() {
                 </div>
             </div>
         </div>
-    )
+    );
 }
 
 export default DreamInterpretation;
