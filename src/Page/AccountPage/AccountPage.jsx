@@ -39,6 +39,7 @@ const Form = () => {
   const [sentVerificationCode, setSentVerificationCode] = useState('');
   const [newEmail, setNewEmail] = useState('');
   const [isDeletePopupOpen, setIsDeletePopupOpen] = useState(false);
+  
   const formatDate = (isoDateString) => {
     if (!isoDateString) return '';
     const date = new Date(isoDateString);
@@ -266,6 +267,7 @@ const Form = () => {
             <img
               src={divineLogo}
               style={{ position: 'absolute', left: '7%', width: '80%' }}
+              className='Account-logo-img'
             />
           </div>
           <div className='Account-page-details'>

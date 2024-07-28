@@ -80,7 +80,6 @@ form .form-row .textarea{
   justify-content: center;
   align-items: center;
   width: 91%;
-  gap: 8px;
   flex-direction: column;
 }
 #register-submit{
@@ -256,7 +255,7 @@ hr{
     margin: 10px 20px !important;
   }
   .form-row-last{
-    margin-top: 20px;
+    margin-top: 10px;
   }
   .sign-up-icons{
     margin-top: 2% !important;
@@ -271,9 +270,6 @@ hr{
   .logo {
     width: 150px !important;
     height: 150px !important;
-  }
-  .form-row-last {
-    gap: 5px;
   }
   #register-submit{
     width: 260px;

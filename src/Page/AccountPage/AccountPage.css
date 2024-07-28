@@ -36,6 +36,7 @@
     width: 40%;
     display: flex;
     align-items: center;
+    min-height: 160px;
 }
 .Account-page-details{
     display: flex;
@@ -114,13 +115,23 @@
 }
 @media screen and (max-width: 468px){
     .account-title {
-        font-size: larger !important;
+        font-size: larger;
+        margin-top: 0px;
     }
     .change {
-        padding: 10px 5px !important;
+        padding: 10px 5px;
     }
     .saveNedit{
         margin-left: auto;
         margin-right: auto;
+    }
+    .Account-logo-img{
+        position: relative !important;
+        top: 0px !important;
+        left: 0% !important;
+        width: 100% !important;
+    }
+    .logo-background {
+        display: none;
     }
 }

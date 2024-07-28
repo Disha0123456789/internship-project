@@ -209,19 +209,21 @@ export default function Register() {
             </p>
             <p className='register-Register-link'>Already have an account ? <Link to="/login_page">Login</Link></p>
           </div>
-          <div className='login-text-two'>
-            <hr />
-            <p>or Signup With</p>
-            <hr />
-          </div>
-          <div className='sign-up-icons'>
-            <a href="https://g.co/kgs/BCKMD8f">
-              <img src={gIcon} alt="google" width={40} height={40} />
-            </a>
-            <a href='https://www.facebook.com/'>
-              <img src={fIcon} alt="facebook" width={40} height={40} />
-            </a>
-          </div>
+          {/** 
+            <div className='login-text-two'>
+              <hr />
+              <p>or Signup With</p>
+              <hr />
+            </div>
+            <div className='sign-up-icons'>
+              <a href="https://g.co/kgs/BCKMD8f">
+                <img src={gIcon} alt="google" width={40} height={40} />
+              </a>
+              <a href='https://www.facebook.com/'>
+                <img src={fIcon} alt="facebook" width={40} height={40} />
+              </a>
+            </div>
+          */}
         </form>
       </div>
 
