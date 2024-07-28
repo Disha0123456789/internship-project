@@ -175,21 +175,23 @@ function LoginForm() {
             <p className='Register-link'>Don't have an account? <Link to="/registration_page">Register</Link></p>
           </div>
         </form>
-        <div className='login-with'>
-          <div className='login-with-text'>
-            <hr />
-            <h3>or login with</h3>
-            <hr />
+        {/** 
+          <div className='login-with'>
+            <div className='login-with-text'>
+              <hr />
+              <h3>or login with</h3>
+              <hr />
+            </div>
+            <div id='icons'>
+              <a href=''>
+                <img className='google-icon' src={google} alt="" />
+              </a>
+              <a href="">
+                <img className='facebook-icon' src={facebook} alt="" />
+              </a>
+            </div>
           </div>
-          <div id='icons'>
-            <a href=''>
-              <img className='google-icon' src={google} alt="" />
-            </a>
-            <a href="">
-              <img className='facebook-icon' src={facebook} alt="" />
-            </a>
-          </div>
-        </div>
+          */}
       </div>
 
       {showForgotPasswordPopup && (
