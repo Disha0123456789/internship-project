@@ -16,7 +16,7 @@
 
 #logo{
     height: 430px;
-    width: 430px;
+    width: 375px;
 }
 
 
@@ -189,6 +189,7 @@ hr{
     background-color: rgb(205, 205, 205) !important;
 }
 .input-forget{
+    width: 100%;
     padding: 5px;
     padding-left: 15px;
     border-radius: 5px;
@@ -199,7 +200,17 @@ hr{
     color: var(--bs-heading-color);
 }
 
-
+.new-password-div{
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+.toggle-new-password{
+    position: absolute;
+    right: 12px;
+    display: none;
+    width: 20px;
+}
 
 @media screen and (max-width: 1024px){
     #login-main{
@@ -209,7 +220,7 @@ hr{
     }
     #logo{
         height: 300px;
-        width: 300px;
+        width: 265px;
     }
     #login-container{
         width: 100%;
@@ -222,7 +233,7 @@ hr{
     }
     #logo{
         height: 200px;
-        width: 200px;
+        width: 175px;
     }
     #login-container {
         gap: 10px;
@@ -238,5 +249,8 @@ hr{
     }
     .toggle-password {
         display: block; /* Show on mobile */
-      }
+    }
+    .toggle-new-password{
+        display: block;
+    }
 }
