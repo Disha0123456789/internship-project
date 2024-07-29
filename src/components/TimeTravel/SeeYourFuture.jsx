@@ -38,8 +38,8 @@ export default function SeeYourFuture() {
     return (
       Object.entries(content).map(([key, value]) => (
         <div key={key} style={{ marginBottom: '20px' }}>
-          <span style={{ fontWeight: 'bold', fontSize: '1rem', color: '#333' }}>{key}</span>
-          <p style={{ color: '#555', marginTop:'5px', fontSize:'1rem'}}>{Array.isArray(value) ? value.join('\n') : value}</p>
+          <span style={{ fontWeight: 'bold', fontSize: '1rem' }}>{key}</span>
+          <p style={{marginTop:'5px', fontSize:'1rem'}}>{Array.isArray(value) ? value.join('\n') : value}</p>
         </div>
       ))
     );
