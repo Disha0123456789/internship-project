@@ -12,9 +12,11 @@
     flex-direction: column; /* Stack elements vertically */
     max-width: 80%;
     padding: 1rem;
-    box-shadow: 0 0 24px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     margin: 2em;
+    background: #FDF2F8;
+    box-shadow: 6px 6px 12px #b3b3b3, -6px -6px 12px #ffffff;
+    box-sizing: border-box;
   }
   
   
@@ -71,6 +73,7 @@
     margin-bottom: 0.5em;
     margin-top: 0.5em;
     color: #333;
+    font-weight: 500;
 }
 
 .life-report-subkey {
@@ -81,7 +84,7 @@
 
 .life-report-para {
     margin-bottom: 1.3em;
-    color: #595959;
+    color: #434343;
 }
 
 @media screen and (max-width:640px) {
