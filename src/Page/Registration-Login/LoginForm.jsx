@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './LoginForm.css';
 import google from '/assets/Registration-Login/images/google-icon.png';
 import facebook from '/assets/Registration-Login/images/facebook-icon.png';
-import logo from '/assets/Registration-Login/images/logo.png';
+import logo from "/assets/Registration-Login/images/divine logo vertical.png";
 import showPasswordImg from '/assets/Registration-Login/images/show_eye.png'; // Replace with the path to your show password image
 import hidePasswordImg from '/assets/Registration-Login/images/hide_eye.png';
 import { Link, useNavigate } from 'react-router-dom';
@@ -20,9 +20,20 @@ function LoginForm() {
   const [isVerificationPopupOpen, setIsVerificationPopupOpen] = useState(false);
   const [sentVerificationCode, setSentVerificationCode] = useState('');
   const [isPasswordVisible, setIsPasswordVisible] = useState(false);
+  const [isResetPasswordVisible, setIsResetPasswordVisible] = useState(false);
+  const [isResetcnfPasswordVisible, setIsResetcnfPasswordVisible] = useState(false);
+  
 
   const togglePasswordVisibility = () => {
     setIsPasswordVisible(!isPasswordVisible);
+  };
+
+  const toggleResetPasswordVisibility = () => {
+    setIsResetPasswordVisible(!isResetPasswordVisible);
+  };
+
+  const toggleResetcnfPasswordVisibility = () => {
+    setIsResetcnfPasswordVisible(!isResetcnfPasswordVisible);
   };
 
   const handleLoginSubmit = async (e) => {
@@ -236,8 +247,28 @@ function LoginForm() {
           <div className='popup-content-login'>
             <h3 className='forget-reset-head'>Reset Password</h3>
             <form className='forget-password' onSubmit={handleResetPasswordSubmit}>
-              <input className='input-forget' type="password" placeholder="New Password" value={newPassword} onChange={(e) => setNewPassword(e.target.value)} required />
-              <input className='input-forget' type="password" placeholder="Confirm New Password" value={confirmNewPassword} onChange={(e) => setConfirmNewPassword(e.target.value)} required />
+              <div className='new-password-div'>
+                <input className='input-forget' type={isResetPasswordVisible ? 'text' : 'password'} placeholder="New Password" value={newPassword} onChange={(e) => setNewPassword(e.target.value)} required />
+                {newPassword && (
+                <img
+                  src={isResetPasswordVisible ? hidePasswordImg : showPasswordImg}
+                  alt={isResetPasswordVisible ? 'Hide password' : 'Show password'}
+                  className="toggle-new-password"
+                  onClick={toggleResetPasswordVisibility}
+                />
+              )}
+              </div>
+              <div className='new-password-div'>
+                <input className='input-forget' type={isResetcnfPasswordVisible ? 'text' : 'password'} placeholder="Confirm New Password" value={confirmNewPassword} onChange={(e) => setConfirmNewPassword(e.target.value)} required />
+                {confirmNewPassword && (
+                <img
+                  src={isResetcnfPasswordVisible ? hidePasswordImg : showPasswordImg}
+                  alt={isResetcnfPasswordVisible ? 'Hide password' : 'Show password'}
+                  className="toggle-new-password"
+                  onClick={toggleResetcnfPasswordVisibility}
+                />
+              )}
+              </div>
               <button className='btn-forget' type="submit">Reset Password</button>
             </form>
           </div>
