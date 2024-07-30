@@ -141,6 +141,7 @@ button{
 }
 .Tarot-hr{
     width: 95%;
+    margin: 0px;
 }
 .Tarot-card .Tarot-info{
     padding:0 20px;
@@ -160,6 +161,7 @@ button{
 .Tarot-card .Tarot-info p{
     
     font-size: clamp(0.78rem, 2.2vw, 0.9rem);
+    margin: 0;
 }
 .Tarot-card .Tarot-info .icons{
     display: flex;
