@@ -9,7 +9,7 @@ const Hero = () => {
       <div className="up">
         <div onClick={() => navigate("/horoscope")} className="hero-card">
           <div className="hero-card-title">
-            <h3>Horoscope</h3>
+            <h3 style={{fontSize:'inherit', fontWeight:'600', marginBottom:'0px'}}>Horoscope</h3>
           </div>
           <div className="hero-card-icon-container">
             <img
@@ -22,7 +22,7 @@ const Hero = () => {
 
         <div onClick={() => navigate("/kundli")} className="hero-card">
           <div className="hero-card-title">
-            <h3>Kundli</h3>
+            <h3 style={{fontSize:'inherit', fontWeight:'600', marginBottom:'0px'}}>Kundli</h3>
           </div>
           <div className="hero-card-icon-container">
             <img
@@ -35,7 +35,7 @@ const Hero = () => {
 
         <div onClick={() => navigate("/Fortune_Wheel")} className="hero-card">
           <div className="hero-card-title">
-            <h3>Fortune Wheel</h3>
+            <h3 style={{fontSize:'inherit', fontWeight:'600', marginBottom:'0px'}}>Fortune Wheel</h3>
           </div>
           <div className="hero-card-icon-container">
             <img
@@ -48,7 +48,7 @@ const Hero = () => {
         
         <div onClick={() => navigate("/love_check")} className="hero-card">
           <div className="hero-card-title">
-            <h3>Love Check</h3>
+            <h3 style={{fontSize:'inherit', fontWeight:'600', marginBottom:'0px'}}>Love Check</h3>
           </div>
           <div className="hero-card-icon-container">
             <img

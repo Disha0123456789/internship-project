@@ -23,7 +23,7 @@ const NewFutureBox = () => {
               <img src="/assets/ICONS/tarot.png" alt="12" />
             </div>
             <div className="future-title">
-              <h3 className="text-md sm:text-xl font-semibold text-gray-800">
+              <h3 className="text-md sm:text-xl font-semibold text-gray-800" style={{margin:'0px'}}>
                 Tarot Reading
               </h3>
             </div>
@@ -36,7 +36,7 @@ const NewFutureBox = () => {
               <img src="/assets/ICONS/face.png" alt="13" />
             </div>
             <div className="future-title">
-              <h3 className="text-md sm:text-xl font-semibold text-gray-800">
+              <h3 className="text-md sm:text-xl font-semibold text-gray-800" style={{margin:'0px'}}>
                 Face Reading
               </h3>
             </div>
@@ -49,7 +49,7 @@ const NewFutureBox = () => {
               <img src="/assets/ICONS/palm.png" alt="13" />
             </div>
             <div className="future-title">
-              <h3 className="text-md sm:text-xl font-semibold text-gray-800">
+              <h3 className="text-md sm:text-xl font-semibold text-gray-800" style={{margin:'0px'}}>
                 Palm Reading
               </h3>
             </div>
@@ -69,7 +69,7 @@ const NewFutureBox = () => {
               <img src="/assets/ICONS/timetravel.png" alt="14" />
             </div>
             <div className="future-title">
-              <h3 className="text-md sm:text-xl font-semibold text-gray-800">
+              <h3 className="text-md sm:text-xl font-semibold text-gray-800" style={{margin:'0px'}}>
                 Time Travel
               </h3>
             </div>
@@ -82,7 +82,7 @@ const NewFutureBox = () => {
               <img src="/assets/ICONS/astrology.png" alt="15" />
             </div>
             <div className="future-title">
-              <h3 className="text-md sm:text-xl font-semibold text-gray-800">
+              <h3 className="text-md sm:text-xl font-semibold text-gray-800" style={{margin:'0px'}}>
                 Astrology
               </h3>
             </div>
@@ -95,7 +95,7 @@ const NewFutureBox = () => {
               <img src="/assets/ICONS/biorythm.png" alt="16" />
             </div>
             <div className="future-title">
-              <h3 className="text-md sm:text-xl font-semibold text-gray-800">
+              <h3 className="text-md sm:text-xl font-semibold text-gray-800" style={{margin:'0px'}}>
                 Biorhythm
               </h3>
             </div>
@@ -117,7 +117,7 @@ const NewFutureBox = () => {
               <img src="/assets/ICONS/dreaminterpretation.png" alt="17" />
             </div>
             <div className="future-title">
-              <h3 className="text-md sm:text-xl font-semibold text-gray-800">
+              <h3 className="text-md sm:text-xl font-semibold text-gray-800" style={{margin:'0px'}}>
                 Dream Meaning
               </h3>
             </div>
@@ -132,7 +132,7 @@ const NewFutureBox = () => {
               <img src="/assets/ICONS/numerology.png" alt="16" />
             </div>
             <div className="future-title">
-              <h3 className="text-md sm:text-xl font-semibold text-gray-800">
+              <h3 className="text-md sm:text-xl font-semibold text-gray-800"style={{margin:'0px'}}>
                 Numerology
               </h3>
             </div>
@@ -154,7 +154,7 @@ const NewFutureBox = () => {
               <img src="/assets/ICONS/meditation.png" alt="14" />
             </div>
             <div className="future-title">
-              <h3 className="text-md sm:text-xl font-semibold text-gray-800">
+              <h3 className="text-md sm:text-xl font-semibold text-gray-800" style={{margin:'0px'}}>
                 Meditation
               </h3>
             </div>
@@ -169,7 +169,7 @@ const NewFutureBox = () => {
               <img src="/assets/ICONS/emotionalsupport.png" alt="15" />
             </div>
             <div className="future-title">
-              <h3 className="text-md sm:text-xl font-semibold text-gray-800">
+              <h3 className="text-md sm:text-xl font-semibold text-gray-800" style={{margin:'0px'}}>
                 Emotional Support
               </h3>
             </div>

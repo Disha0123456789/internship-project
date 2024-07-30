@@ -98,6 +98,10 @@
 .sidebar-nav {
   color: #303030;
 }
+.nav-link {
+  display: flex;
+  color: #303030;
+}
 
 .sidebar-logo-div {
   margin-bottom: 15px;

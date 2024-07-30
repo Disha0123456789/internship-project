@@ -87,6 +87,7 @@
   }
   .hr-pooja-list{
     width: 100%;
+    margin: 0px;
   }
   .book-now-pooja{
     background-color: purple;
@@ -117,8 +118,9 @@
   
   .Subcard-pooja h4{
     color: rgb(25, 25, 25);
-     overflow-y: hidden;
-     margin: 8px;
+    overflow-y: hidden;
+    margin: 8px;
+    font-size: inherit;
   }
   
 
