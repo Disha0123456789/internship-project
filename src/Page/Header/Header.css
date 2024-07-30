@@ -99,8 +99,8 @@
   color: #303030;
 }
 .nav-link {
-  display: flex;
-  color: #303030;
+  display: flex !important;
+  color: #303030 !important;
 }
 
 .sidebar-logo-div {
