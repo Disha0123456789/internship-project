@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './LoginForm.css';
+//import './LoginForm.css';
 import google from '/assets/Registration-Login/images/google-icon.png';
 import facebook from '/assets/Registration-Login/images/facebook-icon.png';
 import logo from "/assets/Registration-Login/images/divine logo vertical.png";
