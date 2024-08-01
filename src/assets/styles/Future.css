@@ -40,9 +40,26 @@
 }
 
 .form-control {
-  padding: 10px;
-  font-size: 16px;
-  color: #353535;
+  display: block;
+  width: 100%;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--bs-body-color, #333); /* Fallback to dark text color */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: var(--bs-body-bg, #fff); /* Fallback to white background color */
+  background-clip: padding-box;
+  border: var(--bs-border-width, 1px) solid var(--bs-border-color, #ccc); /* Fallback to light gray border color */
+  border-radius: var(--bs-border-radius, 4px); /* Fallback to 4px border radius */
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.form-control:focus {
+  border-color: #007bff; /* Border color on focus */
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* Focus shadow */
 }
 
 .button-wrapper {

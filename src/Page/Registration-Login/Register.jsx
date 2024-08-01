@@ -5,7 +5,7 @@ import gIcon from "/assets/Registration-Login/images/google-color-icon.png";
 import fIcon from "/assets/Registration-Login/images/facebook-app-round-icon.png";
 import showPasswordImg from '/assets/Registration-Login/images/show_eye.png'; // Replace with the path to your show password image
 import hidePasswordImg from '/assets/Registration-Login/images/hide_eye.png';
-import "./Register.css";
+//import "./Register.css";
 
 export default function Register() {
 

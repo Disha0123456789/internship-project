@@ -1,5 +1,5 @@
 import React,{useEffect} from "react";
-import "./AstroMain.css";
+//import "./AstroMain.css";
 import { useNavigate } from "react-router-dom";
 
 function AstroMain() {
@@ -15,13 +15,13 @@ function AstroMain() {
         <h1>Astrology</h1>
         <div className="callchat-button">
           <button
-            onClick={() => navigate("/AstroMain")}
+            onClick={() => navigate("/AstroHome")}
             className="buttons btn-call1"
           >
           <i className="fa-solid fa-phone"></i> Call
           </button>
           <button
-            onClick={() => navigate("/AstroMainChat")}
+            onClick={() => navigate("/AstroHome/AstroMainChat")}
             className="buttons"
           >
           <i className="fa-solid fa-comment-dots"></i> Chat
@@ -31,7 +31,7 @@ function AstroMain() {
       <div className="grid-container">
         <div className="grid-container-main">
           <div
-            onClick={() => navigate("/marriageConsultation")}
+            onClick={() => navigate("/AstroHome/marriageConsultation")}
             className="grid-items bg-mc"
           >
             <div className="info">
@@ -45,7 +45,7 @@ function AstroMain() {
               ₹3.5/min
             </button>
             <button
-              onClick={() => navigate("/marriageConsultation")}
+              onClick={() => navigate("/AstroHome/marriageConsultation")}
               className="book-chat"
             >
               <i className="fa-solid fa-phone"></i>Book a Call
@@ -53,7 +53,7 @@ function AstroMain() {
           </div>
         </div>
         <div className="grid-container-main">
-          <div onClick={() => navigate("/healthHealing")} className="grid-items bg-hh">
+          <div onClick={() => navigate("/AstroHome/healthHealing")} className="grid-items bg-hh">
             <div className="info">
               <div className="heading">
                 <h2>Health Healing</h2>
@@ -65,7 +65,7 @@ function AstroMain() {
               ₹3.5/min
             </button>
             <button
-              onClick={() => navigate("/healthHealing")}
+              onClick={() => navigate("/AstroHome/healthHealing")}
               className="book-chat"
             >
               <i className="fa-solid fa-phone"></i>Book a Call
@@ -73,7 +73,7 @@ function AstroMain() {
           </div>
         </div>
         <div className="grid-container-main">
-          <div onClick={() => navigate("/wealthManagement")} className="grid-items bg-wh">
+          <div onClick={() => navigate("/AstroHome/wealthManagement")} className="grid-items bg-wh">
             <div className="info">
               <div className="heading">
                 <h2>Wealth Management</h2>
@@ -85,7 +85,7 @@ function AstroMain() {
               ₹3.5/min
             </button>
             <button
-              onClick={() => navigate("/wealthManagement")}
+              onClick={() => navigate("/AstroHome/wealthManagement")}
               className="book-chat"
             >
               <i className="fa-solid fa-phone"></i>Book a Call
@@ -93,7 +93,7 @@ function AstroMain() {
           </div>
         </div>
         <div className="grid-container-main">
-          <div onClick={() => navigate("/loveInsights")} className="grid-items bg-li">
+          <div onClick={() => navigate("/AstroHome/loveInsights")} className="grid-items bg-li">
             <div className="info">
               <div className="heading">
                 <h2>Love Insights</h2>
@@ -105,7 +105,7 @@ function AstroMain() {
               ₹3.5/min
             </button>
             <button
-              onClick={() => navigate("/loveInsights")}
+              onClick={() => navigate("/AstroHome/loveInsights")}
               className="book-chat"
             >
               <i className="fa-solid fa-phone"></i>Book a Call
@@ -113,7 +113,7 @@ function AstroMain() {
           </div>
         </div>
         <div className="grid-container-main">
-          <div className="grid-items bg-eg">
+          <div onClick={() => navigate("/AstroHome/educationalGuidance")} className="grid-items bg-eg">
             <div className="info">
               <div className="heading">
                 <h2>Educational Guidance</h2>
@@ -125,7 +125,7 @@ function AstroMain() {
               ₹3.5/min
             </button>
             <button
-              onClick={() => navigate("/educationalGuidance")}
+              onClick={() => navigate("/AstroHome/educationalGuidance")}
               className="book-chat"
             >
               <i className="fa-solid fa-phone"></i>Book a Call
@@ -133,7 +133,7 @@ function AstroMain() {
           </div>
         </div>
         <div className="grid-container-main">
-          <div onClick={() => navigate("/careerPath")} className="grid-items bg-cp">
+          <div onClick={() => navigate("/AstroHome/careerPath")} className="grid-items bg-cp">
             <div className="info">
               <div className="heading">
                 <h2>Career Path</h2>
@@ -145,7 +145,7 @@ function AstroMain() {
               ₹3.5/min
             </button>
             <button
-              onClick={() => navigate("/careerPath")}
+              onClick={() => navigate("/AstroHome/careerPath")}
               className="book-chat"
             >
               <i className="fa-solid fa-phone"></i>Book a Call
@@ -153,7 +153,7 @@ function AstroMain() {
           </div>
         </div>
         <div className="grid-container-main">
-          <div onClick={() => navigate("/businessStrategies")} className="grid-items bg-bs">
+          <div onClick={() => navigate("/AstroHome/businessStrategies")} className="grid-items bg-bs">
             <div className="info">
               <div className="heading">
                 <h2>Business Strategies</h2>
@@ -165,7 +165,7 @@ function AstroMain() {
               ₹3.5/min
             </button>
             <button
-              onClick={() => navigate("/businessStrategies")}
+              onClick={() => navigate("/AstroHome/businessStrategies")}
               className="book-chat"
             >
               <i className="fa-solid fa-phone"></i>Book a Call
@@ -173,7 +173,7 @@ function AstroMain() {
           </div>
         </div>
         <div className="grid-container-main">
-          <div onClick={() => navigate("/financePlanning")} className="grid-items bg-fp">
+          <div onClick={() => navigate("/AstroHome/financePlanning")} className="grid-items bg-fp">
             <div className="info">
               <div className="heading">
                 <h2>Finance Planning</h2>
@@ -185,7 +185,7 @@ function AstroMain() {
               ₹3.5/min
             </button>
             <button
-              onClick={() => navigate("/financePlanning")}
+              onClick={() => navigate("/AstroHome/financePlanning")}
               className="book-chat"
             >
               <i className="fa-solid fa-phone"></i>Book a Call
@@ -193,7 +193,7 @@ function AstroMain() {
           </div>
         </div>
         <div className="grid-container-main">
-          <div onClick={() => navigate("/legalAdvice")} className="grid-items bg-la">
+          <div onClick={() => navigate("/AstroHome/legalAdvice")} className="grid-items bg-la">
             <div className="info">
               <div className="heading">
                 <h2>Legal Advice</h2>
@@ -205,7 +205,7 @@ function AstroMain() {
               ₹3.5/min
             </button>
             <button
-              onClick={() => navigate("/legalAdvice")}
+              onClick={() => navigate("/AstroHome/legalAdvice")}
               className="book-chat"
             >
               <i className="fa-solid fa-phone"></i>Book a Call
@@ -213,7 +213,7 @@ function AstroMain() {
           </div>
         </div>
         <div className="grid-container-main">
-          <div onClick={() => navigate("/remediesSolutions")} className="grid-items bg-rs">
+          <div onClick={() => navigate("/AstroHome/remediesSolutions")} className="grid-items bg-rs">
             <div className="info">
               <div className="heading">
                 <h2>Remedies &amp; Solutions</h2>
@@ -225,7 +225,7 @@ function AstroMain() {
               ₹3.5/min
             </button>
             <button
-              onClick={() => navigate("/remediesSolutions")}
+              onClick={() => navigate("/AstroHome/remediesSolutions")}
               className="book-chat"
             >
               <i className="fa-solid fa-phone"></i>Book a Call
@@ -233,7 +233,7 @@ function AstroMain() {
           </div>
         </div>
         <div className="grid-container-main">
-          <div onClick={() => navigate("/kidsFortune")} className="grid-items bg-kfp">
+          <div onClick={() => navigate("/AstroHome/kidsFortune")} className="grid-items bg-kfp">
             <div className="info">
               <div className="heading">
                 <h2>Kids Fortune Prediction</h2>
@@ -245,7 +245,7 @@ function AstroMain() {
               ₹3.5/min
             </button>
             <button
-              onClick={() => navigate("/kidsFortune")}
+              onClick={() => navigate("/AstroHome/kidsFortune")}
               className="book-chat"
             >
               <i className="fa-solid fa-phone"></i>Book a Call
@@ -253,7 +253,7 @@ function AstroMain() {
           </div>
         </div>
         <div className="grid-container-main">
-          <div onClick={() => navigate("/parentingTips")} className="grid-items bg-pt">
+          <div onClick={() => navigate("/AstroHome/parentingTips")} className="grid-items bg-pt">
             <div className="info">
               <div className="heading">
                 <h2>Parenting Tips</h2>
@@ -265,7 +265,7 @@ function AstroMain() {
               ₹3.5/min
             </button>
             <button
-              onClick={() => navigate("/parentingTips")}
+              onClick={() => navigate("/AstroHome/parentingTips")}
               className="book-chat"
             >
               <i className="fa-solid fa-phone"></i>Book a Call
@@ -273,7 +273,7 @@ function AstroMain() {
           </div>
         </div>
         <div className="grid-container-main">
-          <div onClick={() => navigate("/panchangAnalysis")} className="grid-items bg-pa">
+          <div onClick={() => navigate("/AstroHome/panchangAnalysis")} className="grid-items bg-pa">
             <div className="info">
               <div className="heading">
                 <h2>Panchang Analysis</h2>
@@ -285,7 +285,7 @@ function AstroMain() {
               ₹3.5/min
             </button>
             <button
-              onClick={() => navigate("/panchangAnalysis")}
+              onClick={() => navigate("/AstroHome/panchangAnalysis")}
               className="book-chat"
             >
               <i className="fa-solid fa-phone"></i>Book a Call
@@ -293,7 +293,7 @@ function AstroMain() {
           </div>
         </div>
         <div className="grid-container-main">
-          <div onClick={() => navigate("/birthChart")} className="grid-items bg-bci">
+          <div onClick={() => navigate("/AstroHome/birthChart")} className="grid-items bg-bci">
             <div className="info">
               <div className="heading">
                 <h2>Birth Chart Interpretation</h2>
@@ -305,7 +305,7 @@ function AstroMain() {
               ₹3.5/min
             </button>
             <button
-              onClick={() => navigate("/birthChart")}
+              onClick={() => navigate("/AstroHome/birthChart")}
               className="book-chat"
             >
               <i className="fa-solid fa-phone"></i>Book a Call
@@ -313,7 +313,7 @@ function AstroMain() {
           </div>
         </div>
         <div className="grid-container-main">
-          <div onClick={() => navigate("/shubhMuhurat")} className="grid-items bg-sm">
+          <div onClick={() => navigate("/AstroHome/shubhMuhurat")} className="grid-items bg-sm">
             <div className="info">
               <div className="heading">
                 <h2>Shubh Muhurat</h2>
@@ -325,7 +325,7 @@ function AstroMain() {
               ₹3.5/min
             </button>
             <button
-              onClick={() => navigate("/shubhMuhurat")}
+              onClick={() => navigate("/AstroHome/shubhMuhurat")}
               className="book-chat"
             >
               <i className="fa-solid fa-phone"></i>Book a Call
@@ -333,7 +333,7 @@ function AstroMain() {
           </div>
         </div>
         <div className="grid-container-main">
-          <div onClick={() => navigate("/personalizedPooja")} className="grid-items bg-pp">
+          <div onClick={() => navigate("/AstroHome/personalizedPooja")} className="grid-items bg-pp">
             <div className="info">
               <div className="heading">
                 <h2>Personalized Pooja</h2>
@@ -345,7 +345,7 @@ function AstroMain() {
               ₹3.5/min
             </button>
             <button
-              onClick={() => navigate("/personalizedPooja")}
+              onClick={() => navigate("/AstroHome/personalizedPooja")}
               className="book-chat"
             >
               <i className="fa-solid fa-phone"></i>Book a Call
@@ -353,7 +353,7 @@ function AstroMain() {
           </div>
         </div>
         <div className="grid-container-main">
-          <div onClick={() => navigate("/thetaHealing")} className="grid-items bg-th">
+          <div onClick={() => navigate("/AstroHome/thetaHealing")} className="grid-items bg-th">
             <div className="info">
               <div className="heading">
                 <h2>Theta Healing</h2>
@@ -365,7 +365,7 @@ function AstroMain() {
               ₹3.5/min
             </button>
             <button
-              onClick={() => navigate("/thetaHealing")}
+              onClick={() => navigate("/AstroHome/thetaHealing")}
               className="book-chat"
             >
               <i className="fa-solid fa-phone"></i>Book a Call
@@ -373,7 +373,7 @@ function AstroMain() {
           </div>
         </div>
         <div className="grid-container-main">
-          <div onClick={() => navigate("/reikiHealing")} className="grid-items bg-rh">
+          <div onClick={() => navigate("/AstroHome/reikiHealing")} className="grid-items bg-rh">
             <div className="info">
               <div className="heading">
                 <h2>Reiki Healing</h2>
@@ -385,7 +385,7 @@ function AstroMain() {
               ₹3.5/min
             </button>
             <button
-              onClick={() => navigate("/reikiHealing")}
+              onClick={() => navigate("/AstroHome/reikiHealing")}
               className="book-chat"
             >
               <i className="fa-solid fa-phone"></i>Book a Call
@@ -393,7 +393,7 @@ function AstroMain() {
           </div>
         </div>
         <div className="grid-container-main">
-          <div onClick={() => navigate("/chakraHealing")} className="grid-items bg-ch">
+          <div onClick={() => navigate("/AstroHome/chakraHealing")} className="grid-items bg-ch">
             <div className="info">
               <div className="heading">
                 <h2>Chakra Healing</h2>
@@ -405,7 +405,7 @@ function AstroMain() {
               ₹3.5/min
             </button>
             <button
-              onClick={() => navigate("/chakraHealing")}
+              onClick={() => navigate("/AstroHome/chakraHealing")}
               className="book-chat"
             >
               <i className="fa-solid fa-phone"></i>Book a Call
@@ -413,7 +413,7 @@ function AstroMain() {
           </div>
         </div>
         <div className="grid-container-main">
-          <div onClick={() => navigate("/crystalHealing")} className="grid-items bg-crh">
+          <div onClick={() => navigate("/AstroHome/crystalHealing")} className="grid-items bg-crh">
             <div className="info">
               <div className="heading">
                 <h2>Crystal Healing</h2>
@@ -425,7 +425,7 @@ function AstroMain() {
               ₹3.5/min
             </button>
             <button
-              onClick={() => navigate("/crystalHealing")}
+              onClick={() => navigate("/AstroHome/crystalHealing")}
               className="book-chat"
             >
               <i className="fa-solid fa-phone"></i>Book a Call

@@ -1,12 +1,15 @@
-import React, { useEffect }from "react";
-import { motion } from "framer-motion";
+import React, { useEffect } from "react";
+import { Routes, Route } from "react-router-dom";
 import TarotCards from "./TarotCards";
-import tarotReadingCardsData from "./tarot-cards-data"; // Importing tarot-reading-cards-data
+import tarotReadingCardsData from "./tarot-cards-data";
+import Shuffle from './Shuffle';
+import TarotResult from './TarotResult';
 
 const TarotReading = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
   return (
     <div className="Main-Tarot">
       <div className="Head-Text">
@@ -17,6 +20,12 @@ const TarotReading = () => {
           <TarotCards key={index} props={card} />
         ))}
       </div>
+
+      {/* Define the internal routes relative to /tarot-reading */}
+      <Routes>
+        <Route path="CardSelection" element={<Shuffle />} />
+        <Route path="TarotResult" element={<TarotResult />} />
+      </Routes>
     </div>
   );
 };

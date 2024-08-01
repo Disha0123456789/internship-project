@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import './DreamHistoryList.css';
+//import './DreamHistoryList.css';
 import { useNavigate } from "react-router-dom";
 import axios from 'axios';
 
@@ -87,7 +87,7 @@ export default function DreamHistoryList() {
                 </div>
                 <div className="card-history-container">
                     {dreams.slice().reverse().map((dream) => (
-                        <div className="card-history" key={dream._id} onClick={() => !isSelecting && navigate(`/dream_history/${dream._id}`)}>
+                        <div className="card-history" key={dream._id} onClick={() => !isSelecting && navigate(`/dream/dream_history/${dream._id}`)}>
                             {isSelecting && (
                                 <input 
                                     type="checkbox" 

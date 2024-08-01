@@ -2,7 +2,7 @@
 import React, { useState, useMemo, useCallback } from 'react';
 import Select from 'react-select';
 import dummy from '../../Page/AccountPage/dummy.json';
-import './MatchMaking.css';
+//import './MatchMaking.css';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 
@@ -95,7 +95,7 @@ const KundliRegister = () => {
       const response = await axios.post('https://divineconnection.co.in/calculate-guna-milan-score', data);
       console.log('Server response:', response.data);
 
-      navigate('/matchIndicator', { state: { score: response.data.score } });
+      navigate('/kundli/matchIndicator', { state: { score: response.data.score } });
     } catch (error) {
       console.error('Error sending data to server:', error);
     }

@@ -35,7 +35,7 @@ const Shuffle = () => {
         break;
     }
   
-    navigate("/TarotResult", {
+    navigate("/tarot-reading/TarotResult", {
       state: { 
         head: loc.state.head,
         title: selectedCard.title,

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
-import './Numerology.css';
+//import './Numerology.css';
 import data from './data.json';
 
 export default function Numerology() {
@@ -37,7 +37,7 @@ export default function Numerology() {
 
     const handleNumerologyCardClick = () => {
         if (lifePathNumber !== null) {
-            navigate("/lifepathnumber", { state: { lifePathNumber } });
+            navigate("/numerology/lifepathnumber", { state: { lifePathNumber } });
         }
     };
 

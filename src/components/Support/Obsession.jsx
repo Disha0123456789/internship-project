@@ -1,5 +1,5 @@
 import React, { useEffect }from "react";
-import "./support.css";
+//import "./support.css";
 import { useNavigate } from "react-router-dom";
 import { IoIosArrowBack } from "react-icons/io";
 const Obsession = () => {

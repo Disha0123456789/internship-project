@@ -3,7 +3,7 @@ import Select from 'react-select';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import {jwtDecode} from "jwt-decode"; // Make sure to install jwt-decode if not installed
-import './AccountPage.css';
+//import './AccountPage.css';
 import divineLogo from '/assets/AcountPage/images/divine logo vertical.png';
 import logoBackground from '/assets/AcountPage/images/pink_design_cutout.png';
 import dummy from './dummy.json';

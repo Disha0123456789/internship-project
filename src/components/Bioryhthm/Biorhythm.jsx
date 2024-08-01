@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from 'react';
 import Chart from 'chart.js/auto';
 import DailyInterpreTation from './DailyInterpreTation';
 import { useLocation } from 'react-router-dom';
-import './LineChart.css';
+//import './LineChart.css';
 
 const BiorythmCalculator = () => {
   const location = useLocation();

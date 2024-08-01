@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "../TimeTravel/PastLifePrediction.css";
+//import "../TimeTravel/PastLifePrediction.css";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import {jwtDecode} from "jwt-decode";
@@ -63,7 +63,7 @@ function Numero() {
   };
 
   const navigateToFuture = (date) => {
-    navigate(`/Numerology?birthDate=${date}`);
+    navigate(`/numerology/Numerology?birthDate=${date}`);
   };
 
   return (

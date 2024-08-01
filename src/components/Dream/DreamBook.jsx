@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './DreamBook.css';
+//import './DreamBook.css';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 import { useNavigate } from 'react-router-dom';
@@ -53,7 +53,8 @@ export default function DreamBook() {
                 }
             });
             if (response.status === 200) {
-                navigate('/dream_history_list');
+                console.log('Dream saved successfully:', response.data); 
+                navigate('/dream/dream_history_list');
             }
         } catch (error) {
             console.error('Error saving dream:', error);
@@ -68,7 +69,7 @@ export default function DreamBook() {
             <p className='dreambook-messg'>“Track, Analyze, and Explore your Dreams Anytime by Adding them to your Dream Book”</p>
             <div className='dream-input-containers'>
                 <div className='dreamhistory-button-container'>
-                    <button onClick={() => navigate("/dream_history_list")} className="dream-history-btn">Dream History</button>
+                    <button onClick={() => navigate("/dream/dream_history_list")} className="dream-history-btn">Dream History</button>
                 </div>
                 <div className='detail-wrapper'>
                     <div className='detail-container'>

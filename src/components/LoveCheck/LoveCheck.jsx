@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './LoveCheck.css';
+//import './LoveCheck.css';
 
 const LoveCheck = () => {
     const [tapCount, setTapCount] = useState(0);

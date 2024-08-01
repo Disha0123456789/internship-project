@@ -8,7 +8,7 @@ import axios from 'axios';
 import Webcam from "react-webcam";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSyncAlt } from '@fortawesome/free-solid-svg-icons';
-
+//import './style.css';
 function Faceread() {
   const navigate = useNavigate();
   const inputRef = useRef(null);
@@ -49,7 +49,7 @@ function Faceread() {
     })
       .then(response => {
         console.log("Data received from server:", response.data);
-        navigate("/Faceresult", { state: { data: response.data } });
+        navigate("/faceRead/Faceresult", { state: { data: response.data } });
       })
       .catch(error => {
         if (error.response) {
@@ -70,7 +70,7 @@ function Faceread() {
       setWarningMessage("Please choose/upload an image of face to use this feature.*");
       setShowWarning(true);
     } else {
-      navigate("/Timemagicresult", { state: { image } });
+      navigate("/faceRead/Timemagicresult", { state: { image } });
     }
   };
 

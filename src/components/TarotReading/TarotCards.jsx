@@ -1,5 +1,5 @@
 import React from "react";
-import "./Cards.css";
+//import "./Cards.css";
 import { PiHandsClappingBold } from "react-icons/pi";
 import { IoEyeSharp } from "react-icons/io5";
 import { motion } from "framer-motion";
@@ -13,7 +13,7 @@ const TarotCards = ({ props }) => {
   const p2 = props.p2;
   const cards = props.cards;
   const onCardClick = () => {
-    navigate("/CardSelection", { state: { cards, head } });
+    navigate("/tarot-reading/CardSelection", { state: { cards, head } });
   };
   return (
     <motion.div

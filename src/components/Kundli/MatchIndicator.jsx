@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import './MatchIndicator.css';
+//import './MatchIndicator.css';
 import ScoreIndicator from 'react-score-indicator';
 import { useLocation } from 'react-router-dom';
 import matchScore from './matchScore.json'; // Assuming matchScore.json is in the same directory

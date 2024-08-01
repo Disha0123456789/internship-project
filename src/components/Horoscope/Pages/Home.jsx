@@ -12,22 +12,22 @@ import IMAGES9 from '/assets/1st-row/Horoscope/sagittarius.png';
 import IMAGES8 from '/assets/1st-row/Horoscope/scorpion.png';
 import IMAGES2 from '/assets/1st-row/Horoscope/taurus.png';
 import IMAGES6 from '/assets/1st-row/Horoscope/virgo.png';
-import '../Horoscope.css';
+//import '../Horoscope.css';
 
 function Home() {
   const urls = [
-    '/gemini?rasi=Aries',
-    '/gemini?rasi=Taurus',
-    '/gemini?rasi=Gemini',
-    '/gemini?rasi=Cancer',
-    '/gemini?rasi=Leo',
-    '/gemini?rasi=Virgo',
-    '/gemini?rasi=Libra',
-    '/gemini?rasi=Scorpio',
-    '/gemini?rasi=Sagittarius',
-    '/gemini?rasi=Capricorn',
-    '/gemini?rasi=Aquarius',
-    '/gemini?rasi=Pisces',
+    '/horoscope/gemini?rasi=Aries',
+    '/horoscope/gemini?rasi=Taurus',
+    '/horoscope/gemini?rasi=Gemini',
+    '/horoscope/gemini?rasi=Cancer',
+    '/horoscope/gemini?rasi=Leo',
+    '/horoscope/gemini?rasi=Virgo',
+    '/horoscope/gemini?rasi=Libra',
+    '/horoscope/gemini?rasi=Scorpio',
+    '/horoscope/gemini?rasi=Sagittarius',
+    '/horoscope/gemini?rasi=Capricorn',
+    '/horoscope/gemini?rasi=Aquarius',
+    '/horoscope/gemini?rasi=Pisces',
   ];
   
   const names = [
