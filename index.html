@@ -2,19 +2,32 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="/Favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/Favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/Favicon/favicon-16x16.png">
     <link rel="manifest" href="/Favicon/site.webmanifest">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Preconnect and Prefetch -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anta&family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    
+    <!-- Preload Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Anta&family=Inter:wght@100..900&display=swap" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Anta&family=Inter:wght@100..900&display=swap" rel="stylesheet"></noscript>
+
     <title>Divine Connection</title>
+    
+    <!-- Asynchronous Google reCAPTCHA -->
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   </head>
   <body>
     <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    <!-- Main JavaScript -->
+    <script type="module" src="/src/main.jsx" defer></script>
   </body>
 </html>

@@ -187,10 +187,10 @@ canvas {
 
 @media screen and (max-width:700px){
   .labelbtn-container {
-    width: 84% !important;
+    width: 84%;
   }
   .label-button {
-    width: 5em !important;
+    width: 5em;
   }
   canvas {
     width: 100%;
@@ -201,6 +201,12 @@ canvas {
     margin-right: auto;
   }
 }
-
+@media screen and (max-width:468px) {
+  .labelbtn-container {
+    width: 100%;
+    padding-left: 0em;
+    gap: 5px;
+}
+}
 /* Daily interpretation styles */
 /* (Styling for DailyInterpreTation component can be added here if necessary) */

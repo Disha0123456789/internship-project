@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef } from "react";
-import "./Wheel.css";
+//import "./Wheel.css";
 
 const WheelComponent = ({
     segments,

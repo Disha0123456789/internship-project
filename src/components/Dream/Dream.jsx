@@ -1,5 +1,5 @@
 import React, { useEffect }from "react";
-import './Dream.css';
+//import './Dream.css';
 import { useNavigate } from "react-router-dom";
 
 export default function Dream() {
@@ -24,7 +24,7 @@ export default function Dream() {
 const DreamComponent = ({ imageSrc, title, onClick }) => {
     const navigate = useNavigate();
     return (
-        <div onClick={() => navigate(`/${onClick}`)} className='dreamComponent'>
+        <div onClick={() => navigate(`/dream/${onClick}`)} className='dreamComponent'>
             <img src={imageSrc} alt="dream Image" className="dream-img" />
             <p className='dream-title'>{title}</p>
         </div>

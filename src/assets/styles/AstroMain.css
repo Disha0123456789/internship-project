@@ -9,9 +9,14 @@
   font-variation-settings: "slnt" 0;
 }
 
-body {
+.astrology {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   background: #eee;
 }
+
 .astro-container {
   /* background-color: #fdf2f8; */
   height: auto;
@@ -558,13 +563,6 @@ body {
 
 .bg-crh {
   background: url("/assets/3rd-row/Astrology/images/Crystal Healing.png") no-repeat center center/cover;
-}
-
-.astrology {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
 }
 
 

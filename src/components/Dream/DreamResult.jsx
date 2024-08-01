@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import './DreamResult.css';
+//import './DreamResult.css';
 
 export default function DreamResult() {
 

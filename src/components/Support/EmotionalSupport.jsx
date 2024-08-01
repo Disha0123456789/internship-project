@@ -41,40 +41,40 @@ const EmotionalSupport = () => {
   const onButtonClick = (option) => {
     switch (option) {
       case "Anger Management":
-        navigate("/AngerManagement");
+        navigate("/EmotionalSupport/AngerManagement");
         break;
       case "Obsession / OCD":
-        navigate("/Obsession");
+        navigate("/EmotionalSupport/Obsession");
         break;
       case "Loneliness":
-        navigate("/Loneliness");
+        navigate("/EmotionalSupport/Loneliness");
         break;
       case "Sexual Wellness":
-        navigate("/SexualWellness");
+        navigate("/EmotionalSupport/SexualWellness");
         break;
       case "Relationship":
-        navigate("/Family");
+        navigate("/EmotionalSupport/Family");
         break;
       case "Depression":
-        navigate("/Depression");
+        navigate("/EmotionalSupport/Depression");
         break;
       case "Sleep":
-        navigate("/Sleep");
+        navigate("/EmotionalSupport/Sleep");
         break;
       case "Stress Management":
-        navigate("/StressManagement");
+        navigate("/EmotionalSupport/StressManagement");
         break;
       case "Past Trauma":
-        navigate("/PastTrauma");
+        navigate("/EmotionalSupport/PastTrauma");
         break;
       case "Self-Esteem issues":
-        navigate("/SelfEsteemIssues");
+        navigate("/EmotionalSupport/SelfEsteemIssues");
         break;
       case "Work Life Balance":
-        navigate("/WorkLifeBalance");
+        navigate("/EmotionalSupport/WorkLifeBalance");
         break;
       case "Grief / Loss":
-        navigate("/Grief");
+        navigate("/EmotionalSupport/Grief");
         break;
       default:
         break;

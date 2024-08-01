@@ -14,7 +14,7 @@ const AboutUs = () => {
 
   return (
     <div className='terms-N-conditions'>
-      <h1>About US</h1>
+      <h1>About Us</h1>
       <div className='data-termsNconditions' dangerouslySetInnerHTML={{ __html: terms }} />
     </div>
   );

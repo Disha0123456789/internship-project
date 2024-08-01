@@ -1,5 +1,5 @@
 import React, { useEffect }from "react";
-import "./AstroMain.css";
+//import "./AstroMain.css";
 import { useNavigate } from "react-router-dom";
 import image from '/assets/3rd-row/Astrology/images/Birth Chart Interpretation.png';
 function BirthChartInterpretation() {
@@ -12,7 +12,7 @@ function BirthChartInterpretation() {
   }, []);
 
   return (
-    <div>
+    <div className="Main-page">
       <div className="astro-Container">
         <div className="astro-Container-heading">
           <h1>Birth Chart Interpretation</h1>

@@ -1,5 +1,5 @@
 import React, { useEffect }from "react";
-import "./AstroMain.css";
+//import "./AstroMain.css";
 import { useNavigate } from "react-router-dom";
 import image from '/assets/3rd-row/Astrology/images/Remedies & Solutions.png';
 function RemediesSolution() {
@@ -11,7 +11,7 @@ function RemediesSolution() {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <div>
+    <div className="Main-page">
       <div className="astro-Container">
         <div className="astro-Container-heading">
           <h1>Remedies Solution</h1>

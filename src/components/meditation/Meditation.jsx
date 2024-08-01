@@ -1,6 +1,6 @@
 import React, { useEffect }from "react";
 import { useNavigate } from "react-router-dom";
-import "./meditation.css";
+//import "./meditation.css";
 
 const Meditation = () => {
   useEffect(() => {
@@ -34,31 +34,31 @@ const Meditation = () => {
   const onButtonClick = (option) => {
     switch (option) {
       case "Daily Meditation":
-        navigate("/DailyMeditation");
+        navigate("/Meditation/DailyMeditation");
         break;
       case "Chakra Meditation":
-        navigate("/ChakraMeditation");
+        navigate("/Meditation/ChakraMeditation");
         break;
       case "Meditation for sleep":
-        navigate("/SleepMeditation");
+        navigate("/Meditation/SleepMeditation");
         break;
       case "5 minute Meditation":
-        navigate("/5MinsMeditation");
+        navigate("/Meditation/5MinsMeditation");
         break;
       case "Mindfulness Meditation":
-        navigate("/MindfullnessMeditation");
+        navigate("/Meditation/MindfullnessMeditation");
         break;
       case "Meditation for Positive Energy":
-        navigate("/PositiveMindMeditation");
+        navigate("/Meditation/PositiveMindMeditation");
         break;
       case "Meditation for beginners":
-        navigate("/BeginnerMeditation");
+        navigate("/Meditation/BeginnerMeditation");
         break;
       case "Meditation for Mental Health":
-        navigate("/MentalHealthMeditation");
+        navigate("/Meditation/MentalHealthMeditation");
         break;
       case "Epic Power Meditation":
-        navigate("/EpicPowerMeditation");
+        navigate("/Meditation/EpicPowerMeditation");
         break;
       default:
         break;

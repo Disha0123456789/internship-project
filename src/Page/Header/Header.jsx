@@ -82,7 +82,7 @@ function Header() {
                 style={{ width: "21px", height: "21px", marginLeft: "5px", marginBottom: "2px" }}
               />
             </Nav.Link>
-            <Nav.Link onClick={() => navigate("/pooja_page")} className="me-3 nav-toggle">
+            <Nav.Link onClick={() => navigate("/pooja")} className="me-3 nav-toggle">
               <div className="nav-title">Shopping</div>
               <ShoppingCartRoundedIcon style={{ color: "black" }} />
             </Nav.Link>
@@ -130,7 +130,7 @@ function Header() {
           </Nav.Link>
           */}
           
-          <Nav.Link className="sidebar-nav" onClick={() => navigate("/pooja_page")}>
+          <Nav.Link className="sidebar-nav" onClick={() => navigate("/pooja")}>
             Shopping <ShoppingCartRoundedIcon />
           </Nav.Link>
 

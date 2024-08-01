@@ -3,7 +3,7 @@ import React from "react";
 import d from "/assets/1st-row/Kundli/matchmaking.png";
 import third from "/assets/1st-row/Kundli/lifereport.png";
 import four from "/assets/1st-row/Kundli/remedies.png";
-import "./Kundli.css";
+//import "./Kundli.css";
 import { useNavigate } from 'react-router-dom';
 function Kundli() {
   const navigate = useNavigate();
@@ -22,7 +22,7 @@ function Kundli() {
           {/* Match Making */}
           <div className="kundli-item">
             <img
-              onClick={() => navigate('/matchmaking')} 
+              onClick={() => navigate('/kundli/matchmaking')} 
               src={d}
               alt="Match Making"
             />

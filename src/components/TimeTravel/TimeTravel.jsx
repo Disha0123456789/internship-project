@@ -1,5 +1,5 @@
 import React, { useEffect }from "react";
-import "./TimeTravel.css";
+//import "./TimeTravel.css";
 import { useNavigate } from "react-router-dom";
 
 function TimeTravel() {
@@ -16,7 +16,7 @@ function TimeTravel() {
         <h1>Time Travel</h1>
       </div>
       <div className="timetravel-container">
-        <div onClick={() => navigate("/FuturePrediction")} className="tt-grid">
+        <div onClick={() => navigate("/TimeTravel/FuturePrediction")} className="tt-grid">
           <div className="tt-container">
           <div className="grid-items-tt bg-fup"></div>
           <div className="info-tt">
@@ -28,13 +28,15 @@ function TimeTravel() {
           </div>
           </div>
         </div>
-        <div onClick={() => navigate("/PastLifePrediction")} className="tt-grid">
-          <div className="grid-items-tt bg-plp"></div>
-          <div className="info-tt">
-            <div className="button-container-tt">
-              <button className="book-call-tt">
-                Past Life Prediction
-              </button>
+        <div onClick={() => navigate("/TimeTravel/PastLifePrediction")} className="tt-grid">
+          <div className="tt-container">
+            <div className="grid-items-tt bg-plp"></div>
+            <div className="info-tt">
+              <div className="button-container-tt">
+                <button className="book-call-tt">
+                  Past Life Prediction
+                </button>
+              </div>
             </div>
           </div>
         </div>

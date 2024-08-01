@@ -2,7 +2,7 @@ import React, { useState, useMemo, useCallback, useEffect } from 'react';
 import Select from 'react-select';
 import axios from 'axios';
 import dummy from '../AccountPage/dummy.json';
-import './UserBirthInput.css';
+//import './UserBirthInput.css';
 import { useNavigate, Link } from 'react-router-dom';
 import {jwtDecode} from 'jwt-decode';
 

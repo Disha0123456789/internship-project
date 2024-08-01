@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./Future.css";
+//import "./Future.css";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import {jwtDecode} from "jwt-decode";
@@ -85,7 +85,7 @@ const FuturePrediction = () => {
   };
 
   const navigateToFuture = (type) => {
-    navigate(`/see_your_future?sign=${zodiacSign}&type=${type}`);
+    navigate(`/TimeTravel/see_your_future?sign=${zodiacSign}&type=${type}`);
   };
 
   return (

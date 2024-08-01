@@ -1,5 +1,5 @@
 .dream-result {
-    width: 100vw;
+    width: 100%;
     background-color: #fdf2f8;
     min-height: 100vh;
     /* Ensure background color spreads till the end of the screen */

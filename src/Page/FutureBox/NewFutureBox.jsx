@@ -17,7 +17,7 @@ const NewFutureBox = () => {
         </h1>
         <div className="future-grid-container grid-container-lg">
           <div
-            onClick={() => navigate("/tarot_reading")}
+            onClick={() => navigate("/tarot-reading")}
             className="future-grid-item">
             <div className="flex justify-center items-center size-20 rounded-lg mx-auto">
               <img src="/assets/ICONS/tarot.png" alt="12" />
@@ -76,7 +76,7 @@ const NewFutureBox = () => {
           </div>
 
           <div
-            onClick={() => navigate("/AstroMain")}
+            onClick={() => navigate("/AstroHome")}
             className="future-grid-item">
             <div className="flex justify-center items-center size-20 rounded-lg mx-auto">
               <img src="/assets/ICONS/astrology.png" alt="15" />
@@ -126,7 +126,7 @@ const NewFutureBox = () => {
           <div className="lg:block lg:col-span-1"></div>
           
           <div
-            onClick={() => navigate('/numero')}
+            onClick={() => navigate('/numerology')}
             className="future-grid-item">
             <div className="flex justify-center items-center size-20 rounded-lg mx-auto">
               <img src="/assets/ICONS/numerology.png" alt="16" />

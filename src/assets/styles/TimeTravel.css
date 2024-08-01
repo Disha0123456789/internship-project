@@ -15,8 +15,17 @@
   display: grid;
   grid-template-columns: auto auto;
   padding: 10px;
+  width: 90vw;
+  margin-left: auto;
+  margin-right: auto;
 }
 
+.tt-container{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
 .grid-items-tt {
   display: flex;
   justify-content: center;
@@ -25,7 +34,7 @@
   text-align: center;
   font-weight: 600;
   height: 210px;
-  width: 470px;
+  width: 90%;
   background-color: rgba(255, 255, 255, 0.8);
   margin: 18px;
   /* border-radius: 20px; */
@@ -48,6 +57,7 @@
   align-items: center;
   flex-direction: column;
   margin-top: -30px;
+  width: 100%;
 }
 
 
@@ -56,7 +66,7 @@
   justify-content: space-evenly;
   align-items: center;
   height: 100px;
-  width: 470px;
+  width: 90%;
   font-size: 12px;
   font-weight: 600;
   border: none;
@@ -71,8 +81,8 @@
   justify-content: center;
   align-items: center;
   padding: 5px 0px;
-  height: 400px;
-  width: 270px;
+  width: 100%;
+  height: 100%;
   background-color: transparent;
   border: 1px;
   color: black;

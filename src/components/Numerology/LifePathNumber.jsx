@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
-import './LifePathNumber.css';
+//import './LifePathNumber.css';
 import data from './data.json';
 
 export default function LifePathNumber() {

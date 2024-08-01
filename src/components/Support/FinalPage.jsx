@@ -5,6 +5,7 @@ const FinalPage = () => {
   const loc = useLocation();
 
   return (
+    <div className="Main-page">
     <div className="Container Container-final">
       <div className="top">
         <h1>{loc.state.head}</h1>
@@ -51,6 +52,7 @@ const FinalPage = () => {
       <div className="bottom">
         <button>Cancel</button>
       </div>
+    </div>
     </div>
   );
 };

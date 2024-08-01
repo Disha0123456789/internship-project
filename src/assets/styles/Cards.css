@@ -83,7 +83,7 @@
     margin-bottom: 50px;
 }
 .tarot-btn{
-    
+    margin: 0px;
     width: 100%;
     color: white;
     background-color: black;
@@ -97,7 +97,6 @@
 }
 
 button{
-    margin:50px ;
     color: white;
 }
 .Tarot-Cards{

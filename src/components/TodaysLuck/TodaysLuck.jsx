@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './TodaysLuck.css';
+//import './TodaysLuck.css';
 import sound from "./assets/sound.m4a";
 import Lottie from 'lottie-react';
 import cbox from './box/cbox.json';

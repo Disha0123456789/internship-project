@@ -1,7 +1,7 @@
 // spinner-wheel-master
 import React, { useState } from "react";
 import WheelComponent from "./WheelComponent";
-import "./Wheel.css";
+//import "./Wheel.css";
 
 function FortuneWheel() {
   const segments = ["Red", "Green", "White", "Orange", "Blue", "Violet", "Black", "Yellow"];
