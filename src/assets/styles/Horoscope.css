@@ -1,7 +1,5 @@
 .horoscope-container{
-  width : 100vw;
-  height: 100vh;
-  padding-top: 10vh;
+  width: 100%;
 }
 .horoscope-card {
   width: 90%;
@@ -13,6 +11,9 @@
   background: #FDF2F8;
   box-shadow:  6px 6px 12px #b3b3b3,-6px -6px 12px #ffffff;
   box-sizing: border-box;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding: 1rem;
 }
 
 .horo-img-container {
@@ -57,7 +58,7 @@
 .horigental-line{
   width: 100%;
   border: 1px solid;
-  
+  margin: 0rem;
 }
 
 
@@ -77,20 +78,19 @@
 }
 
 .Gemini-container{
-  width: 100vw;
-  height: 100vh;
-  padding-top: 10vh;
+    width: 100%;
 }
 .Gemini-card {
-  width:90%;
-  min-height: 85%;
+  width: 90%;
+  min-height: 90vh;
   margin: auto;
-  background-color: #FDF2F8;
+  background-color: #fdf2f8;
   border-radius: 31px;
-  
-  box-shadow:  6px 6px 12px #b3b3b3,-6px -6px 12px #ffffff;
-  padding: 20px;
+  box-shadow: 6px 6px 12px #b3b3b3, -6px -6px 12px #fff;
   box-sizing: border-box;
+  padding: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .rasi-image-container {

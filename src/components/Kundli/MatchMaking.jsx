@@ -1,5 +1,5 @@
 //MatchMaking_backend
-import React, { useState, useMemo, useCallback } from 'react';
+import React, { useState, useMemo, useCallback, useEffect} from 'react';
 import Select from 'react-select';
 import dummy from '../../Page/AccountPage/dummy.json';
 //import './MatchMaking.css';
@@ -25,6 +25,10 @@ const KundliRegister = () => {
 
   const [state, setState] = useState(false);
   const [city, setCity] = useState('');
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const debounce = (func, delay) => {
     let timeoutId;
