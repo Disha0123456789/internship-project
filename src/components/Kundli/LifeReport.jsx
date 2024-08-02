@@ -7,6 +7,10 @@ function LifeReport() {
     const [lifeReport, setLifeReport] = useState(null);
 
     useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
+
+    useEffect(() => {
         const dateOfBirthString = location?.state?.dateOfBirth;
 
         if (dateOfBirthString) {

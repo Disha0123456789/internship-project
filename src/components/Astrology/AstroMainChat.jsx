@@ -12,6 +12,7 @@ function AstroMainChat() {
           <button onClick={() => navigate("/AstroHome")} className="buttons">
             <i className="fa-solid fa-phone"></i> Call
           </button>
+          <hr className="callchat-hr"/>
           <button
             onClick={() => navigate("/AstroHome/AstroMainChat")}
             className="buttons btn-call2"
