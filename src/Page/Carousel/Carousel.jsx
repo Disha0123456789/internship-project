@@ -15,7 +15,7 @@ const Carousel = () => {
   const slides = [
     { 
       url: baby,
-      targetUrl: "/kidsFortune",
+      targetUrl: "/AstroHome/kidsFortune",
       text: {
         content: "When Will I Expect A Baby?",
         styleClass: "baby-text"
@@ -23,7 +23,7 @@ const Carousel = () => {
     },
     { 
       url: relationship,
-      targetUrl: "/tarot_reading",
+      targetUrl: "/tarot-reading",
       text: {
         content: "Does My<br>Crush Loves <br>me?",
         styleClass: "relationship-text"
@@ -39,7 +39,7 @@ const Carousel = () => {
     },
     { 
       url: future,
-      targetUrl: "/FuturePrediction",
+      targetUrl: "/TimeTravel/FuturePrediction",
       text: {
         content: "Glimpse Into The Future",
         styleClass: "future-text"
@@ -47,7 +47,7 @@ const Carousel = () => {
     },
     { 
       url: dream,
-      targetUrl: "/dream_meaning",
+      targetUrl: "/dream/dream_meaning",
       text: {
         content: "Ever <br>Wondered <br>What Your <br>Dreams are <br>telling You?",
         styleClass: "dream-text"
@@ -55,7 +55,7 @@ const Carousel = () => {
     },
     { 
       url: numero,
-      targetUrl: "/numero",
+      targetUrl: "/numerology",
       text: {
         content: "Uncover the Number <br>that shape your <br>Destiny?",
         styleClass: "numero-text"
@@ -63,7 +63,7 @@ const Carousel = () => {
     },
     { 
       url: anger,
-      targetUrl: "/AngerManagement",
+      targetUrl: "/EmotionalSupport/AngerManagement",
       text: {
         content: "How Can I <br>Control My <br>Anger?",
         styleClass: "anger-text"
