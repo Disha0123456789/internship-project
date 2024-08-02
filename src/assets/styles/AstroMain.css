@@ -581,6 +581,7 @@
   width: 1px;
     height: 50px;
     border: 2px solid black;
+    margin: 0px;
 }
 
 .buttons {

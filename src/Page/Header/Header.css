@@ -32,8 +32,8 @@
 }
 
 .navbar-toggler-icon {
-  width: 1em;
-  height: 1em;
+  width: 1em !important;
+  height: 1em !important;
 }
 
 .me-3 {
