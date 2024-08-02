@@ -6,6 +6,10 @@ const FAQ = () => {
   const [activeIndex, setActiveIndex] = useState(null);
 
   useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  
+  useEffect(() => {
     const fetchData = async () => {
       try {
         const response = await fetch('/assets/important_files_docx/faqs.json'); // Fetch the JSON file

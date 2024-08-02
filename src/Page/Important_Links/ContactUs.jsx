@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import ReCAPTCHA from 'react-google-recaptcha';
 import './ContactUs.css';
 
@@ -10,6 +10,10 @@ const ContactUs = () => {
     subject: 'Feedback/Suggestion',
     message: ''
   });
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const [recaptchaValue, setRecaptchaValue] = useState(null);
   const [formStatus, setFormStatus] = useState('');
