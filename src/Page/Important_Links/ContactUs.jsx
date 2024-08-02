@@ -3,6 +3,7 @@ import ReCAPTCHA from 'react-google-recaptcha';
 import './ContactUs.css';
 
 const ContactUs = () => {
+  const recaptchaRef = useRef(null); // Create a ref for ReCAPTCHA
   const [formData, setFormData] = useState({
     fullName: '',
     email: '',
@@ -50,6 +51,8 @@ const ContactUs = () => {
         subject: 'Feedback/Suggestion',
         message: ''
       });
+      setRecaptchaValue(null); // Clear recaptcha value
+      recaptchaRef.current.reset(); // Reset reCAPTCHA widget
     } else {
       setFormStatus(`Error submitting form: ${result.message}`);
     }
@@ -112,6 +115,7 @@ const ContactUs = () => {
           </div>
           <div className="contact-us-form-group">
             <ReCAPTCHA
+              ref={recaptchaRef} // Assign ref to ReCAPTCHA
               sitekey='6LdjdRcqAAAAAJ0eSlNhECMq5W18HEQuyndZYvRn'
               onChange={handleRecaptchaChange}
             />
