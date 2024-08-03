@@ -56,10 +56,18 @@ function Faceread() {
           if (error.response.status === 400) {
             setWarningMessage("No face detected in the uploaded image. Please try again.");
           } else {
-            setWarningMessage(error.response,"An error occurred while processing your request. Please try again.*");
+            setWarningMessage(
+              error.response && error.response.data && error.response.data.error
+                ? error.response.data.error
+                : "An error occurred while processing your request. Please try again.*"
+            );            
           }
         } else {
-          setWarningMessage(error.response,"An error occurred while processing your request. Please try again.*");
+          setWarningMessage(
+            error.response && error.response.data && error.response.data.error
+              ? error.response.data.error
+              : "An error occurred while processing your request. Please try again.*"
+          );   
         }
         setShowWarning(true);
       });
