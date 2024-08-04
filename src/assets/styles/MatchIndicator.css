@@ -1,8 +1,8 @@
 .indicator-app {
   display: flex;
-  width: 100vw;
+  width: 100%;
   justify-content: center;
-  height: 100vh;
+  min-height: 100vh;
   align-items: flex-start;
   }
   
@@ -15,6 +15,7 @@
     position: relative;
     background-color: #FCF2F6;
     margin-top: 2em;
+    margin-bottom: 2em;
     width: 70%;
     padding: 1em;
     border-radius: 1em;

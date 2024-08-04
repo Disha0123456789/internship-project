@@ -1,6 +1,6 @@
 
   .match-container {
-    width: 100vw;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -9,6 +9,7 @@
   .kundliForm {
     width: 80%;
     margin-top: 2em;
+    margin-bottom: 2rem;
     padding-top: 1em;
     padding-left: 1em;
     padding-right: 1em;
