@@ -6,10 +6,16 @@ body {
     justify-content: center;
     align-items: center;
 }
-.Main-page{
+
+.Main-page {
     padding-top: 20px;
     padding-bottom: 20px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
+
 .Emotional-options{
     margin-top: 50px;
 }
