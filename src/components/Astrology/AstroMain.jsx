@@ -1,5 +1,5 @@
 import React,{useEffect} from "react";
-//import "./AstroMain.css";
+//import "../../assets/AstroMain.css";
 import { useNavigate } from "react-router-dom";
 
 function AstroMain() {

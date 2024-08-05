@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { fetchHoroscope } from '../../services/apiService'; // Update the import path as needed
-//import "./SeeYourFuture.css";
+//import '../../assets/SeeYourFuture.css';
 import { useNavigate } from "react-router-dom";
 
 export default function SeeYourFuture() {

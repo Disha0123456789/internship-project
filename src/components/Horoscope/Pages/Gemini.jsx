@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useLocation, useSearchParams } from 'react-router-dom';
 import { fetchHoroscope } from '../../../services/apiService';
 import Content from './Content';
+//import '../../../assets/horoscope.css';
 
 import IMAGES11 from '/assets/1st-row/Horoscope/aquarius.png';
 import IMAGES1 from '/assets/1st-row/Horoscope/aries.png';

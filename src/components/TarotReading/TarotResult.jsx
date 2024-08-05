@@ -1,6 +1,6 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
-
+//import '../../assets/Cards.css';
 const TarotResult = () => {
   const loc = useLocation();
   const { head, image, title, heading, para } = loc.state;

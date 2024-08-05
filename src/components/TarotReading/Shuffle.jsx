@@ -4,6 +4,7 @@ import { useLocation, useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import IMG from "/assets/2nd-row-reading/Tarot/images/tarot_card_girl.png";
 import tarotResultCardsData from "./tarot-result-cards-data.json";
+//import '../../assets/Cards.css';
 
 const Shuffle = () => {
   const navigate = useNavigate();

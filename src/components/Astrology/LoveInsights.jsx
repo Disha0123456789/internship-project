@@ -1,5 +1,5 @@
 import React, { useEffect }from "react";
-//import "./AstroMain.css";
+//import "../../assets/AstroMain.css";
 import { useNavigate } from "react-router-dom";
 import image from '/assets/3rd-row/Astrology/images/Love Insights.png';
 function LoveInsights() {

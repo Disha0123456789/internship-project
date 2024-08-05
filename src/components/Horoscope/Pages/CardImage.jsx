@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+//import '../../../assets/horoscope.css';
 
 export default function CardImage(props) {
   const { myLink, imagUrl, name } = props;

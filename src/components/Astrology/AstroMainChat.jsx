@@ -1,5 +1,5 @@
 import React from "react";
-//import "./AstroMain.css";
+//import "../../assets/AstroMain.css";
 import { useNavigate } from "react-router-dom";
 
 function AstroMainChat() {
