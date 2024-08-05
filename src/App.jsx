@@ -110,10 +110,10 @@ function App() {
 
   // useEffect to preload components and CSS after Home is loaded
   useEffect(() => {
+    importCssFiles();
     if (homeLoaded) {
       //console.log('HomeLoaded is true');
       preloadComponents();
-      importCssFiles();
     } else {
       //console.log('HomeLoaded is false');
     }

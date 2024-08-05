@@ -1,7 +1,7 @@
 // src/components/Content.jsx
 
 import React from 'react';
-
+//import '../../../assets/horoscope.css';
 const Content = ({ content }) => {
   if (typeof content === 'string') {
     return <p>{content}</p>;

@@ -7,6 +7,7 @@ import divineLogo from '/assets/AcountPage/images/divine logo vertical.png';
 import logoBackground from '/assets/AcountPage/images/pink_design_cutout.png';
 import dummy from './dummy.json';
 import code from './code.json';
+//import '../../assets/AccountPage.css';
 
 const debounce = (func, delay) => {
   let timeoutId;

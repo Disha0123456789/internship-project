@@ -4,6 +4,7 @@ import TarotCards from "./TarotCards";
 import tarotReadingCardsData from "./tarot-cards-data";
 import Shuffle from './Shuffle';
 import TarotResult from './TarotResult';
+//import '../../assets/Cards.css';
 
 const TarotReading = () => {
   useEffect(() => {

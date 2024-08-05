@@ -1,5 +1,5 @@
 import React, { useEffect }from "react";
-//import "./TimeTravel.css";
+//import '../../assets/TimeTravel.css';
 import { useNavigate } from "react-router-dom";
 
 function TimeTravel() {

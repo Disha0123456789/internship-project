@@ -1,5 +1,5 @@
 import React, { useEffect }from "react";
-//import './Dream.css';
+//import '../../assets/Dream.css';
 import { useNavigate } from "react-router-dom";
 
 export default function Dream() {

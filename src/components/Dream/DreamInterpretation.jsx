@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import Select from 'react-select';
 import { FixedSizeList as List } from 'react-window';
-//import './DreamInterpretation.css';
+//import '../../assets/DreamInterpretation.css';
 import queryData from './Query.json'; // Import the JSON file
 import { useNavigate } from "react-router-dom";
 

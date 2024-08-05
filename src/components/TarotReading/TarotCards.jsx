@@ -1,5 +1,5 @@
 import React from "react";
-//import "./Cards.css";
+//import '../../assets/Cards.css';
 import { PiHandsClappingBold } from "react-icons/pi";
 import { IoEyeSharp } from "react-icons/io5";
 import { motion } from "framer-motion";

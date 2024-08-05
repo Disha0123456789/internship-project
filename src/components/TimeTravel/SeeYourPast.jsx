@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useSearchParams } from 'react-router-dom';
-//import './SeeYourFuture.css';
+//import '../../assets/SeeYourFuture.css';
 import predictions from './past_life_predictions.json'; // Import the JSON file
 
 export default function SeeYourPast() {

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-//import "./PastLifePrediction.css";
+//import '../../assets/PastLifePrediction.css';
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import {jwtDecode} from "jwt-decode";
