@@ -45,7 +45,7 @@ const FinalPage = () => {
           <input type="checkbox" name="" id="" />
           <div className="text">
             {" "}
-            <p>Call completed</p>
+            <p>Service successfully delivered!</p>
           </div>
         </li>
       </div>

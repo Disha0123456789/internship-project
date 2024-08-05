@@ -1,5 +1,4 @@
-// src/Page/Home/Home.js
-import React, { useEffect, Suspense, lazy } from "react";
+import React, { useEffect } from "react";
 import FutureBoxes from "../../assets/Boxes/FutureBoxes";
 import Header from "../Header/Header";
 import Hero from "../Hero/Hero";
@@ -7,14 +6,21 @@ import Carousel from "../Carousel/Carousel";
 import NewFutureBox from "../FutureBox/NewFutureBox";
 import Footer from "../Footer/Footer";
 import './Home.css';
+//import '../Header/Header.css';
+//import '../Hero/hero.css';
+//import '../Carousel/carousel.css';
+//import '../FutureBox/newFutureBox.css';
+//import '../../assets/styles/style.css';
+//import '../Footer/Footer.css';
 
-// Lazy load StylesLoader
-//const StylesLoader = lazy(() => import('../../assets/StylesLoader'));
-
-const Home = () => {
+const Home = ({ onLoaded }) => {
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, []);
+    // Simulating when Home component is fully loaded
+    if (onLoaded) {
+      onLoaded();  // Notify parent component that Home is loaded
+    }
+  }, [onLoaded]);
 
   return (
     <div className="App">
@@ -24,10 +30,6 @@ const Home = () => {
       <NewFutureBox />
       <FutureBoxes />
       <Footer />
-      {/* Load StylesLoader after Home page   <Suspense fallback={null}>
-        <StylesLoader />
-      </Suspense>*/}
-      
     </div>
   )
 }
