@@ -61,9 +61,9 @@ const FuturePrediction = () => {
           withCredentials: true
         });
         const user = response.data;
-        console.log(user);
+        //console.log(user);
         const { dob } = user;
-        console.log(dob);
+        //console.log(dob);
         if (dob) {
           setBirthDate(formatDate(dob));
           calculateZodiacSign(formatDate(dob));

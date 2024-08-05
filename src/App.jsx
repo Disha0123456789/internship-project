@@ -59,12 +59,12 @@ const preloadComponents = () => {
   import('./components/meditation/MeditationHome');
   import('./components/Support/EmotionalSupportHome');
   import('./components/Support/FinalPage');
-  import('./Page/Important_Links/TermsAndConditions');
-  import('./Page/Important_Links/AboutUS');
-  import('./Page/Important_Links/PrivacyPolicy');
-  import('./Page/Important_Links/Disclaimer');
-  import('./Page/Important_Links/FAQ');
-  import('./Page/Important_Links/ContactUs');
+  //import('./Page/Important_Links/TermsAndConditions');
+  //import('./Page/Important_Links/AboutUS');
+  //import('./Page/Important_Links/PrivacyPolicy');
+  //import('./Page/Important_Links/Disclaimer');
+  //import('./Page/Important_Links/FAQ');
+  //import('./Page/Important_Links/ContactUs');
   //console.log('Components preloaded');
 };
 

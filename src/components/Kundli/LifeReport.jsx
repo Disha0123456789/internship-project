@@ -17,7 +17,7 @@ function LifeReport() {
             try {
                 const dateOfBirth = new Date(dateOfBirthString);
                 const zodiacSign = getZodiacSign(dateOfBirth);
-                console.log('Zodiac Sign:', zodiacSign);
+                //console.log('Zodiac Sign:', zodiacSign);
 
                 const report = lifeReportData.find(report => report.sign === zodiacSign);
                 if (report) {

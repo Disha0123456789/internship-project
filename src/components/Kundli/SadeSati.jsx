@@ -17,7 +17,7 @@ function SadeSati() {
             try {
                 const dateOfBirth = new Date(dateOfBirthString);
                 const zodiacSign = getZodiacSign(dateOfBirth);
-                console.log('Zodiac Sign:', zodiacSign);
+                //console.log('Zodiac Sign:', zodiacSign);
 
                 const report = sadeSatiData.find(report => report.sign === zodiacSign);
                 if (report) {

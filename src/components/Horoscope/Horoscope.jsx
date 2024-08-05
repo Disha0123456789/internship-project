@@ -26,7 +26,7 @@ export default function App() {
       <Route 
         path="cardImage" 
         element={
-          <Suspense fallback={<div>Loading...</div>}>
+          <Suspense fallback={<div className="loading-container"><div className="loading-circle"></div>Loading...</div>}>
             <CardImage />
           </Suspense>
         } 
@@ -34,7 +34,7 @@ export default function App() {
       <Route 
         path="gemini" 
         element={
-          <Suspense fallback={<div>Loading...</div>}>
+          <Suspense fallback={<div className="loading-container"><div className="loading-circle"></div>Loading...</div>}>
             <Gemini />
           </Suspense>
         } 
@@ -42,7 +42,7 @@ export default function App() {
       <Route 
         path="content" 
         element={
-          <Suspense fallback={<div>Loading...</div>}>
+          <Suspense fallback={<div className="loading-container"><div className="loading-circle"></div>Loading...</div>}>
             <Content />
           </Suspense>
         } 

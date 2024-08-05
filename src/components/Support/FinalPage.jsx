@@ -14,7 +14,7 @@ const FinalPage = () => {
       </div>
       <div className="mid">
         <li>
-          <input type="checkbox" name="" id="" />
+          <input type="checkbox" name="" id=""  style={{marginTop:'6px'}}/>
           <div className="text">
             {" "}
             <p>
@@ -24,7 +24,7 @@ const FinalPage = () => {
           </div>
         </li>
         <li>
-          <input type="checkbox" name="" id="" />
+          <input type="checkbox" name="" id=""  style={{marginTop:'6px'}}/>
           <div className="text">
             {" "}
             <p>
@@ -34,7 +34,7 @@ const FinalPage = () => {
           </div>
         </li>
         <li>
-          <input type="checkbox" name="" id="" />
+          <input type="checkbox" name="" id=""  style={{marginTop:'6px'}}/>
           <div className="text">
             {" "}
             <p>Waiting in queue for astrologer to get free.</p>
@@ -42,7 +42,7 @@ const FinalPage = () => {
         </li>
 
         <li>
-          <input type="checkbox" name="" id="" />
+          <input type="checkbox" name="" id=""  style={{marginTop:'6px'}}/>
           <div className="text">
             {" "}
             <p>Service successfully delivered!</p>

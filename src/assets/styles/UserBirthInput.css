@@ -68,7 +68,7 @@
 
 .Iagree-checkbox{
     margin-top: 15px;
-    font-size: small;
+    font-size: 1rem;
 }
 .user-profile-btn {
     width: 20%;
@@ -124,9 +124,12 @@
         width: 30%;
     }
     .changes{
-        width: 80%;
+        width: 85%;
     }
     .UserBirthInput-name-container{
         gap: 10px;
+    }
+    .Iagree-checkbox{
+        font-size: 0.9rem;
     }
 }
