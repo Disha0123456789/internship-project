@@ -97,7 +97,7 @@ const KundliRegister = () => {
 
     try {
       const response = await axios.post('https://divineconnection.co.in/calculate-guna-milan-score', data);
-      console.log('Server response:', response.data);
+      //console.log('Server response:', response.data);
 
       navigate('/kundli/matchIndicator', { state: { score: response.data.score } });
     } catch (error) {

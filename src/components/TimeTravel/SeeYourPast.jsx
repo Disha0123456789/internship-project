@@ -10,7 +10,7 @@ export default function SeeYourPast() {
 
   useEffect(() => {
     if (birthDate) {
-      console.log('Birth Date:', birthDate);
+      //console.log('Birth Date:', birthDate);
       fetchPrediction(birthDate);
     }
   }, [birthDate]);

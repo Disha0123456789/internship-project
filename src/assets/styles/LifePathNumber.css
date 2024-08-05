@@ -1,5 +1,5 @@
 .lifepathnumber {
-    /* background-color: #FDF2F8; */
+    background-color: #FDF2F8;
     /* min-height: 100vh;    */
     display: flex;
     flex-direction: column;
@@ -31,14 +31,12 @@
 
 .lifepathcard {
     width: 100%;
-    /* Adjust width to fit well on smaller screens */
     max-width: 700px;
     margin: 20px auto;
-    /* Center the card horizontally */
-    border-radius: 8px;
+    border-radius: 1rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    background-color: #fdf2f8;
+    background-color: #ffffff;
     cursor: pointer;
     border: transparent;
     margin-top: 30px;

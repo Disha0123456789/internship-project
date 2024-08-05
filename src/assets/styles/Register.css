@@ -189,6 +189,7 @@ hr{
 }
 .verify-btn{
   background-color: #dcdcdc !important;
+  color: black;
 }
 @media screen and (min-width:1200px){
   .Register{
