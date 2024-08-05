@@ -147,6 +147,7 @@ body {
     display: flex;
     gap: 20px;
     list-style: none;
+    align-items: flex-start;
 }
 .mid li p{
     width: 100%;
