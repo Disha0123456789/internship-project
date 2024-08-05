@@ -1,4 +1,4 @@
-import React, { lazy, Suspense, useEffect } from 'react';
+import React, { lazy, Suspense, useEffect, useState } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './Page/Home/Home';
 import './App.css';
@@ -33,8 +33,9 @@ const Disclaimer = lazy(() => import('./Page/Important_Links/Disclaimer'));
 const FAQ = lazy(() => import('./Page/Important_Links/FAQ'));
 const ContactUs = lazy(() => import('./Page/Important_Links/ContactUs'));
 
-
+// Function to preload components
 const preloadComponents = () => {
+  //console.log('Preloading components...');
   import('./Page/UserBirthInput/MainHome');
   import('./components/TodaysLuck/TodaysLuck');
   import('./components/Shopping/PoojaHome');
@@ -64,13 +65,12 @@ const preloadComponents = () => {
   import('./Page/Important_Links/Disclaimer');
   import('./Page/Important_Links/FAQ');
   import('./Page/Important_Links/ContactUs');
+  //console.log('Components preloaded');
 };
 
-
-function App() {
-  useEffect(() => {
-    preloadComponents();
-
+// Function to import CSS files
+const importCssFiles = () => {
+  //console.log('Importing CSS files...');
   import('./assets/styles/AccountPage.css');
   import('./assets/styles/AstroMain.css');
   import('./assets/styles/Cards.css');
@@ -102,7 +102,28 @@ function App() {
   import('./assets/styles/TodaysLuck.css');
   import('./assets/styles/UserBirthInput.css');
   import('./assets/styles/Wheel.css');
-  }, []);
+  //console.log('CSS files loaded');
+};
+
+function App() {
+  const [homeLoaded, setHomeLoaded] = useState(false);
+
+  // useEffect to preload components and CSS after Home is loaded
+  useEffect(() => {
+    if (homeLoaded) {
+      //console.log('HomeLoaded is true');
+      preloadComponents();
+      importCssFiles();
+    } else {
+      //console.log('HomeLoaded is false');
+    }
+  }, [homeLoaded]);
+
+  // Function to handle when Home component is loaded
+  const handleHomeLoaded = () => {
+    //console.log('handleHomeLoaded called');
+    setHomeLoaded(true);
+  };
 
   const fallbackComponent = (
     <div className="loading-container">
@@ -115,7 +136,7 @@ function App() {
     <BrowserRouter>
       <Suspense fallback={fallbackComponent}>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Home onLoaded={handleHomeLoaded} />} />
           <Route path="/MainPage/*" element={<MainHome />} />
           <Route path="/todays_luck" element={<TodaysLuck />} />
           <Route path="/pooja/*" element={<PoojaHome />} />

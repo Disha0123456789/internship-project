@@ -139,7 +139,7 @@ const Poojadata = {
         outcomes: "Ensures desired outcomes with personalized assistance.",
       },
     },
-    "Mahalaxmhi Pooja": {
+    "Mahalakshmi Pooja": {
       description:
         "Mahalaxmi Puja is a Hindu ritual dedicated to Goddess Lakshmi, seeking her blessings for wealth, prosperity, and abundance. It is believed to attract material and spiritual richness into one's life.",
       benefits: [

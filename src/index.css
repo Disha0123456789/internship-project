@@ -85,6 +85,12 @@ button:focus-visible {
   margin-right: 10px; /* Space between the circle and the text */
 }
 
+.navbar-toggler {
+  display: block;
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+}
+
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
